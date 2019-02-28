@@ -17,4 +17,5 @@ before_install:
 - sfdx plugins --core
 - sfdx force:auth:jwt:grant --clientid $CONSUMERKEY --jwtkeyfile assets/server.key --username $USERNAME -r https://test.salesforce.com --setalias SascarDev11
 script:
+- sfdx force:config:set defaultusername=SascarDev11
 - sfdx force:source:deploy --manifest manifest/package.xml
