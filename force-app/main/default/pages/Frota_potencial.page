@@ -1,0 +1,15 @@
+<apex:page controller="ConsultaFrotaPotencial">
+
+    <apex:pageBlock >
+    <apex:pageBlockTable value="{!frotapotencial}" var="a">
+    <apex:column value="{!a.Tipo_de_ve_culo__c}"/>
+    <apex:column value="{!a.Quantidade_de_veiculos__c}"/>
+    <apex:column value="{!a.Concorrente__c}"/>
+    <apex:column value="{!a.Segmentacao_de_mercado__c}"/>
+    <apex:column value="{!a.Necessidade_do_negocio__c}"/>
+    <apex:column value="{!a.Vigencia_contratual__c}"/>
+    <apex:column value="{!a.Nivel_de_relacionamento__c}"/>
+    </apex:pageBlockTable>
+    </apex:pageBlock>
+
+</apex:page>

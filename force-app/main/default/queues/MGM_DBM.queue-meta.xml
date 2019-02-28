@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>l.frederico@sascar.com.br</email>
+    <name>MGM DBM</name>
+    <queueMembers>
+        <roles>
+            <role>ADMINISTRADOR_COMERCIAL</role>
+        </roles>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

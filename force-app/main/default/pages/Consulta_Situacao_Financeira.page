@@ -1,0 +1,44 @@
+<apex:page controller="ConsultaSituacaoFinanceira">
+    <apex:form id="formSF" rendered="{!show == true}">            
+        <apex:pageBlock >
+            <apex:pageBlockTable value="{!conta}" var="a" rows="1">
+                <apex:column value="{!a.Faturamento_mensal__c}"/>
+                <apex:column value="{!a.Faturamento_medio_trimestral__c}"/>
+                <apex:column value="{!a.Ticket_medio_recorrente__c}"/>
+                <apex:column value="{!a.Situacao_Financeira__c}"/>
+                <apex:column value="{!a.Divida__c}"/>
+                <apex:column value="{!a.Dias_em_atraso_divida__c}"/>
+                <apex:column value="{!a.Data_do_ultimo_pagamento__c}"/>
+                <apex:column value="{!a.Valor_ultimo_pagamento__c}"/>
+                <apex:column value="{!a.Situacao_sinal__c}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        
+        <apex:pageBlock >
+            <apex:pageBlockTable value="{!conta}" var="a" rows="1">
+                <apex:column value="{!a.Tempo_medio_de_atraso__c}"/>
+                <apex:column value="{!a.Experiencia_do_cliente__c}"/>
+                <apex:column value="{!a.Maior_atraso__c}"/>
+                <apex:column value="{!a.Data_do_proximo_pagamento__c}"/>
+                <apex:column value="{!a.Valor_proximo_pagamento__c}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        
+        <apex:pageBlock >
+            <apex:pageBlockTable value="{!conta}" var="a" rows="1">
+                <apex:column value="{!a.Forma_de_pagamento__c}"/>
+                <apex:column value="{!a.Dia_de_vencimento_do_pagamento__c}"/>
+                <apex:column value="{!a.Acao_judicial__c}"/>
+                <apex:column value="{!a.Rentabilidade_Mensal__c}"/>
+                <apex:column value="{!a.Rentabilidade_YTD__c}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        <p>&nbsp;</p>
+        <p>Clique <a href='/{!idAcc}'>aqui</a> para voltar.</p>
+    </apex:form>
+    
+    <apex:form id="formSF1" rendered="{!show == false}">
+        <p>Não há registros. Clique <a href='/{!idAcc}'>aqui</a> para voltar.</p>
+    </apex:form> 
+
+</apex:page>

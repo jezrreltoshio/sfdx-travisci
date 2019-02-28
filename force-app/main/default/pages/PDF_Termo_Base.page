@@ -1,0 +1,190 @@
+<apex:page standardController="Opportunity" extensions="termoPDFController" renderAs="pdf" applyBodyTag="false">
+  <head>
+    <style> 
+      body { font-family: arial,sans-serif; }
+      .termName { font: 10px; color: red; }
+      .fieldLabel { font: 10px; }
+      .fieldData { font: 10px; color: black; }
+      .tableData { font: 12px; color: black; }
+      .companyData { font: 8px; }
+      .accountData { font: 11px; }
+      .headerConfig { font: 10px; color: white; background-color:#828189;}
+      .tableDataConfig { font-size: 8px; }
+      .trimpar{ background-color: #FFFFFF;}
+      .trpar{ background-color: #DBE5E6;}
+    </style>
+  </head>
+  <body>
+      <apex:dataTable value="{!Opportunity}" var="opp" border="1" style="border-collapse:collapse;" width="100%" cellpadding="2">
+        <apex:column styleClass="termName" colspan="3">
+         <apex:outputLabel >
+          {!$Label.TermoBase_Cabecalho}
+          <br>DADOS CADASTRAIS</br>
+         </apex:outputLabel>
+        </apex:column>
+        <apex:column colspan="1"><apex:image id="LogoSascar" url="{!URLFOR($Resource.TermoDeAquisicao, '/Images/LogoSascar.png')}" /></apex:column>
+        
+        <apex:column colspan="4" style="background-color:#DBE5E6;" breakBefore="true" styleClass="companyData" width="100%">
+         {!$Label.Termo_DadosEmpresa_Nome}
+         <br>{!$Label.Termo_DadosEmpresa_CNPJ}</br>
+         <br>{!$Label.Termo_DadosEmpresa_Endereco}</br>
+        </apex:column>
+        
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Executivo de Vendas</apex:column>
+          <apex:column colspan="1" styleClass="fieldData" style="size: 8px;" value="{!Opportunity_ExecutivoDeVendas}"></apex:column>
+        <apex:column colspan="2" width="30%" styleClass="fieldData" style="text-align: center;size: 8px;background-color:#DBE5E6;" >LOCAÇÃO</apex:column>
+        <apex:column colspan="1" styleClass="fieldData" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Televendas</apex:column>
+          <apex:column colspan="3" styleClass="fieldData" style="size: 8px;" value="{!Opportunity_Televendas}"></apex:column>
+        <apex:column colspan="1" styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Indicador</apex:column>
+          <apex:column colspan="1" styleClass="fieldData" style="size: 8px;" value="{!Opportunity_Indicador}"></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" style="size: 8px; background-color:#DBE5E6;">Tipo Contrato</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Opportunity_TipoContrato}"></apex:column>
+        
+        <apex:column colspan="4" width="20%" styleClass="companyData" breakBefore="true" style="text-align: center;size: 8px;">
+          Este termo, após assinado, tem validade de comprovante oficial de compra de serviços junto à Contratada. O valor mensal do contrato, em regra, é composto pela locação do equipamento e a taxa de serviços mensal. Os planos de monitoramento dos produtos satelitais têm preços diferentes de acordo com o pacote de mensagens utilizado.
+        </apex:column>
+        
+        <apex:column colspan="4" width="20%" styleClass="companyData" breakBefore="true" style="text-align: center;size: 8px; background-color:#DBE5E6">DADOS DO CLIENTE (pessoa jurídica ou física)</apex:column>
+        
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Razão Social / Nome</apex:column>
+          <apex:column colspan="3" styleClass="fieldData" style="size: 8px;" value="{!Account_RazaoSocial}"></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldData" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">CNPJ / CPF</apex:column>
+          <apex:column colspan="3" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Account_CNPJ_CPF}"></apex:column>
+        
+      </apex:dataTable>
+      
+      <br></br>
+      <apex:panelGrid id="Dados_Fixos" columns="2" width="100%" border="0" style="border-collapse:collapse;" styleClass="accountData" bgcolor="DBE5E6">
+        <apex:outputLabel styleClass="fieldLabel" >MULTA RESCISÓRIA: 
+          <apex:outputText label="MULTA RESCISÓRIA: 25%" value="{!$Label.TermoBase_MultaRescisoria}" styleClass="fieldData"/>
+        </apex:outputLabel>
+        <apex:outputLabel styleClass="fieldLabel" >ADESIVO: 
+          <apex:outputText label="ADESIVO:" value="{!adesivo}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      
+      <br></br>
+      <apex:panelGrid id="Dados_Fixos_2" columns="1" width="100%" border="0" style="border-collapse:collapse;" styleClass="accountData" bgcolor="DBE5E6">
+         <apex:outputLabel styleClass="fieldLabel" value="VALIDADE DA PROPOSTA:" /> 
+         <apex:outputLabel styleClass="fieldLabel" value="DATA DE CRIAÇÃO: " > 
+          <apex:outputText label="Data de criação" value="{!DataDeCriacao}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+
+      <br></br>
+      <apex:pageBlock >
+        <apex:panelGrid columns="1" width="100%" border="0" style="border-collapse:collapse;" bgcolor="DBE5E6">
+          <apex:outputPanel styleClass="fieldData" dir="RTL">
+            CONDIÇÕES COMERCIAIS
+          </apex:outputPanel>
+        </apex:panelGrid>
+        <apex:pageBlockTable width="100%" summary="TESTE" title="CONDIÇÕES COMERCIAIS" value="{!lstQli}" var="item" border="0" align="center" rowClasses="trimpar,trpar" columnClasses="tableDataConfig" headerClass="headerConfig" styleClass="tableData" cellpadding="5">
+          <apex:column headerValue="Produto" value="{!item.Product2.Name}" />
+          <apex:column headerValue="Família de Produtos" value="{!item.Fam_lia_de_produtos__c}" />
+          <apex:column headerValue="Prazo do Contrato" value="{!item.Prazo_do_contrato__c}" style="text-align:right;" />
+          <apex:column headerValue="Quantidade" value="{!item.Quantity}" style="text-align:right;"/>
+          <apex:column headerValue="Valor Mensal" value="{!item.Valor_mensal__c}" style="text-align:right;" />
+          <apex:column headerValue="Valor Unitário Mensal" value="{!item.Valor_unit_rio_mensal__c}" style="text-align:right;" />
+        </apex:pageBlockTable>
+      </apex:pageBlock>
+      
+      <br></br>
+      <!-- DESABILITADA QUEBRA DE PÁGINA - Carlos Prates - 15/05/2014 18:55
+      <table border="0" style="border-collapse:collapse; page-break-after: always;" width="100%">-->
+      <table border="0" style="border-collapse:collapse;" width="100%">
+       <tr>
+        <td align="right" valign="top" width="13%"><span class="tableDataConfig">Taxa de Adesão</span></td>
+        <td align="right" valign="top" width="25%"><span class="tableDataConfig">R$<apex:outputLabel value="{!Quote_TaxaDeAdesao}"/></span></td>
+        <td align="right" valign="top" width="20%"><span class="tableDataConfig">Valor Mensal</span></td>
+        <td align="right" valign="top" width="30%"><span class="tableDataConfig">R$<apex:outputLabel value="{!Quote_ValorMensal}"/></span></td>
+       </tr>
+       <tr>
+        <td align="right" valign="top"><span class="tableDataConfig">Quantidade de equipamentos vendidos</span></td>
+        <td align="right" valign="top"><span class="tableDataConfig"><apex:outputLabel value="{!Quote_QtdeEquipamentosVendidos}"/></span></td>
+        <td align="right" valign="top"><span class="tableDataConfig">Valor Unitário Mensal</span></td>
+        <td align="right" valign="top"><span class="tableDataConfig">R$<apex:outputLabel value="{!Quote_ValorUntMensal}"/></span></td>
+       </tr>
+       <tr>
+        <td align="right" valign="top"><span class="tableDataConfig">Total taxa de adesão</span></td>
+        <td align="right" valign="top"><span class="tableDataConfig">R$<apex:outputLabel value="{!Quote_TotalTaxaDeAdesao}"/></span></td>
+       </tr>
+      </table>
+      
+      <apex:pageBlock >
+        <apex:panelGrid columns="1" width="100%" border="0" styleClass="headerConfig" style="text-align:center;border-collapse:collapse;" >
+          <apex:outputPanel dir="RTL" >
+            VEÍCULOS RASTREADOS
+          </apex:outputPanel>
+        </apex:panelGrid>
+        <apex:pageBlockTable width="100%" summary="Veiculos" title="Veiculos" value="{!lstIPS}" var="item" border="1" align="center" rowClasses="trimpar,trpar" columnClasses="tableDataConfig" headerClass="headerConfig" styleClass="tableData" cellpadding="5">
+          <apex:column headerValue="CHASSI" value="{!item.Veiculo_Chassi__c}" />
+          <apex:column headerValue="PLACA" value="{!item.Veiculo_Placa__c}" />
+          <apex:column headerValue="MARCA" value="{!item.Marca_Veiculo__r.Name}" style="text-align:right;" />
+          <apex:column headerValue="MODELO" value="{!item.Modelo_do_Veiculo__r.Name}" style="text-align:right;"/>
+          <apex:column headerValue="ANO" value="{!item.Veiculo_AnoModelo__c}" style="text-align:right;" />
+          <apex:column headerValue="COR" value="{!item.Veiculo_Cor__c}" style="text-align:right;" />
+          <apex:column headerValue="RENAVAM" value="{!item.Veiculo_Renavam__c}" style="text-align:right;" />
+          <apex:column headerValue="OBSERVAÇÕES" value="{!item.Observacoes__c}" style="text-align:right;" />
+           <!--<apex:column headerValue="PRODUTO" style="text-align:right;" /> -->
+          <!--<apex:column headerValue="ASSESSÓRIOS" style="text-align:right;" /> -->
+        </apex:pageBlockTable>
+      </apex:pageBlock>
+      
+      <br></br>
+      <center>
+        <apex:panelGrid columns="1" width="100%" border="1" style="border-collapse:collapse;" >
+          <apex:outputPanel styleClass="companyData" dir="RTL" >
+            TAXAS DE SERVIÇOS
+          </apex:outputPanel>
+        </apex:panelGrid>
+        <apex:panelGrid columns="1" width="100%" border="1" style="border-collapse:collapse;" bgcolor="DBE5E6">
+          <apex:outputPanel styleClass="companyData" dir="RTL" >
+            LISTA DE PREÇO DE SERVIÇOS TARIFADOS - VERIFICAR TABELA VIGENTE NO MOMENTO DA SOLICITAÇÃO DE SERVIÇOS EXTRAS
+          </apex:outputPanel>
+        </apex:panelGrid>
+        <apex:panelGrid columns="1" width="100%" border="1" style="border-collapse:collapse;" >
+           <apex:outputPanel styleClass="companyData" dir="RTL" >
+            Por meio deste Termo de Aquisição dos Serviços, o CLIENTE adere a todos os termos e condições do Contrato de Prestação de Serviços e Outras Avenças (“Contrato”), registrado em 18/07/2011, no Ofício de Registro de Títulos e Documentos de Barueri – São Paulo sob o nº 610.724, disponível para consulta no site www.sascar.com.br. O CLIENTE declara, para todos os fins e efeitos, conhecer os termos do Contrato, estando de acordo com todas as suas condições, especialmente aquelas que tratam das condições de prestação dos serviços, da utilização dos equipamentos, das obrigações e responsabilidade das partes, das penalidades, dentre todas as outras previstas no Contrato.  
+          </apex:outputPanel>
+        </apex:panelGrid>
+      </center>
+      
+      <apex:panelGrid columns="3" width="100%" border="0">
+        <apex:outputPanel styleClass="companyData" dir="RTL">
+          (*) Observando o disposto na Cláusula Terceira do Contrato
+          <br>CLIENTE</br>
+          <br>Representado por:</br>
+          <br>Nome:________________________________________</br>
+          <br>RG:__________________________________________</br>
+          <br>CPF:_________________________________________</br>
+          <br></br>
+          <br></br>Nome:________________________________________
+          <br></br>RG:__________________________________________
+          <br></br>CPF:_________________________________________
+        </apex:outputPanel>
+        <apex:outputPanel styleClass="companyData" dir="RTL" >
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>Local:_________________________________________________
+        </apex:outputPanel>
+        <apex:outputPanel styleClass="companyData" dir="RTL" >
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>________________________________________________
+          <br></br>Assinatura do Cliente
+          <br></br>
+          <br></br>Data:_____________________________________________
+        </apex:outputPanel>
+      </apex:panelGrid>
+        
+  </body>
+</apex:page>

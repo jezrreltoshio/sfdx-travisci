@@ -1,0 +1,36 @@
+<!--
+**************************************************************************************************************
+* 
+* @author           Ernani href=<ernani.junior.ext@sascar.com>
+* Project:          SASCAR
+* 
+*
+* Changes (Version)
+* ------------------------------------- 
+*           No.     Date            Author                  Desc       		  Sprint
+*           -----   ----------      --------------------    ---------------   -------------
+* @version   1.0    2018-06-02      Ernani Junior (EJ)      Page created       8     
+*************************************************************************************************************
+-->
+<apex:page standardController="Account" showHeader="true" sidebar="false"  extensions="DashboardAccountController">  
+    
+    <apex:form >
+        
+        <div style="center">              
+            <apex:repeat value="{!listaItensDashboard}" var="report" id="theRepeat">
+                <div style="float:left;width:33%;">   
+                    <analytics:reportChart reportId="{!report.CustomReportId}" rendered="{!cnpjConta <> null && cnpjConta <> 0}" filter="[{column:'WorkOrder.CNPJ__c',operator:'equals',value:'{!cnpjConta}'}]" 
+                                           				size="tiny" />
+                    <analytics:reportChart reportId="{!report.CustomReportId}" rendered="{!cpfConta <> null && cpfConta <> 0}" filter="[{column:'WorkOrder.CPF__c',operator:'equals',value:'{!cpfConta}'}]" 
+                                           				size="tiny" />
+
+                </div>
+            </apex:repeat>            
+            
+        </div>
+        
+        <p>Clique <a href='/{!idConta}'>aqui</a> para voltar para a Conta.</p>
+        
+    </apex:form>
+    
+</apex:page>

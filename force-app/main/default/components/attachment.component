@@ -1,0 +1,473 @@
+<apex:component access="global" controller="attachmentController"
+                                extensions="termoPDFController" >
+  <head>
+    <style> 
+      body { font-family: 'Arial Unicode MS'; }
+      .termName { font: bold 20px; color: red; }
+      .fieldLabel { font: bold 10px; color: blue; }
+      .fieldData { font: bold 10px; color: black; }
+      .companyData { font: bold 8px;}
+      .accountData { font: bold 11px; }
+    </style>
+  </head>
+  
+  <apex:attribute name="pageControl"
+                  type="PageControllerBase"
+                  assignTo="{!pageController}"
+                  description="The controller for the page." />
+
+  <apex:attribute name="account"
+                  type="Account"
+                  assignTo="{!accountOpp}"
+                  description="The AccountId of current Opportunity" />
+  
+  <h1>Termo de Adesão</h1>
+  
+<!----------------------------- Bloco com Preview do Termo Base ------------------------------>
+  <apex:pageBlock id="TERMO_BASE" rendered="false">
+   
+    <body>
+      <!--<apex:panelGrid columns="2" width="100%" border="1" style="border-collapse:collapse;">
+        <apex:outputText value="TERMO DE AQUISIÇÃO DOS SERVIÇOS (PEDIDO ADICIONAL)" styleClass="termName" dir="LTR"/>
+        <apex:image id="Logo_Sascar" url="{!URLFOR($Resource.TermoDeAquisicao, '/Images/LogoSascar.png')}" />
+      </apex:panelGrid>-->
+      
+      <apex:dataTable value="{!Account}" var="acc" border="1" style="border-collapse:collapse;" width="100%">
+        <apex:column value="{!$Label.TermoBase_Cabecalho}" styleClass="termName" style="font: bold 20px; color: red;" width="80%" />
+        <apex:column width="20%"><apex:image id="LogoSascar" url="{!URLFOR($Resource.TermoDeAquisicao, '/Images/LogoSascar.png')}" /></apex:column>
+        
+        <apex:column colspan="2" style="background-color:#DBE5E6;border:none;" breakBefore="true" value="{!$Label.Termo_DadosEmpresa_Nome}" styleClass="companyData" width="100%" />
+        <apex:column colspan="2" style="background-color:#DBE5E6;border:none;" breakBefore="true" value="{!$Label.Termo_DadosEmpresa_CNPJ}" styleClass="companyData" width="100%" />
+        <apex:column colspan="2" style="background-color:#DBE5E6;border:none;" breakBefore="true" value="{!$Label.Termo_DadosEmpresa_Endereco}" styleClass="companyData" width="100%" />
+      </apex:dataTable>
+      
+      <apex:panelGrid id="Dados_Oportunidade_Linha1" columns="2" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Executivo de Vendas:
+          <apex:outputText label="Executivo de Vendas" value="{!Opportunity_ExecutivoDeVendas}" styleClass="fieldData" />
+        </apex:outputLabel>
+        <apex:outputLabel styleClass="fieldLabel" >Tipo Negociação:
+          <apex:outputText label="LOCAÇÃO" value="LOCAÇÃO" dir="" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      <apex:panelGrid id="Dados_Oportunidade_Linha2" columns="1" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Televendas:
+          <apex:outputText label="Televendas"  value="{!Opportunity_Televendas}" styleClass="fieldData" />
+        </apex:outputLabel>
+      </apex:panelGrid>
+      <apex:panelGrid id="Dados_Oportunidade_Linha3" columns="2" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Indicador:
+          <apex:outputText label="Indicador" value="{!Opportunity_Indicador}" styleClass="fieldData" />
+        </apex:outputLabel>
+        <apex:outputLabel styleClass="fieldLabel" >Tipo Contrato:
+          <apex:outputText label="Tipo Contrato" value="{!Opportunity_TipoContrato}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      
+      <center>
+        <apex:panelGrid columns="1" width="100%" border="1" style="border-collapse:collapse;" >
+          <apex:outputPanel styleClass="companyData" dir="RTL" >
+            Este termo, após assinado, tem validade de comprovante oficial de compra de serviços junto à Contratada. O valor mensal do contrato, em regra, é composto pela locação do equipamento e a taxa de serviços mensal. Os planos de monitoramento dos produtos satelitais têm preços diferentes de acordo com o pacote de mensagens utilizado.
+          </apex:outputPanel>
+        </apex:panelGrid>
+      </center>
+      
+      <br></br>
+      <center>
+        <apex:panelGrid id="Dados_Cliente_Topo" columns="1" width="100%" border="1" style="border-collapse:collapse;" bgcolor="DBE5E6">
+          <apex:outputPanel styleClass="companyData" dir="RTL" >
+            DADOS DO CLIENTE (pessoa jurídica ou física)
+          </apex:outputPanel>
+        </apex:panelGrid>
+      </center>
+      
+      <apex:panelGrid id="Dados_Cliente" columns="1" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel value="Razão Social / Nome:" styleClass="fieldLabel" >
+         <apex:outputText label="Razão Social / Nome" value="{!Account_RazaoSocial}" styleClass="fieldData"/>
+        </apex:outputLabel>
+        <apex:outputLabel styleClass="fieldLabel" >CNPJ / CPF:
+          <apex:outputText label="CNPJ / CPF" value="{!Account_CNPJ_CPF}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      
+      <br></br>
+      <apex:panelGrid id="Dados_Fixos" columns="2" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData" bgcolor="DBE5E6">
+        <apex:outputLabel styleClass="fieldLabel" >MULTA RESCISÓRIA: 
+          <apex:outputText label="MULTA RESCISÓRIA: 25%" value="{!$Label.TermoBase_MultaRescisoria}" styleClass="fieldData"/>
+        </apex:outputLabel>
+        <apex:outputLabel styleClass="fieldLabel" >ADESIVO: 
+          <apex:outputText label="ADESIVO:" value="{!adesivo}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      
+      <apex:panelGrid columns="1" width="100%">
+        <apex:outputLabel styleClass="fieldLabel" >Data de Criação: 
+          <apex:outputText title="Data de Criação" value="{!DataDeCriacao}"></apex:outputText>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      
+      <apex:pageBlock >
+        <apex:pageBlockTable summary="TESTE" title="CONDIÇÕES COMERCIAIS" value="{!lstQli}" var="item" border="1" align="center" styleClass="tableData" cellpadding="10">
+          <apex:column headerValue="Produto" value="{!item.Product2.Name}" />
+          <apex:column headerValue="Família de Produtos" value="{!item.Fam_lia_de_produtos__c}" />
+          <apex:column headerValue="Prazo do Contrato" value="{!item.Prazo_do_contrato__c}" />
+          <apex:column headerValue="Quantidade" value="{!item.Quantity}" />
+          <apex:column headerValue="Valor Mensal" value="{!item.Valor_mensal__c}" />
+          <apex:column headerValue="Valor Unitário Mensal" value="{!item.Valor_unit_rio_mensal__c}" />
+        </apex:pageBlockTable>
+      </apex:pageBlock>
+      
+      <br></br>
+      <center>
+        <apex:panelGrid columns="1" width="100%" border="1" style="border-collapse:collapse;" >
+          <apex:outputPanel styleClass="companyData" dir="RTL" >
+            TAXAS DE SERVIÇOS
+          </apex:outputPanel>
+        </apex:panelGrid>
+        <apex:panelGrid columns="1" width="100%" border="1" style="border-collapse:collapse;" bgcolor="DBE5E6">
+          <apex:outputPanel styleClass="companyData" dir="RTL" >
+            LISTA DE PREÇO DE SERVIÇOS TARIFADOS - VERIFICAR TABELA VIGENTE NO MOMENTO DA SOLICITAÇÃO DE SERVIÇOS EXTRAS
+          </apex:outputPanel>
+        </apex:panelGrid>
+        <apex:panelGrid columns="1" width="100%" border="1" style="border-collapse:collapse;" >
+           <apex:outputPanel styleClass="companyData" dir="RTL" >
+            Por meio deste Termo de Aquisição dos Serviços, o CLIENTE adere a todos os termos e condições do Contrato de Prestação de Serviços e Outras Avenças (“Contrato”), registrado em 18/07/2011, no Ofício de Registro de Títulos e Documentos de Barueri – São Paulo sob o nº 610.724, disponível para consulta no site www.sascar.com.br. O CLIENTE declara, para todos os fins e efeitos, conhecer os termos do Contrato, estando de acordo com todas as suas condições, especialmente aquelas que tratam das condições de prestação dos serviços, da utilização dos equipamentos, das obrigações e responsabilidade das partes, das penalidades, dentre todas as outras previstas no Contrato.  
+          </apex:outputPanel>
+        </apex:panelGrid>
+      </center>
+      
+      <apex:panelGrid columns="3" width="100%" border="0">
+        <apex:outputPanel styleClass="companyData" dir="RTL">
+          (*) Observando o disposto na Cláusula Terceira do Contrato
+          <br>CLIENTE</br>
+          <br>Representado por:</br>
+          <br></br>Nome:___________________________________________
+          <br></br>RG:_____________________________________________
+          <br></br>CPF:____________________________________________
+          <br></br>
+          <br></br>Nome:___________________________________________
+          <br></br>RG:_____________________________________________
+          <br></br>CPF:____________________________________________
+        </apex:outputPanel>
+        <apex:outputPanel styleClass="companyData" dir="RTL" >
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>Local:______________________________________________________
+        </apex:outputPanel>
+        <apex:outputPanel styleClass="companyData" dir="RTL" >
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>___________________________________________________
+          <br></br>Assinatura do Cliente
+          <br></br>
+          <br></br>Data:______________________________________________
+        </apex:outputPanel>
+      </apex:panelGrid>
+        
+    </body>
+  </apex:pageblock>
+  
+<!----------------------------- Bloco com Preview do Termo Novo ------------------------------>
+  
+  <apex:pageBlock id="TERMO_NOVO" rendered="TipoTermo">
+    <body>
+      <apex:panelGrid columns="8" width="100%" border="0">
+        <apex:outputPanel styleClass="termName" dir="LTR">
+        TERMO DE AQUISIÇÃO DOS SERVIÇOS
+        <br>DADOS CADASTRAIS</br>
+        </apex:outputPanel>
+        <apex:image id="Logo_Sascar" value="https://c.na9.content.force.com/servlet/servlet.ImageServer?id=015E0000003jB32&oid=00DE0000000e2ho&lastMod=1397588998000" width="180" height="40" />
+      </apex:panelGrid>
+      
+      <apex:panelGrid columns="1" width="100%" border="1" style="border-collapse:collapse;"  bgcolor="DBE5E6">
+        <apex:outputPanel styleClass="companyData" >
+         SASCAR TECNOLOGIA E SEGURANÇA AUTOMOTIVA S.A.
+         <br>CNPJ/MF: 03.112.879/0001-51</br>
+         <br>Av. Marte, 537, Centro de Apoio I, Alphaville - Santana de Parnaíba-SP</br>
+        </apex:outputPanel>
+      </apex:panelGrid>
+      
+      <apex:panelGrid id="Dados_Oportunidade_Linha1" columns="1" width="100%" border="1" style="border-collapse:collapse;"  styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Executivo de Vendas:
+          <apex:outputText label="Executivo de Vendas" value="{!Opportunity_ExecutivoDeVendas}" styleClass="fieldData" />
+        </apex:outputLabel>
+      </apex:panelGrid>
+      <apex:panelGrid id="Dados_Oportunidade_Linha2" columns="1" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Televendas:
+          <apex:outputText label="Televendas"  value="{!Opportunity_Televendas}" styleClass="fieldData" />
+        </apex:outputLabel>
+      </apex:panelGrid>
+      <apex:panelGrid id="Dados_Oportunidade_Linha3" columns="2" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Indicador:
+          <apex:outputText label="Indicador" value="{!Opportunity_Indicador}" styleClass="fieldData" />
+        </apex:outputLabel>
+      </apex:panelGrid>
+      <apex:panelGrid id="Dados_Oportunidade_Linha4" columns="2" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Tipo Negociação:
+          <apex:outputText label="LOCAÇÃO" value="LOCAÇÃO" dir="" styleClass="fieldData"/>
+        </apex:outputLabel>
+        <apex:outputLabel styleClass="fieldLabel" >Tipo Contrato:
+          <apex:outputText label="Tipo Contrato" value="{!Opportunity_TipoContrato}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      
+      <center>
+        <apex:panelGrid id="Dados_Cliente_Topo" columns="1" width="100%" border="1" style="border-collapse:collapse;" bgcolor="DBE5E6">
+          <apex:outputPanel styleClass="companyData" dir="RTL" >
+            DADOS DO CLIENTE (pessoa jurídica ou física)
+          </apex:outputPanel>
+        </apex:panelGrid>
+      </center>
+      
+      <apex:panelGrid id="Dados_Cliente_Linha1" columns="1" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Razão Social / Nome:
+          <apex:outputText label="Razão Social / Nome:" value="{!Account_RazaoSocial}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      <apex:panelGrid id="Dados_Cliente_Linha2" columns="2" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Cidade / UF:
+          <apex:outputText label="Cidade / UF:" value="{!Account_Cidade_UF}" styleClass="fieldData"/>
+        </apex:outputLabel><apex:outputLabel styleClass="fieldLabel" >CNPJ / CPF:
+          <apex:outputText label="CNPJ / CPF:" value="{!Account_CNPJ_CPF}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      <apex:panelGrid id="Dados_Cliente_Linha3" columns="2" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >CEP:
+          <apex:outputText label="CEP:" value="{!Account_CEP}" styleClass="fieldData"/>
+        </apex:outputLabel>
+        <apex:outputLabel styleClass="fieldLabel" >Inscrição Estadual / Munic:
+          <apex:outputText label="Inscrição Estadual / Munic:" value="{!Account_InscricaoEstadual}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      <apex:panelGrid id="Dados_Cliente_Linha4" columns="1" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Endereço/Bairro:
+          <apex:outputText label="Endereço/Bairro:" value="{!Account_Endereco_Bairro}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      <apex:panelGrid id="Dados_Cliente_Linha5" columns="2" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Complemento:
+          <apex:outputText label="Complemento:" value="{!Account_Complemento}" styleClass="fieldData"/>
+        </apex:outputLabel>
+        <apex:outputLabel styleClass="fieldLabel" >Telefone:
+          <apex:outputText label="Telefone:" value="{!Account_Telefone}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      <apex:panelGrid id="Dados_Cliente_Linha6" columns="2" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Email:
+          <apex:outputText label="Email:" value="{!Contact_Email}" styleClass="fieldData"/>
+        </apex:outputLabel>
+        <apex:outputLabel styleClass="fieldLabel" >Email NFE:
+          <apex:outputText label="Email NFE:" value="{!Contact_EmailNFE}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      
+      <center>
+        <apex:panelGrid id="Dados_Cliente_Exclusivo_PF" columns="1" width="100%" border="1" style="border-collapse:collapse;" bgcolor="DBE5E6">
+          <apex:outputPanel styleClass="companyData" dir="RTL" >
+            EXCLUSIVO PARA PESSOA FÍSICA
+          </apex:outputPanel>
+        </apex:panelGrid>
+      </center>
+      <apex:panelGrid id="Dados_Cliente_Linha7" columns="2" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Nome do pai:
+          <apex:outputText label="Nome do pai:" value="{!Account_NomeDoPai}" styleClass="fieldData"/>
+        </apex:outputLabel>
+        <apex:outputLabel styleClass="fieldLabel" >RG:
+          <apex:outputText label="RG:" value="{!Account_RG}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      <apex:panelGrid id="Dados_Cliente_Linha8" columns="2" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Nome do mãe:
+          <apex:outputText label="Nome do mãe:" value="{!Account_NomeDaMae}" styleClass="fieldData"/>
+        </apex:outputLabel>
+        <apex:outputLabel styleClass="fieldLabel" >Data Nascimento:
+          <apex:outputText label="Data Nascimento:" value="{!Account_DtNascimento}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      <center>
+        <apex:panelGrid id="Dados_Cliente_Pessoas_Autorizadas" columns="1" width="100%" border="1" style="border-collapse:collapse;" bgcolor="DBE5E6">
+          <apex:outputPanel styleClass="companyData" dir="RTL" >
+            PESSOAS AUTORIZADAS
+          </apex:outputPanel>
+        </apex:panelGrid>
+        <apex:panelGrid columns="1" width="100%" border="1">
+          <apex:outputPanel styleClass="companyData" dir="RTL" >
+            As pessoas autorizadas pelo Cliente podem solicitar atendimento via Central de Atendimento ao Cliente, realizar alterações cadastrais e responder por assuntos relacionados à cobrança. Deve-se indicar, no mínimo, duas pessoas autorizadas.
+          </apex:outputPanel>
+        </apex:panelGrid>
+      </center>
+      <apex:panelGrid id="Dados_Contato_Linha1" columns="1" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Nome Completo:
+          <apex:outputText label="Nome Completo:" value="{!Contact1_NomeCompleto}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      <apex:panelGrid id="Dados_Contato_Linha2" columns="2" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >RG:
+          <apex:outputText label="RG:" value="{!Contact1_RG}" styleClass="fieldData"/>
+        </apex:outputLabel>
+        <apex:outputLabel styleClass="fieldLabel" >CPF:
+          <apex:outputText label="CPF:" value="{!Contact1_CPF}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      <apex:panelGrid id="Dados_Contato_Linha3" columns="2" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Telefone1:
+          <apex:outputText label="Telefone1:" value="{!Contact1_Tel1}" styleClass="fieldData"/>
+        </apex:outputLabel>
+        <apex:outputLabel styleClass="fieldLabel" >Telefone3:
+          <apex:outputText label="Telefone3:" value="{!Contact1_Tel3}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      <apex:panelGrid id="Dados_Contato_Linha4" columns="2" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Telefone2:
+          <apex:outputText label="Telefone2:" value="{!Contact1_Tel1}" styleClass="fieldData"/>
+        </apex:outputLabel>
+        <apex:outputLabel styleClass="fieldLabel" >Telefone4:
+          <apex:outputText label="Telefone4:" value="{!Contact1_Tel3}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+            <apex:panelGrid id="Dados_Contato_Linha5" columns="1" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Nome Completo:
+          <apex:outputText label="Nome Completo:" value="{!Contact2_NomeCompleto}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      <apex:panelGrid id="Dados_Contato_Linha6" columns="2" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >RG:
+          <apex:outputText label="RG:" value="{!Contact2_RG}" styleClass="fieldData"/>
+        </apex:outputLabel>
+        <apex:outputLabel styleClass="fieldLabel" >CPF:
+          <apex:outputText label="CPF:" value="{!Contact2_CPF}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      <apex:panelGrid id="Dados_Contato_Linha7" columns="2" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Telefone1:
+          <apex:outputText label="Telefone1:" value="{!Contact2_Tel1}" styleClass="fieldData"/>
+        </apex:outputLabel>
+        <apex:outputLabel styleClass="fieldLabel" >Telefone3:
+          <apex:outputText label="Telefone3:" value="{!Contact2_Tel3}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      <apex:panelGrid id="Dados_Contato_Linha8" columns="2" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Telefone2:
+          <apex:outputText label="Telefone2:" value="{!Contact2_Tel1}" styleClass="fieldData"/>
+        </apex:outputLabel>
+        <apex:outputLabel styleClass="fieldLabel" >Telefone4:
+          <apex:outputText label="Telefone4:" value="{!Contact2_Tel3}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      
+      <center>
+        <apex:panelGrid columns="1" width="100%" border="1" style="border-collapse:collapse;" bgcolor="DBE5E6">
+          <apex:outputPanel styleClass="companyData" dir="RTL" >
+            CONTATOS EM CASO DE EMERGÊNCIA
+          </apex:outputPanel>
+          <apex:outputPanel styleClass="companyData" dir="RTL" >
+            Os contatos de emergência devem ser instruídos pelo Cliente com procedimentos de segurança em caso de suspeitas de roubo ou furto, ao contatar o condutor do veículo. Deve-se indicar, no mínimo, duas pessoas como contato de emergência. 
+          </apex:outputPanel>
+        </apex:panelGrid>
+      </center>
+            <apex:panelGrid id="Dados_Contato_Emergencia_Linha1" columns="1" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Nome Completo:
+          <apex:outputText label="Nome Completo:" value="{!SOS_Contact1_NomeCompleto}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      <apex:panelGrid id="Dados_Contato_Emergencia_Linha2" columns="2" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Telefone1:
+          <apex:outputText label="Telefone1:" value="{!SOS_Contact1_Tel1}" styleClass="fieldData"/>
+        </apex:outputLabel>
+        <apex:outputLabel styleClass="fieldLabel" >Telefone3:
+          <apex:outputText label="Telefone3:" value="{!SOS_Contact1_Tel3}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      <apex:panelGrid id="Dados_Contato_Emergencia_Linha3" columns="2" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Telefone2:
+          <apex:outputText label="Telefone2:" value="{!SOS_Contact1_Tel1}" styleClass="fieldData"/>
+        </apex:outputLabel>
+        <apex:outputLabel styleClass="fieldLabel" >Telefone4:
+          <apex:outputText label="Telefone4:" value="{!SOS_Contact1_Tel3}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+            <apex:panelGrid id="Dados_Contato_Emergencia_Linha4" columns="1" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Nome Completo:
+          <apex:outputText label="Nome Completo:" value="{!SOS_Contact2_NomeCompleto}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      <apex:panelGrid id="Dados_Contato_Emergencia_Linha5" columns="2" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Telefone1:
+          <apex:outputText label="Telefone1:" value="{!SOS_Contact2_Tel1}" styleClass="fieldData"/>
+        </apex:outputLabel>
+        <apex:outputLabel styleClass="fieldLabel" >Telefone3:
+          <apex:outputText label="Telefone3:" value="{!SOS_Contact2_Tel3}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      <apex:panelGrid id="Dados_Contato_Emergencia_Linha6" columns="2" width="100%" border="1" style="border-collapse:collapse;" styleClass="accountData">
+        <apex:outputLabel styleClass="fieldLabel" >Telefone2:
+          <apex:outputText label="Telefone2:" value="{!SOS_Contact2_Tel1}" styleClass="fieldData"/>
+        </apex:outputLabel>
+        <apex:outputLabel styleClass="fieldLabel" >Telefone4:
+          <apex:outputText label="Telefone4:" value="{!SOS_Contact2_Tel3}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      
+      <center>
+        <apex:panelGrid columns="1" width="100%" border="1" style="border-collapse:collapse;" bgcolor="DBE5E6">
+          <apex:outputPanel styleClass="companyData" dir="RTL" >
+            FORMA DE PAGAMENTO
+          </apex:outputPanel>
+          <apex:outputPanel styleClass="companyData" dir="RTL" >
+            O titular do Contrato deverá ser o mesmo para qualquer que seja a modalidade de pagamento.
+          </apex:outputPanel>
+        </apex:panelGrid>
+      </center>
+        <apex:panelGrid columns="2" id="theGrid" border="1" style="border-collapse:collapse;" width="100%" bgcolor="DBE5E6">
+          <apex:outputPanel styleClass="companyData" >
+            PREENCHER AS INFORMAÇÕES<br></br> DE ACORDO COM A FORMA DE <br></br>PAGAMENTO 
+          </apex:outputPanel>
+          <apex:panelGroup id="formapgto">
+            <apex:outputText value="BOLETO BANCÁRIO" id="Boleto" styleClass="companyData" /><br></br>
+              <apex:outputLabel styleClass="companyData">SELECIONE A DATA DE PAGAMENTO:<apex:outputText label="SELECIONE A DATA DE PAGAMENTO:" value="{!Boleto_DiaDeVencimento}"/><br></br></apex:outputLabel>
+            <apex:outputText value="DÉBITO AUTOMÁTICO" id="Debito" styleClass="companyData"/><br></br>
+              <apex:outputLabel styleClass="companyData">BANCO:<apex:outputText label="BANCO:" value="SELECIONE O BANCO"/><br></br></apex:outputLabel>
+              <apex:outputLabel styleClass="companyData">AGÊNCIA:<apex:outputText label="AGÊNCIA:" value="{!Debito_Agencia}"/><br></br></apex:outputLabel>
+              <apex:outputLabel styleClass="companyData">CONTA CORRENTE:<apex:outputText label="CONTA CORRENTE:" value="{!Debito_Conta}"/><br></br></apex:outputLabel>
+              <apex:outputLabel styleClass="companyData">SELECIONE A DATA DO DÉBITO:<apex:outputText label="SELECIONE A DATA DO DÉBITO:" value="{!Debito_DiaDeVencimento}"/><br></br></apex:outputLabel>
+            <apex:outputText value="CARTÃO DE CRÉDITO" id="Credito" styleClass="companyData"/><br></br>
+              <apex:outputLabel styleClass="companyData">SELECIONE O CARTÃO DE CRÉDITO:<apex:outputText label="SELECIONE O CARTÃO DE CRÉDITO:" value="SELECIONE O CARTÃO"/><br></br></apex:outputLabel>
+              <apex:outputLabel styleClass="companyData">NOME(COMO NO CARTÃO):<apex:outputText label="NOME(COMO NO CARTÃO):" value="{!Credito_NomeCartao}"/><br></br></apex:outputLabel>
+              <apex:outputLabel styleClass="companyData">Nº DO CARTÃO:<apex:outputText label="Nº DO CARTÃO:" value="{!Credito_NumeroCartao}"/><br></br></apex:outputLabel>
+              <apex:outputLabel styleClass="companyData">VALIDADE DO CARTÃO:<apex:outputText label="VALIDADE DO CARTÃO:" value="{!Credito_VencimentoCartao}"/><br></br></apex:outputLabel>
+          </apex:panelGroup>
+        </apex:panelGrid>
+        
+      <center>
+        <apex:panelGrid columns="1" width="100%" border="0">
+          <apex:outputPanel styleClass="companyData" dir="RTL" >
+            O Cliente se compromete a apresentar toda a documentação solicitada pela Sascar a fim de comprovar os dados abaixo informados e os poderes representativos dos signatários.
+          </apex:outputPanel>
+        </apex:panelGrid>
+      </center>
+      
+      <apex:panelGrid columns="1" width="100%" border="1" style="border-collapse:collapse;">
+        <apex:outputPanel styleClass="companyData" dir="RTL" >
+          Por meio deste Termo de Aquisição dos Serviços, o CLIENTE adere a todos os termos e condições do Contrato de Prestação de Serviços e Outras Avenças (“Contrato”), registrado em 18/07/2011, no Ofício de Registro de Títulos e Documentos de Barueri - São Paulo sob o nº 610.724, disponível para consulta no site www.sascar.com.br. O CLIENTE declara, para todos os fins e efeitos, conhecer os termos do Contrato, estando de acordo com todas as suas condições , especialmente aquelas que tratam das condições de prestação dos serviços, da utilização dos equipamentos, das obrigações e responsabilidade das partes, das penalidades, dentre todas as outras previstas no Contrato.
+        </apex:outputPanel>
+      </apex:panelGrid>
+      
+      <apex:panelGrid columns="1" width="100%" border="0">
+        <apex:outputPanel styleClass="companyData">
+          <br></br>___________________________________________________
+          <br></br>Assinatura do Cliente
+          <br></br>Data:______________________________________________
+        </apex:outputPanel>
+      </apex:panelGrid>
+    </body>
+  </apex:pageBlock>
+    
+</apex:component>

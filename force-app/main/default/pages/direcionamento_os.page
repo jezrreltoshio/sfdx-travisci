@@ -1,0 +1,3788 @@
+<apex:page showHeader="true" standardStylesheets="false" sidebar="true" applyBodyTag="false" docType="html-5.0">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="pt-br">
+        <head>
+            <meta http-equiv="content-type" content="application/vnd.ms-excel; charset=UTF-8"/>
+
+            <title>Direcionamento de OS</title>
+
+            <!-- Importar SLDS -->
+            <apex:slds />
+
+            <apex:includeScript value="/soap/ajax/40.0/connection.js"/>
+            <apex:includeScript value="/soap/ajax/40.0/apex.js"/>
+            <apex:includeScript value="{!URLFOR($Resource.direcionamento_os, 'js/jquery.js')}"/>
+            <apex:includeScript value="{!URLFOR($Resource.direcionamento_os, 'js/bootstrap-datepicker.min.js')}"/>
+            <apex:includeScript value="{!URLFOR($Resource.direcionamento_os, 'locales/bootstrap-datepicker.pt-BR.min.js')}"/>
+            <apex:includeScript value="{!URLFOR($Resource.fselect, 'fSelect.js')}"/>
+            <apex:includeScript value="{!URLFOR($Resource.direcionamento_os, 'js/jquery.mask.js')}"/>
+
+            <apex:stylesheet value="{!URLFOR($Resource.direcionamento_os, 'css/bootstrap-datepicker.standalone.min.css')}"/>
+            <apex:stylesheet value="{!URLFOR($Resource.direcionamento_os, 'css/loading.css')}"/>
+            <apex:stylesheet value="{!URLFOR($Resource.fselect, 'fSelect.css')}"/>
+
+            <style>
+                .linhaVermelha {
+                    background-color: #FF9999;
+                }
+
+                .linhaAmarela {
+                    background-color: #FDFF65;
+                }
+
+                .linhaLaranja {
+                    background-color: #FFC000;
+                }
+
+                .linhaCinza {
+                    background-color: #D9D9D9;
+                }
+
+                table {
+                    border-collapse: collapse;
+                }
+
+                .inner-container {
+                    height: 100%;
+                    overflow: hidden;
+                }
+
+                .table-header {
+                    position: relative;
+                }
+
+                .table-body {
+                    overflow: auto;
+                }
+
+                .col1 {
+                    min-width: 80px;
+                    width: 80px;
+                }
+
+                .col2 {
+                    min-width: 400px;
+                    width: 400px;
+                }
+
+                .col3 {
+                    min-width: 55px;
+                    width: 55px;
+                }
+
+                .col4 {
+                    min-width: 130px;
+                    width: 130px;
+                }
+
+                .col5 {
+                    min-width: 110px;
+                    width: 110px;
+                }
+
+                .col6 {
+                    min-width: 160px;
+                    width: 160px;
+                }
+
+                .col7 {
+                    min-width: 160px;
+                    width: 160px;
+                }
+
+                .col8 {
+                    min-width: 160px;
+                    width: 160px;
+                }
+
+                .col9 {
+                    min-width: 160px;
+                    width: 160px;
+                }
+
+                .col10 {
+                    min-width: 150px;
+                    width: 150px;
+                }
+
+                .header-cell {
+                    padding: 2px 2px 2px 8px !important;
+                    font-weight: 400;
+                }
+
+                .body-cell {
+                    padding: 2px 2px 2px 8px !important;
+                }
+
+                #headTabela {
+                    font-size: 11px;
+                    line-height: 1.25;
+                    color: rgb(112, 110, 107);
+                    text-transform: uppercase;
+                    letter-spacing: .0625rem;
+                }
+
+                .table-header tr {
+                    height: 30px;
+                }
+
+                #headertable {
+                    border-collapse: separate;
+                    background: rgb(243, 242, 242);
+                }
+
+                #bodytable {
+                    border-collapse: separate;
+                }
+
+                #bodytable td,
+                th {
+                    border-bottom: 0.5px solid rgb(221, 219, 218);
+                }
+
+                tr:hover {
+                    background-color: #f5f5f5 !important;
+                }
+
+                tr:nth-child(even) {
+                    background-color: #f2f2f2;
+                }
+
+                #divTabelaOrdemServico {
+                    font-family: 'Salesforce Sans', Arial, sans-serif;
+                }
+
+                .divCheckbox {
+                    padding-top: 25px;
+                    padding-left: 25px;
+                }
+
+                .tamanhoBotaoUsuarios, .fs-dropdown, .fs-default, .fs-open, .fs-wrap {
+                    width: 100%;
+                }
+
+                .linhaGrid {
+                    margin-bottom: 5px;
+                }
+
+                .linhaCheckBox {
+                    text-align: center;
+                }
+
+                .div-desativada {
+                    pointer-events: none;
+                    opacity: 0.4;
+                }
+
+                #mensagemSucesso {
+                    visibility: hidden;
+                    min-width: 320px;
+                    margin-left: -125px;
+                    background-color: #04844B;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 2px;
+                    padding: 16px;
+                    position: fixed;
+                    z-index: 1;
+                    left: 50%;
+                    right: 50%;
+                    top: 30px;
+                    font-size: 17px;
+                }
+
+                #mensagemSucesso.show {
+                    visibility: visible;
+                    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+                    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+                }
+
+                #mensagemAlerta {
+                    visibility: hidden;
+                    min-width: 320px;
+                    margin-left: -125px;
+                    background-color: #FFF3CD;
+                    color: #856404;
+                    text-align: center;
+                    border-radius: 2px;
+                    padding: 16px;
+                    position: fixed;
+                    z-index: 1;
+                    left: 50%;
+                    right: 50%;
+                    top: 30px;
+                    font-size: 17px;
+                }
+
+                #mensagemAlerta.show {
+                    visibility: visible;
+                    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+                    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+                }
+
+                #mensagemErro {
+                    visibility: hidden;
+                    min-width: 320px;
+                    margin-left: -125px;
+                    background-color: #C23934;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 2px;
+                    padding: 16px;
+                    position: fixed;
+                    z-index: 1;
+                    left: 50%;
+                    right: 50%;
+                    top: 30px;
+                    font-size: 17px;
+                }
+
+                #mensagemErro.show {
+                    visibility: visible;
+                    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+                    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+                }
+
+                @-webkit-keyframes fadein {
+                    from {
+                        top: 0;
+                        opacity: 0;
+                    }
+                    to {
+                        top: 30px;
+                        opacity: 1;
+                    }
+                }
+
+                @keyframes fadein {
+                    from {
+                        top: 0;
+                        opacity: 0;
+                    }
+                    to {
+                        top: 30px;
+                        opacity: 1;
+                    }
+                }
+
+                @-webkit-keyframes fadeout {
+                    from {
+                        top: 30px;
+                        opacity: 1;
+                    }
+                    to {
+                        top: 0;
+                        opacity: 0;
+                    }
+                }
+
+                @keyframes fadeout {
+                    from {
+                        top: 30px;
+                        opacity: 1;
+                    }
+                    to {
+                        top: 0;
+                        opacity: 0;
+                    }
+                }
+            </style>
+        </head>
+
+        <div id="divLoading" class="divLoading">
+            <div class="loading"/>    
+        </div>
+
+        <body>
+
+            <!-- INICIO ESCOPO SLDS -->
+            <div id="divBody" class="slds-scope" style="display:none;">
+
+                <div id="mensagemSucesso"></div>
+                <div id="mensagemAlerta"></div>
+                <div id="mensagemErro"></div>
+
+                <!-- MODAL QUANDO EXCLUIR -->
+                <div id="div-modal-excluir" style="display:none;">
+                <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                    <div class="slds-modal__container">
+                    <header class="slds-modal__header">
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Remover configuração</h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <p>Tem certeza que deseja remover a configuração?</p>
+                    </div>
+                    <footer class="slds-modal__footer">
+                        <button class="slds-button slds-button_neutral" onclick="$('#div-modal-excluir').hide();">Não</button>
+                        <button id="botao-sim-remover-configuração" class="slds-button slds-button_brand">Sim</button>
+                    </footer>
+                    </div>
+                </section>
+                <div class="slds-backdrop slds-backdrop_open"></div>
+                </div>
+                <!-- // MODAL QUANDO EXCLUIR -->
+
+                <!-- CABEÇALHO -->
+                <div class="slds-page-header" role="banner">
+
+                    <!-- INICIO GRID -->
+                    <div class="slds-grid">
+
+                        <div class="slds-col slds-has-flexi-truncate">
+                
+                            <h1 class="slds-page-header__title slds-truncate" title="">
+                                Direcionamento de OS
+                            </h1>
+
+                            <br/>
+            
+                            <!-- INICIO GRID SELECIONAR CONFIGURAÇÃO -->
+                            <div class="slds-grid slds-gutters linhaGrid">
+
+                                <!-- SELECT CONFIGURAÇÃO -->
+                                <div class="slds-col slds-size_3-of-12">
+                                    <div class="slds-form-element">
+                                        <label class="slds-form-element__label" for="select-configuracao">Configuração</label>
+                                        <div class="slds-form-element__control">
+                                            <div id="div-select-configuracao" class="slds-select_container">
+                                                <select class="slds-select select-configuracao" name="select-configuracao" id="select-configuracao" tabindex="1">
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //FIM SELECT CONFIGURAÇÃO -->
+                        
+                                <!-- INICIO NOME CONFIGURAÇÃO -->
+                                <div class="slds-col slds-size_3-of-12">
+                                    <div class="slds-form-element">
+                                        <label class="slds-form-element__label" for="campoNomeConfiguracao">Nome</label>
+                                        <div class="slds-form-element__control">
+                                            <input type="text" id="campoNomeConfiguracao" class="slds-input" placeholder="Nome da configuração" disabled="true" tabindex="2"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- // FIM INICIO NOME CONFIGURAÇÃO -->
+
+                                
+                                <!-- INICIO BOTÃO SALVAR -->
+                                <div class="slds-col slds-size_2-of-12">
+                                    <label class="slds-form-element__label"></label>
+                                    <div class="slds-form-element__control">
+                                        <div class="slds-col slds-no-flex slds-grid slds-align-top" style="float: right;">
+                                            <button id="botaoSalvarConfiguracao" class="slds-button slds-button--neutral" style="margin-top:2px; display:none;" disabled="true" tabindex="3">Salvar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- // FIM INICIO BOTÃO SALVAR -->
+                                
+                                <!-- INICIO BOTÃO REMOVER -->
+                                <div class="slds-col slds-size_2-of-12">
+                                    <label class="slds-form-element__label"></label>
+                                    <div class="slds-form-element__control">
+                                        <div class="slds-col slds-no-flex slds-grid slds-align-top">
+                                            <button id="botaoRemoverConfiguracao" class="slds-button slds-button--neutral" style="margin-top:2px; display:none;" disabled="true" tabindex="4">Remover</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- // FIM INICIO BOTÃO REMOVER -->
+
+
+                            </div>
+                            <!-- // FIM INICIO GRID SELECIONAR CONFIGURAÇÃO -->
+                            <br/>
+                            <!-- INICIO GRID FILTROS -->
+
+                                <!-- LINHA 1 -->
+                                <div class="slds-grid slds-gutters linhaGrid">
+
+                                    <!-- SELECT TIPO -->
+                                    <div class="slds-col slds-size_3-of-12">
+                                        <div class="slds-form-element">
+                                            <label class="slds-form-element__label" for="select-tipo">Tipo</label>
+                                            <div class="slds-form-element__control">
+                                                <div class="div-select-tipo">
+                                                    <select class="" id="select-tipo" disabled="true" tabindex="5" multiple="multiple">
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //FIM SELECT TIPO -->
+
+                                    <!-- INICIO NOME CLIENTE -->
+                                    <div class="slds-col slds-size_3-of-12">
+                                        <div class="slds-form-element">
+                                            <label class="slds-form-element__label" for="campoNomeCliente">Cliente</label>
+                                            <div class="slds-form-element__control">
+                                                <input type="text" id="campoNomeCliente" class="slds-input" placeholder="Nome do cliente" disabled="true" tabindex="8"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- // FIM INICIO NOME CLIENTE -->
+
+                                    <!-- INICIO NUMERO DA OS -->
+                                    <div class="slds-col slds-size_3-of-12">
+                                        <div class="slds-form-element">
+                                            <label class="slds-form-element__label" for="campoNumeroOS">OS</label>
+                                            <div class="slds-form-element__control">
+                                                <input type="text" maxlength="16" id="campoNumeroOS" class="slds-input" placeholder="Número da OS" disabled="true" tabindex="9" onkeydown="return somenteNumeros(this);" onblur="return somenteNumeros(this);"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- // FIM INICIO NUMERO DA OS -->
+
+                                    <!-- AGING -->
+                                    <div class="slds-col slds-size_3-of-12">
+                                        <div class="slds-form-element slds-grid slds-gutters">
+                                            <div class="slds-col slds-size_6-of-12">
+                                                <label class="slds-form-element__label" for="campoDeAging">Aging</label>
+                                                <div class="slds-form-element__control">
+                                                    <input type="text" maxlength="6" id="campoDeAging" class="slds-input" placeholder="De" disabled="true" tabindex="10" onkeydown="return somenteNumeros(this);" onblur="return somenteNumeros(this);"/>
+                                                </div>
+                                            </div>
+
+                                            <div class="slds-col slds-size_6-of-12">
+                                                <label class="slds-form-element__label" for="campoAteAging" style="margin-bottom: 16px;"></label>
+                                                <div class="slds-form-element__control">
+                                                    <input type="text" maxlength="6" id="campoAteAging" class="slds-input" placeholder="Até" disabled="true" tabindex="11" onkeydown="return somenteNumeros(this);" onblur="return somenteNumeros(this);"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //FIM AGING -->
+
+                                </div>
+                                <!-- //FIM LINHA 1 -->
+
+                                <!-- LINHA 2 -->
+                                <div class="slds-grid slds-gutters linhaGrid">
+            
+                                    <!-- SELECT ITEM -->
+                                    <div class="slds-col slds-size_3-of-12">
+                                        <div class="slds-form-element">
+                                            <label class="slds-form-element__label" for="select-item">Item</label>
+                                            <div class="slds-form-element__control">
+                                                <div class="div-select-item">
+                                                    <select class="" id="select-item" disabled="true" tabindex="6" multiple="multiple">
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //FIM SELECT ITEM -->
+
+                                    <!-- SELECT STATUS OS -->
+                                    <div class="slds-col slds-size_3-of-12">
+                                        <div class="slds-form-element">
+                                            <label class="slds-form-element__label" for="select-status-os">Status da OS</label>
+                                            <div class="slds-form-element__control">
+                                                <div class="div-select-status-os">
+                                                    <select class="" id="select-status-os" disabled="true" tabindex="12" multiple="multiple">
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //FIM STATUS OS -->
+
+                                    <!-- SELECT ULTIMA AÇÃO DA OS -->
+                                    <div class="slds-col slds-size_3-of-12">
+                                        <div class="slds-form-element">
+                                            <label class="slds-form-element__label" for="select-ultima-acao-os">Última Ação da OS</label>
+                                            <div class="slds-form-element__control">
+                                                <div class="div-select-ultima-acao-os">
+                                                    <select class="" id="select-ultima-acao-os" disabled="true" tabindex="13" multiple="multiple">
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //FIM SELECT ULTIMA AÇÃO DA OS -->
+                                    
+                                    <!-- SELECT NOSHOW -->
+                                    <div class="slds-col slds-size_3-of-12">
+                                        <div class="slds-form-element">
+                                            <label class="slds-form-element__label" for="select-motivo-noshow">Motivo de noshow</label>
+                                            <div class="slds-form-element__control">
+                                                <div class="div-select-motivo-noshow">
+                                                    <select class="" id="select-motivo-noshow" disabled="true" tabindex="14" multiple="multiple">
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //FIM SELECT NOSHOW -->
+                                    
+                                </div>
+                                <!-- //FIM LINHA 2 -->
+            
+                                <!-- LINHA 3 -->
+                                <div class="slds-grid slds-gutters linhaGrid">
+
+                                    <!-- SELECT MOTIVO -->
+                                    <div class="slds-col slds-size_3-of-12">
+                                        <div class="slds-form-element">
+                                            <label class="slds-form-element__label" for="select-motivo">Motivo</label>
+                                            <div class="slds-form-element__control">
+                                                <div id="div-select-motivo" class="div-select-motivo">
+                                                    <select class="" id="select-motivo" disabled="true" tabindex="7" multiple="multiple">
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //FIM SELECT MOTIVO -->
+
+                                    <!-- SELECT STATUS TIPO DE CONTRATO -->
+                                    <div class="slds-col slds-size_3-of-12">
+                                        <div class="slds-form-element">
+                                            <label class="slds-form-element__label" for="select-tipo-contrato">Tipo de Contrato</label>
+                                            <div class="slds-form-element__control">
+                                                <div class="div-select-tipo-contrato">
+                                                    <select class="" id="select-tipo-contrato" disabled="true" tabindex="15" multiple="multiple">
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //FIM SELECT TIPO DE CONTRATO -->
+
+                                    <!-- SELECT CLASSE -->
+                                    <div class="slds-col slds-size_3-of-12">
+                                        <div class="slds-form-element">
+                                            <label class="slds-form-element__label" for="select-classe">Classe</label>
+                                            <div class="slds-form-element__control">
+                                                <div id="div-select-classe" class="div-select-classe">
+                                                    <select class="" id="select-classe" disabled="true" tabindex="16" multiple="multiple">
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //FIM SELECT CLASSE -->
+
+                                    <!-- SELECT REGIÃO COMERCIAL -->
+                                    <div class="slds-col slds-size_3-of-12">
+                                        <div class="slds-form-element">
+                                            <label class="slds-form-element__label" for="select-regiao-comercial">Região Comercial</label>
+                                            <div class="slds-form-element__control">
+                                                <div id="div-select-regiao-comercial" class="div-select-regiao-comercial">
+                                                    <select class="" id="select-regiao-comercial" disabled="true" tabindex="17" multiple="multiple">
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //FIM SELECT REGIÃO COMERCIAL -->
+
+                                </div>
+                                <!-- //FIM LINHA 3 -->
+
+                                <!-- LINHA 4 -->
+                                <div class="slds-grid slds-gutters linhaGrid">
+        
+                                    <!-- SELECT CLIENTE KA -->
+                                    <div class="slds-col slds-size_3-of-12">
+                                        <div class="slds-form-element">
+                                            <label class="slds-form-element__label" for="select-cliente-ka">Cliente KA</label>
+                                            <div class="slds-form-element__control">
+                                            <div id="div-select-cliente-ka" class="slds-select_container">
+                                                <select class="slds-select select-cliente-ka" name="select-cliente-ka" id="select-cliente-ka" tabindex="18">
+                                                </select>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <!-- //FIM SELECT CLIENTE KA -->
+
+                                    <!-- INPUT QTDD OS -->
+                                    <div class="slds-col slds-size_3-of-12">
+                                        <div class="slds-form-element">
+                                            <label class="slds-form-element__label" for="campoQtddOS">Quantidade OS</label>
+                                            <div class="slds-form-element__control">
+                                                <input type="text" maxlength="12" id="campoQtddOS" class="slds-input" tabindex="19" placeholder="Informe a quantidade" onkeydown="return somenteNumeros(this);" onblur="return somenteNumeros(this);" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //FIM INPUT QTDD OS -->
+
+                                    <!-- SELECT TIPO OS MACRO -->
+                                    <div class="slds-col slds-size_3-of-12">
+                                        <div class="slds-form-element">
+                                            <label class="slds-form-element__label" for="select-tipo-os-macro">Tipo de OS Macro</label>
+                                            <div class="slds-form-element__control">
+                                                <div id="div-select-tipo-os-macro" class="div-select-tipo-os-macro">
+                                                    <select class="" id="select-tipo-os-macro" disabled="true" tabindex="20" multiple="multiple">
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //FIM SELECT TIPO OS MACRO -->
+
+                                    <!-- SELECT TIPO OS MICRO -->
+                                    <div class="slds-col slds-size_3-of-12">
+                                        <div class="slds-form-element">
+                                            <label class="slds-form-element__label" for="select-tipo-os-micro">Tipo de OS Micro</label>
+                                            <div class="slds-form-element__control">
+                                                <div id="div-select-tipo-os-micro" class="div-select-tipo-os-micro">
+                                                    <select class="" id="select-tipo-os-micro" disabled="true" tabindex="21" multiple="multiple">
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //FIM SELECT TIPO OS MICRO -->
+
+                                </div>
+                                <!-- //FIM LINHA 4 -->
+
+                            
+                                <!-- LINHA 5 -->
+                                <div class="slds-grid slds-gutters linhaGrid">
+
+                                    <!-- CHECKBOX OS SEM AGENDAMENTO AGING 85 DIAS -->
+                                    <div class="slds-col slds-size_3-of-12 divCheckbox">
+                                        <div class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <label class="slds-item_label"></label>
+                                                <span class="slds-checkbox">
+                                                    <input type="checkbox" name="options" id="checkbox-os-sem-agendamento-aging-85" value="on" disabled="true" tabindex="22"/>
+                                                    <label class="slds-checkbox__label" for="checkbox-os-sem-agendamento-aging-85">
+                                                        <span class="slds-checkbox_faux"></span>
+                                                        <span class="slds-form-element__label">OS sem agendamento aging 85 dias</span>
+                                                    </label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //FIM CHECKBOX OS SEM AGENDAMENTO AGING 85 DIAS -->
+
+                                    <!-- CHECKBOX OS COM AGENDAMENTO -->
+                                    <div class="slds-col slds-size_2-of-12 divCheckbox">
+                                        <div class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <label class="slds-item_label"></label>
+                                                <span class="slds-checkbox">
+                                                    <input type="checkbox" name="options" id="checkbox-os-com-agendamento" value="on" disabled="true" tabindex="23"/>
+                                                    <label class="slds-checkbox__label" for="checkbox-os-com-agendamento">
+                                                        <span class="slds-checkbox_faux"></span>
+                                                        <span class="slds-form-element__label">OS com agendamento</span>
+                                                    </label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //FIM CHECKBOX OS COM AGENDAMENTO -->
+
+                                    <!-- CHECKBOX OS SEM DIRECIONAMENTO -->
+                                    <div class="slds-col slds-size_2-of-12 divCheckbox">
+                                        <div class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <label class="slds-item_label"></label>
+                                                <span class="slds-checkbox">
+                                                    <input type="checkbox" name="options" id="checkbox-os-sem-direcionamento" value="on" disabled="true" tabindex="24"/>
+                                                    <label class="slds-checkbox__label" for="checkbox-os-sem-direcionamento">
+                                                        <span class="slds-checkbox_faux"></span>
+                                                        <span class="slds-form-element__label">OS sem direcionamento</span>
+                                                    </label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //FIM CHECKBOX OS SEM DIRECIONAMENTO -->
+
+                                    <!-- CHECKBOX OS SEM SERVIÇO -->
+                                    <div class="slds-col slds-size_2-of-12 divCheckbox">
+                                        <div class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <label class="slds-item_label"></label>
+                                                <span class="slds-checkbox">
+                                                    <input type="checkbox" name="options" id="checkbox-os-sem-servico" value="on" disabled="true" tabindex="25"/>
+                                                    <label class="slds-checkbox__label" for="checkbox-os-sem-servico">
+                                                        <span class="slds-checkbox_faux"></span>
+                                                        <span class="slds-form-element__label">OS sem serviço</span>
+                                                    </label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //FIM CHECKBOX OS SEM SERVIÇO -->
+
+                                    <!-- CHECKBOX CONTATO FORA DA FAIXA -->
+                                    <div class="slds-col slds-size_2-of-12 divCheckbox">
+                                        <div class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <label class="slds-item_label"></label>
+                                                <span class="slds-checkbox">
+                                                    <input type="checkbox" name="options" id="checkbox-contato-fora-faixa" value="on" disabled="true" tabindex="26"/>
+                                                    <label class="slds-checkbox__label" for="checkbox-contato-fora-faixa">
+                                                        <span class="slds-checkbox_faux"></span>
+                                                        <span class="slds-form-element__label">Contato fora da faixa</span>
+                                                    </label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //FIM CHECKBOX CONTATO FORA DA FAIXA -->
+
+                                </div>
+                                <!-- //FIM LINHA 5 -->
+                            
+
+                                <br/>
+
+                                <div class="slds-grid slds-gutters linhaGrid slds-float_right">
+                                    <div style="margin-right: 10px;">
+                                        <button id="botaoPesquisar" class="slds-button slds-button--neutral" disabled="true" tabindex="27">Pesquisar</button>    
+                                    </div>
+                                </div>
+
+                            <!-- // FIM INICIO GRID FILTROS -->
+
+                        </div>
+                    </div>
+                    <!-- // FIM INICIO GRID -->
+
+                </div>
+                <!-- //FIM CABEÇALHO -->
+
+                <br/>
+
+                <!-- INICIO CORPO -->
+                <div>
+                    <div>
+
+                        <div id="div-lista-os" class="slds-panel__section" style="display:none;">
+                            <h3 class="slds-text-heading--small slds-m-bottom--medium">Ordens de Serviço
+                                <div class="slds-float_right">
+                                    <div style="margin-right: 10px;">
+                                        <button id="botaoExportarExcel" class="slds-button slds-button--neutral" tabindex="28" onclick="tableToExcel('tabelaExportar', 'Lista de OS'); return false;">Exportar para Excel</button> 
+                                    </div>
+                                </div>
+                            </h3>
+                            <br/>
+                                                
+                            <!-- Div Tabela Ordem de Serviço -->
+                                    
+                            <div id="divTabelaOrdemServico" style="">                            
+
+                                <div class="inner-container" style="height:500px;">
+                                    <div class="table-header">
+                                        <table id="headertable" class="tabelaOS" >
+                                            <thead id="headTabela">
+                                                <tr>
+                                                    <th class="header-cell col1">OS</th>
+                                                    <th class="header-cell col2">Cliente</th>
+                                                    <th class="header-cell col3">Aging</th>
+                                                    <th class="header-cell col4">Regional</th>
+                                                    <th class="header-cell col5">Qtd contato</th>
+                                                    <th class="header-cell col6">Última Ação</th>
+                                                    <th class="header-cell col7">Data última ação</th>
+                                                    <th class="header-cell col8">Data agendamento</th>
+                                                    <th class="header-cell col9">Data direcionamento</th>
+                                                    <th class="header-cell col10">Atribuído a</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                    <div class="table-body" style="height:10px;">
+                                        <table id="bodytable">
+                                            <tbody id="tbodyTabela">
+                                            </tbody>
+                                        </table>
+                                    </div>                
+                                </div>
+
+                            </div>
+                            <!-- // FIM Div Tabela Ordem de Serviço -->
+
+                            <!-- TABELA PARA EXPORTAR PARA EXCEL -->
+                            <div id="divTabelaExportar" style="display:none;">
+                            </div>
+                            <!-- // FIM TABELA PARA EXPORTAR PARA EXCEL -->
+
+                        </div>
+                        <!-- // FIM div slds-panel__section -->
+
+                        <!-- INICIO PAINEL DE USUARIOS -->
+                        <div id="div-usuarios" class="slds-panel__section" style="display:none;">
+                            <h3 class="slds-text-heading--small slds-m-bottom--medium">Usuários</h3>
+
+                            <!-- INICIO GRID USUARIO -->
+                            <div class="slds-grid slds-gutters">
+
+                                <!-- //Inicio col Tabela usuários disponiveis -->
+                                <div class="slds-col slds-size_5-of-12" >
+            
+                                    <div id="divTabelaUsuariosDisponiveis">
+                                        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                                            <thead>
+                                                <tr class="slds-text-title_caps">
+                                                    <th scope="col">
+                                                        <div class="slds-truncate" title="Selecionar todos">
+                                                            <div class="slds-form-element">
+                                                                <div class="slds-form-element__control">
+                                                                    <label class="s .slds-item_label"></label>
+                                                                    <span class="slds-checkbox">
+                                                                        <input type="checkbox" name="checkbox-selecionar-todos-usuarios-disponiveis" id="checkbox-selecionar-todos-usuarios-disponiveis" value="on"/>
+                                                                        <label class="slds-checkbox__label" for="checkbox-selecionar-todos-usuarios-disponiveis">
+                                                                            <span class="slds-checkbox_faux"></span>
+                                                                            <span class="slds-form-element__label"></span>
+                                                                        </label>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th scope="col">
+                                                        <div class="slds-truncate" title="Usuários disponives">Usuários disponives</div>
+                                                    </th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="tbodyTabelaDisponiveis">
+                                            </tbody>
+                                        </table>
+                                        <!-- //FIM Tabela usuários disponiveis -->
+                                    </div>
+                                    <!-- //FIM div Tabela usuários disponiveis -->
+                                </div>
+                                <!-- //FIM col Tabela usuários disponiveis -->
+            
+                                <!-- //Inicio col botões usuarios -->
+                                <div class="slds-col slds-size_2-of-12" >
+
+                                    <div class="slds-form-element" style="vertical-align: middle; margin-top: 30px;">
+                                        <div class="slds-col slds-no-flex slds-grid slds-align-top">
+                                            <button id="botaoAdicionarTodosUsuario" class="slds-button slds-button--neutral tamanhoBotaoUsuarios" tabindex="9999">Adicionar Todos &gt;&gt;</button>
+                                        </div>
+                                        <div class="slds-col slds-no-flex slds-grid slds-align-top" style="margin-top: 5px;">
+                                            <button id="botaoAdicionarUsuario" class="slds-button slds-button--neutral tamanhoBotaoUsuarios" tabindex="9999">Adicionar &gt;&gt;</button>
+                                        </div> <br/>
+                                        <div class="slds-col slds-no-flex slds-grid slds-align-top">
+                                            <button id="botaoRemoverUsuario" class="slds-button slds-button--neutral tamanhoBotaoUsuarios" tabindex="9999">&lt;&lt; Remover</button>
+                                        </div>
+                                        <div class="slds-col slds-no-flex slds-grid slds-align-top" style="margin-top: 5px;">
+                                            <button id="botaoRemoverTodosUsuario" class="slds-button slds-button--neutral tamanhoBotaoUsuarios" tabindex="9999">&lt;&lt; Remover Todos</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- //FIM col botões usuarios -->
+                                    
+
+                                <!-- //Inicio col Tabela usuários selecionados -->
+                                <div class="slds-col slds-size_5-of-12" >
+            
+                                    <div id="divTabelaUsuariosSelecionados">
+                                        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                                            <thead>
+                                                <tr class="slds-text-title_caps">
+                                                    <th scope="col">
+                                                        <div class="slds-truncate" title="Selecionar todos">
+                                                            <div class="slds-form-element">
+                                                                <div class="slds-form-element__control">
+                                                                    <label class="s .slds-item_label"></label>
+                                                                    <span class="slds-checkbox">
+                                                                        <input type="checkbox" name="checkbox-selecionar-todos-usuarios-selecionados" id="checkbox-selecionar-todos-usuarios-selecionados" value="on"/>
+                                                                        <label class="slds-checkbox__label" for="checkbox-selecionar-todos-usuarios-selecionados">
+                                                                            <span class="slds-checkbox_faux"></span>
+                                                                            <span class="slds-form-element__label"></span>
+                                                                        </label>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th scope="col">
+                                                        <div class="slds-truncate" title="Usuários Selecionados">Usuários Selecionados</div>
+                                                    </th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="tbodyTabelaSelecionados">
+                                            </tbody>
+                                        </table>
+                                        <!-- //FIM Tabela usuários selecionados -->
+                                    </div>
+                                    <!-- //FIM div Tabela usuários selecionados -->
+                                </div>
+                                <!-- //FIM col Tabela usuários selecionados -->
+            
+                            </div>
+                            <!-- //FIM INICIO GRID USUARIO -->
+
+                        </div>
+                        <!-- //FIM INICIO PAINEL DE USUARIOS -->
+
+                    </div>
+                    <!-- // Fim div class="slds-form--stacked slds-grow slds-scrollable--y" -->
+
+                </div>
+                <!-- // FIM INICIO CORPO -->
+
+            </div>
+            <!-- // FIM INICIO ESCOPO SLDS -->
+
+        </body>
+
+        <script>
+
+            var temErroClasse = false;
+            var temErroUltimaAcaoOS = false;
+            
+            $(document).ready(function () {
+                setTableBody();
+                $(window).resize(setTableBody);
+                $(".table-body").scroll(function () {
+                    $(".table-header").offset({ left: -1*this.scrollLeft });
+                    $(".table-header").css('padding-left','24px');
+                });
+
+                $("#select-ultima-acao-os").on('change', function(e) {
+                    if (Object.keys($(this).val()).length > 100) {
+                        // $('option[value="' + $(this).val().toString().split(',')[99] + '"]').prop('selected', false);
+                        mostrarMensagemErro('É possivel selecionar até 100 valores');
+                        temErroUltimaAcaoOS = true;
+                        $('.div-select-ultima-acao-os .fs-label').attr('style', 'color: red;');
+                    } else{
+                        temErroUltimaAcaoOS = false;
+                        $('.div-select-ultima-acao-os .fs-label').removeAttr('style');
+                    }
+                });
+
+                $("#select-classe").on('change', function(e) {
+                    if (Object.keys($(this).val()).length > 100) {
+                        // $('option[value="' + $(this).val().toString().split(',')[99] + '"]').prop('selected', false);
+                        mostrarMensagemErro('É possivel selecionar até 100 valores');
+                        temErroClasse = true;
+                        $('.div-select-classe .fs-label').attr('style', 'color: red;');
+                    } else {
+                        temErroClasse = false;
+                        $('.div-select-classe .fs-label').removeAttr('style');
+                    }
+                });
+            });
+
+            function setTableBody() {
+                $(".table-body").height($(".inner-container").height());
+                $(".inner-container").height($(".table-body").height() + 30);
+            }
+
+            $(document).keypress(function(e) {
+                if(e.which == 13) $('#botaoPesquisar').click();
+            });
+
+            var tableToExcel = (function() {
+                var uri = 'data:application/vnd.ms-excel;base64,'
+                    , template = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><meta http-equiv="content-type" content="application/vnd.ms-excel; charset=UTF-8"><head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>{worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>{table}</table></body></html>'
+                    , base64 = function(s) { return window.btoa(unescape(encodeURIComponent(s))) }
+                    , format = function(s, c) { return s.replace(/{(\w+)}/g, function(m, p) { return c[p]; }) }
+                return function(table, name) {
+                    if (!table.nodeType) table = document.getElementById(table)
+                    var ctx = {worksheet: name || 'Worksheet', table: table.innerHTML}
+                    window.open(uri + base64(format(template, ctx)),
+                        '_blank'
+                    );
+                    $('#botaoExportarExcel').blur();
+                }
+            })()
+
+            $("#divBody").hide();
+            $("#divLoading").show();
+
+            $(document).ready(function(){
+
+                try {
+                    
+                    var statusCriarDirecionamento = verificarStatusCriarDirecionamento();
+                    logVal('statusCriarDirecionamento: '+statusCriarDirecionamento);
+
+                    var statusCarregarListaDirecionamentoOS = carregarListaDirecionamentoOS();
+                    logVal('carregarListaDirecionamentoOS: '+statusCarregarListaDirecionamentoOS);
+
+                    var statusCarregarListaUltimaAcaoOS = carregarListaUltimaAcaoOS();
+                    logVal('carregarListaUltimaAcaoOS: '+statusCarregarListaUltimaAcaoOS);
+
+                    var statusCarregarListaStatusOS = carregarListaStatusOS();
+                    logVal('carregarListaStatusOS: '+statusCarregarListaStatusOS);
+
+                    var statusCarregarListaTipoOS = carregarListaTipoOS();
+                    logVal('carregarListaTipoOS: '+statusCarregarListaTipoOS);
+
+                    var statusCarregarListaTipoContrato = carregarListaTipoContrato();
+                    logVal('carregarListaTipoContrato: '+statusCarregarListaTipoContrato);
+
+                    var statusCarregarListaClasse = carregarListaClasse();
+                    logVal('carregarListaClasse: '+statusCarregarListaClasse);
+
+                    var statusCarregarListaItem = carregarListaItem();
+                    logVal('carregarListaItem: '+statusCarregarListaItem);
+
+                    var statusCarregarListaMotivoNoshowOS = carregarListaMotivoNoshowOS();
+                    logVal('carregarListaMotivoNoshowOS: '+statusCarregarListaMotivoNoshowOS);
+
+                    var statusCarregarListaClienteKA = carregarListaClienteKA();
+                    logVal('carregarListaClienteKA: '+statusCarregarListaClienteKA);
+
+                    var statusCarregarListaRegiaoComercial = carregarListaRegiaoComercial();
+                    logVal('carregarListaRegiaoComercial: '+statusCarregarListaRegiaoComercial);
+
+                    var statusCarregarListaTipoOSMacro = carregarListaTipoOSMacro();
+                    logVal('carregarListaTipoOSMacro: '+statusCarregarListaTipoOSMacro);
+
+                    var statusCarregarListaTipoOSMicro = carregarListaTipoOSMicro();
+                    logVal('carregarListaTipoOSMicro: '+statusCarregarListaTipoOSMicro);
+
+                    // Quando select de "item" é alterado
+                    $('#select-item').on('change', function() {
+
+                        var valorInputItem = $("#select-item").val();
+                        var valorInputTipo = $("#select-tipo").val();
+
+                        if(valorInputItem != null && valorInputItem != '' &&
+                        valorInputTipo != null && valorInputTipo != ''){
+
+                            setTimeout(function(){
+                                carregarListaMotivo(valorInputTipo, valorInputItem);
+                            }, 500);
+                            
+                        } else {
+
+                            $(".div-select-motivo .fs-label").text("Selecione");
+                            $(".div-select-motivo").addClass("div-desativada");
+                        }
+
+                    }); // Fim Quando select de "item" é alterado
+
+
+                    // Quando select de "tipo" é alterado
+                    $('#select-tipo').on('change', function() {
+
+                        var valorInputItem = $("#select-item").val();
+                        var valorInputTipo = $("#select-tipo").val();
+
+                        if(valorInputItem != null && valorInputItem != '' &&
+                        valorInputTipo != null && valorInputTipo != ''){
+
+                            carregarListaMotivo(valorInputTipo, valorInputItem);
+                        } else {
+
+                            $(".div-select-motivo .fs-label").text("Selecione");
+                            $(".div-select-motivo").addClass("div-desativada");
+                        }
+
+                    }); // Fim Quando select de "tipo" é alterado
+
+
+                    // Metodo de click do botão que salva a configuração
+                    $("#botaoSalvarConfiguracao").click(function() {
+
+                        if(temErroClasse || temErroUltimaAcaoOS){
+                            if(temErroUltimaAcaoOS) mostrarMensagemErro('Diminua a quantidade de valores selecionados no campo "Última Ação da OS"');
+                            if(temErroClasse) mostrarMensagemErro('Diminua a quantidade de valores selecionados no campo "Classe"');
+                        }else{
+                            $("#campoNomeConfiguracao").css("border-color", "#dddbda");
+
+                            var agingValido = validarAging();
+
+                            var nomeConfiguracao = $("#campoNomeConfiguracao").val().trim();
+
+                            if( nomeConfiguracao == null ||
+                                nomeConfiguracao == ''){
+
+                                $("#campoNomeConfiguracao").css("border-color", "#C23934");
+                                mostrarMensagemErro("Obrigatório informar o nome da configuração");
+
+                            } else {
+
+                                if(agingValido == true){
+
+                                    $("#divLoading").show();
+                                    setTimeout(function(){
+                                        salvarConfiguracao();
+                                    }, 500);
+                                    
+                                }
+                            }
+                        }
+                    });
+
+
+                    // Metodo de click do botão que remove a configuração
+                    $("#botaoRemoverConfiguracao").click(function() {
+                        $("#campoNomeConfiguracao").css("border-color", "#dddbda");
+                        $("#div-modal-excluir").show();
+                    });
+
+
+                    // Metodo de click do botão que remove a configuração
+                    $("#botao-sim-remover-configuração").click(function() {
+
+                        var idConfiguracao = $("#select-configuracao").val();
+                        logVal('idConfiguracao: '+idConfiguracao);
+
+                        if(idConfiguracao != null && idConfiguracao != '' && idConfiguracao != 'Novo'){
+
+                            $("#divLoading").show();
+                            
+                            try {
+
+                                sforce.connection.sessionId = "{!$Api.Session_ID}";
+                                var retorno = sforce.apex.execute("Direcionamento_OS","removerConfiguracao",
+                                                                {idConfiguracao:idConfiguracao.toString()});
+
+                                if(retorno == true || retorno == 'true'){
+
+                                    $("#divLoading").hide();
+                                    $("#div-modal-excluir").hide();
+                                    mostrarMensagemSucesso("Configuração removida com sucesso!");
+
+                                    var statusCarregarListaDirecionamentoOS = carregarListaDirecionamentoOS();
+                                    logVal('carregarListaDirecionamentoOS: '+statusCarregarListaDirecionamentoOS);
+
+                                    desabilitarTodosCampos();
+                                    
+                                } else {
+
+                                    $("#div-modal-excluir").hide();
+                                    mostrarMensagemErro("Erro ao remover a configuração!");
+                                    logVal('ERRO: '+ err.message);
+                                    $("#divLoading").hide();
+                                }
+
+                            } catch(err) {
+
+                                $("#div-modal-excluir").hide();
+                                mostrarMensagemErro("Erro ao remover a configuração!");
+                                logVal('ERRO: '+ err.message);
+                                $("#divLoading").hide();
+                            }
+                            
+                        } else {
+                            mostrarMensagemErro('Não é possível remover a configuração selecionada');    
+                        }
+                    });
+
+
+                    // Metodo de click do botão pesquisar as OS
+                    $("#botaoPesquisar").click(function() {
+
+                        var agingValido = validarAging();
+
+                        if(agingValido == true){
+
+                            $("#div-lista-os").hide();
+                            $("#divLoading").show();
+                            setTimeout(function(){
+                                pesquisarOS();
+                                carregarListaUsuarios();
+                            }, 500);
+
+                        }
+
+                    });
+
+
+                    // Quando selecionado a opção de selecionar todos os usuários disponiveis
+                    $("#checkbox-selecionar-todos-usuarios-disponiveis").click(function(){
+                        $('input:checkbox[name=checkbox-usuario-disponivel]').not(this).prop('checked', this.checked);
+                    });
+
+                    
+                    // Quando selecionado a opção de selecionar todos os usuários selecionados
+                    $("#checkbox-selecionar-todos-usuarios-selecionados").click(function(){
+                        $('input:checkbox[name=checkbox-usuario-selecionado]').not(this).prop('checked', this.checked);
+                    });
+
+
+                    // Método do botão de adicionar os usuários disponiveis
+                    $("#botaoAdicionarUsuario").click(function() {
+
+                        var usuariosDisponiveis = new Array();
+
+                        $('input[name="checkbox-usuario-disponivel"]').each(function() {
+                            var usuarioDisponivel = new Object();
+                            usuarioDisponivel.Id = $(this).data('id');
+                            usuarioDisponivel.Name = $(this).data('name');
+                            logVal('usuarioDisponivel: '+usuarioDisponivel);
+                            usuariosDisponiveis.push(usuarioDisponivel);
+                        });
+
+                        logVal('usuariosDisponiveis: '+JSON.stringify(usuariosDisponiveis));
+
+                        var usuariosDisponiveisSelecionados = new Array();
+
+                        $('input[name="checkbox-usuario-disponivel"]:checked').each(function() {
+                            var usuarioDisponivel = new Object();
+                            usuarioDisponivel.Id = $(this).data('id');
+                            usuarioDisponivel.Name = $(this).data('name');
+                            logVal('usuarioDisponivel: '+usuarioDisponivel);
+                            usuariosDisponiveisSelecionados.push(usuarioDisponivel);
+                        });
+
+                        logVal('usuariosDisponiveisSelecionados: '+JSON.stringify(usuariosDisponiveisSelecionados));
+
+                        var usuariosDisponiveisFinal = new Array();
+
+                        $.each(usuariosDisponiveis, function (i, item) {
+
+                            if(!JSON.stringify(usuariosDisponiveisSelecionados).includes(item.Id)){
+                                usuariosDisponiveisFinal.push(item);
+                            }
+                        });
+
+                        logVal('usuariosDisponiveisFinal: '+JSON.stringify(usuariosDisponiveisFinal));
+
+                        var usuariosSelecionadosFinal = new Array();
+                        
+                        $('input[name="checkbox-usuario-selecionado"]').each(function() {
+                            var usuarioDisponivel = new Object();
+                            usuarioDisponivel.Id = $(this).data('id');
+                            usuarioDisponivel.Name = $(this).data('name');
+                            logVal('usuarioDisponivel: '+usuarioDisponivel);
+                            usuariosSelecionadosFinal.push(usuarioDisponivel);
+                        });
+
+                        $.each(usuariosDisponiveisSelecionados, function (i, item) {
+                            if(!JSON.stringify(usuariosSelecionadosFinal).includes(item.Id)){
+                                usuariosSelecionadosFinal.push(item);
+                            }
+                        });
+            
+                        usuariosDisponiveisFinal.sort(function(a, b){
+                                                        if(a.Name < b.Name) return -1;
+                                                        if(a.Name > b.Name) return 1;
+                                                        return 0;
+                                                    });
+                        usuariosSelecionadosFinal.sort(function(a, b){
+                                                        if(a.Name < b.Name) return -1;
+                                                        if(a.Name > b.Name) return 1;
+                                                        return 0;
+                                                    });
+
+                        montarTabelaUsuariosDisponiveis(usuariosDisponiveisFinal);
+                        montarTabelaUsuariosSelecionados(usuariosSelecionadosFinal);
+
+                    });
+
+
+                    // Método do botão de adicionar todos os usuários disponiveis
+                    $("#botaoAdicionarTodosUsuario").click(function() {
+
+                        var usuariosDisponiveis = new Array();
+
+                        $('input[name="checkbox-usuario-disponivel"]').each(function() {
+                            var usuarioDisponivel = new Object();
+                            usuarioDisponivel.Id = $(this).data('id');
+                            usuarioDisponivel.Name = $(this).data('name');
+                            logVal('usuarioDisponivel: '+usuarioDisponivel);
+                            usuariosDisponiveis.push(usuarioDisponivel);
+                        });
+
+
+                        var usuariosSelecionadosFinal = new Array();
+
+                        $('input[name="checkbox-usuario-selecionado"]').each(function() {
+                            var usuarioDisponivel = new Object();
+                            usuarioDisponivel.Id = $(this).data('id');
+                            usuarioDisponivel.Name = $(this).data('name');
+                            usuariosSelecionadosFinal.push(usuarioDisponivel);
+                        });
+
+                        $.each(usuariosDisponiveis, function (i, item) {
+                            if(!JSON.stringify(usuariosSelecionadosFinal).includes(item.Id)){
+                                usuariosSelecionadosFinal.push(item);
+                            }
+                        });
+
+                        usuariosSelecionadosFinal.sort(function(a, b){
+                                                        if(a.Name < b.Name) return -1;
+                                                        if(a.Name > b.Name) return 1;
+                                                        return 0;
+                                                    });
+
+                        montarTabelaUsuariosDisponiveis('');
+                        montarTabelaUsuariosSelecionados(usuariosSelecionadosFinal);
+
+                    });
+
+
+                    // Método do botão de remover os usuários selecionados
+                    $("#botaoRemoverUsuario").click(function() {
+
+                        var usuariosSelecionados = new Array();
+
+                        $('input[name="checkbox-usuario-selecionado"]').each(function() {
+                            var usuarioSelecionado = new Object();
+                            usuarioSelecionado.Id = $(this).data('id');
+                            usuarioSelecionado.Name = $(this).data('name');
+                            usuariosSelecionados.push(usuarioSelecionado);
+                        });
+
+                        logVal('usuariosSelecionados: '+JSON.stringify(usuariosSelecionados));
+
+                        var usuariosSelecionadosSelecionados = new Array();
+
+                        $('input[name="checkbox-usuario-selecionado"]:checked').each(function() {
+                            var usuarioSelecionado = new Object();
+                            usuarioSelecionado.Id = $(this).data('id');
+                            usuarioSelecionado.Name = $(this).data('name');
+                            usuariosSelecionadosSelecionados.push(usuarioSelecionado);
+                        });
+
+                        var usuariosSelecionadosFinal = new Array();
+
+                        $.each(usuariosSelecionados, function (i, item) {
+                            if(!JSON.stringify(usuariosSelecionadosSelecionados).includes(item.Id)){
+                                usuariosSelecionadosFinal.push(item);
+                            }
+                        });
+
+                        var usuariosDisponiveisFinal = new Array();
+
+                        $('input[name="checkbox-usuario-disponivel"]').each(function() {
+                            var usuarioDisponivel = new Object();
+                            usuarioDisponivel.Id = $(this).data('id');
+                            usuarioDisponivel.Name = $(this).data('name');
+                            usuariosDisponiveisFinal.push(usuarioDisponivel);
+                        });
+
+                        $.each(usuariosSelecionadosSelecionados, function (i, item) {
+                            if(!JSON.stringify(usuariosDisponiveisFinal).includes(item.Id)){
+                                usuariosDisponiveisFinal.push(item);
+                            }
+                        });
+
+                        usuariosDisponiveisFinal.sort(function(a, b){
+                                                        if(a.Name < b.Name) return -1;
+                                                        if(a.Name > b.Name) return 1;
+                                                        return 0;
+                                });
+                        usuariosSelecionadosFinal.sort(function(a, b){
+                                                        if(a.Name < b.Name) return -1;
+                                                        if(a.Name > b.Name) return 1;
+                                                        return 0;
+                                                    });
+
+                        montarTabelaUsuariosDisponiveis(usuariosDisponiveisFinal);
+                        montarTabelaUsuariosSelecionados(usuariosSelecionadosFinal);
+
+                    });
+
+
+                    // Método do botão de adicionar todos os usuários selecionados
+                    $("#botaoRemoverTodosUsuario").click(function() {
+
+                        var usuariosDisponiveisFinal = new Array();
+
+                        $('input[name="checkbox-usuario-selecionado"]').each(function() {
+                            var usuarioSelecionado = new Object();
+                            usuarioSelecionado.Id = $(this).data('id');
+                            usuarioSelecionado.Name = $(this).data('name');
+                            usuariosDisponiveisFinal.push(usuarioSelecionado);
+                        });
+
+                        var usuariosDisponiveis = new Array();
+
+                        $('input[name="checkbox-usuario-disponivel"]').each(function() {
+                            var usuarioDisponivel = new Object();
+                            usuarioDisponivel.Id = $(this).data('id');
+                            usuarioDisponivel.Name = $(this).data('name');
+                            usuariosDisponiveis.push(usuarioDisponivel);
+                        });
+
+                        $.each(usuariosDisponiveis, function (i, item) {
+                            if(!JSON.stringify(usuariosDisponiveisFinal).includes(item.Id)){
+                                usuariosDisponiveisFinal.push(item);
+                            }
+                        });
+
+                        usuariosDisponiveisFinal.sort(function(a, b){
+                                                        if(a.Name < b.Name) return -1;
+                                                        if(a.Name > b.Name) return 1;
+                                                        return 0;
+                                                    });
+
+                        montarTabelaUsuariosDisponiveis(usuariosDisponiveisFinal);
+                        montarTabelaUsuariosSelecionados('');
+
+                    });
+
+
+                    // Carrega o plugin do select com checkbox e filtro
+                    $('#select-status-os').fSelect();
+                    $('#select-ultima-acao-os').fSelect();
+
+                    $('#select-tipo').fSelect();
+                    $('#select-tipo-contrato').fSelect();
+                    $('#select-classe').fSelect();
+                    
+                    $('#select-regiao-comercial').fSelect();
+                    $('#select-tipo-os-macro').fSelect();
+                    $('#select-tipo-os-micro').fSelect();
+
+                    $('#select-item').fSelect();
+                    $('#select-motivo-noshow').fSelect();
+
+                    $('#select-motivo').fSelect();
+
+                    $('.div-select-tipo .fs-wrap').attr('tabindex', 5);
+                    $('.div-select-item .fs-wrap').attr('tabindex', 6);
+                    $('.div-select-motivo .fs-wrap').attr('tabindex', 7);
+
+                    $('.div-select-status-os .fs-wrap').attr('tabindex', 12);
+                    $('.div-select-ultima-acao-os .fs-wrap').attr('tabindex', 13);
+                    $('.div-select-motivo-noshow .fs-wrap').attr('tabindex', 14);                
+                    $('.div-select-tipo-contrato .fs-wrap').attr('tabindex', 15);
+                    $('.div-select-classe .fs-wrap').attr('tabindex', 16);
+                    $('.div-select-regiao-comercial .fs-wrap').attr('tabindex', 17);
+                    $('.div-select-tipo-os-macro .fs-wrap').attr('tabindex', 20);
+                    $('.div-select-tipo-os-micro .fs-wrap').attr('tabindex', 21);
+
+                    // Chama função que desabilita todos os campos do filtro
+                    desabilitarTodosCampos();
+
+                    $('.div-select-status-os .fs-option').each(function() {
+                        var value = $(this).data('value').toString();
+                        if(value == 'Selecionar Todos'){
+                            $(this).addClass('selecionarTodosStatusOS');
+                        } else {
+                            $(this).addClass('outrosStatusOS');
+                        }
+                    });
+                    
+                    $('.selecionarTodosStatusOS').click(function() {
+                        if(!$(this).hasClass("selected")){
+                            selecionarTodosStatusOS(true);
+                        } else {
+                            selecionarTodosStatusOS(false);
+                        }
+                    });
+
+                    $('.outrosStatusOS').click(function() {
+                        if($('.selecionarTodosStatusOS').hasClass("selected")){
+                            $('.selecionarTodosStatusOS').removeClass('selected');
+                        }
+                    });
+
+
+                    $('.div-select-classe .fs-option').each(function() {
+                        var value = $(this).data('value').toString();
+                        if(value == 'Selecionar Todos'){
+                            $(this).addClass('selecionarTodosClasse');
+                        } else {
+                            $(this).addClass('outrosClasse');
+                        }
+                    });
+
+                    $('.selecionarTodosClasse').click(function() {
+                        if(!$(this).hasClass("selected")){
+                            selecionarTodosClasse(true);
+                        } else {
+                            selecionarTodosClasse(false);
+                        }
+                    });
+
+                    $('.outrosClasse').click(function() {
+                        if($('.selecionarTodosClasse').hasClass("selected")){
+                            $('.selecionarTodosClasse').removeClass('selected');
+                        }
+                    });
+
+
+                    $('.div-select-tipo-contrato .fs-option').each(function() {
+                        var value = $(this).data('value').toString();
+                        if(value == 'Selecionar Todos'){
+                            $(this).addClass('selecionarTodosTipoContrato');
+                        } else {
+                            $(this).addClass('outrosTipoContrato');
+                        }
+                    });
+
+                    $('.selecionarTodosTipoContrato').click(function() {
+                        if(!$(this).hasClass("selected")){
+                            selecionarTodosTipoContrato(true);
+                        } else {
+                            selecionarTodosTipoContrato(false);
+                        }
+                    });
+
+                    $('.outrosTipoContrato').click(function() {
+                        if($('.selecionarTodosTipoContrato').hasClass("selected")){
+                            $('.selecionarTodosTipoContrato').removeClass('selected');
+                        }
+                    });
+
+                    
+                    $('.div-select-ultima-acao-os .fs-option').each(function() {
+                        var value = $(this).data('value').toString();
+                        if(value == 'Selecionar Todos'){
+                            $(this).addClass('selecionarTodosUltimaAcaoOS');
+                        } else {
+                            $(this).addClass('outrosUltimaAcaoOS');
+                        }
+                    });
+
+                    $('.selecionarTodosUltimaAcaoOS').click(function() {
+                        if(!$(this).hasClass("selected")){
+                            selecionarTodosUltimaAcaoOS(true);
+                        } else {
+                            selecionarTodosUltimaAcaoOS(false);
+                        }
+                    });
+
+                    $('.outrosUltimaAcaoOS').click(function() {
+                        if($('.selecionarTodosUltimaAcaoOS').hasClass("selected")){
+                            $('.selecionarTodosUltimaAcaoOS').removeClass('selected');
+                        }
+                    });
+
+                    $("#divBody").show();
+                    $("#divLoading").hide();
+
+                } catch(err) {
+                    mostrarMensagemErro("Erro ao carregar todos os filtros");
+                    logVal('ERRO: '+ err.message);
+                    $("#divLoading").hide();
+                }
+
+            }); // Fim $(document).ready(function()
+
+
+            // Função para carregar a lista de configuração
+            function carregarConfiguracao(){
+                
+                var idConfig = $("#select-configuracao").val();
+
+                if(idConfig == 'Selecione'){
+                    desabilitarTodosCampos();
+                } else if(idConfig == 'Novo') {
+                    desabilitarTodosCampos();
+                    habilitarTodosCampos();
+                } else {
+                    $("#divLoading").show();
+                    $("#div-usuarios").hide();
+                    $("#div-lista-os").hide();
+                    setTimeout(function(){
+                        carregarInformacoesOS(idConfig);
+                    }, 500);
+                }
+
+            } // Fim Função para carregar a lista de configuração
+
+            // Função para verificar se o usuário tem permissão para criar o direcionamento
+            function verificarStatusCriarDirecionamento(){
+                
+                sforce.connection.sessionId = "{!$Api.Session_ID}";
+                var retorno = sforce.apex.execute("Util_Direcionamento","getStatusCriarDirecionamento",{});
+
+                logVal('retorno: '+retorno);
+
+                if(retorno == true || retorno == 'true'){
+                    $('#botaoSalvarConfiguracao').show();
+                    $('#botaoRemoverConfiguracao').show();
+                } else {
+                    $('#botaoSalvarConfiguracao').hide();
+                    $('#botaoRemoverConfiguracao').hide();
+                }
+
+                return retorno;
+            }
+
+
+            // Função para carregar a lista de configurações de direcionamento
+            function carregarListaDirecionamentoOS(){
+
+                sforce.connection.sessionId = "{!$Api.Session_ID}";
+                var retorno = sforce.apex.execute("Direcionamento_OS","getDirecionamentoOS",{});
+
+                $('#div-select-configuracao').text('');
+
+                $('#div-select-configuracao').append('<select class="slds-select select-configuracao" name="select-configuracao" id="select-configuracao" tabindex="1" onchange="carregarConfiguracao()">');
+
+                $('#select-configuracao').append(new Option('Selecione', 'Selecione'));
+                $('#select-configuracao').append(new Option('Novo', 'Novo'));
+
+                $.each(retorno, function (i, item) {
+                    $('#select-configuracao').append($('<option>', { 
+                        value: item.Id,
+                        text : item.Name 
+                    }));
+                });
+
+                return true;
+
+            } // Fim carregarListaDirecionamentoOS
+
+
+            // Função para carregar status de OS
+            function carregarListaStatusOS(){
+                
+                sforce.connection.sessionId = "{!$Api.Session_ID}";
+                var retorno = sforce.apex.execute("Util_Direcionamento","getStatusOS",{});
+
+                logVal('retorno: ' + retorno);
+
+                $('#div-select-status-os').text('');
+                $('#div-select-status-os').append('<select class="slds-select select-status-os" name="select-status-os" id="select-status-os" tabindex="1">');
+                $('#select-status-os').append($('<option>', { 
+                    value: 'Selecionar Todos',
+                    text : 'Selecionar Todos',
+                }));
+
+                $.each(retorno, function (i, item) {
+                    $('#select-status-os').append($('<option>', { 
+                        value: item.Id,
+                        text : item.Name 
+                    }));
+                });
+                
+                return true;
+            } // Fim carregarListaStatusOS
+
+
+            // Função para selecionar/deselecionar o Status da OS
+            function selecionarTodosStatusOS(selecionarTodos){
+
+                sforce.connection.sessionId = "{!$Api.Session_ID}";
+                var retorno = sforce.apex.execute("Util_Direcionamento","getStatusOS",{});
+
+                $('#div-select-status-os').text('');
+                $('#select-status-os').text('');
+
+                $('#div-select-status-os').append('<select id="select-status-os" disabled="true" tabindex="12" multiple="multiple">');
+                $('#select-status-os').append($('<option>', { 
+                    value: 'Selecionar Todos',
+                    text : 'Selecionar Todos',
+                }));
+
+                $.each(retorno, function (i, item2) {
+                    if(selecionarTodos == true){
+                        $('#select-status-os').append($('<option>', { 
+                            value: item2.Id,
+                            text : item2.Name,
+                            selected: true
+                        }));
+                    } else {
+                        $('#select-status-os').append($('<option>', { 
+                            value: item2.Id,
+                            text : item2.Name
+                        }));
+                    }
+                });
+
+                $('#select-status-os').fSelect();
+
+                if(selecionarTodos == true){
+
+                    var name = '';
+                    $('.div-select-status-os .fs-option').each(function() {
+                        var value = $(this).data('value').toString();
+                        if(value != 'Selecionar Todos'){
+                            $(this).addClass('selected');
+                            if(name == ''){
+                                name += $(this).find('.fs-option-label').text();
+                            } else {
+                                name += ','+$(this).find('.fs-option-label').text();
+                            }
+                        }
+                    });
+
+                    if(name != ''){
+                        $(".div-select-status-os .fs-label").text(name);
+                    }
+                } else {
+                    
+                    var name = '';
+                    $('.div-select-status-os .fs-option').each(function() {
+                        var value = $(this).data('value').toString();
+                        if(value != 'Selecionar Todos'){
+                            $(this).removeClass('selected');
+                        }
+                    });
+
+                    $(".div-select-status-os .fs-label").text("Selecione");	
+                }
+
+            } // Fim selecionarTodosStatusOS
+
+
+            // Função para carregar última ação da OS
+            function carregarListaUltimaAcaoOS(){
+                
+                sforce.connection.sessionId = "{!$Api.Session_ID}";
+                var retorno = sforce.apex.execute("Util_Direcionamento","getUltimaAcaoOS",{});
+
+                // $('#select-ultima-acao-os').append($('<option>', { 
+                //     value: 'Selecionar Todos',
+                //     text : 'Selecionar Todos',
+                // }));
+
+                $.each(retorno, function (item, i) {
+                    var res = i.split("|");
+                    $('#select-ultima-acao-os').append($('<option>', { 
+                        value: res[0],
+                        text : res[1] 
+                    }));
+                });
+
+                return true;
+            } // Fim carregarListaUltimaAcaoOS
+
+
+            // Função para selecionar/deselecionar o Ultima Ação da OS
+            function selecionarTodosUltimaAcaoOS(selecionarTodos){
+
+                sforce.connection.sessionId = "{!$Api.Session_ID}";
+                var retorno = sforce.apex.execute("Util_Direcionamento","getUltimaAcaoOS",{});
+
+                $('#div-select-ultima-acao-os').text('');
+                $('#select-ultima-acao-os').text('');
+
+                $('#div-select-ultima-acao-os').append('<select id="select-ultima-acao-os" disabled="true" tabindex="12" multiple="multiple">');
+                // $('#select-ultima-acao-os').append($('<option>', { 
+                //     value: 'Selecionar Todos',
+                //     text : 'Selecionar Todos',
+                // }));
+
+                $.each(retorno, function (i, item2) {
+                    var res = item2.split("|");
+                    if(selecionarTodos == true){
+                        $('#select-ultima-acao-os').append($('<option>', { 
+                            value: res[0],
+                            text : res[1],
+                            selected: true
+                        }));
+                    } else {
+                        $('#select-ultima-acao-os').append($('<option>', { 
+                            value: res[0],
+                            text : res[1] 
+                        }));
+                    }
+                });
+
+                $('#select-ultima-acao-os').fSelect();
+
+                if(selecionarTodos == true){
+
+                    var name = '';
+                    $('.div-select-ultima-acao-os .fs-option').each(function() {
+                        var value = $(this).data('value').toString();
+                        if(value != 'Selecionar Todos'){
+                            $(this).addClass('selected');
+                            if(name == ''){
+                                name += $(this).find('.fs-option-label').text();
+                            } else {
+                                name += ','+$(this).find('.fs-option-label').text();
+                            }
+                        }
+                    });
+
+                    if(name != ''){
+                        $(".div-select-ultima-acao-os .fs-label").text(name);
+                    }
+                } else {
+                    
+                    var name = '';
+                    $('.div-select-ultima-acao-os .fs-option').each(function() {
+                        var value = $(this).data('value').toString();
+                        if(value != 'Selecionar Todos'){
+                            $(this).removeClass('selected');
+                        }
+                    });
+
+                    $(".div-select-ultima-acao-os .fs-label").text("Selecione");	
+                }
+
+            } // Fim selecionarTodosUltimaAcaoOS
+
+
+            // Função para carregar lista de Item
+            function carregarListaItem(){
+                
+                sforce.connection.sessionId = "{!$Api.Session_ID}";
+                var retorno = sforce.apex.execute("Util_Direcionamento","getListaItem",{});
+
+                $.each(retorno, function (item, i) {
+                    var res = i.split("|");
+                    $('#select-item').append($('<option>', { 
+                        value: res[0],
+                        text : res[1] 
+                    }));
+                });
+
+                return true;
+            } // Fim carregarListaItem
+
+
+            // Função para carregar tipo de OS
+            function carregarListaTipoOS(){
+
+                sforce.connection.sessionId = "{!$Api.Session_ID}";
+                var retorno = sforce.apex.execute("Util_Direcionamento","getTipoOS",{});
+
+                $.each(retorno, function (i, item) {
+                    $('#select-tipo').append($('<option>', { 
+                        value: item.Id,
+                        text : item.Name 
+                    }));
+                });
+
+                return true;
+            } // Fim carregarListaTipoOS
+
+
+            // Função para carregar tipo de Contrato
+            function carregarListaTipoContrato(){
+                
+                sforce.connection.sessionId = "{!$Api.Session_ID}";
+                var retorno = sforce.apex.execute("Util_Direcionamento","getTipoContrato",{});
+
+                $('#select-tipo-contrato').append($('<option>', { 
+                    value: 'Selecionar Todos',
+                    text : 'Selecionar Todos',
+                }));
+
+                $.each(retorno, function (i, item) {
+                    $('#select-tipo-contrato').append($('<option>', { 
+                        value: item.Id,
+                        text : item.Name 
+                    }));
+                });
+
+                return true;
+            } // Fim carregarListaTipoContrato
+
+
+            // Função para selecionar/deselecionar o Tipo de Contrato
+            function selecionarTodosTipoContrato(selecionarTodos){
+
+                sforce.connection.sessionId = "{!$Api.Session_ID}";
+                var retorno = sforce.apex.execute("Util_Direcionamento","getTipoContrato",{});
+
+                $('#div-select-tipo-contrato').text('');
+                $('#select-tipo-contrato').text('');
+
+                $('#div-select-tipo-contrato').append('<select id="select-tipo-contrato" disabled="true" tabindex="12" multiple="multiple">');
+                $('#select-tipo-contrato').append($('<option>', { 
+                    value: 'Selecionar Todos',
+                    text : 'Selecionar Todos',
+                }));
+
+                $.each(retorno, function (i, item2) {
+                    if(selecionarTodos == true){
+                        $('#select-tipo-contrato').append($('<option>', { 
+                            value: item2.Id,
+                            text : item2.Name,
+                            selected: true
+                        }));
+                    } else {
+                        $('#select-tipo-contrato').append($('<option>', { 
+                            value: item2.Id,
+                            text : item2.Name
+                        }));
+                    }
+                });
+
+                $('#select-tipo-contrato').fSelect();
+
+                if(selecionarTodos == true){
+
+                    var name = '';
+                    $('.div-select-tipo-contrato .fs-option').each(function() {
+                        var value = $(this).data('value').toString();
+                        if(value != 'Selecionar Todos'){
+                            $(this).addClass('selected');
+                            if(name == ''){
+                                name += $(this).find('.fs-option-label').text();
+                            } else {
+                                name += ','+$(this).find('.fs-option-label').text();
+                            }
+                        }
+                    });
+
+                    if(name != ''){
+                        $(".div-select-tipo-contrato .fs-label").text(name);
+                    }
+                } else {
+                    
+                    var name = '';
+                    $('.div-select-tipo-contrato .fs-option').each(function() {
+                        var value = $(this).data('value').toString();
+                        if(value != 'Selecionar Todos'){
+                            $(this).removeClass('selected');
+                        }
+                    });
+
+                    $(".div-select-tipo-contrato .fs-label").text("Selecione");	
+                }
+
+            } // Fim selecionarTodosTipoContrato
+
+
+            // Função para carregar lista de Classe
+            function carregarListaClasse(){
+                
+                sforce.connection.sessionId = "{!$Api.Session_ID}";
+                var retorno = sforce.apex.execute("Util_Direcionamento","getListaClasse",{});
+
+                // $('#select-classe').append($('<option>', { 
+                //     value: 'Selecionar Todos',
+                //     text : 'Selecionar Todos',
+                // }));
+
+                $.each(retorno, function (item, i) {
+                    var res = i.split("|");
+                    $('#select-classe').append($('<option>', { 
+                        value: res[0],
+                        text : res[1] 
+                    }));
+                });
+
+                return true;
+            } // Fim carregarListaClasse
+
+
+            // Função para selecionar/deselecionar a Classe
+            function selecionarTodosClasse(selecionarTodos){
+
+                sforce.connection.sessionId = "{!$Api.Session_ID}";
+                var retorno = sforce.apex.execute("Util_Direcionamento","getListaClasse",{});
+
+                $('#select-classe').text('');
+
+                // $('#select-classe').append($('<option>', { 
+                //     value: 'Selecionar Todos',
+                //     text : 'Selecionar Todos',
+                // }));
+
+                $.each(retorno, function (i, item2) {
+                    var res = item2.split("|");
+                    if(selecionarTodos == true){
+                        $('#select-classe').append($('<option>', { 
+                            value: res[0],
+                            text : res[1],
+                            selected: true
+                        }));
+                    } else {
+                        $('#select-classe').append($('<option>', { 
+                            value: res[0],
+                            text : res[1]
+                        }));
+                    }
+                });
+
+                $('#select-classe').fSelect();
+
+                if(selecionarTodos == true){
+
+                    var name = '';
+                    $('.div-select-classe .fs-option').each(function() {
+                        var value = $(this).data('value').toString();
+                        if(value != 'Selecionar Todos'){
+                            $(this).addClass('selected');
+                            if(name == ''){
+                                name += $(this).find('.fs-option-label').text();
+                            } else {
+                                name += ','+$(this).find('.fs-option-label').text();
+                            }
+                        }
+                    });
+
+                    if(name != ''){
+                        $(".div-select-classe .fs-label").text(name);
+                    }
+                } else {
+                    
+                    var name = '';
+                    $('.div-select-classe .fs-option').each(function() {
+                        var value = $(this).data('value').toString();
+                        if(value != 'Selecionar Todos'){
+                            $(this).removeClass('selected');
+                        }
+                    });
+
+                    $(".div-select-classe .fs-label").text("Selecione");	
+                }
+
+            } // Fim selecionarTodosClasse
+
+
+            // Função para carregar motivo de noshow da OS
+            function carregarListaMotivoNoshowOS(){
+                
+                sforce.connection.sessionId = "{!$Api.Session_ID}";
+                var retorno = sforce.apex.execute("Util_Direcionamento","getMotivoNoshowOS",{});
+
+                $.each(retorno, function (item, i) {
+                    var res = i.split("|");
+                    $('#select-motivo-noshow').append($('<option>', { 
+                        value: res[0],
+                        text : res[1] 
+                    }));
+                });
+
+                return true;
+            } // Fim carregarListaMotivoNoshowOS
+
+            // Função para carregar cliente KA
+            function carregarListaClienteKA(){
+                
+                sforce.connection.sessionId = "{!$Api.Session_ID}";
+                var retorno = sforce.apex.execute("Util_Direcionamento","getClienteKA",{});
+
+                $('#select-cliente-ka').append($('<option>', { 
+                        value: 'Selecione',
+                        text : 'Selecione',
+                        selected : true
+                }));
+
+                //$('#select-cliente-ka').append(new Option('Selecione', 'Selecione'));
+
+                $.each(retorno, function (item, i) {
+                    var res = i.split("|");
+                    $('#select-cliente-ka').append($('<option>', { 
+                        value: res[0],
+                        text : res[1] 
+                    }));
+                });
+
+                return true;
+
+            } // Fim carregarListaClienteKA
+
+            // Função para carregar lista de motivos conforme Item e Tipo
+            function carregarListaMotivo(tipo, item){
+
+                $("#divLoading").show();
+
+                var tipoParametro = tipo;
+                var itemParametro = item;
+
+                sforce.connection.sessionId = "{!$Api.Session_ID}";
+                var retorno = sforce.apex.execute("Util_Direcionamento","getListaMotivo",
+                                                {tipoParametro:tipoParametro.toString(),
+                                                itemParametro:itemParametro.toString()});
+
+                logVal('retorno: ' + retorno);
+                $('#div-select-motivo').text('');
+                
+                $('#div-select-motivo').append('<select id="select-motivo" disabled="true" tabindex="4" multiple="multiple">');
+
+                $.each(retorno, function (i, item) {
+                    $('#select-motivo').append($('<option>', { 
+                        value: item.Id,
+                        text : item.Name 
+                    }));
+                });
+
+                $('#select-motivo').fSelect();
+                $(".div-select-motivo").removeClass("div-desativada");
+
+                $("#divLoading").hide();
+
+                return true;
+            } // Fim carregarListaMotivo
+
+
+            // Função para carregar lista de motivos conforme Item e Tipo
+            function carregarListaMotivoSelecionado(tipo, item, valoresSelecionados){
+
+                var tipoParametro = tipo;
+                var itemParametro = item;
+
+                sforce.connection.sessionId = "{!$Api.Session_ID}";
+                var retorno = sforce.apex.execute("Util_Direcionamento","getListaMotivo",
+                                                {tipoParametro:tipoParametro.toString(),
+                                                itemParametro:itemParametro.toString()});
+
+                $('#div-select-motivo').text('');
+                
+                $('#div-select-motivo').append('<select id="select-motivo" disabled="true" tabindex="4" multiple="multiple">');
+
+                $.each(retorno, function (i, item2) {
+                    if(valoresSelecionados.includes(item2.Id)){
+                        $('#select-motivo').append($('<option>', { 
+                            value: item2.Id,
+                            text : item2.Name,
+                            selected: true
+                        }));
+                    } else {
+                        $('#select-motivo').append($('<option>', { 
+                            value: item2.Id,
+                            text : item2.Name 
+                        }));
+                    }
+                });
+                
+                $('#select-motivo').fSelect();
+
+                var name = '';
+                $('.div-select-motivo .fs-option').each(function() {
+                    var value = $(this).data('value').toString();
+                    logVal(value);
+                    if(valoresSelecionados.includes(value)){
+                        $(this).addClass('selected');
+                        if(name == ''){
+                            name += $(this).find('.fs-option-label').text();
+                        } else {
+                            name += ','+$(this).find('.fs-option-label').text();
+                        }
+                    }
+                });
+                
+                if(name != ''){
+                    $(".div-select-motivo .fs-label").text(name);    
+                }
+
+                $(".div-select-motivo").removeClass("div-desativada");
+
+                return true;
+            } // Fim carregarListaMotivo
+
+
+            // Função para carregar região comercial
+            function carregarListaRegiaoComercial(){
+                
+                sforce.connection.sessionId = "{!$Api.Session_ID}";
+                var retorno = sforce.apex.execute("Util_Direcionamento","getRegiaoComercial",{});
+
+                $.each(retorno, function (item, i) {
+                    var res = i.split("|");
+                    $('#select-regiao-comercial').append($('<option>', { 
+                        value: res[0],
+                        text : res[1] 
+                    }));
+                });
+
+                return true;
+            } // Fim carregarListaRegiaoComercial
+
+
+            // Função para carregar tipo de OS Macro
+            function carregarListaTipoOSMacro(){
+                
+                sforce.connection.sessionId = "{!$Api.Session_ID}";
+                var retorno = sforce.apex.execute("Util_Direcionamento","getTipoOsMacro",{});
+
+                $.each(retorno, function (item, i) {
+                    var res = i.split("|");
+                    $('#select-tipo-os-macro').append($('<option>', { 
+                        value: res[0],
+                        text : res[1] 
+                    }));
+                });
+
+                return true;
+            } // Fim carregarListaTipoOSMacro
+
+
+            // Função para carregar tipo de OS micro
+            function carregarListaTipoOSMicro(){
+                
+                sforce.connection.sessionId = "{!$Api.Session_ID}";
+                var retorno = sforce.apex.execute("Util_Direcionamento","getTipoOsMicro",{});
+
+                $.each(retorno, function (item, i) {
+                    var res = i.split("|");
+                    $('#select-tipo-os-micro').append($('<option>', { 
+                        value: res[0],
+                        text : res[1] 
+                    }));
+                });
+
+                return true;
+            } // Fim carregarListaTipoOSMicro
+
+
+            // Função para pesquisar os Usuarios
+            function carregarListaUsuarios(){
+
+                try {
+
+                    var idConfig = $("#select-configuracao").val();
+                    logVal('idConfig: '+idConfig);
+
+                    if(idConfig == 'Selecione' || idConfig == 'Novo' ){
+
+                        sforce.connection.sessionId = "{!$Api.Session_ID}";
+                        var retorno = sforce.apex.execute("Direcionamento_OS","getListaUser",{});
+
+                        logVal('retorno: ' + retorno);
+
+                        if(retorno.length > 0){
+
+                            montarTabelaUsuariosDisponiveis(retorno);
+                        
+                        } else {
+
+                            mostrarMensagemErro("Erro ao carregar a lista de usuários!");
+                        }
+
+                    } 
+
+                } catch(err) {
+
+                    mostrarMensagemErro("Erro ao carregar a lista de usuários!");
+                    logVal('ERRO: '+ err.message);
+
+                }
+
+            } // Fim função carregarListaUsuarios
+
+
+            // Função para montar tabela de usuários diponiveis
+            function montarTabelaUsuariosDisponiveis(registros){
+                
+                var linha = 0;
+                var linhasTabela = "";
+
+                $.each( registros, function( index, valor ) {
+                            
+                    var linhaTabela = '<tr> '+
+                        '    <th scope="row" data-label="Selecionar"> '+
+                        '        <div class="slds-truncate" title="Selecionar"> '+
+                        '            <div class="slds-form-element"> '+
+                        '                <div class="slds-form-element__control"> '+
+                        '                    <label class="s .slds-item_label"></label> '+
+                        '                    <span class="slds-checkbox"> '+
+                        '                        <input type="checkbox" name="checkbox-usuario-disponivel" id="checkbox-usuario-disponivel'+linha+'" '+
+                        '                                   data-id='+valor.Id+' data-name='+JSON.stringify(valor.Name)+' value="on"/> '+
+                        '                        <label class="slds-checkbox__label" for="checkbox-usuario-disponivel'+linha+'"> '+
+                        '                            <span class="slds-checkbox_faux"></span> '+
+                        '                            <span class="slds-form-element__label"></span> '+
+                        '                        </label> '+
+                        '                    </span> '+
+                        '                </div> '+
+                        '            </div> '+
+                        '        </div> '+
+                        '    </th> '+
+                        '    <th scope="row" data-label="Nome usuário"> '+
+                        '        <div class="slds-truncate" title="'+valor.Name+'" >'+
+                        '           <label for="checkbox-usuario-disponivel'+linha+'">'+valor.Name+'</label>'+
+                        '        </div> '+
+                        '    </th> '+
+                        '    <th scope="row" data-label="Departamento"> '+
+                        '        <div class="slds-truncate" title="Departamento"></div> '+
+                        '    </th> '+
+                        '</tr> ';
+                    
+                    linhasTabela += linhaTabela;
+                    linha += 1;
+                });
+
+                $("#tbodyTabelaDisponiveis").text('');
+                $("#tbodyTabelaDisponiveis").val('');
+
+                $("#tbodyTabelaDisponiveis").append(linhasTabela);
+                $("#div-usuarios").show();
+
+            } // Fim function montarTabelaUsuariosDisponiveis
+
+
+            // Função para montar tabela de usuários selecionados
+            function montarTabelaUsuariosSelecionados(registros){
+
+                var linha = 0;
+                var linhasTabela = "";
+
+                $.each( registros, function( index, valor ) {
+                            
+                    var linhaTabela = '<tr> '+
+                        '    <th scope="row" data-label="Selecionar"> '+
+                        '        <div class="slds-truncate" title="Selecionar"> '+
+                        '            <div class="slds-form-element"> '+
+                        '                <div class="slds-form-element__control"> '+
+                        '                    <label class="s .slds-item_label"></label> '+
+                        '                    <span class="slds-checkbox"> '+
+                        '                        <input type="checkbox" name="checkbox-usuario-selecionado" id="checkbox-usuario-selecionado'+linha+'" '+
+                        '                                   data-id='+valor.Id+' data-name='+JSON.stringify(valor.Name)+' value="on"/> '+
+                        '                        <label class="slds-checkbox__label" for="checkbox-usuario-selecionado'+linha+'"> '+
+                        '                            <span class="slds-checkbox_faux"></span> '+
+                        '                            <span class="slds-form-element__label"></span> '+
+                        '                        </label> '+
+                        '                    </span> '+
+                        '                </div> '+
+                        '            </div> '+
+                        '        </div> '+
+                        '    </th> '+
+                        '    <th scope="row" data-label="Nome usuário"> '+
+                        '        <div class="slds-truncate" title="'+valor.Name+'" >'+
+                        '           <label for="checkbox-usuario-selecionado'+linha+'">'+valor.Name+'</label>'+
+                        '        </div> '+
+                        '    </th> '+
+                        '    <th scope="row" data-label="Departamento"> '+
+                        '        <div class="slds-truncate" title="Departamento"></div> '+
+                        '    </th> '+
+                        '</tr> ';
+                    
+                    linhasTabela += linhaTabela;
+                    linha += 1;
+                });
+                
+                $("#tbodyTabelaSelecionados").text('');
+                $("#tbodyTabelaSelecionados").val('');
+
+                $("#tbodyTabelaSelecionados").append(linhasTabela);
+                $("#div-usuarios").show();
+
+            }
+
+            // Função para carregar informações da OS
+            function carregarInformacoesOS(idOS){
+
+                $("#divLoading").show();
+
+                idOS = idOS.toString();
+
+                logVal('idOS: '+idOS);
+
+                sforce.connection.sessionId = "{!$Api.Session_ID}";
+                var retorno = sforce.apex.execute("Direcionamento_OS","getConfigDirecionamentoOS",
+                                                {idDirecionamentoOS:idOS});
+                
+                logVal('retorno: '+retorno);
+
+                $.each(retorno, function (i, item) {
+
+                    desabilitarTodosCampos();
+                    habilitarTodosCampos();
+
+                    if(item.Name != null && item.Name != ''){
+                        $("#campoNomeConfiguracao").val(item.Name);
+                    }
+
+                    if(item.Cliente__c != null && item.Cliente__c != ''){
+                        $("#campoNomeCliente").val(item.Cliente__c);
+                    }
+
+                    if(item.Numero_OS__c != null && item.Numero_OS__c != ''){
+                        $("#campoNumeroOS").val(item.Numero_OS__c);
+                    } else {
+                        $("#campoNumeroOS").val('');
+                    }
+
+                    if(item.OS_sem_servico__c != null && item.OS_sem_servico__c != ''){
+                        if(item.OS_sem_servico__c == true || item.OS_sem_servico__c == 'true'){
+                            $('#checkbox-os-sem-servico').prop('checked', true);
+                        } else {
+                            $('#checkbox-os-sem-servico').prop('checked', false);
+                        }
+                    }
+
+                    if(item.OS_com_agendamento__c != null && item.OS_com_agendamento__c != ''){
+                        if(item.OS_com_agendamento__c == true || item.OS_com_agendamento__c == 'true'){
+                            $('#checkbox-os-com-agendamento').prop('checked', true);
+                        } else {
+                            $('#checkbox-os-com-agendamento').prop('checked', false);
+                        }
+                    }
+
+                    if(item.OS_sem_direcionamento__c != null && item.OS_sem_direcionamento__c != ''){
+                        if(item.OS_sem_direcionamento__c == true || item.OS_sem_direcionamento__c == 'true'){
+                            $('#checkbox-os-sem-direcionamento').prop('checked', true);
+                        } else {
+                            $('#checkbox-os-sem-direcionamento').prop('checked', false);
+                        }
+                    }
+
+                    if(item.OS_sem_agendamento_aging_85_dias__c != null && item.OS_sem_agendamento_aging_85_dias__c != ''){
+                        if(item.OS_sem_agendamento_aging_85_dias__c == true || item.OS_sem_agendamento_aging_85_dias__c == 'true'){
+                            $('#checkbox-os-sem-agendamento-aging-85').prop('checked', true);
+                        } else {
+                            $('#checkbox-os-sem-agendamento-aging-85').prop('checked', false);
+                        }
+                    }
+
+                    if(item.Contato_fora_faixa__c != null && item.Contato_fora_faixa__c != ''){
+                        if(item.Contato_fora_faixa__c == true || item.Contato_fora_faixa__c == 'true'){
+                            $('#checkbox-contato-fora-faixa').prop('checked', true);
+                        } else {
+                            $('#checkbox-contato-fora-faixa').prop('checked', false);
+                        }
+                    }
+
+                    if(item.Quantidade_OS__c != null && item.Quantidade_OS__c != ''){
+                        $("#campoQtddOS").val(item.Quantidade_OS__c);
+                    } else {
+                        $("#campoQtddOS").val('');
+                    }
+
+                    if(item.Aging_inicial__c != null && item.Aging_inicial__c != ''){
+                        $("#campoDeAging").val(item.Aging_inicial__c);
+                    } else {
+                        $("#campoDeAging").val('');
+                    }
+
+                    if(item.Aging_final__c != null && item.Aging_final__c != ''){
+                        $("#campoAteAging").val(item.Aging_final__c);
+                    } else {
+                        $("#campoAteAging").val('');
+                    }
+
+                    if(item.Status_OS__c != null && item.Status_OS__c != ''){
+
+                        sforce.connection.sessionId = "{!$Api.Session_ID}";
+                        var retorno = sforce.apex.execute("Util_Direcionamento","getStatusOS",{});
+
+                        $('#div-select-status-os').text('');
+                        $('#select-status-os').text('');
+
+                        $('#div-select-status-os').append('<select id="select-status-os" disabled="true" tabindex="12" multiple="multiple">');
+
+                        $.each(retorno, function (i, item2) {
+                            if(item.Status_OS__c.includes(item2.Id)){
+                                $('#select-status-os').append($('<option>', { 
+                                    value: item2.Id,
+                                    text : item2.Name,
+                                    selected: true
+                                }));
+                            } else {
+                                $('#select-status-os').append($('<option>', { 
+                                    value: item2.Id,
+                                    text : item2.Name 
+                                }));
+                            }
+                        });
+
+                        $('#select-status-os').fSelect();
+
+                        var name = '';
+                        $('.div-select-status-os .fs-option').each(function() {
+                            var value = $(this).data('value').toString();
+                            if(item.Status_OS__c.includes(value)){
+                                $(this).addClass('selected');
+                                if(name == ''){
+                                    name += $(this).find('.fs-option-label').text();
+                                } else {
+                                    name += ','+$(this).find('.fs-option-label').text();
+                                }
+                            }
+                        });
+
+                        if(name != ''){
+                            $(".div-select-status-os .fs-label").text(name);    
+                        }
+                    } // Fim if(item.Status_OS__c != null && item.Status_OS__c
+
+
+                    if(item.Tipo_OS__c != null && item.Tipo_OS__c != ''){
+
+                        sforce.connection.sessionId = "{!$Api.Session_ID}";
+                        var retorno = sforce.apex.execute("Util_Direcionamento","getTipoOS",{});
+
+                        $('#div-select-tipo').text('');
+                        $('#select-tipo').text('');
+
+                        $('#div-select-tipo').append('<select id="select-tipo" disabled="true" tabindex="5" multiple="multiple">');
+
+                        $.each(retorno, function (i, item2) {
+                            if(item.Tipo_OS__c.includes(item2.Id)){
+                                $('#select-tipo').append($('<option>', { 
+                                    value: item2.Id,
+                                    text : item2.Name,
+                                    selected: true
+                                }));
+                            } else {
+                                $('#select-tipo').append($('<option>', { 
+                                    value: item2.Id,
+                                    text : item2.Name 
+                                }));
+                            }
+                        });
+
+                        $('#select-tipo').fSelect();
+
+                        var name = '';
+                        $('.div-select-tipo .fs-option').each(function() {
+                            var value = $(this).data('value').toString();
+                            if(item.Tipo_OS__c.includes(value)){
+                                $(this).addClass('selected');
+                                if(name == ''){
+                                    name += $(this).find('.fs-option-label').text();
+                                } else {
+                                    name += ','+$(this).find('.fs-option-label').text();
+                                }
+                            }
+                        });
+
+                        if(name != ''){
+                            $(".div-select-tipo .fs-label").text(name);    
+                        }
+
+                    } // Fim if(item.Tipo_OS__c != null && item.Tipo_OS__c
+
+
+                    if(item.Classe__c != null && item.Classe__c != ''){
+
+                        sforce.connection.sessionId = "{!$Api.Session_ID}";
+                        var retorno = sforce.apex.execute("Util_Direcionamento","getListaClasse",{});
+
+                        $('#div-select-classe').text('');
+                        $('#select-classe').text('');
+
+                        $('#div-select-classe').append('<select class="" id="select-classe" disabled="true" tabindex="16" multiple="multiple">');
+
+                        $.each(retorno, function (i, item2) {
+                            var res = item2.split("|");
+                            if(item.Classe__c.includes(res[1])){
+                                $('#select-classe').append($('<option>', { 
+                                    value: res[0],
+                                    text : res[1],
+                                    selected: true
+                                }));
+                            } else {
+                                $('#select-classe').append($('<option>', { 
+                                    value: res[0],
+                                    text : res[1]
+                                }));
+                            }
+                        });
+
+                        $('#select-classe').fSelect();
+
+                        var name = '';
+                        $('.div-select-classe .fs-option').each(function() {
+                            var value = $(this).data('value').toString();
+                            if(item.Classe__c.includes(value)){
+                                $(this).addClass('selected');
+                                if(name == ''){
+                                    name += $(this).find('.fs-option-label').text();
+                                } else {
+                                    name += ','+$(this).find('.fs-option-label').text();
+                                }
+                            }
+                        });
+
+                        if(name != ''){
+                            $(".div-select-classe .fs-label").text(name);    
+                        }
+
+                    } // Fim if(item.Classe__c != null && item.Classe__c
+
+
+                    if(item.Regiao_comercial__c != null && item.Regiao_comercial__c != ''){
+
+                        sforce.connection.sessionId = "{!$Api.Session_ID}";
+                        var retorno = sforce.apex.execute("Util_Direcionamento","getRegiaoComercial",{});
+
+                        $('#div-select-regiao-comercial').text('');
+                        $('#select-regiao-comercial').text('');
+
+                        $('#div-select-regiao-comercial').append('<select id="select-regiao-comercial" disabled="true" tabindex="17" multiple="multiple">');
+
+                        $.each(retorno, function (i, item2) {
+                            var res = item2.split("|");
+                            if(item.Regiao_comercial__c.includes(res[0])){
+                                $('#select-regiao-comercial').append($('<option>', { 
+                                    value: res[0],
+                                    text : res[1],
+                                    selected: true
+                                }));
+                            } else {
+                                $('#select-regiao-comercial').append($('<option>', { 
+                                    value: res[0],
+                                    text : res[1] 
+                                }));
+                            }
+                        });
+
+                        $('#select-regiao-comercial').fSelect();
+
+                        var name = '';
+                        $('.div-select-regiao-comercial .fs-option').each(function() {
+                            var value = $(this).data('value').toString();
+                            if(item.Regiao_comercial__c.includes(value)){
+                                $(this).addClass('selected');
+                                if(name == ''){
+                                    name += $(this).find('.fs-option-label').text();
+                                } else {
+                                    name += ','+$(this).find('.fs-option-label').text();
+                                }
+                            }
+                        });
+
+                        if(name != ''){
+                            $(".div-select-regiao-comercial .fs-label").text(name);    
+                        }
+
+                    } // Fim if(item.Regiao_comercial__c != null && item.Regiao_comercial__c
+
+
+                    if(item.Tipo_OS_Macro__c != null && item.Tipo_OS_Macro__c != ''){
+
+                        sforce.connection.sessionId = "{!$Api.Session_ID}";
+                        var retorno = sforce.apex.execute("Util_Direcionamento","getTipoOSMacro",{});
+
+                        $('#div-select-tipo-os-macro').text('');
+                        $('#select-tipo-os-macro').text('');
+
+                        $('#div-select-tipo-os-macro').append('<select id="select-tipo-os-macro" disabled="true" tabindex="20" multiple="multiple">');
+
+                        $.each(retorno, function (i, item2) {
+                            var res = item2.split("|");
+                            var res2 = item.Tipo_OS_Macro__c.split(";");
+
+                            logVal('TIPO OS MACRO - res: '+res);
+                            logVal('TIPO OS MACRO - res2: '+res2);
+
+                            var possuiOpcao = false;
+                            var a = 0;
+                            for(a = 0; a < res2.length; a++){
+                                logVal('TIPO OS MACRO - res[a]: '+res[a]);
+                                logVal('TIPO OS MACRO - res2[a]: '+res2[a]);
+                                if(res2[a] == res[0]){
+                                    possuiOpcao = true;
+                                }
+                            }
+
+                            logVal('possuiOpcao: '+possuiOpcao);
+
+                            if(possuiOpcao == true){
+                                $('#select-tipo-os-macro').append($('<option>', { 
+                                    value: res[0],
+                                    text : res[1],
+                                    selected: true
+                                }));
+                            } else {
+                                $('#select-tipo-os-macro').append($('<option>', { 
+                                    value: res[0],
+                                    text : res[1] 
+                                }));
+                            }
+
+                        });
+
+                        $('#select-tipo-os-macro').fSelect();
+
+                        var name = '';
+                        $('.div-select-tipo-os-macro .fs-option').each(function() {
+                            var value = $(this).data('value').toString();
+                            var res2 = item.Tipo_OS_Macro__c.split(";");
+                            var possuiOpcao = false;
+                            for(var a = 0; a < res2.length; a++){
+                                if(res2[a] == value){
+                                    possuiOpcao = true;
+                                }
+                            }
+                            
+                            if(possuiOpcao == true){
+                                $(this).addClass('selected');
+                                if(name == ''){
+                                    name += $(this).find('.fs-option-label').text();
+                                } else {
+                                    name += ','+$(this).find('.fs-option-label').text();
+                                }
+                            }
+                        });
+
+                        if(name != ''){
+                            $(".div-select-tipo-os-macro .fs-label").text(name);    
+                        }
+
+                    } // Fim if(item.Tipo_OS_Macro__c != null && item.Tipo_OS_Macro__c
+
+
+                    if(item.Tipo_OS_Micro__c != null && item.Tipo_OS_Micro__c != ''){
+
+                        sforce.connection.sessionId = "{!$Api.Session_ID}";
+                        var retorno = sforce.apex.execute("Util_Direcionamento","getTipoOSMicro",{});
+
+                        $('#div-select-tipo-os-micro').text('');
+                        $('#select-tipo-os-micro').text('');
+
+                        $('#div-select-tipo-os-micro').append('<select id="select-tipo-os-micro" disabled="true" tabindex="21" multiple="multiple">');
+
+                        $.each(retorno, function (i, item2) {
+                            var res = item2.split("|");
+                            var res2 = item.Tipo_OS_Micro__c.split(";");
+
+                            logVal('TIPO OS MICRO - res: '+res);
+                            logVal('TIPO OS MICRO - res2: '+res2);
+
+                            var possuiOpcao = false;
+                            var a = 0;
+                            for(a = 0; a < res2.length; a++){
+                                logVal('TIPO OS MICRO - res[a]: '+res[a]);
+                                logVal('TIPO OS MICRO - res2[a]: '+res2[a]);
+                                if(res2[a] == res[0]){
+                                    possuiOpcao = true;
+                                }
+                            }
+
+                            logVal('possuiOpcao: '+possuiOpcao);
+
+                            if(possuiOpcao == true){
+                                $('#select-tipo-os-micro').append($('<option>', { 
+                                    value: res[0],
+                                    text : res[1],
+                                    selected: true
+                                }));
+                            } else {
+                                $('#select-tipo-os-micro').append($('<option>', { 
+                                    value: res[0],
+                                    text : res[1] 
+                                }));
+                            }
+
+                        });
+
+                        $('#select-tipo-os-micro').fSelect();
+
+                        var name = '';
+                        $('.div-select-tipo-os-micro .fs-option').each(function() {
+                            var value = $(this).data('value').toString();
+                            var res2 = item.Tipo_OS_Micro__c.split(";");
+                            var possuiOpcao = false;
+                            for(var a = 0; a < res2.length; a++){
+                                if(res2[a] == value){
+                                    possuiOpcao = true;
+                                }
+                            }
+                            
+                            if(possuiOpcao == true){
+                                $(this).addClass('selected');
+                                if(name == ''){
+                                    name += $(this).find('.fs-option-label').text();
+                                } else {
+                                    name += ','+$(this).find('.fs-option-label').text();
+                                }
+                            }
+                        });
+
+                        if(name != ''){
+                            $(".div-select-tipo-os-micro .fs-label").text(name);    
+                        }
+
+                    } // Fim if(item.Tipo_OS_Micro__c != null && item.Tipo_OS_Micro__c
+
+
+                    if(item.Item__c != null && item.Item__c != ''){
+
+                        sforce.connection.sessionId = "{!$Api.Session_ID}";
+                        var retorno = sforce.apex.execute("Util_Direcionamento","getListaItem",{});
+
+                        $('#div-select-item').text('');
+                        $('#select-item').text('');
+
+                        $('#div-select-item').append('<select class="" id="select-item" disabled="true" tabindex="6" multiple="multiple">');
+
+                        $.each(retorno, function (i, item2) {
+                            var res = item2.split("|");
+                            logVal('res: '+res);
+                            logVal('item.Item__c: '+item.Item__c);
+                            if(item.Item__c.includes(res[0])){
+                                logVal('Adiciona selecionado');
+                                $('#select-item').append($('<option>', { 
+                                    value: res[0],
+                                    text : res[1],
+                                    selected: true
+                                }));
+                            } else {
+                                logVal('Adiciona não selecionado');
+                                $('#select-item').append($('<option>', { 
+                                    value: res[0],
+                                    text : res[1]
+                                }));
+                            }
+                        });
+
+                        $('#select-item').fSelect();
+
+                        var name = '';
+                        $('.div-select-item .fs-option').each(function() {
+                            var value = $(this).data('value').toString();
+                            if(item.Item__c.includes(value)){
+                                $(this).addClass('selected');
+                                if(name == ''){
+                                    name += $(this).find('.fs-option-label').text();
+                                } else {
+                                    name += ','+$(this).find('.fs-option-label').text();
+                                }
+                            }
+                        });
+
+                        if(name != ''){
+                            $(".div-select-item .fs-label").text(name);    
+                        }
+                        
+                        var valorInputItem = $("#select-item").val();
+                        var valorInputTipo = $("#select-tipo").val();
+
+                        if(valorInputItem != null && valorInputItem != '' &&
+                        valorInputTipo != null && valorInputTipo != ''){
+
+                            if(item.Motivo__c != null && item.Motivo__c != ''){
+                                carregarListaMotivoSelecionado(valorInputTipo, valorInputItem, item.Motivo__c);    
+                            } else {
+                                carregarListaMotivo(valorInputTipo, valorInputItem);    
+                            }
+
+                        } else {
+
+                            $(".div-select-motivo .fs-label").text("Selecione");
+                            $(".div-select-motivo").addClass("div-desativada");
+                        }
+
+                    } // Fim if(item.Item__c != null && item.Item__c != '')
+
+
+                    if(item.Tipo_contrato__c != null && item.Tipo_contrato__c != ''){
+
+                        sforce.connection.sessionId = "{!$Api.Session_ID}";
+                        var retorno = sforce.apex.execute("Util_Direcionamento","getTipoContrato",{});
+
+                        $('#div-select-tipo-contrato').text('');
+                        $('#select-tipo-contrato').text('');
+                        
+                        $('#div-select-tipo-contrato').append('<select class="" id="select-tipo-contrato" disabled="true" tabindex="15" multiple="multiple">');
+                        
+                        $.each(retorno, function (i, item2) {
+                            if(item.Tipo_contrato__c.includes(item2.Id)){
+                                $('#select-tipo-contrato').append($('<option>', { 
+                                    value: item2.Id,
+                                    text : item2.Name,
+                                    selected: true
+                                }));
+                            } else {
+                                $('#select-tipo-contrato').append($('<option>', { 
+                                    value: item2.Id,
+                                    text : item2.Name 
+                                }));
+                            }
+                        });
+                        
+                        $('#select-status-os').fSelect();
+                        
+                        var name = '';
+                        $('.div-select-tipo-contrato .fs-option').each(function() {
+                            var value = $(this).data('value').toString();
+                            if(item.Tipo_contrato__c.includes(value)){
+                                $(this).addClass('selected');
+                                if(name == ''){
+                                    name += $(this).find('.fs-option-label').text();
+                                } else {
+                                    name += ','+$(this).find('.fs-option-label').text();
+                                }
+                            }
+                        });
+                        
+                        if(name != ''){
+                            $(".div-select-tipo-contrato .fs-label").text(name);    
+                        }
+                    } // Fim if(item.Tipo_contrato__c != null && item.Tipo_contrato__c
+
+
+                    if(item.Ultima_acao_OS__c != null && item.Ultima_acao_OS__c != ''){
+
+                        sforce.connection.sessionId = "{!$Api.Session_ID}";
+                        var retorno = sforce.apex.execute("Util_Direcionamento","getUltimaAcaoOS",{});
+
+                        $('#div-select-ultima-acao-os').text('');
+                        $('#select-ultima-acao-os').text('');
+                        
+                        $('#div-select-ultima-acao-os').append('<select class="" id="select-ultima-acao-os" disabled="true" tabindex="13" multiple="multiple">');
+
+                        $.each(retorno, function (i, item2) {
+                            var res = item2.split("|");
+                            if(item.Ultima_acao_OS__c.includes(res[0])){
+                                $('#select-ultima-acao-os').append($('<option>', { 
+                                    value: res[0],
+                                    text : res[1],
+                                    selected: true
+                                }));
+                            } else {
+                                $('#select-ultima-acao-os').append($('<option>', { 
+                                    value: res[0],
+                                    text : res[1]
+                                }));
+                            }
+                        });
+                        
+                        $('#select-ultima-acao-os').fSelect();
+                        
+                        var name = '';
+                        $('.div-select-ultima-acao-os .fs-option').each(function() {
+                            var value = $(this).data('value').toString();
+                            if(item.Ultima_acao_OS__c.includes(value)){
+                                $(this).addClass('selected');
+                                if(name == ''){
+                                    name += $(this).find('.fs-option-label').text();
+                                } else {
+                                    name += ','+$(this).find('.fs-option-label').text();
+                                }
+                            }
+                        });
+                        
+                        if(name != ''){
+                            $(".div-select-ultima-acao-os .fs-label").text(name);    
+                        }
+                    } // Fim if(item.Ultima_acao_OS__c != null && item.Ultima_acao_OS__c
+
+
+                    if(item.Motivo_noshow__c != null && item.Motivo_noshow__c != ''){
+
+                        sforce.connection.sessionId = "{!$Api.Session_ID}";
+                        var retorno = sforce.apex.execute("Util_Direcionamento","getMotivoNoshowOS",{});
+
+                        $('#div-select-motivo-noshow').text('');
+                        $('#select-motivo-noshow').text('');
+
+                        $('#div-select-motivo-noshow').append('<select class="" id="select-motivo-noshow" disabled="true" tabindex="14" multiple="multiple">');
+
+                        $.each(retorno, function (item2, i) {
+                            var res = i.split("|");
+                            if(item.Motivo_noshow__c.includes(res[0])){
+                                $('#select-motivo-noshow').append($('<option>', { 
+                                    value: res[0],
+                                    text : res[1],
+                                    selected: true
+                                }));
+                            } else {
+                                $('#select-motivo-noshow').append($('<option>', { 
+                                    value: res[0],
+                                    text : res[1]
+                                }));
+                            }
+                        });
+
+                        $('#select-motivo-noshow').fSelect();
+
+                        var name = '';
+                        $('.div-select-motivo-noshow .fs-option').each(function() {
+                            var value = $(this).data('value').toString();
+                            if(item.Motivo_noshow__c.includes(value)){
+                                $(this).addClass('selected');
+                                if(name == ''){
+                                    name += $(this).find('.fs-option-label').text();
+                                } else {
+                                    name += ','+$(this).find('.fs-option-label').text();
+                                }
+                            }
+                        });
+
+                        if(name != ''){
+                            $(".div-select-motivo-noshow .fs-label").text(name);    
+                        }
+                        
+                    } // Fim if(item.Motivo_noshow__c != null && item.Motivo_noshow__c != '')
+
+
+                    if(item.Cliente_KA__c != null && item.Cliente_KA__c != ''){
+
+                        sforce.connection.sessionId = "{!$Api.Session_ID}";
+                        var retorno = sforce.apex.execute("Util_Direcionamento","getClienteKA",{});
+
+                        $('#div-select-cliente-ka').text('');
+                        $('#select-cliente-ka').text('');
+
+                        $('#div-select-cliente-ka').append('<select class="slds-select select-cliente-ka" name="select-cliente-ka" id="select-cliente-ka" tabindex="18">');
+
+                        $('#select-cliente-ka').append(new Option('Selecione', 'Selecione'));
+
+                        $.each(retorno, function (item2, i) {
+                            var res = i.split("|");
+                            $('#select-cliente-ka').append($('<option>', { 
+                                value: res[0],
+                                text : res[1]
+                            }));
+                        });
+
+                        $('#select-cliente-ka').val(item.Cliente_KA__c);
+
+                    } // Fim if(item.Cliente_KA__c != null && item.Cliente_KA__c != '')
+
+                });
+
+                pesquisarOS();
+
+                var retornoUsuarios = sforce.apex.execute("Direcionamento_OS","getUsuariosDirecionamentoOS",
+                                                {idDirecionamentoOS:idOS});
+
+                logVal('retornoUsuarios: '+retornoUsuarios);
+
+                var iUsuariosSelecionados = '';
+
+                $.each( retornoUsuarios, function( index, valor ) {
+                    iUsuariosSelecionados += valor.Usuario__c + ',';
+                });
+
+                
+                var retornoUsuariosDisponiveis = sforce.apex.execute("Direcionamento_OS","getUserDisponivelDirecionamento",
+                                                {idUsuariosSelecionados:iUsuariosSelecionados});
+
+                logVal('retornoUsuariosDisponiveis: '+retornoUsuariosDisponiveis);
+
+                
+                retornoUsuariosDisponiveis.sort(function(a, b){
+                                                        if(a.Name < b.Name) return -1;
+                                                        if(a.Name > b.Name) return 1;
+                                                        return 0;
+                                });
+                
+                var retornoUsuariosAtt = new Array();
+
+                $.each( retornoUsuarios, function( index, valor ) {
+                    var usuarioSelecionado = new Object();
+                    usuarioSelecionado.Id = valor.Usuario__c;
+                    usuarioSelecionado.Name = valor.Usuario__r.Name;
+                    retornoUsuariosAtt.push(usuarioSelecionado);
+                });
+
+                logVal('retornoUsuariosAtt: '+retornoUsuariosAtt);
+
+                retornoUsuariosAtt.sort(function(a, b){
+                                                        if(a.Name < b.Name) return -1;
+                                                        if(a.Name > b.Name) return 1;
+                                                        return 0;
+                                });
+
+                montarTabelaUsuariosDisponiveis(retornoUsuariosDisponiveis);
+                montarTabelaUsuariosSelecionados(retornoUsuariosAtt);
+
+            } // Fim carregarInformacoesOS
+
+
+            // Função para validação do Aging
+            function validarAging(){
+
+                var agingInicio = $('#campoDeAging').val();
+                var agingFinal = $('#campoAteAging').val();
+
+                $("#campoDeAging").css("border-color", "#dddbda");
+                $("#campoAteAging").css("border-color", "#dddbda");
+
+                logVal('agingInicio: '+agingInicio);
+                logVal('agingFinal: '+agingFinal);
+
+                if(agingInicio != null && agingInicio != '' &&
+                agingFinal != null && agingFinal != ''){
+
+                    var ateInt = parseInt(agingFinal);
+                    var deInt = parseInt(agingInicio);
+
+                    logVal('ateInt: '+ateInt);
+                    logVal('deInt: '+deInt);
+
+                    if(ateInt < deInt){
+                        
+                        $("#campoDeAging").css("border-color", "#C23934");
+                        $("#campoAteAging").css("border-color", "#C23934");
+                        
+                        mostrarMensagemErro("O Aging Final não pode ser inferior ao Aging Inicial!");
+                        return false;
+                    }
+                }
+                
+                return true;
+            } // Fim função validarAging
+
+
+            // Função para habilitar todos os campos
+            function habilitarTodosCampos(){
+
+                $("#checkbox-os-sem-agendamento-aging-85").prop('disabled', false);
+                $("#checkbox-os-com-agendamento").prop('disabled', false);
+                $("#checkbox-os-sem-direcionamento").prop('disabled', false);
+                $("#checkbox-os-sem-servico").prop('disabled', false);
+                $("#checkbox-contato-fora-faixa").prop('disabled', false);
+
+                $("#campoNomeConfiguracao").prop('disabled', false);
+                $("#campoNomeCliente").prop('disabled', false);
+                $("#campoNumeroOS").prop('disabled', false);
+                $("#campoDeAging").prop('disabled', false);
+                $("#campoAteAging").prop('disabled', false);
+                $("#campoQtddOS").prop('disabled', false);
+
+                $("#select-tipo").prop('disabled', false);
+                $("#select-status-os").prop('disabled', false);
+                //$("#select-motivo-noshow").prop('disabled', false);
+                $("#select-item").prop('disabled', false);
+                $("#select-ultima-acao-os").prop('disabled', false);
+                $("#select-tipo-contrato").prop('disabled', false);
+                $("#select-classe").prop('disabled', false);
+                $("#select-cliente-ka").prop('disabled', false);
+                $("#select-tipo-os-macro").prop('disabled', false);
+                $("#select-tipo-os-micro").prop('disabled', false);
+                $("#select-regiao-comercial").prop('disabled', false);
+
+                $("#botaoSalvarConfiguracao").prop('disabled', false);
+                $("#botaoPesquisar").prop('disabled', false);
+                
+                var idConfig = $("#select-configuracao").val();
+                if(idConfig != null && idConfig != '' && idConfig != 'Novo'){
+                    $("#botaoRemoverConfiguracao").prop('disabled', false);
+                }
+
+                $(".div-select-tipo").removeClass("div-desativada");
+                $(".div-select-status-os").removeClass("div-desativada");
+                //$(".div-select-motivo-noshow").removeClass("div-desativada");
+                $(".div-select-item").removeClass("div-desativada");
+                $(".div-select-ultima-acao-os").removeClass("div-desativada");
+                $(".div-select-tipo-contrato").removeClass("div-desativada");
+                $(".div-select-classe").removeClass("div-desativada");
+                $(".div-select-cliente-ka").removeClass("div-desativada");
+                $(".div-select-tipo-os-macro").removeClass("div-desativada");
+                $(".div-select-tipo-os-micro").removeClass("div-desativada");
+                $(".div-select-regiao-comercial").removeClass("div-desativada");
+
+            } // Fim habilitarTodosCampos
+
+
+            // Função para desabilitar todos os campos
+            function desabilitarTodosCampos(){
+
+                $("#checkbox-os-sem-agendamento-aging-85").prop('disabled', true);
+                $("#checkbox-os-com-agendamento").prop('disabled', true);
+                $("#checkbox-os-sem-direcionamento").prop('disabled', true);
+                $("#checkbox-os-sem-servico").prop('disabled', true);
+                $("#checkbox-contato-fora-faixa").prop('disabled', true);
+
+                $("#campoNomeConfiguracao").prop('disabled', true);
+                $("#campoNomeCliente").prop('disabled', true);
+                $("#campoNumeroOS").prop('disabled', true);
+                $("#campoDeAging").prop('disabled', true);
+                $("#campoAteAging").prop('disabled', true);
+                $("#campoQtddOS").prop('disabled', true);
+
+                $("#select-tipo").prop('disabled', true);
+                $("#select-status-os").prop('disabled', true);
+                $("#select-motivo-noshow").prop('disabled', true);
+                $("#select-item").prop('disabled', true);
+                $("#select-ultima-acao-os").prop('disabled', true);
+                $("#select-tipo-contrato").prop('disabled', true);
+                $("#select-motivo").prop('disabled', true);
+                $("#select-classe").prop('disabled', true);
+                $("#select-cliente-ka").prop('disabled', true);
+                $("#select-tipo-os-macro").prop('disabled', true);
+                $("#select-tipo-os-micro").prop('disabled', true);
+                $("#select-regiao-comercial").prop('disabled', true);
+
+                $("#botaoSalvarConfiguracao").prop('disabled', true);
+                $("#botaoRemoverConfiguracao").prop('disabled', true);
+                $("#botaoPesquisar").prop('disabled', true);
+
+                $(".div-select-tipo .fs-label").text("Selecione");
+                $(".div-select-status-os .fs-label").text("Selecione");
+                $(".div-select-motivo-noshow .fs-label").text("Selecione");
+                $(".div-select-item .fs-label").text("Selecione");
+                $(".div-select-ultima-acao-os .fs-label").text("Selecione");
+                $(".div-select-tipo-contrato .fs-label").text("Selecione");
+                $(".div-select-motivo .fs-label").text("Selecione");
+                $(".div-select-classe .fs-label").text("Selecione");
+                $(".div-select-tipo-os-macro .fs-label").text("Selecione");
+                $(".div-select-tipo-os-micro .fs-label").text("Selecione");
+                $(".div-select-regiao-comercial .fs-label").text("Selecione");
+
+                $("#campoNomeConfiguracao").val('');
+                $("#campoNomeCliente").val('');
+                $("#campoNumeroOS").val('');
+                $("#campoDeAging").val('');
+                $("#campoAteAging").val('');
+                $("#campoQtddOS").val('');
+
+                $("#checkbox-os-sem-agendamento-aging-85").prop('checked', false);
+                $("#checkbox-os-com-agendamento").prop('checked', false);
+                $("#checkbox-os-sem-direcionamento").prop('checked', false);
+                $("#checkbox-os-sem-servico").prop('checked', false);
+                $("#checkbox-contato-fora-faixa").prop('checked', false);
+
+                $(".div-select-tipo").addClass("div-desativada");
+                $(".div-select-status-os").addClass("div-desativada");
+                $(".div-select-motivo-noshow").addClass("div-desativada");
+                $(".div-select-item").addClass("div-desativada");
+                $(".div-select-ultima-acao-os").addClass("div-desativada");
+                $(".div-select-tipo-contrato").addClass("div-desativada");
+                $(".div-select-motivo").addClass("div-desativada");
+                $(".div-select-classe").addClass("div-desativada");
+                $(".div-select-cliente-ka").addClass("div-desativada");
+                $(".div-select-tipo-os-macro").addClass("div-desativada");
+                $(".div-select-tipo-os-micro").addClass("div-desativada");
+                $(".div-select-regiao-comercial").addClass("div-desativada");
+
+                $("#select-tipo").val('');
+                $("#select-status-os").val('');
+                $("#select-motivo-noshow").val('');
+                $("#select-item").val('');
+                $("#select-ultima-acao-os").val('');
+                $("#select-tipo-contrato").val('');
+                $("#select-motivo").val('');
+                $("#select-classe").val('');
+                $("#select-tipo-os-macro").val('');
+                $("#select-tipo-os-micro").val('');
+                $("#select-regiao-comercial").val('');
+                $("#select-cliente-ka").val('Selecione');
+
+                $("#div-usuarios").hide();
+                $("#div-lista-os").hide();
+                $("#tbodyTabelaDisponiveis").text('');
+                $("#tbodyTabelaDisponiveis").val('');
+                $("#tbodyTabelaSelecionados").text('');
+                $("#tbodyTabelaSelecionados").val('');
+                $("#tbodyTabela").val('');
+                $("#tbodyTabela").text('');
+                $("#divTabelaExportar").val('');
+                $("#divTabelaExportar").text('');
+
+                $('.fs-option').each(function() {
+                    $(this).removeClass('selected');
+                });
+
+            } // Fim desabilitarTodosCampos
+
+            function showDiv(){
+                $("#divLoading").show();    
+            }
+
+            // Função para mostrar mensagem de sucesso
+            function mostrarMensagemSucesso(texto) {
+                var x = document.getElementById("mensagemSucesso");
+                x.innerHTML = texto;
+                x.className = "show";
+                setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+            }
+
+            // Função para mostrar mensagem de erro
+            function mostrarMensagemErro(texto) {
+                var x = document.getElementById("mensagemErro");
+                x.innerHTML = texto;
+                x.className = "show";
+                setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+            }
+
+            // Função para mostrar mensagem de alerta
+            function mostrarMensagemAlerta(texto) {
+                var x = document.getElementById("mensagemAlerta");
+                x.innerHTML = texto;
+                x.className = "show";
+                setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+            }
+
+            // Função que garante que somente números sejam digitados no input do tipo texto
+            function somenteNumeros(num) {
+                var er = /[^0-9.]/;
+                er.lastIndex = 0;
+                var campo = num;
+                campo.value = campo.value.replace('.','').replace('.','').replace('.','').replace('.','');
+                campo.value = campo.value.replace(',','').replace(',','').replace(',','').replace(',','');
+                if (er.test(campo.value)) {
+                    var campoInicial = campo.value;
+                    var campoFinal = '';
+                    for (var i = 0; i < campoInicial.length; i++) {
+                        var caracter = campoInicial.charAt(i);
+                        logVal('caracter: '+caracter);
+                        if(!er.test(caracter)){
+                            campoFinal += caracter;
+                        }
+                    }
+                    campo.value = campoFinal;
+                    return false;
+                } else {
+                    return true;    
+                }
+            }
+
+
+            // Função que recebe a data em formato String e retorna em Data
+            function toDate(dateStr) {
+                try {
+                    const [day, month, year] = dateStr.split("/");
+                    return new Date(year, month - 1, day);
+                } catch(err) {
+                    logVal('ERRO: '+ err.message);
+                    return null;
+                }
+            }
+
+
+            // Função que recebe a data em formato String BR e retorna em String EUA
+            function toStringDate(dateStr) {
+                try {
+                    if(dateStr != null && dateStr != ''){
+                        const [day, month, year] = dateStr.split("/");
+                        return year+'-'+month+'-'+day;
+                    } else {
+                        return '';    
+                    }
+                } catch(err) {
+                    logVal('ERRO: '+ err.message);
+                    return null;
+                }
+            }
+
+        
+            // Função que recebe a data em formato String BR e retorna em String EUA
+            function validarData(dateStr) {
+                try {
+                    logVal('dateStr: '+dateStr);
+                    if(dateStr != null && dateStr != ''){
+                        const [day, month, year] = dateStr.split("/");
+                        var dayInt = parseInt(day);
+                        var monthInt = parseInt(month);
+                        var yearInt = parseInt(year);
+                        logVal('dayInt: '+dayInt);
+                        logVal('monthInt: '+monthInt);
+                        logVal('yearInt: '+yearInt);
+                        if(dayInt < 1 || dayInt > 31 || monthInt < 1 || monthInt > 12 ||
+                        yearInt < 1900){
+                            return false;
+                        } else {
+                            return true;
+                        }
+                    } else {
+                        return true;    
+                    }
+                } catch(err) {
+                    logVal('ERRO: '+ err.message);
+                    return false;
+                }
+            }
+
+
+            // Função para formatar a data para exibição
+            function formatarDataHora(dataString){
+                var data = new Date(dataString);
+                var dia = data.getDate();
+                if (dia.toString().length == 1)
+                dia = "0"+dia;
+                var mes = data.getMonth()+1;
+                if (mes.toString().length == 1)
+                mes = "0"+mes;
+                var ano = data.getFullYear();
+
+                var hora = data.getHours();
+                if(hora.toString().length == 1)
+                    hora = "0"+hora;
+                var minuto = data.getMinutes();
+                if(minuto.toString().length == 1)
+                    minuto = "0"+minuto;
+                    
+                return dia+"/"+mes+"/"+ano+" "+hora+":"+minuto;
+            }
+
+
+            // Função para formatar a data para exibição
+            function formatarData(dataString){
+                var data = new Date(dataString);
+                var dia = data.getDate();
+                if (dia.toString().length == 1)
+                dia = "0"+dia;
+                var mes = data.getMonth()+1;
+                if (mes.toString().length == 1)
+                mes = "0"+mes;
+                var ano = data.getFullYear();
+
+                return dia+"/"+mes+"/"+ano;
+            }
+
+            // Função para formatar a data para exibição
+            function stringFormatarData(dataString){
+                logVal('dataString: '+dataString);
+                var parts = dataString.split('-');
+                var data = new Date(parts[0], parts[1] - 1, parts[2]);
+                var dia = data.getDate();
+                if (dia.toString().length == 1)
+                dia = "0"+dia;
+                var mes = data.getMonth()+1;
+                if (mes.toString().length == 1)
+                mes = "0"+mes;
+                var ano = data.getFullYear();  
+                return dia+"/"+mes+"/"+ano;
+            }
+
+            // Função para salvar a configuração
+            function salvarConfiguracao(){
+
+                try {
+
+                    $("#divLoading").show();
+
+                    var idConfiguracao = $("#select-configuracao").val();
+                    var campoNomeConfiguracao = $("#campoNomeConfiguracao").val();
+                    var campoNomeCliente = $("#campoNomeCliente").val();
+                    var campoNumeroOS = $("#campoNumeroOS").val();
+                    var campoDeAging = $("#campoDeAging").val();
+                    var campoAteAging = $("#campoAteAging").val();
+                    var qtddOS = $("#campoQtddOS").val();
+                    var oSSemAgendamentoAging85  = $("#checkbox-os-sem-agendamento-aging-85").prop("checked");
+                    var oSComAgendamento = $("#checkbox-os-com-agendamento").prop("checked");
+                    var oSSemDirecionamento = $("#checkbox-os-sem-direcionamento").prop("checked");
+                    var osSemServico = $("#checkbox-os-sem-servico").prop("checked");
+                    var contatoForaFaixa = $("#checkbox-contato-fora-faixa").prop("checked");
+                    var selectTipo = $("#select-tipo").val();
+                    var selectStatusOs = $("#select-status-os").val();
+                    var selectMotivoNoshow = $("#select-motivo-noshow").val();
+                    var selectItem = $("#select-item").val();
+                    var selectUltimaAcaoOs = $("#select-ultima-acao-os").val();
+                    var selectTipoContrato = $("#select-tipo-contrato").val();
+                    var selectMotivo = $("#select-motivo").val();
+                    var selectClasse = $("#select-classe").val();
+                    var clienteKA = $("#select-cliente-ka").val();
+                    var selectRegiaoComercial = $("#select-regiao-comercial").val();
+                    var selectTipoOSMacro = $("#select-tipo-os-macro").val();
+                    var selectTipoOSMicro = $("#select-tipo-os-micro").val();
+
+                    logVal("idConfiguracao: "+idConfiguracao);
+                    logVal("campoNomeConfiguracao: "+campoNomeConfiguracao);
+                    logVal("campoNomeCliente: "+campoNomeCliente);
+                    logVal("campoNumeroOS: "+campoNumeroOS);
+                    logVal("campoDeAging: "+campoDeAging);
+                    logVal("campoAteAging: "+campoAteAging);
+                    logVal("qtddOS: "+qtddOS);
+                    logVal("oSSemAgendamentoAging85 : "+oSSemAgendamentoAging85 );
+                    logVal("oSComAgendamento: "+oSComAgendamento);
+                    logVal("oSSemDirecionamento: "+oSSemDirecionamento);
+                    logVal("clienteKA: "+clienteKA);
+                    logVal("osSemServico: "+osSemServico);
+                    logVal("contatoForaFaixa: "+contatoForaFaixa);
+                    logVal("selectTipo: "+selectTipo);
+                    logVal("selectStatusOs: "+selectStatusOs);
+                    logVal("selectMotivoNoshow: "+selectMotivoNoshow);
+                    logVal("selectItem: "+selectItem);
+                    logVal("selectUltimaAcaoOs: "+selectUltimaAcaoOs);
+                    logVal("selectTipoContrato: "+selectTipoContrato);
+                    logVal("selectMotivo: "+selectMotivo);
+                    logVal("selectClasse: "+selectClasse);
+
+                    logVal("selectRegiaoComercial: "+selectRegiaoComercial);
+                    logVal("selectTipoOSMacro: "+selectTipoOSMacro);
+                    logVal("selectTipoOSMicro: "+selectTipoOSMicro);
+
+                    var novaConfiguracao = new Object();
+
+                    if(idConfiguracao != 'Novo' && idConfiguracao != '' && idConfiguracao != null){
+                        novaConfiguracao.Id = idConfiguracao;
+                    }
+                    novaConfiguracao.Name = campoNomeConfiguracao;
+                    if(campoDeAging == ''){
+                        novaConfiguracao.Aging_inicial__c = null;    
+                    } else {
+                        novaConfiguracao.Aging_inicial__c = campoDeAging;
+                    }
+                    if(campoAteAging == ''){
+                        novaConfiguracao.Aging_final__c = null;    
+                    } else {
+                        novaConfiguracao.Aging_final__c = campoAteAging;
+                    }
+                    if(campoNumeroOS == ''){
+                        novaConfiguracao.Numero_OS__c = null;    
+                    } else {
+                        novaConfiguracao.Numero_OS__c = campoNumeroOS.toString();
+                    }
+                    novaConfiguracao.Cliente__c = campoNomeCliente.toString();
+                    novaConfiguracao.Classe__c = selectClasse.toString().replace(/,/g, ';').replace('Selecionar Todos,','');
+                    if(clienteKA != 'Selecione' && clienteKA != '' && clienteKA != null){
+                        novaConfiguracao.Cliente_KA__c = clienteKA.toString();
+                    } else {
+                        novaConfiguracao.Cliente_KA__c = '';
+                    }
+                    novaConfiguracao.Item__c = selectItem.toString().replace(/,/g, ';');
+                    novaConfiguracao.Motivo__c = selectMotivo.toString();
+                    novaConfiguracao.Motivo_noshow__c = selectMotivoNoshow.toString().replace(/,/g, ';');
+                    novaConfiguracao.OS_sem_servico__c = osSemServico;
+                    if(qtddOS == ''){
+                        novaConfiguracao.Quantidade_OS__c = null;    
+                    } else {
+                        novaConfiguracao.Quantidade_OS__c = qtddOS;
+                    }
+                    novaConfiguracao.OS_sem_direcionamento__c = oSSemDirecionamento;
+                    novaConfiguracao.OS_com_agendamento__c = oSComAgendamento;
+                    novaConfiguracao.OS_sem_agendamento_aging_85_dias__c = oSSemAgendamentoAging85;
+                    novaConfiguracao.Contato_fora_faixa__c = contatoForaFaixa;
+                    novaConfiguracao.Status_OS__c = selectStatusOs.toString().replace('Selecionar Todos,','');
+                    novaConfiguracao.Tipo_contrato__c = selectTipoContrato.toString().replace('Selecionar Todos,','');
+                    novaConfiguracao.Tipo_OS__c = selectTipo.toString();
+                    novaConfiguracao.Ultima_acao_OS__c = selectUltimaAcaoOs.toString().replace(/,/g, ';').replace('Selecionar Todos,','');
+
+                    novaConfiguracao.Regiao_comercial__c = selectRegiaoComercial.toString().replace(/,/g, ';');
+                    novaConfiguracao.Tipo_OS_Macro__c = selectTipoOSMacro.toString().replace(/,/g, ';');
+                    novaConfiguracao.Tipo_OS_Micro__c = selectTipoOSMicro.toString().replace(/,/g, ';');
+
+                    var novaConfiguracaoString = JSON.stringify(novaConfiguracao);
+
+                    logVal('novaConfiguracaoString: '+ novaConfiguracaoString);
+
+                    var usuariosSelecionados = new Array();
+
+                    $('input[name="checkbox-usuario-selecionado"]').each(function() {
+                        var usuarioSelecionado = new Object();
+                        usuarioSelecionado.Id = $(this).data('id');
+                        usuarioSelecionado.Name = $(this).data('name');
+                        logVal('usuarioSelecionado: '+usuarioSelecionado);
+                        usuariosSelecionados.push(usuarioSelecionado);
+                    });
+                    
+                    var usuariosSelecionadosString = JSON.stringify(usuariosSelecionados);
+                    logVal('usuariosSelecionadosString: '+ usuariosSelecionadosString);
+
+                    sforce.connection.sessionId = "{!$Api.Session_ID}";
+                    var retorno = sforce.apex.execute("Direcionamento_OS","salvarConfiguracao",{
+                                                        configuracaoRegistro:novaConfiguracaoString,
+                                                        usuarios:usuariosSelecionadosString
+                                                        });
+
+                    logVal('retorno: ' + retorno);
+
+                    if(retorno != null && retorno != ''){
+                        mostrarMensagemSucesso("Configuração salva com sucesso!");
+                        desabilitarTodosCampos();
+                        carregarListaDirecionamentoOS();
+                        $("#select-configuracao").val(retorno);
+
+                        $("#divLoading").show();
+                        setTimeout(function(){
+                            carregarInformacoesOS(retorno);
+                        }, 500);
+
+                    } else {
+                        mostrarMensagemErro("Erro ao salvar a configuração!");
+                        $("#divLoading").hide();
+                    }
+
+                } catch(err) {
+
+                    mostrarMensagemErro("Erro ao salvar a configuração");
+                    logVal('ERRO: '+ err.message);
+                    $("#divLoading").hide();
+                }
+
+            } // Fim função salvar
+
+        
+            // Função para pesquisar a OS
+            function pesquisarOS(){
+                        
+                try {
+
+                    $("#tbodyTabela").val('');
+                    $("#tbodyTabela").text('');
+                    $("#divTabelaExportar").val('');
+                    $("#divTabelaExportar").text('');
+
+                    var campoNomeConfiguracao = $("#campoNomeConfiguracao").val();
+                    var campoNomeCliente = $("#campoNomeCliente").val();
+                    var campoNumeroOS = $("#campoNumeroOS").val();
+                    var campoDeAging = $("#campoDeAging").val();
+                    var campoAteAging = $("#campoAteAging").val();
+                    var qtddOS = $("#campoQtddOS").val();
+                    var oSSemAgendamentoAging85  = $("#checkbox-os-sem-agendamento-aging-85").prop("checked");
+                    var oSComAgendamento = $("#checkbox-os-com-agendamento").prop("checked");
+                    var oSSemDirecionamento = $("#checkbox-os-sem-direcionamento").prop("checked");
+                    var osSemServico = $("#checkbox-os-sem-servico").prop("checked");
+                    var contatoForaFaixa = $("#checkbox-contato-fora-faixa").prop("checked");
+                    var selectTipo = $("#select-tipo").val();
+                    var selectStatusOs = $("#select-status-os").val();
+                    var selectMotivoNoshow = $("#select-motivo-noshow").val();
+                    var selectItem = $("#select-item").val();
+                    var selectUltimaAcaoOs = $("#select-ultima-acao-os").val();
+                    var selectTipoContrato = $("#select-tipo-contrato").val();
+                    var selectMotivo = $("#select-motivo").val();
+                    var selectClasse = $("#select-classe").val();
+                    var clienteKA = $("#select-cliente-ka").val();
+                    var selectRegiaoComercial = $("#select-regiao-comercial").val();
+                    var selectTipoOSMacro = $("#select-tipo-os-macro").val();
+                    var selectTipoOSMicro = $("#select-tipo-os-micro").val();
+
+                    logVal("campoNomeConfiguracao: "+campoNomeConfiguracao);
+                    logVal("campoNomeCliente: "+campoNomeCliente);
+                    logVal("campoNumeroOS: "+campoNumeroOS);
+                    logVal("campoDeAging: "+campoDeAging);
+                    logVal("campoAteAging: "+campoAteAging);
+                    logVal("qtddOS: "+qtddOS);
+                    logVal("oSSemAgendamentoAging85 : "+oSSemAgendamentoAging85 );
+                    logVal("oSComAgendamento: "+oSComAgendamento);
+                    logVal("oSSemDirecionamento: "+oSSemDirecionamento);
+                    logVal("clienteKA: "+clienteKA);
+                    logVal("osSemServico: "+osSemServico);
+                    logVal("contatoForaFaixa: "+contatoForaFaixa);
+                    logVal("selectTipo: "+selectTipo);
+                    logVal("selectStatusOs: "+selectStatusOs);
+                    logVal("selectMotivoNoshow: "+selectMotivoNoshow);
+                    logVal("selectItem: "+selectItem);
+                    logVal("selectUltimaAcaoOs: "+selectUltimaAcaoOs);
+                    logVal("selectTipoContrato: "+selectTipoContrato);
+                    logVal("selectMotivo: "+selectMotivo);
+                    logVal("selectClasse: "+selectClasse);
+                    logVal("selectRegiaoComercial: "+selectRegiaoComercial);
+                    logVal("selectTipoOSMacro: "+selectTipoOSMacro);
+                    logVal("selectTipoOSMicro: "+selectTipoOSMicro);
+
+                    var parametrosPesquisa = new Object();
+
+                    parametrosPesquisa.Name = campoNomeConfiguracao;
+                    if(campoDeAging == ''){
+                        parametrosPesquisa.Aging_inicial__c = null;    
+                    } else {
+                        parametrosPesquisa.Aging_inicial__c = campoDeAging;
+                    }
+                    if(campoAteAging == ''){
+                        parametrosPesquisa.Aging_final__c = null;    
+                    } else {
+                        parametrosPesquisa.Aging_final__c = campoAteAging;
+                    }
+                    if(campoNumeroOS == ''){
+                        parametrosPesquisa.Numero_OS__c = null;    
+                    } else {
+                        parametrosPesquisa.Numero_OS__c = campoNumeroOS;
+                    }
+                    parametrosPesquisa.Cliente__c = campoNomeCliente.toString();
+                    parametrosPesquisa.Classe__c = selectClasse.toString().replace('Selecionar Todos,','');
+                    if(clienteKA != 'Selecione' && clienteKA != '' && clienteKA != null){
+                        parametrosPesquisa.Cliente_KA__c = clienteKA.toString();
+                    } else {
+                        parametrosPesquisa.Cliente_KA__c = '';
+                    }
+                    parametrosPesquisa.Item__c = selectItem.toString();
+                    parametrosPesquisa.Motivo__c = selectMotivo.toString();
+                    parametrosPesquisa.Motivo_noshow__c = selectMotivoNoshow.toString();
+                    parametrosPesquisa.OS_sem_servico__c = osSemServico;
+                    if(qtddOS == ''){
+                        parametrosPesquisa.Quantidade_OS__c = null;    
+                    } else {
+                        parametrosPesquisa.Quantidade_OS__c = qtddOS;
+                    }
+                    parametrosPesquisa.OS_sem_direcionamento__c = oSSemDirecionamento;
+                    parametrosPesquisa.OS_com_agendamento__c = oSComAgendamento;
+                    parametrosPesquisa.OS_sem_agendamento_aging_85_dias__c = oSSemAgendamentoAging85;
+                    parametrosPesquisa.Contato_fora_faixa__c = contatoForaFaixa;
+                    parametrosPesquisa.Status_OS__c = selectStatusOs.toString().replace('Selecionar Todos,','');
+                    parametrosPesquisa.Tipo_contrato__c = selectTipoContrato.toString().replace('Selecionar Todos,','');
+                    parametrosPesquisa.Tipo_OS__c = selectTipo.toString();
+                    parametrosPesquisa.Ultima_acao_OS__c = selectUltimaAcaoOs.toString().replace(/,/g, ';').replace('Selecionar Todos,','');
+
+                    parametrosPesquisa.Regiao_comercial__c = selectRegiaoComercial.toString();
+                    parametrosPesquisa.Tipo_OS_macro__c = selectTipoOSMacro.toString();
+                    parametrosPesquisa.Tipo_OS_micro__c = selectTipoOSMicro.toString();
+
+                    var parametrosPesquisaString = JSON.stringify(parametrosPesquisa);
+
+                    logVal('parametrosPesquisaString: '+ parametrosPesquisaString);
+
+                    sforce.connection.sessionId = "{!$Api.Session_ID}";
+                    var retorno = sforce.apex.execute("Direcionamento_OS","pesquisarOS",{
+                                                        parametrosPesquisa:parametrosPesquisaString});
+
+                    logVal('retorno: ' + retorno);
+                    if(retorno != null && retorno.length > 0){
+                        
+                        var linhasTabela = "";
+                        
+                        var linhasTabelaExportar = "<table id='tabelaExportar'><tr><th>OS</th><th>Cliente</th><th>Aging</th><th>Regional</th><th>Qtdd contato</th><th>Última ação</th>";
+                            linhasTabelaExportar += "<th>Data última ação</th><th>Data agendamento</th><th>Data direcionamento</th><th>Atribuído a</th></tr>";
+                        
+                        var urlSF = 'https://'+window.location.host+'/';
+                        $.each( retorno, function( index, valor ) {
+
+                            var numeroOS = '';
+                            if(valor.Codigo_Externo__c != null && valor.Codigo_Externo__c != ''){
+                                numeroOS = valor.Codigo_Externo__c;
+                            }
+
+                            var cliente = '';
+                            if(valor.Cliente__c != null && valor.Cliente__c != ''){
+                                cliente = valor.Cliente__c;
+                            }
+
+                            var aging = '';
+                            if(valor.Aging__c != null && valor.Aging__c != ''){
+                                aging = valor.Aging__c;
+                            }
+
+                            var regional = '';
+                            if(valor.Regional__c != null && valor.Regional__c != ''){
+                                regional = valor.Regional__c;
+                            }
+
+                            var qtddContato = '';
+                            if(valor.Quantidade_contato__c != null && valor.Quantidade_contato__c != ''){
+                                qtddContato = valor.Quantidade_contato__c;
+                            }
+
+                            var ultimaAcao = '';
+                            if(valor.Ultima_acao_OS__c != null && valor.Ultima_acao_OS__c != ''){
+                                ultimaAcao = valor.Ultima_acao_OS__c;
+                            }
+
+                            var dataUltimaAcao = '';
+                            if(valor.Data_ultima_acao__c != null && valor.Data_ultima_acao__c != ''){
+                                dataUltimaAcao = formatarDataHora(valor.Data_ultima_acao__c);
+                            }
+
+                            var dataAgendameno = '';
+                            if(valor.Agendado_para__c != null && valor.Agendado_para__c != ''){
+                                dataAgendameno = formatarDataHora(valor.Agendado_para__c);
+                            }
+
+                            var dataDirecionamento = '';
+                            if(valor.Data_direcionamento__c != null && valor.Data_direcionamento__c != ''){
+                                dataDirecionamento = formatarData(valor.Data_direcionamento__c);
+                            }
+
+                            var atribuidoA = '';
+                            if(valor.Owner.Name != null && valor.Owner.Name != ''){
+                                atribuidoA = valor.Owner.Name;
+                            }
+                            var linhaTabela = '';
+                            linhaTabela += '<tr>'+                        
+                                //'   <div class="slds-truncate" title="'+numeroOS+'"><a href="'+urlSF+''+valor.Id+'" target="_parent">'+numeroOS+'</a></div>'+
+                                '<td class="body-cell body-col1 col1">'+numeroOS+'</td>'+
+                                '<td class="body-cell body-col2 col2">'+cliente+'</td>'+
+                                '<td class="body-cell body-col3 col3">'+aging+'</td>'+
+                                '<td class="body-cell body-col4 col4">'+regional+'</td>'+
+                                '<td class="body-cell body-col5 col5">'+qtddContato+'</td>'+
+                                '<td class="body-cell body-col6 col6">'+ultimaAcao+'</td>'+
+                                '<td class="body-cell body-col7 col7">'+dataUltimaAcao+'</td>'+
+                                '<td class="body-cell body-col8 col8">'+dataAgendameno+'</td>'+
+                                '<td class="body-cell body-col9 col9">'+dataDirecionamento+'</td>'+
+                                '<td class="body-cell body-col10 col10">'+atribuidoA+'</td>'+
+                                '</tr>';
+
+                            linhasTabela += linhaTabela;
+
+                            linhasTabelaExportar += "<tr>";
+                            linhasTabelaExportar += "<td>"+numeroOS+"</td>";
+                            linhasTabelaExportar += "<td>"+cliente+"</td>";
+                            linhasTabelaExportar += "<td>"+aging+"</td>";
+                            linhasTabelaExportar += "<td>"+regional+"</td>";
+                            linhasTabelaExportar += "<td>"+qtddContato+"</td>";
+                            linhasTabelaExportar += "<td>"+ultimaAcao+"</td>";
+                            linhasTabelaExportar += "<td>"+dataUltimaAcao+"</td>";
+                            linhasTabelaExportar += "<td>"+dataAgendameno+"</td>";
+                            linhasTabelaExportar += "<td>"+dataDirecionamento+"</td>";
+                            linhasTabelaExportar += "<td>"+atribuidoA+"</td>";
+                            linhasTabelaExportar += "</tr>";
+                        });
+
+                        linhasTabelaExportar += "</table>";
+                        $("#divTabelaExportar").append(linhasTabelaExportar);
+
+                        $("#tbodyTabela").append(linhasTabela);
+                        $("#div-lista-os").show();
+                        $("#table-body").scrollTop(0);
+                        $("#divLoading").hide();
+
+                    } else if(retorno != null && retorno.length == 0){
+                        $("#divLoading").hide();
+                        mostrarMensagemAlerta("Nenhum registro encontrado!");
+                    } else {
+                        $("#divLoading").hide();
+                        mostrarMensagemErro("Erro ao realizar pesquisa!");
+                    }
+
+                } catch(err) {
+
+                    mostrarMensagemAlerta("Nenhum registro encontrado, reorganize os filtros e tente novamente!");
+                    logVal('ERRO: '+ err.message);
+                    $("#divLoading").hide();
+                }
+
+            } // Fim função pesquisarOS
+
+            function logVal(value){
+                if({!$Setup.Debug__c.direcionamento_os__c}) console.log(value);
+            }
+        </script>
+    </html>
+</apex:page>

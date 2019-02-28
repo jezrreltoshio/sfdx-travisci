@@ -1,0 +1,497 @@
+<apex:page standardController="Opportunity" extensions="termoPDFController" renderAs="pdf" applyBodyTag="false">
+  <head>
+    <style> 
+      body { font-family: arial,sans-serif; }
+      .termName { font: 9px; }
+      .fieldLabel { font: 8px; }
+      .fieldData { font: 8px; color: black; }
+      .companyData { font: 8px; }
+      .accountData { font: 9px; } 
+      .headerConfig { font: 9px; color: white; background-color:#828189;}
+      .tableDataConfig {  font-size: 8px; }
+      .alignTableTop { align:rigth; vertical-align: top; font-size: 8px; }
+      .trimpar{ background-color: #FFFFFF;}
+      .trpar{ background-color: #DBE5E6;}
+    </style>
+  </head>
+  <body>
+      
+      <apex:dataTable columns="4" value="{!Opportunity}" var="opp" border="1" style="border-collapse:collapse;" cellpadding="2" width="100%">
+        <apex:column styleClass="termName" colspan="3">
+         <apex:outputLabel >
+          {!$Label.TermoNovo_Cabecalho}
+          <br>DADOS CADASTRAIS</br>
+         </apex:outputLabel>
+        </apex:column>
+        <apex:column colspan="1"><apex:image id="LogoSascar" url="{!URLFOR($Resource.TermoDeAquisicao, '/Images/LogoSascar.png')}" /></apex:column>
+        
+        <apex:column colspan="4" style="background-color:#DBE5E6;" breakBefore="true" styleClass="companyData" width="100%">
+         {!$Label.Termo_DadosEmpresa_Nome}
+         <br>{!$Label.Termo_DadosEmpresa_CNPJ}</br>
+         <br>{!$Label.Termo_DadosEmpresa_Endereco}</br>
+        </apex:column>
+        
+        <!-- <apex:column colspan="1" width="20%" styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Executivo de Vendas</apex:column> -->
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Proprietário da Oportunidade</apex:column> -->
+          <apex:column colspan="3" styleClass="fieldData" style="size: 8px;" value="{!Opportunity_ExecutivoDeVendas}"></apex:column>
+        <!-- <apex:column colspan="1" styleClass="fieldData" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Televendas</apex:column> -->
+        <apex:column colspan="1" styleClass="fieldData" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Executivo/TV Parceiro</apex:column>
+          <apex:column colspan="1" styleClass="fieldData" style="size: 8px;" value="{!Opportunity_Televendas}"></apex:column>
+        <apex:column colspan="1" styleClass="fieldData" style="size: 8px; background-color:#DBE5E6;">DMV</apex:column>
+          <apex:column colspan="1" styleClass="fieldData" style="size: 8px;" value="{!Opportunity_DMV}"></apex:column>
+        <apex:column colspan="1" styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Indicador</apex:column>
+          <apex:column colspan="3" styleClass="fieldData" style="size: 8px;" value="{!Opportunity_Indicador}"></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Tipo Negociacão</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" >LOCAÇÃO</apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" style="size: 8px; background-color:#DBE5E6;">Tipo Contrato</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Opportunity_TipoContrato}"></apex:column>
+        
+        <apex:column colspan="4" width="20%" styleClass="companyData" breakBefore="true" style="text-align: center;size: 8px; background-color:#DBE5E6">DADOS DO CLIENTE (pessoa jurídica ou física)</apex:column>
+        
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Razão Social / Nome</apex:column>
+          <apex:column colspan="3" styleClass="fieldData" style="size: 8px;" value="{!Account_RazaoSocial}"></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldData" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Cidade / UF</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Account_Cidade_UF}"></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" style="size: 8px; background-color:#DBE5E6;">CNPJ / CPF</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Account_CNPJ_CPF}"></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">CEP</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Account_CEP}" ></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" style="size: 8px; background-color:#DBE5E6;">Inscrição Estadual / Munic</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Account_InscricaoEstadual}"></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Endereço / Bairro</apex:column>
+          <apex:column colspan="3" styleClass="fieldData" style="size: 8px;" value="{!Account_Endereco_Bairro}"></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldData" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Complemento</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Account_Complemento}"></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" style="size: 8px; background-color:#DBE5E6;">Telefone</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Account_Telefone}"></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Email</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Contact_Email}" ></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" style="size: 8px; background-color:#DBE5E6;">Email NFE</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Contact_EmailNFE}"></apex:column>
+        
+        <apex:column colspan="4" width="20%" styleClass="companyData" breakBefore="true" style="text-align: center;size: 8px; background-color:#DBE5E6">EXCLUSIVO PARA PESSOA FÍSICA</apex:column>
+        
+        <apex:column colspan="1" width="20%" styleClass="fieldData" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Nome do pai</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Account_NomeDoPai}"></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" style="size: 8px; background-color:#DBE5E6;">RG</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Account_RG}"></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Nome da mãe</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Account_NomeDaMae}" ></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" style="size: 8px; background-color:#DBE5E6;">Data de Nascimento</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Account_DtNascimento}"></apex:column>
+        
+        <apex:column colspan="4" width="20%" styleClass="companyData" breakBefore="true" style="text-align: center;size: 8px; background-color:#DBE5E6">PESSOAS AUTORIZADAS</apex:column>
+        <apex:column colspan="4" width="20%" styleClass="companyData" breakBefore="true" style="text-align: center;size: 8px; background-color:#DBE5E6">
+           As pessoas autorizadas pelo Cliente podem solicitar atendimento via Central de Atendimento ao Cliente, realizar alterações cadastrais e responder por assuntos relacionados à cobrança. Deve-se indicar, no mínimo, duas pessoas autorizadas.
+        </apex:column>
+        
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Nome Completo</apex:column>
+          <apex:column colspan="3" styleClass="fieldData" style="size: 8px;" value="{!Contact1_NomeCompleto}"></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldData" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">RG</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Contact1_RG}"></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" style="size: 8px; background-color:#DBE5E6;">CPF</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Contact1_CPF}"></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Telefone1</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Contact1_Tel1}" ></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" style="size: 8px; background-color:#DBE5E6;">Telefone3</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Contact1_Tel2}"></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Telefone2</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Contact1_Tel2}" ></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" style="size: 8px; background-color:#DBE5E6;">Telefone4</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Contact1_tel4}"></apex:column>
+        
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Nome Completo</apex:column>
+          <apex:column colspan="3" styleClass="fieldData" style="size: 8px;" value="{!Contact2_NomeCompleto}"></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldData" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">RG</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Contact2_RG}"></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" style="size: 8px; background-color:#DBE5E6;">CPF</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Contact2_CPF}"></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Telefone1</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Contact2_Tel1}" ></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" style="size: 8px; background-color:#DBE5E6;">Telefone3</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Contact2_Tel2}"></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Telefone2</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Contact2_Tel2}" ></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" style="size: 8px; background-color:#DBE5E6;">Telefone4</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!Contact2_tel4}"></apex:column>
+        
+        <apex:column colspan="4" width="20%" styleClass="companyData" breakBefore="true" style="text-align: center;size: 8px; background-color:#DBE5E6">CONTATOS EM CASO DE EMERGÊNCIA</apex:column>
+        <apex:column colspan="4" width="20%" styleClass="companyData" breakBefore="true" style="text-align: center;size: 8px; background-color:#DBE5E6">
+           Os contatos de emergência devem ser instruídos pelo Cliente com procedimentos de segurança em caso de suspeitas de roubo ou furto, ao contatar o condutor do veículo. Deve-se indicar, no mínimo, duas pessoas como contato de emergência. 
+        </apex:column>
+        
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Nome Completo</apex:column>
+          <apex:column colspan="3" styleClass="fieldData" style="size: 8px;" value="{!SOS_Contact1_NomeCompleto}"></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Telefone1</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!SOS_Contact1_Tel1}" ></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" style="size: 8px; background-color:#DBE5E6;">Telefone3</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!SOS_Contact1_Tel2}"></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Telefone2</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!SOS_Contact1_Tel2}" ></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" style="size: 8px; background-color:#DBE5E6;">Telefone4</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!SOS_Contact1_tel4}"></apex:column>
+        
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Nome Completo</apex:column>
+          <apex:column colspan="3" styleClass="fieldData" style="size: 8px;" value="{!SOS_Contact2_NomeCompleto}"></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Telefone1</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!SOS_Contact2_Tel1}" ></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" style="size: 8px; background-color:#DBE5E6;">Telefone3</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!SOS_Contact2_Tel2}"></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Telefone2</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!SOS_Contact2_Tel2}" ></apex:column>
+        <apex:column colspan="1" width="20%" styleClass="fieldLabel" style="size: 8px; background-color:#DBE5E6;">Telefone4</apex:column>
+          <apex:column colspan="1" width="30%" styleClass="fieldData" style="size: 8px;" value="{!SOS_Contact2_tel4}"></apex:column>
+        
+        <apex:column colspan="4" width="20%" styleClass="companyData" breakBefore="true" />
+        <apex:column colspan="4" width="20%" styleClass="companyData" breakBefore="true" style="text-align: center;size: 8px; background-color:#DBE5E6">FORMA DE PAGAMENTO</apex:column>
+        <apex:column colspan="4" width="20%" styleClass="companyData" breakBefore="true" style="text-align: center;size: 8px; background-color:#DBE5E6">
+           O titular do Contrato deverá ser o mesmo para qualquer que seja a modalidade de pagamento.
+        </apex:column>
+        <apex:column rowspan="12" width="20%" styleClass="companyData" breakBefore="true" style="text-align: center;size: 8px; background-color:#DBE5E6">PREENCHER AS INFORMAÇÕES DE ACORDO COM A FORMA DE PAGAMENTO</apex:column>
+          <apex:column colspan="3" styleClass="fieldLabel" style="text-align: center;size: 8px; background-color:#C4C8CA" >BOLETO BANCÁRIO</apex:column>
+          <apex:column styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6" >DATA DE PAGAMENTO</apex:column>
+          <apex:column colspan="2" styleClass="fieldData" style="size: 8px;" value="{!Boleto_DiaDeVencimento}" />
+        
+          <apex:column colspan="3" styleClass="fieldLabel" breakBefore="true" style="text-align: center;size: 8px; background-color:#C4C8CA" >DÉBITO AUTOMÁTICO</apex:column>
+          <apex:column styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6" >BANCO</apex:column>
+          <apex:column colspan="2" styleClass="fieldData" style="size: 8px;" value="{!Debito_Banco}" />
+          <apex:column styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6" >AGÊNCIA</apex:column>
+          <apex:column colspan="2" styleClass="fieldData" style="size: 8px;" value="{!Debito_Agencia}" />
+          <apex:column styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6" >CONTA CORRENTE</apex:column>
+          <apex:column colspan="2" styleClass="fieldData" style="size: 8px;" value="{!Debito_Conta}" />
+          <apex:column styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6" >DATA DO DÉBITO</apex:column>
+          <apex:column colspan="2" styleClass="fieldData" style="size: 8px;" value="{!Debito_DiaDeVencimento}" />
+          
+          <apex:column colspan="3" styleClass="fieldLabel" breakBefore="true" style="text-align: center;size: 8px; background-color:#C4C8CA" >CARTÃO DE CRÉDITO</apex:column>
+          <apex:column styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6" >CARTÃO DE CRÉDITO</apex:column>
+          <apex:column colspan="2" styleClass="fieldData" style="size: 8px;" value="{!Credito_Cartao}" />
+          <apex:column styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6" >NOME(COMO NO CARTÃO)</apex:column>
+          <apex:column colspan="2" styleClass="fieldData" style="size: 8px;" value="{!Credito_NomeCartao}" />
+          <apex:column styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6" >Nº DO CARTÃO</apex:column>
+          <apex:column colspan="2" styleClass="fieldData" style="size: 8px;" value="{!Credito_NumeroCartao}" />
+          <apex:column styleClass="fieldLabel" breakBefore="true" style="size: 8px; background-color:#DBE5E6" >VALIDADE DO CARTAO</apex:column>
+          <apex:column colspan="2" styleClass="fieldData" style="size: 8px;" value="{!Credito_VencimentoCartao}" />
+        
+      </apex:dataTable>
+        
+      <center>
+        <apex:panelGrid columns="1" width="100%" border="0">
+          <apex:outputPanel styleClass="companyData" dir="RTL" >
+            O Cliente se compromete a apresentar toda a documentação solicitada pela Sascar a fim de comprovar os dados abaixo informados e os poderes representativos dos signatários.
+          </apex:outputPanel>
+        </apex:panelGrid>
+      </center>
+      
+      <apex:panelGrid columns="1" width="100%" border="1" style="border-collapse:collapse;text-align:justify;">
+        <apex:outputPanel styleClass="companyData" dir="RTL" >
+          Por meio deste Termo de Aquisição dos Serviços, o CLIENTE adere a todos os termos e condições do Contrato de Prestação de Serviços e Outras Avenças (“Contrato”), registrado em 18/07/2011, no Ofício de Registro de Títulos e Documentos de Barueri - São Paulo sob o nº 610.724, disponível para consulta no site www.sascar.com.br. O CLIENTE declara, para todos os fins e efeitos, conhecer os termos do Contrato, estando de acordo com todas as suas condições , especialmente aquelas que tratam das condições de prestação dos serviços, da utilização dos equipamentos, das obrigações e responsabilidade das partes, das penalidades, dentre todas as outras previstas no Contrato.
+        </apex:outputPanel>
+      </apex:panelGrid>
+      
+      <apex:dataTable columns="4" value="{!Opportunity}" var="opp" width="100%">
+       <apex:column styleClass="companyData" style="text-align:right;">
+          <br></br>___________________________________________________
+          <br></br>Assinatura do Cliente
+          <br></br>
+          <br></br>Data:_______________________________________________
+       </apex:column>
+      </apex:DataTable>
+      
+      <apex:dataTable columns="2" value="{!Opportunity}" var="opp" border="1" style="border-collapse:collapse; page-break-before: always;" width="100%">
+        <apex:column styleClass="termName" width="80%">
+         <apex:outputLabel >{!$Label.TermoNovo_Cabecalho}</apex:outputLabel>
+        </apex:column>
+        <apex:column width="20%"><apex:image id="LogoSascar" url="{!URLFOR($Resource.TermoDeAquisicao, '/Images/LogoSascar.png')}" /></apex:column>
+      </apex:dataTable>
+      
+      <center>
+        <apex:panelGrid columns="1" width="100%" border="1" style="border-collapse:collapse;" >
+          <apex:outputPanel styleClass="companyData" dir="RTL" >
+            Este termo, após assinado, tem validade de comprovante oficial de compra de serviços junto à Contratada. O valor mensal do contrato, em regra, é composto pela locação do equipamento e a taxa de serviços mensal. Os planos de monitoramento dos produtos satelitais têm preços diferentes de acordo com o pacote de mensagens utilizado.
+          </apex:outputPanel>
+        </apex:panelGrid>
+      </center>
+      
+      <br></br>
+      <apex:panelGrid id="Dados_Fixos" columns="2" width="100%" border="0" style="border-collapse:collapse;" styleClass="accountData" bgcolor="DBE5E6">
+        <apex:outputLabel styleClass="fieldLabel" >MULTA RESCISÓRIA: 
+          <apex:outputText label="MULTA RESCISÓRIA: 25%" value="{!$Label.TermoBase_MultaRescisoria}" styleClass="fieldData"/>
+        </apex:outputLabel>
+        <apex:outputLabel styleClass="fieldLabel" >ADESIVO: 
+          <apex:outputText label="ADESIVO:" value="{!adesivo}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      
+      <br></br>
+      <apex:panelGrid id="Dados_Fixos_2" columns="2" width="100%" border="0" style="border-collapse:collapse;" styleClass="accountData" bgcolor="DBE5E6">
+         <apex:outputLabel styleClass="fieldLabel" value="Nº DA PROPOSTA:" /> 
+         <apex:outputLabel styleClass="fieldLabel" value="VALIDADE DA PROPOSTA:" /> 
+         
+         
+         <apex:outputLabel styleClass="fieldLabel" value="{!Quote_Numero}" /> 
+         <apex:outputLabel styleClass="fieldLabel" value="DATA DE CRIAÇÃO: " > 
+          <apex:outputText label="Data de criação" value="{!DataDeCriacao}" styleClass="fieldData"/>
+        </apex:outputLabel>
+      </apex:panelGrid>
+      
+      <br></br>
+      <apex:pageBlock >
+        <apex:panelGrid columns="1" width="100%" border="0" style="border-collapse:collapse;" bgcolor="DBE5E6">
+          <apex:outputPanel styleClass="fieldData" dir="RTL">
+            CONDIÇÕES COMERCIAIS
+          </apex:outputPanel>
+        </apex:panelGrid>
+        <apex:pageBlockTable width="100%" summary="TESTE" title="CONDIÇÕES COMERCIAIS" value="{!lstQli}" var="item" border="0" align="center" rowClasses="trimpar,trpar" columnClasses="tableDataConfig" headerClass="headerConfig" styleClass="tableData" cellpadding="5">
+          <apex:column headerValue="Produto" value="{!item.Product2.Name}" />
+          <apex:column headerValue="Família de Produtos" value="{!item.Fam_lia_de_produtos__c}" />
+          <apex:column headerValue="Prazo do Contrato" value="{!item.Prazo_do_contrato__c}" style="text-align:right;" />
+          <apex:column headerValue="Quantidade" value="{!item.Quantity}" style="text-align:right;"/>
+          <apex:column headerValue="Valor Mensal" value="{!item.Valor_mensal__c}" style="text-align:right;" />
+          <apex:column headerValue="Valor Unitário Mensal" value="{!item.Valor_unit_rio_mensal__c}" style="text-align:right;" />
+        </apex:pageBlockTable>
+      </apex:pageBlock>
+      
+      <table border="0" style="border-collapse:collapse;margin-top:4px;" width="100%">
+       <tr>
+        <td align="right" valign="top" width="13%"><span class="tableDataConfig">Taxa de Adesão</span></td>
+        <td align="right" valign="top" width="25%"><span class="tableDataConfig">R$<apex:outputLabel value="{!Quote_TaxaDeAdesao}"/></span></td>
+        <td align="right" valign="top" width="20%"><span class="tableDataConfig">Valor Mensal</span></td>
+        <td align="right" valign="top" width="30%"><span class="tableDataConfig">R$<apex:outputLabel value="{!Quote_ValorMensal}"/></span></td>
+       </tr>
+       <tr>
+        <td align="right" valign="top"><span class="tableDataConfig">Quantidade de equipamentos vendidos</span></td>
+        <td align="right" valign="top"><span class="tableDataConfig"><apex:outputLabel value="{!Quote_QtdeEquipamentosVendidos}"/></span></td>
+        <td align="right" valign="top"><span class="tableDataConfig">Valor Unitário Mensal</span></td>
+        <td align="right" valign="top"><span class="tableDataConfig">R$<apex:outputLabel value="{!Quote_ValorUntMensal}"/></span></td>
+       </tr>
+       <tr>
+        <td align="right" valign="top"><span class="tableDataConfig">Total taxa de adesão</span></td>
+        <td align="right" valign="top"><span class="tableDataConfig">R$<apex:outputLabel value="{!Quote_TotalTaxaDeAdesao}"/></span></td>
+       </tr>
+      </table>
+      
+      <br/>
+      <apex:panelGrid columns="1" width="100%" border="1" style="border-collapse:collapse;text-align:justify;">
+        <apex:outputPanel styleClass="companyData" dir="RTL" >
+          Por meio deste Termo de Aquisição dos Serviços, o CLIENTE adere a todos os termos e condições do Contrato de Prestação de Serviços e Outras Avenças (“Contrato”), registrado em 18/07/2011, no Ofício de Registro de Títulos e Documentos de Barueri - São Paulo sob o nº 610.724, disponível para consulta no site www.sascar.com.br. O CLIENTE declara, para todos os fins e efeitos, conhecer os termos do Contrato, estando de acordo com todas as suas condições , especialmente aquelas que tratam das condições de prestação dos serviços, da utilização dos equipamentos, das obrigações e responsabilidade das partes, das penalidades, dentre todas as outras previstas no Contrato.
+        </apex:outputPanel>
+      </apex:panelGrid>
+      
+      <apex:dataTable columns="4" value="{!Opportunity}" var="opp" width="100%">
+       <apex:column styleClass="companyData" style="text-align:right;">
+          <br></br>___________________________________________________
+          <br></br>Assinatura do Cliente
+          <br></br>
+          <br></br>Data:_______________________________________________
+       </apex:column>
+      </apex:DataTable>
+      
+      <apex:dataTable columns="2" value="{!Opportunity}" var="opp" border="1" style="border-collapse:collapse; page-break-before: always;" width="100%">
+        <apex:column styleClass="termName" width="80%">
+         <apex:outputLabel >{!$Label.TermoNovo_Cabecalho}</apex:outputLabel>
+        </apex:column>
+        <apex:column width="20%"><apex:image id="LogoSascar" url="{!URLFOR($Resource.TermoDeAquisicao, '/Images/LogoSascar.png')}" /></apex:column>
+      </apex:dataTable>
+      
+      <br/>
+      <apex:pageBlock >
+        <!--<apex:panelGrid columns="1" width="100%" border="0" styleClass="headerConfig" style="text-align:center;border-collapse:collapse; page-break-before: always; margin-bottom:10px;" >-->
+        <apex:panelGrid columns="1" width="100%" border="0" styleClass="headerConfig" style="text-align:center;border-collapse:collapse; margin-bottom:2px;" >
+          <apex:outputPanel dir="RTL" >
+            TAXAS DE SERVIÇOS
+          </apex:outputPanel>
+        </apex:panelGrid>
+        <apex:panelGrid columnClasses="alignTableTop" columns="2" width="100%" border="0" headerClass="headerConfig" style="text-align:center;border-collapse:collapse;" >
+         <apex:pageBlockTable width="100%" value="{!lstTaxa_Acessorios}" var="item" border="1" headerClass="headerConfig" >
+          <apex:column headerValue="Acessórios" value="{!item.Descricao__c}" />
+          <apex:column headerValue="Desinstalação e Reinstalação" value="{!item.Valor_Desinstalacao_e_Reinstalacao__c}" />
+          <apex:column headerValue="Desinstalação" value="{!item.Desinstalacao__c}" />
+         </apex:pageBlockTable>
+         <apex:pageBlockTable width="80%" align="right" value="{!lstTaxa_Produtos}" var="item"  border="1" headerClass="headerConfig">
+          <apex:column headerValue="Acessórios" value="{!item.Descricao__c}" />
+          <apex:column headerValue="Desinstalação e Reinstalação" value="{!item.Valor_Desinstalacao_e_Reinstalacao__c}" />
+          <apex:column headerValue="Desinstalação" value="{!item.Desinstalacao__c}" />
+         </apex:pageBlockTable>
+         <apex:pageBlockTable width="100%" value="{!lstTaxa_Servicos}" var="item"  border="1" headerClass="headerConfig" style="margin-top:2px;margin-bottom:2px;">
+          <apex:column headerValue="Tabela de Preços de Serviços" value="{!item.Descricao__c}" />
+          <apex:column headerValue="Taxas" value="{!item.Taxas__c}" />
+         </apex:pageBlockTable>
+        </apex:panelGrid>
+      </apex:pageBlock>
+    
+     <br></br>
+
+      <center>
+        <apex:panelGrid columns="1" width="100%" border="1" style="border-collapse:collapse;">
+          <apex:outputPanel styleClass="companyData" dir="RTL" >
+            LISTA DE PREÇO DE SERVIÇOS TARIFADOS - VERIFICAR TABELA VIGENTE NO MOMENTO DA SOLICITAÇÃO DE SERVIÇOS EXTRAS.
+              <br></br>
+            Os valores referentes as taxas de mau uso encontram-se disponíveis no Portal Sascar. Todos os valores das taxas de serviços sofrerão reajuste anual. Antes de solicitar a prestação de serviço, consulte a tabela vigente em nosso portal: www.sascar.com.br
+          </apex:outputPanel>
+        </apex:panelGrid>
+      </center>
+
+      <br></br>
+      
+      <apex:panelGrid columns="1" width="100%" border="1" style="border-collapse:collapse;text-align:center">
+        <apex:outputPanel styleClass="companyData" dir="RTL" >
+           <b>CONTRATAÇÃO DE UPGRADE E DOWNGRADE</B>
+        </apex:outputPanel>
+      </apex:panelGrid>
+      
+       <apex:panelGrid columns="1" width="100%" border="1" style="border-collapse:collapse">
+        <apex:outputPanel styleClass="companyData" dir="RTL" >
+          <b>Em caso de upgrade ou downgrade do produto originalmente contratado, o reajuste previsto na Cláusula 8.2 do Contrato será efetuado a cada 12 (doze) meses contados a partir da ativação do serviço de upgrade ou downgrade.</b>
+        </apex:outputPanel>
+      </apex:panelGrid>
+      
+      <br></br>
+      
+      
+      <apex:panelGrid columns="1" width="100%" border="1" style="border-collapse:collapse;text-align:justify;">
+        <apex:outputPanel styleClass="companyData" dir="RTL" >
+          Por meio deste Termo de Aquisição dos Serviços, o CLIENTE adere a todos os termos e condições do Contrato de Prestação de Serviços e Outras Avenças (“Contrato”), registrado em 18/07/2011, no Ofício de Registro de Títulos e Documentos de Barueri - São Paulo sob o nº 610.724, disponível para consulta no site www.sascar.com.br. O CLIENTE declara, para todos os fins e efeitos, conhecer os termos do Contrato, estando de acordo com todas as suas condições , especialmente aquelas que tratam das condições de prestação dos serviços, da utilização dos equipamentos, das obrigações e responsabilidade das partes, das penalidades, dentre todas as outras previstas no Contrato.
+        </apex:outputPanel>
+      </apex:panelGrid>
+
+      <br></br>
+
+      <apex:dataTable columns="4" value="{!Opportunity}" var="opp" width="100%">
+       <apex:column styleClass="companyData" style="text-align:right;">
+          <br></br>___________________________________________________
+          <br></br>Assinatura do Cliente
+          <br></br>
+          <br></br>Data:_______________________________________________
+       </apex:column>
+      </apex:DataTable>
+      
+      <apex:dataTable columns="2" value="{!Opportunity}" var="opp" border="1" style="border-collapse:collapse; page-break-before: always;" width="100%">
+        <apex:column styleClass="termName" width="80%">
+         <apex:outputLabel >{!$Label.TermoNovo_Cabecalho}</apex:outputLabel>
+         <br>VEÍCULOS RASTREADOS</br>
+        </apex:column>
+        <apex:column width="20%"><apex:image id="LogoSascar" url="{!URLFOR($Resource.TermoDeAquisicao, '/Images/LogoSascar.png')}" /></apex:column>
+      
+        <apex:column styleClass="fieldData" colspan="2" breakBefore="true" style="text-align: center; size: 8px">
+         <br></br><br></br>
+         Relacionar todos os veículos que fazem parte do contrato. O preenchimento do campo "PRODUTO" é obrigatório quando um veículo contratar mais de um tipo de produto.
+        </apex:column>
+        <apex:column styleClass="fieldData" colspan="2" breakBefore="true">
+         <br></br>
+        </apex:column>
+      </apex:dataTable> 
+      
+      <apex:dataTable columns="4" value="{!Opportunity}" var="opp" border="1" style="border-collapse:collapse;" width="100%">
+        <apex:column styleClass="companyData" colspan="4" breakBefore="true" style="text-align: center; size: 8px; background-color:#DBE5E6;">
+         PESSOA CONTATO NO CLIENTE (AGENDAMENTO E DISPONIBILIZAÇÃO DOS VEÍCULOS)
+        </apex:column>
+        <apex:column styleClass="companyData" colspan="4" breakBefore="true" style="text-align: center; size: 8px; background-color:#DBE5E6;">
+         Pessoa indicada pelo cliente para contato referente ao agendamento e à disponibilização dos veículos para instalação . Obrigatória a indicação de no mínimo uma pessoa.
+        </apex:column>
+        <apex:column colspan="1" styleClass="companyData" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Nome Completo</apex:column>
+          <apex:column colspan="3" styleClass="companyData" style="size: 8px;" value="{!PessoaContatoCliente_NomeCompleto}"></apex:column>
+        <apex:column width="20%" styleClass="companyData" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Email</apex:column>
+          <apex:column width="30%" styleClass="companyData" style="size: 8px;" value="{!PessoaContatoCliente_Email}"></apex:column>
+        <apex:column width="20%" styleClass="companyData" style="size: 8px; background-color:#DBE5E6;">Telefone 1</apex:column>
+          <apex:column width="30%" styleClass="companyData" style="size: 8px;" value="{!PessoaContatoCliente_Tel1}"></apex:column>
+        <apex:column width="20%" styleClass="companyData" breakBefore="true" style="size: 8px; background-color:#DBE5E6;">Telefone 2</apex:column>
+          <apex:column width="30%" styleClass="companyData" style="size: 8px;" value="{!PessoaContatoCliente_Tel2}"></apex:column>
+        <apex:column width="20%" styleClass="companyData" style="size: 8px; background-color:#DBE5E6;">Telefone 3 (rádio)</apex:column>
+          <apex:column width="30%" styleClass="companyData" style="size: 8px;" value="{!PessoaContatoCliente_Tel3}"></apex:column>
+      </apex:datatable>
+                
+      <apex:dataTable columns="2" value="{!Opportunity}" var="opp" border="0" style="border-collapse:collapse;" width="100%">
+        <apex:column colspan="2" breakBefore="true">
+         <br></br>
+         <apex:pageBlock >
+          <apex:pageBlockTable width="100%" summary="Veiculos" title="Veiculos" value="{!lstIPS}" var="item" border="1" align="center" columnClasses="tableDataConfig" headerClass="headerConfig" styleClass="tableData" cellpadding="5">
+           <apex:column headerValue="MARCA" value="{!item.Marca_Veiculo__r.Name}" style="text-align:right;" />
+           <apex:column headerValue="MODELO" value="{!item.Modelo_do_Veiculo__r.Name}" style="text-align:right;"/>
+           <apex:column headerValue="PLACA" value="{!item.Veiculo_Placa__c}" />
+           <apex:column headerValue="CHASSI" value="{!item.Veiculo_Chassi__c}" />
+           <apex:column headerValue="ANO" value="{!item.Veiculo_AnoModelo__c}" style="text-align:right;" />
+           <apex:column headerValue="COR" value="{!item.Veiculo_Cor__c}" style="text-align:right;" />
+           <apex:column headerValue="RENAVAM" value="{!item.Veiculo_Renavam__c}" style="text-align:right;" />
+           <apex:column headerValue="OBSERVAÇÕES" value="{!item.Observacoes__c}" style="text-align:right;" />
+           <!-- <apex:column headerValue="PRODUTO" style="text-align:right;" /> -->
+           <!-- <apex:column headerValue="ASSESSÓRIOS" style="text-align:right;" /> -->
+          </apex:pageBlockTable>
+         </apex:pageBlock>
+       </apex:column>
+      </apex:dataTable>
+      
+      <br></br>
+      <apex:panelGrid columns="1" width="100%" border="1" style="border-collapse:collapse;text-align:justify;">
+        <apex:outputPanel styleClass="companyData" dir="RTL" >
+          Por meio deste Termo de Aquisição dos Serviços, o CLIENTE adere a todos os termos e condições do Contrato de Prestação de Serviços e Outras Avenças (“Contrato”), registrado em 18/07/2011, no Ofício de Registro de Títulos e Documentos de Barueri – São Paulo sob o nº 610.724, disponível para consulta no site www.sascar.com.br. O CLIENTE declara, para todos os fins e efeitos, conhecer os termos do Contrato, estando de acordo com todas as suas condições, especialmente aquelas que tratam das condições de prestação dos serviços, da utilização dos equipamentos, das obrigações e responsabilidade das partes, das penalidades, dentre todas as outras previstas no Contrato.
+        </apex:outputPanel>
+      </apex:panelGrid>
+      
+      <apex:dataTable columns="4" value="{!Opportunity}" var="opp" width="100%">
+       <apex:column styleClass="companyData" style="text-align:right;">
+          <br></br>___________________________________________________
+          <br></br>Assinatura do Cliente
+          <br></br>
+          <br></br>Data:_______________________________________________
+       </apex:column>
+      </apex:DataTable>
+      
+      <apex:dataTable columns="2" value="{!Opportunity}" var="opp" border="1" cellpadding="2" style="border-collapse:collapse; page-break-before: always;" width="100%">
+        <apex:column styleClass="termName" width="80%">
+         <apex:outputLabel >{!$Label.TermoNovo_Cabecalho}</apex:outputLabel>
+         <br>ASSINATURAS</br>
+        </apex:column>
+        <apex:column width="20%"><apex:image id="LogoSascar" url="{!URLFOR($Resource.TermoDeAquisicao, '/Images/LogoSascar.png')}" /></apex:column>
+      
+        <apex:column styleClass="fieldData" colspan="2" breakBefore="true" style="text-align: center; size: 8px">
+          <br></br><br></br>
+          O Cliente se compromete a apresentar toda a documentação solicitada pela Sascar a fim de comprovar os dados abaixo informados e os poderes representativos dos signatários.
+          <br></br>
+        </apex:column>
+        
+        <apex:column styleClass="fieldData" colspan="2" breakBefore="true" style="size: 10px;text-align:justify;">
+           <br></br><br></br>
+           Por meio deste Termo de Aquisição dos Serviços, o CLIENTE adere a todos os termos e condições do Contrato de Prestação de Serviços e Outras Avenças (“Contrato”), registrado em 18/07/2011, no Ofício de Registro de Títulos e Documentos de Barueri - São Paulo sob o nº 610.724, disponível para consulta no site www.sascar.com.br. O CLIENTE declara, para todos os fins e efeitos, conhecer os termos do Contrato, estando de acordo com todas as suas condições , especialmente aquelas que tratam das condições de prestação dos serviços, da utilização dos equipamentos, das obrigações e responsabilidade das partes, das penalidades, dentre todas as outras previstas no Contrato.
+           <br></br>
+        </apex:column>
+        
+      </apex:dataTable>
+      
+      <apex:panelGrid columns="3" width="100%" border="0">
+        <apex:outputPanel styleClass="companyData" dir="RTL">
+          (*) Observando o disposto na Cláusula Terceira do Contrato
+          <br>CLIENTE</br>
+          <br>Representado por:</br>
+          <br>Nome:________________________________________</br>
+          <br>RG:__________________________________________</br>
+          <br>CPF:_________________________________________</br>
+          <br></br>
+          <br></br>Nome:________________________________________
+          <br></br>RG:__________________________________________
+          <br></br>CPF:_________________________________________
+        </apex:outputPanel>
+        <apex:outputPanel styleClass="companyData" dir="RTL" >
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>Local:_________________________________________________
+        </apex:outputPanel>
+        <apex:outputPanel styleClass="companyData" dir="RTL" >
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>________________________________________________
+          <br></br>Assinatura do Cliente
+          <br></br>
+          <br></br>Data:_____________________________________________
+        </apex:outputPanel>
+      </apex:panelGrid>
+  </body>
+</apex:page>

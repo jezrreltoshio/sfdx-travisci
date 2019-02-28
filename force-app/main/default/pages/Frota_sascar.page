@@ -1,0 +1,11 @@
+<apex:page controller="ConsultaFrotaSascar">
+
+    <apex:pageBlock >
+    <apex:pageBlockTable value="{!frotasascar}" var="a">
+    <apex:column value="{!a.Tipo_de_veiculo__c }"/>    
+    <apex:column value="{!a.Quantidade_de_veiculos__c}"/>
+    </apex:pageBlockTable>
+    </apex:pageBlock>
+
+
+</apex:page>

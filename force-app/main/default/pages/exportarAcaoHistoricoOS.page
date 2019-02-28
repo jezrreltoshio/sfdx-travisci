@@ -1,0 +1,73 @@
+<apex:page standardStylesheets="false" controller="Exportar_Acao_Historico_OS" >
+	<head>
+        <title>Exportar</title>
+
+        <!-- Importar SLDS -->
+        <apex:slds />
+
+    	<apex:includeScript value="{!URLFOR($Resource.direcionamento_os, 'js/jquery.js')}"/>
+    </head>
+
+    <body>
+        
+	    <div class="slds-scope">
+
+            <div id="div-lista-os" class="slds-panel__section">
+                <h3 class="slds-text-heading--small slds-m-bottom--medium">Geração do arquivo para exportação foi finalizado
+                    <br/>
+                    <div style="padding: 15px;">
+                        <button id="botaoExportarExcel" class="slds-button slds-button--neutral" tabindex="24" onclick="tableToExcel('tabelaExportar', 'Acoes do historico da OS'); return false;">Download</button> 
+                    </div>
+                </h3>
+            </div>
+        
+        </div>
+
+		<div id="divTabelaExportar" style="display:none;">
+            <table id='tabelaExportar'>
+                <tr>
+                    <th>Ação da OS</th>
+                    <th>Categoria do Contato</th>
+                    <th>Data de criação</th>
+                    <th>Alterado por</th>
+                    <th>Data de alteração</th>
+                    <th>Ativo</th>
+                </tr>
+                <apex:repeat value="{!acoesHistoricoOS}" var="acao">
+                   <tr>
+						<td>{!acao.Nome}</td>
+                        <td>{!acao.Categoria}</td>
+                        <td>{!acao.dataCadastro}</td>
+                       	<td>{!acao.alteradoPor}</td>
+                       	<td>{!acao.dataAlteracao}</td>
+                        <td>{!acao.ativo}</td>
+                   </tr>
+                </apex:repeat>
+            </table>
+        </div>
+        
+	</body>
+
+    <script>
+    	var tableToExcel = (function() {
+            var uri = 'data:application/vnd.ms-excel;base64,'
+                , template = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><meta http-equiv="content-type" content="application/vnd.ms-excel; charset=UTF-8"><head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>{worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>{table}</table></body></html>'
+                , base64 = function(s) { return window.btoa(unescape(encodeURIComponent(s))) }
+                , format = function(s, c) { return s.replace(/{(\w+)}/g, function(m, p) { return c[p]; }) }
+            return function(table, name) {
+                if (!table.nodeType) table = document.getElementById(table)
+                var ctx = {worksheet: name || 'Worksheet', table: table.innerHTML}
+                window.open(uri + base64(format(template, ctx)),
+                    '_blank'
+                );
+            }
+            
+        })()
+        
+        function close(){
+            var win = window.open("","_self");
+			win.close();
+		}
+    </script>
+
+</apex:page>

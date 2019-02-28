@@ -1,0 +1,26 @@
+<apex:page standardController="Opportunity" extensions="termoPDFController">
+    <apex:pageMessages ></apex:pageMessages>
+    <apex:form id="formBotao">
+        <apex:pageBlock title="Gerar Termo em PDF" mode="edit">
+            <apex:pageBlockButtons location="bottom">
+                <!--<apex:commandButton value="Visualizar PDF" action="{!previewPDF}" styleClass="btn" immediate="true" target="_blank" style="text-decoration:none" />-->
+                <apex:commandButton onmousedown="document.getElementById('j_id0:formBotao').target='_blank';" value="Visualizar PDF" action="{!previewPDF}" />
+                <apex:commandButton onmousedown="document.getElementById('j_id0:formBotao').target='';" value="Salvar Termo" action="{!savePdf}"/>
+                <apex:commandButton onmousedown="document.getElementById('j_id0:formBotao').target='';" value="Salvar e Enviar Termo por E-mail" action="{!saveSendPdf}"  />
+                <apex:commandButton onmousedown="document.getElementById('j_id0:formBotao').target='';" value="Cancelar" action="{!cancel}" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Selecione o termo desejado:" columns="1">
+              <apex:outputText label="Oportunidade" value="{!Opportunity.Name}"/>
+              <apex:selectList id="tipoTermo" label="Tipo do Termo" value="{!tipoTermo}" size="1">
+                <apex:selectOptions value="{!termo}"/>
+              </apex:selectList>
+              <apex:selectList label="Adesivo?" value="{!adesivo}" size="1">
+                <apex:selectOptions value="{!items}"/>
+              </apex:selectList>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        <!-- <apex:pageBlock title="Preview the Attachment for TESTE">
+          <c:attachment id="cp" pageControl="{!this}" />
+        </apex:pageBlock> -->
+    </apex:form>
+</apex:page>

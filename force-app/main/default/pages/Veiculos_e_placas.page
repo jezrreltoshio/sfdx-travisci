@@ -1,0 +1,10 @@
+<apex:page controller="VeiculosPlacas">
+    <apex:detail relatedList="true">        
+        <apex:pageBlock title="Veículos e placas">
+            <apex:pageBlockTable value="{!veiculosPlacas}" var="vp">
+                <apex:column value="{!vp.Tipo_de_veiculo__c}" />
+                <apex:column value="{!vp.Quantidade__c}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:detail>
+</apex:page>

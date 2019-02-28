@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <email>renan.oliveira@sascar.com.br</email>
+    <name>LABORATÓRIO N4</name>
+    <queueMembers>
+        <users>
+            <user>giovani.dias@sascar.com.br</user>
+            <user>kayo.correa@sascar.com.br</user>
+            <user>tamires.barreto@sascar.com.br</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,355 @@
+<aura:component controller="Controller_Dados_Veiculo" description="DadosVeiculoOS" 
+                implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction">
+
+    <aura:attribute name="WorkOrder" type="Object" />
+    <aura:attribute name="os" type="Object" />
+    <aura:attribute name="recordError" type="String" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+	<force:recordData aura:id="record"
+                      layoutType="FULL"
+                      recordId="{!v.recordId}"
+                      fields="{!v.fieldsToQuery}"
+                      targetError="{!v.recordError}"
+                      targetRecord="{!v.WorkOrder}"
+                      targetFields="{!v.os}"
+                      mode="VIEW"/>
+
+    <div style="margin-top:-7px;">
+        
+        <div class="slds-section slds-is-open">
+            <h3 class="slds-section__title slds-theme_shade">
+                <span style="margin-left:30px;" class="slds-truncate" title="Dados do veículo">Dados do veículo</span>
+            </h3>
+            <div class="slds-section__content section__content">
+                <div class="slds-form " role="list">
+                    
+                    <div class="slds-grid full forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow">
+                        <div class="slds-has-flexi-truncate slds-p-horizontal_x-small full forcePageBlockItem forcePageBlockItemView" role="listitem" data-aura-class="forcePageBlockItem forcePageBlockItemView">
+                            <div class="slds-form-element slds-m-bottom_xx-small slds-form-element_edit slds-grow slds-hint-parent override--slds-form-element">
+                                <div class="test-id__field-label-container">
+                                    <span class="test-id__field-label slds-form-element__label">
+                                		Marca
+                                    </span>
+                                </div>
+                                <div class="slds-form-element__control slds-grid itemBody" style="padding:1px;">
+                                    <span class="test-id__field-value slds-form-element__static slds-grow slds-form-element_separator">
+                                		<lightning:formattedText value="{!v.os.Marca__c}" />        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-has-flexi-truncate slds-p-horizontal_x-small full forcePageBlockItem forcePageBlockItemView" role="listitem" data-aura-class="forcePageBlockItem forcePageBlockItemView">
+                            <div class="slds-form-element slds-m-bottom_xx-small slds-form-element_edit slds-grow slds-hint-parent override--slds-form-element">
+                                <div class="test-id__field-label-container">
+                                    <span class="test-id__field-label slds-form-element__label">
+                                		Modelo
+                                    </span>
+                                </div>
+                                <div class="slds-form-element__control slds-grid itemBody" style="padding:1px;">
+                                    <span class="test-id__field-value slds-form-element__static slds-grow slds-form-element_separator">
+                                		<lightning:formattedText value="{!v.os.Modelo__c}" />        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slds-grid full forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow">
+                        <div class="slds-has-flexi-truncate slds-p-horizontal_x-small full forcePageBlockItem forcePageBlockItemView" role="listitem" data-aura-class="forcePageBlockItem forcePageBlockItemView">
+                            <div class="slds-form-element slds-m-bottom_xx-small slds-form-element_edit slds-grow slds-hint-parent override--slds-form-element">
+                                <div class="test-id__field-label-container">
+                                    <span class="test-id__field-label slds-form-element__label">
+                                		Placa
+                                    </span>
+                                </div>
+                                <div class="slds-form-element__control slds-grid itemBody" style="padding:1px;">
+                                    <span class="test-id__field-value slds-form-element__static slds-grow slds-form-element_separator">
+                                		<lightning:formattedText value="{!v.os.Placa__c}" />        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-has-flexi-truncate slds-p-horizontal_x-small full forcePageBlockItem forcePageBlockItemView" role="listitem" data-aura-class="forcePageBlockItem forcePageBlockItemView">
+                            <div class="slds-form-element slds-m-bottom_xx-small slds-form-element_edit slds-grow slds-hint-parent override--slds-form-element">
+                                <div class="test-id__field-label-container">
+                                    <span class="test-id__field-label slds-form-element__label">
+                                		Cor
+                                    </span>
+                                </div>
+                                <div class="slds-form-element__control slds-grid itemBody" style="padding:1px;">
+                                    <span class="test-id__field-value slds-form-element__static slds-grow slds-form-element_separator">
+                                		<lightning:formattedText value="{!v.os.Cor__c}" />        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slds-grid full forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow">
+                        <div class="slds-has-flexi-truncate slds-p-horizontal_x-small full forcePageBlockItem forcePageBlockItemView" role="listitem" data-aura-class="forcePageBlockItem forcePageBlockItemView">
+                            <div class="slds-form-element slds-m-bottom_xx-small slds-form-element_edit slds-grow slds-hint-parent override--slds-form-element">
+                                <div class="test-id__field-label-container">
+                                    <span class="test-id__field-label slds-form-element__label">
+                                		Frota
+                                    </span>
+                                </div>
+                                <div class="slds-form-element__control slds-grid itemBody" style="padding:1px;">
+                                    <span class="test-id__field-value slds-form-element__static slds-grow slds-form-element_separator">
+                                		<lightning:formattedText value="{!v.os.Frota__c}" />        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-has-flexi-truncate slds-p-horizontal_x-small full forcePageBlockItem forcePageBlockItemView" role="listitem" data-aura-class="forcePageBlockItem forcePageBlockItemView">
+                            <div class="slds-form-element slds-m-bottom_xx-small slds-form-element_edit slds-grow slds-hint-parent override--slds-form-element">
+                                <div class="test-id__field-label-container">
+                                    <span class="test-id__field-label slds-form-element__label">
+                                		Ano
+                                    </span>
+                                </div>
+                                <div class="slds-form-element__control slds-grid itemBody" style="padding:1px;">
+                                    <span class="test-id__field-value slds-form-element__static slds-grow slds-form-element_separator">
+                                		<lightning:formattedText value="{!v.os.Ano__c}" />        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slds-grid full forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow">
+                        <div class="slds-has-flexi-truncate slds-p-horizontal_x-small full forcePageBlockItem forcePageBlockItemView" role="listitem" data-aura-class="forcePageBlockItem forcePageBlockItemView">
+                            <div class="slds-form-element slds-m-bottom_xx-small slds-form-element_edit slds-grow slds-hint-parent override--slds-form-element">
+                                <div class="test-id__field-label-container">
+                                    <span class="test-id__field-label slds-form-element__label">
+                                		Renavam
+                                    </span>
+                                </div>
+                                <div class="slds-form-element__control slds-grid itemBody" style="padding:1px;">
+                                    <span class="test-id__field-value slds-form-element__static slds-grow slds-form-element_separator">
+                                		<lightning:formattedText value="{!v.os.Renavam__c}" />        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-has-flexi-truncate slds-p-horizontal_x-small full forcePageBlockItem forcePageBlockItemView" role="listitem" data-aura-class="forcePageBlockItem forcePageBlockItemView">
+                            <div class="slds-form-element slds-m-bottom_xx-small slds-form-element_edit slds-grow slds-hint-parent override--slds-form-element">
+                                <div class="test-id__field-label-container">
+                                    <span class="test-id__field-label slds-form-element__label">
+                                		Chassi
+                                    </span>
+                                </div>
+                                <div class="slds-form-element__control slds-grid itemBody" style="padding:1px;">
+                                    <span class="test-id__field-value slds-form-element__static slds-grow slds-form-element_separator">
+                                		<lightning:formattedText value="{!v.os.Chassi__c}" />        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div> 
+        </div> 
+        
+        <div class="slds-section slds-is-open">
+            <h3 class="slds-section__title slds-theme_shade">
+                <span style="margin-left:30px;" class="slds-truncate" title="Dados do Equipamento">Dados do Equipamento</span>
+            </h3>
+            <div class="slds-section__content section__content">
+                <div class="slds-form " role="list">
+                    
+                    <div class="slds-grid full forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow">
+                        <div class="slds-has-flexi-truncate slds-p-horizontal_x-small full forcePageBlockItem forcePageBlockItemView" role="listitem" data-aura-class="forcePageBlockItem forcePageBlockItemView">
+                            <div class="slds-form-element slds-m-bottom_xx-small slds-form-element_edit slds-grow slds-hint-parent override--slds-form-element">
+                                <div class="test-id__field-label-container">
+                                    <span class="test-id__field-label slds-form-element__label">
+                                		Número de série
+                                    </span>
+                                </div>
+                                <div class="slds-form-element__control slds-grid itemBody" style="padding:1px;">
+                                    <span class="test-id__field-value slds-form-element__static slds-grow slds-form-element_separator">
+                                		<lightning:formattedText value="{!v.os.Numero_serie__c}" />        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-has-flexi-truncate slds-p-horizontal_x-small full forcePageBlockItem forcePageBlockItemView" role="listitem" data-aura-class="forcePageBlockItem forcePageBlockItemView">
+                            <div class="slds-form-element slds-m-bottom_xx-small slds-form-element_edit slds-grow slds-hint-parent override--slds-form-element">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slds-grid full forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow">
+                        <div class="slds-has-flexi-truncate slds-p-horizontal_x-small full forcePageBlockItem forcePageBlockItemView" role="listitem" data-aura-class="forcePageBlockItem forcePageBlockItemView">
+                            <div class="slds-form-element slds-m-bottom_xx-small slds-form-element_edit slds-grow slds-hint-parent override--slds-form-element">
+                                <div class="test-id__field-label-container">
+                                    <span class="test-id__field-label slds-form-element__label">
+                                		Código do Produto
+                                    </span>
+                                </div>
+                                <div class="slds-form-element__control slds-grid itemBody" style="padding:1px;">
+                                    <span class="test-id__field-value slds-form-element__static slds-grow slds-form-element_separator">
+                                		<lightning:formattedText value="{!v.os.Codigo_produto__c}" />        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-has-flexi-truncate slds-p-horizontal_x-small full forcePageBlockItem forcePageBlockItemView" role="listitem" data-aura-class="forcePageBlockItem forcePageBlockItemView">
+                            <div class="slds-form-element slds-m-bottom_xx-small slds-form-element_edit slds-grow slds-hint-parent override--slds-form-element">
+                                <div class="test-id__field-label-container">
+                                    <span class="test-id__field-label slds-form-element__label">
+                                		Nome do produto
+                                    </span>
+                                </div>
+                                <div class="slds-form-element__control slds-grid itemBody" style="padding:1px;">
+                                    <span class="test-id__field-value slds-form-element__static slds-grow slds-form-element_separator">
+                                		<lightning:formattedText value="{!v.os.Nome_produto__c}" />        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slds-grid full forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow">
+                        <div class="slds-has-flexi-truncate slds-p-horizontal_x-small full forcePageBlockItem forcePageBlockItemView" role="listitem" data-aura-class="forcePageBlockItem forcePageBlockItemView">
+                            <div class="slds-form-element slds-m-bottom_xx-small slds-form-element_edit slds-grow slds-hint-parent override--slds-form-element">
+                                <div class="test-id__field-label-container">
+                                    <span class="test-id__field-label slds-form-element__label">
+                                		NF
+                                    </span>
+                                </div>
+                                <div class="slds-form-element__control slds-grid itemBody" style="padding:1px;">
+                                    <span class="test-id__field-value slds-form-element__static slds-grow slds-form-element_separator">
+                                		<lightning:formattedText value="{!v.os.NF__c}" />        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-has-flexi-truncate slds-p-horizontal_x-small full forcePageBlockItem forcePageBlockItemView" role="listitem" data-aura-class="forcePageBlockItem forcePageBlockItemView">
+                            <div class="slds-form-element slds-m-bottom_xx-small slds-form-element_edit slds-grow slds-hint-parent override--slds-form-element">
+                                <div class="test-id__field-label-container">
+                                    <span class="test-id__field-label slds-form-element__label">
+                                		Data de compra
+                                    </span>
+                                </div>
+                                <div class="slds-form-element__control slds-grid itemBody" style="padding:1px;">
+                                    <span class="test-id__field-value slds-form-element__static slds-grow slds-form-element_separator">
+                                		<lightning:formattedDateTime value="{!v.os.Data_compra__c}" />        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div> 
+        </div>
+
+        
+        <div class="slds-section slds-is-open">
+            <h3 class="slds-section__title slds-theme_shade">
+                <span style="margin-left:30px;" class="slds-truncate" title="Dados do Contrato">Dados do Contrato</span>
+            </h3>
+            <div class="slds-section__content section__content">
+                <div class="slds-form " role="list">
+                    
+                    <div class="slds-grid full forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow">
+                        <div class="slds-has-flexi-truncate slds-p-horizontal_x-small full forcePageBlockItem forcePageBlockItemView" role="listitem" data-aura-class="forcePageBlockItem forcePageBlockItemView">
+                            <div class="slds-form-element slds-m-bottom_xx-small slds-form-element_edit slds-grow slds-hint-parent override--slds-form-element">
+                                <div class="test-id__field-label-container">
+                                    <span class="test-id__field-label slds-form-element__label">
+                                		Número do contrato
+                                    </span>
+                                </div>
+                                <div class="slds-form-element__control slds-grid itemBody" style="padding:1px;">
+                                    <span class="test-id__field-value slds-form-element__static slds-grow slds-form-element_separator">
+                                		<lightning:formattedText value="{!v.os.Numero_contrato__c}" />        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-has-flexi-truncate slds-p-horizontal_x-small full forcePageBlockItem forcePageBlockItemView" role="listitem" data-aura-class="forcePageBlockItem forcePageBlockItemView">
+                            <div class="slds-form-element slds-m-bottom_xx-small slds-form-element_edit slds-grow slds-hint-parent override--slds-form-element">
+                            	 <div class="test-id__field-label-container">
+                                    <span class="test-id__field-label slds-form-element__label">
+                                		Data de cadastro
+                                    </span>
+                                </div>
+                                <div class="slds-form-element__control slds-grid itemBody" style="padding:1px;">
+                                    <span class="test-id__field-value slds-form-element__static slds-grow slds-form-element_separator">
+                                		<lightning:formattedDateTime value="{!v.os.Data_cadastro__c}" />        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slds-grid full forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow">
+                        <div class="slds-has-flexi-truncate slds-p-horizontal_x-small full forcePageBlockItem forcePageBlockItemView" role="listitem" data-aura-class="forcePageBlockItem forcePageBlockItemView">
+                            <div class="slds-form-element slds-m-bottom_xx-small slds-form-element_edit slds-grow slds-hint-parent override--slds-form-element">
+                                <div class="test-id__field-label-container">
+                                    <span class="test-id__field-label slds-form-element__label">
+                                		Modalidade
+                                    </span>
+                                </div>
+                                <div class="slds-form-element__control slds-grid itemBody" style="padding:1px;">
+                                    <span class="test-id__field-value slds-form-element__static slds-grow slds-form-element_separator">
+                                		<lightning:formattedText value="{!v.os.Modalidade__c}" />        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-has-flexi-truncate slds-p-horizontal_x-small full forcePageBlockItem forcePageBlockItemView" role="listitem" data-aura-class="forcePageBlockItem forcePageBlockItemView">
+                            <div class="slds-form-element slds-m-bottom_xx-small slds-form-element_edit slds-grow slds-hint-parent override--slds-form-element">
+                                <div class="test-id__field-label-container">
+                                    <span class="test-id__field-label slds-form-element__label">
+                                		Início de vigência
+                                    </span>
+                                </div>
+                                <div class="slds-form-element__control slds-grid itemBody" style="padding:1px;">
+                                    <span class="test-id__field-value slds-form-element__static slds-grow slds-form-element_separator">
+                                		<lightning:formattedDateTime value="{!v.os.Inicio_vigencia__c}" />        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slds-grid full forcePageBlockSectionRow" data-aura-class="forcePageBlockSectionRow">
+                        <div class="slds-has-flexi-truncate slds-p-horizontal_x-small full forcePageBlockItem forcePageBlockItemView" role="listitem" data-aura-class="forcePageBlockItem forcePageBlockItemView">
+                            <div class="slds-form-element slds-m-bottom_xx-small slds-form-element_edit slds-grow slds-hint-parent override--slds-form-element">
+                                <div class="test-id__field-label-container">
+                                    <span class="test-id__field-label slds-form-element__label">
+                                		Classe
+                                    </span>
+                                </div>
+                                <div class="slds-form-element__control slds-grid itemBody" style="padding:1px;">
+                                    <span class="test-id__field-value slds-form-element__static slds-grow slds-form-element_separator">
+                                		<lightning:formattedText value="{!v.os.Classe}" />        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-has-flexi-truncate slds-p-horizontal_x-small full forcePageBlockItem forcePageBlockItemView" role="listitem" data-aura-class="forcePageBlockItem forcePageBlockItemView">
+                            <div class="slds-form-element slds-m-bottom_xx-small slds-form-element_edit slds-grow slds-hint-parent override--slds-form-element">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div> 
+        </div>
+
+
+    </div>
+
+    <aura:if isTrue="{!not(empty(v.recordSaveError))}">
+        <br />
+        <div class="error slds-box">
+            {!v.recordSaveError}
+        </div> 
+    </aura:if>
+
+</aura:component>

@@ -1,0 +1,30 @@
+<apex:page controller="attachmentSendEmailController">
+    <apex:messages />
+    <apex:pageBlock title="Enviar e-mail com o Termo de Adesão para a Conta: {!account.name} " >
+        <p>Preencha os campos Assunto e Corpo da mensagem que será enviada para:</p>
+
+        <apex:pageBlock >
+         <apex:pageBlocktable value="{!opp}" var="contact">
+          <apex:column value="{!opp.Owner.Name}"/> 
+          <apex:column value="{!opp.Owner.Email}"/> 
+         </apex:pageBlocktable>
+        </apex:pageBlock>
+        
+        <apex:form >
+            <apex:outputLabel value="Assunto" for="Subject"/>: <br/>     
+            <apex:inputText value="{!subject}" id="Subject" maxlength="80"/>
+            <br/><br/>
+
+            <apex:outputLabel value="Corpo da Mensagem" for="Body"/>: <br/>     
+            <apex:inputTextarea value="{!body}" id="Body" rows="10" cols="80"/>           
+            <br/><br/>
+
+            <apex:commandButton value="Enviar E-mail" action="{!send}"/> 
+            <apex:commandButton value="Cancelar" action="{!cancel}"/> 
+        </apex:form>
+    </apex:pageBlock>
+
+    <!--<apex:pageBlock title="Pré-visualização do anexo (Em HTML)">
+        <c:attachment id="cp" pageControl="{!this}" account="{!account}" />
+    </apex:pageBlock>-->
+</apex:page>
