@@ -15,6 +15,6 @@ before_install:
 - export PATH=./sfdx/$(pwd):$PATH
 - sfdx --version
 - sfdx plugins --core
-- sfdx force:auth:jwt:grant --clientid $CONSUMERKEY --jwtkeyfile assets/server.key --username $USERNAME -r https://test.salesforce.com -a Dev11
+- sfdx force:auth:jwt:grant --clientid $CONSUMERKEY --jwtkeyfile assets/server.key --username $USERNAME -r https://test.salesforce.com --setalias SascarDev11
 script:
 - sfdx force:source:deploy --manifest manifest/package.xml
