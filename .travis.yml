@@ -17,4 +17,4 @@ before_install:
 - sfdx plugins --core
 - sfdx force:auth:jwt:grant --clientid $CONSUMERKEY --jwtkeyfile assets/server.key --username $USERNAME -r https://test.salesforce.com -a Dev11
 script:
-- sfdx force:source:deploy -x manifest/package.xml
+- sfdx force:source:deploy -x manifest/package.xml -a Dev11
