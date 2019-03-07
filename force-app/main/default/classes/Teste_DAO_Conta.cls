@@ -136,8 +136,14 @@ public class Teste_DAO_Conta {
         Map<String, sObject> mapBase = Teste_Util.createMapBase();
         Account conta = (Account) mapBase.get('Account');
         conta.CNPJ__c = '30.022.945/0001-75';
+        conta.RecordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByName().get('CORP').getRecordTypeId();
         update conta;
 
-        System.assertNotEquals(1, DAO_Conta.getContasByCNPJERecordTypeId(conta.CNPJ__c, conta.RecordTypeId).size());
+        Account contaDup = Teste_Util.newAccount();
+        contaDup.CNPJ__c = '30.022.945/0001-75';
+        contaDup.RecordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByName().get('CORP').getRecordTypeId();
+        update contaDup;
+
+        System.assertEquals(contaDup.Id, DAO_Conta.getContasByCNPJERecordTypeId(conta.CNPJ__c, conta.RecordTypeId, conta.Id).Id);
     }
 }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Canal_Exclusivo_de_Indicacoes</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND( 
+ISNEW(), 
+ISPICKVAL( LeadSource , &#39;Canal Exclusivo de Indicações&#39;),
+$User.Id &lt;&gt; &#39;00540000003l0qc&#39;, 
+$User.Id &lt;&gt; &#39;00540000001yEfA&#39;, 
+$User.Id &lt;&gt; &#39;00540000001yEcB&#39;, 
+$UserRole.Id &lt;&gt; &#39;00E400000016zHR&#39;, 
+$UserRole.Id &lt;&gt; &#39;00E400000016mSH&#39;, 
+$UserRole.Id &lt;&gt; &#39;00E400000016DDA&#39;, 
+$User.ProfileId &lt;&gt; &#39;00e400000013wpH&#39;, 
+$Profile.Id &lt;&gt; &#39;00e400000014JSf&#39;, 
+$User.Id &lt;&gt; &#39;00540000003mGa3&#39; 
+)</errorConditionFormula>
+    <errorMessage>Você não tem permissão para criar leads com origem Canal Exclusivo de Indicações.</errorMessage>
+</ValidationRule>

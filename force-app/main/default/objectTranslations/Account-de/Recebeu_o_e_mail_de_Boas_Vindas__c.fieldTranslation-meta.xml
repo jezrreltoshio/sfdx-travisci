@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Pergunte ao cliente se ele recebeu o e-mail de boas vindas que informa o login e senha para primeiro acesso aos nossos sistemas de monitoramento. Caso não tenha recebido, oriente-o a procurar nossa central de atendimento 3004 1010 / 0800 004 1010 --></help>
+    <label><!-- Recebeu dados de login do sistema? --></label>
+    <name>Recebeu_o_e_mail_de_Boas_Vindas__c</name>
+    <picklistValues>
+        <masterLabel>Não</masterLabel>
+        <translation><!-- Não --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sim</masterLabel>
+        <translation><!-- Sim --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

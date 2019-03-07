@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Campos para apontar o indicador do lead no caso de SIGGO. --></help>
+    <label><!-- Indicador SIGGO --></label>
+    <lookupFilter>
+        <errorMessage><!-- Você só pode relacionar contas que tenham o código do programa de indicação preenchido. --></errorMessage>
+    </lookupFilter>
+    <name>Indicador_Siggo__c</name>
+    <relationshipLabel><!-- Leads (Indicador SIGGO) --></relationshipLabel>
+</CustomFieldTranslation>

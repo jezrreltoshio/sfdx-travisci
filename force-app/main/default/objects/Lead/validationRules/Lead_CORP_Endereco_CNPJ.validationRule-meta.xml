@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_CORP_Endereco_CNPJ</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+IsConverted = true,
+RecordType.Name = &#39;CORP&#39;,
+ISPICKVAL( Status, &quot;Qualificado&quot; ),
+OR( 
+ISBLANK(Street),
+ISBLANK(City),
+ISBLANK(State),
+ISBLANK(PostalCode),
+ISBLANK(Country),
+ISBLANK(CNPJ__c),
+ISBLANK(Numero_endereco__c),
+ISBLANK(Bairro_endereco__c)
+)
+)</errorConditionFormula>
+    <errorMessage>Para converter o Lead, favor preencher TODOS os campos de endereço e o CNPJ.</errorMessage>
+</ValidationRule>

@@ -2,11 +2,6 @@
 <Queue xmlns="http://soap.sforce.com/2006/04/metadata">
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>Ordem de serviço</name>
-    <queueMembers>
-        <roleAndSubordinates>
-            <roleAndSubordinate>Supervisor_atendimento</roleAndSubordinate>
-        </roleAndSubordinates>
-    </queueMembers>
     <queueSobject>
         <sobjectType>WorkOrder</sobjectType>
     </queueSobject>

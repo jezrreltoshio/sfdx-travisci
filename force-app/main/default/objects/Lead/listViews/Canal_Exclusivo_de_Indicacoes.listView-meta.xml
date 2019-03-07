@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Canal_Exclusivo_de_Indicacoes</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Queue</filterScope>
+    <label>Canal Exclusivo de Indicações</label>
+    <language>pt_BR</language>
+    <queue>Canal_Exclusivo_de_Indicacoes</queue>
+    <sharedTo>
+        <group>Canal_Exclusivo_de_Indicacoes</group>
+        <roleAndSubordinates>TELEVENDAS_FRETEIRO</roleAndSubordinates>
+    </sharedTo>
+</ListView>

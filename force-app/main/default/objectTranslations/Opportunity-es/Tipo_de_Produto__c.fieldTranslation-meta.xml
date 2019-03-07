@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo de Produto --></label>
+    <name>Tipo_de_Produto__c</name>
+    <picklistValues>
+        <masterLabel>D-Descartável</masterLabel>
+        <translation><!-- D-Descartável --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não definido</masterLabel>
+        <translation><!-- Não definido --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R-Retornável</masterLabel>
+        <translation><!-- R-Retornável --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Endereço do endpoint de homologação da Cargo Tracck --></help>
+    <label><!-- Server Cargo Tracck homologação --></label>
+    <name>Server_cargo_tracck_homologacao__c</name>
+</CustomFieldTranslation>

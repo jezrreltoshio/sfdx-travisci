@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OBS_Motivo__c</fullName>
+    <description>Campo para pesquisa para os clientes recém instalados - MGM</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Detalhe brevemente o(s) problema(s) enfrentados pelo cliente</inlineHelpText>
+    <label>OBS. Problema</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

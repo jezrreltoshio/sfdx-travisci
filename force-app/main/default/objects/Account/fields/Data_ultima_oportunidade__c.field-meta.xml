@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_ultima_oportunidade__c</fullName>
+    <description>Data da última oportunidade</description>
+    <externalId>false</externalId>
+    <label>Data da última oportunidade</label>
+    <summarizedField>Opportunity.LastModifiedDate</summarizedField>
+    <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Id externo (no sistema de pré-cadastro) do cliente que indicou este cliente. --></help>
+    <label><!-- Código programa indicação --></label>
+    <name>IdExternoClienteIndicador__c</name>
+</CustomFieldTranslation>

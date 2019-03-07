@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Upercase_Chassi</fullName>
+        <field>Veiculo_Chassi__c</field>
+        <formula>UPPER( Veiculo_Chassi__c )</formula>
+        <name>Upercase Chassi</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Upercase_Placa</fullName>
+        <field>Veiculo_Placa__c</field>
+        <formula>UPPER( Veiculo_Placa__c )</formula>
+        <name>Upercase Placa</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Uppercase_Chassi</fullName>
+        <field>Veiculo_Chassi__c</field>
+        <formula>UPPER( Veiculo_Chassi__c )</formula>
+        <name>Uppercase Chassi</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Uppercase_Placa</fullName>
+        <field>Veiculo_Placa__c</field>
+        <formula>UPPER( Veiculo_Placa__c )</formula>
+        <name>Uppercase Placa</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Valor_FIPE_Veiculo</fullName>
+        <field>Valor_FIPE_veiculo__c</field>
+        <formula>Valor_FIPE__c</formula>
+        <name>Valor FIPE Veiculo</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Oportunidade__c</targetObject>
+    </fieldUpdates>
+    <rules>
+        <fullName>Uppercase Veiculo</fullName>
+        <actions>
+            <name>Uppercase_Chassi</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Uppercase_Placa</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>true</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Valor FIPE Veiculo</fullName>
+        <actions>
+            <name>Valor_FIPE_Veiculo</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>ItemPropostaSiggo__c.Valor_FIPE__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

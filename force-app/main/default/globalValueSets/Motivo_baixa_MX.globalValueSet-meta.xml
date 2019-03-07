@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Baja Temporal</fullName>
+        <default>false</default>
+        <label>Baja Temporal</label>
+    </customValue>
+    <customValue>
+        <fullName>Pendiente de Instalación</fullName>
+        <default>false</default>
+        <label>Pendiente de Instalación</label>
+    </customValue>
+    <customValue>
+        <fullName>Siniestro</fullName>
+        <default>false</default>
+        <label>Siniestro</label>
+    </customValue>
+    <customValue>
+        <fullName>Unidad em Taller</fullName>
+        <default>false</default>
+        <label>Unidad em Taller</label>
+    </customValue>
+    <customValue>
+        <fullName>Vehículo vendido</fullName>
+        <default>false</default>
+        <label>Vehículo vendido</label>
+    </customValue>
+    <masterLabel>Motivo de baixa MX</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

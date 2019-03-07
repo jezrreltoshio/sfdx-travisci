@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ANALISE_DE_CONTAS_RECISAO_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>PrazoConclusaoResposta__c</columns>
+    <columns>PrazoConclusaoSolucao__c</columns>
+    <filterScope>Queue</filterScope>
+    <label>ANALISE DE CONTAS/RECISAO</label>
+    <language>pt_BR</language>
+    <queue>ANALISE_DE_CONTAS_RECISAO</queue>
+    <sharedTo>
+        <group>ANALISE_DE_CONTAS_RECISAO</group>
+    </sharedTo>
+</ListView>

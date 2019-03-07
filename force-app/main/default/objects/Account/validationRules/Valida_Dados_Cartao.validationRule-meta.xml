@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Valida_Dados_Cartao</fullName>
+    <active>true</active>
+    <description>Valida se as informações preenchidas nos campos de Número do Cartão de Crédito e Código de Segurança do cartão são apenas números.</description>
+    <errorConditionFormula>OR(
+AND( NOT(LEN(Cobranca_Cartao_Numero_Cript__c) = 0), NOT(ISNUMBER( Cobranca_Cartao_Numero_Cript__c ))),
+AND( NOT(LEN(Cobranca_Cartao_CodigoSeguranca_Cript__c) = 0), NOT(ISNUMBER( Cobranca_Cartao_CodigoSeguranca_Cript__c )))
+)</errorConditionFormula>
+    <errorMessage>Verifique as informações do cartão de crédito (Número e Código de Segurança). Apenas números são aceitos.</errorMessage>
+</ValidationRule>

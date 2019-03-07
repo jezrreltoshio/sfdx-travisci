@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Motivo de noshow --></label>
+    <name>Motivo_noshow__c</name>
+    <picklistValues>
+        <masterLabel>ERRO_AGENDAMENTO</masterLabel>
+        <translation><!-- ERRO_AGENDAMENTO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FALTA_EQUIPAMENTO</masterLabel>
+        <translation><!-- FALTA_EQUIPAMENTO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOSHOW_CLIENTE</masterLabel>
+        <translation><!-- NOSHOW_CLIENTE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NOSHOW_TECNICO</masterLabel>
+        <translation><!-- NOSHOW_TECNICO --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

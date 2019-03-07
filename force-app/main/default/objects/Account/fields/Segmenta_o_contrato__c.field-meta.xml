@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Segmenta_o_contrato__c</fullName>
+    <externalId>false</externalId>
+    <label>Segmentação contrato</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Frota</fullName>
+                <default>false</default>
+                <label>Frota</label>
+            </value>
+            <value>
+                <fullName>Maquina/outros</fullName>
+                <default>false</default>
+                <label>Maquina/outros</label>
+            </value>
+            <value>
+                <fullName>Transporte</fullName>
+                <default>false</default>
+                <label>Transporte</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

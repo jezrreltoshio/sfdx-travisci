@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Frota total do cliente --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Frota total do cliente --></value>
+    </caseValues>
+    <gender><!-- Masculine --></gender>
+    <layouts>
+        <layout>CORP - Argentina</layout>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CORP - Mexico</layout>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Cargo Tracck</layout>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout de Potencial</layout>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Frota Potencial --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- Argentina --></label>
+        <name>Argentina</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OTR --></label>
+        <name>Bluetec</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CORP --></label>
+        <name>CORP</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Cargo Tracck --></label>
+        <name>Cargo_Tracck</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Mercosul --></label>
+        <name>Mercosul</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Introduzca el nombre del otro competidor.</errorMessage>
+        <name>PreencherCampoOutrosConcorrentes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>No se puede insertar un valor negativo.</errorMessage>
+        <name>ValidaAno</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>No se puede insertar un valor negativo.</errorMessage>
+        <name>ValidaQuantidadeVeiculo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Usted sólo debe llenar ese campo, cuando el campo &quot;Concursante&quot; está con la opción &quot;OTROS&quot;.</errorMessage>
+        <name>ValidaValorOutrosConcorrentes</name>
+    </validationRules>
+</CustomObjectTranslation>

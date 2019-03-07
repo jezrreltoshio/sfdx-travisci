@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mercosul</fullName>
+    <active>true</active>
+    <description>Tipo de registro para países do Mercosul, menos Brasil</description>
+    <label>Mercosul</label>
+    <picklistValues>
+        <picklist>Concorrente__c</picklist>
+        <values>
+            <fullName>AUTOTRAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ITURAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LO JACK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEGATRANS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MICROTRACK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OUTROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POINTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SITRACK</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Necessidade_Secundaria__c</picklist>
+        <values>
+            <fullName>Conservação de carga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Controle de custos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pontualidade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prevenção de acidentes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Segurança da carga</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Necessidade_de_negocio_3__c</picklist>
+        <values>
+            <fullName>Conservação de carga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Controle de custos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pontualidade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prevenção de acidentes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Segurança da carga</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Necessidade_do_negocio__c</picklist>
+        <values>
+            <fullName>Conservação da carga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Controle de custos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pontualidade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prevenção de acidentes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Segurança da carga</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Nivel_de_relacionamento__c</picklist>
+        <values>
+            <fullName>Bom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Muito bom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Péssimo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Razoável</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ruim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Segmentacao_de_mercado__c</picklist>
+        <values>
+            <fullName>Alimentos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bebidas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carga Especial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carga Refrigerada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carga Seca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carga Viva</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carga de Valor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cargas Químicas e Perigosas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cimento e Betoneira</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribuidora</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eletroeletrônico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FARMACÊUTICOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frigorifico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mineração e Energia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_de_carreta__c</picklist>
+        <values>
+            <fullName>BULK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRIGORÍFICO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GELADEIRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OUTRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIDER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TANQUE COMBUSTÍVEL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TANQUE GÁS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TANQUE QUÍMICO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRONCO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_de_isca__c</picklist>
+        <values>
+            <fullName>Descartável</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Descartável e retornável</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retornável</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_de_ve_culo__c</picklist>
+        <values>
+            <fullName>AUTO-ELEVAÇÃO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUTOMÓVEL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAMINHAO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAQUINA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEMI-REBOQUE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

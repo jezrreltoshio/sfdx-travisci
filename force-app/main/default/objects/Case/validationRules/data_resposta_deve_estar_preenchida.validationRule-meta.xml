@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>data_resposta_deve_estar_preenchida</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ ISBLANK( DataFinalizacaoResposta__c ),
+ NOT(ISBLANK( DataFinalizacaoAcaoSolucao__c ) )
+)</errorConditionFormula>
+    <errorDisplayField>DataFinalizacaoAcaoSolucao__c</errorDisplayField>
+    <errorMessage>Finalize a data de reposta antes de finalizar a data de solução</errorMessage>
+</ValidationRule>

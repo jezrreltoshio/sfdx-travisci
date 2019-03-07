@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Converter_Blue_Tec</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+RecordType.DeveloperName = &#39;Blue_tec&#39;, 
+IsConverted = true, 
+ISBLANK(TRIM(CNPJ__c))
+)</errorConditionFormula>
+    <errorMessage>Para prosseguir com a conversão do lead é necessário informar um CNPJ válido.</errorMessage>
+</ValidationRule>

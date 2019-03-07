@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_da_Campanha__c</fullName>
+    <description>Refere-se ao valor do campo lista de Opções Tipo (API: Type) do objeto Campanha.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Refere-se ao valor do campo lista de Opções Tipo (API: Type) do objeto Campanha.</inlineHelpText>
+    <label>Tipo da Campanha</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

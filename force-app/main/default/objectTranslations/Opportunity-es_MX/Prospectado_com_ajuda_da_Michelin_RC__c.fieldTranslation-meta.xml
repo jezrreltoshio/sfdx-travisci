@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Indicação Michellin --></label>
+    <name>Prospectado_com_ajuda_da_Michelin_RC__c</name>
+</CustomFieldTranslation>

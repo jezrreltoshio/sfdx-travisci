@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Campanhas_Gerais_Core</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Campanhas Gerais Core</label>
+        <sharedTo>
+            <group>TELEVENDAS_CORE</group>
+        </sharedTo>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8 AND 9 AND 10 AND 11</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>CORP</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notContain</operation>
+            <value>DBM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Type</field>
+            <operation>notEqual</operation>
+            <value>Freteiro</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notContain</operation>
+            <value>Hunter</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notContain</operation>
+            <value>Piloto</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notContain</operation>
+            <value>Frota Circulante</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notContain</operation>
+            <value>TRACCK</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notContain</operation>
+            <value>Hunter</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notContain</operation>
+            <value>KEY ACCOUNT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notContain</operation>
+            <value>FROTA LEVE</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notContain</operation>
+            <value>LAB</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Compartilha_campanha_Freteiro</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compartilha campanha Freteiro</label>
+        <sharedTo>
+            <roleAndSubordinates>SUPERVISOR_FRETEIRO</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Freteiros</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Compartilha_campanha_Siggo</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compartilha campanha Siggo</label>
+        <sharedTo>
+            <roleAndSubordinates>SUPERVISO_R_SIGGO</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Siggo</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Ex_segurado</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Ex-segurado</label>
+        <sharedTo>
+            <group>TELEVENDAS_CORE</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>contains</operation>
+            <value>Campanha Ex Segurado - PJ</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Ex_segurado_Freteiro</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Ex-segurado Freteiro</label>
+        <sharedTo>
+            <roleAndSubordinates>SUPERVISOR_FRETEIRO</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>contains</operation>
+            <value>Campanha Ex Segurado - Freteiro</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Ex_segurado_Siggo</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Ex-segurado Siggo</label>
+        <sharedTo>
+            <roleAndSubordinates>SUPERVISO_R_SIGGO</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>contains</operation>
+            <value>Campanha Ex Segurado - SIGGO</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FROTA_LEVE_NONECO</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FROTA LEVE NONECO</label>
+        <sharedTo>
+            <group>FROTA_LEVE_NONECO</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>contains</operation>
+            <value>DBM - FLD,5400</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>contains</operation>
+            <value>4205,4206,4207,4204,4101,DBM - FLD - 5</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notContain</operation>
+            <value>LAB</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>FROTA_LEVE_SUL</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>FROTA LEVE SUL</label>
+        <sharedTo>
+            <group>FROTA_LEVE_SUL</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>contains</operation>
+            <value>3201,3400</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notContain</operation>
+            <value>LAB</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Visualizadores_de_campanha_exc_Siggo</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Visualizadores de campanha exc Siggo</label>
+        <sharedTo>
+            <group>VISUALIZADORES_CAMPANHA</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Siggo</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

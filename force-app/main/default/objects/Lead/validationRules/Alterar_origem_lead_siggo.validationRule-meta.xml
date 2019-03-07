@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alterar_origem_lead_siggo</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+PRIORVALUE(LeadSource) &lt;&gt; null, 
+ISCHANGED (LeadSource), 
+AND(
+OR( 
+ $User.ProfileId = &#39;00e400000017cB4&#39;,
+ $User.ProfileId = &#39;00e400000017cOX&#39;,
+ $User.ProfileId = &#39;00e400000017Qdq&#39;,
+ $User.ProfileId = &#39;00e400000017bl6&#39;,
+ $User.ProfileId = &#39;00e40000001FZPW&#39;
+) 
+) 
+)</errorConditionFormula>
+    <errorMessage>Você não tem permissão de alterar a origem deste lead.</errorMessage>
+</ValidationRule>

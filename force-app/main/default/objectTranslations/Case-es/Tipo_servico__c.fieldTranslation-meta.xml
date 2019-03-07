@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo de serviço técnico --></label>
+    <name>Tipo_servico__c</name>
+    <picklistValues>
+        <masterLabel>Desinstação</masterLabel>
+        <translation><!-- Desinstação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instalação</masterLabel>
+        <translation><!-- Instalação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prova Piloto</masterLabel>
+        <translation><!-- Prova Piloto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revisão</masterLabel>
+        <translation><!-- Revisão --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

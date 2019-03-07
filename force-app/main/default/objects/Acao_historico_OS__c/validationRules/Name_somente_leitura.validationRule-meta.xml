@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Name_somente_leitura</fullName>
+    <active>true</active>
+    <description>O campo (Ação de OS / Name) padrão recebe dados via integração, portanto não pode ser alterado de forma manual.</description>
+    <errorConditionFormula>AND(
+ISCHANGED(Name), 
+NOT(ISNEW()),
+NOT($Profile.Name = &#39;Administrador do sistema&#39;) 
+)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Este campo não pode ser alterado manualmente.</errorMessage>
+</ValidationRule>

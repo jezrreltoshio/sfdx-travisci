@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Atualiza_visita_conclu_da</fullName>
+        <field>Visita_Concluida__c</field>
+        <literalValue>1</literalValue>
+        <name>Atualiza visita concluída</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Fim_da_visita_atualiza_data</fullName>
+        <field>Hora_de_termino_da_visita__c</field>
+        <formula>Now()</formula>
+        <name>Fim da visita - atualiza data</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>In_cio_da_visita_atualiza_data</fullName>
+        <field>Hora_de_in_cio_da_visita__c</field>
+        <formula>now()</formula>
+        <name>Início da visita - atualiza data</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Fim da visita - Data</fullName>
+        <actions>
+            <name>Atualiza_visita_conclu_da</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Fim_da_visita_atualiza_data</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Event.Fim_da_visita__c</field>
+            <operation>equals</operation>
+            <value>Verdadeiro</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Início da visita - Data</fullName>
+        <actions>
+            <name>In_cio_da_visita_atualiza_data</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Event.In_cio_da_visita__c</field>
+            <operation>equals</operation>
+            <value>Verdadeiro</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Preencher Data Última Visita</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Event.Visita_Concluida__c</field>
+            <operation>equals</operation>
+            <value>Verdadeiro</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Event.AccountId</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

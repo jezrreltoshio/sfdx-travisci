@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Motivo do ganho --></label>
+    <name>Motivo_do_ganho__c</name>
+    <picklistValues>
+        <masterLabel>Desconto no seguro</masterLabel>
+        <translation><!-- Desconto no seguro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maior segurança</masterLabel>
+        <translation><!-- Maior segurança --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monitorar o condutor</masterLabel>
+        <translation><!-- Monitorar o condutor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outros</masterLabel>
+        <translation><!-- Outros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Substituir seguro</masterLabel>
+        <translation><!-- Substituir seguro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trabalho / exigência do mercado</masterLabel>
+        <translation><!-- Trabalho / exigência do mercado --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

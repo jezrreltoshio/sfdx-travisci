@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Não preencher caso o usuário esteja sendo criado. --></help>
+    <label><!-- Fila --></label>
+    <name>Fila__c</name>
+    <picklistValues>
+        <masterLabel>Administração de SIMs</masterLabel>
+        <translation><!-- Administração de SIMs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Analista de Plataforma</masterLabel>
+        <translation><!-- Analista de Plataforma --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Atendimento ao Cliente</masterLabel>
+        <translation><!-- Atendimento ao Cliente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAI</masterLabel>
+        <translation><!-- CAI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cobrança</masterLabel>
+        <translation><!-- Cobrança --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Desenvolvimento</masterLabel>
+        <translation><!-- Desenvolvimento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Executivos de Vendas</masterLabel>
+        <translation><!-- Executivos de Vendas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Faturamento</masterLabel>
+        <translation><!-- Faturamento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infraestrutura</masterLabel>
+        <translation><!-- Infraestrutura --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instalações</masterLabel>
+        <translation><!-- Instalações --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Laboratório</masterLabel>
+        <translation><!-- Laboratório --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operador de Plataforma</masterLabel>
+        <translation><!-- Operador de Plataforma --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telemarketing</masterLabel>
+        <translation><!-- Telemarketing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Treinamento UC</masterLabel>
+        <translation><!-- Treinamento UC --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

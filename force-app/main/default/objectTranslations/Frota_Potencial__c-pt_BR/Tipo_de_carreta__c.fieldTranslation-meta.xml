@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo de carreta --></label>
+    <name>Tipo_de_carreta__c</name>
+    <picklistValues>
+        <masterLabel>BASCULANTE</masterLabel>
+        <translation><!-- BASCULANTE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BAÚ</masterLabel>
+        <translation><!-- BAÚ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BULK</masterLabel>
+        <translation><!-- BULK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CANAVIEIRO</masterLabel>
+        <translation><!-- CANAVIEIRO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CARGA SECA</masterLabel>
+        <translation><!-- CARGA SECA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CARREGA TUDO</masterLabel>
+        <translation><!-- CARREGA TUDO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CEGONHA</masterLabel>
+        <translation><!-- CEGONHA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FLORESTAL</masterLabel>
+        <translation><!-- FLORESTAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRIGORÍFICO</masterLabel>
+        <translation><!-- FRIGORÍFICO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GELADEIRA</masterLabel>
+        <translation><!-- GELADEIRA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRANEL</masterLabel>
+        <translation><!-- GRANEL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OUTRO</masterLabel>
+        <translation><!-- OUTRO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OUTROS</masterLabel>
+        <translation><!-- OUTROS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PORTA CONTEINER</masterLabel>
+        <translation><!-- PORTA CONTEINER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIDER</masterLabel>
+        <translation><!-- SIDER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SILO</masterLabel>
+        <translation><!-- SILO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SILO CIMENTO</masterLabel>
+        <translation><!-- SILO CIMENTO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TANQUE ALIMENTAR</masterLabel>
+        <translation><!-- TANQUE ALIMENTAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TANQUE COMBUSTÍVEL</masterLabel>
+        <translation><!-- TANQUE COMBUSTÍVEL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TANQUE GÁS</masterLabel>
+        <translation><!-- TANQUE GÁS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TANQUE QUÍMICO</masterLabel>
+        <translation><!-- TANQUE QUÍMICO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRONCO</masterLabel>
+        <translation><!-- TRONCO --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

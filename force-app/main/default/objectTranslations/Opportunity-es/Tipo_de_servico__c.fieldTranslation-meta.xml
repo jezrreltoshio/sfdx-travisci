@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo de serviço --></label>
+    <name>Tipo_de_servico__c</name>
+    <picklistValues>
+        <masterLabel>Consultoria</masterLabel>
+        <translation><!-- Consultoria --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Desenho de quadrantes</masterLabel>
+        <translation><!-- Desenho de quadrantes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instalação</masterLabel>
+        <translation><!-- Instalação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medição</masterLabel>
+        <translation><!-- Medição --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quadrante</masterLabel>
+        <translation><!-- Quadrante --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Treinamento</masterLabel>
+        <translation><!-- Treinamento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Treinamento presencial</masterLabel>
+        <translation><!-- Treinamento presencial --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

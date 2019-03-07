@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Quais tipos de veículos da frota? --></label>
+    <name>Quais_tipos_de_ve_culos_da_frota__c</name>
+    <picklistValues>
+        <masterLabel>Caminhão</masterLabel>
+        <translation><!-- Caminhão --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carreta</masterLabel>
+        <translation><!-- Carreta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cavalo</masterLabel>
+        <translation><!-- Cavalo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ônibus</masterLabel>
+        <translation><!-- Ônibus --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

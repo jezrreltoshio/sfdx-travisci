@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_de_ve_culos__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo de veículos</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Quantidade_de_ve_culos__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Leves</fullName>
+                <default>false</default>
+                <label>Leves</label>
+            </value>
+            <value>
+                <fullName>Pesados</fullName>
+                <default>false</default>
+                <label>Pesados</label>
+            </value>
+            <value>
+                <fullName>Leves + Pesados</fullName>
+                <default>false</default>
+                <label>Leves + Pesados</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>1 a 05</controllingFieldValue>
+            <controllingFieldValue>1 a 10</controllingFieldValue>
+            <controllingFieldValue>11 A 50</controllingFieldValue>
+            <controllingFieldValue>Acima de 50</controllingFieldValue>
+            <valueName>Leves</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1 a 10</controllingFieldValue>
+            <controllingFieldValue>1 a 50</controllingFieldValue>
+            <controllingFieldValue>11 A 50</controllingFieldValue>
+            <controllingFieldValue>Acima de 50</controllingFieldValue>
+            <valueName>Pesados</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1 a 10</controllingFieldValue>
+            <controllingFieldValue>11 A 50</controllingFieldValue>
+            <controllingFieldValue>Acima de 50</controllingFieldValue>
+            <valueName>Leves + Pesados</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

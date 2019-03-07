@@ -3,13 +3,6 @@
     <doesSendEmailToMembers>true</doesSendEmailToMembers>
     <email>renan.oliveira@sascar.com.br</email>
     <name>LABORATÓRIO N2</name>
-    <queueMembers>
-        <users>
-            <user>giovani.dias@sascar.com.br</user>
-            <user>kayo.correa@sascar.com.br</user>
-            <user>tamires.barreto@sascar.com.br</user>
-        </users>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Case</sobjectType>
     </queueSobject>

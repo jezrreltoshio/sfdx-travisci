@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Veiculo_Proprietario_EstadoCivil__c</fullName>
+    <externalId>false</externalId>
+    <label>Estado Civil</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>C-Casado</fullName>
+                <default>false</default>
+                <label>C-Casado</label>
+            </value>
+            <value>
+                <fullName>S-Solteiro</fullName>
+                <default>false</default>
+                <label>S-Solteiro</label>
+            </value>
+            <value>
+                <fullName>V-Viúvo</fullName>
+                <default>false</default>
+                <label>V-Viúvo</label>
+            </value>
+            <value>
+                <fullName>D-Divorciado</fullName>
+                <default>false</default>
+                <label>D-Divorciado</label>
+            </value>
+            <value>
+                <fullName>A-Amasiado</fullName>
+                <default>false</default>
+                <label>A-Amasiado</label>
+            </value>
+            <value>
+                <fullName>O-Outro</fullName>
+                <default>false</default>
+                <label>O-Outro</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

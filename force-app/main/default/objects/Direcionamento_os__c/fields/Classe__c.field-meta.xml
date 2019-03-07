@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Classe__c</fullName>
+    <externalId>false</externalId>
+    <label>Classe</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ACESSÓRIOS CARRETA</fullName>
+                <default>false</default>
+                <label>ACESSÓRIOS CARRETA</label>
+            </value>
+            <value>
+                <fullName>BT AEROPORTOS</fullName>
+                <default>false</default>
+                <label>BT AEROPORTOS</label>
+            </value>
+            <value>
+                <fullName>BT CONSTRUCAO CIVIL</fullName>
+                <default>false</default>
+                <label>BT CONSTRUCAO CIVIL</label>
+            </value>
+            <value>
+                <fullName>BT Industria - Avançado</fullName>
+                <default>false</default>
+                <label>BT Industria - Avançado</label>
+            </value>
+            <value>
+                <fullName>BT Industria - Basico</fullName>
+                <default>false</default>
+                <label>BT Industria - Basico</label>
+            </value>
+            <value>
+                <fullName>BT Industria - Rental</fullName>
+                <default>false</default>
+                <label>BT Industria - Rental</label>
+            </value>
+            <value>
+                <fullName>BT MINA JORNADA</fullName>
+                <default>false</default>
+                <label>BT MINA JORNADA</label>
+            </value>
+            <value>
+                <fullName>BT MINA PRODUTIVIDADE</fullName>
+                <default>false</default>
+                <label>BT MINA PRODUTIVIDADE</label>
+            </value>
+            <value>
+                <fullName>BT MINA SEGURANÇA</fullName>
+                <default>false</default>
+                <label>BT MINA SEGURANÇA</label>
+            </value>
+            <value>
+                <fullName>BT MINERACAO GSM</fullName>
+                <default>false</default>
+                <label>BT MINERACAO GSM</label>
+            </value>
+            <value>
+                <fullName>BT PORTO AVANÇADO</fullName>
+                <default>false</default>
+                <label>BT PORTO AVANÇADO</label>
+            </value>
+            <value>
+                <fullName>BT PORTO BASICO</fullName>
+                <default>false</default>
+                <label>BT PORTO BASICO</label>
+            </value>
+            <value>
+                <fullName>CARRETA LOG</fullName>
+                <default>false</default>
+                <label>CARRETA LOG</label>
+            </value>
+            <value>
+                <fullName>CARRETA SOLAR</fullName>
+                <default>false</default>
+                <label>CARRETA SOLAR</label>
+            </value>
+            <value>
+                <fullName>CCO - GESTÃO AVANÇADA</fullName>
+                <default>false</default>
+                <label>CCO - GESTÃO AVANÇADA</label>
+            </value>
+            <value>
+                <fullName>CCO - GESTÃO AVANÇADA IDENTIFICAÇÃO CAVALO</fullName>
+                <default>false</default>
+                <label>CCO - GESTÃO AVANÇADA IDENTIFICAÇÃO CAVALO</label>
+            </value>
+            <value>
+                <fullName>CCO - GESTAO AVANÇADA (POSICIONAMENTO FREQUENTE)</fullName>
+                <default>false</default>
+                <label>CCO - GESTAO AVANÇADA (POSICIONAMENTO FREQUENTE)</label>
+            </value>
+            <value>
+                <fullName>CCO - GESTÃO AVANÇADA REPETIDORA</fullName>
+                <default>false</default>
+                <label>CCO - GESTÃO AVANÇADA REPETIDORA</label>
+            </value>
+            <value>
+                <fullName>CCO - GESTÃO DA PRODUTIVIDADE</fullName>
+                <default>false</default>
+                <label>CCO - GESTÃO DA PRODUTIVIDADE</label>
+            </value>
+            <value>
+                <fullName>CCO - GESTAO DA PRODUTIVIDADE (POSICIONAMENTO FREQUENTE)</fullName>
+                <default>false</default>
+                <label>CCO - GESTAO DA PRODUTIVIDADE (POSICIONAMENTO FREQUENTE)</label>
+            </value>
+            <value>
+                <fullName>CCO - MONITORAMENTO LOGÍSTICO</fullName>
+                <default>false</default>
+                <label>CCO - MONITORAMENTO LOGÍSTICO</label>
+            </value>
+            <value>
+                <fullName>CCO - MONITORAMENTO LOGÍSTICO (POSICIONAMENTO FREQUENTE)</fullName>
+                <default>false</default>
+                <label>CCO - MONITORAMENTO LOGÍSTICO (POSICIONAMENTO FREQUENTE)</label>
+            </value>
+            <value>
+                <fullName>CELULAR/GSM</fullName>
+                <default>false</default>
+                <label>CELULAR/GSM</label>
+            </value>
+            <value>
+                <fullName>EUROPA CARRETA CONECTADA - FRIDGE</fullName>
+                <default>false</default>
+                <label>EUROPA CARRETA CONECTADA - FRIDGE</label>
+            </value>
+            <value>
+                <fullName>EUROPA CARRETA CONECTADA - GEOLOC AND USAGE</fullName>
+                <default>false</default>
+                <label>EUROPA CARRETA CONECTADA - GEOLOC AND USAGE</label>
+            </value>
+            <value>
+                <fullName>EUROPA CARRETA CONECTADA - MAINTENANCE AND SAFETY</fullName>
+                <default>false</default>
+                <label>EUROPA CARRETA CONECTADA - MAINTENANCE AND SAFETY</label>
+            </value>
+            <value>
+                <fullName>EXCLUSIVE LIGHT</fullName>
+                <default>false</default>
+                <label>EXCLUSIVE LIGHT</label>
+            </value>
+            <value>
+                <fullName>FAMILIA GSM</fullName>
+                <default>false</default>
+                <label>FAMILIA GSM</label>
+            </value>
+            <value>
+                <fullName>FAMILIA SASMOTO</fullName>
+                <default>false</default>
+                <label>FAMILIA SASMOTO</label>
+            </value>
+            <value>
+                <fullName>GESTÃO DE FROTAS - INDONÉSIA</fullName>
+                <default>false</default>
+                <label>GESTÃO DE FROTAS - INDONÉSIA</label>
+            </value>
+            <value>
+                <fullName>GF - CONTROLE DE CUSTOS</fullName>
+                <default>false</default>
+                <label>GF - CONTROLE DE CUSTOS</label>
+            </value>
+            <value>
+                <fullName>GF - CONTROLE DE CUSTOS IDENTIFICAÇÃO DE MOTORISTAS</fullName>
+                <default>false</default>
+                <label>GF - CONTROLE DE CUSTOS IDENTIFICAÇÃO DE MOTORISTAS</label>
+            </value>
+            <value>
+                <fullName>GF - GESTÃO AVANÇADA</fullName>
+                <default>false</default>
+                <label>GF - GESTÃO AVANÇADA</label>
+            </value>
+            <value>
+                <fullName>GF - GESTÃO AVANÇADA IDENTIFICAÇÃO DE MOTORISTAS</fullName>
+                <default>false</default>
+                <label>GF - GESTÃO AVANÇADA IDENTIFICAÇÃO DE MOTORISTAS</label>
+            </value>
+            <value>
+                <fullName>GF - MONITORAMENTO LOGISTICO</fullName>
+                <default>false</default>
+                <label>GF - MONITORAMENTO LOGISTICO</label>
+            </value>
+            <value>
+                <fullName>GPS/GSM</fullName>
+                <default>false</default>
+                <label>GPS/GSM</label>
+            </value>
+            <value>
+                <fullName>GSM/CONTINGENCIA</fullName>
+                <default>false</default>
+                <label>GSM/CONTINGENCIA</label>
+            </value>
+            <value>
+                <fullName>GSM/GPS</fullName>
+                <default>false</default>
+                <label>GSM/GPS</label>
+            </value>
+            <value>
+                <fullName>GSM/GPS BETONEIRA</fullName>
+                <default>false</default>
+                <label>GSM/GPS BETONEIRA</label>
+            </value>
+            <value>
+                <fullName>GSM/GPS BLOQ/PANICO (SBTEC)</fullName>
+                <default>false</default>
+                <label>GSM/GPS BLOQ/PANICO (SBTEC)</label>
+            </value>
+            <value>
+                <fullName>GSM/GPS BLOQ (SBTEC)</fullName>
+                <default>false</default>
+                <label>GSM/GPS BLOQ (SBTEC)</label>
+            </value>
+            <value>
+                <fullName>GSM/GPS FROTAS</fullName>
+                <default>false</default>
+                <label>GSM/GPS FROTAS</label>
+            </value>
+            <value>
+                <fullName>GSM/GPS FROTAS_MOTOS</fullName>
+                <default>false</default>
+                <label>GSM/GPS FROTAS_MOTOS</label>
+            </value>
+            <value>
+                <fullName>GSM/GPS FULL (SBTEC)</fullName>
+                <default>false</default>
+                <label>GSM/GPS FULL (SBTEC)</label>
+            </value>
+            <value>
+                <fullName>GSM/GPS/HODÔMETRO</fullName>
+                <default>false</default>
+                <label>GSM/GPS/HODÔMETRO</label>
+            </value>
+            <value>
+                <fullName>GSM/GPS - HORIMETRO</fullName>
+                <default>false</default>
+                <label>GSM/GPS - HORIMETRO</label>
+            </value>
+            <value>
+                <fullName>GSM/GPS/MOVEL</fullName>
+                <default>false</default>
+                <label>GSM/GPS/MOVEL</label>
+            </value>
+            <value>
+                <fullName>GSM/GPS PANICO</fullName>
+                <default>false</default>
+                <label>GSM/GPS PANICO</label>
+            </value>
+            <value>
+                <fullName>GSM/GPS PLUS</fullName>
+                <default>false</default>
+                <label>GSM/GPS PLUS</label>
+            </value>
+            <value>
+                <fullName>GSM/GPS PLUS II</fullName>
+                <default>false</default>
+                <label>GSM/GPS PLUS II</label>
+            </value>
+            <value>
+                <fullName>GSM/GPS/RESOLUCAO 245</fullName>
+                <default>false</default>
+                <label>GSM/GPS/RESOLUCAO 245</label>
+            </value>
+            <value>
+                <fullName>GSM/GPS (SBTEC)</fullName>
+                <default>false</default>
+                <label>GSM/GPS (SBTEC)</label>
+            </value>
+            <value>
+                <fullName>GSM/GPS TEMPO DE DIREÇÃO</fullName>
+                <default>false</default>
+                <label>GSM/GPS TEMPO DE DIREÇÃO</label>
+            </value>
+            <value>
+                <fullName>GSM/GPS WEB (SBTEC)</fullName>
+                <default>false</default>
+                <label>GSM/GPS WEB (SBTEC)</label>
+            </value>
+            <value>
+                <fullName>Indica GSM</fullName>
+                <default>false</default>
+                <label>Indica GSM</label>
+            </value>
+            <value>
+                <fullName>IVECO FROTA FÁCIL</fullName>
+                <default>false</default>
+                <label>IVECO FROTA FÁCIL</label>
+            </value>
+            <value>
+                <fullName>Lacre Eletronico</fullName>
+                <default>false</default>
+                <label>Lacre Eletronico</label>
+            </value>
+            <value>
+                <fullName>MOVEL/CONTINGENCIA</fullName>
+                <default>false</default>
+                <label>MOVEL/CONTINGENCIA</label>
+            </value>
+            <value>
+                <fullName>NAO MEXER - RESERVADA 1</fullName>
+                <default>false</default>
+                <label>NAO MEXER - RESERVADA 1</label>
+            </value>
+            <value>
+                <fullName>NAO MEXER - RESERVADA 2</fullName>
+                <default>false</default>
+                <label>NAO MEXER - RESERVADA 2</label>
+            </value>
+            <value>
+                <fullName>NAO MEXER - RESERVADA 3</fullName>
+                <default>false</default>
+                <label>NAO MEXER - RESERVADA 3</label>
+            </value>
+            <value>
+                <fullName>NAO MEXER - RESERVADA 4</fullName>
+                <default>false</default>
+                <label>NAO MEXER - RESERVADA 4</label>
+            </value>
+            <value>
+                <fullName>NAO MEXER - RESERVADA 5</fullName>
+                <default>false</default>
+                <label>NAO MEXER - RESERVADA 5</label>
+            </value>
+            <value>
+                <fullName>NAO MEXER - RESERVADA 6</fullName>
+                <default>false</default>
+                <label>NAO MEXER - RESERVADA 6</label>
+            </value>
+            <value>
+                <fullName>NAO MEXER - RESERVADA 7</fullName>
+                <default>false</default>
+                <label>NAO MEXER - RESERVADA 7</label>
+            </value>
+            <value>
+                <fullName>NAUTICA LIGHT</fullName>
+                <default>false</default>
+                <label>NAUTICA LIGHT</label>
+            </value>
+            <value>
+                <fullName>NAUTICA PREMIUM</fullName>
+                <default>false</default>
+                <label>NAUTICA PREMIUM</label>
+            </value>
+            <value>
+                <fullName>RF Mobile</fullName>
+                <default>false</default>
+                <label>RF Mobile</label>
+            </value>
+            <value>
+                <fullName>RF Nacional</fullName>
+                <default>false</default>
+                <label>RF Nacional</label>
+            </value>
+            <value>
+                <fullName>RF NACIONAL SEM FIO</fullName>
+                <default>false</default>
+                <label>RF NACIONAL SEM FIO</label>
+            </value>
+            <value>
+                <fullName>SASCAR 245 APENAS BLOQUEIO</fullName>
+                <default>false</default>
+                <label>SASCAR 245 APENAS BLOQUEIO</label>
+            </value>
+            <value>
+                <fullName>SASCAR 245 BLOQUEIO E LOCALIZACAO</fullName>
+                <default>false</default>
+                <label>SASCAR 245 BLOQUEIO E LOCALIZACAO</label>
+            </value>
+            <value>
+                <fullName>SASCAR CT</fullName>
+                <default>false</default>
+                <label>SASCAR CT</label>
+            </value>
+            <value>
+                <fullName>SASCARGA</fullName>
+                <default>false</default>
+                <label>SASCARGA</label>
+            </value>
+            <value>
+                <fullName>SASCARGA AVD SAT 200</fullName>
+                <default>false</default>
+                <label>SASCARGA AVD SAT 200</label>
+            </value>
+            <value>
+                <fullName>SASCARGA FULL</fullName>
+                <default>false</default>
+                <label>SASCARGA FULL</label>
+            </value>
+            <value>
+                <fullName>Sascarga Full (Blindado)</fullName>
+                <default>false</default>
+                <label>Sascarga Full (Blindado)</label>
+            </value>
+            <value>
+                <fullName>SASCARGA FULL SAT 1000</fullName>
+                <default>false</default>
+                <label>SASCARGA FULL SAT 1000</label>
+            </value>
+            <value>
+                <fullName>SASCARGA FULL SAT 10000</fullName>
+                <default>false</default>
+                <label>SASCARGA FULL SAT 10000</label>
+            </value>
+            <value>
+                <fullName>SASCARGA FULL SAT 1000 - INT</fullName>
+                <default>false</default>
+                <label>SASCARGA FULL SAT 1000 - INT</label>
+            </value>
+            <value>
+                <fullName>SASCARGA FULL SAT 200</fullName>
+                <default>false</default>
+                <label>SASCARGA FULL SAT 200</label>
+            </value>
+            <value>
+                <fullName>SASCARGA FULL SAT 350</fullName>
+                <default>false</default>
+                <label>SASCARGA FULL SAT 350</label>
+            </value>
+            <value>
+                <fullName>SASCARGA FULL SAT 500</fullName>
+                <default>false</default>
+                <label>SASCARGA FULL SAT 500</label>
+            </value>
+            <value>
+                <fullName>Sascarga Full Sat (Blindado)</fullName>
+                <default>false</default>
+                <label>Sascarga Full Sat (Blindado)</label>
+            </value>
+            <value>
+                <fullName>SASCARGA FULL SAT I</fullName>
+                <default>false</default>
+                <label>SASCARGA FULL SAT I</label>
+            </value>
+            <value>
+                <fullName>SASCARGA FULL SAT II</fullName>
+                <default>false</default>
+                <label>SASCARGA FULL SAT II</label>
+            </value>
+            <value>
+                <fullName>SASCARGA FULL SAT III</fullName>
+                <default>false</default>
+                <label>SASCARGA FULL SAT III</label>
+            </value>
+            <value>
+                <fullName>SASCARGA LIGHT</fullName>
+                <default>false</default>
+                <label>SASCARGA LIGHT</label>
+            </value>
+            <value>
+                <fullName>SASCARGASAT</fullName>
+                <default>false</default>
+                <label>SASCARGASAT</label>
+            </value>
+            <value>
+                <fullName>SASCAR GESTÃO DO MOTORISTA</fullName>
+                <default>false</default>
+                <label>SASCAR GESTÃO DO MOTORISTA</label>
+            </value>
+            <value>
+                <fullName>SASCAR LOC PLUS</fullName>
+                <default>false</default>
+                <label>SASCAR LOC PLUS</label>
+            </value>
+            <value>
+                <fullName>SASCAR LOC RF</fullName>
+                <default>false</default>
+                <label>SASCAR LOC RF</label>
+            </value>
+            <value>
+                <fullName>SASCARRETA SASGC</fullName>
+                <default>false</default>
+                <label>SASCARRETA SASGC</label>
+            </value>
+            <value>
+                <fullName>SASCARRETA WEB</fullName>
+                <default>false</default>
+                <label>SASCARRETA WEB</label>
+            </value>
+            <value>
+                <fullName>SASMDT</fullName>
+                <default>false</default>
+                <label>SASMDT</label>
+            </value>
+            <value>
+                <fullName>SASMDT COM TELEMETRIA</fullName>
+                <default>false</default>
+                <label>SASMDT COM TELEMETRIA</label>
+            </value>
+            <value>
+                <fullName>SASMDT SAT</fullName>
+                <default>false</default>
+                <label>SASMDT SAT</label>
+            </value>
+            <value>
+                <fullName>SASMDT SAT COM TELEMETRIA</fullName>
+                <default>false</default>
+                <label>SASMDT SAT COM TELEMETRIA</label>
+            </value>
+            <value>
+                <fullName>SASMOBILE IMÃ</fullName>
+                <default>false</default>
+                <label>SASMOBILE IMÃ</label>
+            </value>
+            <value>
+                <fullName>SASMOBILE LISO</fullName>
+                <default>false</default>
+                <label>SASMOBILE LISO</label>
+            </value>
+            <value>
+                <fullName>SASMOTO</fullName>
+                <default>false</default>
+                <label>SASMOTO</label>
+            </value>
+            <value>
+                <fullName>SASTM</fullName>
+                <default>false</default>
+                <label>SASTM</label>
+            </value>
+            <value>
+                <fullName>SASTM FULL</fullName>
+                <default>false</default>
+                <label>SASTM FULL</label>
+            </value>
+            <value>
+                <fullName>SASTM FULL SAT 1000</fullName>
+                <default>false</default>
+                <label>SASTM FULL SAT 1000</label>
+            </value>
+            <value>
+                <fullName>SASTM FULL SAT 200</fullName>
+                <default>false</default>
+                <label>SASTM FULL SAT 200</label>
+            </value>
+            <value>
+                <fullName>SASTM FULL SAT 350</fullName>
+                <default>false</default>
+                <label>SASTM FULL SAT 350</label>
+            </value>
+            <value>
+                <fullName>SASTM FULL SAT 500</fullName>
+                <default>false</default>
+                <label>SASTM FULL SAT 500</label>
+            </value>
+            <value>
+                <fullName>SASTM FULL SAT I</fullName>
+                <default>false</default>
+                <label>SASTM FULL SAT I</label>
+            </value>
+            <value>
+                <fullName>SASTM FULL SAT II</fullName>
+                <default>false</default>
+                <label>SASTM FULL SAT II</label>
+            </value>
+            <value>
+                <fullName>SASTM FULL SAT III</fullName>
+                <default>false</default>
+                <label>SASTM FULL SAT III</label>
+            </value>
+            <value>
+                <fullName>SATELITAL SASCARGA</fullName>
+                <default>false</default>
+                <label>SATELITAL SASCARGA</label>
+            </value>
+            <value>
+                <fullName>SIGGO ASSIST</fullName>
+                <default>false</default>
+                <label>SIGGO ASSIST</label>
+            </value>
+            <value>
+                <fullName>SIGGO BASICO</fullName>
+                <default>false</default>
+                <label>SIGGO BASICO</label>
+            </value>
+            <value>
+                <fullName>SIGGO FAMILIA</fullName>
+                <default>false</default>
+                <label>SIGGO FAMILIA</label>
+            </value>
+            <value>
+                <fullName>SIGGO FAMILIA MOTO</fullName>
+                <default>false</default>
+                <label>SIGGO FAMILIA MOTO</label>
+            </value>
+            <value>
+                <fullName>SIGGO MOTO</fullName>
+                <default>false</default>
+                <label>SIGGO MOTO</label>
+            </value>
+            <value>
+                <fullName>SIGGO MOTO ASSIST</fullName>
+                <default>false</default>
+                <label>SIGGO MOTO ASSIST</label>
+            </value>
+            <value>
+                <fullName>SIGGO MOVEL</fullName>
+                <default>false</default>
+                <label>SIGGO MOVEL</label>
+            </value>
+            <value>
+                <fullName>SIGGO RF BASICO</fullName>
+                <default>false</default>
+                <label>SIGGO RF BASICO</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO FAMILIA</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO FAMILIA</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO MTD</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO MTD</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS10R1</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS10R1</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS10R2</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS10R2</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS10R3</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS10R3</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS11R1</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS11R1</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS11R2</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS11R2</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS11R3</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS11R3</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS12R1</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS12R1</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS12R2</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS12R2</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS12R3</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS12R3</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS20R1</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS20R1</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS20R2</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS20R2</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS20R3</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS20R3</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS30R1</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS30R1</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS30R2</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS30R2</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS30R3</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS30R3</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS40R1</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS40R1</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS40R2</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS40R2</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS40R3</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS40R3</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS50R1</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS50R1</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS50R2</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS50R2</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS50R3</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS50R3</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS60R1</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS60R1</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS60R2</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS60R2</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS60R3</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS60R3</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS70R1</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS70R1</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS70R2</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS70R2</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS70R3</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS70R3</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS80R1</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS80R1</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS80R2</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS80R2</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS80R3</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS80R3</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS90R1</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS90R1</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS90R2</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS90R2</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SS90R3</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SS90R3</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA10R1</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA10R1</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA10R2</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA10R2</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA10R3</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA10R3</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA11R1</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA11R1</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA11R2</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA11R2</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA11R3</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA11R3</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA12R1</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA12R1</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA12R2</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA12R2</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA12R3</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA12R3</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA20R1</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA20R1</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA20R2</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA20R2</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA20R3</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA20R3</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA30R1</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA30R1</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA30R2</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA30R2</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA30R3</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA30R3</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA40R1</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA40R1</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA40R2</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA40R2</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA40R3</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA40R3</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA50R1</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA50R1</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA50R2</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA50R2</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA50R3</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA50R3</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA60R1</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA60R1</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA60R2</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA60R2</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA60R3</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA60R3</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA70R1</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA70R1</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA70R2</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA70R2</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA70R3</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA70R3</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA80R1</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA80R1</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA80R2</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA80R2</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA80R3</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA80R3</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA90R1</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA90R1</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA90R2</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA90R2</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSA90R3</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSA90R3</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSAOE</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSAOE</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO - SSOE</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO - SSOE</label>
+            </value>
+            <value>
+                <fullName>SIGGO SEGURO TAXI</fullName>
+                <default>false</default>
+                <label>SIGGO SEGURO TAXI</label>
+            </value>
+            <value>
+                <fullName>SIGGO TESTE TV</fullName>
+                <default>false</default>
+                <label>SIGGO TESTE TV</label>
+            </value>
+            <value>
+                <fullName>VIVO BÁSICO</fullName>
+                <default>false</default>
+                <label>VIVO BÁSICO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

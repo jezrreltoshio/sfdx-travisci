@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campo_outros_concorrentes_obrigatorio</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ ISPICKVAL(Concorrente__c  , &#39;Outros&#39;),
+ ISBLANK(Outros_concorrentes__c )
+)</errorConditionFormula>
+    <errorDisplayField>Outros_concorrentes__c</errorDisplayField>
+    <errorMessage>Preencha com pelo menos um concorrente  neste campo.</errorMessage>
+</ValidationRule>

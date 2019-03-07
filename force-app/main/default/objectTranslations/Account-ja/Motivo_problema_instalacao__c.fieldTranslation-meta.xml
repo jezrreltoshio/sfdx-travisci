@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Marque quais são os problemas que ele enfrentou no processo de instalação. Descreva brevemente o(s) problema(s) no campo  OBS. --></help>
+    <label><!-- Problema --></label>
+    <name>Motivo_problema_instalacao__c</name>
+    <picklistValues>
+        <masterLabel>&quot;No Show&quot; técnico</masterLabel>
+        <translation><!-- &quot;No Show&quot; técnico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agendamento</masterLabel>
+        <translation><!-- Agendamento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Comportamento do Instalador</masterLabel>
+        <translation><!-- Comportamento do Instalador --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Danificaram o veículo</masterLabel>
+        <translation><!-- Danificaram o veículo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outros (Especificar no campo OBS.)</masterLabel>
+        <translation><!-- Outros (Especificar no campo OBS.) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

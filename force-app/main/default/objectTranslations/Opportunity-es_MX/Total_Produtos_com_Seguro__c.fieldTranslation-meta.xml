@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Total de produtos com seguro incluídos nesta oportunidade. --></help>
+    <label><!-- Total Produtos com Seguro --></label>
+    <name>Total_Produtos_com_Seguro__c</name>
+</CustomFieldTranslation>

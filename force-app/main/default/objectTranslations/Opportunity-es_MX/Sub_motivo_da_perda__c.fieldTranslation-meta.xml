@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sub motivo da perda --></label>
+    <name>Sub_motivo_da_perda__c</name>
+    <picklistValues>
+        <masterLabel>Condição comercial não aprovada pela sascar</masterLabel>
+        <translation><!-- Condição comercial não aprovada pela sascar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dual chip</masterLabel>
+        <translation><!-- Dual chip --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Falta de Customização</masterLabel>
+        <translation><!-- Falta de Customização --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Falta de integração</masterLabel>
+        <translation><!-- Falta de integração --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fechado em Pessoa física</masterLabel>
+        <translation><!-- Fechado em Pessoa física --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Funcionalidades</masterLabel>
+        <translation><!-- Funcionalidades --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Garantia x lifetime</masterLabel>
+        <translation><!-- Garantia x lifetime --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Investimento na troca</masterLabel>
+        <translation><!-- Investimento na troca --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multa recisiória na troca</masterLabel>
+        <translation><!-- Multa recisiória na troca --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optou pela seguradora</masterLabel>
+        <translation><!-- Optou pela seguradora --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optou por outro produto Sascar</masterLabel>
+        <translation><!-- Optou por outro produto Sascar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prazo do Contrato</masterLabel>
+        <translation><!-- Prazo do Contrato --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Preço</masterLabel>
+        <translation><!-- Preço --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto</masterLabel>
+        <translation><!-- Produto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sem condições financeiras para aquisição</masterLabel>
+        <translation><!-- Sem condições financeiras para aquisição --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Taxa de instalação</masterLabel>
+        <translation><!-- Taxa de instalação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Taxa de retirada e reinstalação</masterLabel>
+        <translation><!-- Taxa de retirada e reinstalação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Valor da instalação</masterLabel>
+        <translation><!-- Valor da instalação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Valor da mensalidade</masterLabel>
+        <translation><!-- Valor da mensalidade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Valor da multa</masterLabel>
+        <translation><!-- Valor da multa --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo de Parceiro --></label>
+    <name>Tipo_de_Parceiro__c</name>
+    <picklistValues>
+        <masterLabel>BRONZE</masterLabel>
+        <translation><!-- BRONZE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OURO</masterLabel>
+        <translation><!-- OURO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PRATA</masterLabel>
+        <translation><!-- PRATA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRANSIÇÃO</masterLabel>
+        <translation><!-- TRANSIÇÃO --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

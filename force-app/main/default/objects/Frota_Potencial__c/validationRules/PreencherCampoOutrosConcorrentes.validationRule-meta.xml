@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreencherCampoOutrosConcorrentes</fullName>
+    <active>true</active>
+    <description>Se o campo &quot;Concorrente&quot; estiver com a opção &quot;OUTROS&quot;, informe o nome do outro concorrente.</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Concorrente__c, &#39;OUTROS&#39;),
+    ISBLANK(Outros_concorrentes__c)  
+)</errorConditionFormula>
+    <errorDisplayField>Outros_concorrentes__c</errorDisplayField>
+    <errorMessage>Informe o nome do outro concorrente.</errorMessage>
+</ValidationRule>

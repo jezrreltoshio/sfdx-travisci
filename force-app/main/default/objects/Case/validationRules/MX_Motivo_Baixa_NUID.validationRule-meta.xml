@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MX_Motivo_Baixa_NUID</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+RecordType.DeveloperName = &quot;Mexico&quot;, 
+ISPICKVAL(Reason , &quot;Baja Temporal de NUID&quot;), 
+ISPICKVAL(Motivo_baixa__c,&quot;&quot;) 
+)</errorConditionFormula>
+    <errorDisplayField>Motivo_baixa__c</errorDisplayField>
+    <errorMessage>Favor preencher o motivo da baixa de NUID.</errorMessage>
+</ValidationRule>

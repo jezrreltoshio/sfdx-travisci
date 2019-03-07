@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nome_Embarcador</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+    RecordType.Name = &#39;Cargo Tracck&#39;, 
+    NOT(ISPICKVAL(Type, &#39;Embarcador&#39;)), 
+    ISBLANK(Embarcador__c)  
+)</errorConditionFormula>
+    <errorDisplayField>Embarcador__c</errorDisplayField>
+    <errorMessage>Informe o Nome do embarcador.</errorMessage>
+</ValidationRule>

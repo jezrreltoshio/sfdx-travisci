@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Preencha a agência para débito automático. --></help>
+    <label><!-- Agencia para D.A. do monitoramento --></label>
+    <name>Agencia_para_D_A_do_monitoramento__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MX_Cliente_de_Acordo</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+RecordType.DeveloperName = &quot;Mexico&quot;, 
+Cliente_de_acordo_com_a_solucao__c = false,
+OR(
+ISPICKVAL(Status,&#39;Fechado&#39;),
+ISPICKVAL(Status,&#39;Finalizado&#39;),
+ISPICKVAL(Status,&#39;Cancelado&#39;)
+),
+OR(
+ISPICKVAL(Reason,&#39;Incidente al Consultar&#39;),
+ISPICKVAL(Reason,&#39;Incidente em Acessorios&#39;),
+ISPICKVAL(Reason,&#39;Intermitencia em DV&#39;),
+ISPICKVAL(Reason,&#39;Notificador com desfase&#39;),
+ISPICKVAL(Reason,&#39;Revisión Física de Unidades&#39;),
+ISPICKVAL(Reason,&#39;Desfase en DV&#39;),
+ISPICKVAL(Reason,&#39;Intermitencia en Web&#39;),
+ISPICKVAL(Reason,&#39;Lentitud de DV&#39;),
+ISPICKVAL(Reason,&#39;Lentitud en Portal Web&#39;),
+ISPICKVAL(Reason,&#39;Reporte de Robo&#39;),
+ISPICKVAL(Reason,&#39;Sin aceso a DV&#39;),
+ISPICKVAL(Reason,&#39;Sin Comandos&#39;),
+ISPICKVAL(Reason,&#39;Mala Atención en Servicios&#39;),
+ISPICKVAL(Reason,&#39;Dudas Uso de la Plataforma&#39;)
+)
+)</errorConditionFormula>
+    <errorMessage>Para o motivo do caso selecionado é necessário que o cliente esteja de acordo para fechar a solicitção.</errorMessage>
+</ValidationRule>

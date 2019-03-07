@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Classe --></label>
+    <name>Classe__c</name>
+    <picklistValues>
+        <masterLabel>ACESSÓRIOS CARRETA</masterLabel>
+        <translation><!-- ACESSÓRIOS CARRETA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BT AEROPORTOS</masterLabel>
+        <translation><!-- BT AEROPORTOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BT CONSTRUCAO CIVIL</masterLabel>
+        <translation><!-- BT CONSTRUCAO CIVIL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BT Industria - Avançado</masterLabel>
+        <translation><!-- BT Industria - Avançado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BT Industria - Basico</masterLabel>
+        <translation><!-- BT Industria - Basico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BT Industria - Rental</masterLabel>
+        <translation><!-- BT Industria - Rental --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BT MINA JORNADA</masterLabel>
+        <translation><!-- BT MINA JORNADA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BT MINA PRODUTIVIDADE</masterLabel>
+        <translation><!-- BT MINA PRODUTIVIDADE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BT MINA SEGURANÇA</masterLabel>
+        <translation><!-- BT MINA SEGURANÇA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BT MINERACAO GSM</masterLabel>
+        <translation><!-- BT MINERACAO GSM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BT PORTO AVANÇADO</masterLabel>
+        <translation><!-- BT PORTO AVANÇADO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BT PORTO BASICO</masterLabel>
+        <translation><!-- BT PORTO BASICO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CARRETA LOG</masterLabel>
+        <translation><!-- CARRETA LOG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CARRETA SOLAR</masterLabel>
+        <translation><!-- CARRETA SOLAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCO - GESTAO AVANÇADA (POSICIONAMENTO FREQUENTE)</masterLabel>
+        <translation><!-- CCO - GESTAO AVANÇADA (POSICIONAMENTO FREQUENTE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCO - GESTAO DA PRODUTIVIDADE (POSICIONAMENTO FREQUENTE)</masterLabel>
+        <translation><!-- CCO - GESTAO DA PRODUTIVIDADE (POSICIONAMENTO FREQUENTE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCO - GESTÃO AVANÇADA</masterLabel>
+        <translation><!-- CCO - GESTÃO AVANÇADA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCO - GESTÃO AVANÇADA IDENTIFICAÇÃO CAVALO</masterLabel>
+        <translation><!-- CCO - GESTÃO AVANÇADA IDENTIFICAÇÃO CAVALO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCO - GESTÃO AVANÇADA REPETIDORA</masterLabel>
+        <translation><!-- CCO - GESTÃO AVANÇADA REPETIDORA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCO - GESTÃO DA PRODUTIVIDADE</masterLabel>
+        <translation><!-- CCO - GESTÃO DA PRODUTIVIDADE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCO - MONITORAMENTO LOGÍSTICO</masterLabel>
+        <translation><!-- CCO - MONITORAMENTO LOGÍSTICO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCO - MONITORAMENTO LOGÍSTICO (POSICIONAMENTO FREQUENTE)</masterLabel>
+        <translation><!-- CCO - MONITORAMENTO LOGÍSTICO (POSICIONAMENTO FREQUENTE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CELULAR/GSM</masterLabel>
+        <translation><!-- CELULAR/GSM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EUROPA CARRETA CONECTADA - FRIDGE</masterLabel>
+        <translation><!-- EUROPA CARRETA CONECTADA - FRIDGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EUROPA CARRETA CONECTADA - GEOLOC AND USAGE</masterLabel>
+        <translation><!-- EUROPA CARRETA CONECTADA - GEOLOC AND USAGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EUROPA CARRETA CONECTADA - MAINTENANCE AND SAFETY</masterLabel>
+        <translation><!-- EUROPA CARRETA CONECTADA - MAINTENANCE AND SAFETY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EXCLUSIVE LIGHT</masterLabel>
+        <translation><!-- EXCLUSIVE LIGHT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FAMILIA GSM</masterLabel>
+        <translation><!-- FAMILIA GSM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FAMILIA SASMOTO</masterLabel>
+        <translation><!-- FAMILIA SASMOTO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GESTÃO DE FROTAS - INDONÉSIA</masterLabel>
+        <translation><!-- GESTÃO DE FROTAS - INDONÉSIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GF - CONTROLE DE CUSTOS</masterLabel>
+        <translation><!-- GF - CONTROLE DE CUSTOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GF - CONTROLE DE CUSTOS IDENTIFICAÇÃO DE MOTORISTAS</masterLabel>
+        <translation><!-- GF - CONTROLE DE CUSTOS IDENTIFICAÇÃO DE MOTORISTAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GF - GESTÃO AVANÇADA</masterLabel>
+        <translation><!-- GF - GESTÃO AVANÇADA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GF - GESTÃO AVANÇADA IDENTIFICAÇÃO DE MOTORISTAS</masterLabel>
+        <translation><!-- GF - GESTÃO AVANÇADA IDENTIFICAÇÃO DE MOTORISTAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GF - MONITORAMENTO LOGISTICO</masterLabel>
+        <translation><!-- GF - MONITORAMENTO LOGISTICO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GPS/GSM</masterLabel>
+        <translation><!-- GPS/GSM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GSM/CONTINGENCIA</masterLabel>
+        <translation><!-- GSM/CONTINGENCIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GSM/GPS</masterLabel>
+        <translation><!-- GSM/GPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GSM/GPS (SBTEC)</masterLabel>
+        <translation><!-- GSM/GPS (SBTEC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GSM/GPS - HORIMETRO</masterLabel>
+        <translation><!-- GSM/GPS - HORIMETRO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GSM/GPS BETONEIRA</masterLabel>
+        <translation><!-- GSM/GPS BETONEIRA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GSM/GPS BLOQ (SBTEC)</masterLabel>
+        <translation><!-- GSM/GPS BLOQ (SBTEC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GSM/GPS BLOQ/PANICO (SBTEC)</masterLabel>
+        <translation><!-- GSM/GPS BLOQ/PANICO (SBTEC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GSM/GPS FROTAS</masterLabel>
+        <translation><!-- GSM/GPS FROTAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GSM/GPS FROTAS_MOTOS</masterLabel>
+        <translation><!-- GSM/GPS FROTAS_MOTOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GSM/GPS FULL (SBTEC)</masterLabel>
+        <translation><!-- GSM/GPS FULL (SBTEC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GSM/GPS PANICO</masterLabel>
+        <translation><!-- GSM/GPS PANICO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GSM/GPS PLUS</masterLabel>
+        <translation><!-- GSM/GPS PLUS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GSM/GPS PLUS II</masterLabel>
+        <translation><!-- GSM/GPS PLUS II --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GSM/GPS TEMPO DE DIREÇÃO</masterLabel>
+        <translation><!-- GSM/GPS TEMPO DE DIREÇÃO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GSM/GPS WEB (SBTEC)</masterLabel>
+        <translation><!-- GSM/GPS WEB (SBTEC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GSM/GPS/HODÔMETRO</masterLabel>
+        <translation><!-- GSM/GPS/HODÔMETRO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GSM/GPS/MOVEL</masterLabel>
+        <translation><!-- GSM/GPS/MOVEL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GSM/GPS/RESOLUCAO 245</masterLabel>
+        <translation><!-- GSM/GPS/RESOLUCAO 245 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IVECO FROTA FÁCIL</masterLabel>
+        <translation><!-- IVECO FROTA FÁCIL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indica GSM</masterLabel>
+        <translation><!-- Indica GSM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lacre Eletronico</masterLabel>
+        <translation><!-- Lacre Eletronico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MOVEL/CONTINGENCIA</masterLabel>
+        <translation><!-- MOVEL/CONTINGENCIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NAO MEXER - RESERVADA 1</masterLabel>
+        <translation><!-- NAO MEXER - RESERVADA 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NAO MEXER - RESERVADA 2</masterLabel>
+        <translation><!-- NAO MEXER - RESERVADA 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NAO MEXER - RESERVADA 3</masterLabel>
+        <translation><!-- NAO MEXER - RESERVADA 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NAO MEXER - RESERVADA 4</masterLabel>
+        <translation><!-- NAO MEXER - RESERVADA 4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NAO MEXER - RESERVADA 5</masterLabel>
+        <translation><!-- NAO MEXER - RESERVADA 5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NAO MEXER - RESERVADA 6</masterLabel>
+        <translation><!-- NAO MEXER - RESERVADA 6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NAO MEXER - RESERVADA 7</masterLabel>
+        <translation><!-- NAO MEXER - RESERVADA 7 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NAUTICA LIGHT</masterLabel>
+        <translation><!-- NAUTICA LIGHT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NAUTICA PREMIUM</masterLabel>
+        <translation><!-- NAUTICA PREMIUM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RF Mobile</masterLabel>
+        <translation><!-- RF Mobile --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RF NACIONAL SEM FIO</masterLabel>
+        <translation><!-- RF NACIONAL SEM FIO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RF Nacional</masterLabel>
+        <translation><!-- RF Nacional --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASCAR 245 APENAS BLOQUEIO</masterLabel>
+        <translation><!-- SASCAR 245 APENAS BLOQUEIO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASCAR 245 BLOQUEIO E LOCALIZACAO</masterLabel>
+        <translation><!-- SASCAR 245 BLOQUEIO E LOCALIZACAO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASCAR CT</masterLabel>
+        <translation><!-- SASCAR CT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASCAR GESTÃO DO MOTORISTA</masterLabel>
+        <translation><!-- SASCAR GESTÃO DO MOTORISTA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASCAR LOC PLUS</masterLabel>
+        <translation><!-- SASCAR LOC PLUS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASCAR LOC RF</masterLabel>
+        <translation><!-- SASCAR LOC RF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASCARGA</masterLabel>
+        <translation><!-- SASCARGA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASCARGA AVD SAT 200</masterLabel>
+        <translation><!-- SASCARGA AVD SAT 200 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASCARGA FULL</masterLabel>
+        <translation><!-- SASCARGA FULL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASCARGA FULL SAT 1000</masterLabel>
+        <translation><!-- SASCARGA FULL SAT 1000 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASCARGA FULL SAT 1000 - INT</masterLabel>
+        <translation><!-- SASCARGA FULL SAT 1000 - INT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASCARGA FULL SAT 10000</masterLabel>
+        <translation><!-- SASCARGA FULL SAT 10000 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASCARGA FULL SAT 200</masterLabel>
+        <translation><!-- SASCARGA FULL SAT 200 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASCARGA FULL SAT 350</masterLabel>
+        <translation><!-- SASCARGA FULL SAT 350 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASCARGA FULL SAT 500</masterLabel>
+        <translation><!-- SASCARGA FULL SAT 500 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASCARGA FULL SAT I</masterLabel>
+        <translation><!-- SASCARGA FULL SAT I --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASCARGA FULL SAT II</masterLabel>
+        <translation><!-- SASCARGA FULL SAT II --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASCARGA FULL SAT III</masterLabel>
+        <translation><!-- SASCARGA FULL SAT III --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASCARGA LIGHT</masterLabel>
+        <translation><!-- SASCARGA LIGHT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASCARGASAT</masterLabel>
+        <translation><!-- SASCARGASAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASCARRETA SASGC</masterLabel>
+        <translation><!-- SASCARRETA SASGC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASCARRETA WEB</masterLabel>
+        <translation><!-- SASCARRETA WEB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASMDT</masterLabel>
+        <translation><!-- SASMDT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASMDT COM TELEMETRIA</masterLabel>
+        <translation><!-- SASMDT COM TELEMETRIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASMDT SAT</masterLabel>
+        <translation><!-- SASMDT SAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASMDT SAT COM TELEMETRIA</masterLabel>
+        <translation><!-- SASMDT SAT COM TELEMETRIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASMOBILE IMÃ</masterLabel>
+        <translation><!-- SASMOBILE IMÃ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASMOBILE LISO</masterLabel>
+        <translation><!-- SASMOBILE LISO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASMOTO</masterLabel>
+        <translation><!-- SASMOTO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASTM</masterLabel>
+        <translation><!-- SASTM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASTM FULL</masterLabel>
+        <translation><!-- SASTM FULL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASTM FULL SAT 1000</masterLabel>
+        <translation><!-- SASTM FULL SAT 1000 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASTM FULL SAT 200</masterLabel>
+        <translation><!-- SASTM FULL SAT 200 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASTM FULL SAT 350</masterLabel>
+        <translation><!-- SASTM FULL SAT 350 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASTM FULL SAT 500</masterLabel>
+        <translation><!-- SASTM FULL SAT 500 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASTM FULL SAT I</masterLabel>
+        <translation><!-- SASTM FULL SAT I --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASTM FULL SAT II</masterLabel>
+        <translation><!-- SASTM FULL SAT II --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASTM FULL SAT III</masterLabel>
+        <translation><!-- SASTM FULL SAT III --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SATELITAL SASCARGA</masterLabel>
+        <translation><!-- SATELITAL SASCARGA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO ASSIST</masterLabel>
+        <translation><!-- SIGGO ASSIST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO BASICO</masterLabel>
+        <translation><!-- SIGGO BASICO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO FAMILIA</masterLabel>
+        <translation><!-- SIGGO FAMILIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO FAMILIA MOTO</masterLabel>
+        <translation><!-- SIGGO FAMILIA MOTO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO MOTO</masterLabel>
+        <translation><!-- SIGGO MOTO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO MOTO ASSIST</masterLabel>
+        <translation><!-- SIGGO MOTO ASSIST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO MOVEL</masterLabel>
+        <translation><!-- SIGGO MOVEL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO RF BASICO</masterLabel>
+        <translation><!-- SIGGO RF BASICO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO</masterLabel>
+        <translation><!-- SIGGO SEGURO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS10R1</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS10R1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS10R2</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS10R2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS10R3</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS10R3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS11R1</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS11R1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS11R2</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS11R2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS11R3</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS11R3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS12R1</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS12R1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS12R2</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS12R2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS12R3</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS12R3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS20R1</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS20R1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS20R2</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS20R2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS20R3</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS20R3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS30R1</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS30R1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS30R2</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS30R2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS30R3</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS30R3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS40R1</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS40R1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS40R2</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS40R2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS40R3</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS40R3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS50R1</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS50R1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS50R2</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS50R2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS50R3</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS50R3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS60R1</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS60R1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS60R2</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS60R2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS60R3</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS60R3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS70R1</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS70R1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS70R2</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS70R2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS70R3</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS70R3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS80R1</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS80R1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS80R2</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS80R2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS80R3</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS80R3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS90R1</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS90R1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS90R2</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS90R2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SS90R3</masterLabel>
+        <translation><!-- SIGGO SEGURO - SS90R3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA10R1</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA10R1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA10R2</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA10R2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA10R3</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA10R3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA11R1</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA11R1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA11R2</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA11R2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA11R3</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA11R3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA12R1</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA12R1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA12R2</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA12R2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA12R3</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA12R3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA20R1</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA20R1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA20R2</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA20R2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA20R3</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA20R3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA30R1</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA30R1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA30R2</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA30R2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA30R3</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA30R3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA40R1</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA40R1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA40R2</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA40R2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA40R3</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA40R3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA50R1</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA50R1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA50R2</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA50R2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA50R3</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA50R3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA60R1</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA60R1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA60R2</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA60R2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA60R3</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA60R3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA70R1</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA70R1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA70R2</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA70R2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA70R3</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA70R3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA80R1</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA80R1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA80R2</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA80R2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA80R3</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA80R3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA90R1</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA90R1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA90R2</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA90R2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSA90R3</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSA90R3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSAOE</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSAOE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO - SSOE</masterLabel>
+        <translation><!-- SIGGO SEGURO - SSOE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO FAMILIA</masterLabel>
+        <translation><!-- SIGGO SEGURO FAMILIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO MTD</masterLabel>
+        <translation><!-- SIGGO SEGURO MTD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO SEGURO TAXI</masterLabel>
+        <translation><!-- SIGGO SEGURO TAXI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO TESTE TV</masterLabel>
+        <translation><!-- SIGGO TESTE TV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sascarga Full (Blindado)</masterLabel>
+        <translation><!-- Sascarga Full (Blindado) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sascarga Full Sat (Blindado)</masterLabel>
+        <translation><!-- Sascarga Full Sat (Blindado) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VIVO BÁSICO</masterLabel>
+        <translation><!-- VIVO BÁSICO --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

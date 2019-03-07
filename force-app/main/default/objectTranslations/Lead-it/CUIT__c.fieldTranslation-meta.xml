@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Chave Única de Identificação Tributária. Formato: 00-00000000-0 --></help>
+    <label><!-- CUIT --></label>
+    <name>CUIT__c</name>
+</CustomFieldTranslation>

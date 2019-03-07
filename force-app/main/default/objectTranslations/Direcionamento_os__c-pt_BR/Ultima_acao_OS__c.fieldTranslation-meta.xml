@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Última ação da OS --></label>
+    <name>Ultima_acao_OS__c</name>
+    <picklistValues>
+        <masterLabel>Abertura de O.S</masterLabel>
+        <translation><!-- Abertura de O.S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agendamento Comercial</masterLabel>
+        <translation><!-- Agendamento Comercial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agendamento Próximo Contato</masterLabel>
+        <translation><!-- Agendamento Próximo Contato --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agendamento com serviço  não executado</masterLabel>
+        <translation><!-- Agendamento com serviço  não executado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agendamento não realizado/Agenda indisponível</masterLabel>
+        <translation><!-- Agendamento não realizado/Agenda indisponível --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agendamento próximo contato URA</masterLabel>
+        <translation><!-- Agendamento próximo contato URA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agendamento realizado com sucesso</masterLabel>
+        <translation><!-- Agendamento realizado com sucesso --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agendamento sem Equipamento (Data Futura)</masterLabel>
+        <translation><!-- Agendamento sem Equipamento (Data Futura) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agendamento sem Reserva de Estoque</masterLabel>
+        <translation><!-- Agendamento sem Reserva de Estoque --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agendamento via Representação</masterLabel>
+        <translation><!-- Agendamento via Representação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aguardando Análise de Deslocamento</masterLabel>
+        <translation><!-- Aguardando Análise de Deslocamento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aguardando Carta de Migração</masterLabel>
+        <translation><!-- Aguardando Carta de Migração --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aguardando Carta de rescisão</masterLabel>
+        <translation><!-- Aguardando Carta de rescisão --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aguardando Retorno Cliente</masterLabel>
+        <translation><!-- Aguardando Retorno Cliente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aguardando Retorno da Corretora</masterLabel>
+        <translation><!-- Aguardando Retorno da Corretora --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aguardando avaliação de deslocamento</masterLabel>
+        <translation><!-- Aguardando avaliação de deslocamento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aguardando o 3º Dia</masterLabel>
+        <translation><!-- Aguardando o 3º Dia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alterada Combinação</masterLabel>
+        <translation><!-- Alterada Combinação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Apoio Comercial</masterLabel>
+        <translation><!-- Apoio Comercial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Atraso técnico/Agendamento cancelado</masterLabel>
+        <translation><!-- Atraso técnico/Agendamento cancelado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Autorizado (O.S.)</masterLabel>
+        <translation><!-- Autorizado (O.S.) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Autorizado Instalação</masterLabel>
+        <translation><!-- Autorizado Instalação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cadastro Concluído</masterLabel>
+        <translation><!-- Cadastro Concluído --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelado</masterLabel>
+        <translation><!-- Cancelado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelado pela Seguradora</masterLabel>
+        <translation><!-- Cancelado pela Seguradora --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cidade Não Mapeada</masterLabel>
+        <translation><!-- Cidade Não Mapeada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente Desistiu da Instalação</masterLabel>
+        <translation><!-- Cliente Desistiu da Instalação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente Desmarcou</masterLabel>
+        <translation><!-- Cliente Desmarcou --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente Solicita Alteração Classe/Veículo</masterLabel>
+        <translation><!-- Cliente Solicita Alteração Classe/Veículo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente já possui dispositivo anti-furto</masterLabel>
+        <translation><!-- Cliente já possui dispositivo anti-furto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente notificado via e-mail pelo serviço automático</masterLabel>
+        <translation><!-- Cliente notificado via e-mail pelo serviço automático --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente não concorda c/ contrato locação</masterLabel>
+        <translation><!-- Cliente não concorda c/ contrato locação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente não localizado</masterLabel>
+        <translation><!-- Cliente não localizado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente não localizado (DISCADOR)</masterLabel>
+        <translation><!-- Cliente não localizado (DISCADOR) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente não localizado/direcionado ao comercial</masterLabel>
+        <translation><!-- Cliente não localizado/direcionado ao comercial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente recusou instalar</masterLabel>
+        <translation><!-- Cliente recusou instalar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Comunicação Nível 1 enviada</masterLabel>
+        <translation><!-- Comunicação Nível 1 enviada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Comunicação Nível 2 enviada</masterLabel>
+        <translation><!-- Comunicação Nível 2 enviada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Concluído (O.S.)</masterLabel>
+        <translation><!-- Concluído (O.S.) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contato</masterLabel>
+        <translation><!-- Contato --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contato Cliente</masterLabel>
+        <translation><!-- Contato Cliente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contato Corretora</masterLabel>
+        <translation><!-- Contato Corretora --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contato com o Corretor</masterLabel>
+        <translation><!-- Contato com o Corretor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contato com o condutor</masterLabel>
+        <translation><!-- Contato com o condutor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contato com área técnica</masterLabel>
+        <translation><!-- Contato com área técnica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contato sem Sucesso</masterLabel>
+        <translation><!-- Contato sem Sucesso --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dados Cadastrais Incorretos</masterLabel>
+        <translation><!-- Dados Cadastrais Incorretos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Desconsiderado (O.S.)</masterLabel>
+        <translation><!-- Desconsiderado (O.S.) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Desconsiderado pela Seguradora</masterLabel>
+        <translation><!-- Desconsiderado pela Seguradora --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deslocamento Acima do Permitido</masterLabel>
+        <translation><!-- Deslocamento Acima do Permitido --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Devolução</masterLabel>
+        <translation><!-- Devolução --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Devolução Seguradora</masterLabel>
+        <translation><!-- Devolução Seguradora --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Devolução Seguradora Planilha</masterLabel>
+        <translation><!-- Devolução Seguradora Planilha --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Devolução de equipamento via correio</masterLabel>
+        <translation><!-- Devolução de equipamento via correio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Devolução/GN</masterLabel>
+        <translation><!-- Devolução/GN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Direcionado Representante</masterLabel>
+        <translation><!-- Direcionado Representante --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Direcionado Técnico</masterLabel>
+        <translation><!-- Direcionado Técnico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Direcionamento de O.S</masterLabel>
+        <translation><!-- Direcionamento de O.S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dispensa de Instalação pela Seguradora</masterLabel>
+        <translation><!-- Dispensa de Instalação pela Seguradora --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E-Mail ao GN</masterLabel>
+        <translation><!-- E-Mail ao GN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enviado e-mail de insucesso 1</masterLabel>
+        <translation><!-- Enviado e-mail de insucesso 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enviado e-mail de insucesso 2</masterLabel>
+        <translation><!-- Enviado e-mail de insucesso 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enviado e-mail de insucesso 3</masterLabel>
+        <translation><!-- Enviado e-mail de insucesso 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enviado para Técnica</masterLabel>
+        <translation><!-- Enviado para Técnica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enviar v.a.</masterLabel>
+        <translation><!-- Enviar v.a. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipamento Extraviado</masterLabel>
+        <translation><!-- Equipamento Extraviado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipamento Instalado Pendente Conclusão</masterLabel>
+        <translation><!-- Equipamento Instalado Pendente Conclusão --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Falta de Acessórios</masterLabel>
+        <translation><!-- Falta de Acessórios --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Falta de Equipamento</masterLabel>
+        <translation><!-- Falta de Equipamento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Falta de equipamento para agendar em [30 dias]</masterLabel>
+        <translation><!-- Falta de equipamento para agendar em [30 dias] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Falta de equipamento para agendar em [7 dias]</masterLabel>
+        <translation><!-- Falta de equipamento para agendar em [7 dias] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Falta de equipamento para agendar na data solicitada pelo cliente</masterLabel>
+        <translation><!-- Falta de equipamento para agendar na data solicitada pelo cliente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Falta equipamento/acessório</masterLabel>
+        <translation><!-- Falta equipamento/acessório --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incluir serviço na O.S</masterLabel>
+        <translation><!-- Incluir serviço na O.S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indisponibilização Técnica</masterLabel>
+        <translation><!-- Indisponibilização Técnica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indisponibilização Veículo</masterLabel>
+        <translation><!-- Indisponibilização Veículo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indisponibilização do veículo</masterLabel>
+        <translation><!-- Indisponibilização do veículo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Informações sobre Agendamento/O.S</masterLabel>
+        <translation><!-- Informações sobre Agendamento/O.S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insdisponibilização técnica para atendimento [07 dias]</masterLabel>
+        <translation><!-- Insdisponibilização técnica para atendimento [07 dias] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insdisponibilização técnica para atendimento [30 dias]</masterLabel>
+        <translation><!-- Insdisponibilização técnica para atendimento [30 dias] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inst/Assist. Agendada</masterLabel>
+        <translation><!-- Inst/Assist. Agendada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instalação Frustrada</masterLabel>
+        <translation><!-- Instalação Frustrada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intervenção Corretor</masterLabel>
+        <translation><!-- Intervenção Corretor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interveção Distribuição</masterLabel>
+        <translation><!-- Interveção Distribuição --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Má conservação da parte elétrica</masterLabel>
+        <translation><!-- Má conservação da parte elétrica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Má instalação</masterLabel>
+        <translation><!-- Má instalação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No-Show Técnico/Agendamento cancelado</masterLabel>
+        <translation><!-- No-Show Técnico/Agendamento cancelado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No-Show cliente/Agendamento cancelado</masterLabel>
+        <translation><!-- No-Show cliente/Agendamento cancelado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não possui mais veículo</masterLabel>
+        <translation><!-- Não possui mais veículo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O.S Pendente de envio de foto.</masterLabel>
+        <translation><!-- O.S Pendente de envio de foto. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O.S agendada fora do prazo [07 dias] - falta de equipamento</masterLabel>
+        <translation><!-- O.S agendada fora do prazo [07 dias] - falta de equipamento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O.S agendada fora do prazo [30 dias] - falta de agenda técnica</masterLabel>
+        <translation><!-- O.S agendada fora do prazo [30 dias] - falta de agenda técnica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O.S agendada fora do prazo [30 dias] - solicitação do cliente</masterLabel>
+        <translation><!-- O.S agendada fora do prazo [30 dias] - solicitação do cliente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O.S direcionada para RT</masterLabel>
+        <translation><!-- O.S direcionada para RT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O.S direcionada para outro colaborador/tratativa</masterLabel>
+        <translation><!-- O.S direcionada para outro colaborador/tratativa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OS Direcionada</masterLabel>
+        <translation><!-- OS Direcionada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operação especial/tratativa frotas</masterLabel>
+        <translation><!-- Operação especial/tratativa frotas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ordem cancelada de assistência/cliente solicitou TRC</masterLabel>
+        <translation><!-- Ordem cancelada de assistência/cliente solicitou TRC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ordem cancelada de assistência/equipamento sem inconveniente</masterLabel>
+        <translation><!-- Ordem cancelada de assistência/equipamento sem inconveniente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ordem de assistencia cancelada/veículo indisponível</masterLabel>
+        <translation><!-- Ordem de assistencia cancelada/veículo indisponível --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pagamento em Atraso</masterLabel>
+        <translation><!-- Pagamento em Atraso --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Para devolução seguradora</masterLabel>
+        <translation><!-- Para devolução seguradora --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pendência Direcionamento</masterLabel>
+        <translation><!-- Pendência Direcionamento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Problemas com o Representante/Técnico</masterLabel>
+        <translation><!-- Problemas com o Representante/Técnico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pré-Devolução Seguradora</masterLabel>
+        <translation><!-- Pré-Devolução Seguradora --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recebido Carta de Rescisão</masterLabel>
+        <translation><!-- Recebido Carta de Rescisão --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recebido Retorno</masterLabel>
+        <translation><!-- Recebido Retorno --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recebido Retorno CCO</masterLabel>
+        <translation><!-- Recebido Retorno CCO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recebido Retorno Cliente</masterLabel>
+        <translation><!-- Recebido Retorno Cliente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recebido Retorno Seguradora</masterLabel>
+        <translation><!-- Recebido Retorno Seguradora --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recebido Retorno da Corretora</masterLabel>
+        <translation><!-- Recebido Retorno da Corretora --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recebimento Comprovante</masterLabel>
+        <translation><!-- Recebimento Comprovante --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recusado após autorizado</masterLabel>
+        <translation><!-- Recusado após autorizado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recusado pela Seguradora</masterLabel>
+        <translation><!-- Recusado pela Seguradora --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Região sem cobertura de Telefonia Móvel</masterLabel>
+        <translation><!-- Região sem cobertura de Telefonia Móvel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reserva de produtos cancelada</masterLabel>
+        <translation><!-- Reserva de produtos cancelada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Responsável não Localizado</masterLabel>
+        <translation><!-- Responsável não Localizado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Responsável não localizado/direcionado ao comercial</masterLabel>
+        <translation><!-- Responsável não localizado/direcionado ao comercial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retorno Seguradora</masterLabel>
+        <translation><!-- Retorno Seguradora --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retorno Tecnico - Impossibilidade de atender</masterLabel>
+        <translation><!-- Retorno Tecnico - Impossibilidade de atender --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retorno Tecnico - Indisponibilidade cliente</masterLabel>
+        <translation><!-- Retorno Tecnico - Indisponibilidade cliente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seguro Cancelado</masterLabel>
+        <translation><!-- Seguro Cancelado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sem contato com o cliente I</masterLabel>
+        <translation><!-- Sem contato com o cliente I --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sem contato com o cliente II</masterLabel>
+        <translation><!-- Sem contato com o cliente II --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sem contato com o cliente III</masterLabel>
+        <translation><!-- Sem contato com o cliente III --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solicitação de Desinstalação</masterLabel>
+        <translation><!-- Solicitação de Desinstalação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transferência de Titularidade</masterLabel>
+        <translation><!-- Transferência de Titularidade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tratativa Frota</masterLabel>
+        <translation><!-- Tratativa Frota --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tratativa atendimento emergencial</masterLabel>
+        <translation><!-- Tratativa atendimento emergencial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tratativa sendo feita pelo comercial</masterLabel>
+        <translation><!-- Tratativa sendo feita pelo comercial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TÉCNICO COMUNICADO</masterLabel>
+        <translation><!-- TÉCNICO COMUNICADO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Técnico Indisponível</masterLabel>
+        <translation><!-- Técnico Indisponível --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vazio</masterLabel>
+        <translation><!-- Vazio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Venda de Veículo</masterLabel>
+        <translation><!-- Venda de Veículo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Veículo Disponível</masterLabel>
+        <translation><!-- Veículo Disponível --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Veículo Indisponível</masterLabel>
+        <translation><!-- Veículo Indisponível --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Veículo indisponível/direcionado ao comercial</masterLabel>
+        <translation><!-- Veículo indisponível/direcionado ao comercial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visita Improdutiva</masterLabel>
+        <translation><!-- Visita Improdutiva --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

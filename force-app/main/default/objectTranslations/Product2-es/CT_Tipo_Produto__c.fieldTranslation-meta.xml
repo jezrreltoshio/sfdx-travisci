@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Indica cuál es el tipo de los productos negociados en la oportunidad: Desechables o Retornables. Este campo se define cuando el primer producto se agrega a la oportunidad. No es posible vender productos de diferentes tipos dentro de la misma oportunidad.</help>
+    <label>Tipo de producto</label>
+    <name>CT_Tipo_Produto__c</name>
+    <picklistValues>
+        <masterLabel>D-Descartável</masterLabel>
+        <translation>D-Desechable</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não definido</masterLabel>
+        <translation>No definido</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R-Retornável</masterLabel>
+        <translation>R-Retornable</translation>
+    </picklistValues>
+</CustomFieldTranslation>

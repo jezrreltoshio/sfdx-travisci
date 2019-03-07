@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Motivo de não venda --></label>
+    <name>Motivo_de_n_o_venda__c</name>
+    <picklistValues>
+        <masterLabel>Cliente Solicita abordagem futura</masterLabel>
+        <translation><!-- Cliente Solicita abordagem futura --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente não atende retorno</masterLabel>
+        <translation><!-- Cliente não atende retorno --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente quer seguro completo</masterLabel>
+        <translation><!-- Cliente quer seguro completo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente vendeu Veículo</masterLabel>
+        <translation><!-- Cliente vendeu Veículo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Concorrência (Serviço – Preencher detalhes)</masterLabel>
+        <translation><!-- Concorrência (Serviço – Preencher detalhes) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Concorrência (Valor – Preencher detalhes)</masterLabel>
+        <translation><!-- Concorrência (Valor – Preencher detalhes) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Está apenas cotando</masterLabel>
+        <translation><!-- Está apenas cotando --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Faltou de número de Renavam/Chassi</masterLabel>
+        <translation><!-- Faltou de número de Renavam/Chassi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fora de perfil</masterLabel>
+        <translation><!-- Fora de perfil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instalação sem parcelamento no boleto</masterLabel>
+        <translation><!-- Instalação sem parcelamento no boleto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interesse Futuro</masterLabel>
+        <translation><!-- Interesse Futuro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Já adquiriu produto com concorrente</masterLabel>
+        <translation><!-- Já adquiriu produto com concorrente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Já possui o produto (Sascar)</masterLabel>
+        <translation><!-- Já possui o produto (Sascar) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Localidade sem cobertura (Rastreamento)</masterLabel>
+        <translation><!-- Localidade sem cobertura (Rastreamento) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Localidade sem cobertura (instalação/Assist)</masterLabel>
+        <translation><!-- Localidade sem cobertura (instalação/Assist) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não possui cartão Visa ou Master</masterLabel>
+        <translation><!-- Não possui cartão Visa ou Master --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oportunidade Duplicada</masterLabel>
+        <translation><!-- Oportunidade Duplicada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Perda por Locação Permanente</masterLabel>
+        <translation><!-- Perda por Locação Permanente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prazo Contratual (Multa)</masterLabel>
+        <translation><!-- Prazo Contratual (Multa) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prefere concorrência - Valor da Instalação</masterLabel>
+        <translation><!-- Prefere concorrência - Valor da Instalação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prefere concorrência - Valor da Mensalidade</masterLabel>
+        <translation><!-- Prefere concorrência - Valor da Mensalidade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto SEM assistência</masterLabel>
+        <translation><!-- Produto SEM assistência --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto com Seguro - Carro acima de 15 anos de uso</masterLabel>
+        <translation><!-- Produto com Seguro - Carro acima de 15 anos de uso --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto com Seguro - Débito- Não possui banco conveniado</masterLabel>
+        <translation><!-- Produto com Seguro - Débito- Não possui banco conveniado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto com Seguro - Falta cobertura de colisão</masterLabel>
+        <translation><!-- Produto com Seguro - Falta cobertura de colisão --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto com Seguro - Falta cobertura de terceiros</masterLabel>
+        <translation><!-- Produto com Seguro - Falta cobertura de terceiros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto com Seguro - Falta cobertura de terceiros e colisão</masterLabel>
+        <translation><!-- Produto com Seguro - Falta cobertura de terceiros e colisão --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto com Seguro - Mensalidade no boleto</masterLabel>
+        <translation><!-- Produto com Seguro - Mensalidade no boleto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto com Seguro - Moto</masterLabel>
+        <translation><!-- Produto com Seguro - Moto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto com Seguro - Não parcela  instalação no boleto</masterLabel>
+        <translation><!-- Produto com Seguro - Não parcela  instalação no boleto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto com Seguro - Veículo Restrito</masterLabel>
+        <translation><!-- Produto com Seguro - Veículo Restrito --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto com Seguro - Veículo acima de 120 mil</masterLabel>
+        <translation><!-- Produto com Seguro - Veículo acima de 120 mil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto com Seguro - Veículo acima de 50 mil</masterLabel>
+        <translation><!-- Produto com Seguro - Veículo acima de 50 mil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto com Seguro – Deseja seguro para PJ</masterLabel>
+        <translation><!-- Produto com Seguro – Deseja seguro para PJ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto com Seguro – Deseja seguro para caminhão</masterLabel>
+        <translation><!-- Produto com Seguro – Deseja seguro para caminhão --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto com Seguro- Utilitário</masterLabel>
+        <translation><!-- Produto com Seguro- Utilitário --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto com Seguro-Taxi</masterLabel>
+        <translation><!-- Produto com Seguro-Taxi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto sem seguro</masterLabel>
+        <translation><!-- Produto sem seguro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restrição Financeira</masterLabel>
+        <translation><!-- Restrição Financeira --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restrição Serasa</masterLabel>
+        <translation><!-- Restrição Serasa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Se recusa à informar dados do cartão</masterLabel>
+        <translation><!-- Se recusa à informar dados do cartão --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seguro Ativo / Cliente Cotando</masterLabel>
+        <translation><!-- Seguro Ativo / Cliente Cotando --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sem condições financeiras para aquisição</masterLabel>
+        <translation><!-- Sem condições financeiras para aquisição --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Valor da Instalação</masterLabel>
+        <translation><!-- Valor da Instalação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Valor da mensalidade</masterLabel>
+        <translation><!-- Valor da mensalidade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Veículo negado Seguradora</masterLabel>
+        <translation><!-- Veículo negado Seguradora --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

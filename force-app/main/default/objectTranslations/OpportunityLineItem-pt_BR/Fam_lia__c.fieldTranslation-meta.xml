@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Família --></label>
+    <name>Fam_lia__c</name>
+    <picklistValues>
+        <masterLabel>Acessório</masterLabel>
+        <translation><!-- Acessório --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assistência</masterLabel>
+        <translation><!-- Assistência --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Locação</masterLabel>
+        <translation><!-- Locação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monitoramento</masterLabel>
+        <translation><!-- Monitoramento --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

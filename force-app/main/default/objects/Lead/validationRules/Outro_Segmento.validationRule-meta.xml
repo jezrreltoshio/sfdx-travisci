@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outro_Segmento</fullName>
+    <active>true</active>
+    <errorConditionFormula>and (ISPICKVAL(Segmento__c, &#39;Outro&#39;),
+
+ISBLANK( Outro_Segmento__c) )</errorConditionFormula>
+    <errorMessage>Informe outro segmento do Lead.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- DMV --></label>
+    <name>DMV__c</name>
+    <picklistValues>
+        <masterLabel>DMV1100</masterLabel>
+        <translation><!-- DMV1100 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV1101</masterLabel>
+        <translation><!-- DMV1101 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV1102</masterLabel>
+        <translation><!-- DMV1102 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV1103</masterLabel>
+        <translation><!-- DMV1103 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV1104</masterLabel>
+        <translation><!-- DMV1104 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV1105</masterLabel>
+        <translation><!-- DMV1105 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV1106</masterLabel>
+        <translation><!-- DMV1106 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV1107</masterLabel>
+        <translation><!-- DMV1107 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV1200</masterLabel>
+        <translation><!-- DMV1200 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV1201</masterLabel>
+        <translation><!-- DMV1201 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV1202</masterLabel>
+        <translation><!-- DMV1202 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV1204</masterLabel>
+        <translation><!-- DMV1204 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV1205</masterLabel>
+        <translation><!-- DMV1205 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV1206</masterLabel>
+        <translation><!-- DMV1206 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV1207</masterLabel>
+        <translation><!-- DMV1207 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV1208</masterLabel>
+        <translation><!-- DMV1208 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV1300</masterLabel>
+        <translation><!-- DMV1300 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV1301</masterLabel>
+        <translation><!-- DMV1301 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV1302</masterLabel>
+        <translation><!-- DMV1302 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV1303</masterLabel>
+        <translation><!-- DMV1303 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV1304</masterLabel>
+        <translation><!-- DMV1304 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV1501</masterLabel>
+        <translation><!-- DMV1501 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV1502</masterLabel>
+        <translation><!-- DMV1502 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV2000</masterLabel>
+        <translation><!-- DMV2000 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV2100</masterLabel>
+        <translation><!-- DMV2100 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV2101</masterLabel>
+        <translation><!-- DMV2101 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV2102</masterLabel>
+        <translation><!-- DMV2102 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV2104</masterLabel>
+        <translation><!-- DMV2104 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV2105</masterLabel>
+        <translation><!-- DMV2105 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV2106</masterLabel>
+        <translation><!-- DMV2106 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV2107</masterLabel>
+        <translation><!-- DMV2107 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV2108</masterLabel>
+        <translation><!-- DMV2108 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV3000</masterLabel>
+        <translation><!-- DMV3000 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV3100</masterLabel>
+        <translation><!-- DMV3100 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV3101</masterLabel>
+        <translation><!-- DMV3101 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV3103</masterLabel>
+        <translation><!-- DMV3103 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV3105</masterLabel>
+        <translation><!-- DMV3105 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV3106</masterLabel>
+        <translation><!-- DMV3106 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV3107</masterLabel>
+        <translation><!-- DMV3107 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV3200</masterLabel>
+        <translation><!-- DMV3200 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV3201</masterLabel>
+        <translation><!-- DMV3201 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV3202</masterLabel>
+        <translation><!-- DMV3202 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV3203</masterLabel>
+        <translation><!-- DMV3203 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV3204</masterLabel>
+        <translation><!-- DMV3204 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV3205</masterLabel>
+        <translation><!-- DMV3205 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV3300</masterLabel>
+        <translation><!-- DMV3300 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV3302</masterLabel>
+        <translation><!-- DMV3302 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV3303</masterLabel>
+        <translation><!-- DMV3303 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV3304</masterLabel>
+        <translation><!-- DMV3304 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV3305</masterLabel>
+        <translation><!-- DMV3305 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV3400</masterLabel>
+        <translation><!-- DMV3400 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV4100</masterLabel>
+        <translation><!-- DMV4100 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV4101</masterLabel>
+        <translation><!-- DMV4101 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV4102</masterLabel>
+        <translation><!-- DMV4102 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV4103</masterLabel>
+        <translation><!-- DMV4103 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV4104</masterLabel>
+        <translation><!-- DMV4104 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV4201</masterLabel>
+        <translation><!-- DMV4201 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV4202</masterLabel>
+        <translation><!-- DMV4202 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV4203</masterLabel>
+        <translation><!-- DMV4203 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV4204</masterLabel>
+        <translation><!-- DMV4204 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV4205</masterLabel>
+        <translation><!-- DMV4205 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV4206</masterLabel>
+        <translation><!-- DMV4206 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV4207</masterLabel>
+        <translation><!-- DMV4207 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV4208</masterLabel>
+        <translation><!-- DMV4208 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV5000</masterLabel>
+        <translation><!-- DMV5000 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV5100</masterLabel>
+        <translation><!-- DMV5100 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV5101</masterLabel>
+        <translation><!-- DMV5101 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV5102</masterLabel>
+        <translation><!-- DMV5102 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV5104</masterLabel>
+        <translation><!-- DMV5104 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV5105</masterLabel>
+        <translation><!-- DMV5105 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV5106</masterLabel>
+        <translation><!-- DMV5106 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV5107</masterLabel>
+        <translation><!-- DMV5107 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV5108</masterLabel>
+        <translation><!-- DMV5108 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV5111</masterLabel>
+        <translation><!-- DMV5111 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV5201</masterLabel>
+        <translation><!-- DMV5201 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV5202</masterLabel>
+        <translation><!-- DMV5202 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV5300</masterLabel>
+        <translation><!-- DMV5300 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV5301</masterLabel>
+        <translation><!-- DMV5301 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMV5400</masterLabel>
+        <translation><!-- DMV5400 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

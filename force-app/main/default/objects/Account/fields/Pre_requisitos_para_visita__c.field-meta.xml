@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pre_requisitos_para_visita__c</fullName>
+    <externalId>false</externalId>
+    <label>Pré requisitos para visita</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bota</fullName>
+                <default>false</default>
+                <label>Bota</label>
+            </value>
+            <value>
+                <fullName>Capacete</fullName>
+                <default>false</default>
+                <label>Capacete</label>
+            </value>
+            <value>
+                <fullName>Colete refletivo</fullName>
+                <default>false</default>
+                <label>Colete refletivo</label>
+            </value>
+            <value>
+                <fullName>Integração</fullName>
+                <default>false</default>
+                <label>Integração</label>
+            </value>
+            <value>
+                <fullName>Óculos de proteção</fullName>
+                <default>false</default>
+                <label>Óculos de proteção</label>
+            </value>
+            <value>
+                <fullName>Protetor auricular</fullName>
+                <default>false</default>
+                <label>Protetor auricular</label>
+            </value>
+            <value>
+                <fullName>Roupa comprida</fullName>
+                <default>false</default>
+                <label>Roupa comprida</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

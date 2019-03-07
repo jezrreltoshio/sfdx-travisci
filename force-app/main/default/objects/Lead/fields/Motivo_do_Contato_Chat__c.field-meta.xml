@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo_do_Contato_Chat__c</fullName>
+    <description>Tabulação do Contato realizado pelo Chat (preenchido por integração SnapEngage)</description>
+    <externalId>false</externalId>
+    <label>Motivo do Contato (Chat)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Prospecção/Negociação</fullName>
+                <default>false</default>
+                <label>Prospecção/Negociação</label>
+            </value>
+            <value>
+                <fullName>Dúvidas do cliente</fullName>
+                <default>false</default>
+                <label>Dúvidas do cliente</label>
+            </value>
+            <value>
+                <fullName>Reclamação do cliente</fullName>
+                <default>false</default>
+                <label>Reclamação do cliente</label>
+            </value>
+            <value>
+                <fullName>TROTE</fullName>
+                <default>false</default>
+                <label>TROTE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

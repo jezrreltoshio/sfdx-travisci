@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Siggo_Contatos_Especiais</fullName>
+    <active>false</active>
+    <description>Verificar se os contatos Pessoa Autorizada, Emergencia e Instalação estão preenchidos ou se o contato Padrão está preenchido.</description>
+    <errorConditionFormula>ISBLANK( ContatoPadrao__c ) &amp;&amp; (ISBLANK(ContatoEmergencia__c) ||  ISBLANK(ContatoInstalacao__c) || ISBLANK(ContatoPessoaAutorizada__c))</errorConditionFormula>
+    <errorMessage>Se o campo Contato Padrão não estiver preenchido, os campos Contato Emergencia, Contato Instalação e Pessoa Autorizada devem estar preenchidos.</errorMessage>
+</ValidationRule>

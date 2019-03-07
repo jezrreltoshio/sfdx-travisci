@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agendadores_de_Indicacao_Lead</fullName>
+    <columns>LEAD.STATUS</columns>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>Data_Hora_criacao__c</columns>
+    <columns>Indicador__c</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Qualificado,Não qualificado,Desqualificado,Contato Não Efetivo</value>
+    </filters>
+    <label>Agendadores de Indicação</label>
+    <language>pt_BR</language>
+    <queue>Agendadores_de_Indicacao</queue>
+    <sharedTo>
+        <role>SUPERVISOR_CARGO_TRACCK</role>
+        <role>SUPERVISOR_CORE_2</role>
+        <role>SUPERVISOR_FRETEIRO</role>
+        <role>SUPERVISO_R_SIGGO</role>
+    </sharedTo>
+</ListView>

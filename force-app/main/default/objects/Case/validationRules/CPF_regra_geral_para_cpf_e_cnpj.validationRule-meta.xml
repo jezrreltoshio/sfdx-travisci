@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPF_regra_geral_para_cpf_e_cnpj</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+ CONTAINS(CNPJ_CPF__c, &#39;.&#39;),
+ AND(
+  NOT(ISNUMBER(CNPJ_CPF__c)),
+  NOT(ISBLANK(CNPJ_CPF__c))
+ ),
+ AND(
+  LEN(CNPJ_CPF__c) &lt;&gt; 0,
+  LEN(CNPJ_CPF__c) &lt;&gt; 11,
+  LEN(CNPJ_CPF__c) &lt;&gt; 14
+ )
+)</errorConditionFormula>
+    <errorDisplayField>CNPJ_CPF__c</errorDisplayField>
+    <errorMessage>CNPJ/CPF Inválido. Digite apenas números</errorMessage>
+</ValidationRule>

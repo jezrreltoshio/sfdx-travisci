@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Conoce el producto</label>
+    <name>Conhece_o_produto__c</name>
+    <picklistValues>
+        <masterLabel>Não</masterLabel>
+        <translation>No</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sim</masterLabel>
+        <translation>Sí</translation>
+    </picklistValues>
+</CustomFieldTranslation>

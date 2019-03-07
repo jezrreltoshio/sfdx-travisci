@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Atrasado</masterLabel>
+        <translation><!-- Atrasado --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cancelado</masterLabel>
+        <translation><!-- Cancelado --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Em andamento</masterLabel>
+        <translation>En curso</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Em espera</masterLabel>
+        <translation>En espera</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Escalado</masterLabel>
+        <translation><!-- Escalado --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Fechado</masterLabel>
+        <translation>Resuelto</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Finalizado</masterLabel>
+        <translation>Resuelto</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Novo</masterLabel>
+        <translation>Nuevo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Não iniciado</masterLabel>
+        <translation>No iniciado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pendente</masterLabel>
+        <translation>Pendiente</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Tratado</masterLabel>
+        <translation>Listo</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

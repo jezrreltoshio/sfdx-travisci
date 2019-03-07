@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Valor50mil</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  Oportunidade__r.Tem_seguro__c = true,
+  Oportunidade__r.Valor_FIPE__c = 50000.00,
+AND(
+OR(
+   Valor_FIPE__c &gt; 50000.00,
+   Valor_FIPE__c &lt; 40000.01
+)))</errorConditionFormula>
+    <errorMessage>Produto selecionado tem valor menor ou maior que o valor do modelo selecionado, favor corrigir o produto.</errorMessage>
+</ValidationRule>

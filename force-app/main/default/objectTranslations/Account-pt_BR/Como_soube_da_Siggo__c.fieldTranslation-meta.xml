@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Como soube da Siggo? --></label>
+    <name>Como_soube_da_Siggo__c</name>
+    <picklistValues>
+        <masterLabel>Evento</masterLabel>
+        <translation><!-- Evento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indicação</masterLabel>
+        <translation><!-- Indicação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internet</masterLabel>
+        <translation><!-- Internet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outro</masterLabel>
+        <translation><!-- Outro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rádio</masterLabel>
+        <translation><!-- Rádio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site</masterLabel>
+        <translation><!-- Site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TV</masterLabel>
+        <translation><!-- TV --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Família: Monitoramento --></help>
+    <label><!-- Nome do produto --></label>
+    <name>Nome_do_produto__c</name>
+</CustomFieldTranslation>

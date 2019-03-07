@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Forma de Pagamento Instalacao --></label>
+    <name>Forma_de_Pagamento_Instalacao_sg__c</name>
+</CustomFieldTranslation>

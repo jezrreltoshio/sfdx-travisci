@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>1 Tentativa</masterLabel>
+        <translation><!-- 1 Tentativa --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>1ª Tentativa</masterLabel>
+        <translation><!-- 1ª Tentativa --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2 Tentativa</masterLabel>
+        <translation><!-- 2 Tentativa --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>2a tentativa</masterLabel>
+        <translation><!-- 2a tentativa --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>3 Tentativa</masterLabel>
+        <translation><!-- 3 Tentativa --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>3a tentativa</masterLabel>
+        <translation><!-- 3a tentativa --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>4 Tentativa</masterLabel>
+        <translation><!-- 4 Tentativa --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>4a tentativa</masterLabel>
+        <translation><!-- 4a tentativa --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Agendamento Cancelado</masterLabel>
+        <translation><!-- Agendamento Cancelado --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Agendamento Próximo Contato</masterLabel>
+        <translation><!-- Agendamento Próximo Contato --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Apoio Comercial</masterLabel>
+        <translation><!-- Apoio Comercial --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ativo</masterLabel>
+        <translation>Activo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cliente Desistiu da Instalação</masterLabel>
+        <translation><!-- Cliente Desistiu da Instalação --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cliente Solicita Alteração Classe/Veícul</masterLabel>
+        <translation><!-- Cliente Solicita Alteração Classe/Veícul --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cliente de Base</masterLabel>
+        <translation>Cliente Base</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cliente não localizado</masterLabel>
+        <translation><!-- Cliente não localizado --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cliente não localizado/direcionado ao co</masterLabel>
+        <translation><!-- Cliente não localizado/direcionado ao co --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cliente recusou instalar</masterLabel>
+        <translation><!-- Cliente recusou instalar --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cliente se recusa a retirar equipamento</masterLabel>
+        <translation><!-- Cliente se recusa a retirar equipamento --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Contatado</masterLabel>
+        <translation><!-- Contatado --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Contato com área técnica</masterLabel>
+        <translation><!-- Contato com área técnica --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Contato impossível</masterLabel>
+        <translation><!-- Contato impossível --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Contato sem sucesso</masterLabel>
+        <translation><!-- Contato sem sucesso --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Contrato Cancelado</masterLabel>
+        <translation><!-- Contrato Cancelado --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Decisor Ausente - Ligar de Manha</masterLabel>
+        <translation><!-- Decisor Ausente - Ligar de Manha --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Decisor Ausente - Ligar de Tarde</masterLabel>
+        <translation><!-- Decisor Ausente - Ligar de Tarde --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Decisor ausente</masterLabel>
+        <translation><!-- Decisor ausente --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Destinatário Errado</masterLabel>
+        <translation><!-- Destinatário Errado --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Downgrade Realizado com Sucesso</masterLabel>
+        <translation><!-- Downgrade Realizado com Sucesso --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Empresa sem atividade</masterLabel>
+        <translation><!-- Empresa sem atividade --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Enviado</masterLabel>
+        <translation><!-- Enviado --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Equipamento não aceito</masterLabel>
+        <translation><!-- Equipamento não aceito --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Falta equipamento/acessório</masterLabel>
+        <translation><!-- Falta equipamento/acessório --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Gostou da proposta ficou de retornar</masterLabel>
+        <translation><!-- Gostou da proposta ficou de retornar --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Homologados</masterLabel>
+        <translation><!-- Homologados --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicação Realizada</masterLabel>
+        <translation><!-- Indicação Realizada --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilização Veículo</masterLabel>
+        <translation><!-- Indisponibilização Veículo --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indisponibilização do veículo</masterLabel>
+        <translation><!-- Indisponibilização do veículo --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Interessado em indicar</masterLabel>
+        <translation><!-- Interessado em indicar --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Interessado em ouvir proposta</masterLabel>
+        <translation><!-- Interessado em ouvir proposta --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Interessados</masterLabel>
+        <translation><!-- Interessados --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Já realizou sua indicação</masterLabel>
+        <translation><!-- Já realizou sua indicação --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Lead Duplicado</masterLabel>
+        <translation><!-- Lead Duplicado --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mudou-se</masterLabel>
+        <translation><!-- Mudou-se --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>No-Show cliente/Agendamento cancelado</masterLabel>
+        <translation><!-- No-Show cliente/Agendamento cancelado --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NÃO PERTURBE</masterLabel>
+        <translation><!-- NÃO PERTURBE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Não aceitou Downgrade</masterLabel>
+        <translation><!-- Não aceitou Downgrade --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Não contatado</masterLabel>
+        <translation><!-- Não contatado --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Não contatado 2</masterLabel>
+        <translation><!-- Não contatado 2 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Não entendeu o SMS</masterLabel>
+        <translation><!-- Não entendeu o SMS --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Não interessado</masterLabel>
+        <translation><!-- Não interessado --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Não interessado(Fora do perfil)</masterLabel>
+        <translation><!-- Não interessado(Fora do perfil) --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Não interessado(Não possui veículo)</masterLabel>
+        <translation><!-- Não interessado(Não possui veículo) --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Não interessado(Possui concorrente)</masterLabel>
+        <translation><!-- Não interessado(Possui concorrente) --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Não interessados</masterLabel>
+        <translation><!-- Não interessados --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Não possui dados do veiculo</masterLabel>
+        <translation><!-- Não possui dados do veiculo --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Não possui veículo</masterLabel>
+        <translation><!-- Não possui veículo --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Não solicitou contato / Desconhece cadas</masterLabel>
+        <translation><!-- Não solicitou contato / Desconhece cadas --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Não tem indicação</masterLabel>
+        <translation><!-- Não tem indicação --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Não tem indicação no Momento</masterLabel>
+        <translation><!-- Não tem indicação no Momento --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Não tem interesse</masterLabel>
+        <translation><!-- Não tem interesse --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Não tem interesse em indicar</masterLabel>
+        <translation><!-- Não tem interesse em indicar --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PT ou devolvido para o banco</masterLabel>
+        <translation><!-- PT ou devolvido para o banco --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pendente de documentação</masterLabel>
+        <translation><!-- Pendente de documentação --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Perda Total</masterLabel>
+        <translation><!-- Perda Total --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pouco uso do veículo - Empresa familiar</masterLabel>
+        <translation><!-- Pouco uso do veículo - Empresa familiar --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Primeira tentativa</masterLabel>
+        <translation><!-- Primeira tentativa --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Quarta tentativa</masterLabel>
+        <translation><!-- Quarta tentativa --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Renovado com seguradora</masterLabel>
+        <translation><!-- Renovado com seguradora --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Responded</masterLabel>
+        <translation><!-- Responded --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Respondido</masterLabel>
+        <translation><!-- Respondido --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Responsável não Localizado</masterLabel>
+        <translation><!-- Responsável não Localizado --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Responsável não localizado/direcionado a</masterLabel>
+        <translation><!-- Responsável não localizado/direcionado a --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SAC / RECLAMAÇÃO</masterLabel>
+        <translation><!-- SAC / RECLAMAÇÃO --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Segunda tentativa</masterLabel>
+        <translation><!-- Segunda tentativa --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Sem Contato com o Novo Proprietário</masterLabel>
+        <translation><!-- Sem Contato com o Novo Proprietário --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Sem condições financeiras para aquisição</masterLabel>
+        <translation><!-- Sem condições financeiras para aquisição --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Sent</masterLabel>
+        <translation><!-- Sent --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TRC concluído</masterLabel>
+        <translation><!-- TRC concluído --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Telefone Incorreto</masterLabel>
+        <translation><!-- Telefone Incorreto --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Telefone Inexistente</masterLabel>
+        <translation><!-- Telefone Inexistente --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Terceira tentativa</masterLabel>
+        <translation><!-- Terceira tentativa --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Transferido para outro segmento</masterLabel>
+        <translation><!-- Transferido para outro segmento --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Tratativa sendo feita pelo comercial</masterLabel>
+        <translation><!-- Tratativa sendo feita pelo comercial --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Veículo Indisponível</masterLabel>
+        <translation><!-- Veículo Indisponível --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Veículo indisponível/direcionado ao come</masterLabel>
+        <translation><!-- Veículo indisponível/direcionado ao come --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Veículo não compareceu na RT</masterLabel>
+        <translation><!-- Veículo não compareceu na RT --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Várias Tentativas de Contato Sem Sucesso</masterLabel>
+        <translation><!-- Várias Tentativas de Contato Sem Sucesso --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

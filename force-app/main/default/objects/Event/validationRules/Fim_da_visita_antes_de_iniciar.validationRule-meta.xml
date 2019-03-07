@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fim_da_visita_antes_de_iniciar</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( In_cio_da_visita__c = False,
+ Fim_da_visita__c = True)</errorConditionFormula>
+    <errorDisplayField>Fim_da_visita__c</errorDisplayField>
+    <errorMessage>Você não pode finalizar uma visita antes de iniciá-la.</errorMessage>
+</ValidationRule>

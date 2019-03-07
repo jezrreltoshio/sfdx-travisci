@@ -179,6 +179,7 @@ public class Teste_Handler_Oportunidade{
 		oportunidade.Forma_de_pagamento_instala_o__c = '1-Boleto Bancário';
 		oportunidade.Parcelamento_da_instala_o__c = 4;
 		oportunidade.Parcelamento_da_instala_o__c = 0;
+		oportunidade.Tipo_proposta__c = '5 Upgrade';
 		update oportunidade;
 
 		OpportunityLineItem oppLi = (OpportunityLineItem) mapBase.get('OpportunityLineItem');
@@ -226,5 +227,29 @@ public class Teste_Handler_Oportunidade{
 		update oportunidade;
 
 		Handler_Oportunidade.abasteceHistoricoDetalhes(new List<Opportunity>{oportunidade}, new List<Opportunity>{oportunidadeOld}, false, true);
+	}
+
+	/*
+		@author Renan Rocha
+		@date 14/01/2019
+	*/
+	static testMethod void atualizaPontuacao(){
+		Map<String, sObject> mapBase = Teste_Util.createMapBase();
+		Opportunity oportunidade = (Opportunity) mapBase.get('Opportunity');
+		
+		Handler_Oportunidade.atualizaPontuacao(new List<Opportunity>{oportunidade});
+	}
+
+	/*
+		@author Renan Rocha
+		@date 16/01/2019
+	*/
+	static testMethod void atualizaTipoContratoId(){
+		Map<String, sObject> mapBase = Teste_Util.createMapBase();
+		Opportunity oportunidade = (Opportunity) mapBase.get('Opportunity');
+		oportunidade.Tipo_contrato__c = 'TESTE_#01';
+		update oportunidade;
+		
+		Handler_Oportunidade.atualizaTipoContratoId(new List<Opportunity>{oportunidade});
 	}
 }

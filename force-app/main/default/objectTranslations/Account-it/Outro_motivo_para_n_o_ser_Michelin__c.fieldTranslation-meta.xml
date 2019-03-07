@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Outro motivo para não ser Michelin --></label>
+    <name>Outro_motivo_para_n_o_ser_Michelin__c</name>
+</CustomFieldTranslation>

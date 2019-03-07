@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>validarQuantidadeDigitosCPF</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT(ISBLANK(CPF__c))
+&amp;&amp;
+LEN(CPF__c)!= 11
+&amp;&amp;
+LEN(CPF__c)!= 14</errorConditionFormula>
+    <errorDisplayField>CPF__c</errorDisplayField>
+    <errorMessage>Quantidade de dígitos inválida. O CPF deve conter somente 11 dígitos.</errorMessage>
+</ValidationRule>

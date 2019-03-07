@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Estado Civil --></label>
+    <name>Veiculo_Proprietario_EstadoCivil__c</name>
+    <picklistValues>
+        <masterLabel>A-Amasiado</masterLabel>
+        <translation><!-- A-Amasiado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C-Casado</masterLabel>
+        <translation><!-- C-Casado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D-Divorciado</masterLabel>
+        <translation><!-- D-Divorciado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O-Outro</masterLabel>
+        <translation><!-- O-Outro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S-Solteiro</masterLabel>
+        <translation><!-- S-Solteiro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Viúvo</masterLabel>
+        <translation><!-- V-Viúvo --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

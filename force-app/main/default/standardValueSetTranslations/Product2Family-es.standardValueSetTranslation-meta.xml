@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Acessório</masterLabel>
+        <translation>Accesorio</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Assistência</masterLabel>
+        <translation>Asistencia</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Comodato</masterLabel>
+        <translation><!-- Comodato --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Locação</masterLabel>
+        <translation>Alquiler</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Monitoramento</masterLabel>
+        <translation>Monitoreo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Produto Blue tec</masterLabel>
+        <translation>Producto Blue tec</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Venda</masterLabel>
+        <translation>Venta</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

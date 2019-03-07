@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Ativado para &quot;CORP&quot; --></help>
+    <label><!-- CORP --></label>
+    <name>CORP__c</name>
+</CustomFieldTranslation>

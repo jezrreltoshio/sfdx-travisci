@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidaValorOutroRamoAtividade</fullName>
+    <active>true</active>
+    <description>Se o campo &quot;Outro ramo de atividade&quot; estiver preenchido, validar se o campo &quot;Ramo de Atividade&quot; está selecionado com a opção &quot;OUTRO&quot;.</description>
+    <errorConditionFormula>AND( 
+    NOT(ISBLANK(Outro_ramo_de_atividade__c)), 
+    NOT(ISPICKVAL(Ramo_de_Atividade__c, &#39;OUTRO&#39;)), 
+    AND( 
+        OR( 
+            UPPER(RecordType.Name) = &#39;CORP&#39;, 
+            UPPER(RecordType.Name) = &#39;BLUE TEC&#39;,
+            UPPER(RecordType.Name) = &#39;CARGO TRACCK&#39;
+        ) 
+    ) 
+)</errorConditionFormula>
+    <errorDisplayField>Outro_ramo_de_atividade__c</errorDisplayField>
+    <errorMessage>Você só deve preencher esse campo, quando o campo &quot;Ramo de Atividade&quot; estiver com a opção &quot;OUTRO&quot;.</errorMessage>
+</ValidationRule>

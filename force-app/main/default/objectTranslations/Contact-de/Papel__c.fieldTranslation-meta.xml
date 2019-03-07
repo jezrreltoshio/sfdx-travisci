@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Influência na decisão --></label>
+    <name>Papel__c</name>
+    <picklistValues>
+        <masterLabel>Bloqueador</masterLabel>
+        <translation><!-- Bloqueador --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decisor</masterLabel>
+        <translation><!-- Decisor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Influenciador N</masterLabel>
+        <translation><!-- Influenciador N --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Influenciador P</masterLabel>
+        <translation><!-- Influenciador P --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neutro</masterLabel>
+        <translation><!-- Neutro --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

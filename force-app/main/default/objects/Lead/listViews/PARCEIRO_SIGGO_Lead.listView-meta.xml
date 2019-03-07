@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PARCEIRO_SIGGO_Lead</fullName>
+    <filterScope>Queue</filterScope>
+    <label>PARCEIRO SIGGO</label>
+    <queue>PARCEIRO_SIGGO</queue>
+    <sharedTo>
+        <role>DATABASEMKT</role>
+        <role>GERENTE_TELEVENDAS</role>
+        <role>SUPERVISOR_CORE_2</role>
+        <role>SUPERVISOR_FRETEIRO</role>
+        <role>SUPERVISO_R_SIGGO</role>
+    </sharedTo>
+</ListView>

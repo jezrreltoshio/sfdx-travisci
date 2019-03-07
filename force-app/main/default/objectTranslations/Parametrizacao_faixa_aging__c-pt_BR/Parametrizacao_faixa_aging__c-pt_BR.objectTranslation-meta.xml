@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Parametrização Faixa de Aging</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Parametrizações Faixas de Aging</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Layout de Parametrização Faixa de Aging</layout>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout de Parametrização Faixa de Aging SUP-ATEND</layout>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Não é possível marcar simultaneamente os campos: Contatos dias distintos e Contatos por faixa. Escolha apenas um dos contatos para este registro. --></errorMessage>
+        <name>Valida_marcacao_contatos</name>
+    </validationRules>
+</CustomObjectTranslation>

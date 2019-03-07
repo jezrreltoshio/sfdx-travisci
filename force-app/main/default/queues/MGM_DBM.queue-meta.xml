@@ -3,11 +3,6 @@
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <email>l.frederico@sascar.com.br</email>
     <name>MGM DBM</name>
-    <queueMembers>
-        <roles>
-            <role>ADMINISTRADOR_COMERCIAL</role>
-        </roles>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Lead</sobjectType>
     </queueSobject>

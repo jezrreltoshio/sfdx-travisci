@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- ID da marca na Intranet Sascar --></help>
+    <label><!-- ID da marca --></label>
+    <name>ID_da_marca__c</name>
+</CustomFieldTranslation>

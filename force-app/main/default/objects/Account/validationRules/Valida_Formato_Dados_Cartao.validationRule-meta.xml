@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Valida_Formato_Dados_Cartao</fullName>
+    <active>true</active>
+    <description>Valida se as informações preenchidas para os campos de Número do Cartão de Crédito e Código de Segurança do cartão estão completos (13-19 e 3, respectivamente)</description>
+    <errorConditionFormula>OR(
+AND( LEN(Cobranca_Cartao_CodigoSeguranca_Cript__c) &gt; 0, LEN( Cobranca_Cartao_CodigoSeguranca_Cript__c )  &lt;&gt; 3 ),
+AND( LEN(Cobranca_Cartao_Numero_Cript__c) &gt; 0, LEN( Cobranca_Cartao_Numero_Cript__c ) &lt; 13 ),
+AND( LEN(Cobranca_Cartao_Numero_Cript__c) &gt; 0, LEN( Cobranca_Cartao_Numero_Cript__c ) &gt; 19 )
+)</errorConditionFormula>
+    <errorMessage>Informações do cartão de crédito (Número e Código de Segurança) inválidas.</errorMessage>
+</ValidationRule>

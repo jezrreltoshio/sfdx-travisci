@@ -3,12 +3,6 @@
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <email>camila.costa@sascar.com.br</email>
     <name>Neoway</name>
-    <queueMembers>
-        <users>
-            <user>camila.costa@sascar.com.br</user>
-            <user>leonardo.pereira@sascar.com.br</user>
-        </users>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Case</sobjectType>
     </queueSobject>

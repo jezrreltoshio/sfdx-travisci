@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_de_cliente__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo de cliente</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>À fidelizar</fullName>
+                <default>false</default>
+                <label>À fidelizar</label>
+            </value>
+            <value>
+                <fullName>Cliente Base</fullName>
+                <default>false</default>
+                <label>Cliente Base</label>
+            </value>
+            <value>
+                <fullName>Cliente final</fullName>
+                <default>false</default>
+                <label>Cliente final</label>
+            </value>
+            <value>
+                <fullName>Cliente indicador</fullName>
+                <default>false</default>
+                <label>Cliente indicador</label>
+            </value>
+            <value>
+                <fullName>Embarcador</fullName>
+                <default>false</default>
+                <label>Embarcador</label>
+            </value>
+            <value>
+                <fullName>Ex-Cliente</fullName>
+                <default>false</default>
+                <label>Ex-Cliente</label>
+            </value>
+            <value>
+                <fullName>Gerenciador de Risco</fullName>
+                <default>false</default>
+                <label>Gerenciador de Risco</label>
+            </value>
+            <value>
+                <fullName>Indicador</fullName>
+                <default>false</default>
+                <label>Indicador</label>
+            </value>
+            <value>
+                <fullName>Novo Cliente</fullName>
+                <default>false</default>
+                <label>Novo Cliente</label>
+            </value>
+            <value>
+                <fullName>Novo Parceiro</fullName>
+                <default>false</default>
+                <label>Novo Parceiro</label>
+            </value>
+            <value>
+                <fullName>Prestador de serviço</fullName>
+                <default>false</default>
+                <label>Prestador de serviço</label>
+            </value>
+            <value>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+                <label>Prospect</label>
+            </value>
+            <value>
+                <fullName>Rental</fullName>
+                <default>false</default>
+                <label>Rental</label>
+            </value>
+            <value>
+                <fullName>Seguradora</fullName>
+                <default>false</default>
+                <label>Seguradora</label>
+            </value>
+            <value>
+                <fullName>Sinergia Michelin KA</fullName>
+                <default>false</default>
+                <label>Sinergia Michelin KA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

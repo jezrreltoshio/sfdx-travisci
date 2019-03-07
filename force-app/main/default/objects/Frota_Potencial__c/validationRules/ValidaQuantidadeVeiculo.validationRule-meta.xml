@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidaQuantidadeVeiculo</fullName>
+    <active>true</active>
+    <description>Não é possível inserir um valor negativo.</description>
+    <errorConditionFormula>AND( 
+Quantidade_de_veiculos__c &lt; 0 
+)</errorConditionFormula>
+    <errorDisplayField>Quantidade_de_veiculos__c</errorDisplayField>
+    <errorMessage>Não é possível inserir um valor negativo.</errorMessage>
+</ValidationRule>

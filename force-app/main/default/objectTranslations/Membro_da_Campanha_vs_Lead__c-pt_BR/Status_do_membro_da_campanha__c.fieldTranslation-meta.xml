@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Refere-se ao valor do campo lista de opções Status (API: Status) do objeto Membro da Campanha. --></help>
+    <label><!-- Status do membro da campanha --></label>
+    <name>Status_do_membro_da_campanha__c</name>
+</CustomFieldTranslation>

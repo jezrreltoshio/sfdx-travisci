@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DadosPJ_EmpresaOptanteSimples__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Caso a conta seja de um cliente PJ esse campo deve armazenar o Verdadeiro se a empresa for optante pelo simples.</description>
+    <externalId>false</externalId>
+    <label>Empresa Optante Pelo Simples</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

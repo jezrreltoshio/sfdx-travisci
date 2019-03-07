@@ -2,11 +2,6 @@
 <Queue xmlns="http://soap.sforce.com/2006/04/metadata">
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>TruckPad</name>
-    <queueMembers>
-        <roles>
-            <role>SUPERVISOR_FRETEIRO</role>
-        </roles>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Lead</sobjectType>
     </queueSobject>

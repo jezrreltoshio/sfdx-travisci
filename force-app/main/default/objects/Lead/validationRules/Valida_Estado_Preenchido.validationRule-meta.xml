@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Valida_Estado_Preenchido</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(ISBLANK(State)),
+State &lt;&gt; &quot;AC&quot;,
+State &lt;&gt; &quot;AL&quot;,
+State &lt;&gt; &quot;AP&quot;,
+State &lt;&gt; &quot;AM&quot;,
+State &lt;&gt; &quot;BA&quot;,
+State &lt;&gt; &quot;CE&quot;,
+State &lt;&gt; &quot;DF&quot;,
+State &lt;&gt; &quot;ES&quot;,
+State &lt;&gt; &quot;GO&quot;,
+State &lt;&gt; &quot;MA&quot;,
+State &lt;&gt; &quot;MT&quot;,
+State &lt;&gt; &quot;MS&quot;,
+State &lt;&gt; &quot;MG&quot;,
+State &lt;&gt; &quot;PA&quot;,
+State &lt;&gt; &quot;PB&quot;,
+State &lt;&gt; &quot;PR&quot;,
+State &lt;&gt; &quot;PE&quot;,
+State &lt;&gt; &quot;PI&quot;,
+State &lt;&gt; &quot;RJ&quot;,
+State &lt;&gt; &quot;RN&quot;,
+State &lt;&gt; &quot;RS&quot;,
+State &lt;&gt; &quot;RO&quot;,
+State &lt;&gt; &quot;RR&quot;,
+State &lt;&gt; &quot;SC&quot;,
+State &lt;&gt; &quot;SP&quot;,
+State &lt;&gt; &quot;SE&quot;,
+State &lt;&gt; &quot;TO&quot;
+)</errorConditionFormula>
+    <errorDisplayField>State</errorDisplayField>
+    <errorMessage>O estado inserido é inválido, favor inserir a sigla da unidade federativa. Por exemplo: Para Rio de Janeiro, preencher RJ.</errorMessage>
+</ValidationRule>

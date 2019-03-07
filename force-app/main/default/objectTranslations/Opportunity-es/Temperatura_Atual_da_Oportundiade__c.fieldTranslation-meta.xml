@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Probabilidad actual de venta</label>
+    <name>Temperatura_Atual_da_Oportundiade__c</name>
+    <picklistValues>
+        <masterLabel>FRIO</masterLabel>
+        <translation>Baja</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MORNO</masterLabel>
+        <translation>Media</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QUENTE</masterLabel>
+        <translation>Alta</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TEMPERATURA ATUAL</masterLabel>
+        <translation><!-- TEMPERATURA ATUAL --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

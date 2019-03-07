@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Solución tecnológica basada en el producto contratado</help>
+    <label>Solución</label>
+    <name>Solucao__c</name>
+    <picklistValues>
+        <masterLabel>Carga</masterLabel>
+        <translation><!-- Carga --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cargo Tracck</masterLabel>
+        <translation><!-- Cargo Tracck --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GSM</masterLabel>
+        <translation><!-- GSM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LOC</masterLabel>
+        <translation><!-- LOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASCarreta</masterLabel>
+        <translation><!-- SASCarreta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASMobile</masterLabel>
+        <translation><!-- SASMobile --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASMotos</masterLabel>
+        <translation><!-- SASMotos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Siggo</masterLabel>
+        <translation><!-- Siggo --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

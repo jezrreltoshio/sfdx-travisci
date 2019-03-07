@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Nível --></label>
+    <name>Nivel__c</name>
+    <picklistValues>
+        <masterLabel>N1</masterLabel>
+        <translation><!-- N1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N2</masterLabel>
+        <translation><!-- N2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N3</masterLabel>
+        <translation><!-- N3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N4</masterLabel>
+        <translation><!-- N4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N5</masterLabel>
+        <translation><!-- N5 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

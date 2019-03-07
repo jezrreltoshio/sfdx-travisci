@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Conservação da carga</masterLabel>
+        <translation>Conservación de la Carga</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Controle de custos</masterLabel>
+        <translation>Control de Costos</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cross border</masterLabel>
+        <translation>Cross border</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Gestão de riscos</masterLabel>
+        <translation><!-- Gestão de riscos --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pontualidade</masterLabel>
+        <translation>Puntualidad y Productividad</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Prevenção de acidentes</masterLabel>
+        <translation>Prevención de accidentes</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Produtividade</masterLabel>
+        <translation><!-- Produtividade --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Segurança da carga</masterLabel>
+        <translation>Seguridad de la Carga y del vehículo</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

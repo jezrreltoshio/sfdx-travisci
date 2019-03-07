@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Relacionamiento con la competencia</label>
+    <name>Nivel_de_relacionamento__c</name>
+    <picklistValues>
+        <masterLabel>Bom</masterLabel>
+        <translation>Bueno</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excelente</masterLabel>
+        <translation><!-- Excelente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Muito bom</masterLabel>
+        <translation>Muy Bueno</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não tem relação</masterLabel>
+        <translation><!-- Não tem relação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Péssimo</masterLabel>
+        <translation>Muy Malo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Razoável</masterLabel>
+        <translation>Regular</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ruim</masterLabel>
+        <translation>Malo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sem relacionamento</masterLabel>
+        <translation><!-- Sem relacionamento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ótimo</masterLabel>
+        <translation><!-- Ótimo --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recebeu_o_e_mail_de_Boas_Vindas__c</fullName>
+    <description>Campo para pesquisa para os clientes recém instalados - MGM</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Pergunte ao cliente se ele recebeu o e-mail de boas vindas que informa o login e senha para primeiro acesso aos nossos sistemas de monitoramento. Caso não tenha recebido, oriente-o a procurar nossa central de atendimento 3004 1010 / 0800 004 1010</inlineHelpText>
+    <label>Recebeu dados de login do sistema?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sim</fullName>
+                <default>false</default>
+                <label>Sim</label>
+            </value>
+            <value>
+                <fullName>Não</fullName>
+                <default>false</default>
+                <label>Não</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

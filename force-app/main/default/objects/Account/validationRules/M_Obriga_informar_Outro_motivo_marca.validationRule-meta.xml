@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>M_Obriga_informar_Outro_motivo_marca</fullName>
+    <active>true</active>
+    <description>Obriga usuário a informar o descrever o nome da marca quando a opção escolhida para o campo &quot;Qual a principal marca que você usa??&quot; for outro.</description>
+    <errorConditionFormula>AND(ISPICKVAL(Qual_a_principal_marca_de_pneus_voc_com__c,&#39;Outros&#39;),ISBLANK(Outra_marca_de_pneu__c))</errorConditionFormula>
+    <errorDisplayField>Outra_marca_de_pneu__c</errorDisplayField>
+    <errorMessage>Quando a opção selecionada para a pergunta &quot;Qual a principal marca que você usa?&quot; é Outros, é obrigatório descrever o nome da marca.</errorMessage>
+</ValidationRule>

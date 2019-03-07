@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_solicitacao_equipamento__c</fullName>
+    <description>Status solicitação equipamento para distribuição</description>
+    <externalId>false</externalId>
+    <label>Status solicitação equipamento</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aguardando estoque CD</fullName>
+                <default>false</default>
+                <label>Aguardando estoque CD</label>
+            </value>
+            <value>
+                <fullName>Atendido</fullName>
+                <default>false</default>
+                <label>Atendido</label>
+            </value>
+            <value>
+                <fullName>Estoque CD reabastecido</fullName>
+                <default>false</default>
+                <label>Estoque CD reabastecido</label>
+            </value>
+            <value>
+                <fullName>Pendente</fullName>
+                <default>false</default>
+                <label>Pendente</label>
+            </value>
+            <value>
+                <fullName>Recusado</fullName>
+                <default>false</default>
+                <label>Recusado</label>
+            </value>
+            <value>
+                <fullName>Sem Solicitação</fullName>
+                <default>false</default>
+                <label>Sem Solicitação</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Invitados</label>
+    <name>Convidados__c</name>
+    <picklistValues>
+        <masterLabel>Alexandre Biscaro</masterLabel>
+        <translation><!-- Alexandre Biscaro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Antenista</masterLabel>
+        <translation><!-- Antenista --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aparecido Gardão</masterLabel>
+        <translation><!-- Aparecido Gardão --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>César Figueiredo</masterLabel>
+        <translation><!-- César Figueiredo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diego Gama</masterLabel>
+        <translation><!-- Diego Gama --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diogo Silva</masterLabel>
+        <translation><!-- Diogo Silva --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eduardo Dodo</masterLabel>
+        <translation><!-- Eduardo Dodo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Evandro Rodrigues</masterLabel>
+        <translation><!-- Evandro Rodrigues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Executivo Core</masterLabel>
+        <translation><!-- Executivo Core --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fernando Nogueira</masterLabel>
+        <translation><!-- Fernando Nogueira --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>José Marcelo</masterLabel>
+        <translation><!-- José Marcelo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kleber Marcelino</masterLabel>
+        <translation><!-- Kleber Marcelino --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marcio Fugisava</masterLabel>
+        <translation><!-- Marcio Fugisava --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marlos Oliveira</masterLabel>
+        <translation><!-- Marlos Oliveira --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mayra Neves</masterLabel>
+        <translation><!-- Mayra Neves --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Murilo Archilia</masterLabel>
+        <translation><!-- Murilo Archilia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outros</masterLabel>
+        <translation>Otros</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patrícia Santos</masterLabel>
+        <translation><!-- Patrícia Santos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rafael Ribeiro</masterLabel>
+        <translation><!-- Rafael Ribeiro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raphael Curt</masterLabel>
+        <translation><!-- Raphael Curt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Samuel Alcântara</masterLabel>
+        <translation><!-- Samuel Alcântara --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

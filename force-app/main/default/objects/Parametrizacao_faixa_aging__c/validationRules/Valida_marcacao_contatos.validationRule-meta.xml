@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Valida_marcacao_contatos</fullName>
+    <active>true</active>
+    <description>Os campos Contatos dias distintos e Contatos por faixa não podem ser marcados juntos.</description>
+    <errorConditionFormula>AND (
+	Contatos_faixa__c = true,
+	Contatos_dias_distintos__c = true
+)</errorConditionFormula>
+    <errorMessage>Não é possível marcar simultaneamente os campos: Contatos dias distintos e Contatos por faixa. Escolha apenas um dos contatos para este registro.</errorMessage>
+</ValidationRule>

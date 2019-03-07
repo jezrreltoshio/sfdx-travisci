@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Valida_campos_do_debito_automatico</fullName>
+    <active>false</active>
+    <description>Valida se todos os campos do débito automático estão preenchidos, se forma de pagamento igual a Débito Automático.</description>
+    <errorConditionFormula>AND( 
+  OR( ISPICKVAL( FormaCobranca__c, &quot;3-Débito Automático HSBC&quot;), ISPICKVAL( FormaCobranca__c, &quot;4-Débito Automático Itaú&quot;), 
+ISPICKVAL( FormaCobranca__c, &quot;12-Débito Automático Bradesco&quot;), 
+ISPICKVAL( FormaCobranca__c, &quot;13-Débito Automático Banco do Brasil&quot;), 
+ISPICKVAL( FormaCobranca__c, &quot;80-Débito Automático Santander&quot;) ), 
+  OR( ISNULL(  DebAut_Agencia__c ), ISNULL( DebAut_ContaCorrente__c ) ) )</errorConditionFormula>
+    <errorMessage>Para forma de cobrança Débito Automático, informe os campos Agência, Conta e Nome do Titular.</errorMessage>
+</ValidationRule>

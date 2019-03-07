@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Qtde de contratos da base --></label>
+    <name>Qtde_de_contratos_na_base__c</name>
+</CustomFieldTranslation>

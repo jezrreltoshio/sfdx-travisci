@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Atualiza_CEP</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Atualiza CEP</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/33.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/33.0/apex.js&quot;)} 
+
+var le = new sforce.SObject(&quot;Lead&quot;); 
+le.Id = &#39;{!Lead.Id}&#39;; 
+
+le.PostalCode = prompt(&#39;Insira CEP&#39;,&#39;{!Lead.PostalCode}&#39;); 
+
+le.Numero_endereco__c = prompt(&#39;Insira número do endereço&#39;,&#39;{!Lead.Numero_endereco__c}&#39;); 
+
+le.Complemento_endereco__c = prompt(&#39;Insira complemento do endereço caso exista.&#39;,&#39;{!Lead.Complemento_endereco__c}&#39;); 
+
+le.Cep_preenchido__c = true; 
+var result = sforce.connection.update([le]); 
+
+var result = sforce.connection.update([le]); 
+if(result[0].getBoolean(&quot;success&quot;)) 
+{ 
+alert(&#39;Lead atualizado com sucesso&#39;); 
+window.location.reload(); 
+} 
+else{ 
+alert(&#39;Error : &#39;+result); 
+window.location.reload(); 
+}</url>
+</WebLink>

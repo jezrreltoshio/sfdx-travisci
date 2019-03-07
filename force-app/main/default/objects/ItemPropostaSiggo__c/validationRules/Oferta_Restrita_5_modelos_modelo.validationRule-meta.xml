@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Oferta_Restrita_5_modelos_modelo</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  Oportunidade__r.RecordType.Name = &#39;Siggo&#39;, 
+  CONTAINS(Oportunidade__r.Pricebook2.Name, &#39;5 modelos de veículos&#39;),
+  AND(   
+    NOT(CONTAINS(Modelo_do_Veiculo__r.Name, &#39;206&#39;)),
+    NOT(CONTAINS(Modelo_do_Veiculo__r.Name, &#39;ONIX&#39;)),
+    NOT(CONTAINS(Modelo_do_Veiculo__r.Name, &#39;Courier&#39;)),
+    NOT(CONTAINS(Modelo_do_Veiculo__r.Name, &#39;MARCH&#39;)),
+    NOT(CONTAINS(Modelo_do_Veiculo__r.Name, &#39;Classic&#39;))  
+ )
+)</errorConditionFormula>
+    <errorMessage>Veículo selecionado não é compatível com o catálogo escolhido. Verifique o modelo do veículo.</errorMessage>
+</ValidationRule>

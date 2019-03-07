@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>ADMINISTRADOR</submitter>
+        <type>roleSubordinates</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Papel_do_propriet_rio__c</field>
+        <field>Owner</field>
+        <field>Name</field>
+        <field>Account</field>
+        <field>Prazo_do_contrato__c</field>
+        <field>Nome_catalogo__c</field>
+        <field>Indicador__c</field>
+        <field>Valor_sem_desconto__c</field>
+        <field>Valor_final_com_desconto__c</field>
+        <field>Valor_unit_rio_mensal_new__c</field>
+        <field>Valor_unit_rio_mensal_new2__c</field>
+        <field>Valor_total_desconto__c</field>
+        <field>Percentual_descontado__c</field>
+        <field>Observa_es_do_desconto__c</field>
+        <field>Alcada_Fin_Max__c</field>
+        <field>Alcada_Fin_Min__c</field>
+        <field>Alcada_Dir_Max__c</field>
+        <field>Alcada_Dir_Min__c</field>
+        <field>Alcada_Ger_Max__c</field>
+        <field>Alcada_Ger_Min__c</field>
+        <field>Alcada_Sup_Max__c</field>
+        <field>Alcada_Sup_Min__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>pedro.chaves@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND(
+Valor_total_desconto__c &gt;= 14.33,
+Prazo_contrato_Id__c = 12 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Etapa 1 RF Nacional 12 meses</label>
+        <name>Etapa_1_RF_Nacional_12_meses</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>adilson.filho@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND(
+Valor_total_desconto__c &gt;= 76.33,
+Prazo_contrato_Id__c = 12 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Etapa 2 RF Nacional 12 meses</label>
+        <name>Etapa_2_RF_Nacional_12_meses</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>pedro.chaves@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c &gt;= 64.33, 
+Prazo_contrato_Id__c = 14 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Etapa 1 RF Nacional 24 meses</label>
+        <name>Etapa_1_RF_Nacional_24_meses</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>adilson.filho@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c &gt;= 176.33, 
+Prazo_contrato_Id__c = 14 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Etapa 2 RF Nacional 24 meses</label>
+        <name>Etapa_2_RF_Nacional_24_meses</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>pedro.chaves@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c &gt;= 144.01, 
+Prazo_contrato_Id__c = 15 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Etapa 1 RF Nacional 36 meses</label>
+        <name>Etapa_1_RF_Nacional_36_meses</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>adilson.filho@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c &gt;= 340.93, 
+Prazo_contrato_Id__c = 15 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Etapa 2 RF Nacional 36 meses</label>
+        <name>Etapa_2_RF_Nacional_36_meses</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>pedro.chaves@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c &gt;= 454.57, 
+Prazo_contrato_Id__c = 32 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Etapa 1 RF Nacional 48 meses</label>
+        <name>Etapa_1_RF_Nacional_48_meses</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>adilson.filho@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c &gt;= 456.57, 
+Prazo_contrato_Id__c = 32
+)</formula>
+        </entryCriteria>
+        <label>Etapa 2 RF Nacional 48 meses</label>
+        <name>Etapa_2_RF_Nacional_48_meses</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <emailTemplate>unfiled$public/Aprova_o_de_oportunidade</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND (5 or 6 or 7 or 8)</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.Aprovacao_desconto__c</field>
+            <operation>equals</operation>
+            <value>Verdadeiro</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordType</field>
+            <operation>equals</operation>
+            <value>CORP</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Aprova_o__c</field>
+            <operation>notEqual</operation>
+            <value>Aprovado</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Papel_ID__c</field>
+            <operation>equals</operation>
+            <value>2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Nome_catalogo__c</field>
+            <operation>equals</operation>
+            <value>RF Nacional - 12 meses</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Nome_catalogo__c</field>
+            <operation>equals</operation>
+            <value>RF Nacional - 24 meses</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Nome_catalogo__c</field>
+            <operation>equals</operation>
+            <value>RF Nacional - 36 meses</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Nome_catalogo__c</field>
+            <operation>equals</operation>
+            <value>RF Nacional - 48 meses</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Aprova_o_total_da_oportunidade</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Atualiza_aprova_o_da_oportunidade</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Atualiza_reprova_o_da_oportunidade</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Rejei_o_da_oportunidade</name>
+            <type>Alert</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Aprova_o_pendente</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>RF Nacional Ge</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>true</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

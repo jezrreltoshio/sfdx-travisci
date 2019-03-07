@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Identificação do modelo na intranet da Sascar. --></help>
+    <label><!-- ID do modelo --></label>
+    <name>ID_do_modelo__c</name>
+</CustomFieldTranslation>

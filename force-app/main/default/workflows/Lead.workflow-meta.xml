@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Alerta_sobre_lead_sem_in_cio_em_5_minutos</fullName>
+        <ccEmails>camila.costa@sascar.com.br</ccEmails>
+        <description>Alerta sobre lead sem início em 5 minutos</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>SUPERVISO_R_SIGGO</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Oportunidade_parada_na_fase_h_5_dias</template>
+    </alerts>
+    <alerts>
+        <fullName>Lead_parado_5_dias</fullName>
+        <description>Lead parado 5 dias</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Lead_parado_5_dias</template>
+    </alerts>
+    <alerts>
+        <fullName>Lead_parado_7_dias</fullName>
+        <description>Lead parado 7 dias</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Gerente_Bluetec</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Lead_parado_7_dias</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Agendadores_de_Indica_o_para_CORP</fullName>
+        <field>OwnerId</field>
+        <lookupValue>CORP</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Agendadores de Indicação para CORP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_campanha</fullName>
+        <field>Campanha__c</field>
+        <formula>Campaign.Name</formula>
+        <name>Atualiza campanha</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_campo_de_edi_o_do_status</fullName>
+        <field>Trabalhado_em__c</field>
+        <formula>Now()</formula>
+        <name>Atualiza campo de edição do status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_pertenceu_fila</fullName>
+        <field>Pertenceu_a_fila__c</field>
+        <formula>Fila__c</formula>
+        <name>Atualiza pertenceu à fila</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Definir_Nome_Lead</fullName>
+        <description>Define o valor do campo Nome do objeto Lead baseado no valor do campo Company (Empresa)</description>
+        <field>FirstName</field>
+        <formula>Left(Trim(Company), Find(&quot; &quot;, Trim(Company)))</formula>
+        <name>Definir Nome no Lead</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Definir_Sobrenome_no_Lead</fullName>
+        <description>Atualização de campo para definir o Sobrenome do Lead com base no conteudo do campo Empresa</description>
+        <field>LastName</field>
+        <formula>Right(Trim(Company), (Len(Trim(Company)) - Find(&quot; &quot;, Trim(Company))))</formula>
+        <name>Definir Sobrenome no Lead</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Empresa_n_o_fornecido</fullName>
+        <field>Company</field>
+        <formula>FirstName  &amp;  LastName</formula>
+        <name>Empresa = não fornecido</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Siggo_discador</fullName>
+        <field>Siggo_discador__c</field>
+        <literalValue>1</literalValue>
+        <name>Siggo discador</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Telefone_celular</fullName>
+        <field>Telefone_celular__c</field>
+        <formula>MobilePhone</formula>
+        <name>Telefone celular</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Tipo_de_registro_CORP</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>CORP</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Tipo de registro = CORP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Tipo_de_registro_Freteiro</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Freteiro</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Tipo de registro = Freteiro</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Tipo_de_registro_Siggo</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Siggo</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Tipo de registro = Siggo</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Uppercase_Lead_Account</fullName>
+        <field>Company</field>
+        <formula>UPPER(  Company )</formula>
+        <name>Uppercase Lead Account</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Uppercase_Lead_FirstName</fullName>
+        <field>FirstName</field>
+        <formula>UPPER(  FirstName )</formula>
+        <name>Uppercase Lead FirstName</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Uppercase_Lead_LastName</fullName>
+        <field>LastName</field>
+        <formula>UPPER( LastName )</formula>
+        <name>Uppercase Lead LastName</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>atualiza_campo_aceito_em</fullName>
+        <field>Enviado_Em__c</field>
+        <formula>Now()</formula>
+        <name>atualiza campo aceito em</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>atualiza_campo_convertido_em</fullName>
+        <field>Convertido_em__c</field>
+        <formula>now()</formula>
+        <name>atualiza campo convertido em</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>atualiza_campo_de_finaliza_o_do_lead</fullName>
+        <field>Finalizado_em__c</field>
+        <formula>Now()</formula>
+        <name>atualiza campo de finalização do lead</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Agendadores de Indicação para CORP</fullName>
+        <actions>
+            <name>Agendadores_de_Indica_o_para_CORP</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.OwnerId</field>
+            <operation>equals</operation>
+            <value>Agendadores de Indicação</value>
+        </criteriaItems>
+        <description>rbsilva 30-05-2018 - Não encontrei a regra que assinala automaticamente os Leads para a fila &quot;Agendadores de Indicação&quot;. Como paliativo, estabelecemos esse workflow para que os itens que entrarem sejam redirecionados para a fila CORP.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Atualiza tipo de registro do lead - CORP</fullName>
+        <actions>
+            <name>Tipo_de_registro_CORP</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>CONTAINS(Owner:User.Profile.Name, &#39;CORP&#39;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Atualiza tipo de registro do lead - Freteiro</fullName>
+        <actions>
+            <name>Tipo_de_registro_Freteiro</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>CONTAINS(Owner:User.Profile.Name, &#39;Freteiro&#39;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Atualiza tipo de registro do lead - Michelin</fullName>
+        <active>false</active>
+        <formula>CONTAINS(Owner:User.Profile.Name, &#39;Michelin&#39;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Atualiza tipo de registro do lead - Siggo</fullName>
+        <actions>
+            <name>Tipo_de_registro_Siggo</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>CONTAINS(Owner:User.Profile.Name, &#39;Siggo&#39;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Fila Siggo discador</fullName>
+        <actions>
+            <name>Siggo_discador</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.OwnerId</field>
+            <operation>equals</operation>
+            <value>Siggo Discador</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - Definir Nome e Sobrenome no Lead</fullName>
+        <actions>
+            <name>Definir_Nome_Lead</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Definir_Sobrenome_no_Lead</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 and 2</booleanFilter>
+        <criteriaItems>
+            <field>Lead.FirstName</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.LastName</field>
+            <operation>equals</operation>
+            <value>[Não informado]</value>
+        </criteriaItems>
+        <description>WF para definição do campo Nome e Sobrenome do objeto Lead</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead convertido</fullName>
+        <actions>
+            <name>atualiza_campo_convertido_em</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.IsConverted</field>
+            <operation>equals</operation>
+            <value>Verdadeiro</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead não fornecido</fullName>
+        <actions>
+            <name>Empresa_n_o_fornecido</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.Company</field>
+            <operation>equals</operation>
+            <value>[não fornecido]</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead sem início de trabalho em 5 min</fullName>
+        <actions>
+            <name>Alerta_sobre_lead_sem_in_cio_em_5_minutos</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(Owner:User.Profile.Name = &quot;Televendas Siggo&quot;||Owner:User.Profile.Name = &quot;ADMINISTRADOR COMERCIAL&quot;, Trabalhado_em__c  = Now()- 300)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Leadparado5dias</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Blue tec</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Status</field>
+            <operation>notEqual</operation>
+            <value>Contatado</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Lead_parado_7_dias</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Lead.LastModifiedDate</offsetFromField>
+            <timeLength>7</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Lead_parado_5_dias</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Lead.LastModifiedDate</offsetFromField>
+            <timeLength>5</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Pertenceu à fila</fullName>
+        <actions>
+            <name>Atualiza_pertenceu_fila</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.Fila__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Preenche Campanha no Lead</fullName>
+        <actions>
+            <name>Atualiza_campanha</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>CORP,Siggo</value>
+        </criteriaItems>
+        <description>Preenche o campo texto campanha com info da campanha</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Telefone celular</fullName>
+        <actions>
+            <name>Telefone_celular</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Lead.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Siggo</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Freteiro</value>
+        </criteriaItems>
+        <description>Siggo/Freteiro - Telefone celular deve ser copiado do Celular (preenchido no lead e está mapeado para ir para o Contato)</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Uppercase Lead</fullName>
+        <actions>
+            <name>Uppercase_Lead_Account</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Uppercase_Lead_FirstName</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Uppercase_Lead_LastName</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.LastName</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>status do lead finalizado</fullName>
+        <actions>
+            <name>atualiza_campo_de_finaliza_o_do_lead</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.Status</field>
+            <operation>equals</operation>
+            <value>Qualificado,Não qualificado,Desqualificado,Contato Não Efetivo</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Finalizado_em__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>status do lead trabalhado</fullName>
+        <actions>
+            <name>Atualiza_campo_de_edi_o_do_status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.Status</field>
+            <operation>equals</operation>
+            <value>Primeira tentativa,Decisor ausente,Contato Não Efetivo,Desqualificado,Qualificado</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Motivo_da_desqualifica_o_do_lead__c</field>
+            <operation>notEqual</operation>
+            <value>6 tentativas sem sucesso,Contato Impossível,Contato Impossível - 5 tentativas sem sucesso</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Trabalhado_em__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>transferencia de proprietario do lead</fullName>
+        <actions>
+            <name>atualiza_campo_aceito_em</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISCHANGED( OwnerId )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

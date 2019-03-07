@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Validação para rodar a Trigger_lead --></help>
+    <label><!-- Trigger lead --></label>
+    <name>Trigger_lead__c</name>
+</CustomFieldTranslation>

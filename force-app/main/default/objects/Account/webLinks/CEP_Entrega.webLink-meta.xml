@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CEP_Entrega</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>CEP Entrega</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/37.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/37.0/apex.js&quot;)} 
+
+var acc = new sforce.SObject(&quot;Account&quot;); 
+acc.Id = &#39;{!Account.Id}&#39;; 
+
+acc.Enderecos_Entrega_CEP__c = prompt(&#39;{!$Label.MSG_ERRO_0034}&#39;,&#39;{!Account.Enderecos_Entrega_CEP__c}&#39;); 
+
+acc.Enderecos_Entrega_Numero__c = prompt(&#39;{!$Label.MSG_ERRO_0035}&#39;,&#39;{!Account.Enderecos_Entrega_Numero__c}&#39;); 
+
+acc.Enderecos_Entrega_Complemento__c = prompt(&#39;{!$Label.MSG_ERRO_0036}&#39;,&#39; &#39;); 
+
+acc.Cep_preenchido_entrega__c = true; 
+
+if(acc.Enderecos_Entrega_CEP__c != null &amp;&amp; acc.Enderecos_Entrega_Numero__c != null){
+var result = sforce.apex.execute(&#39;Busca_CEP_Conta&#39;, &#39;cepPrincipal&#39;, {id:[acc.Id], cep:[acc.Enderecos_Entrega_CEP__c], numero:[acc.Enderecos_Entrega_Numero__c], complemento:[acc.Enderecos_Entrega_Complemento__c], principal:&#39;true&#39;, botao:&#39;cep_entrega&#39;}); 
+
+alert(&#39;{!$Label.MSG_ERRO_0037}&#39;); 
+window.location.reload();
+}</url>
+</WebLink>

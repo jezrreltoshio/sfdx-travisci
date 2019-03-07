@@ -3,12 +3,6 @@
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <email>valter.pessoa@sascar.com.br</email>
     <name>Backoffice TV</name>
-    <queueMembers>
-        <users>
-            <user>marlon.oliveira@sascar.com.br</user>
-            <user>valter.pessoa@sascar.com.br</user>
-        </users>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Lead</sobjectType>
     </queueSobject>

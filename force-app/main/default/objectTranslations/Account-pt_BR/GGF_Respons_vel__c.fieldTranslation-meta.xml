@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- GGF Responsável --></label>
+    <name>GGF_Respons_vel__c</name>
+    <picklistValues>
+        <masterLabel>Alan Garcia</masterLabel>
+        <translation><!-- Alan Garcia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alexandre Meirelles</masterLabel>
+        <translation><!-- Alexandre Meirelles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>André Morais</masterLabel>
+        <translation><!-- André Morais --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carlos Lucas</masterLabel>
+        <translation><!-- Carlos Lucas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>César Amaral</masterLabel>
+        <translation><!-- César Amaral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Elísio Santos</masterLabel>
+        <translation><!-- Elísio Santos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emerson Nogueira</masterLabel>
+        <translation><!-- Emerson Nogueira --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emerson Sousa</masterLabel>
+        <translation><!-- Emerson Sousa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jairo Antunes</masterLabel>
+        <translation><!-- Jairo Antunes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Luiz Felipe Gouvea</masterLabel>
+        <translation><!-- Luiz Felipe Gouvea --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marcelo Barros</masterLabel>
+        <translation><!-- Marcelo Barros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nivaldo Granja</masterLabel>
+        <translation><!-- Nivaldo Granja --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rogério Magalhães</masterLabel>
+        <translation><!-- Rogério Magalhães --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thiago Pereira</masterLabel>
+        <translation><!-- Thiago Pereira --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

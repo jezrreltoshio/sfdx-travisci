@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>ADMINISTRADOR</submitter>
+        <type>roleSubordinates</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Owner</field>
+        <field>Name</field>
+        <field>Nome_catalogo__c</field>
+        <field>Valor_unit_rio_mensal_new__c</field>
+        <field>Valor_total_desconto__c</field>
+        <field>Observa_es_do_desconto__c</field>
+        <field>Taxa_de_ades_o__c</field>
+        <field>Alcada_Sup_Max__c</field>
+        <field>Alcada_Sup_Min__c</field>
+        <field>Alcada_Ger_Max__c</field>
+        <field>Alcada_Ger_Min__c</field>
+        <field>Alcada_Dir_Max__c</field>
+        <field>Alcada_Dir_Min__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Owner</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND(
+Valor_total_desconto__c &lt;= 0,
+Valor_da_taxa_de_ades_o__c &gt;= Taxa_Instalacao_Minima__c
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Aprovação - Adesão / Monitoramento (Proprietário)</label>
+        <name>Aprovacao_Adesao_Monitoramento_Proprietario</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>OR(
+Valor_da_taxa_de_ades_o__c &lt; Taxa_Instalacao_Minima__c,
+Valor_total_desconto__c &gt; 0
+)</formula>
+        </entryCriteria>
+        <label>Aprovação - Adesão / Monitoramento (Gerencia)</label>
+        <name>Aprovacao_Adesao_Monitoramento_Gerencia</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <emailTemplate>unfiled$public/Aprova_o_de_oportunidade</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>AND( 
+TEXT(Aprova_o__c) &lt;&gt; &#39;Aprovado&#39;, 
+OR( 
+Pricebook2.Prazo_catalogo__c = 24, 
+Pricebook2.Prazo_catalogo__c = 48, 
+Pricebook2.Prazo_catalogo__c = 36 
+), 
+OR( 
+RecordType.Name = &#39;CORP&#39;, 
+RecordType.Name = &#39;OTR&#39; 
+), 
+NOT( CONTAINS(Pricebook2.Name, &#39;Tipo&#39;) ) 
+)</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Aprova_o_total_da_oportunidade</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Aprovada_taxa_instalacao</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Atualiza_aprova_o_da_oportunidade</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Desmarca_desconto_taxa</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Atualiza_reprova_o_da_oportunidade</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Desmarca_desconto_taxa</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Rejei_o_da_oportunidade</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Reprovada_taxa_instalacao</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Aprova_desc_taxa_instalacao</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Aprova_o_pendente</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Desconto adesão / monitoram (1 Nivel)</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>true</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

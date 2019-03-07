@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Conservação da carga</fullName>
+        <default>false</default>
+        <label>Conservação da carga</label>
+    </customValue>
+    <customValue>
+        <fullName>Controle de custos</fullName>
+        <default>false</default>
+        <label>Controle de custos</label>
+    </customValue>
+    <customValue>
+        <fullName>Cross border</fullName>
+        <default>false</default>
+        <label>Cross border</label>
+    </customValue>
+    <customValue>
+        <fullName>Gestão de riscos</fullName>
+        <default>false</default>
+        <label>Gestão de riscos</label>
+    </customValue>
+    <customValue>
+        <fullName>Pontualidade</fullName>
+        <default>false</default>
+        <label>Pontualidade</label>
+    </customValue>
+    <customValue>
+        <fullName>Prevenção de acidentes</fullName>
+        <default>false</default>
+        <label>Prevenção de acidentes</label>
+    </customValue>
+    <customValue>
+        <fullName>Produtividade</fullName>
+        <default>false</default>
+        <label>Produtividade</label>
+    </customValue>
+    <customValue>
+        <fullName>Segurança da carga</fullName>
+        <default>false</default>
+        <label>Segurança da carga</label>
+    </customValue>
+    <customValue>
+        <fullName>Prevenção de acidentes - BT</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Prevenção de acidentes - BT</label>
+    </customValue>
+    <customValue>
+        <fullName>Segurança da carga e veículo</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Segurança da carga e veículo</label>
+    </customValue>
+    <customValue>
+        <fullName>Segurança</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Segurança</label>
+    </customValue>
+    <customValue>
+        <fullName>Produtividade - BT</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Produtividade - BT</label>
+    </customValue>
+    <customValue>
+        <fullName>Controle de custo - BT</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Controle de custo - BT</label>
+    </customValue>
+    <masterLabel>Necessidade principal</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

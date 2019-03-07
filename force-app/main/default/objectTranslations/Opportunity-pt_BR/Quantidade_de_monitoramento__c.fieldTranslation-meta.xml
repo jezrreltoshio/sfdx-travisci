@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Quantidade do produto da família: Monitoramento --></help>
+    <label><!-- Quantidade de monitoramento --></label>
+    <name>Quantidade_de_monitoramento__c</name>
+</CustomFieldTranslation>

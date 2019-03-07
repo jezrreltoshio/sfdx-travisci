@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo_da_Desqualificacao__c</fullName>
+    <description>Refere-se ao valor do campo lista de opções Motivo da desqualificação do lead (API: Motivo_da_desqualifica_o_do_lead__c) do objeto Lead.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Refere-se ao valor do campo lista de opções Motivo da desqualificação do lead (API: Motivo_da_desqualifica_o_do_lead__c) do objeto Lead.</inlineHelpText>
+    <label>Motivo da Desqualificação</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

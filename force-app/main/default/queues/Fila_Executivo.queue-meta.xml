@@ -3,16 +3,6 @@
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <email>aline.rodrigues@sascar.com.br</email>
     <name>Fila Executivo</name>
-    <queueMembers>
-        <users>
-            <user>aline.rodrigues@sascar.com.br</user>
-            <user>andreia.toledo@sascar.com.br</user>
-            <user>m.fugisava@sascar.com.br</user>
-            <user>mariana.bandeira@sascar.com.br</user>
-            <user>ruwan.monteiro@sascar.com.br</user>
-            <user>silvana.guerra@sascar.com.br</user>
-        </users>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Lead</sobjectType>
     </queueSobject>

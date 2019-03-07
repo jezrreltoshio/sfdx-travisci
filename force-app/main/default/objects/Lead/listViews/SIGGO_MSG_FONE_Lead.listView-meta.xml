@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIGGO_MSG_FONE_Lead</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.MOBILE_PHONE</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <columns>Data_Hora_criacao__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>notContain</operation>
+        <value>Decisor ausente,Contatado,Qualificado,Não qualificado,Desqualificado,Contat</value>
+    </filters>
+    <filters>
+        <field>LEAD.CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>8/1/2016 12:00 AM</value>
+    </filters>
+    <label>SIGGO MSG FONE</label>
+    <language>pt_BR</language>
+    <queue>SIGGO_MSG_FONE</queue>
+    <sharedTo>
+        <role>SUPERVISOR_CARGO_TRACCK</role>
+        <role>SUPERVISOR_CORE_2</role>
+        <role>SUPERVISOR_FRETEIRO</role>
+        <role>SUPERVISO_R_SIGGO</role>
+    </sharedTo>
+</ListView>

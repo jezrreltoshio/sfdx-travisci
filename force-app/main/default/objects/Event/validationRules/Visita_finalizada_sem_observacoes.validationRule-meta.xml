@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Visita_finalizada_sem_observacoes</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+OR(Fim_da_visita__c = TRUE, 
+Visita_Concluida__c = TRUE),
+
+ISBLANK (  Pend_ncias_Observa_es_da_Visita__c  )
+)</errorConditionFormula>
+    <errorDisplayField>Pend_ncias_Observa_es_da_Visita__c</errorDisplayField>
+    <errorMessage>Para finalizar este compromisso, é necessário preencher as observações da visita.</errorMessage>
+</ValidationRule>

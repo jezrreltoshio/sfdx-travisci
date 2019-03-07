@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Valida_campos_do_cartao_credito</fullName>
+    <active>false</active>
+    <description>Valida se todos os campos do cartão de crédito estão preenchidos, se forma de pagamento igual a Cartão de Crédito.</description>
+    <errorConditionFormula>AND( 
+  OR( ISPICKVAL( FormaCobranca__c, &quot;24-Cartão Visa&quot;), ISPICKVAL( FormaCobranca__c, &quot;25-Cartão Mastercard&quot;) ), 
+  OR( ISNULL( Cobranca_Cartao_Numero__c ), ISNULL(  Cobranca_Cartao_CodigoSeguranca__c ), ISNULL(  Cobranca_Cartao_Vcto__c ) ) )</errorConditionFormula>
+    <errorMessage>Para forma de cobrança Cartão de Crédito, informe os campos Número do Cartão, Código de Segurança e Vencimento do Cartão.</errorMessage>
+</ValidationRule>

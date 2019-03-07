@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Qual concorrente? --></label>
+    <name>Qual_concorrente__c</name>
+    <picklistValues>
+        <masterLabel>ALLTECH</masterLabel>
+        <translation><!-- ALLTECH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AUTOTRAC</masterLabel>
+        <translation><!-- AUTOTRAC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BYSAT</masterLabel>
+        <translation><!-- BYSAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CARSYSTEM</masterLabel>
+        <translation><!-- CARSYSTEM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CONFORCE</masterLabel>
+        <translation><!-- CONFORCE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GOLSAT</masterLabel>
+        <translation><!-- GOLSAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITURAN</masterLabel>
+        <translation><!-- ITURAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LINK</masterLabel>
+        <translation><!-- LINK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LO JACK</masterLabel>
+        <translation><!-- LO JACK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MEGATRANS</masterLabel>
+        <translation><!-- MEGATRANS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MICROTRACK</masterLabel>
+        <translation><!-- MICROTRACK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MSI</masterLabel>
+        <translation><!-- MSI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ONIXSAT</masterLabel>
+        <translation><!-- ONIXSAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OUTROS</masterLabel>
+        <translation><!-- OUTROS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PARASAT</masterLabel>
+        <translation><!-- PARASAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POINTER</masterLabel>
+        <translation><!-- POINTER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PORTO SEGURO</masterLabel>
+        <translation><!-- PORTO SEGURO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POSITRON</masterLabel>
+        <translation><!-- POSITRON --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEVA E MOVA</masterLabel>
+        <translation><!-- SEVA E MOVA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SITRACK</masterLabel>
+        <translation><!-- SITRACK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOFTRACK</masterLabel>
+        <translation><!-- SOFTRACK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOLINFTEC</masterLabel>
+        <translation><!-- SOLINFTEC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TELECOM TRACK</masterLabel>
+        <translation><!-- TELECOM TRACK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TFLEET</masterLabel>
+        <translation><!-- TFLEET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRACKER</masterLabel>
+        <translation><!-- TRACKER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRUCKLOG</masterLabel>
+        <translation><!-- TRUCKLOG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRUSCOM</masterLabel>
+        <translation><!-- TRUSCOM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRUSTCOM</masterLabel>
+        <translation><!-- TRUSTCOM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZATIX</masterLabel>
+        <translation><!-- ZATIX --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

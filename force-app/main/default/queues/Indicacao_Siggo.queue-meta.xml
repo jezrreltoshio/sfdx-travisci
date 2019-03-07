@@ -3,11 +3,6 @@
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <email>silvia.maia@sascar.com.br</email>
     <name>Indicacao Siggo</name>
-    <queueMembers>
-        <roles>
-            <role>DATABASEMKT</role>
-        </roles>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Lead</sobjectType>
     </queueSobject>

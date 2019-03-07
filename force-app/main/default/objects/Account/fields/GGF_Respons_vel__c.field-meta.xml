@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GGF_Respons_vel__c</fullName>
+    <externalId>false</externalId>
+    <label>GGF Responsável</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alan Garcia</fullName>
+                <default>false</default>
+                <label>Alan Garcia</label>
+            </value>
+            <value>
+                <fullName>Alexandre Meirelles</fullName>
+                <default>false</default>
+                <label>Alexandre Meirelles</label>
+            </value>
+            <value>
+                <fullName>André Morais</fullName>
+                <default>false</default>
+                <label>André Morais</label>
+            </value>
+            <value>
+                <fullName>Carlos Lucas</fullName>
+                <default>false</default>
+                <label>Carlos Lucas</label>
+            </value>
+            <value>
+                <fullName>César Amaral</fullName>
+                <default>false</default>
+                <label>César Amaral</label>
+            </value>
+            <value>
+                <fullName>Elísio Santos</fullName>
+                <default>false</default>
+                <label>Elísio Santos</label>
+            </value>
+            <value>
+                <fullName>Emerson Sousa</fullName>
+                <default>false</default>
+                <label>Emerson Sousa</label>
+            </value>
+            <value>
+                <fullName>Jairo Antunes</fullName>
+                <default>false</default>
+                <label>Jairo Antunes</label>
+            </value>
+            <value>
+                <fullName>Luiz Felipe Gouvea</fullName>
+                <default>false</default>
+                <label>Luiz Felipe Gouvea</label>
+            </value>
+            <value>
+                <fullName>Marcelo Barros</fullName>
+                <default>false</default>
+                <label>Marcelo Barros</label>
+            </value>
+            <value>
+                <fullName>Nivaldo Granja</fullName>
+                <default>false</default>
+                <label>Nivaldo Granja</label>
+            </value>
+            <value>
+                <fullName>Rogério Magalhães</fullName>
+                <default>false</default>
+                <label>Rogério Magalhães</label>
+            </value>
+            <value>
+                <fullName>Thiago Pereira</fullName>
+                <default>false</default>
+                <label>Thiago Pereira</label>
+            </value>
+            <value>
+                <fullName>Emerson Nogueira</fullName>
+                <default>false</default>
+                <label>Emerson Nogueira</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

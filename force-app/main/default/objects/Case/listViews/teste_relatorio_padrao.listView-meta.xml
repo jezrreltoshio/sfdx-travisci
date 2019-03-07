@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>teste_relatorio_padrao</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CONTACT.ACCOUNT</columns>
+    <columns>StatusResposta__c</columns>
+    <columns>StatusSolucao__c</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>CASES.ESCALATION_STATE</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>MotivoReclamacao__c</columns>
+    <columns>CASES.SOURCE</columns>
+    <filterScope>Everything</filterScope>
+    <label>teste relatorio padrao</label>
+    <sharedTo>
+        <group>Ouvidoria</group>
+    </sharedTo>
+</ListView>

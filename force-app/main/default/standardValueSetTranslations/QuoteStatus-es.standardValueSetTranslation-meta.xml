@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Aceito</masterLabel>
+        <translation>Aceptado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Apresentado</masterLabel>
+        <translation>Presentado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Aprovado</masterLabel>
+        <translation>Aprobado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Em revisão</masterLabel>
+        <translation>En revisión</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Negado</masterLabel>
+        <translation><!-- Negado --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Rascunho</masterLabel>
+        <translation>Borrador</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Rejeitado</masterLabel>
+        <translation>Rechazado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Revisão necessária</masterLabel>
+        <translation>Revisión necesaria</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

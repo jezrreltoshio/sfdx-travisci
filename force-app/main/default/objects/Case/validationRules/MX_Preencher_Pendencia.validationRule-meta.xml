@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MX_Preencher_Pendencia</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ RecordType.DeveloperName = &quot;Mexico&quot;,
+ ISPICKVAL(Status , &quot;Pendente&quot;),
+ ISBLANK(Pendencia__c)
+)</errorConditionFormula>
+    <errorDisplayField>Pendencia__c</errorDisplayField>
+    <errorMessage>Preencha a pendência para poder salvar o registro.</errorMessage>
+</ValidationRule>

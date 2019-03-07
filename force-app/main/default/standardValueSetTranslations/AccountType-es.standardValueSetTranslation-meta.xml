@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Carregador</masterLabel>
+        <translation>Dador de carga</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Centro de caminhões</masterLabel>
+        <translation>Truck center</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cliente base</masterLabel>
+        <translation>Cliente actual</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cliente indicador</masterLabel>
+        <translation><!-- Cliente indicador --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Comércio</masterLabel>
+        <translation><!-- Comércio --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Corretora</masterLabel>
+        <translation><!-- Corretora --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Embarcador</masterLabel>
+        <translation><!-- Embarcador --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Embarcador e Transportador</masterLabel>
+        <translation><!-- Embarcador e Transportador --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Escolta</masterLabel>
+        <translation><!-- Escolta --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ex-Cliente</masterLabel>
+        <translation><!-- Ex-Cliente --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Gerenciador de Risco</masterLabel>
+        <translation>GR</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicador</masterLabel>
+        <translation><!-- Indicador --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicadores de negócios</masterLabel>
+        <translation><!-- Indicadores de negócios --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indústria</masterLabel>
+        <translation><!-- Indústria --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indústria e Comércio</masterLabel>
+        <translation><!-- Indústria e Comércio --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Novo cliente</masterLabel>
+        <translation>Nuevo Cliente</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Novo parceiro</masterLabel>
+        <translation><!-- Novo parceiro --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Prestador de Serviços (RT)</masterLabel>
+        <translation><!-- Prestador de Serviços (RT) --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Representantes técnicos</masterLabel>
+        <translation><!-- Representantes técnicos --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Segurado</masterLabel>
+        <translation>Asegurado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Seguradora</masterLabel>
+        <translation><!-- Seguradora --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Serviços</masterLabel>
+        <translation><!-- Serviços --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Sinergia Michelin KA</masterLabel>
+        <translation><!-- Sinergia Michelin KA --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Transportadora</masterLabel>
+        <translation><!-- Transportadora --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

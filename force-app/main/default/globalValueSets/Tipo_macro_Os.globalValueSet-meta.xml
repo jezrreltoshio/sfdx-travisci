@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Assistência</fullName>
+        <default>false</default>
+        <label>Assistência</label>
+    </customValue>
+    <customValue>
+        <fullName>Instalação</fullName>
+        <default>false</default>
+        <label>Instalação</label>
+    </customValue>
+    <customValue>
+        <fullName>Reinstalação</fullName>
+        <default>false</default>
+        <label>Reinstalação</label>
+    </customValue>
+    <customValue>
+        <fullName>Reinstalação não cobrar</fullName>
+        <default>false</default>
+        <label>Reinstalação não cobrar</label>
+    </customValue>
+    <customValue>
+        <fullName>Retirada</fullName>
+        <default>false</default>
+        <label>Retirada</label>
+    </customValue>
+    <customValue>
+        <fullName>Sem motivo cadastrado</fullName>
+        <default>false</default>
+        <label>Sem motivo cadastrado</label>
+    </customValue>
+    <description>Tipos macros da OS.</description>
+    <masterLabel>Tipo Macro da Os</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

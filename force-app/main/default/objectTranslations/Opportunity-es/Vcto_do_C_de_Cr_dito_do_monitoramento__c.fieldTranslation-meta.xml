@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Digite o vencimento do cartão de crédito no formato mês e ano (MMAA). --></help>
+    <label><!-- Vcto do C. de Crédito do monitoramento --></label>
+    <name>Vcto_do_C_de_Cr_dito_do_monitoramento__c</name>
+</CustomFieldTranslation>

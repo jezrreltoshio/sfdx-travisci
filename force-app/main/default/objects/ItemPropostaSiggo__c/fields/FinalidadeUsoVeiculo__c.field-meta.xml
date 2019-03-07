@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinalidadeUsoVeiculo__c</fullName>
+    <externalId>false</externalId>
+    <label>Finalidade de Uso do Veiculo</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>UtilizacaoVeiculo__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1-Taxi</fullName>
+                <default>false</default>
+                <label>1-Taxi</label>
+            </value>
+            <value>
+                <fullName>2-Funerário</fullName>
+                <default>false</default>
+                <label>2-Funerário</label>
+            </value>
+            <value>
+                <fullName>3-Ambulância</fullName>
+                <default>false</default>
+                <label>3-Ambulância</label>
+            </value>
+            <value>
+                <fullName>4-Policiamento ou Escolta</fullName>
+                <default>false</default>
+                <label>4-Policiamento ou Escolta</label>
+            </value>
+            <value>
+                <fullName>5-Auto Escola</fullName>
+                <default>false</default>
+                <label>5-Auto Escola</label>
+            </value>
+            <value>
+                <fullName>6-Locação</fullName>
+                <default>false</default>
+                <label>6-Locação</label>
+            </value>
+            <value>
+                <fullName>7-Guincho</fullName>
+                <default>false</default>
+                <label>7-Guincho</label>
+            </value>
+            <value>
+                <fullName>8-Escolar</fullName>
+                <default>false</default>
+                <label>8-Escolar</label>
+            </value>
+            <value>
+                <fullName>9-Bombeiro</fullName>
+                <default>false</default>
+                <label>9-Bombeiro</label>
+            </value>
+            <value>
+                <fullName>10-Lotação</fullName>
+                <default>false</default>
+                <label>10-Lotação</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>9-Uso profissional</controllingFieldValue>
+            <valueName>1-Taxi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9-Uso profissional</controllingFieldValue>
+            <valueName>2-Funerário</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9-Uso profissional</controllingFieldValue>
+            <valueName>3-Ambulância</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9-Uso profissional</controllingFieldValue>
+            <valueName>4-Policiamento ou Escolta</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9-Uso profissional</controllingFieldValue>
+            <valueName>5-Auto Escola</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9-Uso profissional</controllingFieldValue>
+            <valueName>6-Locação</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9-Uso profissional</controllingFieldValue>
+            <valueName>7-Guincho</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9-Uso profissional</controllingFieldValue>
+            <valueName>8-Escolar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9-Uso profissional</controllingFieldValue>
+            <valueName>9-Bombeiro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9-Uso profissional</controllingFieldValue>
+            <valueName>10-Lotação</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

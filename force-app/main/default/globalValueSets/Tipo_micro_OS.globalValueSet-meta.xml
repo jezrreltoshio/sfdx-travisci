@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Sem item cadastrado</fullName>
+        <default>false</default>
+        <label>Sem item cadastrado</label>
+    </customValue>
+    <customValue>
+        <fullName>Assistência</fullName>
+        <default>false</default>
+        <label>Assistência</label>
+    </customValue>
+    <customValue>
+        <fullName>Instalação</fullName>
+        <default>false</default>
+        <label>Instalação</label>
+    </customValue>
+    <customValue>
+        <fullName>Instalação – Downgrade</fullName>
+        <default>false</default>
+        <label>Instalação – Downgrade</label>
+    </customValue>
+    <customValue>
+        <fullName>Instalação – Upgrade</fullName>
+        <default>false</default>
+        <label>Instalação – Upgrade</label>
+    </customValue>
+    <customValue>
+        <fullName>Instalação de Equipamento</fullName>
+        <default>false</default>
+        <label>Instalação de Equipamento</label>
+    </customValue>
+    <customValue>
+        <fullName>Reinstalação</fullName>
+        <default>false</default>
+        <label>Reinstalação</label>
+    </customValue>
+    <customValue>
+        <fullName>Reinstalação – TRC</fullName>
+        <default>false</default>
+        <label>Reinstalação – TRC</label>
+    </customValue>
+    <customValue>
+        <fullName>Reinstalação não cobrar</fullName>
+        <default>false</default>
+        <label>Reinstalação não cobrar</label>
+    </customValue>
+    <customValue>
+        <fullName>Retirada</fullName>
+        <default>false</default>
+        <label>Retirada</label>
+    </customValue>
+    <customValue>
+        <fullName>Retirada - TRC</fullName>
+        <default>false</default>
+        <label>Retirada - TRC</label>
+    </customValue>
+    <masterLabel>Tipo Micro da OS</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

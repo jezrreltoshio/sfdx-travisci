@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_de_Conta_Indicadora</fullName>
+    <active>true</active>
+    <description>Tipo de conta indicadora permitidas</description>
+    <errorConditionFormula>AND( 
+NOT(ISBLANK(Conta_Indicadora__c)), 
+NOT(ISPICKVAL(Conta_Indicadora__r.Type, &#39;Transportadora&#39;)), 
+NOT(ISPICKVAL(Conta_Indicadora__r.Type, &#39;Embarcador&#39;)), 
+NOT(ISPICKVAL(Conta_Indicadora__r.Type, &#39;Embarcador e Transportador&#39;)), 
+NOT(ISPICKVAL(Conta_Indicadora__r.Type, &#39;Industria e Comercio&#39;)), 
+NOT(ISPICKVAL(Conta_Indicadora__r.Type, &#39;Industria&#39;)) 
+)</errorConditionFormula>
+    <errorDisplayField>Conta_Indicadora__c</errorDisplayField>
+    <errorMessage>A conta indicadora deve ser uma conta do tipo Transportadora, Embarcador, Transportadora e Embarcador, Industria ou Industria e Comercio</errorMessage>
+</ValidationRule>

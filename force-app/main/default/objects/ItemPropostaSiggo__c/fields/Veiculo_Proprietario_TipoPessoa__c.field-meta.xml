@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Veiculo_Proprietario_TipoPessoa__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo de pessoa</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>F-Física</fullName>
+                <default>false</default>
+                <label>F-Física</label>
+            </value>
+            <value>
+                <fullName>J-Jurídica</fullName>
+                <default>false</default>
+                <label>J-Jurídica</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

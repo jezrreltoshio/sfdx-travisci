@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Quantidade Total de veículos da frota --></label>
+    <name>total_de_veiculos_frota__c</name>
+</CustomFieldTranslation>

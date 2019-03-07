@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Layout de tarefa</layout>
+        <sections>
+            <label>Enlaces personalizados</label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage>Informar Detalles de la pérdida cuando el Motivo de la pérdida es Otros.</errorMessage>
+        <name>Motivo_perda_Outros</name>
+    </validationRules>
+</CustomObjectTranslation>

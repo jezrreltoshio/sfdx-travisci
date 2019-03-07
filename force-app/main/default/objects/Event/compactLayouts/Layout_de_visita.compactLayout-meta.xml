@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Layout_de_visita</fullName>
+    <fields>OwnerId</fields>
+    <fields>WhatId</fields>
+    <fields>Subject</fields>
+    <fields>StartDateTime</fields>
+    <fields>EndDateTime</fields>
+    <fields>Location</fields>
+    <fields>WhoId</fields>
+    <fields>Prospec_o_para_quantas_pe_as__c</fields>
+    <fields>Tipo_de_equipamento__c</fields>
+    <fields>Tipo_de_visita__c</fields>
+    <label>Layout de visita</label>
+</CompactLayout>

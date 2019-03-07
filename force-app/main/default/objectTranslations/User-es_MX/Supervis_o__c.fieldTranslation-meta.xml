@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Supervisão --></label>
+    <name>Supervis_o__c</name>
+    <picklistValues>
+        <masterLabel>CO</masterLabel>
+        <translation><!-- CO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MG</masterLabel>
+        <translation><!-- MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NEI</masterLabel>
+        <translation><!-- NEI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NEII</masterLabel>
+        <translation><!-- NEII --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PR</masterLabel>
+        <translation><!-- PR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RJES</masterLabel>
+        <translation><!-- RJES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RS</masterLabel>
+        <translation><!-- RS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC</masterLabel>
+        <translation><!-- SC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPA</masterLabel>
+        <translation><!-- SPA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPC</masterLabel>
+        <translation><!-- SPC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPI</masterLabel>
+        <translation><!-- SPI --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

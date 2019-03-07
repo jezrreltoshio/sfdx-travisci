@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Gestão de Riscos/Rastreamento --></label>
+    <name>Gest_o_de_Riscos__c</name>
+    <picklistValues>
+        <masterLabel>Posição da Frota</masterLabel>
+        <translation><!-- Posição da Frota --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recuperação da Frota</masterLabel>
+        <translation><!-- Recuperação da Frota --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recuperação do Veículo</masterLabel>
+        <translation><!-- Recuperação do Veículo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utilização da Frota</masterLabel>
+        <translation><!-- Utilização da Frota --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

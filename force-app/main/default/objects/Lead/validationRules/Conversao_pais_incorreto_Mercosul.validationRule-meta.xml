@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conversao_pais_incorreto_Mercosul</fullName>
+    <active>true</active>
+    <description>Se for Lead do Mercosul o país deve ser informado e não pode ser o Brasil</description>
+    <errorConditionFormula>AND( 
+RecordType.Name = &#39;Mercosul&#39;, 
+IsConverted = true, 
+OR(
+Country = NULL,
+UPPER(Country) = &#39;BRASIL&#39;
+)
+)</errorConditionFormula>
+    <errorDisplayField>Country</errorDisplayField>
+    <errorMessage>Informe o pais corretamente</errorMessage>
+</ValidationRule>

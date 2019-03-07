@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Contatado</masterLabel>
+        <translation>Contactado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Contato Não Efetivo</masterLabel>
+        <translation>Contacto no efectivo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Decisor Ausente - Ligar de Manha</masterLabel>
+        <translation>Responsable ausente - llamar por la mañana</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Decisor Ausente - Ligar de Tarde</masterLabel>
+        <translation>Responsable ausente - llamar por la tarde</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Decisor ausente</masterLabel>
+        <translation>Responsable ausente</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Desqualificado</masterLabel>
+        <translation>Descalificado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Em aberto</masterLabel>
+        <translation>Pendiente</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Em aberto - R</masterLabel>
+        <translation>Pendiente - R</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Não qualificado</masterLabel>
+        <translation>No calificado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Primeira tentativa</masterLabel>
+        <translation>Primer intento</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Qualificado</masterLabel>
+        <translation>Calificado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Quarta tentativa</masterLabel>
+        <translation>Cuarto intento</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Segunda tentativa</masterLabel>
+        <translation>Segundo intento</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Terceira tentativa</masterLabel>
+        <translation>Tercero intento</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

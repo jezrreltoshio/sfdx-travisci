@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Qual aro do seu pneu? --></label>
+    <name>Qual_aro_do_seu_pneu__c</name>
+    <picklistValues>
+        <masterLabel>Aro 17,5&#39;&#39; - 215/235</masterLabel>
+        <translation><!-- Aro 17,5&apos;&apos; - 215/235 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aro 20&#39;&#39; - 1000/20</masterLabel>
+        <translation><!-- Aro 20&apos;&apos; - 1000/20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aro 22&#39;&#39; - 1100</masterLabel>
+        <translation><!-- Aro 22&apos;&apos; - 1100 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aro 22,5&#39;&#39; - 275/295</masterLabel>
+        <translation><!-- Aro 22,5&apos;&apos; - 275/295 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OUTRO</masterLabel>
+        <translation><!-- OUTRO --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

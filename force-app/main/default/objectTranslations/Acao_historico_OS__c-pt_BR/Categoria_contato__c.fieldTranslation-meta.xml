@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Categoria do contato --></label>
+    <name>Categoria_contato__c</name>
+    <picklistValues>
+        <masterLabel>Administrativo</masterLabel>
+        <translation><!-- Administrativo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Efetivo</masterLabel>
+        <translation><!-- Efetivo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não efetivo</masterLabel>
+        <translation><!-- Não efetivo --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

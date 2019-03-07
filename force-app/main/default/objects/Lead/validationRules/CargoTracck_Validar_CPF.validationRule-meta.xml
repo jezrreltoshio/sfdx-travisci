@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CargoTracck_Validar_CPF</fullName>
+    <active>true</active>
+    <description>Cargo Tracck - Verifica se deve preencher o CPF.</description>
+    <errorConditionFormula>AND( 
+    RecordType.Name = &#39;Cargo Tracck&#39;, 
+    ISPICKVAL(Tipo_de_pessoa__c, &#39;F-Física&#39;), 
+    ISBLANK(TRIM(CPF__c)) 
+)</errorConditionFormula>
+    <errorDisplayField>CPF__c</errorDisplayField>
+    <errorMessage>Para pessoa física, informe o CPF.</errorMessage>
+</ValidationRule>

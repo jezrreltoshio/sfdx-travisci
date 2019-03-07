@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Adiado</masterLabel>
+        <translation>Deshacer</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Aguardando outra pessoa</masterLabel>
+        <translation>Esperando a otra persona</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Completed</masterLabel>
+        <translation>Completado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Concluído</masterLabel>
+        <translation>Concluido</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Em andamento</masterLabel>
+        <translation>En proceso</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Não iniciado</masterLabel>
+        <translation>No iniciado</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

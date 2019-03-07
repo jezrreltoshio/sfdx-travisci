@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Origem_Lead_Agrupado__c</fullName>
+    <externalId>false</externalId>
+    <label>Origem do Lead Agrupado</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>LeadSource</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ações MKT</fullName>
+                <default>false</default>
+                <label>Ações MKT</label>
+            </value>
+            <value>
+                <fullName>Ataque à base</fullName>
+                <default>false</default>
+                <label>Ataque à base</label>
+            </value>
+            <value>
+                <fullName>Ativo - Prospecção do TV</fullName>
+                <default>false</default>
+                <label>Ativo - Prospecção do TV</label>
+            </value>
+            <value>
+                <fullName>Busca Google</fullName>
+                <default>false</default>
+                <label>Busca Google</label>
+            </value>
+            <value>
+                <fullName>Canal Exclusivo de Indicações</fullName>
+                <default>false</default>
+                <label>Canal Exclusivo de Indicações</label>
+            </value>
+            <value>
+                <fullName>Chat Siggo</fullName>
+                <default>false</default>
+                <label>Chat Siggo</label>
+            </value>
+            <value>
+                <fullName>E-commerce</fullName>
+                <default>false</default>
+                <label>E-commerce</label>
+            </value>
+            <value>
+                <fullName>Email MKT</fullName>
+                <default>false</default>
+                <label>Email MKT</label>
+            </value>
+            <value>
+                <fullName>Evento Feira ou convenção</fullName>
+                <default>false</default>
+                <label>Evento Feira ou convenção</label>
+            </value>
+            <value>
+                <fullName>Facebook</fullName>
+                <default>false</default>
+                <label>Facebook</label>
+            </value>
+            <value>
+                <fullName>Formulário Home Siggo</fullName>
+                <default>false</default>
+                <label>Formulário Home Siggo</label>
+            </value>
+            <value>
+                <fullName>Fornecedor de Leads</fullName>
+                <default>false</default>
+                <label>Fornecedor de Leads</label>
+            </value>
+            <value>
+                <fullName>Frota Circulante - Executivo</fullName>
+                <default>false</default>
+                <label>Frota Circulante - Executivo</label>
+            </value>
+            <value>
+                <fullName>Indicação</fullName>
+                <default>false</default>
+                <label>Indicação</label>
+            </value>
+            <value>
+                <fullName>Indicação de Cliente MGM</fullName>
+                <default>false</default>
+                <label>Indicação de Cliente MGM</label>
+            </value>
+            <value>
+                <fullName>Indicador</fullName>
+                <default>false</default>
+                <label>Indicador</label>
+            </value>
+            <value>
+                <fullName>Indicador de Negócio</fullName>
+                <default>false</default>
+                <label>Indicador de Negócio</label>
+            </value>
+            <value>
+                <fullName>Loja Michelin</fullName>
+                <default>false</default>
+                <label>Loja Michelin</label>
+            </value>
+            <value>
+                <fullName>Mailing</fullName>
+                <default>false</default>
+                <label>Mailing</label>
+            </value>
+            <value>
+                <fullName>Michelin</fullName>
+                <default>false</default>
+                <label>Michelin</label>
+            </value>
+            <value>
+                <fullName>Mídia TV</fullName>
+                <default>false</default>
+                <label>Mídia TV</label>
+            </value>
+            <value>
+                <fullName>Outros</fullName>
+                <default>false</default>
+                <label>Outros</label>
+            </value>
+            <value>
+                <fullName>Parcerias</fullName>
+                <default>false</default>
+                <label>Parcerias</label>
+            </value>
+            <value>
+                <fullName>Site Sascar</fullName>
+                <default>false</default>
+                <label>Site Sascar</label>
+            </value>
+            <value>
+                <fullName>Site Siggo</fullName>
+                <default>false</default>
+                <label>Site Siggo</label>
+            </value>
+            <value>
+                <fullName>Site Siggo Receptivo</fullName>
+                <default>false</default>
+                <label>Site Siggo Receptivo</label>
+            </value>
+            <value>
+                <fullName>SMS</fullName>
+                <default>false</default>
+                <label>SMS</label>
+            </value>
+            <value>
+                <fullName>Totem Michelin</fullName>
+                <default>false</default>
+                <label>Totem Michelin</label>
+            </value>
+            <value>
+                <fullName>You Tube</fullName>
+                <default>false</default>
+                <label>You Tube</label>
+            </value>
+            <value>
+                <fullName>Site Sascar Integrado</fullName>
+                <default>false</default>
+                <label>Site Sascar Integrado</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Site Sascar - Monitoramento Temperatura</controllingFieldValue>
+            <controllingFieldValue>Site Sascar - Isca sensor temperatura</controllingFieldValue>
+            <controllingFieldValue>Site Sascar - Transportadoras</controllingFieldValue>
+            <controllingFieldValue>Site Sascar - Caminhoneiro Autonomo</controllingFieldValue>
+            <controllingFieldValue>Site Sascar - Frotas</controllingFieldValue>
+            <controllingFieldValue>Site Sascar - Cargas</controllingFieldValue>
+            <controllingFieldValue>Site Sascar - Maquinas</controllingFieldValue>
+            <controllingFieldValue>Site Sascar - Noticias</controllingFieldValue>
+            <controllingFieldValue>Site Sascar - Monitoramento</controllingFieldValue>
+            <controllingFieldValue>Site Sascar - Gestao de Carretas</controllingFieldValue>
+            <controllingFieldValue>Site Sascar - Veiculos de Passeio</controllingFieldValue>
+            <controllingFieldValue>Site Sascar - Fale Conosco</controllingFieldValue>
+            <controllingFieldValue>Site Sascar - Home</controllingFieldValue>
+            <controllingFieldValue>Site Sascar - Solucao Monitoramento</controllingFieldValue>
+            <controllingFieldValue>Site Sascar - Solucao GerenciamentoRisco</controllingFieldValue>
+            <controllingFieldValue>Site Sascar - Iscas carga e gestao ativo</controllingFieldValue>
+            <controllingFieldValue>Site Sascar - Gestao do Motorista</controllingFieldValue>
+            <controllingFieldValue>Site Sascar - Telemetria para Acidentes</controllingFieldValue>
+            <controllingFieldValue>Site Sascar - Telemetria para Controle</controllingFieldValue>
+            <valueName>Site Sascar Integrado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SMS</controllingFieldValue>
+            <controllingFieldValue>SMS com resposta</controllingFieldValue>
+            <valueName>SMS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solicitacao Siggo Moto 64</controllingFieldValue>
+            <controllingFieldValue>Solicitacao Siggo Auto 49</controllingFieldValue>
+            <controllingFieldValue>Solicitacao Siggo Moto 39</controllingFieldValue>
+            <controllingFieldValue>Solicitacao Siggo Moto 59</controllingFieldValue>
+            <controllingFieldValue>Solicitacao Siggo Moto 99</controllingFieldValue>
+            <controllingFieldValue>Site Siggo - int</controllingFieldValue>
+            <controllingFieldValue>Fale Conosco Siggo</controllingFieldValue>
+            <controllingFieldValue>Clique aqui Site Siggo</controllingFieldValue>
+            <controllingFieldValue>Landing page rastreador</controllingFieldValue>
+            <controllingFieldValue>Clique aqui Siggo Seguro</controllingFieldValue>
+            <controllingFieldValue>Clique aqui Servicos</controllingFieldValue>
+            <controllingFieldValue>Clique aqui Siggo Produtos</controllingFieldValue>
+            <controllingFieldValue>Landing page Siggo Seguro</controllingFieldValue>
+            <controllingFieldValue>Contato Orçamento Siggo</controllingFieldValue>
+            <controllingFieldValue>Clique aqui Produtos</controllingFieldValue>
+            <controllingFieldValue>Solicitacao Siggo Auto 39</controllingFieldValue>
+            <controllingFieldValue>Solicitacao Siggo Auto 59</controllingFieldValue>
+            <controllingFieldValue>Solicitacao Siggo Auto 99</controllingFieldValue>
+            <controllingFieldValue>Landing page telemetria</controllingFieldValue>
+            <controllingFieldValue>Home do Site</controllingFieldValue>
+            <controllingFieldValue>Solicitacao Siggo Moto 49</controllingFieldValue>
+            <controllingFieldValue>Clique aqui Área Cliente</controllingFieldValue>
+            <controllingFieldValue>Clique aqui Contato</controllingFieldValue>
+            <controllingFieldValue>Clique aqui Dúvidas</controllingFieldValue>
+            <controllingFieldValue>Clique aqui Siggo Aplicativo</controllingFieldValue>
+            <controllingFieldValue>Clique aqui Depoimentos</controllingFieldValue>
+            <controllingFieldValue>Clique aqui Quem Somos</controllingFieldValue>
+            <controllingFieldValue>Blog Siggo</controllingFieldValue>
+            <controllingFieldValue>Clique aqui Como Funciona</controllingFieldValue>
+            <controllingFieldValue>Clique aqui Aonde Estiver</controllingFieldValue>
+            <controllingFieldValue>Clique aqui Área Cliente - FAQ</controllingFieldValue>
+            <controllingFieldValue>Quero ser Parceiro</controllingFieldValue>
+            <controllingFieldValue>Clique aqui Vantagens e Diferenciais</controllingFieldValue>
+            <controllingFieldValue>Clique aqui Produtos Carro</controllingFieldValue>
+            <controllingFieldValue>Clique aqui Produtos Moto</controllingFieldValue>
+            <controllingFieldValue>Clique aqui Busca</controllingFieldValue>
+            <controllingFieldValue>Compre Já Siggo</controllingFieldValue>
+            <valueName>Site Siggo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Busca Google</controllingFieldValue>
+            <controllingFieldValue>Internet</controllingFieldValue>
+            <controllingFieldValue>Site de Busca</controllingFieldValue>
+            <valueName>Busca Google</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indicação de funcionário ou ex</controllingFieldValue>
+            <controllingFieldValue>Indicação Não Cliente</controllingFieldValue>
+            <controllingFieldValue>Indicação CCO</controllingFieldValue>
+            <controllingFieldValue>Indicação Cliente</controllingFieldValue>
+            <controllingFieldValue>Indicação Retenção</controllingFieldValue>
+            <controllingFieldValue>Indicação Externa</controllingFieldValue>
+            <controllingFieldValue>Indicação Interna</controllingFieldValue>
+            <controllingFieldValue>Transf. CCO</controllingFieldValue>
+            <controllingFieldValue>Indicador Corp</controllingFieldValue>
+            <controllingFieldValue>Indicação Parceiro não remunerado</controllingFieldValue>
+            <controllingFieldValue>Indicação de Mailing</controllingFieldValue>
+            <controllingFieldValue>Indicação BT</controllingFieldValue>
+            <controllingFieldValue>Indicação CT</controllingFieldValue>
+            <controllingFieldValue>Indicação Michelin</controllingFieldValue>
+            <controllingFieldValue>Indicação Michelin 360°</controllingFieldValue>
+            <controllingFieldValue>Indicação Sascar</controllingFieldValue>
+            <controllingFieldValue>Indicação de Seguradora</controllingFieldValue>
+            <controllingFieldValue>Indicação Transportadora</controllingFieldValue>
+            <controllingFieldValue>Indicação de Corretora</controllingFieldValue>
+            <controllingFieldValue>Indicação de Gerenciadora de Risco</controllingFieldValue>
+            <valueName>Indicação</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Televendas SP</controllingFieldValue>
+            <controllingFieldValue>Receptivo</controllingFieldValue>
+            <controllingFieldValue>Outros</controllingFieldValue>
+            <controllingFieldValue>Sem origem - Receptivo Abandono</controllingFieldValue>
+            <controllingFieldValue>Televendas</controllingFieldValue>
+            <controllingFieldValue>Grupo controle</controllingFieldValue>
+            <valueName>Outros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Frota Circulante - Executivo</controllingFieldValue>
+            <controllingFieldValue>Programa de Incentivo Executivo</controllingFieldValue>
+            <valueName>Frota Circulante - Executivo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indicador de negócio</controllingFieldValue>
+            <controllingFieldValue>Indicação Canal Indireto - Associações</controllingFieldValue>
+            <controllingFieldValue>Indicação Parceiro remunerado</controllingFieldValue>
+            <valueName>Indicador de Negócio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Campanha</controllingFieldValue>
+            <controllingFieldValue>Mailing Indico</controllingFieldValue>
+            <controllingFieldValue>Campanha Discador 11_09_13</controllingFieldValue>
+            <controllingFieldValue>Mailing - Executivo</controllingFieldValue>
+            <controllingFieldValue>DBM2</controllingFieldValue>
+            <controllingFieldValue>DBM3</controllingFieldValue>
+            <controllingFieldValue>Mailing</controllingFieldValue>
+            <controllingFieldValue>DBM1</controllingFieldValue>
+            <controllingFieldValue>DBM4</controllingFieldValue>
+            <controllingFieldValue>DBM5</controllingFieldValue>
+            <controllingFieldValue>DBM6</controllingFieldValue>
+            <controllingFieldValue>Prospect -  DBM</controllingFieldValue>
+            <controllingFieldValue>DBM7</controllingFieldValue>
+            <controllingFieldValue>DBM10</controllingFieldValue>
+            <valueName>Mailing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site Siggo</controllingFieldValue>
+            <valueName>Site Siggo Receptivo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site Sascar</controllingFieldValue>
+            <controllingFieldValue>Site Sascar - Gestao de Carga</controllingFieldValue>
+            <controllingFieldValue>Site Sascar - Tempo de Direcao</controllingFieldValue>
+            <controllingFieldValue>Site Sascar - Monitoramento</controllingFieldValue>
+            <controllingFieldValue>Site Sascar - Entregas</controllingFieldValue>
+            <controllingFieldValue>Fale Conosco</controllingFieldValue>
+            <controllingFieldValue>Ouvidoria</controllingFieldValue>
+            <controllingFieldValue>Compre Já</controllingFieldValue>
+            <controllingFieldValue>Fale Conosco Sascar</controllingFieldValue>
+            <controllingFieldValue>Landing Page Freteiro</controllingFieldValue>
+            <controllingFieldValue>Como Comprar Sascar</controllingFieldValue>
+            <controllingFieldValue>Site</controllingFieldValue>
+            <valueName>Site Sascar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ufirst S1</controllingFieldValue>
+            <controllingFieldValue>Vendedoor</controllingFieldValue>
+            <controllingFieldValue>CPTarget4</controllingFieldValue>
+            <controllingFieldValue>Leads Solutions 1</controllingFieldValue>
+            <controllingFieldValue>Leads Solutions 2</controllingFieldValue>
+            <controllingFieldValue>Compare em casa</controllingFieldValue>
+            <controllingFieldValue>Segurar.com</controllingFieldValue>
+            <controllingFieldValue>Leads Solutions 3</controllingFieldValue>
+            <controllingFieldValue>Leads Solutions 4</controllingFieldValue>
+            <controllingFieldValue>Lead Vemm</controllingFieldValue>
+            <controllingFieldValue>Lead BeeLeads</controllingFieldValue>
+            <controllingFieldValue>Leads Solutions 5</controllingFieldValue>
+            <controllingFieldValue>Tem usados</controllingFieldValue>
+            <controllingFieldValue>Lead UFirst 2</controllingFieldValue>
+            <controllingFieldValue>Lead Leader Leads</controllingFieldValue>
+            <controllingFieldValue>Lead CPTrilha</controllingFieldValue>
+            <controllingFieldValue>Lead Vemm F</controllingFieldValue>
+            <controllingFieldValue>Lead Vemm S1</controllingFieldValue>
+            <controllingFieldValue>Lead Vemm S2</controllingFieldValue>
+            <controllingFieldValue>Fornecedor Engine Online</controllingFieldValue>
+            <controllingFieldValue>MotorSA</controllingFieldValue>
+            <controllingFieldValue>ITASK</controllingFieldValue>
+            <controllingFieldValue>Lead UFirst</controllingFieldValue>
+            <controllingFieldValue>CPTarget1</controllingFieldValue>
+            <controllingFieldValue>CPTarget2</controllingFieldValue>
+            <controllingFieldValue>CPTarget3</controllingFieldValue>
+            <valueName>Fornecedor de Leads</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-commerce</controllingFieldValue>
+            <valueName>E-commerce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Evento Feira ou convenção</controllingFieldValue>
+            <controllingFieldValue>Expomim</controllingFieldValue>
+            <valueName>Evento Feira ou convenção</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facebook</controllingFieldValue>
+            <valueName>Facebook</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>You Tube</controllingFieldValue>
+            <valueName>You Tube</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rádio</controllingFieldValue>
+            <controllingFieldValue>Folheto/Revista/Jornal</controllingFieldValue>
+            <controllingFieldValue>Ação MKT</controllingFieldValue>
+            <controllingFieldValue>Adesivo na estrada</controllingFieldValue>
+            <controllingFieldValue>Fatura</controllingFieldValue>
+            <valueName>Ações MKT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>E-mail Marketing / SMS</controllingFieldValue>
+            <controllingFieldValue>Email MKT</controllingFieldValue>
+            <valueName>Email MKT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ipiranga</controllingFieldValue>
+            <controllingFieldValue>Página Estácio Assist</controllingFieldValue>
+            <controllingFieldValue>Página Estácio Seguro</controllingFieldValue>
+            <controllingFieldValue>Clube Irmão Caminhoneiro Shell</controllingFieldValue>
+            <controllingFieldValue>Parceiro não remunerado</controllingFieldValue>
+            <valueName>Parcerias</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ataque Base Freteiro</controllingFieldValue>
+            <controllingFieldValue>Ataque a Base Cor</controllingFieldValue>
+            <controllingFieldValue>Ataque Base PST</controllingFieldValue>
+            <controllingFieldValue>Ataque Base Crítica</controllingFieldValue>
+            <controllingFieldValue>Ataque à Cliente de Base</controllingFieldValue>
+            <controllingFieldValue>Ex-Segurado</controllingFieldValue>
+            <controllingFieldValue>Ex-Associação</controllingFieldValue>
+            <controllingFieldValue>Base Michelin</controllingFieldValue>
+            <controllingFieldValue>Base Sascar</controllingFieldValue>
+            <controllingFieldValue>Cliente de base</controllingFieldValue>
+            <controllingFieldValue>Base Blue tec</controllingFieldValue>
+            <valueName>Ataque à base</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indicador Siggo</controllingFieldValue>
+            <valueName>Indicador</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sinergia Michelin KA</controllingFieldValue>
+            <valueName>Michelin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canal Exclusivo de Indicações</controllingFieldValue>
+            <valueName>Canal Exclusivo de Indicações</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV*</controllingFieldValue>
+            <valueName>Mídia TV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Formulario Toten Michelling</controllingFieldValue>
+            <valueName>Totem Michelin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indicação Cliente - MGM</controllingFieldValue>
+            <valueName>Indicação de Cliente MGM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ativo - Prospecção do TV</controllingFieldValue>
+            <valueName>Ativo - Prospecção do TV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chat Siggo</controllingFieldValue>
+            <valueName>Chat Siggo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loja Michelin</controllingFieldValue>
+            <valueName>Loja Michelin</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

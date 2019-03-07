@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Bluetec</layout>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+        <sections>
+            <label><!-- Registro de Visita --></label>
+            <section>Registro de Visita</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CORP - Executivo</layout>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+        <sections>
+            <label><!-- Registro de Visita --></label>
+            <section>Registro de Visita</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Cargo Tracck</layout>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+        <sections>
+            <label><!-- Registro de Visita --></label>
+            <section>Registro de Visita</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout Executivo</layout>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+        <sections>
+            <label><!-- Mix de Produtos --></label>
+            <section>Mix de Produtos</section>
+        </sections>
+        <sections>
+            <label><!-- Registro de Visita --></label>
+            <section>Registro de Visita</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout Siggo</layout>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout TV</layout>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+        <sections>
+            <label><!-- Mix de Produtos --></label>
+            <section>Mix de Produtos</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout de compromisso</layout>
+        <sections>
+            <label>Enlaces personalizados</label>
+            <section>Links personalizados</section>
+        </sections>
+        <sections>
+            <label>Mezcla de Productos</label>
+            <section>Mix de Produtos</section>
+        </sections>
+        <sections>
+            <label>Registro de visita</label>
+            <section>Registro de Visita</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- CORP --></label>
+        <name>CORP</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Cargo Tracck --></label>
+        <name>Cargo_Tracck</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Você só pode concluir visitas programadas para hoje, ou datas anteriores. --></errorMessage>
+        <name>Concluir_Visita_Futura</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Você não pode criar uma visita já concluída. --></errorMessage>
+        <name>Criar_visita_concluida</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>No se puede finalizar una visita antes de iniciarla.</errorMessage>
+        <name>Fim_da_visita_antes_de_iniciar</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Informar Detalles de la pérdida cuando el Motivo de la pérdida es Otros.</errorMessage>
+        <name>Motivo_perda_Outros</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Cuando Tipo de visita es diferente de Evento, es obligatorio rellenar el campo Relacionado con.</errorMessage>
+        <name>Visita_Relativo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>No se puede reiniciar una visita finalizada.</errorMessage>
+        <name>Visita_finalizada_cancelamento</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>No se puede cambiar la fecha y la hora de fin de una visita.</errorMessage>
+        <name>Visita_finalizada_exclusao_hora_fim</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Para finalizar este compromiso, es necesario rellenar las observaciones de la visita.</errorMessage>
+        <name>Visita_finalizada_sem_observacoes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>No se puede cancelar una visita iniciada.</errorMessage>
+        <name>Visita_iniciada_cancelamento</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>No se puede cambiar la fecha y la hora de inicio de una visita.</errorMessage>
+        <name>Visita_iniciada_exclusao_hora_inicio</name>
+    </validationRules>
+</CustomObjectTranslation>

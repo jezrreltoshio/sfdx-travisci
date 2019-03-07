@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Motivo de la descalificación del lead</label>
+    <name>Motivo_da_desqualifica_o_do_lead__c</name>
+    <picklistValues>
+        <masterLabel>1ª Tentativa</masterLabel>
+        <translation><!-- 1ª Tentativa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2ª Tentativa</masterLabel>
+        <translation><!-- 2ª Tentativa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3 Tentativas sem sucesso</masterLabel>
+        <translation>3 Tentativas sin éxito</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3ª Tentativa</masterLabel>
+        <translation><!-- 3ª Tentativa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4ª Tentativa</masterLabel>
+        <translation><!-- 4ª Tentativa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>6 tentativas sem sucesso</masterLabel>
+        <translation>6 intentos sin éxito</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Abandono Chat</masterLabel>
+        <translation>Retirada del Chat</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Baixo IRC</masterLabel>
+        <translation>Bajo IRC</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente de Base</masterLabel>
+        <translation><!-- Cliente de Base --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente já efetuou a compra</masterLabel>
+        <translation>Cliente ya efectuó la compra</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente sem sinistro</masterLabel>
+        <translation>Cliente sin siniestro</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Condição Fiscal não atende</masterLabel>
+        <translation>Condición Fiscal no atiende</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contato Impossível</masterLabel>
+        <translation>Contacto Imposible</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contato Impossível - 5 tentativas sem sucesso</masterLabel>
+        <translation>Contacto Imposible - 5 intentos sin éxito</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decisor ausente</masterLabel>
+        <translation>Responsable ausente</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Destinatário errado (tel/mail)</masterLabel>
+        <translation>Destinatario incorrecto (tel / correo)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E-mail inválido</masterLabel>
+        <translation>Correo electrónico no válido</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E-mail não correspondido</masterLabel>
+        <translation>Correo electrónico no correspondido</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Empresa deixou de ser responsável pela compra da isca</masterLabel>
+        <translation>La empresa dejó de ser responsable de la compra del señuelo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Empresa sem atividade</masterLabel>
+        <translation>Empresa sin actividad</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Estoque elevado</masterLabel>
+        <translation>Inventario elevado</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Falta de Pronta Resposta na região</masterLabel>
+        <translation>Falta de Pronta Respuesta en la región</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fechado em pessoa jurídica</masterLabel>
+        <translation>Cerrado en persona jurídica</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financeiro Sascar - Crédito</masterLabel>
+        <translation>Financiero Sascar - Crédito</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fora do perfil</masterLabel>
+        <translation>Fuera del perfil</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Implantação inviável</masterLabel>
+        <translation>Implantación inviable</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interessado em ouvir em Proposta</masterLabel>
+        <translation>Interesado en escuchar en Propuesta</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interesse Futuro</masterLabel>
+        <translation>Interés Futuro</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead Duplicado</masterLabel>
+        <translation><!-- Lead Duplicado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Linha Cancelada</masterLabel>
+        <translation>Línea Cancelada</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Linha habilitada (Ex-Segurado)</masterLabel>
+        <translation>Línea habilitada (Ex-asegurado)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mudou de residência/emprego</masterLabel>
+        <translation>Cambio de residencia / empleo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NÃO PERTURBE</masterLabel>
+        <translation>NO PERTURBE</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não Contatado</masterLabel>
+        <translation>No conectado</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não Deseja Informar CNP/CPF</masterLabel>
+        <translation><!-- Não Deseja Informar CNP/CPF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não deseja contingência</masterLabel>
+        <translation>No desea contingencia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não deseja migração</masterLabel>
+        <translation>No desea la migración</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não homologado na GR/Seguradora/Corretora</masterLabel>
+        <translation>No homologado en la GR / Aseguradora / Corretora</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não interessado</masterLabel>
+        <translation>No interesado</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não possui novo veículo</masterLabel>
+        <translation>No tiene nuevo vehículo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não possui veículo</masterLabel>
+        <translation>No tiene vehículo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não solicitou contato/Desconhece cadastro</masterLabel>
+        <translation>No solicito contacto / Desconoce registro</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optou pela concorrência - Condições de contrato</masterLabel>
+        <translation>Optó por la competencia - Condiciones de contrato</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optou pela concorrência - Equipe Pronta Resposta</masterLabel>
+        <translation>Optó por la competencia - Equipo Pronta Respuesta</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optou pela concorrência - Produto</masterLabel>
+        <translation>Optó por la competencia - Producto</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optou pela concorrência - Relacionamento comercial</masterLabel>
+        <translation>Optó por la competencia - Relación comercial</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optou pela concorrência - preço</masterLabel>
+        <translation>Optó por la competencia - precio</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outros (obs.)</masterLabel>
+        <translation>Otros (obs.)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Perda de Operação</masterLabel>
+        <translation>Pérdida de funcionamiento</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Possui concorrente</masterLabel>
+        <translation>Posee competidor</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pouco uso do veículo - Empresa familiar</masterLabel>
+        <translation>Poco uso del vehículo - Empresa familiar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prazo de pagamento não atende</masterLabel>
+        <translation>El plazo de pago no atiende</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto não atende - Falta de customização</masterLabel>
+        <translation>Producto no satisface - Falta de personalización</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recusou-se à conversar</masterLabel>
+        <translation>Se negó a hablar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Redução de Monitoramento</masterLabel>
+        <translation>Reducción de Monitoreo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regra de Seguro - Limite para implantação</masterLabel>
+        <translation>Regla de Seguro - Límite para la implementación</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAC / Reclamação</masterLabel>
+        <translation>SAC / Reclamación</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sem condições financeiras para aquisição</masterLabel>
+        <translation>Sin condiciones financieras para la adquisición</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sem garantia de recuperação de toda a carga</masterLabel>
+        <translation>Sin garantía de recuperación de toda la carga</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sem obrigatoriedade na apólice</masterLabel>
+        <translation>Sin obligatoriedad en la póliza</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telefone inexistente</masterLabel>
+        <translation>Teléfono inexistente</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telefone não pertence ao contato</masterLabel>
+        <translation>Teléfono no pertenece al contacto</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transferido para outro segmento</masterLabel>
+        <translation>Transferido a otro segmento</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trote</masterLabel>
+        <translation><!-- Trote --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

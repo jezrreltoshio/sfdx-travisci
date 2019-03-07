@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Siggo_UP_2</fullName>
+    <columns>LEAD.LAST_NAME</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>contains</operation>
+        <value>Em aberto,Primeira tentativa,Segunda tentativa,Terceira tentativa,Quarta ten</value>
+    </filters>
+    <label>Siggo UP</label>
+    <language>pt_BR</language>
+    <queue>SIGGO_UP</queue>
+    <sharedTo>
+        <role>ADMINISTRADOR</role>
+        <role>ADMINISTRADOR_COMERCIAL</role>
+        <role>DATABASEMKT</role>
+        <role>SUPERVISOR_CARGO_TRACCK</role>
+        <role>SUPERVISOR_CORE_2</role>
+        <role>SUPERVISOR_FRETEIRO</role>
+        <role>SUPERVISO_R_SIGGO</role>
+    </sharedTo>
+</ListView>

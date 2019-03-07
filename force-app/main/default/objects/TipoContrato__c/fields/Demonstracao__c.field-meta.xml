@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Demonstracao__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Identifica se o tipo de contrato é do tipo demonstração</description>
+    <externalId>false</externalId>
+    <label>Demonstração</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -4,6 +4,8 @@ git clone https://github.com/<GH_username>/sfdx-travisci.git
 
 https://github.com/travis-ci/travis.rb#installation
 
+http://rubyinstaller.org/
+
  available Travis CI commands in the output
 travis
 
@@ -24,7 +26,7 @@ openssl x509 -req -sha256 -days 365 -in server.csr -signkey server.key -out serv
 -rw-r--r-- 1 1066 May 3 14:03 server.csr
 -rw-r--r-- 1 1675 May 3 14:02 server.key
 
-decodificação (tirar)
+decodificaï¿½ï¿½o (tirar)
 
 - openssl aes-256-cbc -K $encrypted_0db5e9c4fee8_key -iv $encrypted_0db5e9c4fee8_iv
    -in assets/server.key.enc -out assets/server.key -d

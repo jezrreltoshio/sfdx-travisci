@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Botao_inativar_detalhe</fullName>
+    <availability>online</availability>
+    <description>Botão a ser inserido no detalhe do Layout de Supervisor de Atendimento</description>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Inativar</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/42.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/42.0/apex.js&quot;)}
+
+try{
+
+  var query = &quot;select Id, Name, Ativo__c from Acao_historico_OS__c where Id = &#39;{!Acao_historico_OS__c.Id}&#39;&quot;; 
+        
+  var result = sforce.connection.query(query); 
+  var records = result.getArray(&quot;records&quot;); 
+        
+  var myObj = records[0];
+
+  myObj.Ativo__c  = false;
+
+  try{        
+    var results = sforce.connection.update([myObj]);
+    alert(&#39;Registro atualizado com sucesso!&#39;);
+  } catch (excJS) {
+    console.log(excJS);
+  }
+}catch(excJSConfirm){
+  console.log(excJSConfirm);
+}</url>
+</WebLink>

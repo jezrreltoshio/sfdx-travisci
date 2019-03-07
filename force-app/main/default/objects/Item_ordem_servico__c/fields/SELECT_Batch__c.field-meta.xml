@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SELECT_Batch__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Campo de controle que informa quando o Item já passou pela consulta efetuada pela Schedulable: OS_Atualizar_Informacoes_Agendada que roda de hora em hora. (KCA-381)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Campo oculto de controle que informa quando o Item já passou pela consulta efetuada pela Schedulable: OS_Atualizar_Informacoes_Agendada que roda de hora em hora.</inlineHelpText>
+    <label>SELECT Batch</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

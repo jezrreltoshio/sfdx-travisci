@@ -3,14 +3,6 @@
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <email>valter.pessoa@sascar.com.br</email>
     <name>CORP ABANDONO</name>
-    <queueMembers>
-        <roleAndSubordinates>
-            <roleAndSubordinate>SUPERVISOR_CORE_2</roleAndSubordinate>
-        </roleAndSubordinates>
-        <users>
-            <user>ricardo.alves@sascar.com.br</user>
-        </users>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Lead</sobjectType>
     </queueSobject>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo --></label>
+    <name>Tipo__c</name>
+    <picklistValues>
+        <masterLabel>CAMINHONETE</masterLabel>
+        <translation><!-- CAMINHONETE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAMINHÃO</masterLabel>
+        <translation><!-- CAMINHÃO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAMINHÃO ARTICULADO</masterLabel>
+        <translation><!-- CAMINHÃO ARTICULADO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAMINHÃO FORA DE ESTRADA</masterLabel>
+        <translation><!-- CAMINHÃO FORA DE ESTRADA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CARREGADEIRA</masterLabel>
+        <translation><!-- CARREGADEIRA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EMPILHADEIRA A COMBUSTÃO</masterLabel>
+        <translation><!-- EMPILHADEIRA A COMBUSTÃO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EMPILHADEIRA ELETRICA</masterLabel>
+        <translation><!-- EMPILHADEIRA ELETRICA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EMPTY HANDLER</masterLabel>
+        <translation><!-- EMPTY HANDLER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ESCAVADEIRA</masterLabel>
+        <translation><!-- ESCAVADEIRA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRUAS</masterLabel>
+        <translation><!-- GRUAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GUINDASTE</masterLabel>
+        <translation><!-- GUINDASTE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MINICARREGADEIRA</masterLabel>
+        <translation><!-- MINICARREGADEIRA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MOTONIVELADORA</masterLabel>
+        <translation><!-- MOTONIVELADORA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MOTORSCRAPERS</masterLabel>
+        <translation><!-- MOTORSCRAPERS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REACH STACKER</masterLabel>
+        <translation><!-- REACH STACKER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RETROESCAVADEIRA</masterLabel>
+        <translation><!-- RETROESCAVADEIRA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ROLO COMPACTADOR</masterLabel>
+        <translation><!-- ROLO COMPACTADOR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRANSPALETEIRA</masterLabel>
+        <translation><!-- TRANSPALETEIRA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRATOR</masterLabel>
+        <translation><!-- TRATOR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ÔNIBUS</masterLabel>
+        <translation><!-- ÔNIBUS --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

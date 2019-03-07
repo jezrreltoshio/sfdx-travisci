@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Documento Nacional de Identificación. Formato: 00.000.000</help>
+    <label><!-- DNI --></label>
+    <name>DNI__c</name>
+</CustomFieldTranslation>

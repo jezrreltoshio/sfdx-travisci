@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Relacione a conta --></help>
+    <label><!-- Nome da Conta --></label>
+    <name>Nome_da_Conta__c</name>
+    <relationshipLabel><!-- Reembolso --></relationshipLabel>
+</CustomFieldTranslation>

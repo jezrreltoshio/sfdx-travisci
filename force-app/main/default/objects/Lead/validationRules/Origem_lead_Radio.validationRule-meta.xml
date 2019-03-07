@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Origem_lead_Radio</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+ISPICKVAL ( LeadSource, &#39;Rádio&#39;), 
+Campanha__c = &#39;&#39; 
+)</errorConditionFormula>
+    <errorMessage>Origem de lead igual Rádio, deve ser preenchido o campo Campanha Atual.</errorMessage>
+</ValidationRule>

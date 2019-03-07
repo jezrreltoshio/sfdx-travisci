@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MX_Motivo_Cancelamento</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+RecordType.DeveloperName = &quot;Mexico&quot;, 
+ISPICKVAL(Reason , &quot;Cancelación Servicio o NUID&quot;), 
+ISPICKVAL(Motivo_cancelamento__c,&quot;&quot;) 
+)</errorConditionFormula>
+    <errorDisplayField>Motivo_cancelamento__c</errorDisplayField>
+    <errorMessage>Favor preencher o motivo do cancelamento.</errorMessage>
+</ValidationRule>

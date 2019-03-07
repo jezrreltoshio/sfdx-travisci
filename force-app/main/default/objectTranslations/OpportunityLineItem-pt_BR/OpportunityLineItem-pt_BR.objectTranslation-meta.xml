@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>CORP - Argentina</layout>
+        <sections>
+            <label><!-- Alçada --></label>
+            <section>Alçada</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+        <sections>
+            <label><!-- Outras informações --></label>
+            <section>Outras informações</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout Blue tec</layout>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout OTR</layout>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout de produto de oportunidade</layout>
+        <sections>
+            <label><!-- Alçada --></label>
+            <section>Alçada</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+        <sections>
+            <label><!-- Outras informações --></label>
+            <section>Outras informações</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Siggo</layout>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Você não pode dar desconto em produtos desse catálogo de preços. --></errorMessage>
+        <name>Desconto_CORP_24meses</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Você não pode dar desconto superior ao valor do campo &quot;Alçada Sup Max&quot; nesse catálogo de preços. --></errorMessage>
+        <name>Desconto_CORP_48meses</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Somente é permitido desconto em produtos de Monitoramento. --></errorMessage>
+        <name>Desconto_Produtos</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- O desconto só pode ser aplicado a produtos de Monitoramento --></errorMessage>
+        <name>Desconto_diferente_de_Monitoramento</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Você não pode dar desconto em produtos desse catálogo de preços. --></errorMessage>
+        <name>Desconto_em_catalogos_tipo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Catálogo Freteiro não pode dar desconto. --></errorMessage>
+        <name>Desconto_freteiro</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- O prazo do contrato deve ser informado. --></errorMessage>
+        <name>Informa_prazo_do_contrato</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- O produto monitoramento deve ter o mesmo prazo do catálogo de preços selecionado. --></errorMessage>
+        <name>Monitoramento_prazo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Não é possível informar um valor negativo. --></errorMessage>
+        <name>Negativo_Preco_Venda</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- O prazo do contrato para Acessórios não pode ser diferente de 12, 18, 24 ou 36 meses. --></errorMessage>
+        <name>Prazo_Acessorio_Indevido</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- O prazo do contrato para Locação não pode ser diferente de 12, 18, 24 ou 36 meses. --></errorMessage>
+        <name>Prazo_Locacao_Indevido</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- O prazo do contrato para Monitoramento não pode ser diferente do prazo do contrato. --></errorMessage>
+        <name>Prazo_Monitoramento_Indevido</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- O prazo do produto não pode ser maior ou menor que o prazo do catálogo. --></errorMessage>
+        <name>Prazo_Sup_Inf_Catalogo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- O prazo do contrato para assistência não pode ser diferente de 36. --></errorMessage>
+        <name>Prazo_assistencia_Indevido</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Não é possível alterar o Preço Venda, nem dar desconto em locação e acessórios. --></errorMessage>
+        <name>Preco_de_venda_MAIOR_locacao_acessori</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Não é possível alterar o Preço Venda, para dar desconto, utilize o campo desconto e registre o % do desconto (apenas número, ex: 20 para 20%). --></errorMessage>
+        <name>Preco_de_venda_MAIOR_monitoramento</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Não é possível alterar o Preço Venda, nem dar desconto em locação e acessórios. --></errorMessage>
+        <name>Preco_de_venda_MENOR_locacao_acessori</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Não é possível alterar o Preço Venda, para dar desconto, utilize o campo desconto e registre o % do desconto (apenas número, ex: 20 para 20%). --></errorMessage>
+        <name>Preco_de_venda_MENOR_monitoramento</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Não é possível alterar o Preço Venda, nem dar desconto em locação e acessórios. --></errorMessage>
+        <name>Preco_de_venda_alterado_locacao_acessori</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Não é possível alterar o Preço Venda, para dar desconto, utilize o campo desconto e registre o % do desconto (apenas número, ex: 20 para 20%). --></errorMessage>
+        <name>Preco_de_venda_alterado_monitoramento</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Quantidade e preço de venda não podem ser negativos --></errorMessage>
+        <name>Valor_negativo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- É possível alterar apenas os campos &quot;Quantidade&quot; e &quot;Desconto Percentual&quot;. --></errorMessage>
+        <name>VerificaAlteracaoCamposProduto</name>
+    </validationRules>
+</CustomObjectTranslation>

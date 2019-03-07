@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contas_CORP</fullName>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>Data_de_cadastro__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.CORP</value>
+    </filters>
+    <label>Contas CORP</label>
+    <sharedTo>
+        <role>CADASTRO</role>
+        <role>CEO</role>
+        <role>DATABASEMKT</role>
+        <role>DIRETOR</role>
+        <roleAndSubordinates>ADMINISTRADOR_COMERCIAL</roleAndSubordinates>
+        <roleAndSubordinates>GERENTE_CARGO_TRACCK</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_CO</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_KA</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_MG_RJ_ES</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_NONE</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_PR</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_RS</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_SPC</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_SPI</roleAndSubordinates>
+    </sharedTo>
+</ListView>

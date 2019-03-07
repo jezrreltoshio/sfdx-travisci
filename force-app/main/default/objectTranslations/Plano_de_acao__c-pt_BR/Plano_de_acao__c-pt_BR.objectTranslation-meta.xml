@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Plano de conta</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Planos de contas</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Cargo Tracck</layout>
+        <sections>
+            <label><!-- Hierarquia da empresa --></label>
+            <section>Hierarquia da empresa</section>
+        </sections>
+        <sections>
+            <label><!-- Informações da empresa --></label>
+            <section>Informações da empresa</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+        <sections>
+            <label><!-- Visão macro da empresa --></label>
+            <section>Visão macro da empresa</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout de Plano de ação</layout>
+        <sections>
+            <label><!-- Frota total da empresa --></label>
+            <section>Frota total da empresa</section>
+        </sections>
+        <sections>
+            <label><!-- Hierarquia da empresa --></label>
+            <section>Hierarquia da empresa</section>
+        </sections>
+        <sections>
+            <label><!-- Informações da empresa --></label>
+            <section>Informações da empresa</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+        <sections>
+            <label><!-- Visão macro da empresa --></label>
+            <section>Visão macro da empresa</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

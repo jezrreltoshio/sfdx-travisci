@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Indicação para Segmento --></label>
+    <name>Indica_o__c</name>
+    <picklistValues>
+        <masterLabel>NÃO É INDICAÇÃO PARA SEGMENTO</masterLabel>
+        <translation><!-- NÃO É INDICAÇÃO PARA SEGMENTO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PARA BLUETEC</masterLabel>
+        <translation><!-- PARA BLUETEC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PARA CARGO TRACCK</masterLabel>
+        <translation><!-- PARA CARGO TRACCK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PARA CORP</masterLabel>
+        <translation><!-- PARA CORP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PARA FRETEIRO</masterLabel>
+        <translation><!-- PARA FRETEIRO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PARA KEY ACCOUNT</masterLabel>
+        <translation><!-- PARA KEY ACCOUNT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PARA SIGGO</masterLabel>
+        <translation><!-- PARA SIGGO --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

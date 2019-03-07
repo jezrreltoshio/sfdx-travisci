@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Endereço do endpoint de desenvolvimento do Server SIGGO --></help>
+    <label><!-- Server SIGGO desenvolvimento --></label>
+    <name>Server_SIGGO_desenvolvimento__c</name>
+</CustomFieldTranslation>

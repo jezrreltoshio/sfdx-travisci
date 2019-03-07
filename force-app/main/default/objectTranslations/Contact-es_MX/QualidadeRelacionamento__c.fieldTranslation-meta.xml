@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Calidad de relacionamiento</label>
+    <name>QualidadeRelacionamento__c</name>
+    <picklistValues>
+        <masterLabel>Desconhecido</masterLabel>
+        <translation>Desconocido</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neutro</masterLabel>
+        <translation><!-- Neutro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pobre</masterLabel>
+        <translation><!-- Pobre --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Positivo</masterLabel>
+        <translation><!-- Positivo --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

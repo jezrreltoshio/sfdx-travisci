@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cliente__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Campo utilizado na conta CT para a identificação dos clientes.</description>
+    <externalId>false</externalId>
+    <label>Clientes Key Account</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

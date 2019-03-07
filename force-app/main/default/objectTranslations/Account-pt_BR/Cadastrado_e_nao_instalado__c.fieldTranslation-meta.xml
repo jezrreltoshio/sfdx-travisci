@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cadastrado e não instalado --></label>
+    <name>Cadastrado_e_nao_instalado__c</name>
+</CustomFieldTranslation>

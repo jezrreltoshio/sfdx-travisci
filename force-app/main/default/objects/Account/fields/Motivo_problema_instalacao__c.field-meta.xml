@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo_problema_instalacao__c</fullName>
+    <description>Campo para pesquisa para os clientes recém instalados - MGM</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Marque quais são os problemas que ele enfrentou no processo de instalação. Descreva brevemente o(s) problema(s) no campo  OBS.</inlineHelpText>
+    <label>Problema</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agendamento</fullName>
+                <default>false</default>
+                <label>Agendamento</label>
+            </value>
+            <value>
+                <fullName>&quot;No Show&quot; técnico</fullName>
+                <default>false</default>
+                <label>&quot;No Show&quot; técnico</label>
+            </value>
+            <value>
+                <fullName>Danificaram o veículo</fullName>
+                <default>false</default>
+                <label>Danificaram o veículo</label>
+            </value>
+            <value>
+                <fullName>Comportamento do Instalador</fullName>
+                <default>false</default>
+                <label>Comportamento do Instalador</label>
+            </value>
+            <value>
+                <fullName>Outros (Especificar no campo OBS.)</fullName>
+                <default>false</default>
+                <label>Outros (Especificar no campo OBS.)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

@@ -8,26 +8,25 @@
 @isTest
 public class Teste_DAO_Contato {
 
-    // Verifica o método que retorna o contato pelo Id
-    static testmethod void testeGetContatoPorId() {
+    /*
+        @author Renan Rocha
+        @date 28/01/2019
+    */
+    static testMethod void getContatoPorId(){
+        Map<String, sObject> mapBase = Teste_Util.createMapBase();
+        Contact contato = (Contact) mapBase.get('Contact');
 
-		Test.startTest();
+        System.assertEquals(contato.Id, DAO_Contato.getContatoPorId(contato.Id).Id);
+    }
 
-        Util_Conta.carregarTipoRegistro();
+    /*
+        @author Renan Rocha
+        @date 28/01/2019
+    */
+    static testMethod void getContatoByListId(){
+        Map<String, sObject> mapBase = Teste_Util.createMapBase();
+        Contact contato = (Contact) mapBase.get('Contact');
 
-        Account conta = Teste_Util_Conta.criaContaCORP(Util_Conta.CORP, '88.480.580/0001-02');
-		Contact contato = Teste_Util_Contato.criaContato(conta.Id, '83045200', 'rua', 'estado', 'cidade', 'Brasil');
-
-        DAO_Contato.getContatoPorId(contato.Id);
-
-        try {
-			DAO_Contato.getContatoPorId(null);
-        } catch (Exception e){
-			System.Assert(e.getMessage().contains(Label.MSG_ERRO_0025));
-        }
-
-        Test.stopTest();
-
-    } // Fim testeGetContatoPorId
-
+        System.assertEquals(1, DAO_Contato.getContatoByListId(new List<Id>{contato.Id}).size());
+    }
 }

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Seguradora --></label>
+    <name>Seguradora__c</name>
+    <picklistValues>
+        <masterLabel>ACE</masterLabel>
+        <translation><!-- ACE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AIG</masterLabel>
+        <translation><!-- AIG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Allianz</masterLabel>
+        <translation><!-- Allianz --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Argo</masterLabel>
+        <translation><!-- Argo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bradesco</masterLabel>
+        <translation><!-- Bradesco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chubb</masterLabel>
+        <translation><!-- Chubb --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Generali Brasil</masterLabel>
+        <translation><!-- Generali Brasil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HDI</masterLabel>
+        <translation><!-- HDI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Itaú</masterLabel>
+        <translation><!-- Itaú --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liberty</masterLabel>
+        <translation><!-- Liberty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mapfre</masterLabel>
+        <translation><!-- Mapfre --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nenhuma</masterLabel>
+        <translation><!-- Nenhuma --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outra</masterLabel>
+        <translation><!-- Outra --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Porto Seguro</masterLabel>
+        <translation><!-- Porto Seguro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Royal &amp; Sunalliance</masterLabel>
+        <translation><!-- Royal &amp; Sunalliance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SulAmérica</masterLabel>
+        <translation><!-- SulAmérica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tokio Marine</masterLabel>
+        <translation><!-- Tokio Marine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yasuda</masterLabel>
+        <translation><!-- Yasuda --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

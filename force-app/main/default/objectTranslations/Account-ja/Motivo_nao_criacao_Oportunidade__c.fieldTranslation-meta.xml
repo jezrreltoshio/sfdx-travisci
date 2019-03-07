@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Motivo não criação Oportunidade --></label>
+    <name>Motivo_nao_criacao_Oportunidade__c</name>
+    <picklistValues>
+        <masterLabel>Estratégia: cliente pequeno e / ou pequeno influente</masterLabel>
+        <translation><!-- Estratégia: cliente pequeno e / ou pequeno influente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Estratégia: o deslocamento não compensa</masterLabel>
+        <translation><!-- Estratégia: o deslocamento não compensa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financeiro: Cliente em condições financeiras precárias</masterLabel>
+        <translation><!-- Financeiro: Cliente em condições financeiras precárias --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O cliente não existe</masterLabel>
+        <translation><!-- O cliente não existe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto: Nenhum serviço de monitoramento / alarme ativo</masterLabel>
+        <translation><!-- Produto: Nenhum serviço de monitoramento / alarme ativo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto: Sem homologação no GR</masterLabel>
+        <translation><!-- Produto: Sem homologação no GR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto: Sem homologação no doador de carga</masterLabel>
+        <translation><!-- Produto: Sem homologação no doador de carga --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto: sem aprovação no segurador</masterLabel>
+        <translation><!-- Produto: sem aprovação no segurador --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto: sem funções básicas para o cliente</masterLabel>
+        <translation><!-- Produto: sem funções básicas para o cliente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto: sem serviços de recuperação</masterLabel>
+        <translation><!-- Produto: sem serviços de recuperação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rede Técnica: Sem assistência técnica na região</masterLabel>
+        <translation><!-- Rede Técnica: Sem assistência técnica na região --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

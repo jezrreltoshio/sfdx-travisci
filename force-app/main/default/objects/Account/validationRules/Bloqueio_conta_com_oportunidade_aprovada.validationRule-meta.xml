@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bloqueio_conta_com_oportunidade_aprovada</fullName>
+    <active>false</active>
+    <description>Bloqueia a edição da conta caso a oportunidade esteja aprovada e sem a proposta.</description>
+    <errorConditionFormula>IF(!ISCHANGED(Ops_aprovs_autom_sem_proposta__c) &amp;&amp; ! ISCHANGED(Ops_aprovs_manual_sem_proposta__c),
+IF(Ops_aprovs_autom_sem_proposta__c &gt; 0 || Ops_aprovs_manual_sem_proposta__c &gt; 0, true, false), false)</errorConditionFormula>
+    <errorDisplayField>Agencia__c</errorDisplayField>
+    <errorMessage>Você não pode editar esta conta, pois uma ou mais oportunidades associadas à ela estão aprovadas e ainda não tiveram suas propostas geradas. Por favor, reinicie a análise de crédito das oportunidades em questão, ou gere suas propostas antes de editar.</errorMessage>
+</ValidationRule>

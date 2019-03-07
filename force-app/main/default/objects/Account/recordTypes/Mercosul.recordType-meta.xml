@@ -1,0 +1,3323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mercosul</fullName>
+    <active>true</active>
+    <description>Tipo de registro para países do Mercosul, menos Brasil</description>
+    <label>Mercosul</label>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Adesivo na estrada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ataque Base Crítica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ataque Base Freteiro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ataque Base PST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ataque à Cliente de Base</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ativo - Prospecção do TV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Busca Google</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPTarget1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPTarget2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPTarget3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPTarget4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Campanha</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Campanha Discador 11_09_13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canal Exclusivo de Indicações</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chat Siggo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente de base</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clique aqui Contato</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clique aqui Depoimentos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clique aqui Dúvidas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clique aqui Produtos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clique aqui Quem Somos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clique aqui Servicos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clique aqui Siggo Aplicativo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clique aqui Siggo Produtos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clique aqui Siggo Seguro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clique aqui Site Siggo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clique aqui Área Cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clube Irmão Caminhoneiro Shell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Como Comprar Sascar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compare em casa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compre Já</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contato Orçamento Siggo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cross Border 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBM1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBM2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBM3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBM4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBM5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBM6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DBM7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-mail Marketing %2F SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evento Feira ou convenção</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ex-Associação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ex-Segurado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fale Conosco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fale Conosco Sascar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fale Conosco Siggo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fatura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Folheto%2FRevista%2FJornal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formulario Toten Michelling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frota Circulante - Executivo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grupo controle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicador Corp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicador Siggo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicador de negócio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicação CCO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicação Canal Indireto - Associações</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicação Cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicação Cliente - MGM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicação Externa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicação Interna</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicação Não Cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicação Parceiro não remunerado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicação Parceiro remunerado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicação Retenção</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicação Transportadora</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicação de MGM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicação de Mailing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicação de funcionário ou ex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicção de MGM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inteligência Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ipiranga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landing page Siggo Seguro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landing page rastreador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landing page telemetria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead BeeLeads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead CPTrilha</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead Leader Leads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead UFirst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead UFirst 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead Vemm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead Vemm F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead Vemm S1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead Vemm S2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leads Solutions 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leads Solutions 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leads Solutions 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leads Solutions 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leads Solutions 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loja Michelin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mailing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mailing - Executivo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mailing Indico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ouvidoria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parceiro não remunerado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect -  DBM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Página Estácio Assist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Página Estácio Seguro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Receptivo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rádio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS com resposta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Segurar%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sem origem - Receptivo Abandono</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sinergia Michelin KA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Sascar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Sascar - Entregas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Sascar - Gestao de Carga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Sascar - Monitoramento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Sascar - Tempo de Direcao</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Siggo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Siggo - int</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site de Busca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicitacao Siggo Auto 39</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicitacao Siggo Auto 49</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicitacao Siggo Auto 59</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicitacao Siggo Auto 99</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicitacao Siggo Moto 39</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicitacao Siggo Moto 49</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicitacao Siggo Moto 59</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicitacao Siggo Moto 64</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicitacao Siggo Moto 99</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV*</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Televendas SP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tem usados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transf%2E CCO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ufirst S1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendedoor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>You Tube</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Banco__c</picklist>
+        <values>
+            <fullName>0007 - BANCO DE GALICIA Y BUENOS AIRES S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0011 - BANCO DE LA NACION ARGENTINA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0014 - BANCO DE LA PROVINCIA DE BUENOS AIRES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0015 - INDUSTRIAL AND COMMERCIAL BANK OF CHINA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0016 - CITIBANK N%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0017 - BBVA BANCO FRANCES S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0020 - BANCO DE LA PROVINCIA DE CORDOBA S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0027 - BANCO SUPERVIELLE S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0029 - BANCO DE LA CIUDAD DE BUENOS AIRES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0034 - BANCO PATAGONIA S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0044 - BANCO HIPOTECARIO S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0045 - BANCO DE SAN JUAN S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0060 - BANCO DEL TUCUMAN S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0065 - BANCO MUNICIPAL DE ROSARIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0072 - BANCO SANTANDER RIO S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0083 - BANCO DEL CHUBUT S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0086 - BANCO DE SANTA CRUZ S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0093 - BANCO DE LA PAMPA SOCIEDAD DE ECONOMÍA M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0094 - BANCO DE CORRIENTES S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0097 - BANCO PROVINCIA DEL NEUQUÉN SOCIEDAD ANÓ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0150 - HSBC BANK ARGENTINA S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0191 - BANCO CREDICOOP COOPERATIVO LIMITADO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0259 - BANCO ITAU ARGENTINA S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0262 - BANK OF AMERICA%2C NATIONAL ASSOCIATION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0266 - BNP PARIBAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0268 - BANCO PROVINCIA DE TIERRA DEL FUEGO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0269 - BANCO DE LA REPUBLICA ORIENTAL DEL URUGU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0285 - BANCO MACRO S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0299 - BANCO COMAFI SOCIEDAD ANONIMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0301 - BANCO PIANO S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0309 - BANCO RIOJA SOCIEDAD ANONIMA UNIPERSONAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0310 - BANCO DEL SOL S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0311 - NUEVO BANCO DEL CHACO S%2E A%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0312 - BANCO VOII S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0315 - BANCO DE FORMOSA S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0319 - BANCO CMF S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0321 - BANCO DE SANTIAGO DEL ESTERO S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0322 - BANCO INDUSTRIAL S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0325 - DEUTSCHE BANK S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0330 - NUEVO BANCO DE SANTA FE SOCIEDAD ANONIMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0389 - BANCO COLUMBIA S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cadencia__c</picklist>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A planejar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Carteira__c</picklist>
+        <values>
+            <fullName>Freteiro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PME%27S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Top PME%27S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Varejo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Categoria_do_Parceiro__c</picklist>
+        <values>
+            <fullName>BRONZE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OURO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRATA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRANSIÇÃO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Circuito__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A planejar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Comiss_o_v_lida__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Como_soube_da_Siggo__c</picklist>
+        <values>
+            <fullName>Evento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rádio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Conhece_a_Sascar__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Conhece_o_produto__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DDD__c</picklist>
+        <values>
+            <fullName>11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>17</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>21</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>28</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>31</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>32</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>33</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>34</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>37</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>38</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>41</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>42</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>43</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>44</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>47</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>48</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>49</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>51</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>53</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>54</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>55</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>61</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>62</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>63</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>64</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>65</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>66</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>67</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>68</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>69</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>71</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>73</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>74</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>75</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>77</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>79</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>81</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>82</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>83</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>84</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>85</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>86</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>87</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>88</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>89</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>91</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>92</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>93</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>94</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>95</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>96</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>97</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>98</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>99</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DadosPF_EstadoCivil__c</picklist>
+        <values>
+            <fullName>A-Amasiado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C-Casado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D-Divorciado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>O-Outro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S-Solteiro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V-Viúvo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DadosPF_Sexo__c</picklist>
+        <values>
+            <fullName>F-Feminino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M-Masculino</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DadosPJ_InscricaoEstadualUF__c</picklist>
+        <values>
+            <fullName>AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Dia_de_vencimento__c</picklist>
+        <values>
+            <fullName>16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>28</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Email_informado_o_mesmo_do_cadastro__c</picklist>
+        <values>
+            <fullName>NÃO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Enderecos_Cobranca_UF__c</picklist>
+        <values>
+            <fullName>AR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Enderecos_Entrega_UF__c</picklist>
+        <values>
+            <fullName>AR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Enderecos_Principal_UF__c</picklist>
+        <values>
+            <fullName>AR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Estado_Inscricao_Estadual__c</picklist>
+        <values>
+            <fullName>AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UF</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FormaCobranca__c</picklist>
+        <values>
+            <fullName>1- Transferência Bancaria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10- Cartãode Crédito Visa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11- Cartão de Crédito American Express</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12- Cartão de Crédito MasterCard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - Débito Automático</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 %E2%80%93 Cheque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 %E2%80%93 Pago Fácil</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GGF_Respons_vel__c</picklist>
+        <values>
+            <fullName>Alan Garcia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alexandre Meirelles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>André Morais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carlos Lucas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>César Amaral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elísio Santos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emerson Nogueira</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emerson Sousa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jairo Antunes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Luiz Felipe Gouvea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marcelo Barros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nivaldo Granja</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rogério Magalhães</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thiago Pereira</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GR__c</picklist>
+        <values>
+            <fullName>APISUL Multisat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Angelira</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brasil Risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buonny</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opentech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raster</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Gest_o_de_Riscos__c</picklist>
+        <values>
+            <fullName>Posição da Frota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recuperação da Frota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recuperação do Veículo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilização da Frota</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Indica_o__c</picklist>
+        <values>
+            <fullName>NÃO É INDICAÇÃO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PARA BLUETEC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PARA CARGO TRACCK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PARA CORP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PARA FRETEIRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PARA SIGGO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Agricultura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alimentos e bebidas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotecnologia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comunicações</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construção civil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consultoria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Educação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eletrônica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engenharia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entretenimento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipamentos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expedição</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finanças</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Freteiro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Governo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hotelaria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufatura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meio ambiente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mídia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Produtos químicos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saúde</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seguros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sem fins lucrativos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Serviços bancários</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Serviços públicos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tecnologia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecomunicações</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Varejo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vestuário</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>J_Foi_Cliente_Sascar__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ja_possui_login_senha__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ja_utilizou_rastreador__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Marca_do_concorrente__c</picklist>
+        <values>
+            <fullName>AUTOTRAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRIDGESTONE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BYSAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CARSYSTEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONFORCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONTINENTAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FIRESTONE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GOLSAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GOODYEAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ITURAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LINK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ONIXSAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OUTRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIRELLI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POINTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PORTO SEGURO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POSITRON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOFTRACK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRACKER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRUCKLOG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZATIX</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Modelo_do_Ve_culo__c</picklist>
+        <values>
+            <fullName>Modelo do Veículo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Motivo_nao_criacao_Oportunidade__c</picklist>
+        <values>
+            <fullName>Estratégia%3A cliente pequeno e %2F ou pequeno influente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Estratégia%3A o deslocamento não compensa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financeiro%3A Cliente em condições financeiras precárias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>O cliente não existe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Produto%3A Nenhum serviço de monitoramento %2F alarme ativo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Produto%3A Sem homologação no GR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Produto%3A Sem homologação no doador de carga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Produto%3A sem aprovação no segurador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Produto%3A sem funções básicas para o cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Produto%3A sem serviços de recuperação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rede Técnica%3A Sem assistência técnica na região</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Motivo_problema_instalacao__c</picklist>
+        <values>
+            <fullName>%22No Show%22 técnico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agendamento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comportamento do Instalador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Danificaram o veículo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros %28Especificar no campo OBS%2E%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>N_vel_de_relacionamento_com_a_Michelin__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Necessidade_principal__c</picklist>
+        <values>
+            <fullName>Conservação da carga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Controle de custos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gestão de riscos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pontualidade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prevenção de acidentes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Produtividade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Segurança da carga</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Optante_Simples__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origem_Lead_Agrupado__c</picklist>
+        <values>
+            <fullName>Ataque à base</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ativo - Prospecção do TV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ações MKT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Busca Google</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canal Exclusivo de Indicações</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chat Siggo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email MKT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evento Feira ou convenção</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fornecedor de Leads</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frota Circulante - Executivo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicador de Negócio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicação de Cliente MGM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loja Michelin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mailing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Michelin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mídia TV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parcerias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Sascar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Siggo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Siggo Receptivo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Totem Michelin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>You Tube</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Outros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Particular</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Público</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiária</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Por_que_a_Michelin_n_o_foi_a_sua_op_o__c</picklist>
+        <values>
+            <fullName>Atendimento da Revenda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crédito</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Durabilidade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não informado</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Outros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prazo de pagamento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preço</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Por_que_voc_optou_por_essa_marca__c</picklist>
+        <values>
+            <fullName>Atendimento da Revenda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crédito</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Durabilidade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prazo de pagamento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preço</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Possui_Escolta_Armada__c</picklist>
+        <values>
+            <fullName>NÃO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Possui_agregados__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pre_requisitos_para_visita__c</picklist>
+        <values>
+            <fullName>Bota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capacete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colete refletivo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integração</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Protetor auricular</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roupa comprida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Óculos de proteção</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Problema_na_instalacao__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Qual_a_principal_marca_de_pneus_voc_com__c</picklist>
+        <values>
+            <fullName>Bridgestone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Continental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Firestone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Goodyear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Michelin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pirelli</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Qual_aro_do_seu_pneu__c</picklist>
+        <values>
+            <fullName>Aro 17%2C5%27%27 - 215%2F235</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aro 20%27%27 - 1000%2F20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aro 22%27%27 - 1100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aro 22%2C5%27%27 - 275%2F295</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OUTRO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Qual_o_modelo_de_contrata_o_da_tecnolog__c</picklist>
+        <values>
+            <fullName>Comodato</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Venda</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Quantidade_de_ve_culos__c</picklist>
+        <values>
+            <fullName>1 a 05</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 a 10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 a 50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11 A 50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Acima de 50</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ramo_de_Atividade__c</picklist>
+        <values>
+            <fullName>Alimentos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BEBIDAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carga Especial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carga Refrigerada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carga Seca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carga Viva</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carga de Valor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cargas Quimicas e Perigosas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cimento e Betoneira</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DISTRIBUIDORA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ELETROELETRONICOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FARMACEUTICOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRIGORIFICO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mineracao e Energia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outro</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ramo_de_atividade_secund_ria__c</picklist>
+        <values>
+            <fullName>ASSOCIACAO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUTOPECAS E COMBUSTIVEIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aeroportos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agricultura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alimentos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alimentos e Bebidas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BEBIDAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CIGARRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COMERCIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cana de Acucar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carga Especial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carga Expressa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carga Refrigerada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carga Seca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carga Solida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carga Viva</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carga de Valor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cargas Quimicas e Perigosas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cegonheiro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cimento e Betoneira</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coleta de Lixo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Combustivel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construcao</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construcao Civil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Container</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corretora</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DISTRIBUIDORA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ELETROELETRONICOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESCOLAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EXTRACAO DE MINERIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FARMACEUTICOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRETEIRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRIGORIFICO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FROTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frotas Leves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gerenciadora</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gerenciadora de Risco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guincho e Reboque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LINHA AMARELA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOCADORA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAQUINA%2FOUTROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METALURGICOS E QUIMICOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MUDANCAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Madeireira</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mineracao</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mineracao e Energia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mudancas e Armazenagem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onibus Rodoviario</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onibus Urbano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SERVICOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seguradora</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Servicos de Emergencia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEXTEIS E CONFECCOES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRANSPORTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRANSPORTE DE PASSAGEIROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRANSPORTE ESCOLAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TURISMO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tanques p%2F Alimentos e Bebidas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportadora</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uso Militar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIGILANCIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIVO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Importante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Muito importante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pouco importante</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Recebeu_o_Boleto_de_Instalacao__c</picklist>
+        <values>
+            <fullName>NÃO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Recebeu_o_e_mail_de_Boas_Vindas__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Regional__c</picklist>
+        <values>
+            <fullName>AR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Segmenta_o_atual__c</picklist>
+        <values>
+            <fullName>Carga %2B Sat</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Segmenta_o_contrato__c</picklist>
+        <values>
+            <fullName>Frota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maquina%2Foutros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transporte</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Segmento__c</picklist>
+        <values>
+            <fullName>AGRONEGÓCIOS %2F USINA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ALIMENTÍCIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSOCIACAO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUTOPEÇAS E COMBUSTÍVEIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BEBIDAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CIGARRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COMÉRCIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONSTRUÇÃO CIVIL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DISTRIBUIDORA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ELETROELETRÔNICOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESCOLAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EXTRAÇÃO DE MINÉRIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FARMACÊUTICOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRETEIRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRIGORÍFICO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FROTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GÁS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDÚSTRIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LINHA AMARELA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOCADORA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MADEIREIRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAQUINA%2FOUTROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METALÚRGICOS E QUÍMICOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MUDANÇAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OUTRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEGURADORA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SERVIÇOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIGGO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRANSPORTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRANSPORTE DE PASSAGEIROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRANSPORTE ESCOLAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TURISMO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TÊXTEIS E CONFECÇÕES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIGILÂNCIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIVO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Segmento_principal__c</picklist>
+        <values>
+            <fullName>Conservação de carga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Controle de custos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cross border</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prevenção de acidentes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Produtividade e Pontualidade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Segurança da carga</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Siggo_UtilizacaoVeiculo__c</picklist>
+        <values>
+            <fullName>1-Lazer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2-Locomoção diária</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3-Exercício do trabalho</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9-Uso profissional</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status_Contato_para_MGM__c</picklist>
+        <values>
+            <fullName>Contatado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contato 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contato Não Efetivo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decisor Ausente - Ligar de Manhã</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decisor Ausente - Ligar de Tarde</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decisor ausente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Primeira tentativa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarta tentativa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Segunda tentativa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terceira tentativa</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status_Contato_para_pesquisa__c</picklist>
+        <values>
+            <fullName>Contatado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contato Não Efetivo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decisor Ausente - Ligar de Manhã</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decisor Ausente - Ligar de Tarde</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decisor ausente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Primeira tentativa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarta Tentativa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Segunda tentativa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terceira tentativa</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Supervis_o__c</picklist>
+        <values>
+            <fullName>CENTRO OESTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KEY ACCOUNT MGRJES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KEY ACCOUNT NONECO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KEY ACCOUNT SP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KEY ACCOUNT SUL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NORDESTE I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NORDESTE II</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PARANÁ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RIO GRANDE DO SUL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RJ-ES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SANTA CATARINA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SP-ABC-GRU-LITORAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SP-CAPITAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SP-INTERIOR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tecnologia_de_qual_empresa__c</picklist>
+        <values>
+            <fullName>AUTOTRACK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GRABER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SASCAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZATIX</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Telemetria__c</picklist>
+        <values>
+            <fullName>Dirigibilidade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Identificação do Motorista</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manutenção</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redução de Acidentes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tempo_para_o_Vencimento_do_Contrato__c</picklist>
+        <values>
+            <fullName>Diversos Vencimentos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mais de um ano para vencer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Menos de um ano para vencer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não Informado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vencido</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_cartao__c</picklist>
+        <values>
+            <fullName>Hipercard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mastercard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visa</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_de_cliente__c</picklist>
+        <values>
+            <fullName>Cliente Base</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Novo Cliente</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_de_pessoa__c</picklist>
+        <values>
+            <fullName>F-Física</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>J-Jurídica</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_de_ve_culos__c</picklist>
+        <values>
+            <fullName>Leves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leves %2B Pesados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pesados</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Carregador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Centro de caminhoes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente base</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gerenciador de Risco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Novo cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Segurado</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Veiculo__c</picklist>
+        <values>
+            <fullName>Automovel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Caminhao</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Caminhonete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escavadeira Liebherr R 954C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maquina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onibus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Van</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>agregado__c</picklist>
+        <values>
+            <fullName>NÃO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

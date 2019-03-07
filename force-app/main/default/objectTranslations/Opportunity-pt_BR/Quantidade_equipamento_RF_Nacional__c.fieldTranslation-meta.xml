@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Quantidade equipamento RF Nacional --></label>
+    <name>Quantidade_equipamento_RF_Nacional__c</name>
+</CustomFieldTranslation>

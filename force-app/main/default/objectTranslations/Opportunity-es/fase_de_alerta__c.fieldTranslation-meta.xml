@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- fase de alerta --></label>
+    <name>fase_de_alerta__c</name>
+    <picklistValues>
+        <masterLabel>Foi agendado email - solicitando a instalação</masterLabel>
+        <translation><!-- Foi agendado email - solicitando a instalação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foi agendado email - solicitando agendamento da 2ª visita</masterLabel>
+        <translation><!-- Foi agendado email - solicitando agendamento da 2ª visita --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foi agendado email - solicitando agendamento da 3ª visita</masterLabel>
+        <translation><!-- Foi agendado email - solicitando agendamento da 3ª visita --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foi agendado email - solicitando agendamento da visita</masterLabel>
+        <translation><!-- Foi agendado email - solicitando agendamento da visita --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foi agendado email - solicitando o treinamento</masterLabel>
+        <translation><!-- Foi agendado email - solicitando o treinamento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foi agendado email - solicitando status de fechamento da oportunidade</masterLabel>
+        <translation><!-- Foi agendado email - solicitando status de fechamento da oportunidade --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

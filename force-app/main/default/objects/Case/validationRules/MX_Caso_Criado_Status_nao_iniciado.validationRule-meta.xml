@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MX_Caso_Criado_Status_nao_iniciado</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+RecordType.DeveloperName = &#39;Mexico&#39;,
+ISNEW(),
+NOT(ISPICKVAL(Status, &#39;Não iniciado&#39;)),
+AND(
+NOT(ISPICKVAL(Origin, &#39;Telefone&#39;)),
+NOT(ISPICKVAL(Status, &#39;Em andamento&#39;))
+) 
+)</errorConditionFormula>
+    <errorMessage>No cambie manualmente el estado del caso durante la creación.</errorMessage>
+</ValidationRule>

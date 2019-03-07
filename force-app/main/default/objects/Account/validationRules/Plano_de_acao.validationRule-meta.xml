@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Plano_de_acao</fullName>
+    <active>true</active>
+    <errorConditionFormula>Plano_de_acao__c &gt; 1</errorConditionFormula>
+    <errorMessage>Somente é possível incluir 1 plano de ação. 
+Apenas é possível editar o plano existente.</errorMessage>
+</ValidationRule>

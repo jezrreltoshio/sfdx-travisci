@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIGGO_ABANDONO_Lead</fullName>
+    <filterScope>Queue</filterScope>
+    <label>SIGGO ABANDONO</label>
+    <queue>SIGGO_ABANDONO</queue>
+    <sharedTo>
+        <role>ADMINISTRADOR</role>
+        <role>ADMINISTRADOR_COMERCIAL</role>
+        <role>DATABASEMKT</role>
+        <role>DIRETOR</role>
+        <role>GERENTE_CARGO_TRACCK</role>
+        <role>GERENTE_TELEVENDAS</role>
+        <role>SUPERVISOR_CARGO_TRACCK</role>
+        <role>SUPERVISOR_CORE_2</role>
+        <role>SUPERVISOR_FRETEIRO</role>
+        <role>SUPERVISO_R_SIGGO</role>
+    </sharedTo>
+</ListView>

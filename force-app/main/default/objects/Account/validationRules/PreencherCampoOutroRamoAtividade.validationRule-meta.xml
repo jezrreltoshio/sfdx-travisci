@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreencherCampoOutroRamoAtividade</fullName>
+    <active>true</active>
+    <description>Se o valor do campo &quot;Ramo de atividade&quot; for igual a &quot;OUTRO&quot;, o campo &quot;Outro ramo de atividade&quot; deve ser preenchido.</description>
+    <errorConditionFormula>AND( 
+    ISPICKVAL(Ramo_de_Atividade__c, &#39;OUTRO&#39;),
+    ISBLANK(Outro_ramo_de_atividade__c),
+    AND(
+        OR(
+            UPPER(RecordType.Name) = &#39;CORP&#39;,
+            UPPER(RecordType.Name) = &#39;BLUE TEC&#39;,
+            UPPER(RecordType.Name) = &#39;CARGO TRACCK&#39;
+        )
+    ) 
+)</errorConditionFormula>
+    <errorDisplayField>Outro_ramo_de_atividade__c</errorDisplayField>
+    <errorMessage>Informe o outro ramo de atividade.</errorMessage>
+</ValidationRule>

@@ -3,12 +3,6 @@
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <email>parceiro@sascar.com.br</email>
     <name>PARCEIRO SIGGO</name>
-    <queueMembers>
-        <users>
-            <user>erika.eiko@sascar.com.br</user>
-            <user>lilian.cabral@sascar.com.br</user>
-        </users>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Lead</sobjectType>
     </queueSobject>

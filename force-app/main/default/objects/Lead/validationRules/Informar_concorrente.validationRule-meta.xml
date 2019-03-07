@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Informar_concorrente</fullName>
+    <active>false</active>
+    <description>Validation rule desativada porque ficou defindo que não seria especificado o concorrente quando a opção Possui interesse fosse selecionada.</description>
+    <errorConditionFormula>AND( 
+ISPICKVAL( Marca_do_concorrente__c , &#39;&#39; ), 
+
+OR(
+Utiliza_concorrente__c =true,
+ISPICKVAL(Motivo_da_desqualifica_o_do_lead__c,&#39;Possui Concorrente&#39;)
+
+
+)
+)</errorConditionFormula>
+    <errorDisplayField>Marca_do_concorrente__c</errorDisplayField>
+    <errorMessage>Você deve informar a marca do concorrente.</errorMessage>
+</ValidationRule>

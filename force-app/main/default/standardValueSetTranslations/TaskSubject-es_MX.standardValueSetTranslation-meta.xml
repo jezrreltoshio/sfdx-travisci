@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Asistencia</masterLabel>
+        <translation><!-- Asistencia --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Atendimento Comercial</masterLabel>
+        <translation>Atención al Cliente</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Atendimento Pós vendas</masterLabel>
+        <translation>Servicio post venta</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Bandas</masterLabel>
+        <translation><!-- Bandas --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cancelación de contrato</masterLabel>
+        <translation><!-- Cancelación de contrato --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chamada</masterLabel>
+        <translation>Llamada</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>E-mail</masterLabel>
+        <translation>Correo electrónico</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Enviar carta</masterLabel>
+        <translation><!-- Enviar carta --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Enviar carta/cotação</masterLabel>
+        <translation>Enviar carta / cotización</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Enviar cotação</masterLabel>
+        <translation>Enviar cotización</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Enviar relatório auditoria</masterLabel>
+        <translation><!-- Enviar relatório auditoria --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Falta de Estoque</masterLabel>
+        <translation>Falta de inventario</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Financiero</masterLabel>
+        <translation><!-- Financiero --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Instalaciones</masterLabel>
+        <translation><!-- Instalaciones --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Levantamento de Oportunidade</masterLabel>
+        <translation>Levantamiento de Oportunidad</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Outros</masterLabel>
+        <translation>Otros</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PA Pré Churn</masterLabel>
+        <translation><!-- PA Pré Churn --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Problema Financeiro</masterLabel>
+        <translation>Problema Financiero</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Problemas Operacional</masterLabel>
+        <translation>Problemas Operativos</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Reclamación</masterLabel>
+        <translation><!-- Reclamación --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Retirada</masterLabel>
+        <translation><!-- Retirada --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Retirada con futura reinstalación</masterLabel>
+        <translation><!-- Retirada con futura reinstalación --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Reunião</masterLabel>
+        <translation>Reunión</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Treinamento</masterLabel>
+        <translation>Entrenamiento</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

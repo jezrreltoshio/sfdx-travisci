@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Oportunidade_CORP_GP_desenvolvimento__c</fullName>
+    <description>Endereço do endpoint de desenvolvimento do serviço &quot;GenerateProposal&quot; da Oportunidade CORP</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Endereço do endpoint de desenvolvimento do serviço &quot;GenerateProposal&quot; da Oportunidade CORP</inlineHelpText>
+    <label>Oportunidade CORP GP desenvolvimento</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

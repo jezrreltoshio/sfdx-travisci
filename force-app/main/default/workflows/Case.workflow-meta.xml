@@ -1,0 +1,1454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>BR_Atribuicao_de_Caso</fullName>
+        <description>BR - Atribuição de Caso</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>adm.salesforce@sascar.com.br</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Atribui_o_de_caso</template>
+    </alerts>
+    <alerts>
+        <fullName>BR_Notif_Contato_Fechamento_Caso</fullName>
+        <description>BR - Notif Contato Fechamento Caso</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>adm.salesforce@sascar.com.br</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Casos_fechados</template>
+    </alerts>
+    <alerts>
+        <fullName>BR_Notificacao_Contato_Criacao_do_Caso</fullName>
+        <description>BR - Notificação Contato - Criação do Caso</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>adm.salesforce@sascar.com.br</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Casos</template>
+    </alerts>
+    <alerts>
+        <fullName>Caso_fechado_Email_ao_propriet_rio</fullName>
+        <description>Caso fechado - Email ao proprietário / solicitante</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>adm.salesforce@sascar.com.br</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Casos_fechados</template>
+    </alerts>
+    <alerts>
+        <fullName>CriacaoCaso</fullName>
+        <description>Criação de caso</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>adm.salesforce@sascar.com.br</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Atendimento_Ouvidoria/Criacao_casos</template>
+    </alerts>
+    <alerts>
+        <fullName>E_mail_de_resposta_ao_cliente_para_a_criacao_de_um_caso_do_Mexico</fullName>
+        <ccEmails>rafael.silva@harpiacloud.com.br</ccEmails>
+        <description>E-mail de resposta ao cliente para a criação de um caso do México.</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/MX_Caso_Criado</template>
+    </alerts>
+    <alerts>
+        <fullName>Envia_email_avisando_expiracao_do_caso</fullName>
+        <description>Envia email avisando expiracao do caso</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Ouvidoria</recipient>
+            <type>group</type>
+        </recipients>
+        <senderAddress>adm.salesforce@sascar.com.br</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Atendimento_Ouvidoria/SLA_de_resposta_proximo_de_expirar</template>
+    </alerts>
+    <alerts>
+        <fullName>Enviar_Email_10h_Depois</fullName>
+        <ccEmails>rafael.barbosa.ext@sascar.com.br</ccEmails>
+        <description>Enviar Email 10h Depois</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Diretor</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Gerente</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Responsável</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Supervisor</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/MX_SLA_10h_Depois</template>
+    </alerts>
+    <alerts>
+        <fullName>Enviar_Email_14h_Depois</fullName>
+        <ccEmails>rafael.barbosa.ext@sascar.com.br</ccEmails>
+        <description>Enviar Email 14h Depois</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Diretor</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Diretor Geral</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Gerente</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Responsável</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Supervisor</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/MX_SLA_14h_Depois</template>
+    </alerts>
+    <alerts>
+        <fullName>Enviar_Email_1h_Antes</fullName>
+        <ccEmails>rafael.barbosa.ext@sascar.com.br</ccEmails>
+        <description>Enviar Email 1h Antes</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Responsável</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/MX_SLA_1h_Antes</template>
+    </alerts>
+    <alerts>
+        <fullName>Enviar_Email_4h_Antes</fullName>
+        <ccEmails>rafael.barbosa.ext@sascar.com.br</ccEmails>
+        <description>Enviar Email 4h Antes</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Responsável</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Supervisor</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/MX_SLA_4h_Antes</template>
+    </alerts>
+    <alerts>
+        <fullName>Enviar_Email_6h_Depois</fullName>
+        <ccEmails>rafael.barbosa.ext@sascar.com.br</ccEmails>
+        <description>Enviar Email 6h Depois</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Gerente</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Responsável</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Supervisor</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/MX_SLA_6h_Depois</template>
+    </alerts>
+    <alerts>
+        <fullName>MX_Alteracao_de_Proprietario</fullName>
+        <description>MX - Alteração de Proprietário</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/MX_Proprietario_Alterado</template>
+    </alerts>
+    <alerts>
+        <fullName>MX_Enviar_email_no_encerramento_do_caso</fullName>
+        <description>MX - Enviar email no encerramento do caso</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/MX_Encerrar_caso</template>
+    </alerts>
+    <alerts>
+        <fullName>alerta_de_email_com_SLA_de_resposta_proximo_de_expirar</fullName>
+        <description>alerta de email com SLA de resposta próximo de expirar</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>adm.salesforce@sascar.com.br</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Atendimento_Ouvidoria/SLA_de_resposta_proximo_de_expirar</template>
+    </alerts>
+    <alerts>
+        <fullName>alerta_proprietario_da_conta</fullName>
+        <description>alerta proprietário da conta</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderAddress>adm.salesforce@sascar.com.br</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Atendimento_Ouvidoria/alerta_para_proprietario_conta_na_criacao_de_caso</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Atualiza_Nivel_de_escalacao</fullName>
+        <field>NivelEscalacao__c</field>
+        <literalValue>N2</literalValue>
+        <name>Atualiza Nivel de escalação</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>NextValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Alterar_Subtipo_Incidente</fullName>
+        <field>Subtipo__c</field>
+        <literalValue>Incidente</literalValue>
+        <name>MX - Alterar Subtipo Incidente</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Alterar_Subtipo_Problema</fullName>
+        <field>Subtipo__c</field>
+        <literalValue>Problema</literalValue>
+        <name>MX - Alterar Subtipo Problema</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Alterar_Subtipo_Reclamacao</fullName>
+        <field>Subtipo__c</field>
+        <literalValue>Queja</literalValue>
+        <name>MX - Alterar Subtipo Reclamação</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Alterar_priorida0de_para_media</fullName>
+        <field>Priority</field>
+        <literalValue>Médio</literalValue>
+        <name>MX - Alterar prioridade para média</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Alterar_prioridade_para_alta</fullName>
+        <field>Priority</field>
+        <literalValue>Alto</literalValue>
+        <name>MX - Alterar prioridade para alta</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Alterar_prioridade_para_baixa</fullName>
+        <field>Priority</field>
+        <literalValue>Baixo</literalValue>
+        <name>MX - Alterar prioridade para baixa</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Alterar_proprietario_para_CAC</fullName>
+        <field>OwnerId</field>
+        <lookupValue>MX_Atendimento_ao_Cliente</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>MX - Alterar proprietário para CAC</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Alterar_tipo_para_incidente</fullName>
+        <field>Type</field>
+        <literalValue>Reclamação</literalValue>
+        <name>MX - Alterar tipo para incidente</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Alterar_tipo_para_problema</fullName>
+        <field>Type</field>
+        <literalValue>Reclamação</literalValue>
+        <name>MX - Alterar tipo para problema</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Alterar_tipo_para_reclamacao</fullName>
+        <field>Type</field>
+        <literalValue>Reclamação</literalValue>
+        <name>MX - Alterar tipo para reclamação</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Alterar_tipo_para_solicitacao</fullName>
+        <field>Type</field>
+        <literalValue>Solicitação</literalValue>
+        <name>MX - Alterar tipo para solicitação</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Ativa_Alerta_10h_Depois</fullName>
+        <field>Alerta_10h_depois__c</field>
+        <literalValue>1</literalValue>
+        <name>MX - Ativa Alerta 10h Depois</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Ativa_Alerta_14h_Depois</fullName>
+        <field>Alerta_14h_depois__c</field>
+        <literalValue>1</literalValue>
+        <name>MX - Ativa Alerta 14h Depois</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Ativa_Alerta_1h_Antes</fullName>
+        <field>Alerta_1h_antes__c</field>
+        <literalValue>1</literalValue>
+        <name>MX - Ativa Alerta 1h Antes</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Ativa_Alerta_4h_Antes</fullName>
+        <field>Alerta_4h_antes__c</field>
+        <literalValue>1</literalValue>
+        <name>MX - Ativa Alerta 4h Antes</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Ativa_Alerta_6h_Depois</fullName>
+        <field>Alerta_6h_depois__c</field>
+        <literalValue>1</literalValue>
+        <name>MX - Ativa Alerta 6h Depois</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Atribuir_a_Administracao_de_SIMs</fullName>
+        <field>Area_responsavel__c</field>
+        <literalValue>Administración de SIMs</literalValue>
+        <name>MX - Atribuir a Administração de SIMs</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Atribuir_a_Analista_de_Plataforma</fullName>
+        <field>Area_responsavel__c</field>
+        <literalValue>Analista de Plataforma</literalValue>
+        <name>MX - Atribuir a Analista de Plataforma</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Atribuir_a_Atendimento_ao_Cliente</fullName>
+        <field>Area_responsavel__c</field>
+        <literalValue>Atención a Clientes</literalValue>
+        <name>MX - Atribuir a Atendimento ao Cliente</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Atribuir_a_CAI</fullName>
+        <field>Area_responsavel__c</field>
+        <literalValue>CAI</literalValue>
+        <name>MX - Atribuir a CAI</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Atribuir_a_Cobranca</fullName>
+        <field>Area_responsavel__c</field>
+        <literalValue>Cobranza</literalValue>
+        <name>MX - Atribuir a Cobrança</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Atribuir_a_Desenvolvimento</fullName>
+        <field>Area_responsavel__c</field>
+        <literalValue>Desarrollo</literalValue>
+        <name>MX - Atribuir a Desenvolvimento</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Atribuir_a_Executivo_de_Vendas</fullName>
+        <field>Area_responsavel__c</field>
+        <literalValue>Ejecutivo de Ventas</literalValue>
+        <name>MX - Atribuir a Executivo de Vendas</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Atribuir_a_Faturamento</fullName>
+        <field>Area_responsavel__c</field>
+        <literalValue>Facturación</literalValue>
+        <name>MX - Atribuir a Faturamento</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Atribuir_a_Infraestrutura</fullName>
+        <field>Area_responsavel__c</field>
+        <literalValue>Infraestructura</literalValue>
+        <name>MX - Atribuir a Infraestrutura</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Atribuir_a_Laboratorio</fullName>
+        <field>Area_responsavel__c</field>
+        <literalValue>Laboratorio</literalValue>
+        <name>MX - Atribuir a Laboratorio</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Atribuir_a_Operador_de_Plataforma</fullName>
+        <field>Area_responsavel__c</field>
+        <literalValue>Operador de Plataforma</literalValue>
+        <name>MX - Atribuir a Operador de Plataforma</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Atribuir_a_Telemarketing</fullName>
+        <field>Area_responsavel__c</field>
+        <literalValue>Televentas</literalValue>
+        <name>MX - Atribuir a Telemarketing</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Atribuir_a_Treinamento_UC</fullName>
+        <field>Area_responsavel__c</field>
+        <literalValue>Capacitación UC</literalValue>
+        <name>MX - Atribuir a Treinamento UC</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Comentario_Realizado</fullName>
+        <field>Comentarios_adicionados__c</field>
+        <literalValue>1</literalValue>
+        <name>MX - Comentário Realizado</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Desativa_Comentarios_Adicionados</fullName>
+        <field>Comentarios_adicionados__c</field>
+        <literalValue>0</literalValue>
+        <name>MX - Desativa Comentarios Adicionados</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Desativar_Reavaliar_Alerta_1</fullName>
+        <field>MX_Reavaliar_Alerta_1__c</field>
+        <literalValue>0</literalValue>
+        <name>MX - Desativar Reavaliar Alerta 1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MX_Preencher_data_da_solicitacao</fullName>
+        <field>Data_solicitacao__c</field>
+        <formula>CreatedDate</formula>
+        <name>MX - Preencher data da solicitação</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Resposta_atrasada</fullName>
+        <field>respostaAtrasada__c</field>
+        <literalValue>1</literalValue>
+        <name>Resposta atrasada</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>StatusRespostaConcluido</fullName>
+        <field>StatusResposta__c</field>
+        <literalValue>Concluída</literalValue>
+        <name>Status resposta - Concluido</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>StatusSolucaConcluida</fullName>
+        <field>StatusSolucao__c</field>
+        <literalValue>Concluída</literalValue>
+        <name>Status solução - Concluída</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>solucao_atrasada</fullName>
+        <field>SolucaoAtrasada__c</field>
+        <literalValue>1</literalValue>
+        <name>solucao atrasada</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>BR - Alteração de Proprietário</fullName>
+        <actions>
+            <name>BR_Atribuicao_de_Caso</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( NOT(RecordType.DeveloperName = &#39;Mexico&#39;), ISCHANGED(OwnerId) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>BR - Criação de Caso</fullName>
+        <actions>
+            <name>BR_Atribuicao_de_Caso</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>BR_Notificacao_Contato_Criacao_do_Caso</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Jurídico,Procon,Reclamação,Neoway,Contestações</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>BR - Fechamento de caso</fullName>
+        <actions>
+            <name>BR_Notif_Contato_Fechamento_Caso</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Fechado,Finalizado,Cancelado</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>México</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Caso fechado</fullName>
+        <actions>
+            <name>Caso_fechado_Email_ao_propriet_rio</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Fechado</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>México</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Alerta 10h depois</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.PrazoConclusaoSolucao__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>MX_Ativa_Alerta_10h_Depois</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Case.PrazoConclusaoSolucao__c</offsetFromField>
+            <timeLength>10</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>MX - Alerta 14h depois</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.PrazoConclusaoSolucao__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>MX_Ativa_Alerta_14h_Depois</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Case.PrazoConclusaoSolucao__c</offsetFromField>
+            <timeLength>14</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>MX - Alerta 1h antes</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.PrazoConclusaoSolucao__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>MX_Ativa_Alerta_1h_Antes</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Case.PrazoConclusaoSolucao__c</offsetFromField>
+            <timeLength>-1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>MX - Alerta 4h antes</fullName>
+        <actions>
+            <name>MX_Desativar_Reavaliar_Alerta_1</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Case.PrazoConclusaoSolucao__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.MX_Reavaliar_Alerta_1__c</field>
+            <operation>equals</operation>
+            <value>Verdadeiro</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>MX_Ativa_Alerta_4h_Antes</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Case.PrazoConclusaoSolucao__c</offsetFromField>
+            <timeLength>-4</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>MX - Alerta 6h depois</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.PrazoConclusaoSolucao__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>MX_Ativa_Alerta_6h_Depois</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Case.PrazoConclusaoSolucao__c</offsetFromField>
+            <timeLength>6</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>MX - Alterar propriedade para alta</fullName>
+        <actions>
+            <name>MX_Alterar_prioridade_para_alta</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND( 2 OR 3 OR 4)</booleanFilter>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Alta de NUID,Alta de Skywave,Bloqueo de Datos,Cambio de Contraseña,Creción de DV,Desativación de Configuracion de Deteccion de Jammer,Desfase en DV,Equipo sin Posición,Incidente al Consultar,Intermitencia em DV,Intermitencia en Web</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Lentitud de DV,Lentitud en Portal Web,Mantenimiento DV o WEB,Prueba Funcional,Reporte de Incidencia,Reporte de Robo,Revisión en Laboratorio,Sin aceso a DV,Sin Comandos,Solicitud de Capacitación,Solicitud de Desarrollo,Switcheo de Línea</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Traspasos de NUID,Verificación de Evento DV,Verificar Eventos en WebService</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Alterar propriedade para baixa</fullName>
+        <actions>
+            <name>MX_Alterar_prioridade_para_baixa</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Baja de DV,Baja de Skywave</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Alterar propriedade para média</fullName>
+        <actions>
+            <name>MX_Alterar_priorida0de_para_media</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND (2 OR 3 OR 4)</booleanFilter>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Activación de Configuración de Detección de Jammer,Alta de I-Button,Análisis,Baja de Línea (SIM),Baja Temporal de NUID,Cambio de Contraseña,Cancelación Servicio o NUID,Configuración de Cuentas,Configuración de DV,Configuración de Equipos</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Constancias de Proveedor,Consulta de Facturas,Creación de Cuentas,Creción Avisos,Cuenta Suspendida,Desligar y Quitar,Dudas Uso de la Plataforma,Incidencias em Desarrollo,Incidente em Acessorios</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Información de Configuración de Equipos,Ligar,Mala Atención en Servicios,Notificador com desfase,Revisión Física de Unidades</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Alterar tipo para incidente</fullName>
+        <actions>
+            <name>MX_Alterar_Subtipo_Incidente</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>MX_Alterar_tipo_para_incidente</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Bloqueo de Datos,Cuenta Suspendida,Incidencias em Desarrollo,Incidente al Consultar,Incidente em Acessorios,Intermitencia em DV,Notificador com desfase,Revisión Física de Unidades</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Alterar tipo para problema</fullName>
+        <actions>
+            <name>MX_Alterar_Subtipo_Problema</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>MX_Alterar_tipo_para_problema</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Cancelación Servicio o NUID,Desfase en DV,Intermitencia en Web,Lentitud de DV,Lentitud en Portal Web,Reporte de Robo,Sin aceso a DV,Sin Comandos</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Alterar tipo para reclamação</fullName>
+        <actions>
+            <name>MX_Alterar_Subtipo_Reclamacao</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>MX_Alterar_tipo_para_reclamacao</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Mala Atención en Servicios</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Alterar tipo para solicitação</fullName>
+        <actions>
+            <name>MX_Alterar_tipo_para_solicitacao</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND (2 OR 3 OR 4 OR 5)</booleanFilter>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Activación de Configuración de Detección de Jammer,Alta de I-Button,Alta de NUID,Alta de Skywave,Análisis,Baja de DV,Baja de Línea (SIM),Baja de Skywave,Baja Temporal de NUID,Cambio de Contraseña</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Configuración de Cuentas,Configuración de DV,Configuración de Equipos,Constancias de Proveedor,Consulta de Facturas,Cotización de Soluciones,Creación de Cuentas,Creción Avisos,Creción de DV,Desativación de Configuracion de Deteccion de Jammer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Desligar y Quitar,Dudas Uso de la Plataforma,Equipo sin Posición,Información de Configuración de Equipos,Ligar,Mantenimiento DV o WEB,Prueba Funcional,Reporte de Incidencia,Revisión en Laboratorio,Solicitud de Capacitación</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Solicitud de Desarrollo,Switcheo de Línea,Traspasos de NUID,Verificación de Evento DV,Verificar Eventos en WebService</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Alteração de Proprietário</fullName>
+        <actions>
+            <name>MX_Alteracao_de_Proprietario</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>MX_Desativa_Comentarios_Adicionados</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( ISCHANGED(OwnerId), RecordType.DeveloperName = &#39;Mexico&#39; )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Atribuir a Administração de SIMs</fullName>
+        <actions>
+            <name>MX_Atribuir_a_Administracao_de_SIMs</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Bloqueo de Datos,Baja de Línea (SIM),Switcheo de Línea</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Atribuir a Analista de Plataforma</fullName>
+        <actions>
+            <name>MX_Atribuir_a_Analista_de_Plataforma</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Información de Configuración de Equipos</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Atribuir a Atendimento ao Cliente</fullName>
+        <actions>
+            <name>MX_Atribuir_a_Atendimento_ao_Cliente</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Información de Configuración de Equipos,Análisis,Cambio de Contraseña,Configuración de Cuentas,Creación de Cuentas,Creción Avisos,Desativación de Configuracion de Deteccion de Jammer,Dudas Uso de la Plataforma,Equipo sin Posición,Prueba Funcional</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Atribuir a CAI</fullName>
+        <actions>
+            <name>MX_Atribuir_a_CAI</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Reporte de Robo</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Atribuir a Cobrança</fullName>
+        <actions>
+            <name>MX_Atribuir_a_Cobranca</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Cuenta Suspendida</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Atribuir a Desenvolvimento</fullName>
+        <actions>
+            <name>MX_Atribuir_a_Desenvolvimento</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Solicitud de Desarrollo</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Atribuir a Executivo de Vendas</fullName>
+        <actions>
+            <name>MX_Atribuir_a_Executivo_de_Vendas</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Cancelación Servicio o NUID,Constancias de Proveedor</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Atribuir a Faturamento</fullName>
+        <actions>
+            <name>MX_Atribuir_a_Faturamento</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Alta de NUID,Alta de Skywave,Baja de Skywave,Baja Temporal de NUID,Consulta de Facturas,Traspasos de NUID</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Atribuir a Infraestrutura</fullName>
+        <actions>
+            <name>MX_Atribuir_a_Infraestrutura</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Baja de DV,Configuración de DV,Creción de DV,Desfase en DV,Incidencias em Desarrollo,Incidente al Consultar,Intermitencia em DV,Intermitencia en Web,Lentitud de DV,Lentitud en Portal Web,Mantenimiento DV o WEB,Notificador com desfase</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Reporte de Incidencia,Sin aceso a DV,Sin Comandos,Verificación de Evento DV,Verificar Eventos en WebService</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Atribuir a Laboratorio</fullName>
+        <actions>
+            <name>MX_Atribuir_a_Laboratorio</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Revisión en Laboratorio</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Atribuir a Operador de Plataforma</fullName>
+        <actions>
+            <name>MX_Atribuir_a_Operador_de_Plataforma</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Activación de Configuración de Detección de Jammer,Alta de I-Button,Configuración de Equipos,Desligar y Quitar,Ligar</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Atribuir a Telemarketing</fullName>
+        <actions>
+            <name>MX_Atribuir_a_Telemarketing</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Cotización de Soluciones</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Atribuir a Treinamento UC</fullName>
+        <actions>
+            <name>MX_Atribuir_a_Treinamento_UC</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Reason</field>
+            <operation>equals</operation>
+            <value>Solicitud de Capacitación</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Caso Criado</fullName>
+        <actions>
+            <name>E_mail_de_resposta_ao_cliente_para_a_criacao_de_um_caso_do_Mexico</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>MX_Alterar_proprietario_para_CAC</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>(1 AND 2 AND 3) OR 4</booleanFilter>
+        <criteriaItems>
+            <field>Case.Subject</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Em andamento</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>Telefone</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Comentário adicionado</fullName>
+        <actions>
+            <name>MX_Comentario_Realizado</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( RecordType.DeveloperName = &quot;Mexico&quot;, ISCHANGED(Comentarios_Internos__c) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Enviar Email Encerramento</fullName>
+        <actions>
+            <name>MX_Enviar_email_no_encerramento_do_caso</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Fechado,Finalizado,Cancelado</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Enviar email 10h depois</fullName>
+        <actions>
+            <name>Enviar_Email_10h_Depois</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Alerta_10h_depois__c</field>
+            <operation>equals</operation>
+            <value>Verdadeiro</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>notEqual</operation>
+            <value>Fechado,Finalizado,Cancelado</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Enviar email 14h depois</fullName>
+        <actions>
+            <name>Enviar_Email_14h_Depois</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Alerta_14h_depois__c</field>
+            <operation>equals</operation>
+            <value>Verdadeiro</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>notEqual</operation>
+            <value>Fechado,Finalizado,Cancelado</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Enviar email 1h antes</fullName>
+        <actions>
+            <name>Enviar_Email_1h_Antes</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Alerta_1h_antes__c</field>
+            <operation>equals</operation>
+            <value>Verdadeiro</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>notEqual</operation>
+            <value>Fechado,Finalizado,Cancelado</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Enviar email 4h antes</fullName>
+        <actions>
+            <name>Enviar_Email_4h_Antes</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Alerta_4h_antes__c</field>
+            <operation>equals</operation>
+            <value>Verdadeiro</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>notEqual</operation>
+            <value>Fechado,Finalizado,Cancelado</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Enviar email 6h depois</fullName>
+        <actions>
+            <name>Enviar_Email_6h_Depois</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Alerta_6h_depois__c</field>
+            <operation>equals</operation>
+            <value>Verdadeiro</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>notEqual</operation>
+            <value>Fechado,Finalizado,Cancelado</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>MX - Preencher data da solicitação</fullName>
+        <actions>
+            <name>MX_Preencher_data_da_solicitacao</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>México</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>E-mail</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Teste de caso</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.ParentId</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>teste mari</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>teste</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Novo</value>
+        </criteriaItems>
+        <description>fdfsd</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

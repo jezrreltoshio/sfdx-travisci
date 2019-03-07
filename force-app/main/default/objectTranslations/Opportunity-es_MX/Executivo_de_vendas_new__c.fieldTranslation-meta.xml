@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Executivo / TV Parceiro --></label>
+    <name>Executivo_de_vendas_new__c</name>
+    <relationshipLabel><!-- Oportunidades (Executivo / TV Parceiro) --></relationshipLabel>
+</CustomFieldTranslation>

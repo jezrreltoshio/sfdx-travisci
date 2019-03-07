@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FormaCobranca__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Especifique a forma como será realizada a cobrança do serviço de monitoramento.</inlineHelpText>
+    <label>Forma de Cobrança</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1-Boleto Bancário</fullName>
+                <default>false</default>
+                <label>1-Boleto Bancário</label>
+            </value>
+            <value>
+                <fullName>24-Cartão Visa</fullName>
+                <default>false</default>
+                <label>24-Cartão Visa</label>
+            </value>
+            <value>
+                <fullName>25-Cartão Mastercard</fullName>
+                <default>false</default>
+                <label>25-Cartão Mastercard</label>
+            </value>
+            <value>
+                <fullName>82-Cartão Hipercard</fullName>
+                <default>false</default>
+                <label>82-Cartão Hipercard</label>
+            </value>
+            <value>
+                <fullName>3-Débito Automático HSBC</fullName>
+                <default>false</default>
+                <label>3-Débito Automático HSBC</label>
+            </value>
+            <value>
+                <fullName>4-Débito Automático Itaú</fullName>
+                <default>false</default>
+                <label>4-Débito Automático Itaú</label>
+            </value>
+            <value>
+                <fullName>12-Débito Automático Bradesco</fullName>
+                <default>false</default>
+                <label>12-Débito Automático Bradesco</label>
+            </value>
+            <value>
+                <fullName>13-Débito Automático Banco do Brasil</fullName>
+                <default>false</default>
+                <label>13-Débito Automático Banco do Brasil</label>
+            </value>
+            <value>
+                <fullName>81-Débito Automático Santander</fullName>
+                <default>false</default>
+                <label>81-Débito Automático Santander</label>
+            </value>
+            <value>
+                <fullName>1- Transferência Bancaria</fullName>
+                <default>false</default>
+                <label>1- Transferência Bancaria</label>
+            </value>
+            <value>
+                <fullName>2 - Débito Automático</fullName>
+                <default>false</default>
+                <label>2 - Débito Automático</label>
+            </value>
+            <value>
+                <fullName>3 – Cheque</fullName>
+                <default>false</default>
+                <label>3 – Cheque</label>
+            </value>
+            <value>
+                <fullName>4 – Pago Fácil</fullName>
+                <default>false</default>
+                <label>4 – Pago Fácil</label>
+            </value>
+            <value>
+                <fullName>10- Cartãode Crédito Visa</fullName>
+                <default>false</default>
+                <label>10- Cartãode Crédito Visa</label>
+            </value>
+            <value>
+                <fullName>11- Cartão de Crédito American Express</fullName>
+                <default>false</default>
+                <label>11- Cartão de Crédito American Express</label>
+            </value>
+            <value>
+                <fullName>12- Cartão de Crédito MasterCard</fullName>
+                <default>false</default>
+                <label>12- Cartão de Crédito MasterCard</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

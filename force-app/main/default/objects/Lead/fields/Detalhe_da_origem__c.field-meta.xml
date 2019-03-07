@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Detalhe_da_origem__c</fullName>
+    <description>Campo para preenchimento por integração do detalhe da origem do visitante que preencheu o lead no site Siggo</description>
+    <externalId>false</externalId>
+    <label>Detalhe da origem</label>
+    <length>1000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

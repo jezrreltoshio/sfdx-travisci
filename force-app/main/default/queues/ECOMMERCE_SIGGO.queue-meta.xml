@@ -3,12 +3,6 @@
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <email>back-office@siggo.com</email>
     <name>ECOMMERCE SIGGO</name>
-    <queueMembers>
-        <users>
-            <user>debora.medeiros@sascar.com.br</user>
-            <user>ederson.rocha@sascar.com.br</user>
-        </users>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Lead</sobjectType>
     </queueSobject>

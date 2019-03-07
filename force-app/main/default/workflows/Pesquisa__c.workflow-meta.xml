@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Alterar_Tipo_de_Registro_Pesquisa</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Plano_Conquista_CT</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Alterar Tipo de Registro Pesquisa</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Criação Pesquisa</fullName>
+        <actions>
+            <name>Alterar_Tipo_de_Registro_Pesquisa</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Pesquisa__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Plano Conquista (CT)</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_de_isca__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo de isca</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Descartável</fullName>
+                <default>false</default>
+                <label>Descartável</label>
+            </value>
+            <value>
+                <fullName>Descartável e retornável</fullName>
+                <default>false</default>
+                <label>Descartável e retornável</label>
+            </value>
+            <value>
+                <fullName>Retornável</fullName>
+                <default>false</default>
+                <label>Retornável</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

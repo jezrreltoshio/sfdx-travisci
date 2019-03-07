@@ -22,6 +22,20 @@
         - Adicionado método buscaCEP extraído de uma parte do método verificacao
         - Adicionado método verificaDuplicidadeCNPJ
     @JIRA KCA-410
+    ---------------------------------
+    @author Renan Rocha
+    @date 15/02/2019
+    @description:
+        - Inserido novos debugs no método verificaDuplicidadeCNPJ
+        - Retirado for e alterado para tratar somente um resultado por vez com o método
+        - Adicionado try/catch no método verificaDuplicidadeCNPJ para tratamento de erros
+        - Adicionado parâmetro pIsInsert para verificar se está sendo inserido e validações do CNPJ quando for alterado
+    @JIRA KCA-549
+    ---------------------------------
+    @author Renan Rocha
+    @date 18/02/2019
+    @description Inserido verificação no método verificaDuplicidadeCNPJ para cobrir o cenário onde contas antigas são atualizadas mas o CNPJ manten-se o mesmo
+    @JIRA KCA-549
 */
 
 public class Handler_Conta {
@@ -55,21 +69,32 @@ public class Handler_Conta {
 
     /*
         @description Verifica se o CNPJ informado já não existe no mesmo tipo de registro
-        @param List<Account> pListaNew, Map<Id, Account> pOldMap
+        @param List<Account> pListaNew, Map<Id, Account> pOldMap, Boolean pIsInsert
         @return void
         
         @author Renan Rocha
         @date 11/01/2019
         @JIRA KCA-410
     */
-    public static void verificaDuplicidadeCNPJ(List<Account> pListaNew, Map<Id, Account> pOldMap){
+    public static void verificaDuplicidadeCNPJ(List<Account> pListaNew, Map<Id, Account> pOldMap, Boolean pIsInsert){
         String METHOD_NAME = 'verificaDuplicidadeCNPJ';
 
+        System.debug(LoggingLevel.ERROR, '___ [cls '+ CLASS_NAME +' - '+ METHOD_NAME +'()] - pListaNew: '+ pListaNew);
+        System.debug(LoggingLevel.ERROR, '___ [cls '+ CLASS_NAME +' - '+ METHOD_NAME +'()] - pOldMap: '+ pOldMap);
+        System.debug(LoggingLevel.ERROR, '___ [cls '+ CLASS_NAME +' - '+ METHOD_NAME +'()] - pIsInsert: '+ pIsInsert);
+
         for(Account forConta : pListaNew){
+            System.debug(LoggingLevel.ERROR, '___ [cls '+ CLASS_NAME +' - '+ METHOD_NAME +'()] - forConta: '+ forConta);
+
             if(String.isNotEmpty(forConta.CNPJ__c)){
-                for(Account forContaDAO : DAO_Conta.getContasByCNPJERecordTypeId(forConta.CNPJ__c, forConta.RecordTypeId)){
-                    if(forContaDAO.CNPJ__c == forConta.CNPJ__c && forContaDAO.Id != forConta.Id) forConta.addError(' ' + System.Label.LBL_002); //LBL_002: Não é possível criar ou atualizar a conta pois já existe uma com o mesmo CNPJ para este tipo de registro.
-                }
+                try{
+                    Account contaDAO = DAO_Conta.getContasByCNPJERecordTypeId(forConta.CNPJ__c, forConta.RecordTypeId, forConta.Id);
+                    System.debug(LoggingLevel.ERROR, '___ [cls '+ CLASS_NAME +' - '+ METHOD_NAME +'()] - contaDAO: '+ contaDAO);
+                    
+                    if(contaDAO.RecordTypeId == forConta.RecordTypeId) forConta.addError(' ' + System.Label.LBL_002); //LBL_002: Não é possível criar ou atualizar a conta pois já existe uma com o mesmo CNPJ para este tipo de registro.
+                }catch(Exception e){
+                    System.debug(LoggingLevel.ERROR, '___ [cls '+ CLASS_NAME +' - '+ METHOD_NAME +'()] - #ERROR: '+ e.getLineNumber() +':'+ e.getMessage());
+                }  
             }
         }
     }

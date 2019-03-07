@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preencher_campo_e_agregado</fullName>
+    <active>true</active>
+    <description>Obriga preenchimento do campo É AGREGADO após o lead ser qualificado.</description>
+    <errorConditionFormula>AND(
+	RecordType.DeveloperName &lt;&gt; &#39;Cargo_Tracck&#39;,
+	RecordType.DeveloperName &lt;&gt; &#39;Siggo&#39;,
+	RecordType.DeveloperName &lt;&gt; &#39;Blue_tec&#39;,
+	RecordType.DeveloperName &lt;&gt; &#39;OTR&#39;,
+	OR(
+	  	AND(
+     		ISPICKVAL(Status, &#39;Qualificado&#39;),
+     		ISBLANK(TEXT(agregado__c)) 
+	 	),
+	  	AND(
+     		ISPICKVAL(Status, &#39;Desqualificado&#39;),
+     		ISBLANK(TEXT(agregado__c)),
+     		OR(
+		        ISPICKVAL(Motivo_da_desqualifica_o_do_lead__c, &#39;Não solicitou contato/Desconhece cadastro&#39;),
+		        ISPICKVAL(Motivo_da_desqualifica_o_do_lead__c, &#39;Recusou-se à conversar&#39;),
+		        ISPICKVAL(Motivo_da_desqualifica_o_do_lead__c, &#39;SAC / Reclamação&#39;),
+		        ISPICKVAL(Motivo_da_desqualifica_o_do_lead__c, &#39;Não possui veículo&#39;),
+		        ISPICKVAL(Motivo_da_desqualifica_o_do_lead__c, &#39;Lead Duplicado&#39;)
+	     	)
+     	)
+	)
+)</errorConditionFormula>
+    <errorMessage>Por favor preencher o campo &quot;É agregado?&quot;</errorMessage>
+</ValidationRule>

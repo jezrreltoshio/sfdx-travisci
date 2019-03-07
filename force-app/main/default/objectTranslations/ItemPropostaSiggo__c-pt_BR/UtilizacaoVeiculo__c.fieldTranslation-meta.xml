@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Utilização do Veículo --></label>
+    <name>UtilizacaoVeiculo__c</name>
+    <picklistValues>
+        <masterLabel>1-Lazer</masterLabel>
+        <translation><!-- 1-Lazer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2-Locomoção diária</masterLabel>
+        <translation><!-- 2-Locomoção diária --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3-Exercício do trabalho</masterLabel>
+        <translation><!-- 3-Exercício do trabalho --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>9-Uso profissional</masterLabel>
+        <translation><!-- 9-Uso profissional --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

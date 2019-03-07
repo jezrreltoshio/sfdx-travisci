@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validacao_CEP_tamanho_principal</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+RecordType.DeveloperName &lt;&gt; &#39;Mercosul&#39;, 
+NOT(ISBLANK( Enderecos_Principal_CEP__c )), 
+NOT(ISNULL( Enderecos_Principal_CEP__c )), 
+LEN( Enderecos_Principal_CEP__c ) &gt; 10 
+)</errorConditionFormula>
+    <errorDisplayField>Enderecos_Principal_CEP__c</errorDisplayField>
+    <errorMessage>CEP deve conter no máximo 10 dígitos.</errorMessage>
+</ValidationRule>

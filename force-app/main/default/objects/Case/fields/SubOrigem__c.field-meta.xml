@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SubOrigem__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub Origem</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Origin</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fale conosco</fullName>
+                <default>false</default>
+                <label>Fale conosco</label>
+            </value>
+            <value>
+                <fullName>Reclame aqui</fullName>
+                <default>false</default>
+                <label>Reclame aqui</label>
+            </value>
+            <value>
+                <fullName>Portal de serviços</fullName>
+                <default>false</default>
+                <label>Portal de serviços</label>
+            </value>
+            <value>
+                <fullName>Site Sascar</fullName>
+                <default>false</default>
+                <label>Site Sascar</label>
+            </value>
+            <value>
+                <fullName>Site Siggo</fullName>
+                <default>false</default>
+                <label>Site Siggo</label>
+            </value>
+            <value>
+                <fullName>Site Bluetec</fullName>
+                <default>false</default>
+                <label>Site Bluetec</label>
+            </value>
+            <value>
+                <fullName>Site Cargo Tracck</fullName>
+                <default>false</default>
+                <label>Site Cargo Tracck</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Web</controllingFieldValue>
+            <valueName>Fale conosco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web</controllingFieldValue>
+            <valueName>Reclame aqui</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web</controllingFieldValue>
+            <valueName>Portal de serviços</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web</controllingFieldValue>
+            <valueName>Site Sascar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web</controllingFieldValue>
+            <valueName>Site Siggo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web</controllingFieldValue>
+            <valueName>Site Bluetec</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web</controllingFieldValue>
+            <valueName>Site Cargo Tracck</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

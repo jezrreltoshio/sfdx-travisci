@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Quantidade Veículos GSM --></label>
+    <name>Quantidade_Ve_culos_GSM__c</name>
+</CustomFieldTranslation>

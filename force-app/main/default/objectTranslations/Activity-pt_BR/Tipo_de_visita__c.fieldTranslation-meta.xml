@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo de visita --></label>
+    <name>Tipo_de_visita__c</name>
+    <picklistValues>
+        <masterLabel>Conseguir Indicações em Parceiros</masterLabel>
+        <translation><!-- Conseguir Indicações em Parceiros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Embarcador</masterLabel>
+        <translation><!-- Embarcador --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entrega de equipamentos</masterLabel>
+        <translation><!-- Entrega de equipamentos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Evento</masterLabel>
+        <translation><!-- Evento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fechamento</masterLabel>
+        <translation><!-- Fechamento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gerenciadora de riscos</masterLabel>
+        <translation><!-- Gerenciadora de riscos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Levantamento de Oportunidade</masterLabel>
+        <translation><!-- Levantamento de Oportunidade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Montadora</masterLabel>
+        <translation><!-- Montadora --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Negociação</masterLabel>
+        <translation><!-- Negociação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não presencial</masterLabel>
+        <translation><!-- Não presencial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Presencial</masterLabel>
+        <translation><!-- Presencial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Presencial / Não presencial</masterLabel>
+        <translation><!-- Presencial / Não presencial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prestador de serviço</masterLabel>
+        <translation><!-- Prestador de serviço --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prospecção</masterLabel>
+        <translation><!-- Prospecção --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prospecção em novos</masterLabel>
+        <translation><!-- Prospecção em novos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prospecção na base</masterLabel>
+        <translation><!-- Prospecção na base --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolução de Problema</masterLabel>
+        <translation><!-- Resolução de Problema --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reunião de Pós-Venda</masterLabel>
+        <translation><!-- Reunião de Pós-Venda --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reunião de Sinistros</masterLabel>
+        <translation><!-- Reunião de Sinistros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seguradora</masterLabel>
+        <translation><!-- Seguradora --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teste</masterLabel>
+        <translation><!-- Teste --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visita TOP 10 (Base)</masterLabel>
+        <translation><!-- Visita TOP 10 (Base) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visita na Base</masterLabel>
+        <translation><!-- Visita na Base --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visita à Indicador</masterLabel>
+        <translation><!-- Visita à Indicador --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

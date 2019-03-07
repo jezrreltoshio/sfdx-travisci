@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Trabalhado por --></label>
+    <name>Enviado_por__c</name>
+    <picklistValues>
+        <masterLabel>Consultor</masterLabel>
+        <translation><!-- Consultor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultor+Televendas</masterLabel>
+        <translation><!-- Consultor+Televendas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Executivo</masterLabel>
+        <translation><!-- Executivo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Executivo+Televendas</masterLabel>
+        <translation><!-- Executivo+Televendas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Televendas</masterLabel>
+        <translation><!-- Televendas --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

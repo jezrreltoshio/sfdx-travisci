@@ -3,11 +3,6 @@
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <email>databasemkt@sascar.com.br</email>
     <name>Bluetec</name>
-    <queueMembers>
-        <users>
-            <user>valter.pessoa@sascar.com.br</user>
-        </users>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Lead</sobjectType>
     </queueSobject>

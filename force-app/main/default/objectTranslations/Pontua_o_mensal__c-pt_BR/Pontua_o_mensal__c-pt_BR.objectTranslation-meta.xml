@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Pontuação mensal</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Pontuações mensais</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Layout de Pontuação mensal</layout>
+        <sections>
+            <label><!-- Estrelas --></label>
+            <section>Estrelas</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+        <sections>
+            <label><!-- Pontuação sobre indicação --></label>
+            <section>Pontuação sobre indicação</section>
+        </sections>
+        <sections>
+            <label><!-- Pontuação sobre meta --></label>
+            <section>Pontuação sobre meta</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Pontuação --></label>
+        <name>Pontua_o</name>
+    </recordTypes>
+</CustomObjectTranslation>

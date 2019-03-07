@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Ativar_data_corte</fullName>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>Ativar data de corte? (Digite true ou false)</shortDescription>
+        <value>false</value>
+    </labels>
+    <labels>
+        <fullName>Data_de_corte_Ano</fullName>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>Data de corte (Ano)</shortDescription>
+        <value>2014</value>
+    </labels>
+    <labels>
+        <fullName>Data_de_corte_Dia</fullName>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>Data de corte (Dia)</shortDescription>
+        <value>01</value>
+    </labels>
+    <labels>
+        <fullName>Data_de_corte_Mes</fullName>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>Data de corte (Mês)</shortDescription>
+        <value>03</value>
+    </labels>
+    <labels>
+        <fullName>LBL_001</fullName>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>LBL_001</shortDescription>
+        <value>Não é possível utilizar o valor: &quot;Canal Exclusivo de Indicações&quot; no campo &quot;Origem do lead&quot; para seu usuário, entre em contato com o Administrador.</value>
+    </labels>
+    <labels>
+        <fullName>LBL_002</fullName>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>LBL_002</shortDescription>
+        <value>Não é possível criar ou atualizar a conta pois já existe uma com o mesmo CNPJ para este tipo de registro.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0001</fullName>
+        <categories>Handler_Conta.verificacao(), Service_Conta.verificaDuplicidadeConta()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0001</shortDescription>
+        <value>Erro ao validar duplicidade da conta. Entre em contato com o Administrador.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0002</fullName>
+        <categories>DAO_Conta.getContaVerificaoDuplicidadePorId()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0002</shortDescription>
+        <value>Erro ao consultar a lista de contas para verificação da duplicidade.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0003</fullName>
+        <categories>Util_Conta.carregarTipoRegistro()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0003</shortDescription>
+        <value>Erro ao carregar os tipos de registro da conta.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0004</fullName>
+        <categories>Service_Conta.verificaDuplicidadeConta()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0004</shortDescription>
+        <value>Conta com este CNPJ ou CPF já cadastrado no sistema.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0005</fullName>
+        <categories>Util_Organizacao.getAmbienteSF()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0005</shortDescription>
+        <value>Erro ao buscar informações da empresa. Entre em contato com o Administrador.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0006</fullName>
+        <categories>DAO_Oportunidade.getOportunidadePorFamiliaId()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0006</shortDescription>
+        <value>Erro ao buscar informações da oportunidade por família. Entre em contato com o Administrador.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0007</fullName>
+        <categories>DAO_Oportunidade.getItemLinhaPorFamiliaId()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0007</shortDescription>
+        <value>Erro ao buscar informações dos produtos da oportunidade por família. Entre em contato com o Administrador.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0008</fullName>
+        <categories>Service_Lead.validacaoCUIT()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0008</shortDescription>
+        <value>CUIT inválido</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0009</fullName>
+        <categories>Service_Lead.validacaoCUIT()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0009</shortDescription>
+        <value>Erro na validação do CUIT</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0010</fullName>
+        <categories>DAO_Lead.getMapTipoRegistro()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0010</shortDescription>
+        <value>Erro ao carregar tipos de registro do Lead</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0011</fullName>
+        <categories>Service_Lead.validacaoCPF()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0011</shortDescription>
+        <value>CPF inválido!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0012</fullName>
+        <categories>Service_Lead.validacaoCPF()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0012</shortDescription>
+        <value>Erro na validação do CPF</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0013</fullName>
+        <categories>Service_Lead.validacaoCNPJ()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0013</shortDescription>
+        <value>CNPJ inválido</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0014</fullName>
+        <categories>Service_Lead.validacaoCNPJ()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0014</shortDescription>
+        <value>Erro na validação do CNPJ</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0015</fullName>
+        <categories>Util_Organizacao.formatarTelefoneBrasil()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0015</shortDescription>
+        <value>Erro ao formatar o telefone</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0016</fullName>
+        <categories>Util_Organizacao.formatarTelefoneBrasil()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0016</shortDescription>
+        <value>Erro ao formatar o telefone. Entre em contato com o Administrador.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0017</fullName>
+        <categories>Util_Organizacao.formatarTelefoneBrasil()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0017</shortDescription>
+        <value>Telefone inválido</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0018</fullName>
+        <categories>DAO_Lead.getLeadVerificaoDuplicidadePorId()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0018</shortDescription>
+        <value>Erro ao consultar a lista de leads para verificação da duplicidade.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0019</fullName>
+        <categories>Handler_Lead.verificacao(), Service_Lead.verificaDuplicidadeConta()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0019</shortDescription>
+        <value>Erro ao validar duplicidade da conta. Entre em contato com o Administrador.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0020</fullName>
+        <categories>Service_Lead.verificaDuplicidadeLead()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0020</shortDescription>
+        <value>Lead com este CNPJ ou CPF já cadastrado no sistema.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0021</fullName>
+        <categories>Service_Lead.verificaDuplicidadeLead()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0021</shortDescription>
+        <value>Erro ao validar duplicidade do lead. Entre em contato com o Administrador.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0022</fullName>
+        <categories>DAO_Conta.getContaPorLeadContaId()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0022</shortDescription>
+        <value>Erro ao consultar a conta convertida do Lead.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0023</fullName>
+        <categories>Util_Conta.copiarCamposLeadConta()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0023</shortDescription>
+        <value>Erro ao copiar campos do Lead para a Conta</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0024</fullName>
+        <categories>DAO_Lead.getLeadPorContaId()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0024</shortDescription>
+        <value>Erro ao consultar o Lead do qual a conta foi convertida</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0025</fullName>
+        <categories>DAO_Contato.getContatoPorContaId()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0025</shortDescription>
+        <value>Erro ao consultar o Contato pela Conta</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0026</fullName>
+        <categories>Botão Javascript &quot;Renegociar&quot; da Oportunidade</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0026</shortDescription>
+        <value>Deseja desbloquear para edição?</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0027</fullName>
+        <categories>Botão Javascript &quot;Renegociar&quot; da Oportunidade</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0027</shortDescription>
+        <value>Não é possível realizar a renegociação da oportunidade. Solicite o recall da aprovação ou complete as informações de venda.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0028</fullName>
+        <categories>Botão Javascript &quot;Renegociar&quot; da Oportunidade</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0028</shortDescription>
+        <value>Operação cancelada.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0029</fullName>
+        <categories>Botão Javascript &quot;Gerar Termo&quot; da Oportunidade</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0029</shortDescription>
+        <value>Apenas Oportunidades nas fases de Negociação/Revisão ou Proposta/Cotação de preço e com uma Proposta já criada podem gerar um Termo de Adesão</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0030</fullName>
+        <categories>Botão Javascript &quot;CEP Cobrança&quot; da Conta</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0030</shortDescription>
+        <value>Insira CEP cobrança</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0031</fullName>
+        <categories>Botão Javascript &quot;CEP Cobrança&quot; da Conta</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0031</shortDescription>
+        <value>Insira número do endereço cobrança</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0032</fullName>
+        <categories>Botão Javascript &quot;CEP Cobrança&quot; da Conta</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0032</shortDescription>
+        <value>Insira complemento do endereço cobrança caso exista.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0033</fullName>
+        <categories>Botão Javascript &quot;CEP Cobrança&quot; da Conta</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0033</shortDescription>
+        <value>Endereço de cobrança enviado com sucesso.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0034</fullName>
+        <categories>Botão Javascript &quot;CEP Entrega&quot; da Conta</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0034</shortDescription>
+        <value>Insira CEP entrega.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0035</fullName>
+        <categories>Botão Javascript &quot;CEP Entrega&quot; da Conta</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0035</shortDescription>
+        <value>Insira número do endereço entrega</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0036</fullName>
+        <categories>Botão Javascript &quot;CEP Entrega&quot; da Conta</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0036</shortDescription>
+        <value>Insira complemento do endereço entrega caso exista.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0037</fullName>
+        <categories>Botão Javascript &quot;CEP Entrega&quot; da Conta</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0037</shortDescription>
+        <value>Endereço de entrega enviado com sucesso.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0038</fullName>
+        <categories>Botão Javascript &quot;CEP Principal&quot; da Conta</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0038</shortDescription>
+        <value>Insira CEP principal.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0039</fullName>
+        <categories>Botão Javascript &quot;CEP Principal&quot; da Conta</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0039</shortDescription>
+        <value>Insira número do endereço principal</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0040</fullName>
+        <categories>Botão Javascript &quot;CEP Principal&quot; da Conta</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0040</shortDescription>
+        <value>Insira complemento do endereço principal caso exista.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0041</fullName>
+        <categories>Botão Javascript &quot;CEP Principal&quot; da Conta</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0041</shortDescription>
+        <value>Endereço principal enviado com sucesso.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0042</fullName>
+        <categories>OpportunityLineItemTriggers.Bloquear()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0042</shortDescription>
+        <value>A Oportunidade relacionada a este item já foi aprovada, portanto, nenhum registro relacionado pode ser alterado, adicionado ou excluído.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0043</fullName>
+        <categories>OpportunityLineItemTriggers.Bloquear()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0043</shortDescription>
+        <value>A Oportunidade relacionada está em processo de aprovação, portanto, nenhum registro relacionado pode ser alterado, adicionado ou excluído.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0044</fullName>
+        <categories>QuoteTriggers.Bloquear()</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0044</shortDescription>
+        <value>A Oportunidade relacionada a este item já foi aprovada, portanto, este registro não pode ser excluído.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0045</fullName>
+        <categories>Botão Javascript &quot;Converter&quot; Lead do Mexico</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0045</shortDescription>
+        <value>Insira um &quot;RFC&quot; para converter o Lead</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0046</fullName>
+        <categories>Botão Javascript &quot;Converter&quot; Lead do Mexico</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0046</shortDescription>
+        <value>Erro ao converter o Lead.</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0047</fullName>
+        <categories>Botão Javascript &quot;Converter&quot; Lead do Mexico</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0047</shortDescription>
+        <value>Informe o pais corretamente</value>
+    </labels>
+    <labels>
+        <fullName>MSG_ERRO_0048</fullName>
+        <categories>Botão Javascript &quot;Converter&quot; Lead do Mexico</categories>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>MSG_ERRO_0048</shortDescription>
+        <value>Já existe uma conta com esse RFC.</value>
+    </labels>
+    <labels>
+        <fullName>Oportunidades_Expiradas_Limite</fullName>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>CORP - Quantidade limite de Oportunidades expiradas que um usuário pode ter.</shortDescription>
+        <value>5</value>
+    </labels>
+    <labels>
+        <fullName>Oportunidades_Expiradas_Mensagem_erro</fullName>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>CORP - Mensagem de erro do bloqueio de Oportunidades expiradas</shortDescription>
+        <value>Não foi possível criar uma nova Oportunidade.
+Você possui mais de 5 Oportunidades expiradas. Atualize estas Oportunidades e tente novamente.</value>
+    </labels>
+    <labels>
+        <fullName>TermoBase_Cabecalho</fullName>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>Cabeçalho do Termo de Aquisicao Base</shortDescription>
+        <value>TERMO DE AQUISIÇÃO DOS SERVIÇOS (PEDIDO ADICIONAL)</value>
+    </labels>
+    <labels>
+        <fullName>TermoBase_MultaRescisoria</fullName>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>Valor de Multa Rescisória exibida no Termo de Adesão - Base</shortDescription>
+        <value>25%</value>
+    </labels>
+    <labels>
+        <fullName>TermoNovo_Cabecalho</fullName>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>Cabeçalho do Termo de Aquisicao Novo</shortDescription>
+        <value>TERMO DE AQUISIÇÃO DOS SERVIÇOS</value>
+    </labels>
+    <labels>
+        <fullName>TermoNovo_MultaRescisoria</fullName>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>Valor de Multa Rescisória exibida no Termo de Adesão - Novo</shortDescription>
+        <value>25%</value>
+    </labels>
+    <labels>
+        <fullName>Termo_DadosEmpresa_CNPJ</fullName>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>Dados cadastrais da Empresa - CNPJ</shortDescription>
+        <value>CNPJ/MF: 03.112.879/0001-51</value>
+    </labels>
+    <labels>
+        <fullName>Termo_DadosEmpresa_Endereco</fullName>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>Dados cadastrais da Empresa - Endereço</shortDescription>
+        <value>Av. Marte, 537, Centro de Apoio I, Alphaville - Santana de Parnaíba-SP</value>
+    </labels>
+    <labels>
+        <fullName>Termo_DadosEmpresa_Nome</fullName>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>Dados cadastrais da Empresa - Nome</shortDescription>
+        <value>SASCAR TECNOLOGIA E SEGURANÇA AUTOMOTIVA S.A.</value>
+    </labels>
+</CustomLabels>

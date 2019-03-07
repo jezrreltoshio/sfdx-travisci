@@ -58,6 +58,9 @@ public class Teste_Util{
             [SELECT Id
                   , Account.Name
                   , AccountId
+                  , CPF__c
+                  , Email
+                  , FirstName
                   , LastName
                   , Name
             FROM Contact
@@ -93,6 +96,7 @@ public class Teste_Util{
                   , Name
                   , OwnerId
                   , Pricebook2Id
+                  , Produtos__c
                   , RecordTypeId
                   , Siggo_AnalCred_ResultadoAnalise__c
                   , StageName

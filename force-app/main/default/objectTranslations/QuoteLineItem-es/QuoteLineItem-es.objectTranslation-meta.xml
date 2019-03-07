@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <errorMessage><!-- Somente é possível dar desconto para produtos de monitoramento --></errorMessage>
+        <name>Desconto_produto_monitoramento_mexico</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Prazo do contrato incorreto --></errorMessage>
+        <name>Mexico_prazo_contrato</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>La cantidad y el precio de venta no pueden ser negativos</errorMessage>
+        <name>Valor_negativo</name>
+    </validationRules>
+</CustomObjectTranslation>

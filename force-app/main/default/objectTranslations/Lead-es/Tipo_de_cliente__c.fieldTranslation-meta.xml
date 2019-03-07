@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo de cliente --></label>
+    <name>Tipo_de_cliente__c</name>
+    <picklistValues>
+        <masterLabel>Cliente Base</masterLabel>
+        <translation>Cliente Base</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente Final</masterLabel>
+        <translation>Cliente Final</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente indicador</masterLabel>
+        <translation>Cliente indicador</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Embarcador</masterLabel>
+        <translation>Embarcador</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ex-Cliente</masterLabel>
+        <translation>Ex-Cliente</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gerenciador de Risco</masterLabel>
+        <translation>Gestor de riesgo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indicador</masterLabel>
+        <translation>Indicador</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Novo Cliente</masterLabel>
+        <translation>Nuevo Cliente</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Novo Parceiro</masterLabel>
+        <translation>Nuevo Socio</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prestador de serviço</masterLabel>
+        <translation>Proveedor de servicios</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rental</masterLabel>
+        <translation>Rental</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sinergia Michelin KA</masterLabel>
+        <translation>Sinergia Michelin KA</translation>
+    </picklistValues>
+</CustomFieldTranslation>

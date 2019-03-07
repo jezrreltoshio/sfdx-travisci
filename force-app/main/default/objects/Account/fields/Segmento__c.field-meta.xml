@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Segmento__c</fullName>
+    <externalId>false</externalId>
+    <label>Segmento</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AGRONEGÓCIOS / USINA</fullName>
+                <default>false</default>
+                <label>AGRONEGÓCIOS / USINA</label>
+            </value>
+            <value>
+                <fullName>ALIMENTÍCIA</fullName>
+                <default>false</default>
+                <label>ALIMENTÍCIA</label>
+            </value>
+            <value>
+                <fullName>ASSOCIACAO</fullName>
+                <default>false</default>
+                <label>ASSOCIACAO</label>
+            </value>
+            <value>
+                <fullName>AUTOPEÇAS E COMBUSTÍVEIS</fullName>
+                <default>false</default>
+                <label>AUTOPEÇAS E COMBUSTÍVEIS</label>
+            </value>
+            <value>
+                <fullName>BEBIDAS</fullName>
+                <default>false</default>
+                <label>BEBIDAS</label>
+            </value>
+            <value>
+                <fullName>CIGARRO</fullName>
+                <default>false</default>
+                <label>CIGARRO</label>
+            </value>
+            <value>
+                <fullName>COMÉRCIO</fullName>
+                <default>false</default>
+                <label>COMÉRCIO</label>
+            </value>
+            <value>
+                <fullName>CONSTRUÇÃO CIVIL</fullName>
+                <default>false</default>
+                <label>CONSTRUÇÃO CIVIL</label>
+            </value>
+            <value>
+                <fullName>DISTRIBUIDORA</fullName>
+                <default>false</default>
+                <label>DISTRIBUIDORA</label>
+            </value>
+            <value>
+                <fullName>ELETROELETRÔNICOS</fullName>
+                <default>false</default>
+                <label>ELETROELETRÔNICOS</label>
+            </value>
+            <value>
+                <fullName>ESCOLAR</fullName>
+                <default>false</default>
+                <label>ESCOLAR</label>
+            </value>
+            <value>
+                <fullName>EXTRAÇÃO DE MINÉRIO</fullName>
+                <default>false</default>
+                <label>EXTRAÇÃO DE MINÉRIO</label>
+            </value>
+            <value>
+                <fullName>FARMACÊUTICOS</fullName>
+                <default>false</default>
+                <label>FARMACÊUTICOS</label>
+            </value>
+            <value>
+                <fullName>FRETEIRO</fullName>
+                <default>false</default>
+                <label>FRETEIRO</label>
+            </value>
+            <value>
+                <fullName>FRIGORÍFICO</fullName>
+                <default>false</default>
+                <label>FRIGORÍFICO</label>
+            </value>
+            <value>
+                <fullName>FROTA</fullName>
+                <default>false</default>
+                <label>FROTA</label>
+            </value>
+            <value>
+                <fullName>GÁS</fullName>
+                <default>false</default>
+                <label>GÁS</label>
+            </value>
+            <value>
+                <fullName>INDÚSTRIA</fullName>
+                <default>false</default>
+                <label>INDÚSTRIA</label>
+            </value>
+            <value>
+                <fullName>LINHA AMARELA</fullName>
+                <default>false</default>
+                <label>LINHA AMARELA</label>
+            </value>
+            <value>
+                <fullName>LOCADORA</fullName>
+                <default>false</default>
+                <label>LOCADORA</label>
+            </value>
+            <value>
+                <fullName>MADEIREIRA</fullName>
+                <default>false</default>
+                <label>MADEIREIRA</label>
+            </value>
+            <value>
+                <fullName>MAQUINA/OUTROS</fullName>
+                <default>false</default>
+                <label>MAQUINA/OUTROS</label>
+            </value>
+            <value>
+                <fullName>METALÚRGICOS E QUÍMICOS</fullName>
+                <default>false</default>
+                <label>METALÚRGICOS E QUÍMICOS</label>
+            </value>
+            <value>
+                <fullName>MUDANÇAS</fullName>
+                <default>false</default>
+                <label>MUDANÇAS</label>
+            </value>
+            <value>
+                <fullName>OUTRO</fullName>
+                <default>false</default>
+                <label>OUTRO</label>
+            </value>
+            <value>
+                <fullName>SEGURADORA</fullName>
+                <default>false</default>
+                <label>SEGURADORA</label>
+            </value>
+            <value>
+                <fullName>SERVIÇOS</fullName>
+                <default>false</default>
+                <label>SERVIÇOS</label>
+            </value>
+            <value>
+                <fullName>SIGGO</fullName>
+                <default>false</default>
+                <label>SIGGO</label>
+            </value>
+            <value>
+                <fullName>TÊXTEIS E CONFECÇÕES</fullName>
+                <default>false</default>
+                <label>TÊXTEIS E CONFECÇÕES</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE</fullName>
+                <default>false</default>
+                <label>TRANSPORTE</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE DE PASSAGEIROS</fullName>
+                <default>false</default>
+                <label>TRANSPORTE DE PASSAGEIROS</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTE ESCOLAR</fullName>
+                <default>false</default>
+                <label>TRANSPORTE ESCOLAR</label>
+            </value>
+            <value>
+                <fullName>TURISMO</fullName>
+                <default>false</default>
+                <label>TURISMO</label>
+            </value>
+            <value>
+                <fullName>VIGILÂNCIA</fullName>
+                <default>false</default>
+                <label>VIGILÂNCIA</label>
+            </value>
+            <value>
+                <fullName>VIVO</fullName>
+                <default>false</default>
+                <label>VIVO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

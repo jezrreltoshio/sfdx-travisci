@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status solicitação equipamento --></label>
+    <name>Status_solicitacao_equipamento__c</name>
+    <picklistValues>
+        <masterLabel>Aguardando estoque CD</masterLabel>
+        <translation><!-- Aguardando estoque CD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Atendido</masterLabel>
+        <translation><!-- Atendido --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Estoque CD reabastecido</masterLabel>
+        <translation><!-- Estoque CD reabastecido --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pendente</masterLabel>
+        <translation><!-- Pendente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recusado</masterLabel>
+        <translation><!-- Recusado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sem Solicitação</masterLabel>
+        <translation><!-- Sem Solicitação --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

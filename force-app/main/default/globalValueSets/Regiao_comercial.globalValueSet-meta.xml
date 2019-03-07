@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>ASSOCIAÇÃO</fullName>
+        <default>false</default>
+        <label>ASSOCIAÇÃO</label>
+    </customValue>
+    <customValue>
+        <fullName>BLUETEC</fullName>
+        <default>false</default>
+        <label>BLUETEC</label>
+    </customValue>
+    <customValue>
+        <fullName>CANAL SEGURADORAS</fullName>
+        <default>false</default>
+        <label>CANAL SEGURADORAS</label>
+    </customValue>
+    <customValue>
+        <fullName>CANAL TELEVENDAS</fullName>
+        <default>false</default>
+        <label>CANAL TELEVENDAS</label>
+    </customValue>
+    <customValue>
+        <fullName>CARGO TRACCK</fullName>
+        <default>false</default>
+        <label>CARGO TRACCK</label>
+    </customValue>
+    <customValue>
+        <fullName>FRETEIROS</fullName>
+        <default>false</default>
+        <label>FRETEIROS</label>
+    </customValue>
+    <customValue>
+        <fullName>INATIVOS</fullName>
+        <default>false</default>
+        <label>INATIVOS</label>
+    </customValue>
+    <customValue>
+        <fullName>OUTROS</fullName>
+        <default>false</default>
+        <label>OUTROS</label>
+    </customValue>
+    <customValue>
+        <fullName>REGIONAL CO</fullName>
+        <default>false</default>
+        <label>REGIONAL CO</label>
+    </customValue>
+    <customValue>
+        <fullName>REGIONAL KA</fullName>
+        <default>false</default>
+        <label>REGIONAL KA</label>
+    </customValue>
+    <customValue>
+        <fullName>REGIONAL MG/RJ/ES</fullName>
+        <default>false</default>
+        <label>REGIONAL MG/RJ/ES</label>
+    </customValue>
+    <customValue>
+        <fullName>REGIONAL NO/NE</fullName>
+        <default>false</default>
+        <label>REGIONAL NO/NE</label>
+    </customValue>
+    <customValue>
+        <fullName>REGIONAL NO/NE/CO</fullName>
+        <default>false</default>
+        <label>REGIONAL NO/NE/CO</label>
+    </customValue>
+    <customValue>
+        <fullName>REGIONAL PR</fullName>
+        <default>false</default>
+        <label>REGIONAL PR</label>
+    </customValue>
+    <customValue>
+        <fullName>REGIONAL RS</fullName>
+        <default>false</default>
+        <label>REGIONAL RS</label>
+    </customValue>
+    <customValue>
+        <fullName>REGIONAL SP</fullName>
+        <default>false</default>
+        <label>REGIONAL SP</label>
+    </customValue>
+    <customValue>
+        <fullName>REGIONAL SPC</fullName>
+        <default>false</default>
+        <label>REGIONAL SPC</label>
+    </customValue>
+    <customValue>
+        <fullName>REGIONAL SPI</fullName>
+        <default>false</default>
+        <label>REGIONAL SPI</label>
+    </customValue>
+    <customValue>
+        <fullName>REGIONAL SP INT</fullName>
+        <default>false</default>
+        <label>REGIONAL SP INT</label>
+    </customValue>
+    <customValue>
+        <fullName>REGIONAL SUL</fullName>
+        <default>false</default>
+        <label>REGIONAL SUL</label>
+    </customValue>
+    <customValue>
+        <fullName>SBTEC</fullName>
+        <default>false</default>
+        <label>SBTEC</label>
+    </customValue>
+    <customValue>
+        <fullName>SIGGO</fullName>
+        <default>false</default>
+        <label>SIGGO</label>
+    </customValue>
+    <customValue>
+        <fullName>VAREJO</fullName>
+        <default>false</default>
+        <label>VAREJO</label>
+    </customValue>
+    <customValue>
+        <fullName>VIVO</fullName>
+        <default>false</default>
+        <label>VIVO</label>
+    </customValue>
+    <customValue>
+        <fullName>VAZIO</fullName>
+        <default>false</default>
+        <label>VAZIO</label>
+    </customValue>
+    <description>Região comercial do BI</description>
+    <masterLabel>Região Comercial</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

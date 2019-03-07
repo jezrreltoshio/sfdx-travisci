@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Siggo</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Contato Não Efetivo</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Decisor Ausente - Ligar de Manha</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Decisor Ausente - Ligar de Tarde</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Desqualificado</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Em aberto</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Primeira tentativa</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Qualificado</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Quarta tentativa</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Segunda tentativa</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Terceira tentativa</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

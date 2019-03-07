@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>COMERCIAL_NO_NE_N3_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NomeCliente__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>MotivoReclamacao__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>PrazoConclusaoResposta__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Queue</filterScope>
+    <label>COMERCIAL NO/NE N3</label>
+    <queue>COMERCIAL_NO_NE</queue>
+    <sharedTo>
+        <group>COMERCIAL_NO_NE</group>
+    </sharedTo>
+</ListView>

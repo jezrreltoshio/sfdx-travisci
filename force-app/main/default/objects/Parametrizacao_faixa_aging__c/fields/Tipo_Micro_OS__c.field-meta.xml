@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_Micro_OS__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo Micro da OS</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Tipo_micro_OS</valueSetName>
+    </valueSet>
+    <visibleLines>8</visibleLines>
+</CustomField>

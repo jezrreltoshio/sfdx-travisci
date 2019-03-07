@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proibir_edicao_acao_inativa</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT(
+  OR(
+    ISNEW(),
+    Ativo__c
+  )
+)</errorConditionFormula>
+    <errorMessage>Para alterar uma Ação de Histórico de OS, a mesma deve estar ativada!</errorMessage>
+</ValidationRule>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Origem_Lead_Agrupado__c</fullName>
+    <externalId>false</externalId>
+    <label>Origem do Lead Agrupado</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ações MKT</fullName>
+                <default>false</default>
+                <label>Ações MKT</label>
+            </value>
+            <value>
+                <fullName>Ataque à base</fullName>
+                <default>false</default>
+                <label>Ataque à base</label>
+            </value>
+            <value>
+                <fullName>Ativo - Prospecção do TV</fullName>
+                <default>false</default>
+                <label>Ativo - Prospecção do TV</label>
+            </value>
+            <value>
+                <fullName>Busca Google</fullName>
+                <default>false</default>
+                <label>Busca Google</label>
+            </value>
+            <value>
+                <fullName>Canal Exclusivo de Indicações</fullName>
+                <default>false</default>
+                <label>Canal Exclusivo de Indicações</label>
+            </value>
+            <value>
+                <fullName>Chat Siggo</fullName>
+                <default>false</default>
+                <label>Chat Siggo</label>
+            </value>
+            <value>
+                <fullName>E-commerce</fullName>
+                <default>false</default>
+                <label>E-commerce</label>
+            </value>
+            <value>
+                <fullName>Email MKT</fullName>
+                <default>false</default>
+                <label>Email MKT</label>
+            </value>
+            <value>
+                <fullName>Evento Feira ou convenção</fullName>
+                <default>false</default>
+                <label>Evento Feira ou convenção</label>
+            </value>
+            <value>
+                <fullName>Facebook</fullName>
+                <default>false</default>
+                <label>Facebook</label>
+            </value>
+            <value>
+                <fullName>Fornecedor de Leads</fullName>
+                <default>false</default>
+                <label>Fornecedor de Leads</label>
+            </value>
+            <value>
+                <fullName>Frota Circulante - Executivo</fullName>
+                <default>false</default>
+                <label>Frota Circulante - Executivo</label>
+            </value>
+            <value>
+                <fullName>Indicação</fullName>
+                <default>false</default>
+                <label>Indicação</label>
+            </value>
+            <value>
+                <fullName>Indicação de Cliente MGM</fullName>
+                <default>false</default>
+                <label>Indicação de Cliente MGM</label>
+            </value>
+            <value>
+                <fullName>Indicador</fullName>
+                <default>false</default>
+                <label>Indicador</label>
+            </value>
+            <value>
+                <fullName>Indicador de Negócio</fullName>
+                <default>false</default>
+                <label>Indicador de Negócio</label>
+            </value>
+            <value>
+                <fullName>Loja Michelin</fullName>
+                <default>false</default>
+                <label>Loja Michelin</label>
+            </value>
+            <value>
+                <fullName>Mailing</fullName>
+                <default>false</default>
+                <label>Mailing</label>
+            </value>
+            <value>
+                <fullName>Michelin</fullName>
+                <default>false</default>
+                <label>Michelin</label>
+            </value>
+            <value>
+                <fullName>Mídia TV</fullName>
+                <default>false</default>
+                <label>Mídia TV</label>
+            </value>
+            <value>
+                <fullName>Outros</fullName>
+                <default>false</default>
+                <label>Outros</label>
+            </value>
+            <value>
+                <fullName>Parcerias</fullName>
+                <default>false</default>
+                <label>Parcerias</label>
+            </value>
+            <value>
+                <fullName>Site Sascar</fullName>
+                <default>false</default>
+                <label>Site Sascar</label>
+            </value>
+            <value>
+                <fullName>Site Siggo</fullName>
+                <default>false</default>
+                <label>Site Siggo</label>
+            </value>
+            <value>
+                <fullName>Site Siggo Receptivo</fullName>
+                <default>false</default>
+                <label>Site Siggo Receptivo</label>
+            </value>
+            <value>
+                <fullName>SMS</fullName>
+                <default>false</default>
+                <label>SMS</label>
+            </value>
+            <value>
+                <fullName>Totem Michelin</fullName>
+                <default>false</default>
+                <label>Totem Michelin</label>
+            </value>
+            <value>
+                <fullName>You Tube</fullName>
+                <default>false</default>
+                <label>You Tube</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contatos_dias_distintos__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Contatos em dias distintos dentro da faixa.</description>
+    <externalId>false</externalId>
+    <label>Contatos dias distintos</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

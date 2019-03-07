@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Perguntar ao Cliente se ele recebeu no email cadastrado o boleto para de instalação --></help>
+    <label><!-- Recebeu o Boleto de Instalação? --></label>
+    <name>Recebeu_o_Boleto_de_Instala_o__c</name>
+    <picklistValues>
+        <masterLabel>NÃO</masterLabel>
+        <translation><!-- NÃO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIM</masterLabel>
+        <translation><!-- SIM --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

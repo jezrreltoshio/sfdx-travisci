@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Administración de SIMs</fullName>
+        <default>false</default>
+        <label>Administración de SIMs</label>
+    </customValue>
+    <customValue>
+        <fullName>Analista de Plataforma</fullName>
+        <default>false</default>
+        <label>Analista de Plataforma</label>
+    </customValue>
+    <customValue>
+        <fullName>Atención a Clientes</fullName>
+        <default>false</default>
+        <label>Atención a Clientes</label>
+    </customValue>
+    <customValue>
+        <fullName>CAI</fullName>
+        <default>false</default>
+        <label>CAI</label>
+    </customValue>
+    <customValue>
+        <fullName>Capacitación UC</fullName>
+        <default>false</default>
+        <label>Capacitación UC</label>
+    </customValue>
+    <customValue>
+        <fullName>Cobranza</fullName>
+        <default>false</default>
+        <label>Cobranza</label>
+    </customValue>
+    <customValue>
+        <fullName>Consultoría</fullName>
+        <default>false</default>
+        <label>Consultoría</label>
+    </customValue>
+    <customValue>
+        <fullName>Desarrollo</fullName>
+        <default>false</default>
+        <label>Desarrollo</label>
+    </customValue>
+    <customValue>
+        <fullName>Ejecutivo de Ventas</fullName>
+        <default>false</default>
+        <label>Ejecutivo de Ventas</label>
+    </customValue>
+    <customValue>
+        <fullName>Facturación</fullName>
+        <default>false</default>
+        <label>Facturación</label>
+    </customValue>
+    <customValue>
+        <fullName>Implementación</fullName>
+        <default>false</default>
+        <label>Implementación</label>
+    </customValue>
+    <customValue>
+        <fullName>Infraestructura</fullName>
+        <default>false</default>
+        <label>Infraestructura</label>
+    </customValue>
+    <customValue>
+        <fullName>Ingeniería</fullName>
+        <default>false</default>
+        <label>Ingeniería</label>
+    </customValue>
+    <customValue>
+        <fullName>Instalaciones</fullName>
+        <default>false</default>
+        <label>Instalaciones</label>
+    </customValue>
+    <customValue>
+        <fullName>Laboratorio</fullName>
+        <default>false</default>
+        <label>Laboratorio</label>
+    </customValue>
+    <customValue>
+        <fullName>Operador de Plataforma</fullName>
+        <default>false</default>
+        <label>Operador de Plataforma</label>
+    </customValue>
+    <customValue>
+        <fullName>Televentas</fullName>
+        <default>false</default>
+        <label>Televentas</label>
+    </customValue>
+    <customValue>
+        <fullName>Fuerza Comercial</fullName>
+        <default>false</default>
+        <label>Fuerza Comercial</label>
+    </customValue>
+    <masterLabel>Área responsável MX</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

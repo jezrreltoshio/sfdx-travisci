@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nao_atualiza_caso_apos_salvar</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ NOT(ISNEW()),
+ $Profile.Name &lt;&gt; &#39;Ouvidoria&#39;,
+ $Profile.Name &lt;&gt; &#39;Administrador do sistema&#39;,
+ RecordType.Name &lt;&gt; &#39;Jurídico&#39;,
+ RecordType.Name &lt;&gt; &#39;Procon&#39;,
+RecordType.DeveloperName &lt;&gt; &#39;Mexico&#39;,
+ NOT(ISBLANK($Profile.Name)),
+ OR(
+  ISCHANGED(CNPJ_CPF__c) ,
+  ISCHANGED(SuppliedName) ,
+  ISCHANGED(SuppliedEmail) ,
+  ISCHANGED(SuppliedPhone) ,
+  ISCHANGED(NomeCliente__c) ,
+  ISCHANGED(TelefoneCliente__c) ,
+  LOWER(PRIORVALUE(EmailCliente__c)) &lt;&gt; LOWER(EmailCliente__c),
+  ISCHANGED(Cliente_Sascar__c) ,
+  ISCHANGED(AccountId) ,
+  ISCHANGED(SolucaoSegmento__c) ,
+  ISCHANGED(Priority) ,
+  ISCHANGED(Origin) ,
+  ISCHANGED(SubOrigem__c) ,
+  ISCHANGED(MotivoReclamacao__c) ,
+  ISCHANGED(Description) ,
+  ISCHANGED(Placa__c) ,
+  ISCHANGED(NProtocoloAtendimento__c) ,
+  ISCHANGED(NOS__c)
+ )
+)</errorConditionFormula>
+    <errorMessage>Não é permitido atualizar os campos da seção de &quot;Detalhe do caso&quot;, após salvar um caso.</errorMessage>
+</ValidationRule>

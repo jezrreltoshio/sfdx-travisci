@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Menor_de_18_anos</fullName>
+    <active>true</active>
+    <description>Data de nascimento não pode ser menor de 18 anos</description>
+    <errorConditionFormula>AND(
+    YEAR(TODAY()) - YEAR(DadosPF_DataNascimento__c) &lt; 18,
+    OR(
+        RecordType.Name = &#39;FRETEIRO&#39;,
+        RecordType.Name = &#39;SIGGO&#39;
+    )
+)</errorConditionFormula>
+    <errorDisplayField>A_o_judicial__c</errorDisplayField>
+    <errorMessage>Data de nascimento inválida.</errorMessage>
+</ValidationRule>

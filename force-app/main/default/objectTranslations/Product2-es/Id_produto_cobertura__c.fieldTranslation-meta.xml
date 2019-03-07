@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>ID del producto Usebens. Si es más de uno, separar usando punto y coma (330; 331).</help>
+    <label>Id producto cobertura</label>
+    <name>Id_produto_cobertura__c</name>
+</CustomFieldTranslation>

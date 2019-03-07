@@ -1,0 +1,1223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reclamacao</fullName>
+    <active>true</active>
+    <businessProcess>Ouvidoria</businessProcess>
+    <label>Reclamação</label>
+    <picklistValues>
+        <picklist>Area_responsavel__c</picklist>
+        <values>
+            <fullName>Administración de SIMs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Analista de Plataforma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atención a Clientes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capacitación UC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cobranza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consultoría</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Desarrollo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ejecutivo de Ventas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facturación</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fuerza Comercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Implementación</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Infraestructura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ingeniería</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instalaciones</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laboratorio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operador de Plataforma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Televentas</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CausaReclamacao__c</picklist>
+        <values>
+            <fullName>Acidente ocasionado pelo técnico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agenda da região não mapeada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agendou na data errada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agendou no ponto incorreto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alto backlog da área de transferência</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aplicativo não funcionou</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atendente não foi cordial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atendente não sabia as informações</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atendente passou informações incorretas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atendente realizou cobrança indevida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atraso da empresa de nota fiscal eletrônica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atraso da gráfica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atraso dos correios</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atraso no deslocamento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atraso no serviço anterior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelado indevidamente pela régua de cobrança</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente cadastrado incorretamente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente não entende faturamento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente não enviou todos documentos necessários</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente não solicitou transferência</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cláusula contratual não é informada no fechamento da venda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contrato ou gravação não encontrada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demanda maior que disponibilidade de agenda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Endereço incorreto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Endereço não encontrado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipamento ou acessório estragou</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Erro de faturamento de multas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Erro de faturamento de serviços</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Erro de faturamento de taxas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Erro operacional do atendimento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Erro operacional do financeiro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Falta de adesivos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Falta de conhecimento para agendar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Falta equipamento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fechamento de agenda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flag da gráfica para impressão do boleto não marcada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informações erradas no momento da venda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instalado incorretamente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não consegue contato na central ou televendas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não inclusão do cliente na base para faturar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não roteirizado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não sabe usar a solução</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problemas com pacote de assistência fornecedor da Siggo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sem retorno da solicitação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Técnico instalou incorretamente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Técnico não executou procedimento padrão</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Técnico não foi cordial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Veículo do técnico com problemas</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DMV__c</picklist>
+        <values>
+            <fullName>DMV1100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV1101</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV1102</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV1103</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV1104</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV1105</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV1106</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV1107</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV1200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV1201</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV1202</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV1204</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV1205</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV1206</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV1207</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV1208</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV1300</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV1301</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV1302</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV1303</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV1304</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV1501</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV1502</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV2000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV2100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV2101</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV2102</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV2104</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV2105</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV2106</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV2107</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV2108</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV3000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV3100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV3101</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV3103</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV3105</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV3106</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV3107</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV3200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV3201</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV3202</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV3203</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV3204</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV3205</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV3300</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV3302</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV3303</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV3304</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV3305</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV3400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV4100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV4101</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV4102</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV4103</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV4104</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV4201</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV4202</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV4203</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV4204</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV4205</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV4206</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV4207</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV4208</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV5000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV5100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV5101</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV5102</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV5104</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV5105</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV5106</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV5107</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV5108</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV5111</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV5201</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV5202</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV5300</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV5301</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMV5400</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MotivoReclamacao__c</picklist>
+        <values>
+            <fullName>Agendamento cancelado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atendimento ruim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avaria no veículo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelamento%2FDowngrade de contrato não concluído</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cobrança indevida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indisponibilidade de agenda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informações contratuais e comerciais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não recebimento do boleto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros assuntos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problemas técnicos com a solução</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferência de titularidade não concluída</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Técnico não compareceu</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Motivo_baixa__c</picklist>
+        <values>
+            <fullName>Baja Temporal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pendiente de Instalación</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Siniestro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unidad em Taller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehículo vendido</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Motivo_cancelamento__c</picklist>
+        <values>
+            <fullName>Perdida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problemas Financieros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Robos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Servicio Deficiente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehículos vendidos</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NivelEscalacao__c</picklist>
+        <values>
+            <fullName>N1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Nota_cliente__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Central de atendimento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email ouvidoria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pós venda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reclame aqui</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Televendas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>Alto</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Baixo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Médio</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Procedencia__c</picklist>
+        <values>
+            <fullName>Improcedente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Procedente</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Funcionalidade complexa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instruções pouco claras</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Novo problema</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>O usuário não compareceu ao treinamento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problema existente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicitação de Leads - NEOWAY</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Resolucao__c</picklist>
+        <values>
+            <fullName>Cancelado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Error com Solución Conocida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pendientes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prueba Funcional con Pendientes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prueba Funcional no realizada por CAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recuperación no Exitosa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resuelto</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Segmento__c</picklist>
+        <values>
+            <fullName>AGRONEGÓCIOS %2F USINA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ALIMENTÍCIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSOCIACAO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUTOPEÇAS E COMBUSTÍVEIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CIGARRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COMÉRCIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONSTRUÇÃO CIVIL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DISTRIBUIDORA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ELETROELETRÔNICOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESCOLAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FARMACÊUTICOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRETEIRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FROTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GÁS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LINHA AMARELA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOCADORA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MADEIREIRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAQUINA%2FOUTROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METALÚRGICOS E QUÍMICOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MUDANÇAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OUTRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEGURADORA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SERVIÇOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIGGO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRANSPORTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRANSPORTE DE PESSOAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRANSPORTE ESCOLAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TURISMO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TÊXTEIS E CONFECÇÕES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIGILÂNCIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIVO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Servidor__c</picklist>
+        <values>
+            <fullName>Cargo Tracck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S6</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SolucaoSegmento__c</picklist>
+        <values>
+            <fullName>Bluetec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cargo Tracck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sascar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Siggo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>StatusProcesso__c</picklist>
+        <values>
+            <fullName>Atrasada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concluída</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concluída com atraso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não iniciada</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>StatusResposta__c</picklist>
+        <values>
+            <fullName>Atrasada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atrasado aguardando cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concluída</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concluída com atraso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em andamento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em andamento aguardando cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não iniciada</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>StatusSolucao__c</picklist>
+        <values>
+            <fullName>Atrasada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atrasado aguardando cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concluída</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concluída com atraso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em andamento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em andamento aguardando cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não iniciada</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SubOrigem__c</picklist>
+        <values>
+            <fullName>Fale conosco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal de serviços</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reclame aqui</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Bluetec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Cargo Tracck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Sascar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Siggo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subtipo__c</picklist>
+        <values>
+            <fullName>Incidente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problema</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Queja</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_servico__c</picklist>
+        <values>
+            <fullName>Desinstalação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instalação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prova Piloto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revisão</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Trabalhador_por__c</picklist>
+        <values>
+            <fullName>Executivo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Televendas %2B Executivo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Pergunta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problema</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicitação de recurso</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

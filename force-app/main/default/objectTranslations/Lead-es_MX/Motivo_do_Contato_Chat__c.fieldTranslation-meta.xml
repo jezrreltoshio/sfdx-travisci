@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Motivo do Contato (Chat) --></label>
+    <name>Motivo_do_Contato_Chat__c</name>
+    <picklistValues>
+        <masterLabel>Dúvidas do cliente</masterLabel>
+        <translation><!-- Dúvidas do cliente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prospecção/Negociação</masterLabel>
+        <translation><!-- Prospecção/Negociação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reclamação do cliente</masterLabel>
+        <translation><!-- Reclamação do cliente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TROTE</masterLabel>
+        <translation><!-- TROTE --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

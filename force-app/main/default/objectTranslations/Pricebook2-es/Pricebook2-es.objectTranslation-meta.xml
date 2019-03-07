@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Price Book Layout</layout>
+        <sections>
+            <label>Nivel de aprobación</label>
+            <section>Alçada de aprovação</section>
+        </sections>
+        <sections>
+            <label>Información del sistema</label>
+            <section>Informações de sistema</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+        <sections>
+            <label>Tasa de instalación</label>
+            <section>Taxa de instalação</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

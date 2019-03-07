@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gerenciador_de_risco__c</fullName>
+    <externalId>false</externalId>
+    <label>Gerenciador de risco</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Angelira</fullName>
+                <default>false</default>
+                <label>Angelira</label>
+            </value>
+            <value>
+                <fullName>APISUL Multisat</fullName>
+                <default>false</default>
+                <label>APISUL Multisat</label>
+            </value>
+            <value>
+                <fullName>Brasil Risk</fullName>
+                <default>false</default>
+                <label>Brasil Risk</label>
+            </value>
+            <value>
+                <fullName>Buonny</fullName>
+                <default>false</default>
+                <label>Buonny</label>
+            </value>
+            <value>
+                <fullName>GV</fullName>
+                <default>false</default>
+                <label>GV</label>
+            </value>
+            <value>
+                <fullName>Opentech</fullName>
+                <default>false</default>
+                <label>Opentech</label>
+            </value>
+            <value>
+                <fullName>Raster</fullName>
+                <default>false</default>
+                <label>Raster</label>
+            </value>
+            <value>
+                <fullName>Outro</fullName>
+                <default>false</default>
+                <label>Outro</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

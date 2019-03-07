@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>ADMINISTRADOR</submitter>
+        <type>roleSubordinates</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Papel_do_propriet_rio__c</field>
+        <field>Owner</field>
+        <field>Name</field>
+        <field>Account</field>
+        <field>Prazo_do_contrato__c</field>
+        <field>Nome_catalogo__c</field>
+        <field>Indicador__c</field>
+        <field>Valor_sem_desconto__c</field>
+        <field>Valor_final_com_desconto__c</field>
+        <field>Valor_unit_rio_mensal_new__c</field>
+        <field>Valor_unit_rio_mensal_new2__c</field>
+        <field>Valor_total_desconto__c</field>
+        <field>Percentual_descontado__c</field>
+        <field>Observa_es_do_desconto__c</field>
+        <field>Alcada_Fin_Max__c</field>
+        <field>Alcada_Fin_Min__c</field>
+        <field>Alcada_Dir_Max__c</field>
+        <field>Alcada_Dir_Min__c</field>
+        <field>Alcada_Ger_Max__c</field>
+        <field>Alcada_Ger_Min__c</field>
+        <field>Alcada_Sup_Max__c</field>
+        <field>Alcada_Sup_Min__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Owner</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND(
+Valor_total_desconto__c = 0.00,
+Nome_do_produto__c = &#39;Isca descartável para Eletrônicos - 15D&#39;
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Etapa 1 Descartável para Eletrônicos - 15D</label>
+        <name>Etapa_1_Descart_vel_para_Eletr_nicos_15D</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>gardao.junior@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c &gt;= 0.01,
+Nome_do_produto__c = &#39;Isca descartável para Eletrônicos - 15D&#39; 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Etapa 2 Descartável para Eletrônicos - 15D</label>
+        <name>Etapa_2_Descart_vel_para_Eletr_nicos_15D</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>fn.nogueira@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c &gt;= 32.01,
+Nome_do_produto__c = &#39;Isca descartável para Eletrônicos - 15D&#39; 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Etapa 3 Descartável para Eletrônicos - 15D</label>
+        <name>Etapa_3_Descart_vel_para_Eletr_nicos_15D</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Owner</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c = 0.00, 
+Nome_do_produto__c = &#39;Isca descartável para Eletrônicos - 30D&#39; 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Etapa 1 Descartável para Eletrônicos - 30D</label>
+        <name>Etapa_1_Descart_vel_para_Eletr_nicos_30D</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>gardao.junior@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c &gt;= 0.01, 
+Nome_do_produto__c = &#39;Isca descartável para Eletrônicos - 30D&#39; 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Etapa 2 Descartável para Eletrônicos - 30D</label>
+        <name>Etapa_2_Descart_vel_para_Eletr_nicos_30D</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>fn.nogueira@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c &gt;= 32.01, 
+Nome_do_produto__c = &#39;Isca descartável para Eletrônicos - 30D&#39; 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Etapa 3 Descartável para Eletrônicos - 30D</label>
+        <name>Etapa_3_Descart_vel_para_Eletr_nicos_30D</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Owner</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c = 0.00, 
+Nome_do_produto__c = &#39;Isca descartável para Novos Segmentos - 15D&#39; 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Etapa 1 Descartável para Novos Segmentos - 15D</label>
+        <name>Etapa_1_Descart_vel_para_Novos_Segmentos_15D</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>gardao.junior@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c &gt;= 0.01, 
+Nome_do_produto__c = &#39;Isca descartável para Novos Segmentos - 15D&#39; 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Etapa 2 Descartável para Novos Segmentos - 15D</label>
+        <name>Etapa_2_Descart_vel_para_Novos_Segmentos_15D</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>fn.nogueira@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c &gt;= 13.01, 
+Nome_do_produto__c = &#39;Isca descartável para Novos Segmentos - 15D&#39; 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Etapa 3 Descartável para Novos Segmentos - 15D</label>
+        <name>Etapa_3_Descart_vel_para_Novos_Segmentos_15D</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Owner</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c = 0.00, 
+Nome_do_produto__c = &#39;Isca descartável para Novos Segmentos - 30D&#39; 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Etapa 1 Descartável para Novos Segmentos - 30D</label>
+        <name>Etapa_1_Descart_vel_para_Novos_Segmentos_30D</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>gardao.junior@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c &gt;= 0.01, 
+Nome_do_produto__c = &#39;Isca descartável para Novos Segmentos - 30D&#39; 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Etapa 2 Descartável para Novos Segmentos - 30D</label>
+        <name>Etapa_2_Descart_vel_para_Novos_Segmentos_30D</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>fn.nogueira@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c &gt;= 13.01, 
+Nome_do_produto__c = &#39;Isca descartável para Novos Segmentos - 30D&#39; 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Etapa 3 Descartável para Novos Segmentos - 30D</label>
+        <name>Etapa_3_Descart_vel_para_Novos_Segmentos_30D</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Owner</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Etapa consultor</description>
+        <entryCriteria>
+            <formula>Valor_total_desconto__c &lt;= 0</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Etapa1 Descartável Lacre Eletrônico - 40D</label>
+        <name>Etapa1_Descart_vel_Lacre_Eletr_nico_40D</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>gardao.junior@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Etapa Gerente</description>
+        <entryCriteria>
+            <formula>Valor_total_desconto__c &gt; 0.00</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Etapa 2 Descartável Lacre Eletrônico - 40D</label>
+        <name>Etapa_2_Descart_vel_Lacre_Eletr_nico_40D</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>fn.nogueira@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Etapa diretor</description>
+        <entryCriteria>
+            <formula>Valor_total_desconto__c &gt; 20.00</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Etapa 3 Descartável Lacre Eletrônico - 40D</label>
+        <name>Etapa_3_Descart_vel_Lacre_Eletr_nico_40D</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>adilson.filho@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Etapa Financeiro</description>
+        <entryCriteria>
+            <formula>Valor_total_desconto__c &gt; 40.00</formula>
+        </entryCriteria>
+        <label>Etapa 4 Descartável Lacre Eletrônico - 40D</label>
+        <name>Etapa_4_Descart_vel_Lacre_Eletr_nico_40D</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>Processo de aprovação das soluções descartáveis da Cargo tracck</description>
+    <emailTemplate>unfiled$public/Aprova_o_de_oportunidade</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <booleanFilter>1 AND 2 AND 3 AND (4 OR 5 OR 6 OR 7 OR 8)</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.Aprovacao_desconto__c</field>
+            <operation>equals</operation>
+            <value>Verdadeiro</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordType</field>
+            <operation>equals</operation>
+            <value>Cargo Tracck</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Aprova_o__c</field>
+            <operation>notEqual</operation>
+            <value>Aprovado,Solicitação enviada</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pricebook2.Name</field>
+            <operation>equals</operation>
+            <value>Descartável para Eletrônicos</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pricebook2.Name</field>
+            <operation>equals</operation>
+            <value>Descartável para Eletrônicos – Não KA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pricebook2.Name</field>
+            <operation>equals</operation>
+            <value>Descartável para Novos Segmentos</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pricebook2.Name</field>
+            <operation>equals</operation>
+            <value>Descartável para Novos Segmentos – Não KA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pricebook2.Name</field>
+            <operation>equals</operation>
+            <value>Descartável Lacre Eletrônico - 40D</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Aprova_o_total_da_oportunidade</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Atualiza_aprova_o_da_oportunidade</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Atualiza_reprova_o_da_oportunidade</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Rejei_o_da_oportunidade</name>
+            <type>Alert</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Aprova_o_pendente</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Descartável Cargo Tracck</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>true</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

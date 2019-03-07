@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Endereço do endpoint de desenvolvimento da busca de CEP --></help>
+    <label><!-- Busca CEP desenvolvimento --></label>
+    <name>Busca_CEP_desenvolvimento__c</name>
+</CustomFieldTranslation>

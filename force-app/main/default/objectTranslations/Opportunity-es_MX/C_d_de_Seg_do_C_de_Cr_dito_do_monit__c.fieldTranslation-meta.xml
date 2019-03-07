@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cód. de Seg. do C. de Crédito do monit. --></label>
+    <name>C_d_de_Seg_do_C_de_Cr_dito_do_monit__c</name>
+</CustomFieldTranslation>

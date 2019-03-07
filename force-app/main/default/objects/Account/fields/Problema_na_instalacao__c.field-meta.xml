@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Problema_na_instalacao__c</fullName>
+    <description>Campo para pesquisa para os clientes recém instalados - MGM</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Verificar com o Cliente se ele passou por algum problema no processo de instalação (inclui agendamento). Em caso positivo, anote o problema</inlineHelpText>
+    <label>Teve algum problema na Instalação?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sim</fullName>
+                <default>false</default>
+                <label>Sim</label>
+            </value>
+            <value>
+                <fullName>Não</fullName>
+                <default>false</default>
+                <label>Não</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

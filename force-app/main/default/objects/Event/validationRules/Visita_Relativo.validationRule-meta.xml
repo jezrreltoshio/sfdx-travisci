@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Visita_Relativo</fullName>
+    <active>false</active>
+    <description>ASM 93862
+criar regra de validação para compromisso
+Quando tipo de visita = visita, não deixar o campo relativo obrigatorio</description>
+    <errorConditionFormula>AND(
+ NOT ISPICKVAL( Tipo_de_visita__c, &#39;Evento&#39;),
+ WhatId = null,
+ WhoId = null
+)</errorConditionFormula>
+    <errorMessage>Quando Tipo de Visita for diferente de Evento é obrigatório preencher o campo Relativo a.</errorMessage>
+</ValidationRule>

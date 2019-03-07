@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Num_esperado_de_visitas__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISNUMBER(TEXT(Cadencia__c) ), 
+FLOOR(MONTH(TODAY()) *  VALUE(TEXT(Cadencia__c))/12)
+, 0)+1</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Num esperado de visitas</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

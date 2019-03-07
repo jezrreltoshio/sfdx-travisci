@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Exerceu nos últimos 5 (cinco) anos ou exerce, atualmente, no Brasil ou fora dele, cargos, empregos ou funções públicas relevantes? --></help>
+    <label><!-- PEP 1 (Coloque o mouse aqui) --></label>
+    <name>PEP1__c</name>
+</CustomFieldTranslation>

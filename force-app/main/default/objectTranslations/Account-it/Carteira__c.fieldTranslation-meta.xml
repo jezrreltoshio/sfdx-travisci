@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Carteira --></label>
+    <name>Carteira__c</name>
+    <picklistValues>
+        <masterLabel>Freteiro</masterLabel>
+        <translation><!-- Freteiro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GC</masterLabel>
+        <translation><!-- GC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PME&#39;S</masterLabel>
+        <translation><!-- PME&apos;S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Top PME&#39;S</masterLabel>
+        <translation><!-- Top PME&apos;S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Varejo</masterLabel>
+        <translation><!-- Varejo --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

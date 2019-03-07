@@ -30,16 +30,19 @@ public class Teste_Handler_Conta {
         Map<String, sObject> mapBase = Teste_Util.createMapBase();
         Account conta = (Account) mapBase.get('Account');
         conta.CNPJ__c = '';
+        conta.RecordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByName().get('CORP').getRecordTypeId();
         update conta;
 
         Account conta2 = Teste_Util.newAccount();
         conta2.CNPJ__c = '30.022.945/0001-75';
+        conta2.RecordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByName().get('CORP').getRecordTypeId();
         update conta2;
 
         Account conta3 = Teste_Util.newAccount();
         conta3.CNPJ__c = '30.022.945/0001-75';
+        conta3.RecordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByName().get('CORP').getRecordTypeId();
         update conta3;
 
-        Handler_Conta.verificaDuplicidadeCNPJ(new List<Account>{conta, conta3}, new Map<Id, Account>{conta.Id => conta2});
+        Handler_Conta.verificaDuplicidadeCNPJ(new List<Account>{conta, conta3}, new Map<Id, Account>{conta.Id => conta2}, true);
     }
 }

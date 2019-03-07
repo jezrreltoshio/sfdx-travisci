@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo de visita --></label>
+    <name>Tipo_de_visita__c</name>
+    <picklistValues>
+        <masterLabel>Conseguir Indicações em Parceiros</masterLabel>
+        <translation>Obtener Indicaciones en Socios</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Embarcador</masterLabel>
+        <translation><!-- Embarcador --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entrega de equipamentos</masterLabel>
+        <translation>Entrega de equipos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Evento</masterLabel>
+        <translation><!-- Evento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fechamento</masterLabel>
+        <translation>Cierre</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gerenciadora de riscos</masterLabel>
+        <translation>Gestora de riesgos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Levantamento de Oportunidade</masterLabel>
+        <translation>Estudio de Oportunidad</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Montadora</masterLabel>
+        <translation>Fabricante automotriz</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Negociação</masterLabel>
+        <translation>Negociación</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não presencial</masterLabel>
+        <translation>No presencial</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Presencial</masterLabel>
+        <translation><!-- Presencial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Presencial / Não presencial</masterLabel>
+        <translation><!-- Presencial / Não presencial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prestador de serviço</masterLabel>
+        <translation>Proveedor de servicios</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prospecção</masterLabel>
+        <translation>Prospección</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prospecção em novos</masterLabel>
+        <translation>Prospección en nuevos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prospecção na base</masterLabel>
+        <translation>Prospección en la base</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolução de Problema</masterLabel>
+        <translation>Resolución de problemas</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reunião de Pós-Venda</masterLabel>
+        <translation>Reunión de posventa</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reunião de Sinistros</masterLabel>
+        <translation>Reunión de siniestros</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seguradora</masterLabel>
+        <translation>Aseguradora</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teste</masterLabel>
+        <translation>Prueba</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visita TOP 10 (Base)</masterLabel>
+        <translation><!-- Visita TOP 10 (Base) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visita na Base</masterLabel>
+        <translation>Visita en la base</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visita à Indicador</masterLabel>
+        <translation>Visita al indicador</translation>
+    </picklistValues>
+</CustomFieldTranslation>

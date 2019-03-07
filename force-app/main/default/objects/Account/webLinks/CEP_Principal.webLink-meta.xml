@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CEP_Principal</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>CEP Principal</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/37.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/37.0/apex.js&quot;)} 
+
+var acc = new sforce.SObject(&quot;Account&quot;); 
+acc.Id = &#39;{!Account.Id}&#39;; 
+
+acc.Enderecos_Principal_CEP__c = prompt(&#39;{!$Label.MSG_ERRO_0038}&#39;,&#39;{!Account.Enderecos_Principal_CEP__c}&#39;); 
+
+acc.Enderecos_Principal_Numero__c = prompt(&#39;{!$Label.MSG_ERRO_0039}&#39;,&#39;{!Account.Enderecos_Principal_Numero__c}&#39;); 
+
+acc.Enderecos_Principal_Complemento__c = prompt(&#39;{!$Label.MSG_ERRO_0040}&#39;,&#39; &#39;); 
+
+acc.Cep_preenchido_principal__c = true; 
+
+acc.BotaoAtualizaCEPEndPrincipal__c = true;
+
+if(acc.Enderecos_Principal_CEP__c != null &amp;&amp; acc.Enderecos_Principal_Numero__c != null){
+var result = sforce.apex.execute(&#39;Busca_CEP_Conta&#39;, &#39;cepPrincipal&#39;, {id:[acc.Id], cep:[acc.Enderecos_Principal_CEP__c], numero:[acc.Enderecos_Principal_Numero__c], complemento:[acc.Enderecos_Principal_Complemento__c], principal:&#39;true&#39;, botao:&#39;cep_principal&#39;}); 
+
+alert(&#39;{!$Label.MSG_ERRO_0041}&#39;); 
+window.location.reload();
+}</url>
+</WebLink>

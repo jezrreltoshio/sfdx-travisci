@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Necessidade Secundaria --></label>
+    <name>Necessidade_Secundaria__c</name>
+    <picklistValues>
+        <masterLabel>Conservação de carga</masterLabel>
+        <translation><!-- Conservação de carga --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Controle de custos</masterLabel>
+        <translation><!-- Controle de custos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gestão de riscos</masterLabel>
+        <translation><!-- Gestão de riscos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pontualidade</masterLabel>
+        <translation><!-- Pontualidade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prevenção de acidentes</masterLabel>
+        <translation><!-- Prevenção de acidentes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produtividade</masterLabel>
+        <translation><!-- Produtividade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Segurança da carga</masterLabel>
+        <translation><!-- Segurança da carga --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

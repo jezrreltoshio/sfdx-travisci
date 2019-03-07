@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marca_Veiculo__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Marca do veículo.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Marca do veículo.</inlineHelpText>
+    <label>Marca do Veículo</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Marca_Veiculo__c.Ativo__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Marca_Veiculo__c</referenceTo>
+    <relationshipLabel>Modelos de Veículo</relationshipLabel>
+    <relationshipName>Modelos_de_Veiculo</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

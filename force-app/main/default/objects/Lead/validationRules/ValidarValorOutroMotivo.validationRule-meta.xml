@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidarValorOutroMotivo</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    RecordType.Name = &#39;Cargo Tracck&#39;,
+    NOT(ISBLANK(Outro_motivo__c)),
+    NOT(ISPICKVAL(Motivo_da_desqualifica_o_do_lead__c, &#39;Outros (obs.)&#39;))    
+)</errorConditionFormula>
+    <errorDisplayField>Outro_motivo__c</errorDisplayField>
+    <errorMessage>Você só deve preencher esse campo, quando o campo &quot;Motivo da desqualificação do lead&quot; estiver com a opção &quot;Outros (obs.)&quot;.</errorMessage>
+</ValidationRule>

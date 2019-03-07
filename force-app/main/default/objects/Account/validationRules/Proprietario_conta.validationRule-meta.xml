@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proprietario_conta</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+ISCHANGED( OwnerId ), 
+AND( 
+OR( 
+$User.ProfileId = &#39;00e400000017Qdq&#39;, 
+$User.ProfileId = &#39;00e400000017bl6&#39;, 
+$User.ProfileId = &#39;00e40000001FZPW&#39;, 
+$User.ProfileId = &#39;00e400000017cB4&#39;, 
+$User.ProfileId = &#39;00e400000017cOX&#39; 
+)))</errorConditionFormula>
+    <errorMessage>Seu perfil não permite trocar o proprietário da conta.</errorMessage>
+</ValidationRule>

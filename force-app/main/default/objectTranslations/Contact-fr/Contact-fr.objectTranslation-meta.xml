@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>CORP</layout>
+        <sections>
+            <label><!-- Tipo de pessoa --></label>
+            <section>Tipo de pessoa</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CORP - Argentina</layout>
+        <sections>
+            <label><!-- Tipo de pessoa --></label>
+            <section>Tipo de pessoa</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CORP - Mexico</layout>
+        <sections>
+            <label><!-- Tipo de pessoa --></label>
+            <section>Tipo de pessoa</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Cargo Tracck</layout>
+        <sections>
+            <label><!-- Tipo de pessoa --></label>
+            <section>Tipo de pessoa</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout Blue tec</layout>
+        <sections>
+            <label><!-- Tipo de pessoa --></label>
+            <section>Tipo de pessoa</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- CEP deve conter apenas 8 dígitos. --></errorMessage>
+        <name>CEP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Se o contato é autorizado, emergência e instalação, obrigatório preencher o DNI --></errorMessage>
+        <name>DNI_obrigatorio</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Formato: 00.000.000 --></errorMessage>
+        <name>Mercosul_formato_DNI</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- DNI inválido --></errorMessage>
+        <name>Mercosul_invalido_DNI</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Você deve utilizar, primeiramente, o botão Atualiza CEP para preencher o endereço. --></errorMessage>
+        <name>Preenche_endereco</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Seu perfil não permite trocar o proprietário do contato. --></errorMessage>
+        <name>Proprietario_contato</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CPF Inválido! Insira um valor válido. --></errorMessage>
+        <name>Valida_CPF</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CEP deve conter no máximo 10 dígitos. --></errorMessage>
+        <name>Validacao_CEP_tamanho</name>
+    </validationRules>
+</CustomObjectTranslation>

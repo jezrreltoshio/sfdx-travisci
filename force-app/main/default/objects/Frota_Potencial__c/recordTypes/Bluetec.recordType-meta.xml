@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bluetec</fullName>
+    <active>true</active>
+    <label>OTR</label>
+    <picklistValues>
+        <picklist>Concorrente__c</picklist>
+        <values>
+            <fullName>AUTOTRAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BYSAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CARSYSTEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CIELO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONFORCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GOLSAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ITURAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LINK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINIMAX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NÃO POSSUI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OMNILINK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ONIXSAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OUTROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POINTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PORTO SEGURO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POSITRON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOFTRACK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRACKER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRUCKLOG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VELTEC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Necessidade_de_negocio_3__c</picklist>
+        <values>
+            <fullName>Conservação de carga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Controle de custos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gestão de riscos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prevenção de acidentes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Produtividade</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Necessidade_do_negocio__c</picklist>
+        <values>
+            <fullName>Conservação da carga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Controle de custos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pontualidade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prevenção de acidentes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Produtividade</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Nivel_de_relacionamento__c</picklist>
+        <values>
+            <fullName>Bom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Excelente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Muito bom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Péssimo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Razoável</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ruim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sem relacionamento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ótimo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Segmentacao_de_mercado__c</picklist>
+        <values>
+            <fullName>Aeroportos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agricultura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alimentos e Bebidas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cana de Açúcar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carga Especial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carga Expressa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carga Refrigerada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carga Seca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carga Sólida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carga Viva</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carga de Valor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cargas Químicas e Perigosas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cegonheiro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cimento e Betoneira</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coleta de Lixo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construção</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Containers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corretora</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gerenciadora de Risco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guincho e Reboque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indústria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logística</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Madeireira</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mineração e Energia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mudanças e Armazenagem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seguradoras</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Serviços de Emergência</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tanques p%2F Alimentos e Bebidas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uso Militar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ônibus Rodoviário</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ônibus Urbano</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_de_isca__c</picklist>
+        <values>
+            <fullName>Descartável</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Descartável e retornável</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retornável</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_de_ve_culo__c</picklist>
+        <values>
+            <fullName>AUTOMÓVEL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAMINHAO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAMINHONETE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CARRETA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COLHEITADEIRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMPILHADEIRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EQUIPAMENTO MÓVEL%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESCAVADEIRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GUINDASTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAQUINA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MICROONIBUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MOTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MOTO NIVELADORA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ONIBUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PICKUP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PLATAFORMA ELEVATÓRIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PONTE ROLANTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PÁ CARREGADEIRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RETROESCAVADEIRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRATOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRATOR DE ESTEIRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VEÍCULOS LEVES</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

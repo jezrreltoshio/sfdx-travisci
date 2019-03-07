@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_cliente_ID__c</fullName>
+    <description>ID do Tipo de Cliente, conforme a tabela da intranet: tipo_cliente_salesforce</description>
+    <externalId>false</externalId>
+    <formula>CASE (TEXT(Tipo_de_cliente__c), 
+&#39;Cliente Base&#39;, &#39;1&#39;, 
+&#39;Cliente Novo&#39;, &#39;2&#39;,
+&#39;Prospecção&#39;, &#39;3&#39;,
+&#39;2&#39;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Tipo cliente ID</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

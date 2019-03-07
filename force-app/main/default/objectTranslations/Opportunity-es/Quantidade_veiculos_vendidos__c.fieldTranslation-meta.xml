@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Quantidade total de veículos monitorados, independente do produto --></help>
+    <label><!-- Quantidade de veiculos vendidos --></label>
+    <name>Quantidade_veiculos_vendidos__c</name>
+</CustomFieldTranslation>

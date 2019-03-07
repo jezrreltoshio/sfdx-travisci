@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Pesquisa --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Pesquisa --></value>
+    </caseValues>
+    <gender><!-- Feminine --></gender>
+    <layouts>
+        <layout>Cliente Base</layout>
+        <sections>
+            <label><!-- Cliente de Base --></label>
+            <section>Cliente de Base</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Criação Pesquisa Cliente</layout>
+        <sections>
+            <label><!-- Insira a conta relacionada --></label>
+            <section>Insira a conta relacionada</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout padrão</layout>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Não Cliente</layout>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Pesquisa de campo</layout>
+        <sections>
+            <label><!-- Frota Total --></label>
+            <section>Frota Total</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+        <sections>
+            <label><!-- Visão Macro --></label>
+            <section>Visão Macro</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Plano Conquista</layout>
+        <sections>
+            <label><!-- Detalhes da pesquisa --></label>
+            <section>Detalhes da pesquisa</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+        <sections>
+            <label><!-- Pesquisa de Prospecção --></label>
+            <section>Pesquisa de Prospecção</section>
+        </sections>
+        <sections>
+            <label><!-- Pesquisa em cliente --></label>
+            <section>Pesquisa em cliente</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Plano Conquista CT</layout>
+        <sections>
+            <label><!-- Dados do Cliente --></label>
+            <section>Dados do Cliente</section>
+        </sections>
+        <sections>
+            <label><!-- Detalhes da pesquisa --></label>
+            <section>Detalhes da pesquisa</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+        <sections>
+            <label><!-- Pesquisa --></label>
+            <section>Pesquisa</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Renegociação - Executivo</layout>
+        <sections>
+            <label><!-- Dados do cliente --></label>
+            <section>Dados do cliente</section>
+        </sections>
+        <sections>
+            <label><!-- Detalhes da pesquisa --></label>
+            <section>Detalhes da pesquisa</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+        <sections>
+            <label><!-- Seção de executivo --></label>
+            <section>Seção de executivo</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Renegociação - Gerencia</layout>
+        <sections>
+            <label><!-- Dados do cliente --></label>
+            <section>Dados do cliente</section>
+        </sections>
+        <sections>
+            <label><!-- Detalhes da pesquisa --></label>
+            <section>Detalhes da pesquisa</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+        <sections>
+            <label><!-- Seção de executivo --></label>
+            <section>Seção de executivo</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Número --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- Cliente da Base --></label>
+        <name>Cliente_da_Base</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Novo Cliente --></label>
+        <name>Novo_Cliente</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Pesquisa de campo --></label>
+        <name>Pesquisa_campo</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Plano Conquista --></label>
+        <name>Plano_Conquista</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Plano Conquista (CT) --></label>
+        <name>Plano_Conquista2_CT</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Plano Conquista CT --></label>
+        <name>Plano_Conquista_CT</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Renegociação</label>
+        <name>Renegociacao</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Preencha com pelo menos um concorrente  neste campo. --></errorMessage>
+        <name>Campo_outros_concorrentes_obrigatorio</name>
+    </validationRules>
+</CustomObjectTranslation>

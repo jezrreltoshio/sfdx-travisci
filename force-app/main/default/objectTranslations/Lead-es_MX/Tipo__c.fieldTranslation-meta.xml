@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo --></label>
+    <name>Tipo__c</name>
+    <picklistValues>
+        <masterLabel>Cliente base</masterLabel>
+        <translation>Cliente Base</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente indicador</masterLabel>
+        <translation><!-- Cliente indicador --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Embarcador</masterLabel>
+        <translation>Dador de carga</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ex-Cliente</masterLabel>
+        <translation><!-- Ex-Cliente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gerenciador de Risco</masterLabel>
+        <translation>Gestor de riesgo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indicador</masterLabel>
+        <translation><!-- Indicador --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Novo Cliente</masterLabel>
+        <translation>Nuevo Cliente</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Novo parceiro</masterLabel>
+        <translation>Nuevo Socio</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sinergia Michelin KA</masterLabel>
+        <translation><!-- Sinergia Michelin KA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

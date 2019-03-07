@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo_perda_Outros</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+ISPICKVAL( Motivo_perda__c , &#39;Outros (informar detalhes)&#39;), 
+ISBLANK( Detalhes_perda__c ) 
+)</errorConditionFormula>
+    <errorMessage>Informar Detalhes da perda quando o Motivo da perda é Outros.</errorMessage>
+</ValidationRule>

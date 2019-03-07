@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Para cuentas de tipo de persona física, especifique o dirección de correo electrónico, no se encuentra ninguna cualificación o cliente. Para las cuentas del Tipo Peso Legal, especifique o envíe un e-mail de contacto comercial de la empresa.</help>
+    <label>Correo electrónico</label>
+    <name>EMail__c</name>
+</CustomFieldTranslation>

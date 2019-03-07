@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_da_visita__c</fullName>
+    <externalId>false</externalId>
+    <label>Status da visita</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agendada</fullName>
+                <default>true</default>
+                <label>Agendada</label>
+            </value>
+            <value>
+                <fullName>Cancelada</fullName>
+                <default>false</default>
+                <label>Cancelada</label>
+            </value>
+            <value>
+                <fullName>Realizada</fullName>
+                <default>false</default>
+                <label>Realizada</label>
+            </value>
+            <value>
+                <fullName>Reagendada</fullName>
+                <default>false</default>
+                <label>Reagendada</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

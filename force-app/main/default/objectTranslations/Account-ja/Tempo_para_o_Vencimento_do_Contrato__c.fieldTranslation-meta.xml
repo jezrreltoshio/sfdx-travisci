@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tempo para o Vencimento do Contrato --></label>
+    <name>Tempo_para_o_Vencimento_do_Contrato__c</name>
+    <picklistValues>
+        <masterLabel>Diversos Vencimentos</masterLabel>
+        <translation><!-- Diversos Vencimentos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mais de um ano para vencer</masterLabel>
+        <translation><!-- Mais de um ano para vencer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Menos de um ano para vencer</masterLabel>
+        <translation><!-- Menos de um ano para vencer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não Informado</masterLabel>
+        <translation><!-- Não Informado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vencido</masterLabel>
+        <translation><!-- Vencido --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

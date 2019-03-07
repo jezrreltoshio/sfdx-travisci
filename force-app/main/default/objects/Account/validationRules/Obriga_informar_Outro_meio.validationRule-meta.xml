@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Obriga_informar_Outro_meio</fullName>
+    <active>true</active>
+    <description>Obriga usuário a informar o &quot;outro meio&quot; quando a opção escolhida para o campo &quot;como soube da siggo?&quot; for outro.</description>
+    <errorConditionFormula>AND(ISPICKVAL(Como_soube_da_Siggo__c,&#39;Outro&#39;),ISBLANK(Outro_meio__c))</errorConditionFormula>
+    <errorDisplayField>Outro_meio__c</errorDisplayField>
+    <errorMessage>Quando a opção selecionada para a pergunta &quot;Como soube da Siggo?&quot; é Outro, é obrigatório descrever qual foi o outro meio.</errorMessage>
+</ValidationRule>

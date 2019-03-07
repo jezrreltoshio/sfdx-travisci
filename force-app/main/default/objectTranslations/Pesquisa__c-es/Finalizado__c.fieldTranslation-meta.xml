@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status da Renegociação --></label>
+    <name>Finalizado__c</name>
+    <picklistValues>
+        <masterLabel>Em andamento</masterLabel>
+        <translation><!-- Em andamento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finalizado</masterLabel>
+        <translation><!-- Finalizado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não Iniciado</masterLabel>
+        <translation><!-- Não Iniciado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejeitado</masterLabel>
+        <translation><!-- Rejeitado --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Supervis_o__c</fullName>
+    <externalId>false</externalId>
+    <label>Supervisão</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SP-CAPITAL</fullName>
+                <default>false</default>
+                <label>SP-CAPITAL</label>
+            </value>
+            <value>
+                <fullName>SP-ABC-GRU-LITORAL</fullName>
+                <default>false</default>
+                <label>SP-ABC-GRU-LITORAL</label>
+            </value>
+            <value>
+                <fullName>SP-INTERIOR</fullName>
+                <default>false</default>
+                <label>SP-INTERIOR</label>
+            </value>
+            <value>
+                <fullName>PARANÁ</fullName>
+                <default>false</default>
+                <label>PARANÁ</label>
+            </value>
+            <value>
+                <fullName>RIO GRANDE DO SUL</fullName>
+                <default>false</default>
+                <label>RIO GRANDE DO SUL</label>
+            </value>
+            <value>
+                <fullName>SANTA CATARINA</fullName>
+                <default>false</default>
+                <label>SANTA CATARINA</label>
+            </value>
+            <value>
+                <fullName>MG</fullName>
+                <default>false</default>
+                <label>MG</label>
+            </value>
+            <value>
+                <fullName>RJ-ES</fullName>
+                <default>false</default>
+                <label>RJ-ES</label>
+            </value>
+            <value>
+                <fullName>NORDESTE I</fullName>
+                <default>false</default>
+                <label>NORDESTE I</label>
+            </value>
+            <value>
+                <fullName>NORDESTE II</fullName>
+                <default>false</default>
+                <label>NORDESTE II</label>
+            </value>
+            <value>
+                <fullName>CENTRO OESTE</fullName>
+                <default>false</default>
+                <label>CENTRO OESTE</label>
+            </value>
+            <value>
+                <fullName>KEY ACCOUNT NONECO</fullName>
+                <default>false</default>
+                <label>KEY ACCOUNT NONECO</label>
+            </value>
+            <value>
+                <fullName>KEY ACCOUNT SP</fullName>
+                <default>false</default>
+                <label>KEY ACCOUNT SP</label>
+            </value>
+            <value>
+                <fullName>KEY ACCOUNT MGRJES</fullName>
+                <default>false</default>
+                <label>KEY ACCOUNT MGRJES</label>
+            </value>
+            <value>
+                <fullName>KEY ACCOUNT SUL</fullName>
+                <default>false</default>
+                <label>KEY ACCOUNT SUL</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

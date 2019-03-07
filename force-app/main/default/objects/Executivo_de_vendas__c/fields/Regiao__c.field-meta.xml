@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Regiao__c</fullName>
+    <externalId>false</externalId>
+    <label>Região</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Supervis_o__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SP/ZONA SUL</fullName>
+                <default>false</default>
+                <label>SP/ZONA SUL</label>
+            </value>
+            <value>
+                <fullName>SP/CENTRO E LESTE</fullName>
+                <default>false</default>
+                <label>SP/CENTRO E LESTE</label>
+            </value>
+            <value>
+                <fullName>SP/ZONA NORTE</fullName>
+                <default>false</default>
+                <label>SP/ZONA NORTE</label>
+            </value>
+            <value>
+                <fullName>SP/ZONA OESTE</fullName>
+                <default>false</default>
+                <label>SP/ZONA OESTE</label>
+            </value>
+            <value>
+                <fullName>PIRACICABA/SOROCABA</fullName>
+                <default>false</default>
+                <label>PIRACICABA/SOROCABA</label>
+            </value>
+            <value>
+                <fullName>JUNDIAI</fullName>
+                <default>false</default>
+                <label>JUNDIAI</label>
+            </value>
+            <value>
+                <fullName>GUARULHOS I</fullName>
+                <default>false</default>
+                <label>GUARULHOS I</label>
+            </value>
+            <value>
+                <fullName>GUARULHOS II</fullName>
+                <default>false</default>
+                <label>GUARULHOS II</label>
+            </value>
+            <value>
+                <fullName>VALE DO PARAIBA</fullName>
+                <default>false</default>
+                <label>VALE DO PARAIBA</label>
+            </value>
+            <value>
+                <fullName>SCS, SANTO ANDRE</fullName>
+                <default>false</default>
+                <label>SCS, SANTO ANDRE</label>
+            </value>
+            <value>
+                <fullName>RJ - CENTRO / ZONA NORTE</fullName>
+                <default>false</default>
+                <label>RJ - CENTRO / ZONA NORTE</label>
+            </value>
+            <value>
+                <fullName>RJ - ZONA BAIXADA</fullName>
+                <default>false</default>
+                <label>RJ - ZONA BAIXADA</label>
+            </value>
+            <value>
+                <fullName>NORTE FLUMINENSE DE RIO BONITO, CAMPOS</fullName>
+                <default>false</default>
+                <label>NORTE FLUMINENSE DE RIO BONITO, CAMPOS</label>
+            </value>
+            <value>
+                <fullName>VITORIA E GRANDE VITORIA</fullName>
+                <default>false</default>
+                <label>VITORIA E GRANDE VITORIA</label>
+            </value>
+            <value>
+                <fullName>NORTE E NOROESTE DO ESPIRITO SANTO</fullName>
+                <default>false</default>
+                <label>NORTE E NOROESTE DO ESPIRITO SANTO</label>
+            </value>
+            <value>
+                <fullName>RJ - ZONA OESTE</fullName>
+                <default>false</default>
+                <label>RJ - ZONA OESTE</label>
+            </value>
+            <value>
+                <fullName>RJ - ZONA SUL</fullName>
+                <default>false</default>
+                <label>RJ - ZONA SUL</label>
+            </value>
+            <value>
+                <fullName>ABCII</fullName>
+                <default>false</default>
+                <label>ABCII</label>
+            </value>
+            <value>
+                <fullName>ACRE / RONDONIA / RORAIMA</fullName>
+                <default>false</default>
+                <label>ACRE / RONDONIA / RORAIMA</label>
+            </value>
+            <value>
+                <fullName>ALAGOAS / SERGIPE</fullName>
+                <default>false</default>
+                <label>ALAGOAS / SERGIPE</label>
+            </value>
+            <value>
+                <fullName>ARACAJU/SERGIPE</fullName>
+                <default>false</default>
+                <label>ARACAJU/SERGIPE</label>
+            </value>
+            <value>
+                <fullName>BAHIA I</fullName>
+                <default>false</default>
+                <label>BAHIA I</label>
+            </value>
+            <value>
+                <fullName>BAHIA II</fullName>
+                <default>false</default>
+                <label>BAHIA II</label>
+            </value>
+            <value>
+                <fullName>BAHIA III</fullName>
+                <default>false</default>
+                <label>BAHIA III</label>
+            </value>
+            <value>
+                <fullName>BAURU</fullName>
+                <default>false</default>
+                <label>BAURU</label>
+            </value>
+            <value>
+                <fullName>CAMPINAS</fullName>
+                <default>false</default>
+                <label>CAMPINAS</label>
+            </value>
+            <value>
+                <fullName>CAMPINAS II</fullName>
+                <default>false</default>
+                <label>CAMPINAS II</label>
+            </value>
+            <value>
+                <fullName>CASCAVEL</fullName>
+                <default>false</default>
+                <label>CASCAVEL</label>
+            </value>
+            <value>
+                <fullName>CAXIAS DO SUL</fullName>
+                <default>false</default>
+                <label>CAXIAS DO SUL</label>
+            </value>
+            <value>
+                <fullName>CEARA / MARANHÃO / PIAUI</fullName>
+                <default>false</default>
+                <label>CEARA / MARANHÃO / PIAUI</label>
+            </value>
+            <value>
+                <fullName>CEARA / MARANHÃO / PIAUI II</fullName>
+                <default>false</default>
+                <label>CEARA / MARANHÃO / PIAUI II</label>
+            </value>
+            <value>
+                <fullName>CENTRO OESTE DE MINAS</fullName>
+                <default>false</default>
+                <label>CENTRO OESTE DE MINAS</label>
+            </value>
+            <value>
+                <fullName>CHAPECO</fullName>
+                <default>false</default>
+                <label>CHAPECO</label>
+            </value>
+            <value>
+                <fullName>CURITIBA</fullName>
+                <default>false</default>
+                <label>CURITIBA</label>
+            </value>
+            <value>
+                <fullName>DISTRITO FEDERAL</fullName>
+                <default>false</default>
+                <label>DISTRITO FEDERAL</label>
+            </value>
+            <value>
+                <fullName>FLORIANOPOLIS</fullName>
+                <default>false</default>
+                <label>FLORIANOPOLIS</label>
+            </value>
+            <value>
+                <fullName>GOIAS</fullName>
+                <default>false</default>
+                <label>GOIAS</label>
+            </value>
+            <value>
+                <fullName>ITAJAÍ</fullName>
+                <default>false</default>
+                <label>ITAJAÍ</label>
+            </value>
+            <value>
+                <fullName>JOINVILLE</fullName>
+                <default>false</default>
+                <label>JOINVILLE</label>
+            </value>
+            <value>
+                <fullName>LIMEIRA</fullName>
+                <default>false</default>
+                <label>LIMEIRA</label>
+            </value>
+            <value>
+                <fullName>LITORAL</fullName>
+                <default>false</default>
+                <label>LITORAL</label>
+            </value>
+            <value>
+                <fullName>LITORAL SUL</fullName>
+                <default>false</default>
+                <label>LITORAL SUL</label>
+            </value>
+            <value>
+                <fullName>MARANHÃO</fullName>
+                <default>false</default>
+                <label>MARANHÃO</label>
+            </value>
+            <value>
+                <fullName>MARINGA</fullName>
+                <default>false</default>
+                <label>MARINGA</label>
+            </value>
+            <value>
+                <fullName>MATO GROSSO</fullName>
+                <default>false</default>
+                <label>MATO GROSSO</label>
+            </value>
+            <value>
+                <fullName>MATO GROSSO DO SUL</fullName>
+                <default>false</default>
+                <label>MATO GROSSO DO SUL</label>
+            </value>
+            <value>
+                <fullName>METROPOLITANA</fullName>
+                <default>false</default>
+                <label>METROPOLITANA</label>
+            </value>
+            <value>
+                <fullName>MGNOVO</fullName>
+                <default>false</default>
+                <label>MGNOVO</label>
+            </value>
+            <value>
+                <fullName>PARA / AMAPA</fullName>
+                <default>false</default>
+                <label>PARA / AMAPA</label>
+            </value>
+            <value>
+                <fullName>PARAIBA / RIO GRANDE DO NORTE</fullName>
+                <default>false</default>
+                <label>PARAIBA / RIO GRANDE DO NORTE</label>
+            </value>
+            <value>
+                <fullName>PASSO FUNDO</fullName>
+                <default>false</default>
+                <label>PASSO FUNDO</label>
+            </value>
+            <value>
+                <fullName>PERNAMBUCO I</fullName>
+                <default>false</default>
+                <label>PERNAMBUCO I</label>
+            </value>
+            <value>
+                <fullName>PONTA GROSSA</fullName>
+                <default>false</default>
+                <label>PONTA GROSSA</label>
+            </value>
+            <value>
+                <fullName>PRESIDENTE PRUDENTE</fullName>
+                <default>false</default>
+                <label>PRESIDENTE PRUDENTE</label>
+            </value>
+            <value>
+                <fullName>RIBEIRAO PRETO</fullName>
+                <default>false</default>
+                <label>RIBEIRAO PRETO</label>
+            </value>
+            <value>
+                <fullName>RJ - ZONA LESTE</fullName>
+                <default>false</default>
+                <label>RJ - ZONA LESTE</label>
+            </value>
+            <value>
+                <fullName>RMBH II</fullName>
+                <default>false</default>
+                <label>RMBH II</label>
+            </value>
+            <value>
+                <fullName>RMBH III</fullName>
+                <default>false</default>
+                <label>RMBH III</label>
+            </value>
+            <value>
+                <fullName>SAO JOSE DO RIO PRETO</fullName>
+                <default>false</default>
+                <label>SAO JOSE DO RIO PRETO</label>
+            </value>
+            <value>
+                <fullName>SAO JOSE DOS PINHAIS</fullName>
+                <default>false</default>
+                <label>SAO JOSE DOS PINHAIS</label>
+            </value>
+            <value>
+                <fullName>SBC</fullName>
+                <default>false</default>
+                <label>SBC</label>
+            </value>
+            <value>
+                <fullName>SUL / TAQUARI</fullName>
+                <default>false</default>
+                <label>SUL / TAQUARI</label>
+            </value>
+            <value>
+                <fullName>SUL DE MINAS</fullName>
+                <default>false</default>
+                <label>SUL DE MINAS</label>
+            </value>
+            <value>
+                <fullName>SUL E SUDOESTE DE GOIAS</fullName>
+                <default>false</default>
+                <label>SUL E SUDOESTE DE GOIAS</label>
+            </value>
+            <value>
+                <fullName>SUL FLUMINENSE, PIRAI, ENGENHEIRO PASSOS</fullName>
+                <default>false</default>
+                <label>SUL FLUMINENSE, PIRAI, ENGENHEIRO PASSOS</label>
+            </value>
+            <value>
+                <fullName>TERESINA/PIAUI</fullName>
+                <default>false</default>
+                <label>TERESINA/PIAUI</label>
+            </value>
+            <value>
+                <fullName>TOCANTINS</fullName>
+                <default>false</default>
+                <label>TOCANTINS</label>
+            </value>
+            <value>
+                <fullName>TRIANGULO MINEIRO</fullName>
+                <default>false</default>
+                <label>TRIANGULO MINEIRO</label>
+            </value>
+            <value>
+                <fullName>URUGUAIANA</fullName>
+                <default>false</default>
+                <label>URUGUAIANA</label>
+            </value>
+            <value>
+                <fullName>VALE DO AÇO/VALE JEQUITINHONHA</fullName>
+                <default>false</default>
+                <label>VALE DO AÇO/VALE JEQUITINHONHA</label>
+            </value>
+            <value>
+                <fullName>VITORIA E GRANDE VITORIA II</fullName>
+                <default>false</default>
+                <label>VITORIA E GRANDE VITORIA II</label>
+            </value>
+            <value>
+                <fullName>ZONA DA MATA</fullName>
+                <default>false</default>
+                <label>ZONA DA MATA</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>SPI</controllingFieldValue>
+            <valueName>BAURU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPI</controllingFieldValue>
+            <valueName>CAMPINAS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPI</controllingFieldValue>
+            <valueName>CAMPINAS II</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPI</controllingFieldValue>
+            <valueName>LIMEIRA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPI</controllingFieldValue>
+            <valueName>PRESIDENTE PRUDENTE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPI</controllingFieldValue>
+            <valueName>RIBEIRAO PRETO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPI</controllingFieldValue>
+            <valueName>SAO JOSE DO RIO PRETO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPI</controllingFieldValue>
+            <valueName>TRIANGULO MINEIRO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CO</controllingFieldValue>
+            <valueName>ACRE / RONDONIA / RORAIMA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CO</controllingFieldValue>
+            <valueName>DISTRITO FEDERAL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CO</controllingFieldValue>
+            <valueName>GOIAS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CO</controllingFieldValue>
+            <valueName>MATO GROSSO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CO</controllingFieldValue>
+            <valueName>MATO GROSSO DO SUL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CO</controllingFieldValue>
+            <valueName>PARA / AMAPA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CO</controllingFieldValue>
+            <valueName>SUL E SUDOESTE DE GOIAS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CO</controllingFieldValue>
+            <valueName>TOCANTINS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MG</controllingFieldValue>
+            <valueName>CENTRO OESTE DE MINAS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MG</controllingFieldValue>
+            <valueName>MGNOVO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MG</controllingFieldValue>
+            <valueName>RMBH II</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MG</controllingFieldValue>
+            <valueName>RMBH III</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MG</controllingFieldValue>
+            <valueName>SUL DE MINAS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MG</controllingFieldValue>
+            <valueName>VALE DO AÇO/VALE JEQUITINHONHA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MG</controllingFieldValue>
+            <valueName>ZONA DA MATA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NEI</controllingFieldValue>
+            <valueName>CEARA / MARANHÃO / PIAUI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NEI</controllingFieldValue>
+            <valueName>CEARA / MARANHÃO / PIAUI II</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NEI</controllingFieldValue>
+            <valueName>MARANHÃO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NEI</controllingFieldValue>
+            <valueName>PARAIBA / RIO GRANDE DO NORTE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NEI</controllingFieldValue>
+            <valueName>PERNAMBUCO I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NEI</controllingFieldValue>
+            <valueName>TERESINA/PIAUI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NEII</controllingFieldValue>
+            <valueName>ALAGOAS / SERGIPE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NEII</controllingFieldValue>
+            <valueName>ARACAJU/SERGIPE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NEII</controllingFieldValue>
+            <valueName>BAHIA I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NEII</controllingFieldValue>
+            <valueName>BAHIA II</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NEII</controllingFieldValue>
+            <valueName>BAHIA III</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PR</controllingFieldValue>
+            <valueName>CASCAVEL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PR</controllingFieldValue>
+            <valueName>CURITIBA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PR</controllingFieldValue>
+            <valueName>LITORAL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PR</controllingFieldValue>
+            <valueName>MARINGA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PR</controllingFieldValue>
+            <valueName>PONTA GROSSA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PR</controllingFieldValue>
+            <valueName>SAO JOSE DOS PINHAIS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RJES</controllingFieldValue>
+            <valueName>RJ - CENTRO / ZONA NORTE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RJES</controllingFieldValue>
+            <valueName>RJ - ZONA BAIXADA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RJES</controllingFieldValue>
+            <valueName>VITORIA E GRANDE VITORIA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RJES</controllingFieldValue>
+            <valueName>NORTE E NOROESTE DO ESPIRITO SANTO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RJES</controllingFieldValue>
+            <valueName>RJ - ZONA OESTE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RJES</controllingFieldValue>
+            <valueName>RJ - ZONA SUL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RJES</controllingFieldValue>
+            <valueName>RJ - ZONA LESTE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RJES</controllingFieldValue>
+            <valueName>SUL FLUMINENSE, PIRAI, ENGENHEIRO PASSOS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RJES</controllingFieldValue>
+            <valueName>VITORIA E GRANDE VITORIA II</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RS</controllingFieldValue>
+            <valueName>CAXIAS DO SUL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RS</controllingFieldValue>
+            <valueName>METROPOLITANA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RS</controllingFieldValue>
+            <valueName>PASSO FUNDO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RS</controllingFieldValue>
+            <valueName>SUL / TAQUARI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RS</controllingFieldValue>
+            <valueName>URUGUAIANA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SC</controllingFieldValue>
+            <valueName>CHAPECO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SC</controllingFieldValue>
+            <valueName>FLORIANOPOLIS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SC</controllingFieldValue>
+            <valueName>ITAJAÍ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SC</controllingFieldValue>
+            <valueName>JOINVILLE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPA</controllingFieldValue>
+            <valueName>GUARULHOS I</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPA</controllingFieldValue>
+            <valueName>GUARULHOS II</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPA</controllingFieldValue>
+            <valueName>VALE DO PARAIBA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPA</controllingFieldValue>
+            <valueName>SCS, SANTO ANDRE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPA</controllingFieldValue>
+            <valueName>ABCII</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPA</controllingFieldValue>
+            <valueName>LITORAL SUL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPA</controllingFieldValue>
+            <valueName>SBC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPC</controllingFieldValue>
+            <valueName>SP/ZONA SUL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPC</controllingFieldValue>
+            <valueName>SP/CENTRO E LESTE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPC</controllingFieldValue>
+            <valueName>SP/ZONA NORTE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPC</controllingFieldValue>
+            <valueName>SP/ZONA OESTE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPC</controllingFieldValue>
+            <valueName>PIRACICABA/SOROCABA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPC</controllingFieldValue>
+            <valueName>JUNDIAI</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

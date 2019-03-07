@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Motivo de la pérdida</label>
+    <name>Motivo_perda__c</name>
+    <picklistValues>
+        <masterLabel>Cliente não localizado</masterLabel>
+        <translation>Cliente no encontrado</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compra de pneu recente</masterLabel>
+        <translation>Compra de neumático reciente</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Condição comercial não aprovada pela Sascar</masterLabel>
+        <translation>Condición comercial no aprobada por Sascar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Condição de pagamento das revendas</masterLabel>
+        <translation>Condición de pago de las reventas</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contratante não ganhou licitação</masterLabel>
+        <translation>Contratista no ganó licitación</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Desconto baixo</masterLabel>
+        <translation>Descuento bajo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dual Chip</masterLabel>
+        <translation><!-- Dual Chip --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duplicidade de oportunidade</masterLabel>
+        <translation>Duplicidad de oportunidad</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Em trânsito, fora da região</masterLabel>
+        <translation>En tránsito, fuera de la región</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Está apenas cotando</masterLabel>
+        <translation>Sólo está cotizando</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Falta de customização</masterLabel>
+        <translation>Falta de personalización</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Falta de integração</masterLabel>
+        <translation>Falta de integración</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fechado em Pessoa Física</masterLabel>
+        <translation>Cerrado en persona física</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fechado em pessoa jurídica</masterLabel>
+        <translation>Cerrado en persona jurídica</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fidelidade com concorrente</masterLabel>
+        <translation>Fidelidad con competidor</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Funcionalidades</masterLabel>
+        <translation>Funciones</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Garantia de recuperação</masterLabel>
+        <translation>Garantía de recuperación</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instalação sem parcelamento</masterLabel>
+        <translation>Instalación sin fraccionamiento</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Investimento na troca</masterLabel>
+        <translation>Inversión en el cambio</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Já possui o produto</masterLabel>
+        <translation>Ya tiene el producto</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mensalidade de locação infinita</masterLabel>
+        <translation>Cuota mensual de alquiler infinito</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modelo de veículo não contemplado na oferta</masterLabel>
+        <translation>Modelo de vehículo no contemplado en la oferta</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optou concorrência</masterLabel>
+        <translation>Optó por la competencia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optou pela concorrência - Condições/vigência</masterLabel>
+        <translation>Optó por la competencia - Condiciones / vigencia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optou pela concorrência - Exigência Transportadora</masterLabel>
+        <translation>Optó por la competencia - Exigencia empresa de transporte</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optou pela concorrência - Preço</masterLabel>
+        <translation>Optó por la competencia - Precio</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optou pela concorrência - Produto</masterLabel>
+        <translation>Optó por la competencia - Producto</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optou por outro produto Sascar</masterLabel>
+        <translation>Optó por otro producto Sascar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optou por outro produto Sascar (SASMDT)</masterLabel>
+        <translation>Optó por otro producto Sascar (SASMDT)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optou seguradora</masterLabel>
+        <translation>Optó aseguradora</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outros (informar detalhes)</masterLabel>
+        <translation>Otros (detalles)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Placa já consta na base</masterLabel>
+        <translation>La placa ya consta en la base</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Porque acho o pneu Michelin caro</masterLabel>
+        <translation>Por qué crees el neumático Michelin caro</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prazo do Contrato</masterLabel>
+        <translation>Plazo del Contrato</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto com Seguro - Moto</masterLabel>
+        <translation>Producto con Seguro - Moto</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto sem bloqueio</masterLabel>
+        <translation>Producto sin bloqueo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produto sem seguro</masterLabel>
+        <translation>Producto sin seguro</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Qualidade do produto</masterLabel>
+        <translation>Calidad del producto</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Relacionamento com a revenda</masterLabel>
+        <translation>Relaciones con la reventa</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restrição Serasa</masterLabel>
+        <translation>Restricción Serasa</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restrição de crédito</masterLabel>
+        <translation>Restricción de crédito</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seguro com rastreador</masterLabel>
+        <translation>Seguro con rastreador</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sem condições financeiras para aquisição</masterLabel>
+        <translation>Sin condiciones financieras para la adquisición</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sem necessidade de realizar a troca no período da promoção</masterLabel>
+        <translation>Sin necesidad de realizar el cambio en el período de la promoción</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sem uso do veículo (parado/será vendido)</masterLabel>
+        <translation>Sin uso del vehículo (se detiene / se vende)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Taxa de retirada e reinstalação</masterLabel>
+        <translation>Tasa de retirada y reinstalación</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tecnologia</masterLabel>
+        <translation>Tecnología</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Titular não pode se deslocar à loja (Recebe visita do vendedor de pneu)</masterLabel>
+        <translation>Titular no puede desplazarse a la tienda (Recibir visita del vendedor de neumáticos)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Titular não pode se deslocar à loja (Titular não é o freteiro)</masterLabel>
+        <translation>Titular no puede desplazarse a la tienda (Titular no es el fletador)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uso agressivo, não vale a pena</masterLabel>
+        <translation>Uso agresivo, no vale la pena</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Valor da instalação</masterLabel>
+        <translation>Valor de la instalación</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Valor da mensalidade</masterLabel>
+        <translation>Valor de la mensualidad</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Valor da multa</masterLabel>
+        <translation>Valor de la multa</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Última experiencia ruim com Michelin</masterLabel>
+        <translation>Última experiencia mala con Michelin</translation>
+    </picklistValues>
+</CustomFieldTranslation>

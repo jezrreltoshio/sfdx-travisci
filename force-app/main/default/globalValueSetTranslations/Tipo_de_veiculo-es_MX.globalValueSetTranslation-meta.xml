@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>ACOPLADO</masterLabel>
+        <translation><!-- ACOPLADO --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AUTO-ELEVAÇÃO</masterLabel>
+        <translation>Auto Elevador</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AUTOELEVADOR</masterLabel>
+        <translation><!-- AUTOELEVADOR --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>AUTOMÓVEL</masterLabel>
+        <translation>Auto</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CAMINHAO</masterLabel>
+        <translation>Camión</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CAMINHONETE</masterLabel>
+        <translation><!-- CAMINHONETE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CARRETA</masterLabel>
+        <translation><!-- CARRETA --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CHASI</masterLabel>
+        <translation><!-- CHASI --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>COLHEITADEIRA</masterLabel>
+        <translation><!-- COLHEITADEIRA --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DESCARTÁVEL</masterLabel>
+        <translation><!-- DESCARTÁVEL --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DESCARTÁVEL E RETORNÁVEL</masterLabel>
+        <translation><!-- DESCARTÁVEL E RETORNÁVEL --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EMPILHADEIRA</masterLabel>
+        <translation><!-- EMPILHADEIRA --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EQUIPAMENTO MÓVEL.</masterLabel>
+        <translation><!-- EQUIPAMENTO MÓVEL. --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ESCAVADEIRA</masterLabel>
+        <translation><!-- ESCAVADEIRA --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>GUINDASTE</masterLabel>
+        <translation><!-- GUINDASTE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>LIVIANOS</masterLabel>
+        <translation><!-- LIVIANOS --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MAQUINA</masterLabel>
+        <translation>Máquinas</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MICROONIBUS</masterLabel>
+        <translation><!-- MICROONIBUS --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MOTO</masterLabel>
+        <translation><!-- MOTO --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MOTO NIVELADORA</masterLabel>
+        <translation><!-- MOTO NIVELADORA --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ONIBUS</masterLabel>
+        <translation><!-- ONIBUS --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>OTR</masterLabel>
+        <translation><!-- OTR --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PICKUP</masterLabel>
+        <translation><!-- PICKUP --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PLATAFORMA ELEVATÓRIA</masterLabel>
+        <translation><!-- PLATAFORMA ELEVATÓRIA --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PONTE ROLANTE</masterLabel>
+        <translation><!-- PONTE ROLANTE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PÁ CARREGADEIRA</masterLabel>
+        <translation><!-- PÁ CARREGADEIRA --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RETORNÁVEL</masterLabel>
+        <translation><!-- RETORNÁVEL --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>RETROESCAVADEIRA</masterLabel>
+        <translation><!-- RETROESCAVADEIRA --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SEMI-REBOQUE</masterLabel>
+        <translation>Semi Remolque</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SEMIRREMOLQUE</masterLabel>
+        <translation><!-- SEMIRREMOLQUE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SEÑUELO DESCARTABLE</masterLabel>
+        <translation><!-- SEÑUELO DESCARTABLE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SEÑUELO RETORNABLE</masterLabel>
+        <translation><!-- SEÑUELO RETORNABLE --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SIDER</masterLabel>
+        <translation><!-- SIDER --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TRACTOR</masterLabel>
+        <translation><!-- TRACTOR --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TRATOR</masterLabel>
+        <translation><!-- TRATOR --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TRATOR DE ESTEIRA</masterLabel>
+        <translation><!-- TRATOR DE ESTEIRA --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>VAN</masterLabel>
+        <translation><!-- VAN --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>VEÍCULOS LEVES</masterLabel>
+        <translation><!-- VEÍCULOS LEVES --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ÓMNIBUS</masterLabel>
+        <translation><!-- ÓMNIBUS --></translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

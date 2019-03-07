@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Contestação</layout>
+        <sections>
+            <label><!-- Campos --></label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Fechar casos México</layout>
+        <layoutType>CaseClose</layoutType>
+        <sections>
+            <label><!-- Comentário ao cliente --></label>
+            <section>Comentário ao cliente</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Feed Juridico</layout>
+        <sections>
+            <label><!-- Conclusão --></label>
+            <section>Conclusão</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Feed Procon</layout>
+        <sections>
+            <label><!-- Conclusão --></label>
+            <section>Conclusão</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Feed Reclamação - Atendente</layout>
+        <sections>
+            <label><!-- Resposta ao cliente --></label>
+            <section>Resposta ao cliente</section>
+        </sections>
+        <sections>
+            <label><!-- Solução para o cliente --></label>
+            <section>Solução para o cliente</section>
+        </sections>
+        <sections>
+            <label><!-- Validação - ouvidoria --></label>
+            <section>Validação - ouvidoria</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Feed Reclamação - Ouvidoria</layout>
+        <sections>
+            <label><!-- Resposta ao cliente --></label>
+            <section>Resposta ao cliente</section>
+        </sections>
+        <sections>
+            <label><!-- Solução para o cliente --></label>
+            <section>Solução para o cliente</section>
+        </sections>
+        <sections>
+            <label><!-- Validação - ouvidoria --></label>
+            <section>Validação - ouvidoria</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout México</layout>
+        <sections>
+            <label><!-- Acompanhamento --></label>
+            <section>Acompanhamento</section>
+        </sections>
+        <sections>
+            <label><!-- Cliente --></label>
+            <section>Cliente</section>
+        </sections>
+        <sections>
+            <label><!-- Feedback do cliente --></label>
+            <section>Feedback do cliente</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+        <sections>
+            <label><!-- Solicitação --></label>
+            <section>Solicitação</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout de caso</layout>
+        <sections>
+            <label><!-- Informações Adicionais - Solicitação de Leads Neoway --></label>
+            <section>Informações Adicionais - Solicitação de Leads Neoway</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Transferência de titularidade</layout>
+        <sections>
+            <label><!-- Atual Titular --></label>
+            <section>Atual Titular</section>
+        </sections>
+        <sections>
+            <label><!-- Conclusão --></label>
+            <section>Conclusão</section>
+        </sections>
+        <sections>
+            <label><!-- Detalhes do Caso --></label>
+            <section>Detalhes do Caso</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Contestações --></label>
+        <name>Contesta_es</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Jurídico --></label>
+        <name>Juridico</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- México --></label>
+        <name>Mexico</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Neoway --></label>
+        <name>Neoway</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Procon --></label>
+        <name>Procon</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Reclamação --></label>
+        <name>Reclamacao</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Transferência de Titularidade --></label>
+        <name>Transferencia_de_Titularidade</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- CNPJ inválido --></errorMessage>
+        <name>CNPF_regra_que_valida_se_e_valido</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CPF Inválido. --></errorMessage>
+        <name>CPF_numero_sequencial</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CNPJ/CPF Inválido. Digite apenas números --></errorMessage>
+        <name>CPF_regra_geral_para_cpf_e_cnpj</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CPF inválido --></errorMessage>
+        <name>CPF_regra_que_valida_se_e_valido</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para alterar o proprietário você deve inserir um comentário na seção &quot;Comentários Internos&quot;. --></errorMessage>
+        <name>MX_Alteracao_Proprietario</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Por favor, coloque un motivo justo después de que se cree el caso. --></errorMessage>
+        <name>MX_Caso_Criado_Com_Motivo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No cambie manualmente el estado del caso durante la creación. --></errorMessage>
+        <name>MX_Caso_Criado_Status_nao_iniciado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para o motivo do caso selecionado é necessário que o cliente esteja de acordo para fechar a solicitção. --></errorMessage>
+        <name>MX_Cliente_de_Acordo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Favor preencher o motivo da baixa de NUID. --></errorMessage>
+        <name>MX_Motivo_Baixa_NUID</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Favor preencher o motivo do cancelamento. --></errorMessage>
+        <name>MX_Motivo_Cancelamento</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Preencha a pendência para poder salvar o registro. --></errorMessage>
+        <name>MX_Preencher_Pendencia</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A data de finalização da solução não pode ser retroativa ou futura --></errorMessage>
+        <name>MarcoSolucaoSLA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A data de finalização da resposta não pode ser retroativa ou futura --></errorMessage>
+        <name>MarcosRespostaSLA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Não é permitido atualizar casos fechados --></errorMessage>
+        <name>Nao_atualiza_caso_fechado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Não é permitido voltar o status do caso após ter iniciado --></errorMessage>
+        <name>Nao_permite_voltar_status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para cliente Sascar, o CNPJ/CPF é obrigatório. --></errorMessage>
+        <name>Se_cliente_sascar_CPF_obrigatorio</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Finalize a data de reposta antes de finalizar a data de solução --></errorMessage>
+        <name>data_resposta_deve_estar_preenchida</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Pelo menos uma forma de contato é obrigatória, entre email e telefone --></errorMessage>
+        <name>email_ou_telefone_obrigatorios</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Não é permitido atualizar os campos da seção de &quot;Detalhe do caso&quot;, após salvar um caso. --></errorMessage>
+        <name>nao_atualiza_caso_apos_salvar</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Somente a Ouvidoria pode finalizar/cancelar casos --></errorMessage>
+        <name>somente_ouvidoria_finaliza_caso</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Aguardando_resposta_do_cliente --></label>
+        <name>Aguardando_resposta_do_cliente</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Aguardando_solucao_do_cliente --></label>
+        <name>Aguardando_solucao_do_cliente</name>
+    </webLinks>
+</CustomObjectTranslation>

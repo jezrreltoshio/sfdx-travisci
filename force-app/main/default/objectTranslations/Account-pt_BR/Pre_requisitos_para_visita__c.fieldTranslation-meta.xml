@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Pré requisitos para visita --></label>
+    <name>Pre_requisitos_para_visita__c</name>
+    <picklistValues>
+        <masterLabel>Bota</masterLabel>
+        <translation><!-- Bota --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Capacete</masterLabel>
+        <translation><!-- Capacete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Colete refletivo</masterLabel>
+        <translation><!-- Colete refletivo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Integração</masterLabel>
+        <translation><!-- Integração --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Protetor auricular</masterLabel>
+        <translation><!-- Protetor auricular --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Roupa comprida</masterLabel>
+        <translation><!-- Roupa comprida --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Óculos de proteção</masterLabel>
+        <translation><!-- Óculos de proteção --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

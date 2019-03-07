@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo_da_desqualifica_o_do_lead__c</fullName>
+    <externalId>false</externalId>
+    <label>Motivo da desqualificação do lead</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1ª Tentativa</fullName>
+                <default>false</default>
+                <label>1ª Tentativa</label>
+            </value>
+            <value>
+                <fullName>2ª Tentativa</fullName>
+                <default>false</default>
+                <label>2ª Tentativa</label>
+            </value>
+            <value>
+                <fullName>3 Tentativas sem sucesso</fullName>
+                <default>false</default>
+                <label>3 Tentativas sem sucesso</label>
+            </value>
+            <value>
+                <fullName>3ª Tentativa</fullName>
+                <default>false</default>
+                <label>3ª Tentativa</label>
+            </value>
+            <value>
+                <fullName>4ª Tentativa</fullName>
+                <default>false</default>
+                <label>4ª Tentativa</label>
+            </value>
+            <value>
+                <fullName>6 tentativas sem sucesso</fullName>
+                <default>false</default>
+                <label>6 tentativas sem sucesso</label>
+            </value>
+            <value>
+                <fullName>Abandono Chat</fullName>
+                <default>false</default>
+                <label>Abandono Chat</label>
+            </value>
+            <value>
+                <fullName>Baixo IRC</fullName>
+                <default>false</default>
+                <label>Baixo IRC</label>
+            </value>
+            <value>
+                <fullName>Cliente de Base</fullName>
+                <default>false</default>
+                <label>Cliente de Base</label>
+            </value>
+            <value>
+                <fullName>Cliente já efetuou a compra</fullName>
+                <default>false</default>
+                <label>Cliente já efetuou a compra</label>
+            </value>
+            <value>
+                <fullName>Cliente sem sinistro</fullName>
+                <default>false</default>
+                <label>Cliente sem sinistro</label>
+            </value>
+            <value>
+                <fullName>Condição Fiscal não atende</fullName>
+                <default>false</default>
+                <label>Condição Fiscal não atende</label>
+            </value>
+            <value>
+                <fullName>Contato Impossível</fullName>
+                <default>false</default>
+                <label>Contato Impossível</label>
+            </value>
+            <value>
+                <fullName>Contato Impossível - 5 tentativas sem sucesso</fullName>
+                <default>false</default>
+                <label>Contato Impossível - 5 tentativas sem sucesso</label>
+            </value>
+            <value>
+                <fullName>Decisor ausente</fullName>
+                <default>false</default>
+                <label>Decisor ausente</label>
+            </value>
+            <value>
+                <fullName>Destinatário errado (tel/mail)</fullName>
+                <default>false</default>
+                <label>Destinatário errado (tel/mail)</label>
+            </value>
+            <value>
+                <fullName>E-mail inválido</fullName>
+                <default>false</default>
+                <label>E-mail inválido</label>
+            </value>
+            <value>
+                <fullName>E-mail não correspondido</fullName>
+                <default>false</default>
+                <label>E-mail não correspondido</label>
+            </value>
+            <value>
+                <fullName>Empresa deixou de ser responsável pela compra da isca</fullName>
+                <default>false</default>
+                <label>Empresa deixou de ser responsável pela compra da isca</label>
+            </value>
+            <value>
+                <fullName>Empresa sem atividade</fullName>
+                <default>false</default>
+                <label>Empresa sem atividade</label>
+            </value>
+            <value>
+                <fullName>Estoque elevado</fullName>
+                <default>false</default>
+                <label>Estoque elevado</label>
+            </value>
+            <value>
+                <fullName>Falta de Pronta Resposta na região</fullName>
+                <default>false</default>
+                <label>Falta de Pronta Resposta na região</label>
+            </value>
+            <value>
+                <fullName>Fechado em pessoa jurídica</fullName>
+                <default>false</default>
+                <label>Fechado em pessoa jurídica</label>
+            </value>
+            <value>
+                <fullName>Financeiro Sascar - Crédito</fullName>
+                <default>false</default>
+                <label>Financeiro Sascar - Crédito</label>
+            </value>
+            <value>
+                <fullName>Fora do perfil</fullName>
+                <default>false</default>
+                <label>Fora do perfil</label>
+            </value>
+            <value>
+                <fullName>Implantação inviável</fullName>
+                <default>false</default>
+                <label>Implantação inviável</label>
+            </value>
+            <value>
+                <fullName>Interessado em ouvir em Proposta</fullName>
+                <default>false</default>
+                <label>Interessado em ouvir em Proposta</label>
+            </value>
+            <value>
+                <fullName>Interesse Futuro</fullName>
+                <default>false</default>
+                <label>Interesse Futuro</label>
+            </value>
+            <value>
+                <fullName>Lead Duplicado</fullName>
+                <default>false</default>
+                <label>Lead Duplicado</label>
+            </value>
+            <value>
+                <fullName>Linha Cancelada</fullName>
+                <default>false</default>
+                <label>Linha Cancelada</label>
+            </value>
+            <value>
+                <fullName>Linha habilitada (Ex-Segurado)</fullName>
+                <default>false</default>
+                <label>Linha habilitada (Ex-Segurado)</label>
+            </value>
+            <value>
+                <fullName>Mudou de residência/emprego</fullName>
+                <default>false</default>
+                <label>Mudou de residência/emprego</label>
+            </value>
+            <value>
+                <fullName>Não Contatado</fullName>
+                <default>false</default>
+                <label>Não Contatado</label>
+            </value>
+            <value>
+                <fullName>Não deseja contingência</fullName>
+                <default>false</default>
+                <label>Não deseja contingência</label>
+            </value>
+            <value>
+                <fullName>Não deseja migração</fullName>
+                <default>false</default>
+                <label>Não deseja migração</label>
+            </value>
+            <value>
+                <fullName>Não homologado na GR/Seguradora/Corretora</fullName>
+                <default>false</default>
+                <label>Não homologado na GR/Seguradora/Corretora</label>
+            </value>
+            <value>
+                <fullName>Não interessado</fullName>
+                <default>false</default>
+                <label>Não interessado</label>
+            </value>
+            <value>
+                <fullName>NÃO PERTURBE</fullName>
+                <default>false</default>
+                <label>NÃO PERTURBE</label>
+            </value>
+            <value>
+                <fullName>Não possui novo veículo</fullName>
+                <default>false</default>
+                <label>Não possui novo veículo</label>
+            </value>
+            <value>
+                <fullName>Não possui veículo</fullName>
+                <default>false</default>
+                <label>Não possui veículo</label>
+            </value>
+            <value>
+                <fullName>Não solicitou contato/Desconhece cadastro</fullName>
+                <default>false</default>
+                <label>Não solicitou contato/Desconhece cadastro</label>
+            </value>
+            <value>
+                <fullName>Optou pela concorrência - Condições de contrato</fullName>
+                <default>false</default>
+                <label>Optou pela concorrência - Condições de contrato</label>
+            </value>
+            <value>
+                <fullName>Optou pela concorrência - Equipe Pronta Resposta</fullName>
+                <default>false</default>
+                <label>Optou pela concorrência - Equipe Pronta Resposta</label>
+            </value>
+            <value>
+                <fullName>Optou pela concorrência - preço</fullName>
+                <default>false</default>
+                <label>Optou pela concorrência - preço</label>
+            </value>
+            <value>
+                <fullName>Optou pela concorrência - Produto</fullName>
+                <default>false</default>
+                <label>Optou pela concorrência - Produto</label>
+            </value>
+            <value>
+                <fullName>Optou pela concorrência - Relacionamento comercial</fullName>
+                <default>false</default>
+                <label>Optou pela concorrência - Relacionamento comercial</label>
+            </value>
+            <value>
+                <fullName>Outros (obs.)</fullName>
+                <default>false</default>
+                <label>Outros (obs.)</label>
+            </value>
+            <value>
+                <fullName>Perda de Operação</fullName>
+                <default>false</default>
+                <label>Perda de Operação</label>
+            </value>
+            <value>
+                <fullName>Possui concorrente</fullName>
+                <default>false</default>
+                <label>Possui concorrente</label>
+            </value>
+            <value>
+                <fullName>Pouco uso do veículo - Empresa familiar</fullName>
+                <default>false</default>
+                <label>Pouco uso do veículo - Empresa familiar</label>
+            </value>
+            <value>
+                <fullName>Prazo de pagamento não atende</fullName>
+                <default>false</default>
+                <label>Prazo de pagamento não atende</label>
+            </value>
+            <value>
+                <fullName>Produto não atende - Falta de customização</fullName>
+                <default>false</default>
+                <label>Produto não atende - Falta de customização</label>
+            </value>
+            <value>
+                <fullName>Recusou-se à conversar</fullName>
+                <default>false</default>
+                <label>Recusou-se à conversar</label>
+            </value>
+            <value>
+                <fullName>Redução de Monitoramento</fullName>
+                <default>false</default>
+                <label>Redução de Monitoramento</label>
+            </value>
+            <value>
+                <fullName>Regra de Seguro - Limite para implantação</fullName>
+                <default>false</default>
+                <label>Regra de Seguro - Limite para implantação</label>
+            </value>
+            <value>
+                <fullName>SAC / Reclamação</fullName>
+                <default>false</default>
+                <label>SAC / Reclamação</label>
+            </value>
+            <value>
+                <fullName>Sem condições financeiras para aquisição</fullName>
+                <default>false</default>
+                <label>Sem condições financeiras para aquisição</label>
+            </value>
+            <value>
+                <fullName>Sem garantia de recuperação de toda a carga</fullName>
+                <default>false</default>
+                <label>Sem garantia de recuperação de toda a carga</label>
+            </value>
+            <value>
+                <fullName>Sem obrigatoriedade na apólice</fullName>
+                <default>false</default>
+                <label>Sem obrigatoriedade na apólice</label>
+            </value>
+            <value>
+                <fullName>Telefone inexistente</fullName>
+                <default>false</default>
+                <label>Telefone inexistente</label>
+            </value>
+            <value>
+                <fullName>Telefone não pertence ao contato</fullName>
+                <default>false</default>
+                <label>Telefone não pertence ao contato</label>
+            </value>
+            <value>
+                <fullName>Transferido para outro segmento</fullName>
+                <default>false</default>
+                <label>Transferido para outro segmento</label>
+            </value>
+            <value>
+                <fullName>Trote</fullName>
+                <default>false</default>
+                <label>Trote</label>
+            </value>
+            <value>
+                <fullName>Não Deseja Informar CNP/CPF</fullName>
+                <default>false</default>
+                <label>Não Deseja Informar CNP/CPF</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Contato Não Efetivo</controllingFieldValue>
+            <valueName>Contato Impossível - 5 tentativas sem sucesso</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contato Não Efetivo</controllingFieldValue>
+            <valueName>Destinatário errado (tel/mail)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contato Não Efetivo</controllingFieldValue>
+            <valueName>E-mail inválido</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contato Não Efetivo</controllingFieldValue>
+            <valueName>E-mail não correspondido</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contato Não Efetivo</controllingFieldValue>
+            <valueName>Lead Duplicado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contato Não Efetivo</controllingFieldValue>
+            <valueName>Telefone inexistente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Desqualificado</controllingFieldValue>
+            <valueName>Fechado em pessoa jurídica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Desqualificado</controllingFieldValue>
+            <valueName>Interesse Futuro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Desqualificado</controllingFieldValue>
+            <valueName>Linha Cancelada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Desqualificado</controllingFieldValue>
+            <valueName>Linha habilitada (Ex-Segurado)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Desqualificado</controllingFieldValue>
+            <valueName>Não deseja contingência</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Desqualificado</controllingFieldValue>
+            <valueName>Não deseja migração</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Desqualificado</controllingFieldValue>
+            <valueName>Não possui novo veículo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Desqualificado</controllingFieldValue>
+            <valueName>Não possui veículo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Desqualificado</controllingFieldValue>
+            <valueName>Não solicitou contato/Desconhece cadastro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Desqualificado</controllingFieldValue>
+            <valueName>Optou pela concorrência - Condições de contrato</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Desqualificado</controllingFieldValue>
+            <valueName>Recusou-se à conversar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Desqualificado</controllingFieldValue>
+            <valueName>SAC / Reclamação</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

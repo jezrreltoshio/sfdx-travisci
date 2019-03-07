@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Ação do histórico da OS</description>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <referenceTo>Acao_historico_OS__c</referenceTo>
+    <relationshipLabel>Históricos da OS</relationshipLabel>
+    <relationshipName>Historicos_OS</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

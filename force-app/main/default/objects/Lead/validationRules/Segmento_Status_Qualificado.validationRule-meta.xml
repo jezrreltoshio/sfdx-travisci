@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Segmento_Status_Qualificado</fullName>
+    <active>true</active>
+    <description>Quando o status for Qualificado, o campo Segmento deve ser preenchido</description>
+    <errorConditionFormula>AND(
+ $Profile.Name = &quot;CORP - Executivo&quot;,
+ Tipo_de_registro_Oportunidade__c = &quot;CORP&quot;,
+ ISPICKVAL(Status, &#39;Qualificado&#39;), 
+ ISBLANK(TEXT(Segmento__c))
+)</errorConditionFormula>
+    <errorDisplayField>Segmento__c</errorDisplayField>
+    <errorMessage>Informe o Segmento.</errorMessage>
+</ValidationRule>

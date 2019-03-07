@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Campo somente leitura - conterá o retorno da cotação de seguro. --></help>
+    <label><!-- Código de retorno --></label>
+    <name>AnalPrel_CodigoRetorno__c</name>
+</CustomFieldTranslation>

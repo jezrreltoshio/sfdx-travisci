@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Michelin_Lead</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.UNREAD</columns>
+    <filterScope>Queue</filterScope>
+    <label>Michelin</label>
+    <language>pt_BR</language>
+    <queue>Michelin</queue>
+    <sharedTo>
+        <role>CADASTRO</role>
+        <role>CEO</role>
+        <role>DATABASEMKT</role>
+        <role>DIRETOR</role>
+        <roleAndSubordinates>GERENTE_CARGO_TRACCK</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_CO</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_KA</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_MG_RJ_ES</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_NONE</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_PR</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_RS</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_SPC</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_SPI</roleAndSubordinates>
+    </sharedTo>
+</ListView>

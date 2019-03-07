@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Potencial Total de veículos somando todas as filiais. --></help>
+    <label><!-- Potencial Total de veículos --></label>
+    <name>Potencial_Total_de_ve_culos__c</name>
+</CustomFieldTranslation>

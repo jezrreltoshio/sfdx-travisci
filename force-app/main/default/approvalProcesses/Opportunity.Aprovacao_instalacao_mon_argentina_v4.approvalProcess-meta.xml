@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>ADMINISTRADOR</submitter>
+        <type>roleSubordinates</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+        <field>Valor_da_taxa_de_ades_o__c</field>
+        <field>Valor_total_desconto__c</field>
+        <field>Observa_es_do_desconto__c</field>
+        <field>Alcada_Fin_Max__c</field>
+        <field>Alcada_Fin_Min__c</field>
+        <field>Alcada_Dir_Max__c</field>
+        <field>Alcada_Dir_Min__c</field>
+        <field>Alcada_Sup_Max__c</field>
+        <field>Alcada_Sup_Min__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Owner</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Aprobación realizada por el propietario del registro</description>
+        <entryCriteria>
+            <formula>AND(
+Valor_total_desconto__c &lt;= 0,
+Valor_da_taxa_de_ades_o__c &gt;= Taxa_Instalacao_Maxima__c
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Aprobación - Propietario</label>
+        <name>Aprovacao_proprietario</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>silvana.guerra@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Aprobación de la tarifa de instalación del Gerente</description>
+        <entryCriteria>
+            <formula>Valor_da_taxa_de_ades_o__c &lt; Taxa_Instalacao_Minima__c</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Aprobación - Tasa de instalación Gerente</label>
+        <name>Aprovacao_taxa_instalacao_gerente</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>guiller.crevatin@michelin.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Aprobación de la tasa de instalación del Director</description>
+        <entryCriteria>
+            <formula>Valor_da_taxa_de_ades_o__c &lt; (Taxa_Instalacao_Minima__c * 0.5)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Aprobación - Tasa de instalación Director</label>
+        <name>Aprovacao_taxa_instalacao_diretor</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>silvana.guerra@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Aprobación de seguimiento del gerente</description>
+        <entryCriteria>
+            <formula>AND(
+Valor_total_desconto__c  &gt; 0,
+NOT(CONTAINS(Papel_do_propriet_rio__c, &#39;Televendas&#39;))
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Aprobación Monitoreo Gerente</label>
+        <name>Aprovacao_monitoramento_gerente</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>guiller.crevatin@michelin.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Aprobación del seguimiento del Director</description>
+        <entryCriteria>
+            <formula>AND(
+Alcada_Ger_Max__c &gt; 0,
+OR(
+Valor_total_desconto__c &gt; (Alcada_Ger_Max__c + 0.01),
+Valor_total_desconto__c &gt; Alcada_Ger_Max__c
+),
+NOT(CONTAINS(Papel_do_propriet_rio__c, &#39;Televendas&#39;))
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Aprobación Monitoreo Director</label>
+        <name>Aprovacao_monitoramento_diretor</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>silvana.guerra@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Aprobación del seguimiento del financiero</description>
+        <entryCriteria>
+            <formula>AND(
+(Alcada_Dir_Max__c &gt; 0),
+OR(
+Valor_total_desconto__c &gt; (Alcada_Dir_Max__c + 0.01),
+Valor_total_desconto__c &gt; Alcada_Dir_Max__c
+),
+(NOT(CONTAINS(Papel_do_propriet_rio__c, &#39;Televendas&#39;)))
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Aprobación Monitoreo Financiero</label>
+        <name>Aprovacao_monitoramento_financeiro</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>silvana.guerra@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Aprobación de monitoreo del Televendas</description>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c &gt; 0, 
+CONTAINS(Papel_do_propriet_rio__c, &#39;Televendas&#39;)
+)</formula>
+        </entryCriteria>
+        <label>Aprobación Monitoreo Televendas (Gerente)</label>
+        <name>Aprovacao_monitoramento_televendas_gerente</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>Aprovação da taxa de instalação e monitoramento da Oportunidade da Argentina</description>
+    <emailTemplate>Atendimento_Ouvidoria/AR_Aprovacao_oportunidade</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>AND(
+RecordType.Name = &#39;Mercosul&#39;,
+CONTAINS(Papel_do_propriet_rio__c , &#39;Argentina&#39;),
+OR(
+AND(
+Desconto_taxa_instalacao__c = TRUE,
+OR(
+ISBLANK(TEXT( Aprovacao_taxa_instalacao__c)) ,
+ISPICKVAL(Aprovacao_taxa_instalacao__c, &#39;Reprovado&#39;)
+)
+),
+AND(
+Aprovacao_desconto__c = TRUE , 
+OR(
+ISBLANK(TEXT( Aprova_o__c)),
+ISPICKVAL(Aprova_o__c, &#39;Reprovado&#39;)
+)
+)
+)
+)</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Aprovada_taxa_instalacao</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>AR_Aprovacao_total_oportunidade</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Atualiza_aprova_o_da_oportunidade</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Desmarca_desconto_taxa</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Oportunidade_aprovada_sim</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>AR_rejeicao_oportunidade</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Atualiza_reprova_o_da_oportunidade</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Oportunidade_aprovada_nao</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Reprovada_taxa_instalacao</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Aprova_desc_taxa_instalacao</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Aprova_o_pendente</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Oportunidade_aprovada_limpar</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Aprovação instalação / mon Argentina V4</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

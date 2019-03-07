@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FRETEIRO002</fullName>
+    <columns>LEAD.STATUS</columns>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>Data_Hora_criacao__c</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>notContain</operation>
+        <value>Contatado,Qualificado,Não qualificado,Desqualificado,Contato Não Efetivo</value>
+    </filters>
+    <filters>
+        <field>LEAD.LEAD_SOURCE</field>
+        <operation>notContain</operation>
+        <value>Ataque à Cliente de Base,Ataque Base Fr</value>
+    </filters>
+    <label>FRETEIRO DISCADOR</label>
+    <language>pt_BR</language>
+    <queue>Freteiro_Discador</queue>
+    <sharedTo>
+        <role>DATABASEMKT</role>
+        <role>GERENTE_TELEVENDAS</role>
+        <role>SUPERVISOR_CORE_2</role>
+        <role>SUPERVISOR_FRETEIRO</role>
+        <role>SUPERVISO_R_SIGGO</role>
+    </sharedTo>
+</ListView>

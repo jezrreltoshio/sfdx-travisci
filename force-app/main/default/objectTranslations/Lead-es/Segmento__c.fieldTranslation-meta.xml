@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Segmento --></label>
+    <name>Segmento__c</name>
+    <picklistValues>
+        <masterLabel>AGRONEGÓCIOS / USINA</masterLabel>
+        <translation>AGRONEGOCIOS / USINA</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ALIMENTOS</masterLabel>
+        <translation>ALIMENTOS</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ALIMENTÍCIA</masterLabel>
+        <translation>ALIMENTARIA</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ASSOCIACAO</masterLabel>
+        <translation>ASOCIACIÓN</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AUTOMOTIVO</masterLabel>
+        <translation>AUTOMOTRIZ</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AUTOPEÇAS E COMBUSTÍVEIS</masterLabel>
+        <translation>AUTOPARTES Y COMBUSTIBLES</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BEBIDAS</masterLabel>
+        <translation>BEBIDAS</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BENS DE CONSUMO</masterLabel>
+        <translation>BIENES DE CONSUMO</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CALÇADOS</masterLabel>
+        <translation>CALZADOS</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CIGARRO</masterLabel>
+        <translation>CIGARRILLO</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COMÉRCIO</masterLabel>
+        <translation>COMERCIO</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CONSTRUÇÃO CIVIL</masterLabel>
+        <translation>CONSTRUCCIÓN CIVIL</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISTRIBUIDORA</masterLabel>
+        <translation>DISTRIBUIDORA</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E-COMMERCE</masterLabel>
+        <translation>E-COMMERCE</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELETROELETRÔNICOS</masterLabel>
+        <translation>Electrónicos y Eléctricos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELETRÔNICO</masterLabel>
+        <translation>Electrónico</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ESCOLAR</masterLabel>
+        <translation>ESCOLAR</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EXTRAÇÃO DE MINÉRIO</masterLabel>
+        <translation>EXTRACCIÓN DE MINERALES</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FARMACÊUTICOS</masterLabel>
+        <translation>FARMACÉUTICOS</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRACIONADO</masterLabel>
+        <translation>FRACCIONADO</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRACIONADO ELETRÔNICO</masterLabel>
+        <translation>FRACCIONADO ELECTRÓNICO</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRETEIRO</masterLabel>
+        <translation>FLETADOR</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRIGORÍFICO</masterLabel>
+        <translation>FRIGORÍFICO</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FROTA</masterLabel>
+        <translation>FLOTA</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GÁS</masterLabel>
+        <translation>GAS</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INDÚSTRIA</masterLabel>
+        <translation>INDUSTRIA</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LINHA AMARELA</masterLabel>
+        <translation>LÍNEA AMARILLA</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LOCADORA</masterLabel>
+        <translation><!-- LOCADORA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MADEIREIRA</masterLabel>
+        <translation>DE MADERA</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MAQUINA/OUTROS</masterLabel>
+        <translation>MAQUINA/OTROS</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MEDICAMENTO</masterLabel>
+        <translation><!-- MEDICAMENTO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>METALÚRGICO</masterLabel>
+        <translation><!-- METALÚRGICO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>METALÚRGICOS E QUÍMICOS</masterLabel>
+        <translation>METALÚRGICOS Y QUÍMICOS</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MUDANÇAS</masterLabel>
+        <translation>CAMBIOS</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OUTRO</masterLabel>
+        <translation>OTRO</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PNEU</masterLabel>
+        <translation>NEUMÁTICO</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PROTEÇÃO DE ATIVO</masterLabel>
+        <translation>PROTECCIÓN DE ACTIVO</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QUÍMICO</masterLabel>
+        <translation><!-- QUÍMICO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEGURADORA</masterLabel>
+        <translation>SEGURIDAD</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SERVIÇOS</masterLabel>
+        <translation>SERVICIOS</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGO</masterLabel>
+        <translation><!-- SIGGO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRANSPORTE</masterLabel>
+        <translation><!-- TRANSPORTE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRANSPORTE DE PASSAGEIROS</masterLabel>
+        <translation>TRANSPORTE DE PASAJEROS</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRANSPORTE ESCOLAR</masterLabel>
+        <translation><!-- TRANSPORTE ESCOLAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TURISMO</masterLabel>
+        <translation><!-- TURISMO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TÊXTEIS E CONFECÇÕES</masterLabel>
+        <translation>TEXTILES Y CONFECCIONES</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TÊXTIL</masterLabel>
+        <translation>TEXTIL</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VIGILÂNCIA</masterLabel>
+        <translation>VIGILANCIA</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VIVO</masterLabel>
+        <translation><!-- VIVO --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

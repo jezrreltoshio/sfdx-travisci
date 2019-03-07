@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Visita_iniciada_cancelamento</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISCHANGED( In_cio_da_visita__c )
+,
+In_cio_da_visita__c = false)</errorConditionFormula>
+    <errorDisplayField>In_cio_da_visita__c</errorDisplayField>
+    <errorMessage>Você não pode cancelar uma visita iniciada.</errorMessage>
+</ValidationRule>

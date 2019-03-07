@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CargoTracck_Validar_CNPJ</fullName>
+    <active>true</active>
+    <description>Cargo Tracck - Verifica se deve preencher o CNPJ.</description>
+    <errorConditionFormula>AND(
+    RecordType.Name = &#39;Cargo Tracck&#39;,
+    ISPICKVAL(Tipo_de_pessoa__c, &#39;J-Jurídica&#39;),
+    ISBLANK(TRIM(CNPJ__c))
+)</errorConditionFormula>
+    <errorDisplayField>CNPJ__c</errorDisplayField>
+    <errorMessage>Para pessoa jurídica, informe o CNPJ.</errorMessage>
+</ValidationRule>

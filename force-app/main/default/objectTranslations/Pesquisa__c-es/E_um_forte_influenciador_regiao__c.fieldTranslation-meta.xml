@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- É um forte influenciador da região? --></label>
+    <name>E_um_forte_influenciador_regiao__c</name>
+    <picklistValues>
+        <masterLabel>Não</masterLabel>
+        <translation><!-- Não --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sim</masterLabel>
+        <translation><!-- Sim --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

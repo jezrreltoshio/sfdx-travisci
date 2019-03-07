@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPF_numero_sequencial</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+OR(
+ CNPJ_CPF__c =&quot;00000000000&quot;, CNPJ_CPF__c=&quot;11111111111&quot;, 
+ CNPJ_CPF__c=&quot;22222222222&quot;, CNPJ_CPF__c=&quot;33333333333&quot;, 
+ CNPJ_CPF__c=&quot;44444444444&quot;, CNPJ_CPF__c=&quot;55555555555&quot;, 
+ CNPJ_CPF__c=&quot;66666666666&quot;, CNPJ_CPF__c=&quot;77777777777&quot;, 
+ CNPJ_CPF__c=&quot;88888888888&quot;, CNPJ_CPF__c=&quot;99999999999&quot;
+) 
+)</errorConditionFormula>
+    <errorDisplayField>CNPJ_CPF__c</errorDisplayField>
+    <errorMessage>CPF Inválido.</errorMessage>
+</ValidationRule>

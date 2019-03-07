@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Usar dados de pagamento da instalação --></label>
+    <name>Usar_dados_de_pagamento_da_instala_o__c</name>
+</CustomFieldTranslation>

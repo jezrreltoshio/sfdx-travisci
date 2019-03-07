@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>M_Obriga_informar_porque_nao_Michelin</fullName>
+    <active>false</active>
+    <description>Obriga usuário a informaro porquê a marca Michelin não foi a opção</description>
+    <errorConditionFormula>AND(ISPICKVAL(Por_que_a_Michelin_n_o_foi_a_sua_op_o__c,&#39;Não informado&#39;), NOT(ISPICKVAL(Qual_a_principal_marca_de_pneus_voc_com__c,&#39;Michelin&#39;)))</errorConditionFormula>
+    <errorDisplayField>Por_que_a_Michelin_n_o_foi_a_sua_op_o__c</errorDisplayField>
+    <errorMessage>Quando a opção selecionada para a pergunta &quot;Qual a principal marca que você usa?&quot; não é Michelin,é obrigatório o porquê a marca Michelin não foi a opção.</errorMessage>
+</ValidationRule>

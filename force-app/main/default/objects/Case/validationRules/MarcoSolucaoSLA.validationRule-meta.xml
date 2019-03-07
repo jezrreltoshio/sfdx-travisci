@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MarcoSolucaoSLA</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ ISCHANGED(  DataFinalizacaoAcaoSolucao__c ),
+ OR(
+  DataFinalizacaoAcaoSolucao__c &lt;  ( NOW() - (2/1440) ),
+  DataFinalizacaoAcaoSolucao__c &gt;  ( NOW() + (3/24) )
+ )
+)</errorConditionFormula>
+    <errorDisplayField>DataFinalizacaoAcaoSolucao__c</errorDisplayField>
+    <errorMessage>A data de finalização da solução não pode ser retroativa ou futura</errorMessage>
+</ValidationRule>

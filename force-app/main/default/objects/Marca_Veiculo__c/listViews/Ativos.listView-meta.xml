@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ativos</fullName>
+    <columns>NAME</columns>
+    <columns>Ativo__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Ativo__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Ativos</label>
+</ListView>

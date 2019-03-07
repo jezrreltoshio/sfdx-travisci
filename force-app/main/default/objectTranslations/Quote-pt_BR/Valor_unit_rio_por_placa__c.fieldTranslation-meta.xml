@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Valor unitário por placa --></label>
+    <name>Valor_unit_rio_por_placa__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>ADMINISTRADOR</submitter>
+        <type>roleSubordinates</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Papel_do_propriet_rio__c</field>
+        <field>Owner</field>
+        <field>Name</field>
+        <field>Account</field>
+        <field>Prazo_do_contrato__c</field>
+        <field>Nome_catalogo__c</field>
+        <field>Taxa_de_ades_o__c</field>
+        <field>Taxa_Instalacao_Minima__c</field>
+        <field>Taxa_Instalacao_Maxima__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>fn.nogueira@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND(
+    Valor_da_taxa_de_ades_o__c &lt; Taxa_Instalacao_Minima__c, 
+    Valor_da_taxa_de_ades_o__c &lt;= 49.00 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Etapa 1 Desconto Adesao Carreta Conect Monitorada</label>
+        <name>Etapa_1_Desconto_Adesao_Carreta_Conect_Monitorada</name>
+    </approvalStep>
+    <description>Processo de aprovação a partir da visão do Gerente</description>
+    <emailTemplate>unfiled$public/Aprova_o_taxa_de_ades_o</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.Desconto_taxa_instalacao__c</field>
+            <operation>equals</operation>
+            <value>Verdadeiro</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Papel_ID__c</field>
+            <operation>equals</operation>
+            <value>2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Taxa_Instalacao_Minima__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pricebook2.Name</field>
+            <operation>equals</operation>
+            <value>Carreta Conectada ( Monitorada ) - 36 meses</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Aprovacao_taxa_instalacao__c</field>
+            <operation>notEqual</operation>
+            <value>Aprovado,Solicitação enviada</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordType</field>
+            <operation>equals</operation>
+            <value>CORP</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Aprova_o_total_da_oportunidade</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Aprovada_taxa_instalacao</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Desmarca_desconto_taxa</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Desmarca_desconto_taxa</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Rejei_o_da_oportunidade</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Reprovada_taxa_instalacao</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Aprova_desc_taxa_instalacao</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Taxa Adesao Carreta Conec Monitorada Ge</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

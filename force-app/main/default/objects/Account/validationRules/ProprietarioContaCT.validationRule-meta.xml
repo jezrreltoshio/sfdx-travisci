@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProprietarioContaCT</fullName>
+    <active>true</active>
+    <description>Regra para CT.</description>
+    <errorConditionFormula>AND(
+    RecordType.Name = &#39;Cargo Tracck&#39;,
+    ISCHANGED(Id_do_proprietario__c),
+    AND( 
+        OR(
+            CONTAINS($UserRole.Name, &#39;Consultor&#39;),
+            CONTAINS($UserRole.Name, &#39;Televendas&#39;),
+            CONTAINS($UserRole.Name, &#39;Analista&#39;)        
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>Você não possuí permissão para alterar o proprietário da conta.</errorMessage>
+</ValidationRule>

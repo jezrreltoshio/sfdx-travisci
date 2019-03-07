@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Leve - Concorrente principal --></label>
+    <name>Leve_Concorrente_principal__c</name>
+    <picklistValues>
+        <masterLabel>AUTOTRAC</masterLabel>
+        <translation><!-- AUTOTRAC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BRIDGESTONE</masterLabel>
+        <translation><!-- BRIDGESTONE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BYSAT</masterLabel>
+        <translation><!-- BYSAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CARSYSTEM</masterLabel>
+        <translation><!-- CARSYSTEM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CONTINENTAL</masterLabel>
+        <translation><!-- CONTINENTAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FIRESTONE</masterLabel>
+        <translation><!-- FIRESTONE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GOLSAT</masterLabel>
+        <translation><!-- GOLSAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GOODYEAR</masterLabel>
+        <translation><!-- GOODYEAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITURAN</masterLabel>
+        <translation><!-- ITURAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LINK</masterLabel>
+        <translation><!-- LINK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ONIX</masterLabel>
+        <translation><!-- ONIX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OUTRA</masterLabel>
+        <translation><!-- OUTRA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PIRELLI</masterLabel>
+        <translation><!-- PIRELLI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POINTER</masterLabel>
+        <translation><!-- POINTER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PORTO SEGURO</masterLabel>
+        <translation><!-- PORTO SEGURO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POSITRON</masterLabel>
+        <translation><!-- POSITRON --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRACKER</masterLabel>
+        <translation><!-- TRACKER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZATIX</masterLabel>
+        <translation><!-- ZATIX --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

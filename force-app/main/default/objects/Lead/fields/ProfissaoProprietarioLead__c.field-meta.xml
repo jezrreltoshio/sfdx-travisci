@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProfissaoProprietarioLead__c</fullName>
+    <defaultValue>&quot;1921-Outras Profissões&quot;</defaultValue>
+    <description>campo para preencher automaticamente a profissão na oportunidade com um valor default &quot;1921-Outras Profissões&quot;</description>
+    <externalId>false</externalId>
+    <label>ProfissaoProprietarioLead</label>
+    <length>25</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

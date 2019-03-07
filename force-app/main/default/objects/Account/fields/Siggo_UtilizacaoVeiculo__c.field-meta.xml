@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Siggo_UtilizacaoVeiculo__c</fullName>
+    <externalId>false</externalId>
+    <label>Utilização do veículo</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1-Lazer</fullName>
+                <default>false</default>
+                <label>1-Lazer</label>
+            </value>
+            <value>
+                <fullName>2-Locomoção diária</fullName>
+                <default>false</default>
+                <label>2-Locomoção diária</label>
+            </value>
+            <value>
+                <fullName>3-Exercício do trabalho</fullName>
+                <default>false</default>
+                <label>3-Exercício do trabalho</label>
+            </value>
+            <value>
+                <fullName>9-Uso profissional</fullName>
+                <default>false</default>
+                <label>9-Uso profissional</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

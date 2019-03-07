@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Motivo da reclamação --></label>
+    <name>MotivoReclamacao__c</name>
+    <picklistValues>
+        <masterLabel>Agendamento cancelado</masterLabel>
+        <translation><!-- Agendamento cancelado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Atendimento ruim</masterLabel>
+        <translation><!-- Atendimento ruim --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Avaria no veículo</masterLabel>
+        <translation><!-- Avaria no veículo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelamento/Downgrade de contrato não concluído</masterLabel>
+        <translation><!-- Cancelamento/Downgrade de contrato não concluído --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cobrança indevida</masterLabel>
+        <translation><!-- Cobrança indevida --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indisponibilidade de agenda</masterLabel>
+        <translation><!-- Indisponibilidade de agenda --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Informações contratuais e comerciais</masterLabel>
+        <translation><!-- Informações contratuais e comerciais --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não recebimento do boleto</masterLabel>
+        <translation><!-- Não recebimento do boleto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outros assuntos</masterLabel>
+        <translation><!-- Outros assuntos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Problemas técnicos com a solução</masterLabel>
+        <translation><!-- Problemas técnicos com a solução --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transferência de titularidade não concluída</masterLabel>
+        <translation><!-- Transferência de titularidade não concluída --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Técnico não compareceu</masterLabel>
+        <translation><!-- Técnico não compareceu --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Forma de pagamento instalação --></label>
+    <name>Forma_de_pagamento_instala_o__c</name>
+    <picklistValues>
+        <masterLabel>1-Boleto Bancário</masterLabel>
+        <translation><!-- 1-Boleto Bancário --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>24-Cartão Visa</masterLabel>
+        <translation><!-- 24-Cartão Visa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>25-Cartão Mastercard</masterLabel>
+        <translation><!-- 25-Cartão Mastercard --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>82-Cartão Hipercard</masterLabel>
+        <translation><!-- 82-Cartão Hipercard --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

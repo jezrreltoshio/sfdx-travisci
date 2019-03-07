@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CORP_ABANDONO_Lead</fullName>
+    <columns>LEAD.PHONE</columns>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <filterScope>Queue</filterScope>
+    <label>CORP ABANDONO</label>
+    <queue>CORP_ABANDONO</queue>
+    <sharedTo>
+        <role>CADASTRO</role>
+        <role>CEO</role>
+        <role>DATABASEMKT</role>
+        <role>DIRETOR</role>
+        <roleAndSubordinates>GERENTE_CARGO_TRACCK</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_CO</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_KA</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_MG_RJ_ES</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_NONE</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_PR</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_RS</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_SPC</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_SPI</roleAndSubordinates>
+    </sharedTo>
+</ListView>

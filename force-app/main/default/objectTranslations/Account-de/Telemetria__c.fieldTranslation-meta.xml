@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Telemetria --></label>
+    <name>Telemetria__c</name>
+    <picklistValues>
+        <masterLabel>Dirigibilidade</masterLabel>
+        <translation><!-- Dirigibilidade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Identificação do Motorista</masterLabel>
+        <translation><!-- Identificação do Motorista --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manutenção</masterLabel>
+        <translation><!-- Manutenção --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Redução de Acidentes</masterLabel>
+        <translation><!-- Redução de Acidentes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

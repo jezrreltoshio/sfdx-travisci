@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Valor_FIPE__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Veiculo_AnoModelo__c , 
+2018, Modelo_do_Veiculo__r.X2018__c , 
+2017, Modelo_do_Veiculo__r.X2017__c , 
+2016, Modelo_do_Veiculo__r.X2016__c ,
+2015, Modelo_do_Veiculo__r.X2015__c , 
+2014, Modelo_do_Veiculo__r.X2014__c ,
+2013, Modelo_do_Veiculo__r.X2013__c , 
+2012, Modelo_do_Veiculo__r.X2012__c ,
+2011, Modelo_do_Veiculo__r.X2011__c , 
+2010, Modelo_do_Veiculo__r.X2010__c ,
+2009, Modelo_do_Veiculo__r.X2009__c , 
+2008, Modelo_do_Veiculo__r.X2008__c ,
+2007, Modelo_do_Veiculo__r.X2007__c , 
+2006, Modelo_do_Veiculo__r.X2006__c ,
+2005, Modelo_do_Veiculo__r.X2005__c , 
+2004, Modelo_do_Veiculo__r.X2004__c ,
+2003, Modelo_do_Veiculo__r.X2003__c , 
+2002, Modelo_do_Veiculo__r.X2002__c ,
+2001, Modelo_do_Veiculo__r.X2001__c , 
+2000, Modelo_do_Veiculo__r.X2000__c ,
+1999, Modelo_do_Veiculo__r.X1999__c , 
+1998, Modelo_do_Veiculo__r.X1998__c ,
+1997, Modelo_do_Veiculo__r.X1997__c , 
+1996, Modelo_do_Veiculo__r.X1996__c ,
+1995, Modelo_do_Veiculo__r.X1995__c , 
+1994, Modelo_do_Veiculo__r.X1994__c ,
+1993, Modelo_do_Veiculo__r.X1993__c , 
+1992, Modelo_do_Veiculo__r.X1992__c ,
+1991, Modelo_do_Veiculo__r.X1991__c , 
+1990, Modelo_do_Veiculo__r.X1990__c ,
+1989, Modelo_do_Veiculo__r.X1989__c , 
+1988, Modelo_do_Veiculo__r.X1988__c ,
+1987, Modelo_do_Veiculo__r.X1987__c , 
+1986, Modelo_do_Veiculo__r.X1986__c ,
+1985, Modelo_do_Veiculo__r.X1985__c ,
+0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Valor FIPE</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

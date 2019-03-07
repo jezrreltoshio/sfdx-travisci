@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IdLeadForOpp__c</fullName>
+    <description>Campo utilizado para armazenar o Id do Lead, e no momento da conversão para Oportunidade, informar a referência e auxiliar na transferência dos históricos de alteração do campo &quot;Descrição&quot;, armazenados no objeto Historico_Lead__c, para o objeto Historico_Oportunidade__c. Campo não deve ser exibido nos Layouts.</description>
+    <externalId>false</externalId>
+    <formula>Id</formula>
+    <label>IdLeadForOpp</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

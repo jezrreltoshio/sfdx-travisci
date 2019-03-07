@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Atualiza_classe_do_produto</fullName>
+        <field>Classe_do_contrato__c</field>
+        <formula>Product2.Siggo_ClasseProduto__c</formula>
+        <name>Atualiza classe do produto</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_com_desconto</fullName>
+        <field>Total_com_desconto__c</field>
+        <formula>(ListPrice * Quantity) - ((ListPrice * Quantity) - TotalPrice)</formula>
+        <name>Atualiza com desconto</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_fam_lia_Assist_ncia</fullName>
+        <field>Fam_lia__c</field>
+        <literalValue>Assistência</literalValue>
+        <name>Atualiza família - Assistência</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_fam_lia_acess_rio</fullName>
+        <field>Fam_lia__c</field>
+        <literalValue>Acessório</literalValue>
+        <name>Atualiza família - acessório</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_fam_lia_loca_o</fullName>
+        <field>Fam_lia__c</field>
+        <literalValue>Locação</literalValue>
+        <name>Atualiza família - locação</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_familia_monitoramento</fullName>
+        <field>Fam_lia__c</field>
+        <literalValue>Monitoramento</literalValue>
+        <name>Atualiza família - monitoramento</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_pontua_o_do_produto</fullName>
+        <field>Pontos__c</field>
+        <formula>PricebookEntry.Product2.Pontua_o__c *  Quantity</formula>
+        <name>Atualiza pontuação do produto</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_prazo_do_monitoramento</fullName>
+        <description>Atualiza prazo do monitoramento para produtos que estejam em catálogos que contenham o texto &quot;TIPO&quot; no nome.</description>
+        <field>Prazo_do_contrato2__c</field>
+        <formula>PricebookEntry.Product2.Prazo_do_contrato__c</formula>
+        <name>Atualiza prazo do monitoramento</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_total_sem_desconto</fullName>
+        <field>Total_sem_desconto__c</field>
+        <formula>ListPrice * Quantity</formula>
+        <name>Atualiza total sem desconto</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualizar_desconto</fullName>
+        <field>Discount</field>
+        <formula>( ListPrice *  Quantity ) -  TotalPrice</formula>
+        <name>Atualizar desconto</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualizar_prazo_contrato</fullName>
+        <field>Prazo_do_contrato2__c</field>
+        <formula>Opportunity.Pricebook2.Prazo_catalogo__c</formula>
+        <name>Atualizar prazo contrato</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Desconto</fullName>
+        <field>Discount</field>
+        <formula>(((ListPrice - UnitPrice ) * 100 ) / ListPrice) / 100</formula>
+        <name>Desconto</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Id_produto_cobertura</fullName>
+        <field>Id_produto_cobertura__c</field>
+        <formula>Id_produto_cobertura__c</formula>
+        <name>Id produto cobertura</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>OpportunityId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Opp_Limpa_Nome_do_produto</fullName>
+        <field>Nome_do_produto__c</field>
+        <name>Opp Limpa Nome do produto</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <targetObject>OpportunityId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Opp_Nome_do_produto</fullName>
+        <field>Nome_do_produto__c</field>
+        <formula>Product2.Name</formula>
+        <name>Opp Nome do produto</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>OpportunityId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Percentual_descontado</fullName>
+        <field>Percentual_descontado__c</field>
+        <formula>(((ListPrice -  UnitPrice ) * 100 ) / ListPrice) / 100</formula>
+        <name>Percentual descontado</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Plano</fullName>
+        <field>Promo__c</field>
+        <literalValue>1</literalValue>
+        <name>Plano</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Preenche_prazo</fullName>
+        <field>Prazo_do_contrato2__c</field>
+        <formula>(PricebookEntry.Product2.Prazo_do_contrato__c)</formula>
+        <name>Preenche prazo</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Preencher_Nome_do_Produto</fullName>
+        <field>Nome_produto__c</field>
+        <formula>Product2.Name</formula>
+        <name>Preencher Nome do Produto</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Quantidade_monitoramento</fullName>
+        <description>Preenche o campo na Oportunidade informando a quantidade do produto monitoramento.</description>
+        <field>Quantidade_de_monitoramento__c</field>
+        <formula>Quantity</formula>
+        <name>Quantidade monitoramento</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>OpportunityId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Tem_seguro</fullName>
+        <field>Tem_seguro__c</field>
+        <literalValue>1</literalValue>
+        <name>Tem seguro</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <targetObject>OpportunityId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Total_com_desconto</fullName>
+        <field>Total_com_desconto__c</field>
+        <formula>Total_sem_desconto__c -  Valor_desconto__c</formula>
+        <name>Total com desconto</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Valor</fullName>
+        <field>Valor_FIPE__c</field>
+        <formula>IF( CONTAINS( PricebookEntry.Product2.Name , &#39;100.000,00&#39;), 100000,
+IF( CONTAINS( PricebookEntry.Product2.Name , &#39;110.000,00&#39;), 110000, 
+IF( CONTAINS( PricebookEntry.Product2.Name , &#39;120.000,00&#39;), 120000, 
+IF( CONTAINS( PricebookEntry.Product2.Name , &#39;20.000,00&#39;), 20000, 
+IF( CONTAINS( PricebookEntry.Product2.Name , &#39;30.000,00&#39;), 30000,
+IF( CONTAINS( PricebookEntry.Product2.Name , &#39;40.000,00&#39;), 40000, 
+IF( CONTAINS( PricebookEntry.Product2.Name , &#39;50.000,00&#39;), 50000, 
+IF( CONTAINS( PricebookEntry.Product2.Name , &#39;60.000,00&#39;), 60000, 
+IF( CONTAINS( PricebookEntry.Product2.Name , &#39;70.000,00&#39;), 70000,
+IF( CONTAINS( PricebookEntry.Product2.Name , &#39;80.000,00&#39;), 80000, 
+IF( CONTAINS( PricebookEntry.Product2.Name , &#39;90.000,00&#39;), 90000, 
+0)))))))))))</formula>
+        <name>Valor</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>OpportunityId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Valor_desconto</fullName>
+        <field>Valor_desconto__c</field>
+        <formula>(ListPrice * Quantity) - TotalPrice</formula>
+        <name>Valor desconto</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Vl_franquia_cobertura</fullName>
+        <field>Vl_franquia_cobertura__c</field>
+        <formula>Vl_franquia_cobertura__c</formula>
+        <name>Vl franquia cobertura</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>OpportunityId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Vl_lmi_cobertura</fullName>
+        <field>Vl_lmi_cobertura__c</field>
+        <formula>Vl_lmi_cobertura__c</formula>
+        <name>Vl lmi cobertura</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>OpportunityId</targetObject>
+    </fieldUpdates>
+    <rules>
+        <fullName>Atualiza Familia do produto - Acessório</fullName>
+        <actions>
+            <name>Atualiza_fam_lia_acess_rio</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>OpportunityLineItem.Fam_lia_de_produtos__c</field>
+            <operation>equals</operation>
+            <value>Acessório</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Atualiza Familia do produto - Assistência</fullName>
+        <actions>
+            <name>Atualiza_fam_lia_Assist_ncia</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>OpportunityLineItem.Fam_lia_de_produtos__c</field>
+            <operation>equals</operation>
+            <value>Assistência</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Atualiza Familia do produto - Locação</fullName>
+        <actions>
+            <name>Atualiza_fam_lia_loca_o</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>OpportunityLineItem.Fam_lia_de_produtos__c</field>
+            <operation>equals</operation>
+            <value>Locação</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Atualiza Familia do produto - Monitoramento</fullName>
+        <actions>
+            <name>Atualiza_familia_monitoramento</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>OpportunityLineItem.Fam_lia_de_produtos__c</field>
+            <operation>equals</operation>
+            <value>Monitoramento</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Atualiza pontuação</fullName>
+        <actions>
+            <name>Atualiza_pontua_o_do_produto</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>OpportunityLineItem.Quantity</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Atualiza valor unitário mensal do produto</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>OpportunityLineItem.CreatedDate</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Calcula total sem desconto</fullName>
+        <actions>
+            <name>Atualiza_com_desconto</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Atualiza_total_sem_desconto</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>OpportunityLineItem.Quantity</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>OpportunityLineItem.UnitPrice</field>
+            <operation>notEqual</operation>
+            <value>BRL 0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>OpportunityLineItem.UnitPrice</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Classe do produto</fullName>
+        <actions>
+            <name>Atualiza_classe_do_produto</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>OpportunityLineItem.CreatedDate</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Dados seguro</fullName>
+        <actions>
+            <name>Id_produto_cobertura</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Vl_franquia_cobertura</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Vl_lmi_cobertura</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>OpportunityLineItem.Produto_com_seguro__c</field>
+            <operation>equals</operation>
+            <value>Verdadeiro</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Plano</fullName>
+        <actions>
+            <name>Plano</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>OpportunityLineItem.Promocional__c</field>
+            <operation>equals</operation>
+            <value>Verdadeiro</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Preenche nome do produto</fullName>
+        <actions>
+            <name>Opp_Nome_do_produto</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Quantidade_monitoramento</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>OpportunityLineItem.Fam_lia_de_produtos__c</field>
+            <operation>equals</operation>
+            <value>Monitoramento</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Preenche prazo do contrato Siggo</fullName>
+        <actions>
+            <name>Preenche_prazo</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Product2.Prazo_do_contrato__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Siggo</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Preencher Nome do Produto</fullName>
+        <actions>
+            <name>Preencher_Nome_do_Produto</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>OpportunityLineItem.Nome_produto__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Preencher prazo catalogo</fullName>
+        <actions>
+            <name>Atualizar_prazo_contrato</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>OpportunityLineItem.Prazo_do_contrato2__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Regra prazo para catálogos que contenham TIPO no nome</fullName>
+        <actions>
+            <name>Atualiza_prazo_do_monitoramento</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>OpportunityLineItem.Prazo_fixo__c</field>
+            <operation>equals</operation>
+            <value>Verdadeiro</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>OpportunityLineItem.Fam_lia_de_produtos__c</field>
+            <operation>equals</operation>
+            <value>Monitoramento</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Tem seguro</fullName>
+        <actions>
+            <name>Tem_seguro</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>OpportunityLineItem.Tem_seguro__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Valor FIPE</fullName>
+        <actions>
+            <name>Valor</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>OpportunityLineItem.Tem_seguro__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Valor desconto</fullName>
+        <actions>
+            <name>Percentual_descontado</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Valor_desconto</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>OpportunityLineItem.UnitPrice</field>
+            <operation>notEqual</operation>
+            <value>BRL 0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>OpportunityLineItem.UnitPrice</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

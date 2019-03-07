@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Segmento_do_lead</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  Tipo_de_registro_Oportunidade__c  = &quot;siggo&quot;,
+ ISPICKVAL(   Segmento__c ,  &#39;Outro&#39;), 
+ ISBLANK( Detalhes_do_segmento__c ) 
+
+)</errorConditionFormula>
+    <errorMessage>Quando o campo Segmento  estiver preenchido com &quot;Outro&quot; é necessário preencher o campo &quot;Detalhes do segmento&quot;.</errorMessage>
+</ValidationRule>

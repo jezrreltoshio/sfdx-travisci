@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_CORP_Em_andamento</fullName>
+    <active>false</active>
+    <description>REGRA DESATIVADA</description>
+    <errorConditionFormula>AND( 
+NOT (ISNEW()), 
+ISCHANGED(Status), 
+RecordType.Name = &#39;CORP&#39;, 
+TEXT(PRIORVALUE(Status)) = &#39;Em aberto&#39;, 
+TEXT(Status) &lt;&gt; &#39;Em andamento&#39;
+)</errorConditionFormula>
+    <errorMessage>Todos os leads CORP deverão obrigatoriamente passar pelo status &quot;Em andamento&quot;.</errorMessage>
+</ValidationRule>

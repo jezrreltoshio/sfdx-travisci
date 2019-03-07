@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Abordagem - Decisor ausente</masterLabel>
+        <translation><!-- Abordagem - Decisor ausente --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Abordagem inicial</masterLabel>
+        <translation>Abordaje inicial</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Acompanhamento dos indicadores</masterLabel>
+        <translation><!-- Acompanhamento dos indicadores --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Aguardando aprovação financeira</masterLabel>
+        <translation><!-- Aguardando aprovação financeira --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Aguardando contato da revenda</masterLabel>
+        <translation><!-- Aguardando contato da revenda --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Aguardando decisor</masterLabel>
+        <translation><!-- Aguardando decisor --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Aguardando documentação</masterLabel>
+        <translation>Espera de la documentación</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Aguardando número do Renavam/Chassi</masterLabel>
+        <translation><!-- Aguardando número do Renavam/Chassi --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Apresentação de ganhos</masterLabel>
+        <translation><!-- Apresentação de ganhos --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Apresentação do produto</masterLabel>
+        <translation><!-- Apresentação do produto --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cadastro</masterLabel>
+        <translation><!-- Cadastro --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cifrado/cierre</masterLabel>
+        <translation><!-- Cifrado/cierre --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Confirmação de instalação</masterLabel>
+        <translation><!-- Confirmação de instalação --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Confirmação de pagamento</masterLabel>
+        <translation><!-- Confirmação de pagamento --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Direcionado para Loja</masterLabel>
+        <translation><!-- Direcionado para Loja --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Direcionado para Loja (fim da promocao)</masterLabel>
+        <translation><!-- Direcionado para Loja (fim da promocao) --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Elaboração de contrato</masterLabel>
+        <translation><!-- Elaboração de contrato --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Entrenamiento / Preparación</masterLabel>
+        <translation><!-- Entrenamiento / Preparación --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Envio de proposta</masterLabel>
+        <translation><!-- Envio de proposta --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Fechado</masterLabel>
+        <translation><!-- Fechado --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Fechado acessório</masterLabel>
+        <translation><!-- Fechado acessório --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Instalación</masterLabel>
+        <translation><!-- Instalación --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Instalado</masterLabel>
+        <translation><!-- Instalado --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Instalação</masterLabel>
+        <translation><!-- Instalação --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Liberação técnica</masterLabel>
+        <translation><!-- Liberação técnica --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Negociação</masterLabel>
+        <translation><!-- Negociação --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Negociação/Proposta</masterLabel>
+        <translation>Negociación/Propuesta</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Negociação/Revisão</masterLabel>
+        <translation><!-- Negociação/Revisão --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Não Direcionado para Loja</masterLabel>
+        <translation><!-- Não Direcionado para Loja --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Não Venda</masterLabel>
+        <translation><!-- Não Venda --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Parcialmente instalado</masterLabel>
+        <translation><!-- Parcialmente instalado --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Perdido</masterLabel>
+        <translation><!-- Perdido --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Proposta enviada</masterLabel>
+        <translation><!-- Proposta enviada --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Resultado Blind Test</masterLabel>
+        <translation><!-- Resultado Blind Test --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Resultado alcanzado</masterLabel>
+        <translation><!-- Resultado alcanzado --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Treinamento</masterLabel>
+        <translation><!-- Treinamento --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Upgrade</masterLabel>
+        <translation><!-- Upgrade --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Venda</masterLabel>
+        <translation><!-- Venda --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Venda Fechada</masterLabel>
+        <translation>Venta cerrada</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Venda Perdida</masterLabel>
+        <translation>Venta perdida</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

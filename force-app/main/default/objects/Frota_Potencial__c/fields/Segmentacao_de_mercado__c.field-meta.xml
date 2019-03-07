@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Segmentacao_de_mercado__c</fullName>
+    <externalId>false</externalId>
+    <label>Segmentação de mercado</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aeroportos</fullName>
+                <default>false</default>
+                <label>Aeroportos</label>
+            </value>
+            <value>
+                <fullName>Agricultura</fullName>
+                <default>false</default>
+                <label>Agricultura</label>
+            </value>
+            <value>
+                <fullName>Alimentos</fullName>
+                <default>false</default>
+                <label>Alimentos</label>
+            </value>
+            <value>
+                <fullName>Alimentos e Bebidas</fullName>
+                <default>false</default>
+                <label>Alimentos e Bebidas</label>
+            </value>
+            <value>
+                <fullName>Bebidas</fullName>
+                <default>false</default>
+                <label>Bebidas</label>
+            </value>
+            <value>
+                <fullName>Cana de Açúcar</fullName>
+                <default>false</default>
+                <label>Cana de Açúcar</label>
+            </value>
+            <value>
+                <fullName>Carga de Valor</fullName>
+                <default>false</default>
+                <label>Carga de Valor</label>
+            </value>
+            <value>
+                <fullName>Carga Especial</fullName>
+                <default>false</default>
+                <label>Carga Especial</label>
+            </value>
+            <value>
+                <fullName>Carga Expressa</fullName>
+                <default>false</default>
+                <label>Carga Expressa</label>
+            </value>
+            <value>
+                <fullName>Carga Refrigerada</fullName>
+                <default>false</default>
+                <label>Carga Refrigerada</label>
+            </value>
+            <value>
+                <fullName>Carga Seca</fullName>
+                <default>false</default>
+                <label>Carga Seca</label>
+            </value>
+            <value>
+                <fullName>Carga Sólida</fullName>
+                <default>false</default>
+                <label>Carga Sólida</label>
+            </value>
+            <value>
+                <fullName>Cargas Químicas e Perigosas</fullName>
+                <default>false</default>
+                <label>Cargas Químicas e Perigosas</label>
+            </value>
+            <value>
+                <fullName>Carga Viva</fullName>
+                <default>false</default>
+                <label>Carga Viva</label>
+            </value>
+            <value>
+                <fullName>Cegonheiro</fullName>
+                <default>false</default>
+                <label>Cegonheiro</label>
+            </value>
+            <value>
+                <fullName>Cigarro</fullName>
+                <default>false</default>
+                <label>Cigarro</label>
+            </value>
+            <value>
+                <fullName>Cimento e Betoneira</fullName>
+                <default>false</default>
+                <label>Cimento e Betoneira</label>
+            </value>
+            <value>
+                <fullName>Coleta de Lixo</fullName>
+                <default>false</default>
+                <label>Coleta de Lixo</label>
+            </value>
+            <value>
+                <fullName>Combústivel</fullName>
+                <default>false</default>
+                <label>Combústivel</label>
+            </value>
+            <value>
+                <fullName>Construção</fullName>
+                <default>false</default>
+                <label>Construção</label>
+            </value>
+            <value>
+                <fullName>Construção Cívil</fullName>
+                <default>false</default>
+                <label>Construção Cívil</label>
+            </value>
+            <value>
+                <fullName>Containers</fullName>
+                <default>false</default>
+                <label>Containers</label>
+            </value>
+            <value>
+                <fullName>Corretora</fullName>
+                <default>false</default>
+                <label>Corretora</label>
+            </value>
+            <value>
+                <fullName>Distribuidora</fullName>
+                <default>false</default>
+                <label>Distribuidora</label>
+            </value>
+            <value>
+                <fullName>Eletroeletrônico</fullName>
+                <default>false</default>
+                <label>Eletroeletrônico</label>
+            </value>
+            <value>
+                <fullName>Escolar</fullName>
+                <default>false</default>
+                <label>Escolar</label>
+            </value>
+            <value>
+                <fullName>FARMACÊUTICOS</fullName>
+                <default>false</default>
+                <label>FARMACÊUTICOS</label>
+            </value>
+            <value>
+                <fullName>Frigorifico</fullName>
+                <default>false</default>
+                <label>Frigorifico</label>
+            </value>
+            <value>
+                <fullName>Frotas Leves</fullName>
+                <default>false</default>
+                <label>Frotas Leves</label>
+            </value>
+            <value>
+                <fullName>Gás</fullName>
+                <default>false</default>
+                <label>Gás</label>
+            </value>
+            <value>
+                <fullName>Gerenciadora de Risco</fullName>
+                <default>false</default>
+                <label>Gerenciadora de Risco</label>
+            </value>
+            <value>
+                <fullName>Guincho e Reboque</fullName>
+                <default>false</default>
+                <label>Guincho e Reboque</label>
+            </value>
+            <value>
+                <fullName>Indústria</fullName>
+                <default>false</default>
+                <label>Indústria</label>
+            </value>
+            <value>
+                <fullName>Locadora</fullName>
+                <default>false</default>
+                <label>Locadora</label>
+            </value>
+            <value>
+                <fullName>Logística</fullName>
+                <default>false</default>
+                <label>Logística</label>
+            </value>
+            <value>
+                <fullName>Madeireira</fullName>
+                <default>false</default>
+                <label>Madeireira</label>
+            </value>
+            <value>
+                <fullName>Máquina/Outros</fullName>
+                <default>false</default>
+                <label>Máquina/Outros</label>
+            </value>
+            <value>
+                <fullName>Mineração e Energia</fullName>
+                <default>false</default>
+                <label>Mineração e Energia</label>
+            </value>
+            <value>
+                <fullName>Mudanças e Armazenagem</fullName>
+                <default>false</default>
+                <label>Mudanças e Armazenagem</label>
+            </value>
+            <value>
+                <fullName>Ônibus Rodoviário</fullName>
+                <default>false</default>
+                <label>Ônibus Rodoviário</label>
+            </value>
+            <value>
+                <fullName>Ônibus Urbano</fullName>
+                <default>false</default>
+                <label>Ônibus Urbano</label>
+            </value>
+            <value>
+                <fullName>Portos</fullName>
+                <default>false</default>
+                <label>Portos</label>
+            </value>
+            <value>
+                <fullName>Seguradoras</fullName>
+                <default>false</default>
+                <label>Seguradoras</label>
+            </value>
+            <value>
+                <fullName>Serviços de Emergência</fullName>
+                <default>false</default>
+                <label>Serviços de Emergência</label>
+            </value>
+            <value>
+                <fullName>Tanques p/ Alimentos e Bebidas</fullName>
+                <default>false</default>
+                <label>Tanques p/ Alimentos e Bebidas</label>
+            </value>
+            <value>
+                <fullName>Turismo</fullName>
+                <default>false</default>
+                <label>Turismo</label>
+            </value>
+            <value>
+                <fullName>Uso Militar</fullName>
+                <default>false</default>
+                <label>Uso Militar</label>
+            </value>
+            <value>
+                <fullName>Outros</fullName>
+                <default>false</default>
+                <label>Outros</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

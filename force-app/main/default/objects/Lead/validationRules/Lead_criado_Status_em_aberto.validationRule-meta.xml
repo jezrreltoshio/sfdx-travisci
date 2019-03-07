@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_criado_Status_em_aberto</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+ISNEW(), 
+NOT (ISPICKVAL( Status, &#39;Em aberto&#39;)) 
+)</errorConditionFormula>
+    <errorMessage>O primeiro status do lead deve ser Em aberto.</errorMessage>
+</ValidationRule>

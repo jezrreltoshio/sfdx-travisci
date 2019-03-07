@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Aeroportos</masterLabel>
+        <translation><!-- Aeroportos --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Agricultura</masterLabel>
+        <translation><!-- Agricultura --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Alimentos e bebidas</masterLabel>
+        <translation><!-- Alimentos e bebidas --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Biotecnologia</masterLabel>
+        <translation><!-- Biotecnologia --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Comunicações</masterLabel>
+        <translation><!-- Comunicações --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Construção civil</masterLabel>
+        <translation><!-- Construção civil --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Consultoria</masterLabel>
+        <translation><!-- Consultoria --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Educação</masterLabel>
+        <translation><!-- Educação --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Eletrônica</masterLabel>
+        <translation><!-- Eletrônica --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Energia</masterLabel>
+        <translation><!-- Energia --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Engenharia</masterLabel>
+        <translation><!-- Engenharia --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Entretenimento</masterLabel>
+        <translation><!-- Entretenimento --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Equipamentos</masterLabel>
+        <translation><!-- Equipamentos --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Expedição</masterLabel>
+        <translation><!-- Expedição --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Finanças</masterLabel>
+        <translation><!-- Finanças --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Freteiro</masterLabel>
+        <translation><!-- Freteiro --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Governo</masterLabel>
+        <translation><!-- Governo --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Hotelaria</masterLabel>
+        <translation><!-- Hotelaria --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Industria</masterLabel>
+        <translation><!-- Industria --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Manufatura</masterLabel>
+        <translation><!-- Manufatura --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Meio ambiente</masterLabel>
+        <translation><!-- Meio ambiente --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mineração</masterLabel>
+        <translation><!-- Mineração --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mídia</masterLabel>
+        <translation><!-- Mídia --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Outros</masterLabel>
+        <translation>Otros</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Portos</masterLabel>
+        <translation><!-- Portos --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Produtos químicos</masterLabel>
+        <translation><!-- Produtos químicos --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Recreação</masterLabel>
+        <translation><!-- Recreação --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Saúde</masterLabel>
+        <translation><!-- Saúde --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Seguros</masterLabel>
+        <translation><!-- Seguros --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Sem fins lucrativos</masterLabel>
+        <translation><!-- Sem fins lucrativos --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Serviços bancários</masterLabel>
+        <translation><!-- Serviços bancários --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Serviços públicos</masterLabel>
+        <translation><!-- Serviços públicos --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Tecnologia</masterLabel>
+        <translation><!-- Tecnologia --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Telecomunicações</masterLabel>
+        <translation><!-- Telecomunicações --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Transportes</masterLabel>
+        <translation><!-- Transportes --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Varejo</masterLabel>
+        <translation><!-- Varejo --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Vestuário</masterLabel>
+        <translation><!-- Vestuário --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

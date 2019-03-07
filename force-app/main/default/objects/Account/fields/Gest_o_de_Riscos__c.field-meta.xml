@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gest_o_de_Riscos__c</fullName>
+    <externalId>false</externalId>
+    <label>Gestão de Riscos/Rastreamento</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Recuperação do Veículo</fullName>
+                <default>false</default>
+                <label>Recuperação do Veículo</label>
+            </value>
+            <value>
+                <fullName>Recuperação da Frota</fullName>
+                <default>false</default>
+                <label>Recuperação da Frota</label>
+            </value>
+            <value>
+                <fullName>Posição da Frota</fullName>
+                <default>false</default>
+                <label>Posição da Frota</label>
+            </value>
+            <value>
+                <fullName>Utilização da Frota</fullName>
+                <default>false</default>
+                <label>Utilização da Frota</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

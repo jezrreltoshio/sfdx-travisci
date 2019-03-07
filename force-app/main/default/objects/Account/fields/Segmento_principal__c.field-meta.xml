@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Segmento_principal__c</fullName>
+    <externalId>false</externalId>
+    <label>Segmento Principal</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Conservação de carga</fullName>
+                <default>false</default>
+                <label>Conservação de carga</label>
+            </value>
+            <value>
+                <fullName>Prevenção de acidentes</fullName>
+                <default>false</default>
+                <label>Prevenção de acidentes</label>
+            </value>
+            <value>
+                <fullName>Segurança da carga</fullName>
+                <default>false</default>
+                <label>Segurança da carga</label>
+            </value>
+            <value>
+                <fullName>Controle de custos</fullName>
+                <default>false</default>
+                <label>Controle de custos</label>
+            </value>
+            <value>
+                <fullName>Produtividade e Pontualidade</fullName>
+                <default>false</default>
+                <label>Produtividade e Pontualidade</label>
+            </value>
+            <value>
+                <fullName>Gestão de Riscos</fullName>
+                <default>false</default>
+                <label>Gestão de Riscos</label>
+            </value>
+            <value>
+                <fullName>Cross border</fullName>
+                <default>false</default>
+                <label>Cross border</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

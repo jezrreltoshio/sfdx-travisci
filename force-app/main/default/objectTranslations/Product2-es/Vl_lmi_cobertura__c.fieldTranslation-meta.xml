@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Valor de la cubierta Usebens. Si es más de uno, separar usando punto y coma (0,00; 20000,00).</help>
+    <label>Valor Imi cobertura</label>
+    <name>Vl_lmi_cobertura__c</name>
+</CustomFieldTranslation>

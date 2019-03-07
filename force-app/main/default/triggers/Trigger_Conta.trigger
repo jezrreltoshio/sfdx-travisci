@@ -19,6 +19,16 @@
         - Trazido todos as chamadas de método que estavam erroneamente na classe Handler_Conta
         - Adicionado método verificaDuplicidadeCNPJ
     @JIRA KCA-410
+    ---------------------------------
+    @author Renan Rocha
+    @date 15/02/2019
+    @description Alterado chamada duplicadas em Trigger.isBefore
+    @JIRA KCA-549
+    ---------------------------------
+    @author Renan Rocha
+    @date 18/02/2019
+    @description Alterado chamada do método verificaDuplicidadeCNPJ para isAfter
+    @JIRA KCA-549
 */
 trigger Trigger_Conta on Account (before insert, before update, after insert, after update) {
 
@@ -30,11 +40,7 @@ trigger Trigger_Conta on Account (before insert, before update, after insert, af
 
     if(trigger.isBefore){
 
-        if(trigger.isInsert || trigger.isUpdate) Handler_Conta.verificaDuplicidadeCNPJ(trigger.new, trigger.oldMap);
-
-        if(trigger.isInsert){
-            ProcessorControl.insertingAccounts = true;
-
+        if(trigger.isInsert || trigger.isUpdate){
             Service_Conta.cleanBlankSpaceFields(trigger.new); // trigger agregada na unificação
             Service_Conta.validacaoCNPJ(trigger.new);
             Service_Conta.validacaoCPF(trigger.new);
@@ -47,29 +53,20 @@ trigger Trigger_Conta on Account (before insert, before update, after insert, af
             Service_Conta.setBandeiraCartao(trigger.new); // trigger agregada na unificação
             Service_Conta.validarCircuitoCadencia(trigger.new, UserInfo.getUserRoleId()); // trigger agregada na unificação
             Service_Conta.validarNomePortador(trigger.new, trigger.isInsert, trigger.isUpdate); // trigger agregada na unificação
-            Service_Conta.preencheCamposFaltantesConversao(trigger.new);
         }
+
+        if(trigger.isInsert) Service_Conta.preencheCamposFaltantesConversao(trigger.new);
 
         if(trigger.isUpdate){
             Handler_Conta.buscaCEP(trigger.new);
-            Service_Conta.cleanBlankSpaceFields(trigger.new); // trigger agregada na unificação
-            Service_Conta.validacaoCNPJ(trigger.new);
-            Service_Conta.validacaoCPF(trigger.new);
-            Service_Conta.validacaoCUIT(trigger.new);
             Service_Conta.possuiOportunidade(trigger.new);
-            Service_Conta.marcarDuplicidades(trigger.new);                        
-            Service_Conta.formataTelefone(trigger.new);
-            Service_Conta.preencheCamposConta(trigger.new);
             Service_Conta.markLeadOrigin(trigger.new); // trigger agregada na unificação
-            Service_Conta.updateShippingAddress(trigger.new); // trigger agregada na unificação
-            Service_Conta.updateBillingAddress(trigger.new); // trigger agregada na unificação
-            Service_Conta.setBandeiraCartao(trigger.new);   // trigger agregada na unificação
-            Service_Conta.validarCircuitoCadencia(trigger.new, UserInfo.getUserRoleId()); // trigger agregada na unificação
-            Service_Conta.validarNomePortador(trigger.new, trigger.isInsert, trigger.isUpdate); // trigger agregada na unificação
         }
     }
 
     if(trigger.isAfter){
+        if(trigger.isInsert || trigger.isUpdate) Handler_Conta.verificaDuplicidadeCNPJ(trigger.new, trigger.oldMap, trigger.isInsert);
+        
         if(trigger.isUpdate){
             if(!ProcessorControl.insertingAccounts) Service_Conta.updateRelatedContacts(trigger.new); //rbsilva 11-06-18: agregada na unificação. Não deveria estar também no insert?
         }

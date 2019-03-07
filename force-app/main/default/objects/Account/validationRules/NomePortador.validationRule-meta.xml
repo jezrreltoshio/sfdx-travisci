@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NomePortador</fullName>
+    <active>false</active>
+    <description>*** DESATIVADO PARA USAR A TRIGGER: ValidarNomePortador ***
+
+Conta - Se pagamento com cartao, informar o nome do portador.</description>
+    <errorConditionFormula>AND( 
+    UPPER(RecordType.Name) = &#39;SIGGO&#39;, 
+    NOT(ISBLANK(Cobranca_Cartao_Numero_Cript__c)), 
+    ISBLANK(Nome_do_portador__c) 
+)</errorConditionFormula>
+    <errorDisplayField>Nome_do_portador__c</errorDisplayField>
+    <errorMessage>Informe o nome do portador conforme impresso no cartão.</errorMessage>
+</ValidationRule>

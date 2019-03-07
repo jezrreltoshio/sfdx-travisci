@@ -2,15 +2,6 @@
 <Queue xmlns="http://soap.sforce.com/2006/04/metadata">
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>Indicacao Freteiro</name>
-    <queueMembers>
-        <roleAndSubordinates>
-            <roleAndSubordinate>SUPERVISOR_FRETEIRO</roleAndSubordinate>
-            <roleAndSubordinate>TELEVENDAS_FRETEIRO</roleAndSubordinate>
-        </roleAndSubordinates>
-        <roles>
-            <role>DATABASEMKT</role>
-        </roles>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Lead</sobjectType>
     </queueSobject>

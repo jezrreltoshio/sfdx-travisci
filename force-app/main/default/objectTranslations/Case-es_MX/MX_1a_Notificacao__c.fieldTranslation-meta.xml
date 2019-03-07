@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- MX - 1a Notificação --></label>
+    <name>MX_1a_Notificacao__c</name>
+    <relationshipLabel><!-- Casos (MX - 1a Notificação) --></relationshipLabel>
+</CustomFieldTranslation>

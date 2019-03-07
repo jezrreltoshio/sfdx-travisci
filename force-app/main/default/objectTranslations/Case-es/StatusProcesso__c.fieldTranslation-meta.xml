@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status Processo --></label>
+    <name>StatusProcesso__c</name>
+    <picklistValues>
+        <masterLabel>Atrasada</masterLabel>
+        <translation><!-- Atrasada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelada</masterLabel>
+        <translation><!-- Cancelada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Concluída</masterLabel>
+        <translation><!-- Concluída --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Concluída com atraso</masterLabel>
+        <translation><!-- Concluída com atraso --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Em andamento</masterLabel>
+        <translation><!-- Em andamento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não iniciada</masterLabel>
+        <translation><!-- Não iniciada --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

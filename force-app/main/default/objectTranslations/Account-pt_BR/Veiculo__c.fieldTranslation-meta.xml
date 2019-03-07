@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Veículo --></label>
+    <name>Veiculo__c</name>
+    <picklistValues>
+        <masterLabel>Automovel</masterLabel>
+        <translation><!-- Automovel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Caminhao</masterLabel>
+        <translation><!-- Caminhao --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Caminhonete</masterLabel>
+        <translation><!-- Caminhonete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Escavadeira Liebherr R 954C</masterLabel>
+        <translation><!-- Escavadeira Liebherr R 954C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maquina</masterLabel>
+        <translation><!-- Maquina --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moto</masterLabel>
+        <translation><!-- Moto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Onibus</masterLabel>
+        <translation><!-- Onibus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outro</masterLabel>
+        <translation><!-- Outro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trator</masterLabel>
+        <translation><!-- Trator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Van</masterLabel>
+        <translation><!-- Van --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

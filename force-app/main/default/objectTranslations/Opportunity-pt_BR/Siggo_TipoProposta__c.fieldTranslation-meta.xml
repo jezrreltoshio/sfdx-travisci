@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo da Proposta --></label>
+    <name>Siggo_TipoProposta__c</name>
+    <picklistValues>
+        <masterLabel>13-Lojista</masterLabel>
+        <translation><!-- 13-Lojista --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>14-Televendas</masterLabel>
+        <translation><!-- 14-Televendas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>16-E-commerce</masterLabel>
+        <translation><!-- 16-E-commerce --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>17-Segurar.com</masterLabel>
+        <translation><!-- 17-Segurar.com --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>18-Familia Siggo</masterLabel>
+        <translation><!-- 18-Familia Siggo --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

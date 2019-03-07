@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Obrigatório somente para contas do tipo Pessoa Física. Especifique o RG do cliente para que ele possa ser cadastrado na intranet. --></help>
+    <label><!-- RG --></label>
+    <name>DadosPF_RG__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Especifique el CPF del contacto de la cuenta. Introduzca sólo números</help>
+    <label><!-- CPF --></label>
+    <name>CPF__c</name>
+</CustomFieldTranslation>

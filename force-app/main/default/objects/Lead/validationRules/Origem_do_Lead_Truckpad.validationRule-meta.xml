@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Origem_do_Lead_Truckpad</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+OR( 
+ISCHANGED(LeadSource), 
+ISNEW() 
+), 
+ISPICKVAL(LeadSource, &quot;TruckPad&quot;), 
+NOT(CONTAINS(&quot;ADMINISTRADOR&quot;, $UserRole.DeveloperName )), 
+NOT(CONTAINS(&quot;ADMINISTRADOR_COMERCIAL&quot;, $UserRole.DeveloperName )), 
+NOT(CONTAINS(&quot;SUPERVISOR_FRETEIRO&quot;, $UserRole.DeveloperName )) 
+
+)</errorConditionFormula>
+    <errorDisplayField>LeadSource</errorDisplayField>
+    <errorMessage>Você não pode criar um lead com essa origem.</errorMessage>
+</ValidationRule>

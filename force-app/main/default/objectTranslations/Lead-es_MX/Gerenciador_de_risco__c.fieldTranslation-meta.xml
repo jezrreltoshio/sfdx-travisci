@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Gestor de riesgo</label>
+    <name>Gerenciador_de_risco__c</name>
+    <picklistValues>
+        <masterLabel>APISUL Multisat</masterLabel>
+        <translation><!-- APISUL Multisat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Angelira</masterLabel>
+        <translation><!-- Angelira --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brasil Risk</masterLabel>
+        <translation><!-- Brasil Risk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Buonny</masterLabel>
+        <translation><!-- Buonny --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GV</masterLabel>
+        <translation><!-- GV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opentech</masterLabel>
+        <translation><!-- Opentech --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outro</masterLabel>
+        <translation>Otro</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raster</masterLabel>
+        <translation><!-- Raster --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

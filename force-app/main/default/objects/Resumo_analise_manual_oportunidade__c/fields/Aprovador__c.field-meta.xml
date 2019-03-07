@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Aprovador__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Contêm o aprovador desta etapa do processo.</description>
+    <externalId>false</externalId>
+    <label>Usuário</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Resumos_an_lise_manual_oport_aprovador</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

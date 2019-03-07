@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transferencia_do_lead_para_a_fila</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$User.ProfileId &lt;&gt;  Owner:User.ProfileId ,
+ Siggo_discador__c = false,
+
+OR( 
+$User.ProfileId = &#39;00e400000017cB4&#39;,
+$User.ProfileId = &#39;00e400000017cOX&#39;,
+$User.ProfileId = &#39;00e400000017QO7&#39;,
+$User.ProfileId = &#39;00e400000017Zy2&#39;,
+$User.ProfileId = &#39;00e400000014JdB&#39;,
+$User.ProfileId = &#39;00e400000014JdL&#39;
+),
+
+NOT( 
+AND (ISBLANK( Owner:User.Id), Owner:User.Profile.Id  &lt;&gt;  $User.ProfileId 
+)
+))</errorConditionFormula>
+    <errorMessage>Você não pode transferir o lead a esse usuário, transfira-o para uma fila.</errorMessage>
+</ValidationRule>

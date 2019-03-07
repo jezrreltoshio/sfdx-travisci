@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Contato_para_MGM__c</fullName>
+    <description>Campo para controle de abordagem do cliente para indicação de novos contatos (MGM - Member Get Member</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Anote o status do contato da solicitação para indicação de clientes (MGM - Member Get Member)</inlineHelpText>
+    <label>Status Contato para MGM</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Primeira tentativa</fullName>
+                <default>false</default>
+                <label>Primeira tentativa</label>
+            </value>
+            <value>
+                <fullName>Segunda tentativa</fullName>
+                <default>false</default>
+                <label>Segunda tentativa</label>
+            </value>
+            <value>
+                <fullName>Terceira tentativa</fullName>
+                <default>false</default>
+                <label>Terceira tentativa</label>
+            </value>
+            <value>
+                <fullName>Quarta tentativa</fullName>
+                <default>false</default>
+                <label>Quarta tentativa</label>
+            </value>
+            <value>
+                <fullName>Decisor ausente</fullName>
+                <default>false</default>
+                <label>Decisor ausente</label>
+            </value>
+            <value>
+                <fullName>Contatado</fullName>
+                <default>false</default>
+                <label>Contatado</label>
+            </value>
+            <value>
+                <fullName>Contato Não Efetivo</fullName>
+                <default>false</default>
+                <label>Contato Não Efetivo</label>
+            </value>
+            <value>
+                <fullName>Decisor Ausente - Ligar de Manhã</fullName>
+                <default>false</default>
+                <label>Decisor Ausente - Ligar de Manhã</label>
+            </value>
+            <value>
+                <fullName>Decisor Ausente - Ligar de Tarde</fullName>
+                <default>false</default>
+                <label>Decisor Ausente - Ligar de Tarde</label>
+            </value>
+            <value>
+                <fullName>Contato 2</fullName>
+                <default>false</default>
+                <label>Contato 2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

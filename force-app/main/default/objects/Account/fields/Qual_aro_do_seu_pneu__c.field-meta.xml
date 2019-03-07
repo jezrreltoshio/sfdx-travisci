@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Qual_aro_do_seu_pneu__c</fullName>
+    <externalId>false</externalId>
+    <label>Qual aro do seu pneu?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aro 17,5&#39;&#39; - 215/235</fullName>
+                <default>false</default>
+                <label>Aro 17,5&#39;&#39; - 215/235</label>
+            </value>
+            <value>
+                <fullName>Aro 20&#39;&#39; - 1000/20</fullName>
+                <default>false</default>
+                <label>Aro 20&#39;&#39; - 1000/20</label>
+            </value>
+            <value>
+                <fullName>Aro 22&#39;&#39; - 1100</fullName>
+                <default>false</default>
+                <label>Aro 22&#39;&#39; - 1100</label>
+            </value>
+            <value>
+                <fullName>Aro 22,5&#39;&#39; - 275/295</fullName>
+                <default>false</default>
+                <label>Aro 22,5&#39;&#39; - 275/295</label>
+            </value>
+            <value>
+                <fullName>OUTRO</fullName>
+                <default>false</default>
+                <label>OUTRO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

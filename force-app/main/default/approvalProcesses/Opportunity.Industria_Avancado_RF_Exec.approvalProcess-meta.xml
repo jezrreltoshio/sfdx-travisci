@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>ADMINISTRADOR</submitter>
+        <type>roleSubordinates</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Owner</field>
+        <field>Account</field>
+        <field>Name</field>
+        <field>Nome_catalogo__c</field>
+        <field>Prazo_do_contrato_old__c</field>
+        <field>Valor_final_com_desconto__c</field>
+        <field>Valor_sem_desconto__c</field>
+        <field>Valor_unit_rio_mensal_new__c</field>
+        <field>Valor_unit_rio_mensal_new2__c</field>
+        <field>Valor_total_desconto__c</field>
+        <field>Percentual_descontado__c</field>
+        <field>Observa_es_do_desconto__c</field>
+        <field>Alcada_Sup_Max__c</field>
+        <field>Alcada_Sup_Min__c</field>
+        <field>Alcada_Ger_Max__c</field>
+        <field>Alcada_Ger_Min__c</field>
+        <field>Alcada_Dir_Max__c</field>
+        <field>Alcada_Dir_Min__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c &gt;= 2160.01, 
+Nome_catalogo__c = &#39;BT Industria Avançado RF OTR 36 meses&#39; 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Etapa 1 Industria Avançado RF</label>
+        <name>Etapa_1_Industria_Avancado_RF</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c &gt;= 6324.89, 
+Nome_catalogo__c = &#39;BT Industria Avançado RF OTR 36 meses&#39; 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Etapa 2 Industria Avançado RF</label>
+        <name>Etapa_2_Industria_Avancado_RF</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c &gt;= 6908.79, 
+Nome_catalogo__c = &#39;BT Industria Avançado RF OTR 36 meses&#39; 
+)</formula>
+        </entryCriteria>
+        <label>Etapa 3 Industria Avançado RF</label>
+        <name>Etapa_3_Industria_Avancado_RF</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <emailTemplate>unfiled$public/Aprova_o_de_oportunidade</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <booleanFilter>1 AND 2 AND 3 AND (4 OR 5) AND 6</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.Aprovacao_desconto__c</field>
+            <operation>equals</operation>
+            <value>Verdadeiro</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordType</field>
+            <operation>equals</operation>
+            <value>OTR</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Aprova_o__c</field>
+            <operation>notEqual</operation>
+            <value>Aprovado</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Papel_do_propriet_rio__c</field>
+            <operation>contains</operation>
+            <value>Executivo</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Papel_do_propriet_rio__c</field>
+            <operation>contains</operation>
+            <value>Supervisor</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pricebook2.Name</field>
+            <operation>contains</operation>
+            <value>Industria Avançado RF</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Aprova_o_total_da_oportunidade</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Atualiza_aprova_o_da_oportunidade</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Atualiza_reprova_o_da_oportunidade</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Rejei_o_da_oportunidade</name>
+            <type>Alert</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Aprova_o_pendente</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Industria Avançado RF Exec</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>true</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Visita_iniciada_exclusao_hora_inicio</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(  Hora_de_in_cio_da_visita__c  )</errorConditionFormula>
+    <errorDisplayField>Hora_de_in_cio_da_visita__c</errorDisplayField>
+    <errorMessage>Você não pode alterar a data e hora de início de uma visita.</errorMessage>
+</ValidationRule>

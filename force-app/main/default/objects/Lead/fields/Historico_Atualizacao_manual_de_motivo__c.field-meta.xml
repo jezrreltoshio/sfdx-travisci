@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Historico_Atualizacao_manual_de_motivo__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Campo que mantém histórico que registro teve o campo motivo atualizado manualmente. Usado na regra de validação para seleção do motivo correto. (Campo criado para execução automática de padronização dos membros de campanha).</description>
+    <externalId>false</externalId>
+    <label>Historico Atualização manual de motivo</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

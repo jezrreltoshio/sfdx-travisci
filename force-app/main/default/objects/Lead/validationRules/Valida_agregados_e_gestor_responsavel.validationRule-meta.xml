@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Valida_agregados_e_gestor_responsavel</fullName>
+    <active>true</active>
+    <description>Valida se os campos &quot;Possui Agregados&quot; e &quot;Nome gestor responsável&quot; estão ambos preenchidos em conjunto para o tipo de registro: CORP.</description>
+    <errorConditionFormula>AND(    
+    OR(
+		RecordType.DeveloperName == &#39;Freteiro&#39;,
+        RecordType.DeveloperName == &#39;CORP&#39;,
+        RecordType.DeveloperName == &#39;CORP_Televendas&#39;
+    ),
+	NOT(ISBLANK(Nome_gestor_responsavel__c)),		
+	OR(
+		ISPICKVAL(Possui_agregados__c , &#39;Não&#39;),
+		ISPICKVAL(Possui_agregados__c , &#39;NÃO&#39;)
+	),
+    OR(
+    	ISPICKVAL( agregado__c , &#39;Não&#39;),
+    	ISPICKVAL( agregado__c , &#39;NÃO&#39;)
+	)
+)</errorConditionFormula>
+    <errorMessage>Se possui Nome do gestor responsável ou o campo Possui agregados deve ser &#39;Sim ou o campo É agregado deve ser Sim.</errorMessage>
+</ValidationRule>

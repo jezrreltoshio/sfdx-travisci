@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>AUTO-ELEVAÇÃO</fullName>
+        <default>false</default>
+        <label>AUTO-ELEVAÇÃO</label>
+    </customValue>
+    <customValue>
+        <fullName>AUTOMÓVEL</fullName>
+        <default>false</default>
+        <label>AUTOMÓVEL</label>
+    </customValue>
+    <customValue>
+        <fullName>CAMINHAO</fullName>
+        <default>false</default>
+        <label>CAMINHAO</label>
+    </customValue>
+    <customValue>
+        <fullName>CAMINHONETE</fullName>
+        <default>false</default>
+        <label>CAMINHONETE</label>
+    </customValue>
+    <customValue>
+        <fullName>CARRETA</fullName>
+        <default>false</default>
+        <label>CARRETA</label>
+    </customValue>
+    <customValue>
+        <fullName>COLHEITADEIRA</fullName>
+        <default>false</default>
+        <label>COLHEITADEIRA</label>
+    </customValue>
+    <customValue>
+        <fullName>DESCARTÁVEL</fullName>
+        <default>false</default>
+        <label>DESCARTÁVEL</label>
+    </customValue>
+    <customValue>
+        <fullName>DESCARTÁVEL E RETORNÁVEL</fullName>
+        <default>false</default>
+        <label>DESCARTÁVEL E RETORNÁVEL</label>
+    </customValue>
+    <customValue>
+        <fullName>EMPILHADEIRA</fullName>
+        <default>false</default>
+        <label>EMPILHADEIRA</label>
+    </customValue>
+    <customValue>
+        <fullName>EQUIPAMENTO MÓVEL.</fullName>
+        <default>false</default>
+        <label>EQUIPAMENTO MÓVEL.</label>
+    </customValue>
+    <customValue>
+        <fullName>ESCAVADEIRA</fullName>
+        <default>false</default>
+        <label>ESCAVADEIRA</label>
+    </customValue>
+    <customValue>
+        <fullName>GUINDASTE</fullName>
+        <default>false</default>
+        <label>GUINDASTE</label>
+    </customValue>
+    <customValue>
+        <fullName>MAQUINA</fullName>
+        <default>false</default>
+        <label>MAQUINA</label>
+    </customValue>
+    <customValue>
+        <fullName>MICROONIBUS</fullName>
+        <default>false</default>
+        <label>MICROONIBUS</label>
+    </customValue>
+    <customValue>
+        <fullName>MOTO</fullName>
+        <default>false</default>
+        <label>MOTO</label>
+    </customValue>
+    <customValue>
+        <fullName>MOTO NIVELADORA</fullName>
+        <default>false</default>
+        <label>MOTO NIVELADORA</label>
+    </customValue>
+    <customValue>
+        <fullName>ONIBUS</fullName>
+        <default>false</default>
+        <label>ONIBUS</label>
+    </customValue>
+    <customValue>
+        <fullName>PÁ CARREGADEIRA</fullName>
+        <default>false</default>
+        <label>PÁ CARREGADEIRA</label>
+    </customValue>
+    <customValue>
+        <fullName>PICKUP</fullName>
+        <default>false</default>
+        <label>PICKUP</label>
+    </customValue>
+    <customValue>
+        <fullName>PLATAFORMA ELEVATÓRIA</fullName>
+        <default>false</default>
+        <label>PLATAFORMA ELEVATÓRIA</label>
+    </customValue>
+    <customValue>
+        <fullName>PONTE ROLANTE</fullName>
+        <default>false</default>
+        <label>PONTE ROLANTE</label>
+    </customValue>
+    <customValue>
+        <fullName>RETORNÁVEL</fullName>
+        <default>false</default>
+        <label>RETORNÁVEL</label>
+    </customValue>
+    <customValue>
+        <fullName>RETROESCAVADEIRA</fullName>
+        <default>false</default>
+        <label>RETROESCAVADEIRA</label>
+    </customValue>
+    <customValue>
+        <fullName>SEMI-REBOQUE</fullName>
+        <default>false</default>
+        <label>SEMI-REBOQUE</label>
+    </customValue>
+    <customValue>
+        <fullName>SIDER</fullName>
+        <default>false</default>
+        <label>SIDER</label>
+    </customValue>
+    <customValue>
+        <fullName>TRATOR</fullName>
+        <default>false</default>
+        <label>TRATOR</label>
+    </customValue>
+    <customValue>
+        <fullName>TRATOR DE ESTEIRA</fullName>
+        <default>false</default>
+        <label>TRATOR DE ESTEIRA</label>
+    </customValue>
+    <customValue>
+        <fullName>VAN</fullName>
+        <default>false</default>
+        <label>VAN</label>
+    </customValue>
+    <customValue>
+        <fullName>VEÍCULOS LEVES</fullName>
+        <default>false</default>
+        <label>VEÍCULOS LEVES</label>
+    </customValue>
+    <customValue>
+        <fullName>Chasi</fullName>
+        <default>false</default>
+        <label>CHASI</label>
+    </customValue>
+    <customValue>
+        <fullName>Tractor</fullName>
+        <default>false</default>
+        <label>TRACTOR</label>
+    </customValue>
+    <customValue>
+        <fullName>Semirremolque</fullName>
+        <default>false</default>
+        <label>SEMIRREMOLQUE</label>
+    </customValue>
+    <customValue>
+        <fullName>Acoplado</fullName>
+        <default>false</default>
+        <label>ACOPLADO</label>
+    </customValue>
+    <customValue>
+        <fullName>Ómnibus</fullName>
+        <default>false</default>
+        <label>ÓMNIBUS</label>
+    </customValue>
+    <customValue>
+        <fullName>Livianos</fullName>
+        <default>false</default>
+        <label>LIVIANOS</label>
+    </customValue>
+    <customValue>
+        <fullName>Autoelevador</fullName>
+        <default>false</default>
+        <label>AUTOELEVADOR</label>
+    </customValue>
+    <customValue>
+        <fullName>OTR</fullName>
+        <default>false</default>
+        <label>OTR</label>
+    </customValue>
+    <customValue>
+        <fullName>Señuelo Descartable</fullName>
+        <default>false</default>
+        <label>SEÑUELO DESCARTABLE</label>
+    </customValue>
+    <customValue>
+        <fullName>Señuelo Retornable</fullName>
+        <default>false</default>
+        <label>SEÑUELO RETORNABLE</label>
+    </customValue>
+    <customValue>
+        <fullName>CONTAINER</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CONTAINER</label>
+    </customValue>
+    <customValue>
+        <fullName>CARREGADEIRA DE RODAS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CARREGADEIRA DE RODAS</label>
+    </customValue>
+    <customValue>
+        <fullName>CARREGADEIRA DE ESTEIRA</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CARREGADEIRA DE ESTEIRA</label>
+    </customValue>
+    <customValue>
+        <fullName>ATRON 2324</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ATRON 2324</label>
+    </customValue>
+    <customValue>
+        <fullName>JET</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>JET</label>
+    </customValue>
+    <customValue>
+        <fullName>VELEIRO</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>VELEIRO</label>
+    </customValue>
+    <customValue>
+        <fullName>LANCHA</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>LANCHA</label>
+    </customValue>
+    <customValue>
+        <fullName>Náuticos</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Náuticos</label>
+    </customValue>
+    <customValue>
+        <fullName>MÁQUINA FIXA</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>MÁQUINA FIXA</label>
+    </customValue>
+    <description>Tipos de veículo do ERP - tabela: tipo_veiculo</description>
+    <masterLabel>Tipo de veículo</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

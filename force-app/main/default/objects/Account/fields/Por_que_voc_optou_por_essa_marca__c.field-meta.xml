@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Por_que_voc_optou_por_essa_marca__c</fullName>
+    <externalId>false</externalId>
+    <label>Por que  você optou por essa marca?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Preço</fullName>
+                <default>false</default>
+                <label>Preço</label>
+            </value>
+            <value>
+                <fullName>Prazo de pagamento</fullName>
+                <default>false</default>
+                <label>Prazo de pagamento</label>
+            </value>
+            <value>
+                <fullName>Crédito</fullName>
+                <default>false</default>
+                <label>Crédito</label>
+            </value>
+            <value>
+                <fullName>Atendimento da Revenda</fullName>
+                <default>false</default>
+                <label>Atendimento da Revenda</label>
+            </value>
+            <value>
+                <fullName>Durabilidade</fullName>
+                <default>false</default>
+                <label>Durabilidade</label>
+            </value>
+            <value>
+                <fullName>Outros</fullName>
+                <default>false</default>
+                <label>Outros</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

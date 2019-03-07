@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Loja escolhida --></label>
+    <name>Loja_escolhida__c</name>
+    <picklistValues>
+        <masterLabel>CIRASA CURITIBA</masterLabel>
+        <translation><!-- CIRASA CURITIBA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIZAP CASCAVEL</masterLabel>
+        <translation><!-- DIZAP CASCAVEL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GONÇALES PNEUS</masterLabel>
+        <translation><!-- GONÇALES PNEUS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IDISA - CASCAVEL</masterLabel>
+        <translation><!-- IDISA - CASCAVEL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IDISA - FOZ DO IGUAÇU</masterLabel>
+        <translation><!-- IDISA - FOZ DO IGUAÇU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IDISA - MEDIANEIRA</masterLabel>
+        <translation><!-- IDISA - MEDIANEIRA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INGA - CASCAVEL</masterLabel>
+        <translation><!-- INGA - CASCAVEL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INGA - LONDRINA</masterLabel>
+        <translation><!-- INGA - LONDRINA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INGA - MARINGA</masterLabel>
+        <translation><!-- INGA - MARINGA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INGA - PARANAVAÍ</masterLabel>
+        <translation><!-- INGA - PARANAVAÍ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INGA - VITORINO</masterLabel>
+        <translation><!-- INGA - VITORINO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NENHUMA</masterLabel>
+        <translation><!-- NENHUMA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - AL - Arapicaba - Riomar</masterLabel>
+        <translation><!-- NO1 - AL - Arapicaba - Riomar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - AL - Maceió - Novo mundo</masterLabel>
+        <translation><!-- NO1 - AL - Maceió - Novo mundo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - AL - Rio Largo - Movesa</masterLabel>
+        <translation><!-- NO1 - AL - Rio Largo - Movesa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - CE - Caucaia - Ceará Diesel</masterLabel>
+        <translation><!-- NO1 - CE - Caucaia - Ceará Diesel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - CE - Crateus - Nova Indy</masterLabel>
+        <translation><!-- NO1 - CE - Crateus - Nova Indy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - CE - Fortaleza - Apavel</masterLabel>
+        <translation><!-- NO1 - CE - Fortaleza - Apavel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - CE - Fortaleza - Ceará Diesel</masterLabel>
+        <translation><!-- NO1 - CE - Fortaleza - Ceará Diesel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - CE - Fortaleza - Lubtrol</masterLabel>
+        <translation><!-- NO1 - CE - Fortaleza - Lubtrol --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - CE - Fortaleza - Renomic</masterLabel>
+        <translation><!-- NO1 - CE - Fortaleza - Renomic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - CE - Iguatu - Jaguardiesel</masterLabel>
+        <translation><!-- NO1 - CE - Iguatu - Jaguardiesel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - CE - Itapipoca - Nova Indy</masterLabel>
+        <translation><!-- NO1 - CE - Itapipoca - Nova Indy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - CE - Jaguaribe - Jaguar Diesel</masterLabel>
+        <translation><!-- NO1 - CE - Jaguaribe - Jaguar Diesel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - CE - Juazeiro do n. - Ceará Diesel</masterLabel>
+        <translation><!-- NO1 - CE - Juazeiro do n. - Ceará Diesel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - CE - Sobral - Ceará Diesel</masterLabel>
+        <translation><!-- NO1 - CE - Sobral - Ceará Diesel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - CE - Sobral - Nova Indy</masterLabel>
+        <translation><!-- NO1 - CE - Sobral - Nova Indy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - CE - Tab. Do Norte - Jaguardiesel</masterLabel>
+        <translation><!-- NO1 - CE - Tab. Do Norte - Jaguardiesel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - MA - Açailândia - Moriá Pneus</masterLabel>
+        <translation><!-- NO1 - MA - Açailândia - Moriá Pneus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - MA - Bacabal - LG. Pneus</masterLabel>
+        <translation><!-- NO1 - MA - Bacabal - LG. Pneus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - MA - Balsas - Cerrado Pneus</masterLabel>
+        <translation><!-- NO1 - MA - Balsas - Cerrado Pneus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - MA - Imperatriz - Rodobens</masterLabel>
+        <translation><!-- NO1 - MA - Imperatriz - Rodobens --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - MA - Santa Inês - L. G. Pneus</masterLabel>
+        <translation><!-- NO1 - MA - Santa Inês - L. G. Pneus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - MA - São Luis - Mardisa</masterLabel>
+        <translation><!-- NO1 - MA - São Luis - Mardisa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - MA - São Luis - Roma</masterLabel>
+        <translation><!-- NO1 - MA - São Luis - Roma --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - MA - Timon - Auto Car</masterLabel>
+        <translation><!-- NO1 - MA - Timon - Auto Car --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - PB - Campina G. - Gama Diesel</masterLabel>
+        <translation><!-- NO1 - PB - Campina G. - Gama Diesel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - PB - Campina G. - Unidas</masterLabel>
+        <translation><!-- NO1 - PB - Campina G. - Unidas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - PB - João Pessoa - Unidas J. P.</masterLabel>
+        <translation><!-- NO1 - PB - João Pessoa - Unidas J. P. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - PB - Patos - Santorres</masterLabel>
+        <translation><!-- NO1 - PB - Patos - Santorres --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - PB - Sousa - Jaguardiesel</masterLabel>
+        <translation><!-- NO1 - PB - Sousa - Jaguardiesel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - PE - Arcoverde - Mavel</masterLabel>
+        <translation><!-- NO1 - PE - Arcoverde - Mavel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - PE - Carpina - Carvel Pneus</masterLabel>
+        <translation><!-- NO1 - PE - Carpina - Carvel Pneus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - PE - Caruaru - Rodobens</masterLabel>
+        <translation><!-- NO1 - PE - Caruaru - Rodobens --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - PE - Garanhuns - Veneza</masterLabel>
+        <translation><!-- NO1 - PE - Garanhuns - Veneza --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - PE - Goiania - Carvel</masterLabel>
+        <translation><!-- NO1 - PE - Goiania - Carvel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - PE - Jabotão dos G. - Novo mundo</masterLabel>
+        <translation><!-- NO1 - PE - Jabotão dos G. - Novo mundo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - PE - Jabotão dos G. - Rodobens</masterLabel>
+        <translation><!-- NO1 - PE - Jabotão dos G. - Rodobens --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - PE - Petrolina - Mavel Maquinas</masterLabel>
+        <translation><!-- NO1 - PE - Petrolina - Mavel Maquinas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - PE - Petrolina - Podium</masterLabel>
+        <translation><!-- NO1 - PE - Petrolina - Podium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - PE - Recife - Rodobens</masterLabel>
+        <translation><!-- NO1 - PE - Recife - Rodobens --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - PE - Recife - Veneza</masterLabel>
+        <translation><!-- NO1 - PE - Recife - Veneza --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - PE - Salgueiro - Mavel</masterLabel>
+        <translation><!-- NO1 - PE - Salgueiro - Mavel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - PE - Serra Talhada - Mavel</masterLabel>
+        <translation><!-- NO1 - PE - Serra Talhada - Mavel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - PI - Floriano - Mavel</masterLabel>
+        <translation><!-- NO1 - PI - Floriano - Mavel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - PI - Parnaíba - Auto Car</masterLabel>
+        <translation><!-- NO1 - PI - Parnaíba - Auto Car --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - PI - Picos - Mavel</masterLabel>
+        <translation><!-- NO1 - PI - Picos - Mavel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - PI - Teresina - Apavel</masterLabel>
+        <translation><!-- NO1 - PI - Teresina - Apavel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - PI - Teresina - Auto Car</masterLabel>
+        <translation><!-- NO1 - PI - Teresina - Auto Car --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - PI - Teresina - Monaco I</masterLabel>
+        <translation><!-- NO1 - PI - Teresina - Monaco I --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - PI - Uruçuí - New Agro</masterLabel>
+        <translation><!-- NO1 - PI - Uruçuí - New Agro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - RN - Barauna - Unidas</masterLabel>
+        <translation><!-- NO1 - RN - Barauna - Unidas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - RN - Caicó - Santorres</masterLabel>
+        <translation><!-- NO1 - RN - Caicó - Santorres --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - RN - Mossoró - Reunidas</masterLabel>
+        <translation><!-- NO1 - RN - Mossoró - Reunidas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - RN - Mossoró - Via Diesel</masterLabel>
+        <translation><!-- NO1 - RN - Mossoró - Via Diesel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - RN - Natal - Reunidas</masterLabel>
+        <translation><!-- NO1 - RN - Natal - Reunidas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - RN - Parnamirim - Via Diesel</masterLabel>
+        <translation><!-- NO1 - RN - Parnamirim - Via Diesel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1 - RN - Pau dos Ferros - M. Pneus</masterLabel>
+        <translation><!-- NO1 - RN - Pau dos Ferros - M. Pneus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO1- AL - Arapicaba - Riomar</masterLabel>
+        <translation><!-- NO1- AL - Arapicaba - Riomar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NORDICA - CURITIBA</masterLabel>
+        <translation><!-- NORDICA - CURITIBA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NORDICA - PORTA GROSSA</masterLabel>
+        <translation><!-- NORDICA - PORTA GROSSA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NORDICA - UNIÃO DA VITÓRIA</masterLabel>
+        <translation><!-- NORDICA - UNIÃO DA VITÓRIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NORDICA GUARAPUAVA</masterLabel>
+        <translation><!-- NORDICA GUARAPUAVA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NÃO SABE INFORMAR</masterLabel>
+        <translation><!-- NÃO SABE INFORMAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PILOTTE PNEUS</masterLabel>
+        <translation><!-- PILOTTE PNEUS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REDISA</masterLabel>
+        <translation><!-- REDISA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REDISA - FÇO BELTRÃO</masterLabel>
+        <translation><!-- REDISA - FÇO BELTRÃO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REVENDA DE AM</masterLabel>
+        <translation><!-- REVENDA DE AM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REVENDA DE BA</masterLabel>
+        <translation><!-- REVENDA DE BA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REVENDA DE SE</masterLabel>
+        <translation><!-- REVENDA DE SE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REVENDA DE SP</masterLabel>
+        <translation><!-- REVENDA DE SP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenda de AC</masterLabel>
+        <translation><!-- Revenda de AC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenda de AL</masterLabel>
+        <translation><!-- Revenda de AL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenda de CE</masterLabel>
+        <translation><!-- Revenda de CE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenda de DF</masterLabel>
+        <translation><!-- Revenda de DF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenda de ES</masterLabel>
+        <translation><!-- Revenda de ES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenda de GO</masterLabel>
+        <translation><!-- Revenda de GO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenda de MA</masterLabel>
+        <translation><!-- Revenda de MA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenda de MG</masterLabel>
+        <translation><!-- Revenda de MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenda de MS</masterLabel>
+        <translation><!-- Revenda de MS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenda de MT</masterLabel>
+        <translation><!-- Revenda de MT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenda de PA</masterLabel>
+        <translation><!-- Revenda de PA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenda de PB</masterLabel>
+        <translation><!-- Revenda de PB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenda de PE</masterLabel>
+        <translation><!-- Revenda de PE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenda de PI</masterLabel>
+        <translation><!-- Revenda de PI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenda de PR</masterLabel>
+        <translation><!-- Revenda de PR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenda de RJ</masterLabel>
+        <translation><!-- Revenda de RJ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenda de RN</masterLabel>
+        <translation><!-- Revenda de RN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenda de RO</masterLabel>
+        <translation><!-- Revenda de RO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenda de RS</masterLabel>
+        <translation><!-- Revenda de RS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenda de SC</masterLabel>
+        <translation><!-- Revenda de SC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenda de TO</masterLabel>
+        <translation><!-- Revenda de TO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAVANA - VD</masterLabel>
+        <translation><!-- SAVANA - VD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC - AG PNEUS - CHAPECÓ</masterLabel>
+        <translation><!-- SC - AG PNEUS - CHAPECÓ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC - AG PNEUS - SÃO MIGUEL DO OESTE</masterLabel>
+        <translation><!-- SC - AG PNEUS - SÃO MIGUEL DO OESTE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC - AG PNEUS - XANXERÊ</masterLabel>
+        <translation><!-- SC - AG PNEUS - XANXERÊ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC - DICAVE - CAÇADOR</masterLabel>
+        <translation><!-- SC - DICAVE - CAÇADOR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC - DICAVE - GARTNE</masterLabel>
+        <translation><!-- SC - DICAVE - GARTNE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC - DICAVE - LAGES</masterLabel>
+        <translation><!-- SC - DICAVE - LAGES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC - DICAVE - MAFRA</masterLabel>
+        <translation><!-- SC - DICAVE - MAFRA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC - DICAVE - VIDEIRA</masterLabel>
+        <translation><!-- SC - DICAVE - VIDEIRA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC - DICAVE -RIO DO SUL</masterLabel>
+        <translation><!-- SC - DICAVE -RIO DO SUL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC - DULEX EICULOS - INGÁ PNEUS</masterLabel>
+        <translation><!-- SC - DULEX EICULOS - INGÁ PNEUS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC - DVA - BLUMENAU</masterLabel>
+        <translation><!-- SC - DVA - BLUMENAU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC - DVA - IÇARA</masterLabel>
+        <translation><!-- SC - DVA - IÇARA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC - DVA - JOINVILLE</masterLabel>
+        <translation><!-- SC - DVA - JOINVILLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC - DVA - TUBARÃO</masterLabel>
+        <translation><!-- SC - DVA - TUBARÃO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC - DVA - VEICULOS SÃO JOSÉ</masterLabel>
+        <translation><!-- SC - DVA - VEICULOS SÃO JOSÉ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC - DVA VEICULOS - ARARANGUÁ</masterLabel>
+        <translation><!-- SC - DVA VEICULOS - ARARANGUÁ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC - UNETRAL - CATANDUVAS</masterLabel>
+        <translation><!-- SC - UNETRAL - CATANDUVAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC - UNETRAL - CHAPECO</masterLabel>
+        <translation><!-- SC - UNETRAL - CHAPECO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC - UNETRAL - CONCORDIA</masterLabel>
+        <translation><!-- SC - UNETRAL - CONCORDIA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

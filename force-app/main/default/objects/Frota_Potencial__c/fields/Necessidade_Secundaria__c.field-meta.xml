@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Necessidade_Secundaria__c</fullName>
+    <externalId>false</externalId>
+    <label>Necessidade Secundaria</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Conservação de carga</fullName>
+                <default>false</default>
+                <label>Conservação de carga</label>
+            </value>
+            <value>
+                <fullName>Prevenção de acidentes</fullName>
+                <default>false</default>
+                <label>Prevenção de acidentes</label>
+            </value>
+            <value>
+                <fullName>Segurança da carga</fullName>
+                <default>false</default>
+                <label>Segurança da carga</label>
+            </value>
+            <value>
+                <fullName>Controle de custos</fullName>
+                <default>false</default>
+                <label>Controle de custos</label>
+            </value>
+            <value>
+                <fullName>Pontualidade</fullName>
+                <default>false</default>
+                <label>Pontualidade</label>
+            </value>
+            <value>
+                <fullName>Produtividade</fullName>
+                <default>false</default>
+                <label>Produtividade</label>
+            </value>
+            <value>
+                <fullName>Gestão de riscos</fullName>
+                <default>false</default>
+                <label>Gestão de riscos</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

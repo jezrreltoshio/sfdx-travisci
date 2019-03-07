@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo de cliente --></label>
+    <name>Tipo_de_cliente__c</name>
+    <picklistValues>
+        <masterLabel>Cliente Base</masterLabel>
+        <translation>Cliente actual</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente final</masterLabel>
+        <translation><!-- Cliente final --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente indicador</masterLabel>
+        <translation><!-- Cliente indicador --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Embarcador</masterLabel>
+        <translation><!-- Embarcador --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ex-Cliente</masterLabel>
+        <translation><!-- Ex-Cliente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gerenciador de Risco</masterLabel>
+        <translation><!-- Gerenciador de Risco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indicador</masterLabel>
+        <translation><!-- Indicador --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Novo Cliente</masterLabel>
+        <translation>Nuevo Cliente</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Novo Parceiro</masterLabel>
+        <translation><!-- Novo Parceiro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prestador de serviço</masterLabel>
+        <translation><!-- Prestador de serviço --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prospect</masterLabel>
+        <translation><!-- Prospect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rental</masterLabel>
+        <translation><!-- Rental --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seguradora</masterLabel>
+        <translation><!-- Seguradora --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sinergia Michelin KA</masterLabel>
+        <translation><!-- Sinergia Michelin KA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>À fidelizar</masterLabel>
+        <translation><!-- À fidelizar --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

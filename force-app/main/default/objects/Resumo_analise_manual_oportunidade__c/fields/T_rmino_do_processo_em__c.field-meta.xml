@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>T_rmino_do_processo_em__c</fullName>
+    <description>Data e hora em que a oportunidade foi aprovada ou rejeitada.</description>
+    <externalId>false</externalId>
+    <label>Término do processo em</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

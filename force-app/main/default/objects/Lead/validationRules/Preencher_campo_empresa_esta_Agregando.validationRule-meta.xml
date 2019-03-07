@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preencher_campo_empresa_esta_Agregando</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR( 
+AND( 
+ISPICKVAL(Status, &#39;Qualificado&#39;),
+ISPICKVAL(agregado__c, &#39;Sim&#39;),
+ISBLANK(Qual_empresa_esta_agregando__c) 
+), 
+AND( 
+ISPICKVAL(Status, &#39;Desqualificado&#39;), 
+ISPICKVAL(agregado__c, &#39;Sim&#39;),
+ISBLANK(Qual_empresa_esta_agregando__c), 
+NOT(ISPICKVAL(Motivo_da_desqualifica_o_do_lead__c, 
+&#39;Não solicitou contato/Desconhece cadastro&#39;)), 
+NOT(ISPICKVAL(Motivo_da_desqualifica_o_do_lead__c, 
+&#39;Recusou-se à conversar&#39;)), 
+NOT(ISPICKVAL(Motivo_da_desqualifica_o_do_lead__c, 
+&#39;SAC / Reclamação&#39;)), 
+NOT(ISPICKVAL(Motivo_da_desqualifica_o_do_lead__c, 
+&#39;Não possui veículo&#39;)), 
+NOT(ISPICKVAL(Motivo_da_desqualifica_o_do_lead__c, 
+&#39;Lead Duplicado&#39;)) 
+) 
+)</errorConditionFormula>
+    <errorMessage>Por favor preencher o campo &quot;Qual empresa está agregando?&quot;</errorMessage>
+</ValidationRule>

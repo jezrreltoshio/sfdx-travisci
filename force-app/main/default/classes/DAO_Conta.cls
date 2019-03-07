@@ -17,7 +17,15 @@
     @author Renan Rocha
     @date 11/01/2019
     @description Inserido método getContasByCNPJERecordTypeId
-    @JIRA KCA-410 
+    @JIRA KCA-410
+    ---------------------------------
+    @author Renan Rocha
+    @date 15/02/2019
+    @description:
+      - Alterado retorno do método getContasByCNPJERecordTypeId para uma única conta
+      - Inserido limite de resultados para 1
+      - Inserido parâmetro no método getContasByCNPJERecordTypeId pIdConta para evitar que seja buscado a própria conta
+    @JIRA KCA-549 
 */
 public class DAO_Conta{
 
@@ -314,14 +322,14 @@ public class DAO_Conta{
 
     /*
       @description Retorna uma lista de contas conforme o CNPJ e o RecordTypeId informado
-      @param String pCNPJ, String pRecordTypeId
-      @return List<Account>
+      @param String pCNPJ, String pRecordTypeId, String pIdConta
+      @return Account
       
       @author Renan Rocha
       @date 11/01/2019
       @JIRA KCA-410
     */
-    public static List<Account> getContasByCNPJERecordTypeId(String pCNPJ, String pRecordTypeId){
+    public static Account getContasByCNPJERecordTypeId(String pCNPJ, String pRecordTypeId, String pIdConta){
       String METHOD_NAME = 'getContasByCNPJERecordTypeId';
       
       return
@@ -331,6 +339,8 @@ public class DAO_Conta{
         FROM Account 
         WHERE CNPJ__c <> null 
         AND CNPJ__c =: pCNPJ 
-        AND RecordTypeId =: pRecordTypeId];  
+        AND RecordTypeId =: pRecordTypeId
+        AND Id !=: pIdConta
+        LIMIT 1];  
     }
 }

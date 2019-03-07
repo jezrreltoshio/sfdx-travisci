@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>N_vel_de_Satisfa_o_grafic_OS_Assist_ncia__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(   N_vel_de_Satisfa_o_OS_Assist_ncia__c   , 
+1, IMAGE(&quot;https://c.na2.content.force.com/servlet/servlet.ImageServer?id=01540000001QjGz&amp;oid=00D4D0000000jri&amp;lastMod=1392423651000&quot;, &quot;Totalmente insatisfeito&quot;, 25, 25), 
+2, IMAGE(&quot;https://c.na2.content.force.com/servlet/servlet.ImageServer?id=01540000001QjGx&amp;oid=00D4D0000000jri&amp;lastMod=1392423651000&quot;, &quot;Insatisfeito&quot;, 25, 25), 
+3, IMAGE(&quot;https://c.na2.content.force.com/servlet/servlet.ImageServer?id=01540000001QjH0&amp;oid=00D4D0000000jri&amp;lastMod=1392423651000&quot;, &quot;Satisfeito&quot;, 25, 25), 
+4, IMAGE(&quot;https://c.na2.content.force.com/servlet/servlet.ImageServer?id=01540000001QjGy&amp;oid=00D4D0000000jri&amp;lastMod=1392423651000&quot;, &quot;Muito satisfeito&quot;, 25, 25), 
+&quot;&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Nível de Satisfação - OS Assistência</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sub Origem --></label>
+    <name>SubOrigem__c</name>
+    <picklistValues>
+        <masterLabel>Fale conosco</masterLabel>
+        <translation><!-- Fale conosco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portal de serviços</masterLabel>
+        <translation><!-- Portal de serviços --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reclame aqui</masterLabel>
+        <translation><!-- Reclame aqui --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Bluetec</masterLabel>
+        <translation><!-- Site Bluetec --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Cargo Tracck</masterLabel>
+        <translation><!-- Site Cargo Tracck --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Sascar</masterLabel>
+        <translation><!-- Site Sascar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Siggo</masterLabel>
+        <translation><!-- Site Siggo --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

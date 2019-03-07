@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_de_frota__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo de frota</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mista</fullName>
+                <default>false</default>
+                <label>Mista</label>
+            </value>
+            <value>
+                <fullName>Própria</fullName>
+                <default>false</default>
+                <label>Própria</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

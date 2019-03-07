@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Converter_lead_mexico</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Converter</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/38.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/38.0/apex.js&quot;)} 
+
+leadConvert();
+
+function leadConvert(){
+try {
+
+var rfc = &#39;{!Lead.RFC__c}&#39;; 
+var perfil = &#39;{!$Profile.Name}&#39;;
+var pais = &#39;{!Lead.Country}&#39;;
+
+if(rfc == &#39;&#39; &amp;&amp; perfil.includes(&#39;Mexico&#39;)){
+alert(&#39;{!$Label.MSG_ERRO_0045}&#39;);
+} else if(pais == &#39;&#39; || pais.toUpperCase() == &#39;BRASIL&#39;){
+alert(&#39;{!$Label.MSG_ERRO_0047}&#39;);
+} else {
+var button = document.querySelector(&quot;input[name=&#39;converter_lead_mexico&#39;]&quot;);
+button.setAttribute(&quot;disabled&quot;, &quot;disabled&quot;);
+button.classList.add(&#39;btnDisabled&#39;);
+button.parentElement.innerHTML += &#39;&lt;img style=&quot;position: relative;top: 4px;left: 5px;&quot; src=&quot;/img/loading.gif&quot;/&gt;&lt;span value=&quot;carregando&quot;/&gt;&#39;;
+
+var res;
+
+res = sforce.apex.execute(&quot;Lead_Converter_Mexico&quot;, &quot;convertLead&quot;, {leadId: &#39;{!Lead.Id}&#39;});
+
+if(res == &#39;error&#39;){
+alert(&#39;{!$Label.MSG_ERRO_0046}&#39;);
+} else {
+window.location.href = &quot;/&quot;+res;
+}
+
+}
+
+}catch(err) {
+if(err.faultstring.includes(&quot;duplicate value found&quot;)){
+
+var buscaConta = sforce.connection.query(&quot;SELECT Id, Name FROM Account WHERE RFC__c =&#39;{!Lead.RFC__c}&#39; limit 1&quot;);
+records = buscaConta.getArray(&quot;records&quot;); 
+var idConta = records[0].Id;
+var nomeConta = records[0].Name;
+var urlConta = &#39;https://&#39;+window.location.hostname + &#39;/&#39; + idConta;
+var textoMensagem = &#39;{!$Label.MSG_ERRO_0048}&#39; + &#39; \nNombre de cuenta: &#39; + nomeConta + &#39;\n\n¿Desea acceder a la cuenta?&#39;;
+if(confirm(textoMensagem)) {
+
+var win = window.open(urlConta, &#39;_blank&#39;);
+
+if (win) {
+
+    //Browser has allowed it to be opened
+    win.focus();
+} else {
+
+    //Browser has blocked it
+    alert(&#39;Por favor permita las popups para este sitio web&#39;);
+}
+
+
+}
+
+
+} else {
+alert(err.faultstring);
+}
+location.reload();
+}
+
+}</url>
+</WebLink>

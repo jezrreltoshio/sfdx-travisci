@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Tipo de persona</label>
+    <name>Tipo_de_pessoa__c</name>
+    <picklistValues>
+        <masterLabel>F-Física</masterLabel>
+        <translation><!-- F-Física --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>J-Jurídica</masterLabel>
+        <translation><!-- J-Jurídica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>J-Jurídica - ME</masterLabel>
+        <translation><!-- J-Jurídica - ME --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>J-Jurídica - MEI</masterLabel>
+        <translation><!-- J-Jurídica - MEI --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Marca do veículo. --></help>
+    <label><!-- Marca do Veículo --></label>
+    <name>Marca_Veiculo__c</name>
+    <relationshipLabel><!-- Modelos de Veículo --></relationshipLabel>
+</CustomFieldTranslation>

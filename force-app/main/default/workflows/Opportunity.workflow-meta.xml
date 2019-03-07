@@ -1,0 +1,1582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>AR_Aprovacao_total_oportunidade</fullName>
+        <description>AR: Aprovação total da oportunidade</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Atendimento_Ouvidoria/AR_Oportunidade_totalmente_aprovada</template>
+    </alerts>
+    <alerts>
+        <fullName>AR_rejeicao_oportunidade</fullName>
+        <description>AR: Rejeição da oportunidade</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Atendimento_Ouvidoria/AR_oportunidade_rejeitada</template>
+    </alerts>
+    <alerts>
+        <fullName>Alerta_sobre_oportunidade_n_o_trabalhada</fullName>
+        <description>Alerta sobre oportunidade não trabalhada</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Oportunidade_parada_na_fase_h_5_dias</template>
+    </alerts>
+    <alerts>
+        <fullName>Altera_o_do_propriet_rio</fullName>
+        <description>Alteração do proprietário</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Propriet_rio_alterado</template>
+    </alerts>
+    <alerts>
+        <fullName>Aprova_o_da_etapa_da_oportunidade</fullName>
+        <description>Aprovação da etapa da oportunidade</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Oportunidade_aprovada</template>
+    </alerts>
+    <alerts>
+        <fullName>Aprova_o_se_Payback_menor_que_18</fullName>
+        <description>Aprovação se Payback menor que 18</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>danilo.perez@sascar.com.br</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Payback_menor_que_18</template>
+    </alerts>
+    <alerts>
+        <fullName>Aprova_o_se_payback_maior_que_18</fullName>
+        <description>Aprovação se payback maior que 18</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>gilson.santiago@sascar.com.br</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Payback_maior_que_18</template>
+    </alerts>
+    <alerts>
+        <fullName>Aprova_o_total_da_oportunidade</fullName>
+        <description>Aprovação total da oportunidade</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Oportunidade_totalmente_aprovada</template>
+    </alerts>
+    <alerts>
+        <fullName>Aprovacao_etapa_oportunidade</fullName>
+        <description>Aprovação etapa oportunidade</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Oportunidade_etapa_aprovada</template>
+    </alerts>
+    <alerts>
+        <fullName>Aprovacao_total_oportunidade</fullName>
+        <description>Aprovação total oportunidade</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Oportunidade_totalmente_aprovada</template>
+    </alerts>
+    <alerts>
+        <fullName>E_mail_para_preenchimento_de_VPL_e_Payback</fullName>
+        <description>E-mail para preenchimento de VPL e Payback</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>danilo.perez@sascar.com.br</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/VPL_e_Payback</template>
+    </alerts>
+    <alerts>
+        <fullName>Envia_alerta_de_email_fase_1_da_demonstracao</fullName>
+        <description>Envia alerta de email fase 1 da demonstracao</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Envia_alerta_de_email_fase_1_da_demonstracao</template>
+    </alerts>
+    <alerts>
+        <fullName>Envia_alerta_de_email_fase_2_da_demonstracao</fullName>
+        <description>Envia alerta de email fase 2 da demonstracao</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Envia_alerta_de_email_fase_2_da_demonstracao</template>
+    </alerts>
+    <alerts>
+        <fullName>Envia_alerta_de_email_fase_3_da_demonstracao</fullName>
+        <description>Envia alerta de email fase 3 da demonstracao</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Envia_alerta_de_email_fase_3_da_demonstracao</template>
+    </alerts>
+    <alerts>
+        <fullName>Envia_alerta_de_email_fase_4_da_demonstracao</fullName>
+        <description>Envia alerta de email fase 4 da demonstracao</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Envia_alerta_de_email_fase_4_da_demonstracao</template>
+    </alerts>
+    <alerts>
+        <fullName>Envia_alerta_de_email_fase_5_da_demonstracao</fullName>
+        <description>Envia alerta de email fase 5 da demonstracao</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Envia_alerta_de_email_fase_5_da_demonstracao</template>
+    </alerts>
+    <alerts>
+        <fullName>Envia_alerta_de_email_fase_6_da_demonstracao</fullName>
+        <description>Envia alerta de email fase 6 da demonstracao</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Envia_alerta_de_email_fase_6_da_demonstracao</template>
+    </alerts>
+    <alerts>
+        <fullName>Oportunida_perdida</fullName>
+        <description>Oportunida perdida</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Gerente_Bluetec</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Oportunidade_perdida</template>
+    </alerts>
+    <alerts>
+        <fullName>OportunidadeParada5Dias</fullName>
+        <description>OportunidadeParada5Dias</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Oportunidade_parada_na_fase_h_5_dias</template>
+    </alerts>
+    <alerts>
+        <fullName>OportunidadeParada7Dias</fullName>
+        <description>OportunidadeParada7Dias</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Gerente_Bluetec</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Oportunidade_parada_na_fase_ha_7_dias</template>
+    </alerts>
+    <alerts>
+        <fullName>Oportunidade_parada_na_fase_de_confirma_o_h_5_dias</fullName>
+        <description>Oportunidade parada na fase de confirmação há 5 dias</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Oportunidade_parada_na_fase_h_5_dias</template>
+    </alerts>
+    <alerts>
+        <fullName>Rejei_o_da_oportunidade</fullName>
+        <description>Rejeição da oportunidade</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Oportunidade_rejeitada</template>
+    </alerts>
+    <alerts>
+        <fullName>Rejeicao_etapa_oportunidade</fullName>
+        <description>Rejeição etapa oportunidade</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Oportunidade_etapa_rejeitada</template>
+    </alerts>
+    <alerts>
+        <fullName>SIGGO_Alerta_oportunidade_aprovada_manualmente</fullName>
+        <description>SIGGO - Alerta oportunidade aprovada manualmente</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SIGGO_ApAnaCred_Aprovada</template>
+    </alerts>
+    <alerts>
+        <fullName>SIGGO_Alerta_oportunidade_rejeitada_manualmente</fullName>
+        <description>SIGGO - Alerta oportunidade rejeitada manualmente</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SIGGO_ApAnaCred_Rejeitada</template>
+    </alerts>
+    <alerts>
+        <fullName>Vencimento_Demonstra_o</fullName>
+        <description>Vencimento Demonstração</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Vencimento_Demo</template>
+    </alerts>
+    <alerts>
+        <fullName>Vencimento_da_Oportunidade</fullName>
+        <description>Vencimento da Oportunidade</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>GERENTE_CARGO_TRACCK</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Vencimento_Oportunidade</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Altera_aprovacao_taxa</fullName>
+        <field>Aprovacao_taxa_instalacao__c</field>
+        <name>Altera aprovacao taxa</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Altera_data_fase</fullName>
+        <field>Data_alteracao_fase__c</field>
+        <formula>Today()</formula>
+        <name>Altera data fase</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Aprova_desc_taxa_instalacao</fullName>
+        <field>Aprovacao_taxa_instalacao__c</field>
+        <literalValue>Solicitação enviada</literalValue>
+        <name>Aprova desc taxa instalação</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Aprova_o_pendente</fullName>
+        <field>Aprova_o__c</field>
+        <literalValue>Solicitação enviada</literalValue>
+        <name>Aprovação - pendente</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Aprovacao_Pendente</fullName>
+        <field>Aprova_o__c</field>
+        <literalValue>Solicitação enviada</literalValue>
+        <name>Aprovação Pendente</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Aprovada_taxa_instalacao</fullName>
+        <field>Aprovacao_taxa_instalacao__c</field>
+        <literalValue>Aprovado</literalValue>
+        <name>Aprovada taxa instalação</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_Campo_Aprovacao</fullName>
+        <field>Aprova_o__c</field>
+        <literalValue>Solicitação enviada</literalValue>
+        <name>Atualiza Campo Aprovação</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_DataHora_Venda</fullName>
+        <field>Data_Hora_Venda__c</field>
+        <formula>now()</formula>
+        <name>Atualiza DataHora Venda</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_aprova_o_da_oportunidade</fullName>
+        <field>Aprova_o__c</field>
+        <literalValue>Aprovado</literalValue>
+        <name>Atualiza aprovação da oportunidade</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_checkbox_visita</fullName>
+        <field>Visita__c</field>
+        <literalValue>1</literalValue>
+        <name>Atualiza checkbox visita</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_fase_de_alerta_1</fullName>
+        <field>fase_de_alerta__c</field>
+        <literalValue>Foi agendado email - solicitando a instalação</literalValue>
+        <name>Atualiza fase de alerta 1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_fase_de_alerta_2</fullName>
+        <field>fase_de_alerta__c</field>
+        <literalValue>Foi agendado email - solicitando o treinamento</literalValue>
+        <name>Atualiza fase de alerta 2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_fase_de_alerta_3</fullName>
+        <field>fase_de_alerta__c</field>
+        <literalValue>Foi agendado email - solicitando agendamento da visita</literalValue>
+        <name>Atualiza fase de alerta 3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_fase_de_alerta_4</fullName>
+        <field>fase_de_alerta__c</field>
+        <literalValue>Foi agendado email - solicitando agendamento da 2ª visita</literalValue>
+        <name>Atualiza fase de alerta 4</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_fase_de_alerta_5</fullName>
+        <field>fase_de_alerta__c</field>
+        <literalValue>Foi agendado email - solicitando agendamento da 3ª visita</literalValue>
+        <name>Atualiza fase de alerta 5</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_fase_de_alerta_6</fullName>
+        <field>fase_de_alerta__c</field>
+        <literalValue>Foi agendado email - solicitando status de fechamento da oportunidade</literalValue>
+        <name>Atualiza fase de alerta 6</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_fase_inicial_freteiro</fullName>
+        <field>StageName</field>
+        <literalValue>Início da abordagem</literalValue>
+        <name>Atualiza fase inicial freteiro</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_o_Campo_Aprovacao</fullName>
+        <field>Aprova_o__c</field>
+        <literalValue>Solicitação enviada</literalValue>
+        <name>Atualiza o Campo Aprovação</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_regional_freteiro</fullName>
+        <field>Regional__c</field>
+        <literalValue>Freteiros</literalValue>
+        <name>Atualiza regional freteiro</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <targetObject>AccountId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_reprova_o_da_oportunidade</fullName>
+        <field>Aprova_o__c</field>
+        <literalValue>Reprovado</literalValue>
+        <name>Atualiza reprovação da oportunidade</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_se_aprovado</fullName>
+        <field>Aprova_o__c</field>
+        <literalValue>Aprovado</literalValue>
+        <name>Atualiza se aprovado</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_se_aprovado_maior_18</fullName>
+        <field>Aprova_o__c</field>
+        <literalValue>Aprovado</literalValue>
+        <name>Atualiza se aprovado</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_se_reprovado</fullName>
+        <field>Aprova_o__c</field>
+        <literalValue>Reprovado</literalValue>
+        <name>Atualiza se reprovado</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualiza_se_reprovado_maior_18</fullName>
+        <field>Aprova_o__c</field>
+        <literalValue>Reprovado</literalValue>
+        <name>Atualiza se reprovado</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualizar_valor_padrao</fullName>
+        <field>Amount</field>
+        <formula>0</formula>
+        <name>Atualizar valor padrão</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Atualizar_valor_taxa_instalacao</fullName>
+        <field>Valor_da_taxa_de_ades_o__c</field>
+        <name>Atualizar valor taxa instalação</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Cd_Produto</fullName>
+        <field>Cd_Produto__c</field>
+        <formula>Pricebook2.Cd_Produto__c</formula>
+        <name>Cd Produto</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Data_fechamento_Siggo</fullName>
+        <field>CloseDate</field>
+        <formula>Today()</formula>
+        <name>Data fechamento Siggo</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Desmarca_desconto_taxa</fullName>
+        <field>Desconto_taxa_instalacao__c</field>
+        <literalValue>0</literalValue>
+        <name>Desmarca desconto taxa</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Embarcador</fullName>
+        <field>Embarcador__c</field>
+        <formula>Account.Embarcador__c</formula>
+        <name>Embarcador</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Fase_Oportunidade_Siggo</fullName>
+        <field>StageName</field>
+        <literalValue>Proposta/Cotação de preço</literalValue>
+        <name>Fase Oportunidade Siggo</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Gerenciador_de_risco</fullName>
+        <field>GR__c</field>
+        <formula>TEXT(Account.GR__c)</formula>
+        <name>Gerenciador de risco</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Limpa_Id_produto_cobertura</fullName>
+        <field>Id_produto_cobertura__c</field>
+        <name>Limpa Id produto cobertura</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Limpa_Seguro</fullName>
+        <field>Tem_seguro__c</field>
+        <literalValue>0</literalValue>
+        <name>Limpa Seguro</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Limpa_Valor_FIPE</fullName>
+        <field>Valor_FIPE__c</field>
+        <name>Limpa Valor FIPE</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Limpa_Valor_FIPE_Veiculo</fullName>
+        <field>Valor_FIPE_veiculo__c</field>
+        <name>Limpa Valor FIPE Veiculo</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Limpa_Vl_franquia_cobertura</fullName>
+        <field>Vl_franquia_cobertura__c</field>
+        <name>Limpa Vl franquia cobertura</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Limpa_Vl_lmi_cobertura</fullName>
+        <field>Vl_lmi_cobertura__c</field>
+        <name>Limpa Vl lmi cobertura</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Marca_desconto_taxa</fullName>
+        <field>Desconto_taxa_instalacao__c</field>
+        <literalValue>1</literalValue>
+        <name>Marca desconto taxa</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Oportunidade_Tipo_de_registro_lead_Blu</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Blue_tec</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Oportunidade - Tipo de registro lead Blu</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Oportunidade_aprovada_limpar</fullName>
+        <field>Aprovado__c</field>
+        <name>Oportunidade aprovada: Limpar</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Oportunidade_aprovada_nao</fullName>
+        <field>Aprovado__c</field>
+        <literalValue>Não</literalValue>
+        <name>Oportunidade aprovada: Não</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Oportunidade_aprovada_sim</fullName>
+        <description>Oportunidade aprovada</description>
+        <field>Aprovado__c</field>
+        <literalValue>Sim</literalValue>
+        <name>Oportunidade aprovada: Sim</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Propriet_rio_alterado</fullName>
+        <field>Propriet_rio_alterado__c</field>
+        <literalValue>1</literalValue>
+        <name>Proprietário alterado</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Quantidade_veiculos_leves</fullName>
+        <field>Quantidade_ve_culos_leves__c</field>
+        <formula>Account.Quantidade_Ve_culos_Leves__c</formula>
+        <name>Quantidade veiculos leves</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Quantidade_veiculos_pesados</fullName>
+        <field>Quantidade_ve_culos_pesados__c</field>
+        <formula>Account.Quantidade_Ve_culos_Pesados__c</formula>
+        <name>Quantidade veiculos pesados</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Reprovada_taxa_instalacao</fullName>
+        <field>Aprovacao_taxa_instalacao__c</field>
+        <literalValue>Reprovado</literalValue>
+        <name>Reprovada taxa instalação</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SIGGO_Atualiza_status_Aprovada</fullName>
+        <description>Atualiza o status específico de aprovação manual para &quot;Aprovada&quot;.</description>
+        <field>Status_aprova_o_manual__c</field>
+        <literalValue>Aprovada</literalValue>
+        <name>SIGGO - Atualiza status Aprovada</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SIGGO_Atualiza_status_Negada</fullName>
+        <description>Atualiza o status específico da aprovação manual para negada.</description>
+        <field>Status_aprova_o_manual__c</field>
+        <literalValue>Negada</literalValue>
+        <name>SIGGO - Atualiza status Negada</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SIGGO_Atualiza_status_em_an_lise</fullName>
+        <description>Atualiza o status específico da aprovação manual para &quot;Em Análise&quot;.</description>
+        <field>Status_aprova_o_manual__c</field>
+        <literalValue>Em análise</literalValue>
+        <name>SIGGO - Atualiza status em análise</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SIGGO_Atualiza_status_recall</fullName>
+        <description>Atualiza o status específico da aprovação manual para &#39;recall&#39;</description>
+        <field>Status_aprova_o_manual__c</field>
+        <literalValue>Recall</literalValue>
+        <name>SIGGO - Atualiza status recall</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Tipo_de_registro_da_opp_igual_a_Freteiro</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Freteiro</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Tipo de registro da opp igual a Freteiro</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Tipo_de_registro_da_opp_igual_a_Michelin</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Michelin</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Tipo de registro da opp igual a Michelin</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Tipo_de_registro_da_opp_igual_a_Siggo</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Siggo</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Tipo de registro da opp igual a Siggo</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Tipo_de_registro_da_opp_igual_a_corp</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>CORP</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Tipo de registro da opp igual a Corp</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Tipo_registro_lead_Mercosul</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Mercosul</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Tipo registro lead Mercosul</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Uppercase_Msg_Geracao_Proposta</fullName>
+        <field>Mensagem_geracao_proposta__c</field>
+        <formula>UPPER(Mensagem_geracao_proposta__c)</formula>
+        <name>Uppercase Msg Geracao Proposta</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Uppercase_Nome_Oportunidade</fullName>
+        <field>Name</field>
+        <formula>UPPER(Name)</formula>
+        <name>Uppercase Nome Oportunidade</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Uppercase_Observacao_Desconto</fullName>
+        <field>Observa_es_do_desconto__c</field>
+        <formula>UPPER(Observa_es_do_desconto__c)</formula>
+        <name>Uppercase Observacao Desconto</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Uppercase_Opportunity_Name</fullName>
+        <field>Name</field>
+        <formula>UPPER( Name )</formula>
+        <name>Uppercase Opportunity Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Uppercase_Outro_Concorrente</fullName>
+        <field>Outro_concorrente__c</field>
+        <formula>UPPER(Outro_concorrente__c)</formula>
+        <name>Uppercase Outro Concorrente</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Uppercase_VPL</fullName>
+        <field>VPL__c</field>
+        <formula>UPPER(VPL__c)</formula>
+        <name>Uppercase VPL</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Upprcase_Detalhes_Perda</fullName>
+        <field>Detalhes_da_perda__c</field>
+        <formula>UPPER(Detalhes_da_perda__c)</formula>
+        <name>Upprcase Detalhes Perda</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Argentina - Desconto taxa instalacao desmarca</fullName>
+        <actions>
+            <name>Desmarca_desconto_taxa</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(  Taxa_Instalacao_Minima__c &gt; 0,  Valor_da_taxa_de_ades_o__c &gt; Taxa_Instalacao_Minima__c,  RecordType.Name = &#39;Mercosul&#39;,  CONTAINS(Owner.Profile.Name, &#39;Argentina&#39;)  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Argentina - Desconto taxa instalacao marca</fullName>
+        <actions>
+            <name>Marca_desconto_taxa</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(    Taxa_Instalacao_Minima__c &gt; 0,    Valor_da_taxa_de_ades_o__c &lt; Taxa_Instalacao_Minima__c,    RecordType.Name = &#39;Mercosul&#39;,    CONTAINS(Owner.Profile.Name, &#39;Argentina&#39;)  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Atualiza regional</fullName>
+        <actions>
+            <name>Atualiza_regional_freteiro</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>User.UserRoleId</field>
+            <operation>equals</operation>
+            <value>Freteiro</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Cd Produto Siggo</fullName>
+        <actions>
+            <name>Cd_Produto</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Nome_catalogo__c</field>
+            <operation>startsWith</operation>
+            <value>Siggo Seguro Roubo e Furto</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Data fechamento Siggo</fullName>
+        <actions>
+            <name>Data_fechamento_Siggo</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Siggo_PersProp_NumeroProposta__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Siggo</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Desconto taxa instalacao desmarca</fullName>
+        <actions>
+            <name>Desmarca_desconto_taxa</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(    Papel_ID__c = &#39;4&#39;,    Taxa_Instalacao_Minima__c &gt; 0,    Valor_da_taxa_de_ades_o__c &gt; Taxa_Instalacao_Minima__c,  NOT(BEGINS(LOWER(Pricebook2.Name), &#39;tipo&#39;)),  AND(  OR(    RecordType.Name = &#39;CORP&#39;,    RecordType.Name = &#39;OTR&#39;  )))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Desconto taxa instalacao marca</fullName>
+        <actions>
+            <name>Marca_desconto_taxa</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(    Papel_ID__c = &#39;4&#39;,    Taxa_Instalacao_Minima__c &gt; 0,    Valor_da_taxa_de_ades_o__c &lt; Taxa_Instalacao_Minima__c,    NOT(BEGINS(LOWER(Pricebook2.Name), &#39;tipo&#39;)),  AND(  OR(    RecordType.Name = &#39;CORP&#39;,    RecordType.Name = &#39;OTR&#39;  )))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Envia alerta de email fase 1 da demonstracao</fullName>
+        <actions>
+            <name>Atualiza_fase_de_alerta_1</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Demonstração</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Cadastro</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Envia_alerta_de_email_fase_1_da_demonstracao</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Data_alteracao_fase__c</offsetFromField>
+            <timeLength>3</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Envia alerta de email fase 2 da demonstracao</fullName>
+        <actions>
+            <name>Atualiza_fase_de_alerta_2</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Demonstração</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Instalação</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Envia_alerta_de_email_fase_2_da_demonstracao</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Data_alteracao_fase__c</offsetFromField>
+            <timeLength>5</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Envia alerta de email fase 3 da demonstracao</fullName>
+        <actions>
+            <name>Atualiza_fase_de_alerta_3</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Demonstração</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Treinamento</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Envia_alerta_de_email_fase_3_da_demonstracao</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Data_alteracao_fase__c</offsetFromField>
+            <timeLength>10</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Envia alerta de email fase 4 da demonstracao</fullName>
+        <actions>
+            <name>Atualiza_fase_de_alerta_4</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Demonstração</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Acompanhamento dos indicadores</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Envia_alerta_de_email_fase_4_da_demonstracao</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Data_alteracao_fase__c</offsetFromField>
+            <timeLength>15</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Envia alerta de email fase 5 da demonstracao</fullName>
+        <actions>
+            <name>Atualiza_fase_de_alerta_5</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Demonstração</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Apresentação de ganhos</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Envia_alerta_de_email_fase_5_da_demonstracao</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Data_alteracao_fase__c</offsetFromField>
+            <timeLength>15</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Envia alerta de email fase 6 da demonstracao</fullName>
+        <actions>
+            <name>Atualiza_fase_de_alerta_6</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Demonstração</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Venda Fechada,Venda Perdida</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Envia_alerta_de_email_fase_6_da_demonstracao</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Data_alteracao_fase__c</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Envio de email para o novo proprietário</fullName>
+        <actions>
+            <name>Altera_o_do_propriet_rio</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Propriet_rio_alterado__c</field>
+            <operation>equals</operation>
+            <value>Verdadeiro</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Informacoes_frota_operacao</fullName>
+        <actions>
+            <name>Embarcador</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Gerenciador_de_risco</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Quantidade_veiculos_leves</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Quantidade_veiculos_pesados</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>CORP</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Limpa produto</fullName>
+        <actions>
+            <name>Limpa_Id_produto_cobertura</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Limpa_Vl_franquia_cobertura</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Limpa_Vl_lmi_cobertura</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Siggo_ClasseProduto__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Limpa veiculo</fullName>
+        <actions>
+            <name>Limpa_Valor_FIPE_Veiculo</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Quantidade_placas__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Marca data da venda</fullName>
+        <actions>
+            <name>Atualiza_DataHora_Venda</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(IsBlank(Data_Hora_Venda__c),Probability &gt;= 0.9)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>OPP não trabalhado - Frota Leve</fullName>
+        <actions>
+            <name>Alerta_sobre_oportunidade_n_o_trabalhada</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(Papel_do_propriet_rio__c = &quot;Frota Leve&quot;,LastActivityDate = Today()- 5)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Oportunidade - Tipo de registro lead Blue tec</fullName>
+        <actions>
+            <name>Oportunidade_Tipo_de_registro_lead_Blu</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Tipo_de_registro_Lead__c</field>
+            <operation>equals</operation>
+            <value>OTR</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Oportunidade - Tipo de registro lead Corp</fullName>
+        <actions>
+            <name>Tipo_de_registro_da_opp_igual_a_corp</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Tipo_de_registro_Lead__c</field>
+            <operation>equals</operation>
+            <value>CORP</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Oportunidade - Tipo de registro lead Freteiro</fullName>
+        <actions>
+            <name>Atualiza_fase_inicial_freteiro</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Tipo_de_registro_da_opp_igual_a_Freteiro</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Tipo_de_registro_Lead__c</field>
+            <operation>equals</operation>
+            <value>Freteiro</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Oportunidade - Tipo de registro lead Mercosul</fullName>
+        <actions>
+            <name>Tipo_registro_lead_Mercosul</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Tipo_de_registro_Lead__c</field>
+            <operation>equals</operation>
+            <value>Mercosul</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Oportunidade - Tipo de registro lead Michelin</fullName>
+        <actions>
+            <name>Tipo_de_registro_da_opp_igual_a_Michelin</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Tipo_de_registro_Lead__c</field>
+            <operation>equals</operation>
+            <value>Michelin</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Oportunidade - Tipo de registro lead Siggo</fullName>
+        <actions>
+            <name>Tipo_de_registro_da_opp_igual_a_Siggo</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Tipo_de_registro_Lead__c</field>
+            <operation>equals</operation>
+            <value>Siggo</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Oportunidade Siggo Fase</fullName>
+        <actions>
+            <name>Fase_Oportunidade_Siggo</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Tipo_de_registro_Lead__c</field>
+            <operation>equals</operation>
+            <value>Siggo</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Oportunidade perdida</fullName>
+        <actions>
+            <name>Oportunida_perdida</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>OTR</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Venda Perdida</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>OportunidadeFaseAlterada</fullName>
+        <actions>
+            <name>Altera_data_fase</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(  OR(   RecordType.DeveloperName = &#39;Blue_tec&#39;,   RecordType.DeveloperName = &#39;Demonstracao&#39;  ),  AND(   OR(    ISNEW(),    ISCHANGED( StageName )   )  ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Oportunidadeparada5dias</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>OTR</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>OportunidadeParada7Dias</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Data_alteracao_fase__c</offsetFromField>
+            <timeLength>7</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>OportunidadeParada5Dias</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Data_alteracao_fase__c</offsetFromField>
+            <timeLength>5</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Opp com visita</fullName>
+        <actions>
+            <name>Atualiza_checkbox_visita</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Visita técnica</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp parada na fase instalação</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Confirmação de instalação</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Oportunidade_parada_na_fase_de_confirma_o_h_5_dias</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>5</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Opp parada na fase pagamento</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Confirmação de pagamento</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Oportunidade_parada_na_fase_de_confirma_o_h_5_dias</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>5</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Preenchimento VPL e Payback</fullName>
+        <actions>
+            <name>E_mail_para_preenchimento_de_VPL_e_Payback</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Pricebook2.Name</field>
+            <operation>equals</operation>
+            <value>Tipo Viabilidade</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Payback__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Proprietário alterado</fullName>
+        <actions>
+            <name>Propriet_rio_alterado</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>OwnerId &lt;&gt;  PRIORVALUE(OwnerId)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Reaprovar taxa instalacao</fullName>
+        <actions>
+            <name>Altera_aprovacao_taxa</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(  ISPICKVAL(Aprovacao_taxa_instalacao__c, &#39;Aprovado&#39;),  ISCHANGED( Valor_da_taxa_de_ades_o__c )  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Siggo</fullName>
+        <actions>
+            <name>Limpa_Seguro</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Limpa_Valor_FIPE</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Siggo__c</field>
+            <operation>equals</operation>
+            <value>0,00</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Uppercase Opportunity Name</fullName>
+        <actions>
+            <name>Uppercase_Opportunity_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>true</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Vencimento Demo</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Vencimento_DEMO__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Vencimento_da_Demonstra_o</name>
+                <type>Task</type>
+            </actions>
+            <offsetFromField>Opportunity.Vencimento_DEMO__c</offsetFromField>
+            <timeLength>-3</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Vencimento_Demonstra_o</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Vencimento_DEMO__c</offsetFromField>
+            <timeLength>-1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Vencimento Opp Cargo Tracck</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.CloseDate</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Cargo Tracck</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Vencimento_da_Oportunidade</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.CloseDate</offsetFromField>
+            <timeLength>-1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Vencimento_da_Oportunidade</name>
+                <type>Task</type>
+            </actions>
+            <offsetFromField>Opportunity.CloseDate</offsetFromField>
+            <timeLength>-3</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>envia email fechamento de opp</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Confirmação de pagamento,Confirmação de instalação,Fechado,Parcialmente instalado,Instalado,Fechado acessório</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <timeLength>5</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <tasks>
+        <fullName>Vencimento_da_Demonstra_o</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>3</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Opportunity.Vencimento_DEMO__c</offsetFromField>
+        <priority>Alto</priority>
+        <protected>false</protected>
+        <status>Não iniciado</status>
+        <subject>Vencimento da Demonstração</subject>
+    </tasks>
+    <tasks>
+        <fullName>Vencimento_da_Oportunidade</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>3</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Opportunity.CloseDate</offsetFromField>
+        <priority>Alto</priority>
+        <protected>false</protected>
+        <status>Não iniciado</status>
+        <subject>Vencimento da Oportunidade</subject>
+    </tasks>
+</Workflow>

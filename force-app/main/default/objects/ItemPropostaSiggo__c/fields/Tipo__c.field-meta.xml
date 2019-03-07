@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CAMINHÃO</fullName>
+                <default>false</default>
+                <label>CAMINHÃO</label>
+            </value>
+            <value>
+                <fullName>CAMINHÃO ARTICULADO</fullName>
+                <default>false</default>
+                <label>CAMINHÃO ARTICULADO</label>
+            </value>
+            <value>
+                <fullName>CAMINHÃO FORA DE ESTRADA</fullName>
+                <default>false</default>
+                <label>CAMINHÃO FORA DE ESTRADA</label>
+            </value>
+            <value>
+                <fullName>CAMINHONETE</fullName>
+                <default>false</default>
+                <label>CAMINHONETE</label>
+            </value>
+            <value>
+                <fullName>CARREGADEIRA</fullName>
+                <default>false</default>
+                <label>CARREGADEIRA</label>
+            </value>
+            <value>
+                <fullName>EMPILHADEIRA A COMBUSTÃO</fullName>
+                <default>false</default>
+                <label>EMPILHADEIRA A COMBUSTÃO</label>
+            </value>
+            <value>
+                <fullName>EMPILHADEIRA ELETRICA</fullName>
+                <default>false</default>
+                <label>EMPILHADEIRA ELETRICA</label>
+            </value>
+            <value>
+                <fullName>EMPTY HANDLER</fullName>
+                <default>false</default>
+                <label>EMPTY HANDLER</label>
+            </value>
+            <value>
+                <fullName>ESCAVADEIRA</fullName>
+                <default>false</default>
+                <label>ESCAVADEIRA</label>
+            </value>
+            <value>
+                <fullName>GRUAS</fullName>
+                <default>false</default>
+                <label>GRUAS</label>
+            </value>
+            <value>
+                <fullName>GUINDASTE</fullName>
+                <default>false</default>
+                <label>GUINDASTE</label>
+            </value>
+            <value>
+                <fullName>MINICARREGADEIRA</fullName>
+                <default>false</default>
+                <label>MINICARREGADEIRA</label>
+            </value>
+            <value>
+                <fullName>MOTONIVELADORA</fullName>
+                <default>false</default>
+                <label>MOTONIVELADORA</label>
+            </value>
+            <value>
+                <fullName>MOTORSCRAPERS</fullName>
+                <default>false</default>
+                <label>MOTORSCRAPERS</label>
+            </value>
+            <value>
+                <fullName>ÔNIBUS</fullName>
+                <default>false</default>
+                <label>ÔNIBUS</label>
+            </value>
+            <value>
+                <fullName>REACH STACKER</fullName>
+                <default>false</default>
+                <label>REACH STACKER</label>
+            </value>
+            <value>
+                <fullName>RETROESCAVADEIRA</fullName>
+                <default>false</default>
+                <label>RETROESCAVADEIRA</label>
+            </value>
+            <value>
+                <fullName>ROLO COMPACTADOR</fullName>
+                <default>false</default>
+                <label>ROLO COMPACTADOR</label>
+            </value>
+            <value>
+                <fullName>TRATOR</fullName>
+                <default>false</default>
+                <label>TRATOR</label>
+            </value>
+            <value>
+                <fullName>TRANSPALETEIRA</fullName>
+                <default>false</default>
+                <label>TRANSPALETEIRA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

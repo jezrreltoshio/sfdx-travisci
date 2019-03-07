@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Banco --></label>
+    <name>Banco__c</name>
+    <picklistValues>
+        <masterLabel>0007 - BANCO DE GALICIA Y BUENOS AIRES S.A.</masterLabel>
+        <translation><!-- 0007 - BANCO DE GALICIA Y BUENOS AIRES S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>001 - BANCO DO BRASIL</masterLabel>
+        <translation><!-- 001 - BANCO DO BRASIL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0011 - BANCO DE LA NACION ARGENTINA</masterLabel>
+        <translation><!-- 0011 - BANCO DE LA NACION ARGENTINA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0014 - BANCO DE LA PROVINCIA DE BUENOS AIRES</masterLabel>
+        <translation><!-- 0014 - BANCO DE LA PROVINCIA DE BUENOS AIRES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0015 - INDUSTRIAL AND COMMERCIAL BANK OF CHINA</masterLabel>
+        <translation><!-- 0015 - INDUSTRIAL AND COMMERCIAL BANK OF CHINA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0016 - CITIBANK N.A.</masterLabel>
+        <translation><!-- 0016 - CITIBANK N.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0017 - BBVA BANCO FRANCES S.A.</masterLabel>
+        <translation><!-- 0017 - BBVA BANCO FRANCES S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0020 - BANCO DE LA PROVINCIA DE CORDOBA S.A.</masterLabel>
+        <translation><!-- 0020 - BANCO DE LA PROVINCIA DE CORDOBA S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0027 - BANCO SUPERVIELLE S.A.</masterLabel>
+        <translation><!-- 0027 - BANCO SUPERVIELLE S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0029 - BANCO DE LA CIUDAD DE BUENOS AIRES</masterLabel>
+        <translation><!-- 0029 - BANCO DE LA CIUDAD DE BUENOS AIRES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0034 - BANCO PATAGONIA S.A.</masterLabel>
+        <translation><!-- 0034 - BANCO PATAGONIA S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0044 - BANCO HIPOTECARIO S.A.</masterLabel>
+        <translation><!-- 0044 - BANCO HIPOTECARIO S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0045 - BANCO DE SAN JUAN S.A.</masterLabel>
+        <translation><!-- 0045 - BANCO DE SAN JUAN S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0060 - BANCO DEL TUCUMAN S.A.</masterLabel>
+        <translation><!-- 0060 - BANCO DEL TUCUMAN S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0065 - BANCO MUNICIPAL DE ROSARIO</masterLabel>
+        <translation><!-- 0065 - BANCO MUNICIPAL DE ROSARIO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0072 - BANCO SANTANDER RIO S.A.</masterLabel>
+        <translation><!-- 0072 - BANCO SANTANDER RIO S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0083 - BANCO DEL CHUBUT S.A.</masterLabel>
+        <translation><!-- 0083 - BANCO DEL CHUBUT S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0086 - BANCO DE SANTA CRUZ S.A.</masterLabel>
+        <translation><!-- 0086 - BANCO DE SANTA CRUZ S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0093 - BANCO DE LA PAMPA SOCIEDAD DE ECONOMÍA M</masterLabel>
+        <translation><!-- 0093 - BANCO DE LA PAMPA SOCIEDAD DE ECONOMÍA M --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0094 - BANCO DE CORRIENTES S.A.</masterLabel>
+        <translation><!-- 0094 - BANCO DE CORRIENTES S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0097 - BANCO PROVINCIA DEL NEUQUÉN SOCIEDAD ANÓ</masterLabel>
+        <translation><!-- 0097 - BANCO PROVINCIA DEL NEUQUÉN SOCIEDAD ANÓ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0150 - HSBC BANK ARGENTINA S.A.</masterLabel>
+        <translation><!-- 0150 - HSBC BANK ARGENTINA S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0191 - BANCO CREDICOOP COOPERATIVO LIMITADO</masterLabel>
+        <translation><!-- 0191 - BANCO CREDICOOP COOPERATIVO LIMITADO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0259 - BANCO ITAU ARGENTINA S.A.</masterLabel>
+        <translation><!-- 0259 - BANCO ITAU ARGENTINA S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0262 - BANK OF AMERICA, NATIONAL ASSOCIATION</masterLabel>
+        <translation><!-- 0262 - BANK OF AMERICA, NATIONAL ASSOCIATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0266 - BNP PARIBAS</masterLabel>
+        <translation><!-- 0266 - BNP PARIBAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0268 - BANCO PROVINCIA DE TIERRA DEL FUEGO</masterLabel>
+        <translation><!-- 0268 - BANCO PROVINCIA DE TIERRA DEL FUEGO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0269 - BANCO DE LA REPUBLICA ORIENTAL DEL URUGU</masterLabel>
+        <translation><!-- 0269 - BANCO DE LA REPUBLICA ORIENTAL DEL URUGU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0285 - BANCO MACRO S.A.</masterLabel>
+        <translation><!-- 0285 - BANCO MACRO S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0299 - BANCO COMAFI SOCIEDAD ANONIMA</masterLabel>
+        <translation><!-- 0299 - BANCO COMAFI SOCIEDAD ANONIMA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0301 - BANCO PIANO S.A.</masterLabel>
+        <translation><!-- 0301 - BANCO PIANO S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0309 - BANCO RIOJA SOCIEDAD ANONIMA UNIPERSONAL</masterLabel>
+        <translation><!-- 0309 - BANCO RIOJA SOCIEDAD ANONIMA UNIPERSONAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0310 - BANCO DEL SOL S.A.</masterLabel>
+        <translation><!-- 0310 - BANCO DEL SOL S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0311 - NUEVO BANCO DEL CHACO S. A.</masterLabel>
+        <translation><!-- 0311 - NUEVO BANCO DEL CHACO S. A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0312 - BANCO VOII S.A.</masterLabel>
+        <translation><!-- 0312 - BANCO VOII S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0315 - BANCO DE FORMOSA S.A.</masterLabel>
+        <translation><!-- 0315 - BANCO DE FORMOSA S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0319 - BANCO CMF S.A.</masterLabel>
+        <translation><!-- 0319 - BANCO CMF S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0321 - BANCO DE SANTIAGO DEL ESTERO S.A.</masterLabel>
+        <translation><!-- 0321 - BANCO DE SANTIAGO DEL ESTERO S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0322 - BANCO INDUSTRIAL S.A.</masterLabel>
+        <translation><!-- 0322 - BANCO INDUSTRIAL S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0325 - DEUTSCHE BANK S.A.</masterLabel>
+        <translation><!-- 0325 - DEUTSCHE BANK S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>033 - SANTANDER</masterLabel>
+        <translation><!-- 033 - SANTANDER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0330 - NUEVO BANCO DE SANTA FE SOCIEDAD ANONIMA</masterLabel>
+        <translation><!-- 0330 - NUEVO BANCO DE SANTA FE SOCIEDAD ANONIMA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0389 - BANCO COLUMBIA S.A.</masterLabel>
+        <translation><!-- 0389 - BANCO COLUMBIA S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>104 - CAIXA ECONÔMICA FEDERAL</masterLabel>
+        <translation><!-- 104 - CAIXA ECONÔMICA FEDERAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>237 - BRADESCO</masterLabel>
+        <translation><!-- 237 - BRADESCO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>341 - ITAÚ</masterLabel>
+        <translation><!-- 341 - ITAÚ --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

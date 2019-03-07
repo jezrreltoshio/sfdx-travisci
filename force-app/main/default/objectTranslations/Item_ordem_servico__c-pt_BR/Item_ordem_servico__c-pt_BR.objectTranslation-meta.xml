@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Item da ordem de serviço</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Itens da ordem de serviço</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Layout de Item da ordem de serviço</layout>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

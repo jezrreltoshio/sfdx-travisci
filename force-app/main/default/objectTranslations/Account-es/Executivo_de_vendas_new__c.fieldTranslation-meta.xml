@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Executivo de vendas --></label>
+    <name>Executivo_de_vendas_new__c</name>
+    <relationshipLabel>Cuentas (Ejecutivo de ventas)</relationshipLabel>
+</CustomFieldTranslation>

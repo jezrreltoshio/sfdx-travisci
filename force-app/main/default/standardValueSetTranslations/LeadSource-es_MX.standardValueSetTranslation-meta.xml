@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Adesivo na estrada</masterLabel>
+        <translation>Adhesivo en la carretera</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ataque Base Crítica</masterLabel>
+        <translation><!-- Ataque Base Crítica --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ataque Base Freteiro</masterLabel>
+        <translation>Ataque Base Fletador</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ataque Base PST</masterLabel>
+        <translation><!-- Ataque Base PST --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ataque a Base Cor</masterLabel>
+        <translation>Ataque a la Base Color</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ataque à Cliente de Base</masterLabel>
+        <translation>Ataque a cliente de la base</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ativo - Prospecção do TV</masterLabel>
+        <translation>Activo - Prospección del TV</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ação MKT</masterLabel>
+        <translation>Acción MKT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Base Antiga</masterLabel>
+        <translation>Base antigua</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Base Michelin</masterLabel>
+        <translation><!-- Base Michelin --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Base OTR</masterLabel>
+        <translation><!-- Base OTR --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Base Sascar</masterLabel>
+        <translation><!-- Base Sascar --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Blog Siggo</masterLabel>
+        <translation><!-- Blog Siggo --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Boleto</masterLabel>
+        <translation>Factura</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Busca Google</masterLabel>
+        <translation>Búsqueda Google</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CATAMP</masterLabel>
+        <translation><!-- CATAMP --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CETAC</masterLabel>
+        <translation><!-- CETAC --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CPTarget1</masterLabel>
+        <translation><!-- CPTarget1 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CPTarget2</masterLabel>
+        <translation><!-- CPTarget2 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CPTarget3</masterLabel>
+        <translation><!-- CPTarget3 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CPTarget4</masterLabel>
+        <translation><!-- CPTarget4 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Campanha</masterLabel>
+        <translation>Campaña</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Campanha Discador 11_09_13</masterLabel>
+        <translation>Campaña Marcador 11_09_13</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Canal Exclusivo - Indicação Executivo</masterLabel>
+        <translation><!-- Canal Exclusivo - Indicação Executivo --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Canal Exclusivo de Indicações</masterLabel>
+        <translation>Canal Exclusivo de Indicaciones</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Chat Siggo</masterLabel>
+        <translation><!-- Chat Siggo --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cliente de base</masterLabel>
+        <translation><!-- Cliente de base --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Clique aqui Aonde Estiver</masterLabel>
+        <translation>Haga clic aquí Donde esté</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Clique aqui Busca</masterLabel>
+        <translation>Haga clic aquí  Búsqueda</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Clique aqui Como Funciona</masterLabel>
+        <translation>Haga clic aquí  ¿Cómo funciona?</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Clique aqui Contato</masterLabel>
+        <translation>Haga clic aquí. Entre en contacto</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Clique aqui Depoimentos</masterLabel>
+        <translation>Haga clic aquí Testimonios</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Clique aqui Dúvidas</masterLabel>
+        <translation>Haga clic aquí Dudas</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Clique aqui Produtos</masterLabel>
+        <translation>Haga clic aquí Productos</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Clique aqui Produtos Carro</masterLabel>
+        <translation>Haga clic aquí Productos Coche</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Clique aqui Produtos Moto</masterLabel>
+        <translation>Haga clic aquí Productos Motocicletas</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Clique aqui Quem Somos</masterLabel>
+        <translation>Haga clic aquí Quienes Somos</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Clique aqui Servicos</masterLabel>
+        <translation>Haga clic aquí Servicios</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Clique aqui Siggo Aplicativo</masterLabel>
+        <translation>Haga clic aquí Siggo Aplicación</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Clique aqui Siggo Produtos</masterLabel>
+        <translation>Haga clic aquí Siggo Productos</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Clique aqui Siggo Seguro</masterLabel>
+        <translation>Haga clic aquí Siggo Seguro</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Clique aqui Site Siggo</masterLabel>
+        <translation>Haga clic aquí Sitio Siggo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Clique aqui Vantagens e Diferenciais</masterLabel>
+        <translation>Haga clic aquí Ventajas y Diferenciales</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Clique aqui Área Cliente</masterLabel>
+        <translation>Haga clic aquí Área del Cliente</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Clique aqui Área Cliente - FAQ</masterLabel>
+        <translation>Haga clic aquí Área del Cliente - FAQ</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Clube Irmão Caminhoneiro Shell</masterLabel>
+        <translation>Club Hermano Camionero Shell</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Como Comprar Sascar</masterLabel>
+        <translation>Cómo Comprar Sascar</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Compare em casa</masterLabel>
+        <translation>Comparar en casa</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Compre Já</masterLabel>
+        <translation>Comprar ahora</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Compre Já Siggo</masterLabel>
+        <translation>Comprar ahora Siggo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Congreso en Seguridad SLP 2018</masterLabel>
+        <translation><!-- Congreso en Seguridad SLP 2018 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Consultor</masterLabel>
+        <translation><!-- Consultor --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Contato Orçamento Siggo</masterLabel>
+        <translation>Contacto Presupuesto Siggo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Cross Border 2018</masterLabel>
+        <translation><!-- Cross Border 2018 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DBM1</masterLabel>
+        <translation><!-- DBM1 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DBM10</masterLabel>
+        <translation><!-- DBM10 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DBM2</masterLabel>
+        <translation><!-- DBM2 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DBM3</masterLabel>
+        <translation><!-- DBM3 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DBM4</masterLabel>
+        <translation><!-- DBM4 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DBM5</masterLabel>
+        <translation><!-- DBM5 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DBM6</masterLabel>
+        <translation><!-- DBM6 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DBM7</masterLabel>
+        <translation><!-- DBM7 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>E-commerce</masterLabel>
+        <translation>Comercio electrónico</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>E-mail Marketing / SMS</masterLabel>
+        <translation>Correo electrónico Marketing / SMS</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Email MKT</masterLabel>
+        <translation>Correo electrónico MKT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Evento Feira ou convenção</masterLabel>
+        <translation>Evento de feria o convención</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ex-Associação</masterLabel>
+        <translation>Ex-Asociación</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ex-Segurado</masterLabel>
+        <translation>Ex-asegurado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ex-cliente Base</masterLabel>
+        <translation><!-- Ex-cliente Base --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Expo Guadalajara</masterLabel>
+        <translation><!-- Expo Guadalajara --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ExpoTransporte</masterLabel>
+        <translation><!-- ExpoTransporte --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Expomim</masterLabel>
+        <translation><!-- Expomim --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Facebook</masterLabel>
+        <translation><!-- Facebook --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Fale Conosco</masterLabel>
+        <translation>Contáctenos</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Fale Conosco Sascar</masterLabel>
+        <translation>Contáctenos Sascar</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Fale Conosco Siggo</masterLabel>
+        <translation>Contáctenos Siggo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Fatura</masterLabel>
+        <translation>Factura</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Folheto/Revista/Jornal</masterLabel>
+        <translation>Folleto / Revista / Diario</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Formulario Toten Michelling</masterLabel>
+        <translation>Formulario Totem Michelin</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Fornecedor Engine Online</masterLabel>
+        <translation>Proveedor de motor en línea</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Frota Circulante - Executivo</masterLabel>
+        <translation>Frota Circulante - Ejecutivo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Go to MKT</masterLabel>
+        <translation><!-- Go to MKT --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Grupo controle</masterLabel>
+        <translation>Grupo control</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Home do Site</masterLabel>
+        <translation>Inicio del sitio</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ITASK</masterLabel>
+        <translation><!-- ITASK --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicador Corp</masterLabel>
+        <translation><!-- Indicador Corp --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicador Siggo</masterLabel>
+        <translation><!-- Indicador Siggo --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicador de negócio</masterLabel>
+        <translation>Indicador de negocio</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicação BT</masterLabel>
+        <translation>Indicación BT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicação CCO</masterLabel>
+        <translation>Indicación CCO</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicação CT</masterLabel>
+        <translation>Indicación CT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicação Canal Indireto - Associações</masterLabel>
+        <translation>Indicación Canal Indirecto - Asociaciones</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicação Cliente</masterLabel>
+        <translation>Indicación de cliente</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicação Cliente - MGM</masterLabel>
+        <translation>Indicación de cliente - MGM</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicação Externa</masterLabel>
+        <translation>Indicación Externa</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicação Interna</masterLabel>
+        <translation>Indicación Interna</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicação Michelin</masterLabel>
+        <translation>Indicación Michelin</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicação Michelin 360°</masterLabel>
+        <translation>Indicación Michelin 360º</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicação Não Cliente</masterLabel>
+        <translation>Indicación No Cliente</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicação Parceiro</masterLabel>
+        <translation>Indicación Socio</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicação Parceiro não remunerado</masterLabel>
+        <translation>Indicación Socio no remunerado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicação Parceiro remunerado</masterLabel>
+        <translation>Indicación remunerado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicação Retenção</masterLabel>
+        <translation>Indicación Retención</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicação Sascar</masterLabel>
+        <translation>Indicación Sascar</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicação Transportadora</masterLabel>
+        <translation>Indicación Transporte</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicação de Corretora</masterLabel>
+        <translation>Indicación de Corretora</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicação de Gerenciadora de Risco</masterLabel>
+        <translation>Indicación de Gestión de Riesgo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicação de MGM</masterLabel>
+        <translation>Indicación de MGM</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicação de Mailing</masterLabel>
+        <translation>Indicación de Mailing</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicação de Seguradora</masterLabel>
+        <translation>Indicación de Aseguradora</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicação de funcionário ou ex</masterLabel>
+        <translation>Indicación de empleado o ex</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicações Freteiro</masterLabel>
+        <translation>Indicaciones Fretero</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Indicção de MGM</masterLabel>
+        <translation>Indicación de MGM</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Inteligência Marketing</masterLabel>
+        <translation>Inteligencia de Marketing</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Internet</masterLabel>
+        <translation><!-- Internet --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ipiranga</masterLabel>
+        <translation><!-- Ipiranga --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Laboratório OTR</masterLabel>
+        <translation>Laboratorio OTR</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Landing Page Freteiro</masterLabel>
+        <translation>Página de destino fretero</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Landing page Siggo Seguro</masterLabel>
+        <translation>Página de destino Siggo Seguro</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Landing page rastreador</masterLabel>
+        <translation>Página de destino rastreador</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Landing page telemetria</masterLabel>
+        <translation>Página de destino telemetria</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Lead BeeLeads</masterLabel>
+        <translation><!-- Lead BeeLeads --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Lead CPTrilha</masterLabel>
+        <translation><!-- Lead CPTrilha --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Lead Leader Leads</masterLabel>
+        <translation><!-- Lead Leader Leads --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Lead UFirst</masterLabel>
+        <translation>LEad UFirst</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Lead UFirst 2</masterLabel>
+        <translation><!-- Lead UFirst 2 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Lead Vemm</masterLabel>
+        <translation><!-- Lead Vemm --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Lead Vemm F</masterLabel>
+        <translation><!-- Lead Vemm F --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Lead Vemm S1</masterLabel>
+        <translation><!-- Lead Vemm S1 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Lead Vemm S2</masterLabel>
+        <translation>Lead Veem S2</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Leads Solutions 1</masterLabel>
+        <translation><!-- Leads Solutions 1 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Leads Solutions 2</masterLabel>
+        <translation><!-- Leads Solutions 2 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Leads Solutions 3</masterLabel>
+        <translation><!-- Leads Solutions 3 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Leads Solutions 4</masterLabel>
+        <translation><!-- Leads Solutions 4 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Leads Solutions 5</masterLabel>
+        <translation><!-- Leads Solutions 5 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Loja Michelin</masterLabel>
+        <translation>Tienda Michelin</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mailing</masterLabel>
+        <translation><!-- Mailing --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mailing - Executivo</masterLabel>
+        <translation>Mailing - Ejecutivo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mailing Indico</masterLabel>
+        <translation><!-- Mailing Indico --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Michelin</masterLabel>
+        <translation><!-- Michelin --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>MotorSA</masterLabel>
+        <translation><!-- MotorSA --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Outros</masterLabel>
+        <translation>Otros</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ouvidoria</masterLabel>
+        <translation>Oidoría</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Parceiro não remunerado</masterLabel>
+        <translation>Socio no remunerado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Parcerias</masterLabel>
+        <translation>Asociaciones</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Planejamento CT</masterLabel>
+        <translation>Planificación CT</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Programa de Incentivo Executivo</masterLabel>
+        <translation>Programa de Incentivo Ejecutivo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Prospect -  DBM</masterLabel>
+        <translation>Prospect - DBM</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Página Estácio Assist</masterLabel>
+        <translation>Página Estácio</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Página Estácio Seguro</masterLabel>
+        <translation>asistente</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Quero ser Parceiro</masterLabel>
+        <translation>Quiero ser Socio</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Receptivo</masterLabel>
+        <translation><!-- Receptivo --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Rádio</masterLabel>
+        <translation>Radio</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SMS</masterLabel>
+        <translation><!-- SMS --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SMS com resposta</masterLabel>
+        <translation>SMS con respuesta</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Segurar.com</masterLabel>
+        <translation>Sujeción.com</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Sem origem - Receptivo Abandono</masterLabel>
+        <translation>Sin origen - Receptivo Abandono</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Sinergia Michelin KA</masterLabel>
+        <translation><!-- Sinergia Michelin KA --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site</masterLabel>
+        <translation>Sitio web</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Sascar</masterLabel>
+        <translation>Sitio Sascar</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Sascar - Caminhoneiro Autonomo</masterLabel>
+        <translation>Sitio Sascar - Camionero Autonomo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Sascar - Cargas</masterLabel>
+        <translation>Sitio Sascar - Cargas</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Sascar - Entregas</masterLabel>
+        <translation>Sitio Sascar - Entregas</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Sascar - Fale Conosco</masterLabel>
+        <translation>Sitio Sascar - Contáctenos</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Sascar - Frotas</masterLabel>
+        <translation>Sitio Sascar - Flotas</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Sascar - Gestao de Carga</masterLabel>
+        <translation>Sitio Sascar - Gestión de Carga</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Sascar - Gestao de Carretas</masterLabel>
+        <translation>Sitio Sascar - Gestión de Carretas</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Sascar - Gestao do Motorista</masterLabel>
+        <translation>Sitio Sascar - Gestión del conductor</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Sascar - Home</masterLabel>
+        <translation>Sitio Sascar - Home</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Sascar - Isca sensor temperatura</masterLabel>
+        <translation>Sitio Sascar - Isca sensor de temperatura</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Sascar - Iscas carga e gestao ativo</masterLabel>
+        <translation>Sitio Sascar - Iscas carga y gestión activa</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Sascar - Maquinas</masterLabel>
+        <translation>Sitio Sascar - Maquinas</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Sascar - Maquinas Telemetria</masterLabel>
+        <translation>Sitio Sascar - Maquinas Telemetría</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Sascar - Monitoramento</masterLabel>
+        <translation>Sitio Sascar - Monitoreo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Sascar - Monitoramento Temperatura</masterLabel>
+        <translation>Sitio Sascar - Monitoreo Temperatura</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Sascar - Noticias</masterLabel>
+        <translation>Sitio Sascar - Noticias</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Sascar - Solucao GerenciamentoRisco</masterLabel>
+        <translation>Sitio Sascar - Solucón Gestión Riesgo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Sascar - Solucao Monitoramento</masterLabel>
+        <translation>Sitio Sascar - Solucón Monitoreo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Sascar - Telemetria para Acidentes</masterLabel>
+        <translation>Sitio Sascar - Telemetría para Accidentes</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Sascar - Telemetria para Controle</masterLabel>
+        <translation>Sitio Sascar - Telemetría para Control</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Sascar - Tempo de Direcao</masterLabel>
+        <translation>Sitio Sascar - Tiempo de Dirección</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Sascar - Transportadoras</masterLabel>
+        <translation>Sitio Sascar - Transporte</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Sascar - Veiculos de Passeio</masterLabel>
+        <translation>Sitio Sascar - Vehículos de Paseo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Siggo</masterLabel>
+        <translation>Sitio Siggo</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site Siggo - int</masterLabel>
+        <translation>Sitio Siggo - int</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Site de Busca</masterLabel>
+        <translation>Sitio de Búsqueda</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Solicitacao Siggo Auto 39</masterLabel>
+        <translation>Solicitud Siggo Auto 39</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Solicitacao Siggo Auto 49</masterLabel>
+        <translation>Solicitud Siggo Auto 49</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Solicitacao Siggo Auto 59</masterLabel>
+        <translation>Solicitud Siggo Auto 59</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Solicitacao Siggo Auto 99</masterLabel>
+        <translation>Solicitud Siggo Auto 99</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Solicitacao Siggo Moto 39</masterLabel>
+        <translation>Solicitud Siggo Motocicletas 39</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Solicitacao Siggo Moto 49</masterLabel>
+        <translation>Solicitud Siggo Motocicletas 49</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Solicitacao Siggo Moto 59</masterLabel>
+        <translation>Solicitud Siggo Motocicletas 59</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Solicitacao Siggo Moto 64</masterLabel>
+        <translation>Solicitud Siggo Motocicletas 64</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Solicitacao Siggo Moto 99</masterLabel>
+        <translation>Solicitud Siggo Motocicletas 99</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TV indica CT</masterLabel>
+        <translation><!-- TV indica CT --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TV*</masterLabel>
+        <translation><!-- TV* --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Televendas</masterLabel>
+        <translation><!-- Televendas --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Televendas CT</masterLabel>
+        <translation><!-- Televendas CT --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Televendas SP</masterLabel>
+        <translation><!-- Televendas SP --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Tem usados</masterLabel>
+        <translation>Ha utilizado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Transf. CCO</masterLabel>
+        <translation><!-- Transf. CCO --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TruckPad</masterLabel>
+        <translation><!-- TruckPad --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>TruckPad - Receptivo</masterLabel>
+        <translation><!-- TruckPad - Receptivo --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Ufirst S1</masterLabel>
+        <translation><!-- Ufirst S1 --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Vendedoor</masterLabel>
+        <translation>Vendedor</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>You Tube</masterLabel>
+        <translation>Youtube</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

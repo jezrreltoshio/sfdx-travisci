@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tecnologia_de_qual_empresa__c</fullName>
+    <externalId>false</externalId>
+    <label>Tecnologia de qual empresa</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SASCAR</fullName>
+                <default>false</default>
+                <label>SASCAR</label>
+            </value>
+            <value>
+                <fullName>AUTOTRACK</fullName>
+                <default>false</default>
+                <label>AUTOTRACK</label>
+            </value>
+            <value>
+                <fullName>GRABER</fullName>
+                <default>false</default>
+                <label>GRABER</label>
+            </value>
+            <value>
+                <fullName>ZATIX</fullName>
+                <default>false</default>
+                <label>ZATIX</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

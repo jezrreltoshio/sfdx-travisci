@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Central de atendimento</masterLabel>
+        <translation><!-- Central de atendimento --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Comercial</masterLabel>
+        <translation><!-- Comercial --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>E-mail</masterLabel>
+        <translation><!-- E-mail --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Email ouvidoria</masterLabel>
+        <translation><!-- Email ouvidoria --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Facebook</masterLabel>
+        <translation><!-- Facebook --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Outros</masterLabel>
+        <translation><!-- Outros --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pós venda</masterLabel>
+        <translation><!-- Pós venda --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Reclame aqui</masterLabel>
+        <translation><!-- Reclame aqui --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Telefone</masterLabel>
+        <translation>Teléfono</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Televendas</masterLabel>
+        <translation><!-- Televendas --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Web</masterLabel>
+        <translation><!-- Web --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

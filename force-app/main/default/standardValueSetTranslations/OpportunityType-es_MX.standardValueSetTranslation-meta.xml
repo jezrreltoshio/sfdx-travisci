@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Cliente Base</masterLabel>
+        <translation><!-- Cliente Base --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Novo Cliente</masterLabel>
+        <translation>Nuevo Cliente</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Parceiro</masterLabel>
+        <translation>Asociado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Upgrade</masterLabel>
+        <translation><!-- Upgrade --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

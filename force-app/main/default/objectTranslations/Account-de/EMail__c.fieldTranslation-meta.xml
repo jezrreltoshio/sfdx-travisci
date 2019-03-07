@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Para contas do Tipo Pessoa Física, especifique o endereço de e-mail no qual o cliente pode ser encontrado. Para contas do Tipo Pesoal Jurídica, especifique o e-mail de contato comercial da empresa. --></help>
+    <label><!-- EMail --></label>
+    <name>EMail__c</name>
+</CustomFieldTranslation>

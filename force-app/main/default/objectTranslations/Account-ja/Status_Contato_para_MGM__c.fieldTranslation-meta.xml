@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Anote o status do contato da solicitação para indicação de clientes (MGM - Member Get Member) --></help>
+    <label><!-- Status Contato para MGM --></label>
+    <name>Status_Contato_para_MGM__c</name>
+    <picklistValues>
+        <masterLabel>Contatado</masterLabel>
+        <translation><!-- Contatado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contato 2</masterLabel>
+        <translation><!-- Contato 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contato Não Efetivo</masterLabel>
+        <translation><!-- Contato Não Efetivo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decisor Ausente - Ligar de Manhã</masterLabel>
+        <translation><!-- Decisor Ausente - Ligar de Manhã --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decisor Ausente - Ligar de Tarde</masterLabel>
+        <translation><!-- Decisor Ausente - Ligar de Tarde --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decisor ausente</masterLabel>
+        <translation><!-- Decisor ausente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Primeira tentativa</masterLabel>
+        <translation><!-- Primeira tentativa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quarta tentativa</masterLabel>
+        <translation><!-- Quarta tentativa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Segunda tentativa</masterLabel>
+        <translation><!-- Segunda tentativa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Terceira tentativa</masterLabel>
+        <translation><!-- Terceira tentativa --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

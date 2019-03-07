@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TipoSegurado__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo de segurado</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0-Segurado não é proprietário</fullName>
+                <default>false</default>
+                <label>0-Segurado não é proprietário</label>
+            </value>
+            <value>
+                <fullName>1-Segurado é proprietário</fullName>
+                <default>true</default>
+                <label>1-Segurado é proprietário</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

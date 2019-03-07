@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Selecione para utilizar os mesmo dados de cobrança por cartão de crédito cadastrados na conta. --></help>
+    <label><!-- Usar dados da conta --></label>
+    <name>Usar_dados_da_conta__c</name>
+</CustomFieldTranslation>

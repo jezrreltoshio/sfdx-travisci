@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Veículo</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Veículos</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Layout Blue tec</layout>
+        <sections>
+            <label><!-- Dados do Veículo --></label>
+            <section>Dados do Veículo</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout de Item da Proposta Siggo</layout>
+        <sections>
+            <label><!-- Dados da cotação do seguro --></label>
+            <section>Dados da cotação do seguro</section>
+        </sections>
+        <sections>
+            <label><!-- Dados de endereço --></label>
+            <section>Dados de endereço</section>
+        </sections>
+        <sections>
+            <label><!-- Dados do Contrato --></label>
+            <section>Dados do Contrato</section>
+        </sections>
+        <sections>
+            <label><!-- Dados do Veículo --></label>
+            <section>Dados do Veículo</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout de Veículos CORP</layout>
+        <sections>
+            <label><!-- Dados do Veículo --></label>
+            <section>Dados do Veículo</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Novo Layout de Item da Proposta Siggo</layout>
+        <sections>
+            <label><!-- Dados da cotação do seguro --></label>
+            <section>Dados da cotação do seguro</section>
+        </sections>
+        <sections>
+            <label><!-- Dados do Contrato --></label>
+            <section>Dados do Contrato</section>
+        </sections>
+        <sections>
+            <label><!-- Dados do Veículo --></label>
+            <section>Dados do Veículo</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Veículos demonstração</layout>
+        <sections>
+            <label><!-- Dados do Veículo --></label>
+            <section>Dados do Veículo</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Escolha um modelo com código FIPE atribuído --></errorMessage>
+        <name>CodigoFipe</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Veículo selecionado não é compatível com o catálogo escolhido. Verifique o modelo do veículo. --></errorMessage>
+        <name>Oferta_Restrita_5_modelos_modelo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Produto selecionado tem valor menor ou maior que o valor do modelo selecionado, favor corrigir o produto. --></errorMessage>
+        <name>Valor100mil</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Produto selecionado tem valor menor ou maior que o valor do modelo selecionado, favor corrigir o produto. --></errorMessage>
+        <name>Valor110mil</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Produto selecionado tem valor menor ou maior que o valor do modelo selecionado, favor corrigir o produto. --></errorMessage>
+        <name>Valor120mil</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Produto selecionado tem valor menor ou maior que o valor do modelo selecionado, favor corrigir o produto. --></errorMessage>
+        <name>Valor20mil</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Produto selecionado tem valor menor ou maior que o valor do modelo selecionado, favor corrigir o produto. --></errorMessage>
+        <name>Valor30mil</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Produto selecionado tem valor menor ou maior que o valor do modelo selecionado, favor corrigir o produto. --></errorMessage>
+        <name>Valor40mil</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Produto selecionado tem valor menor ou maior que o valor do modelo selecionado, favor corrigir o produto. --></errorMessage>
+        <name>Valor50mil</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Produto selecionado tem valor menor ou maior que o valor do modelo selecionado, favor corrigir o produto. --></errorMessage>
+        <name>Valor60mil</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Produto selecionado tem valor menor ou maior que o valor do modelo selecionado, favor corrigir o produto. --></errorMessage>
+        <name>Valor70mil</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Produto selecionado tem valor menor ou maior que o valor do modelo selecionado, favor corrigir o produto. --></errorMessage>
+        <name>Valor80mil</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Produto selecionado tem valor menor ou maior que o valor do modelo selecionado, favor corrigir o produto. --></errorMessage>
+        <name>Valor90mil</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Possui representantes,familiares (pais, filhos, cônjuge, companheiro(a) e enteado(a)) ou pessoas de seu relacionamento próximo, que exerceram nos últimos 5 (cinco) anos, ou exercem, atualmente, no Brasil ou fora dele, cargos, empregos ou funções públicas? --></help>
+    <label><!-- PEP 2 (Coloque o mouse aqui) --></label>
+    <name>PEP2__c</name>
+</CustomFieldTranslation>

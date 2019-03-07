@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Concorrente --></label>
+    <name>Concorrente__c</name>
+    <picklistValues>
+        <masterLabel>AutoTrack</masterLabel>
+        <translation><!-- AutoTrack --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BaySat</masterLabel>
+        <translation><!-- BaySat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ceabs</masterLabel>
+        <translation><!-- Ceabs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GolSat</masterLabel>
+        <translation><!-- GolSat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Golden Sat</masterLabel>
+        <translation><!-- Golden Sat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ituran</masterLabel>
+        <translation><!-- Ituran --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Onix</masterLabel>
+        <translation><!-- Onix --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outros</masterLabel>
+        <translation><!-- Outros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Porto Seguro</masterLabel>
+        <translation><!-- Porto Seguro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Positron</masterLabel>
+        <translation><!-- Positron --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tracker</masterLabel>
+        <translation><!-- Tracker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>X-Global</masterLabel>
+        <translation><!-- X-Global --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zatix</masterLabel>
+        <translation><!-- Zatix --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

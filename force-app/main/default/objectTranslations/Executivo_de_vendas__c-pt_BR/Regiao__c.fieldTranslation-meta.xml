@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Região --></label>
+    <name>Regiao__c</name>
+    <picklistValues>
+        <masterLabel>ABCII</masterLabel>
+        <translation><!-- ABCII --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ACRE / RONDONIA / RORAIMA</masterLabel>
+        <translation><!-- ACRE / RONDONIA / RORAIMA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ALAGOAS / SERGIPE</masterLabel>
+        <translation><!-- ALAGOAS / SERGIPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ARACAJU/SERGIPE</masterLabel>
+        <translation><!-- ARACAJU/SERGIPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BAHIA I</masterLabel>
+        <translation><!-- BAHIA I --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BAHIA II</masterLabel>
+        <translation><!-- BAHIA II --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BAHIA III</masterLabel>
+        <translation><!-- BAHIA III --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BAURU</masterLabel>
+        <translation><!-- BAURU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAMPINAS</masterLabel>
+        <translation><!-- CAMPINAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAMPINAS II</masterLabel>
+        <translation><!-- CAMPINAS II --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CASCAVEL</masterLabel>
+        <translation><!-- CASCAVEL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAXIAS DO SUL</masterLabel>
+        <translation><!-- CAXIAS DO SUL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CEARA / MARANHÃO / PIAUI</masterLabel>
+        <translation><!-- CEARA / MARANHÃO / PIAUI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CEARA / MARANHÃO / PIAUI II</masterLabel>
+        <translation><!-- CEARA / MARANHÃO / PIAUI II --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CENTRO OESTE DE MINAS</masterLabel>
+        <translation><!-- CENTRO OESTE DE MINAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CHAPECO</masterLabel>
+        <translation><!-- CHAPECO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CURITIBA</masterLabel>
+        <translation><!-- CURITIBA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISTRITO FEDERAL</masterLabel>
+        <translation><!-- DISTRITO FEDERAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FLORIANOPOLIS</masterLabel>
+        <translation><!-- FLORIANOPOLIS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GOIAS</masterLabel>
+        <translation><!-- GOIAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GUARULHOS I</masterLabel>
+        <translation><!-- GUARULHOS I --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GUARULHOS II</masterLabel>
+        <translation><!-- GUARULHOS II --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITAJAÍ</masterLabel>
+        <translation><!-- ITAJAÍ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JOINVILLE</masterLabel>
+        <translation><!-- JOINVILLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JUNDIAI</masterLabel>
+        <translation><!-- JUNDIAI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LIMEIRA</masterLabel>
+        <translation><!-- LIMEIRA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LITORAL</masterLabel>
+        <translation><!-- LITORAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LITORAL SUL</masterLabel>
+        <translation><!-- LITORAL SUL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MARANHÃO</masterLabel>
+        <translation><!-- MARANHÃO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MARINGA</masterLabel>
+        <translation><!-- MARINGA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MATO GROSSO</masterLabel>
+        <translation><!-- MATO GROSSO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MATO GROSSO DO SUL</masterLabel>
+        <translation><!-- MATO GROSSO DO SUL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>METROPOLITANA</masterLabel>
+        <translation><!-- METROPOLITANA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MGNOVO</masterLabel>
+        <translation><!-- MGNOVO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NORTE E NOROESTE DO ESPIRITO SANTO</masterLabel>
+        <translation><!-- NORTE E NOROESTE DO ESPIRITO SANTO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NORTE FLUMINENSE DE RIO BONITO, CAMPOS</masterLabel>
+        <translation><!-- NORTE FLUMINENSE DE RIO BONITO, CAMPOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PARA / AMAPA</masterLabel>
+        <translation><!-- PARA / AMAPA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PARAIBA / RIO GRANDE DO NORTE</masterLabel>
+        <translation><!-- PARAIBA / RIO GRANDE DO NORTE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PASSO FUNDO</masterLabel>
+        <translation><!-- PASSO FUNDO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PERNAMBUCO I</masterLabel>
+        <translation><!-- PERNAMBUCO I --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PIRACICABA/SOROCABA</masterLabel>
+        <translation><!-- PIRACICABA/SOROCABA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PONTA GROSSA</masterLabel>
+        <translation><!-- PONTA GROSSA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PRESIDENTE PRUDENTE</masterLabel>
+        <translation><!-- PRESIDENTE PRUDENTE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RIBEIRAO PRETO</masterLabel>
+        <translation><!-- RIBEIRAO PRETO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RJ - CENTRO / ZONA NORTE</masterLabel>
+        <translation><!-- RJ - CENTRO / ZONA NORTE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RJ - ZONA BAIXADA</masterLabel>
+        <translation><!-- RJ - ZONA BAIXADA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RJ - ZONA LESTE</masterLabel>
+        <translation><!-- RJ - ZONA LESTE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RJ - ZONA OESTE</masterLabel>
+        <translation><!-- RJ - ZONA OESTE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RJ - ZONA SUL</masterLabel>
+        <translation><!-- RJ - ZONA SUL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RMBH II</masterLabel>
+        <translation><!-- RMBH II --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RMBH III</masterLabel>
+        <translation><!-- RMBH III --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAO JOSE DO RIO PRETO</masterLabel>
+        <translation><!-- SAO JOSE DO RIO PRETO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAO JOSE DOS PINHAIS</masterLabel>
+        <translation><!-- SAO JOSE DOS PINHAIS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBC</masterLabel>
+        <translation><!-- SBC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCS, SANTO ANDRE</masterLabel>
+        <translation><!-- SCS, SANTO ANDRE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP/CENTRO E LESTE</masterLabel>
+        <translation><!-- SP/CENTRO E LESTE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP/ZONA NORTE</masterLabel>
+        <translation><!-- SP/ZONA NORTE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP/ZONA OESTE</masterLabel>
+        <translation><!-- SP/ZONA OESTE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP/ZONA SUL</masterLabel>
+        <translation><!-- SP/ZONA SUL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SUL / TAQUARI</masterLabel>
+        <translation><!-- SUL / TAQUARI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SUL DE MINAS</masterLabel>
+        <translation><!-- SUL DE MINAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SUL E SUDOESTE DE GOIAS</masterLabel>
+        <translation><!-- SUL E SUDOESTE DE GOIAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SUL FLUMINENSE, PIRAI, ENGENHEIRO PASSOS</masterLabel>
+        <translation><!-- SUL FLUMINENSE, PIRAI, ENGENHEIRO PASSOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TERESINA/PIAUI</masterLabel>
+        <translation><!-- TERESINA/PIAUI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TOCANTINS</masterLabel>
+        <translation><!-- TOCANTINS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRIANGULO MINEIRO</masterLabel>
+        <translation><!-- TRIANGULO MINEIRO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>URUGUAIANA</masterLabel>
+        <translation><!-- URUGUAIANA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VALE DO AÇO/VALE JEQUITINHONHA</masterLabel>
+        <translation><!-- VALE DO AÇO/VALE JEQUITINHONHA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VALE DO PARAIBA</masterLabel>
+        <translation><!-- VALE DO PARAIBA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VITORIA E GRANDE VITORIA</masterLabel>
+        <translation><!-- VITORIA E GRANDE VITORIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VITORIA E GRANDE VITORIA II</masterLabel>
+        <translation><!-- VITORIA E GRANDE VITORIA II --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZONA DA MATA</masterLabel>
+        <translation><!-- ZONA DA MATA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

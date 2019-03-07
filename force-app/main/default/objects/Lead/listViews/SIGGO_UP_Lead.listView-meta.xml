@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIGGO_UP_Lead</fullName>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Em aberto</value>
+    </filters>
+    <label>_Fila Backoffice Siggo 00 UP e Downgrade</label>
+    <queue>SIGGO_UP</queue>
+    <sharedTo>
+        <role>GERENTE_TELEVENDAS</role>
+        <role>SUPERVISOR_CORE_2</role>
+        <role>SUPERVISOR_FRETEIRO</role>
+        <role>SUPERVISO_R_SIGGO</role>
+    </sharedTo>
+</ListView>

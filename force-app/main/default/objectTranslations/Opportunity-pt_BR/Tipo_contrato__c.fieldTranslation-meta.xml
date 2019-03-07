@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo de contrato --></label>
+    <name>Tipo_contrato__c</name>
+    <picklistValues>
+        <masterLabel>A CUPPELLO</masterLabel>
+        <translation><!-- A CUPPELLO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ABLA</masterLabel>
+        <translation><!-- ABLA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ACAMLAR</masterLabel>
+        <translation><!-- ACAMLAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ACTRO II</masterLabel>
+        <translation><!-- ACTRO II --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AGREGADO DSR</masterLabel>
+        <translation><!-- AGREGADO DSR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AGREGADOS CARGO SOFT</masterLabel>
+        <translation><!-- AGREGADOS CARGO SOFT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AGREGADOS DSR</masterLabel>
+        <translation><!-- AGREGADOS DSR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AGREGADOS MALTA</masterLabel>
+        <translation><!-- AGREGADOS MALTA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AGREGADOS TRANSKOTHE</masterLabel>
+        <translation><!-- AGREGADOS TRANSKOTHE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ANGELLIRA</masterLabel>
+        <translation><!-- ANGELLIRA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ANGLO</masterLabel>
+        <translation><!-- ANGLO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>APRONORTE</masterLabel>
+        <translation><!-- APRONORTE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>APROSUL</masterLabel>
+        <translation><!-- APROSUL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ASSUTRAN</masterLabel>
+        <translation><!-- ASSUTRAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ASTRAN</masterLabel>
+        <translation><!-- ASTRAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ASTRAN CONTINGENCIA</masterLabel>
+        <translation><!-- ASTRAN CONTINGENCIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AURORA</masterLabel>
+        <translation><!-- AURORA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BRASKEM</masterLabel>
+        <translation><!-- BRASKEM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BRAVO TRANSPORTES</masterLabel>
+        <translation><!-- BRAVO TRANSPORTES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BRF CARRETA RF</masterLabel>
+        <translation><!-- BRF CARRETA RF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BRF PRIMARIA TELEMETRIA</masterLabel>
+        <translation><!-- BRF PRIMARIA TELEMETRIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BRF SECUNDARIA</masterLabel>
+        <translation><!-- BRF SECUNDARIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BUNGE</masterLabel>
+        <translation><!-- BUNGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAMINHONEIRO</masterLabel>
+        <translation><!-- CAMINHONEIRO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CARGOLIFT</masterLabel>
+        <translation><!-- CARGOLIFT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLIENTE</masterLabel>
+        <translation><!-- CLIENTE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CONTRATOS TIPOS</masterLabel>
+        <translation><!-- CONTRATOS TIPOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COPACOL</masterLabel>
+        <translation><!-- COPACOL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CORAL</masterLabel>
+        <translation><!-- CORAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CTR RONDONIA</masterLabel>
+        <translation><!-- CTR RONDONIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DANONE</masterLabel>
+        <translation><!-- DANONE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DHL AGREGADOS</masterLabel>
+        <translation><!-- DHL AGREGADOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELDORADO BRASIL</masterLabel>
+        <translation><!-- ELDORADO BRASIL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EMBARÉ</masterLabel>
+        <translation><!-- EMBARÉ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ENCAIXE EMPRESA DE TRANPORTE</masterLabel>
+        <translation><!-- ENCAIXE EMPRESA DE TRANPORTE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FETRANSPORTE</masterLabel>
+        <translation><!-- FETRANSPORTE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRIMESA</masterLabel>
+        <translation><!-- FRIMESA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FROTA</masterLabel>
+        <translation><!-- FROTA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flora</masterLabel>
+        <translation><!-- Flora --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GERDAU</masterLabel>
+        <translation><!-- GERDAU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GPA - GRUPO PÃO DE AÇUCAR</masterLabel>
+        <translation><!-- GPA - GRUPO PÃO DE AÇUCAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRUPO CAMPO GRANDE</masterLabel>
+        <translation><!-- GRUPO CAMPO GRANDE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HENRIQUE STFANI SAT</masterLabel>
+        <translation><!-- HENRIQUE STFANI SAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JBS -FRIBOI</masterLabel>
+        <translation><!-- JBS -FRIBOI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JETTA</masterLabel>
+        <translation><!-- JETTA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KIMBERLY CLARK</masterLabel>
+        <translation><!-- KIMBERLY CLARK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KN</masterLabel>
+        <translation><!-- KN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LANGUIRU</masterLabel>
+        <translation><!-- LANGUIRU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LOGMASTER</masterLabel>
+        <translation><!-- LOGMASTER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LOJAS AMERICANAS</masterLabel>
+        <translation><!-- LOJAS AMERICANAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LONDRI VIAS</masterLabel>
+        <translation><!-- LONDRI VIAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MARFRIG FULL</masterLabel>
+        <translation><!-- MARFRIG FULL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MARFRIG FULL SAT</masterLabel>
+        <translation><!-- MARFRIG FULL SAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MEGA RIO AGREGADOS</masterLabel>
+        <translation><!-- MEGA RIO AGREGADOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MEGALOG</masterLabel>
+        <translation><!-- MEGALOG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MONDIAL</masterLabel>
+        <translation><!-- MONDIAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MULTILOG</masterLabel>
+        <translation><!-- MULTILOG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NESTLE BROKER</masterLabel>
+        <translation><!-- NESTLE BROKER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PADRÃO</masterLabel>
+        <translation><!-- PADRÃO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PETROBRAS</masterLabel>
+        <translation><!-- PETROBRAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RAIZEN</masterLabel>
+        <translation><!-- RAIZEN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REITER</masterLabel>
+        <translation><!-- REITER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RICARDO ELETRO</masterLabel>
+        <translation><!-- RICARDO ELETRO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RN</masterLabel>
+        <translation><!-- RN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RODOMAR</masterLabel>
+        <translation><!-- RODOMAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RODONAVES</masterLabel>
+        <translation><!-- RODONAVES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SADIA II</masterLabel>
+        <translation><!-- SADIA II --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEARA</masterLabel>
+        <translation><!-- SEARA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEARA SASCARGA FULL</masterLabel>
+        <translation><!-- SEARA SASCARGA FULL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SINDLOC</masterLabel>
+        <translation><!-- SINDLOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SINTRAVIR</masterLabel>
+        <translation><!-- SINTRAVIR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STARLOG</masterLabel>
+        <translation><!-- STARLOG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SUPERGÁSBRAS</masterLabel>
+        <translation><!-- SUPERGÁSBRAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TEDE AGREGADOS</masterLabel>
+        <translation><!-- TEDE AGREGADOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TEGMA</masterLabel>
+        <translation><!-- TEGMA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TG1</masterLabel>
+        <translation><!-- TG1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TNT AGREGADOS</masterLabel>
+        <translation><!-- TNT AGREGADOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRANSBANDEIRANTES</masterLabel>
+        <translation><!-- TRANSBANDEIRANTES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRANSNOVAG</masterLabel>
+        <translation><!-- TRANSNOVAG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRANSPEDROSA</masterLabel>
+        <translation><!-- TRANSPEDROSA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRANSPEDROSA AGREGADOS</masterLabel>
+        <translation><!-- TRANSPEDROSA AGREGADOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TSA CARGO</masterLabel>
+        <translation><!-- TSA CARGO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TruckPad</masterLabel>
+        <translation><!-- TruckPad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ULIHORT</masterLabel>
+        <translation><!-- ULIHORT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VALE</masterLabel>
+        <translation><!-- VALE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VOTORANTIM</masterLabel>
+        <translation><!-- VOTORANTIM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WALMART</masterLabel>
+        <translation><!-- WALMART --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WHIRPOOL</masterLabel>
+        <translation><!-- WHIRPOOL --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

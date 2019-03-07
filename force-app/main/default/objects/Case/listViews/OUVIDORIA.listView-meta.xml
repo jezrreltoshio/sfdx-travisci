@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OUVIDORIA</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>NomeCliente__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>MotivoReclamacao__c</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>StatusResposta__c</columns>
+    <columns>StatusSolucao__c</columns>
+    <columns>PrazoConclusaoResposta__c</columns>
+    <columns>PrazoConclusaoSolucao__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Em espera,Escalado,Novo,Não iniciado,Em andamento,Atrasado</value>
+    </filters>
+    <label>OUVIDORIA_Teste</label>
+    <language>pt_BR</language>
+    <queue>Ouvidoria2</queue>
+    <sharedTo>
+        <group>Ouvidoria</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preencher_Empresa_Agregando</fullName>
+    <active>false</active>
+    <description>Regra que obriga o preenchimento do campo Qual empresa esta agregando, sempre que o campo É agregado for igual a SIM.</description>
+    <errorConditionFormula>AND( 
+ISPICKVAL(agregado__c, &#39;SIM&#39;), 
+ISBLANK(Qual_empresa_esta_agregando__c) 
+
+)</errorConditionFormula>
+    <errorDisplayField>Qual_empresa_esta_agregando__c</errorDisplayField>
+    <errorMessage>O nome da empresa deve ser preenchido.</errorMessage>
+</ValidationRule>

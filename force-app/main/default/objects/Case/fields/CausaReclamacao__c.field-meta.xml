@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CausaReclamacao__c</fullName>
+    <externalId>false</externalId>
+    <label>Causa da reclamação</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>MotivoReclamacao__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Acidente ocasionado pelo técnico</fullName>
+                <default>false</default>
+                <label>Acidente ocasionado pelo técnico</label>
+            </value>
+            <value>
+                <fullName>Agenda da região não mapeada</fullName>
+                <default>false</default>
+                <label>Agenda da região não mapeada</label>
+            </value>
+            <value>
+                <fullName>Agendou na data errada</fullName>
+                <default>false</default>
+                <label>Agendou na data errada</label>
+            </value>
+            <value>
+                <fullName>Agendou no ponto incorreto</fullName>
+                <default>false</default>
+                <label>Agendou no ponto incorreto</label>
+            </value>
+            <value>
+                <fullName>Alto backlog da área de transferência</fullName>
+                <default>false</default>
+                <label>Alto backlog da área de transferência</label>
+            </value>
+            <value>
+                <fullName>Aplicativo não funcionou</fullName>
+                <default>false</default>
+                <label>Aplicativo não funcionou</label>
+            </value>
+            <value>
+                <fullName>Atendente não foi cordial</fullName>
+                <default>false</default>
+                <label>Atendente não foi cordial</label>
+            </value>
+            <value>
+                <fullName>Atendente não sabia as informações</fullName>
+                <default>false</default>
+                <label>Atendente não sabia as informações</label>
+            </value>
+            <value>
+                <fullName>Atendente passou informações incorretas</fullName>
+                <default>false</default>
+                <label>Atendente passou informações incorretas</label>
+            </value>
+            <value>
+                <fullName>Atendente realizou cobrança indevida</fullName>
+                <default>false</default>
+                <label>Atendente realizou cobrança indevida</label>
+            </value>
+            <value>
+                <fullName>Atraso da empresa de nota fiscal eletrônica</fullName>
+                <default>false</default>
+                <label>Atraso da empresa de nota fiscal eletrônica</label>
+            </value>
+            <value>
+                <fullName>Atraso da gráfica</fullName>
+                <default>false</default>
+                <label>Atraso da gráfica</label>
+            </value>
+            <value>
+                <fullName>Atraso dos correios</fullName>
+                <default>false</default>
+                <label>Atraso dos correios</label>
+            </value>
+            <value>
+                <fullName>Atraso no deslocamento</fullName>
+                <default>false</default>
+                <label>Atraso no deslocamento</label>
+            </value>
+            <value>
+                <fullName>Atraso no serviço anterior</fullName>
+                <default>false</default>
+                <label>Atraso no serviço anterior</label>
+            </value>
+            <value>
+                <fullName>Cancelado indevidamente pela régua de cobrança</fullName>
+                <default>false</default>
+                <label>Cancelado indevidamente pela régua de cobrança</label>
+            </value>
+            <value>
+                <fullName>Cláusula contratual não é informada no fechamento da venda</fullName>
+                <default>false</default>
+                <label>Cláusula contratual não é informada no fechamento da venda</label>
+            </value>
+            <value>
+                <fullName>Cliente cadastrado incorretamente</fullName>
+                <default>false</default>
+                <label>Cliente cadastrado incorretamente</label>
+            </value>
+            <value>
+                <fullName>Cliente não entende faturamento</fullName>
+                <default>false</default>
+                <label>Cliente não entende faturamento</label>
+            </value>
+            <value>
+                <fullName>Cliente não enviou todos documentos necessários</fullName>
+                <default>false</default>
+                <label>Cliente não enviou todos documentos necessários</label>
+            </value>
+            <value>
+                <fullName>Cliente não solicitou transferência</fullName>
+                <default>false</default>
+                <label>Cliente não solicitou transferência</label>
+            </value>
+            <value>
+                <fullName>Contrato ou gravação não encontrada</fullName>
+                <default>false</default>
+                <label>Contrato ou gravação não encontrada</label>
+            </value>
+            <value>
+                <fullName>Demanda maior que disponibilidade de agenda</fullName>
+                <default>false</default>
+                <label>Demanda maior que disponibilidade de agenda</label>
+            </value>
+            <value>
+                <fullName>Endereço incorreto</fullName>
+                <default>false</default>
+                <label>Endereço incorreto</label>
+            </value>
+            <value>
+                <fullName>Endereço não encontrado</fullName>
+                <default>false</default>
+                <label>Endereço não encontrado</label>
+            </value>
+            <value>
+                <fullName>Equipamento ou acessório estragou</fullName>
+                <default>false</default>
+                <label>Equipamento ou acessório estragou</label>
+            </value>
+            <value>
+                <fullName>Erro de faturamento de multas</fullName>
+                <default>false</default>
+                <label>Erro de faturamento de multas</label>
+            </value>
+            <value>
+                <fullName>Erro de faturamento de serviços</fullName>
+                <default>false</default>
+                <label>Erro de faturamento de serviços</label>
+            </value>
+            <value>
+                <fullName>Erro de faturamento de taxas</fullName>
+                <default>false</default>
+                <label>Erro de faturamento de taxas</label>
+            </value>
+            <value>
+                <fullName>Erro operacional do atendimento</fullName>
+                <default>false</default>
+                <label>Erro operacional do atendimento</label>
+            </value>
+            <value>
+                <fullName>Erro operacional do financeiro</fullName>
+                <default>false</default>
+                <label>Erro operacional do financeiro</label>
+            </value>
+            <value>
+                <fullName>Falta de adesivos</fullName>
+                <default>false</default>
+                <label>Falta de adesivos</label>
+            </value>
+            <value>
+                <fullName>Falta de conhecimento para agendar</fullName>
+                <default>false</default>
+                <label>Falta de conhecimento para agendar</label>
+            </value>
+            <value>
+                <fullName>Falta equipamento</fullName>
+                <default>false</default>
+                <label>Falta equipamento</label>
+            </value>
+            <value>
+                <fullName>Fechamento de agenda</fullName>
+                <default>false</default>
+                <label>Fechamento de agenda</label>
+            </value>
+            <value>
+                <fullName>Flag da gráfica para impressão do boleto não marcada</fullName>
+                <default>false</default>
+                <label>Flag da gráfica para impressão do boleto não marcada</label>
+            </value>
+            <value>
+                <fullName>Informações erradas no momento da venda</fullName>
+                <default>false</default>
+                <label>Informações erradas no momento da venda</label>
+            </value>
+            <value>
+                <fullName>Instalado incorretamente</fullName>
+                <default>false</default>
+                <label>Instalado incorretamente</label>
+            </value>
+            <value>
+                <fullName>Não consegue contato na central ou televendas</fullName>
+                <default>false</default>
+                <label>Não consegue contato na central ou televendas</label>
+            </value>
+            <value>
+                <fullName>Não inclusão do cliente na base para faturar</fullName>
+                <default>false</default>
+                <label>Não inclusão do cliente na base para faturar</label>
+            </value>
+            <value>
+                <fullName>Não roteirizado</fullName>
+                <default>false</default>
+                <label>Não roteirizado</label>
+            </value>
+            <value>
+                <fullName>Não sabe usar a solução</fullName>
+                <default>false</default>
+                <label>Não sabe usar a solução</label>
+            </value>
+            <value>
+                <fullName>Problemas com pacote de assistência fornecedor da Siggo</fullName>
+                <default>false</default>
+                <label>Problemas com pacote de assistência fornecedor da Siggo</label>
+            </value>
+            <value>
+                <fullName>Sem retorno da solicitação</fullName>
+                <default>false</default>
+                <label>Sem retorno da solicitação</label>
+            </value>
+            <value>
+                <fullName>Técnico instalou incorretamente</fullName>
+                <default>false</default>
+                <label>Técnico instalou incorretamente</label>
+            </value>
+            <value>
+                <fullName>Técnico não executou procedimento padrão</fullName>
+                <default>false</default>
+                <label>Técnico não executou procedimento padrão</label>
+            </value>
+            <value>
+                <fullName>Técnico não foi cordial</fullName>
+                <default>false</default>
+                <label>Técnico não foi cordial</label>
+            </value>
+            <value>
+                <fullName>Veículo do técnico com problemas</fullName>
+                <default>false</default>
+                <label>Veículo do técnico com problemas</label>
+            </value>
+            <value>
+                <fullName>Outros</fullName>
+                <default>false</default>
+                <label>Outros</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Problemas técnicos com a solução</controllingFieldValue>
+            <valueName>Aplicativo não funcionou</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problemas técnicos com a solução</controllingFieldValue>
+            <valueName>Cliente cadastrado incorretamente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problemas técnicos com a solução</controllingFieldValue>
+            <valueName>Equipamento ou acessório estragou</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problemas técnicos com a solução</controllingFieldValue>
+            <valueName>Instalado incorretamente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problemas técnicos com a solução</controllingFieldValue>
+            <valueName>Não sabe usar a solução</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Problemas técnicos com a solução</controllingFieldValue>
+            <controllingFieldValue>Agendamento cancelado</controllingFieldValue>
+            <controllingFieldValue>Outros assuntos</controllingFieldValue>
+            <controllingFieldValue>Indisponibilidade de agenda</controllingFieldValue>
+            <controllingFieldValue>Técnico não compareceu</controllingFieldValue>
+            <controllingFieldValue>Transferência de titularidade não concluída</controllingFieldValue>
+            <controllingFieldValue>Cancelamento/Downgrade de contrato não concluído</controllingFieldValue>
+            <controllingFieldValue>Informações contratuais e comerciais</controllingFieldValue>
+            <controllingFieldValue>Cobrança indevida</controllingFieldValue>
+            <controllingFieldValue>Não recebimento do boleto</controllingFieldValue>
+            <controllingFieldValue>Atendimento ruim</controllingFieldValue>
+            <controllingFieldValue>Avaria no veículo</controllingFieldValue>
+            <valueName>Outros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agendamento cancelado</controllingFieldValue>
+            <valueName>Agendou na data errada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agendamento cancelado</controllingFieldValue>
+            <valueName>Agendou no ponto incorreto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agendamento cancelado</controllingFieldValue>
+            <controllingFieldValue>Técnico não compareceu</controllingFieldValue>
+            <valueName>Falta equipamento</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agendamento cancelado</controllingFieldValue>
+            <valueName>Fechamento de agenda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agendamento cancelado</controllingFieldValue>
+            <valueName>Não roteirizado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Outros assuntos</controllingFieldValue>
+            <valueName>Cancelado indevidamente pela régua de cobrança</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Outros assuntos</controllingFieldValue>
+            <valueName>Falta de adesivos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Outros assuntos</controllingFieldValue>
+            <valueName>Não consegue contato na central ou televendas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Outros assuntos</controllingFieldValue>
+            <valueName>Problemas com pacote de assistência fornecedor da Siggo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Outros assuntos</controllingFieldValue>
+            <valueName>Técnico não foi cordial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indisponibilidade de agenda</controllingFieldValue>
+            <valueName>Agenda da região não mapeada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indisponibilidade de agenda</controllingFieldValue>
+            <valueName>Demanda maior que disponibilidade de agenda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indisponibilidade de agenda</controllingFieldValue>
+            <valueName>Falta de conhecimento para agendar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Técnico não compareceu</controllingFieldValue>
+            <valueName>Atraso no deslocamento</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Técnico não compareceu</controllingFieldValue>
+            <valueName>Atraso no serviço anterior</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Técnico não compareceu</controllingFieldValue>
+            <valueName>Endereço não encontrado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Técnico não compareceu</controllingFieldValue>
+            <valueName>Veículo do técnico com problemas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transferência de titularidade não concluída</controllingFieldValue>
+            <valueName>Alto backlog da área de transferência</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transferência de titularidade não concluída</controllingFieldValue>
+            <valueName>Cliente não enviou todos documentos necessários</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transferência de titularidade não concluída</controllingFieldValue>
+            <valueName>Cliente não solicitou transferência</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelamento/Downgrade de contrato não concluído</controllingFieldValue>
+            <valueName>Erro operacional do atendimento</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelamento/Downgrade de contrato não concluído</controllingFieldValue>
+            <valueName>Erro operacional do financeiro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Informações contratuais e comerciais</controllingFieldValue>
+            <valueName>Cláusula contratual não é informada no fechamento da venda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Informações contratuais e comerciais</controllingFieldValue>
+            <valueName>Contrato ou gravação não encontrada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Informações contratuais e comerciais</controllingFieldValue>
+            <valueName>Informações erradas no momento da venda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Informações contratuais e comerciais</controllingFieldValue>
+            <controllingFieldValue>Atendimento ruim</controllingFieldValue>
+            <valueName>Sem retorno da solicitação</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cobrança indevida</controllingFieldValue>
+            <valueName>Cliente não entende faturamento</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cobrança indevida</controllingFieldValue>
+            <valueName>Erro de faturamento de multas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cobrança indevida</controllingFieldValue>
+            <valueName>Erro de faturamento de serviços</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cobrança indevida</controllingFieldValue>
+            <valueName>Erro de faturamento de taxas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não recebimento do boleto</controllingFieldValue>
+            <valueName>Atraso da empresa de nota fiscal eletrônica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não recebimento do boleto</controllingFieldValue>
+            <valueName>Atraso da gráfica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não recebimento do boleto</controllingFieldValue>
+            <valueName>Atraso dos correios</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não recebimento do boleto</controllingFieldValue>
+            <valueName>Endereço incorreto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não recebimento do boleto</controllingFieldValue>
+            <valueName>Flag da gráfica para impressão do boleto não marcada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não recebimento do boleto</controllingFieldValue>
+            <valueName>Não inclusão do cliente na base para faturar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Atendimento ruim</controllingFieldValue>
+            <valueName>Atendente não foi cordial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Atendimento ruim</controllingFieldValue>
+            <valueName>Atendente não sabia as informações</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Atendimento ruim</controllingFieldValue>
+            <valueName>Atendente passou informações incorretas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Atendimento ruim</controllingFieldValue>
+            <valueName>Atendente realizou cobrança indevida</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Avaria no veículo</controllingFieldValue>
+            <valueName>Acidente ocasionado pelo técnico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Avaria no veículo</controllingFieldValue>
+            <valueName>Técnico instalou incorretamente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Avaria no veículo</controllingFieldValue>
+            <valueName>Técnico não executou procedimento padrão</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Necesidad principal</label>
+    <name>Segmento_principal__c</name>
+    <picklistValues>
+        <masterLabel>Conservação de carga</masterLabel>
+        <translation>Conservación de la Carga</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Controle de custos</masterLabel>
+        <translation>Control de Costos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cross border</masterLabel>
+        <translation>Cross border</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gestão de Riscos</masterLabel>
+        <translation>Gestión de Riesgo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prevenção de acidentes</masterLabel>
+        <translation>Prevención de Accidentes</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produtividade e Pontualidade</masterLabel>
+        <translation>Productivad y Pontualidad</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Segurança da carga</masterLabel>
+        <translation>Seguridad de la Carga y del vehículo</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DadosPF_DataNascimento__c</fullName>
+    <description>No caso de contas PF, esse campo armazena a data de nascimento do cliente.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Obrigatório somente para contas do tipo Pessoa Física. Especifique a Data de Nascimento do cliente para que ele possa ser cadastrado na intranet.</inlineHelpText>
+    <label>Data de Nascimento</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

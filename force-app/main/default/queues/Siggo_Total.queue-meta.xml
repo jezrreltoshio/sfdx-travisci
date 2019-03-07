@@ -2,14 +2,6 @@
 <Queue xmlns="http://soap.sforce.com/2006/04/metadata">
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>Siggo Total</name>
-    <queueMembers>
-        <roleAndSubordinates>
-            <roleAndSubordinate>GERENTE_TELEVENDAS</roleAndSubordinate>
-        </roleAndSubordinates>
-        <roles>
-            <role>DATABASEMKT</role>
-        </roles>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Lead</sobjectType>
     </queueSobject>

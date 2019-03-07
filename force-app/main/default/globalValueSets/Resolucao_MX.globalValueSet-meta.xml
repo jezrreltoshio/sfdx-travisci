@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Cancelado</fullName>
+        <default>false</default>
+        <label>Cancelado</label>
+    </customValue>
+    <customValue>
+        <fullName>Duplicado</fullName>
+        <default>false</default>
+        <label>Duplicado</label>
+    </customValue>
+    <customValue>
+        <fullName>Error com Solución Conocida</fullName>
+        <default>false</default>
+        <label>Error com Solución Conocida</label>
+    </customValue>
+    <customValue>
+        <fullName>Pendientes</fullName>
+        <default>false</default>
+        <label>Pendientes</label>
+    </customValue>
+    <customValue>
+        <fullName>Prueba Funcional con Pendientes</fullName>
+        <default>false</default>
+        <label>Prueba Funcional con Pendientes</label>
+    </customValue>
+    <customValue>
+        <fullName>Prueba Funcional no realizada por CAC</fullName>
+        <default>false</default>
+        <label>Prueba Funcional no realizada por CAC</label>
+    </customValue>
+    <customValue>
+        <fullName>Recuperación no Exitosa</fullName>
+        <default>false</default>
+        <label>Recuperación no Exitosa</label>
+    </customValue>
+    <customValue>
+        <fullName>Resuelto</fullName>
+        <default>false</default>
+        <label>Resuelto</label>
+    </customValue>
+    <masterLabel>Resolução MX</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ordem de serviço</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ordens de serviço</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Layout da ordem de serviço</layout>
+        <sections>
+            <label><!-- Ação Comercial --></label>
+            <section>Ação Comercial</section>
+        </sections>
+        <sections>
+            <label><!-- Dados Principais --></label>
+            <section>Dados Principais</section>
+        </sections>
+        <sections>
+            <label><!-- Dados do cliente --></label>
+            <section>Dados do cliente</section>
+        </sections>
+        <sections>
+            <label><!-- Direcionar Ordem Serviço --></label>
+            <section>Direcionar Ordem Serviço</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de Aging --></label>
+            <section>Informações de Aging</section>
+        </sections>
+        <sections>
+            <label><!-- Local de Instalação/Assistência --></label>
+            <section>Local de Instalação/Assistência</section>
+        </sections>
+        <sections>
+            <label><!-- Status da OS --></label>
+            <section>Status da OS</section>
+        </sections>
+        <sections>
+            <label><!-- Status da Solicitação para Distribuição --></label>
+            <section>Status da Solicitação para Distribuição</section>
+        </sections>
+        <sections>
+            <label><!-- Visita Improdutiva --></label>
+            <section>Visita Improdutiva</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

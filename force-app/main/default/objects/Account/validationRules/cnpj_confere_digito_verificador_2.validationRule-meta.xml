@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cnpj_confere_digito_verificador_2</fullName>
+    <active>false</active>
+    <errorConditionFormula>TEXT( 
+CASE( 
+MOD( 
+6*VALUE(mid(CNPJ__c,1,1))+5*VALUE(mid(CNPJ__c,2,1))+ 
+4*VALUE(mid(CNPJ__c,4,1))+3*VALUE(mid(CNPJ__c,5,1))+ 
+2*VALUE(mid(CNPJ__c,6,1))+9*VALUE(mid(CNPJ__c,8,1))+ 
+8*VALUE(mid(CNPJ__c,9,1))+7*VALUE(mid(CNPJ__c,10,1))+ 
+6*VALUE(mid(CNPJ__c,12,1))+5*VALUE(mid(CNPJ__c,13,1))+ 
+4*VALUE(mid(CNPJ__c,14,1))+3*VALUE(mid(CNPJ__c,15,1))+ 
+2* 
+CASE( 
+MOD( 
+5*VALUE(mid(CNPJ__c,1,1))+4*VALUE(mid(CNPJ__c,2,1))+ 
+3*VALUE(mid(CNPJ__c,4,1))+2*VALUE(mid(CNPJ__c,5,1))+ 
+9*VALUE(mid(CNPJ__c,6,1))+8*VALUE(mid(CNPJ__c,8,1))+ 
+7*VALUE(mid(CNPJ__c,9,1))+6*VALUE(mid(CNPJ__c,10,1))+ 
+5*VALUE(mid(CNPJ__c,12,1))+4*VALUE(mid(CNPJ__c,13,1))+ 
+3*VALUE(mid(CNPJ__c,14,1))+2*VALUE(mid(CNPJ__c,15,1)) 
+, 11 
+) 
+, 0, 0, 1, 0, 
+(11-MOD(5*VALUE(mid(CNPJ__c,1,1))+ 
+4*VALUE(mid(CNPJ__c,2,1))+3*VALUE(mid(CNPJ__c,4,1))+ 
+2*VALUE(mid(CNPJ__c,5,1))+9*VALUE(mid(CNPJ__c,6,1))+ 
+8*VALUE(mid(CNPJ__c,8,1))+7*VALUE(mid(CNPJ__c,9,1))+ 
+6*VALUE(mid(CNPJ__c,10,1))+5*VALUE(mid(CNPJ__c,12,1))+ 
+4*VALUE(mid(CNPJ__c,13,1))+3*VALUE(mid(CNPJ__c,14,1))+ 
+2*VALUE(mid(CNPJ__c,15,1)) 
+, 11 
+) 
+) 
+) 
+, 11), 0, 0, 1, 0, 11-(MOD( 
+6*VALUE(mid(CNPJ__c,1,1))+5*VALUE(mid(CNPJ__c,2,1))+ 
+4*VALUE(mid(CNPJ__c,4,1))+3*VALUE(mid(CNPJ__c,5,1))+ 
+2*VALUE(mid(CNPJ__c,6,1))+9*VALUE(mid(CNPJ__c,8,1))+ 
+8*VALUE(mid(CNPJ__c,9,1))+7*VALUE(mid(CNPJ__c,10,1))+ 
+6*VALUE(mid(CNPJ__c,12,1))+5*VALUE(mid(CNPJ__c,13,1))+ 
+4*VALUE(mid(CNPJ__c,14,1))+3*VALUE(mid(CNPJ__c,15,1))+ 
+2* 
+CASE( 
+MOD( 
+5*VALUE(mid(CNPJ__c,1,1))+4*VALUE(mid(CNPJ__c,2,1))+ 
+3*VALUE(mid(CNPJ__c,4,1))+2*VALUE(mid(CNPJ__c,5,1))+ 
+9*VALUE(mid(CNPJ__c,6,1))+8*VALUE(mid(CNPJ__c,8,1))+ 
+7*VALUE(mid(CNPJ__c,9,1))+6*VALUE(mid(CNPJ__c,10,1))+ 
+5*VALUE(mid(CNPJ__c,12,1))+4*VALUE(mid(CNPJ__c,13,1))+ 
+3*VALUE(mid(CNPJ__c,14,1))+2*VALUE(mid(CNPJ__c,15,1)) 
+, 11 
+) 
+, 0, 0, 1, 0, 
+(11-MOD(5*VALUE(mid(CNPJ__c,1,1))+ 
+4*VALUE(mid(CNPJ__c,2,1))+3*VALUE(mid(CNPJ__c,4,1))+ 
+2*VALUE(mid(CNPJ__c,5,1))+9*VALUE(mid(CNPJ__c,6,1))+ 
+8*VALUE(mid(CNPJ__c,8,1))+7*VALUE(mid(CNPJ__c,9,1))+ 
+6*VALUE(mid(CNPJ__c,10,1))+5*VALUE(mid(CNPJ__c,12,1))+ 
+4*VALUE(mid(CNPJ__c,13,1))+3*VALUE(mid(CNPJ__c,14,1))+ 
+2*VALUE(mid(CNPJ__c,15,1)) 
+, 11 
+) 
+) 
+) 
+, 11)) 
+) 
+) 
+&lt;&gt;MID(CNPJ__c, 18, 1)</errorConditionFormula>
+    <errorDisplayField>CNPJ__c</errorDisplayField>
+    <errorMessage>CNPJ inválido. Dígito verificador 2 não consistente.</errorMessage>
+</ValidationRule>

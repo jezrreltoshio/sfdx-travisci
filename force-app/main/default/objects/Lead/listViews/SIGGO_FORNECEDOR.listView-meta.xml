@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIGGO_FORNECEDOR</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>Criado_Em__c</columns>
+    <columns>LEAD.UNREAD</columns>
+    <columns>LEAD.PHONE</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Em aberto</value>
+    </filters>
+    <label>Siggo Fornecedor</label>
+    <queue>SIGGO_FORNECEDOR</queue>
+    <sharedTo>
+        <role>GERENTE_TELEVENDAS</role>
+        <role>SUPERVISOR_CORE_2</role>
+        <role>SUPERVISOR_FRETEIRO</role>
+        <role>SUPERVISO_R_SIGGO</role>
+    </sharedTo>
+</ListView>

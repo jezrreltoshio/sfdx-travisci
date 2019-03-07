@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Forma de pagamento monitoramento --></label>
+    <name>Forma_pagamento_monitoramento__c</name>
+    <picklistValues>
+        <masterLabel>1-Boleto Bancário</masterLabel>
+        <translation><!-- 1-Boleto Bancário --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>12 - Débito Automático Bradesco</masterLabel>
+        <translation><!-- 12 - Débito Automático Bradesco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>13 - Débito Automático Banco do Brasil</masterLabel>
+        <translation><!-- 13 - Débito Automático Banco do Brasil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>24-Cartão Visa</masterLabel>
+        <translation><!-- 24-Cartão Visa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>25-Cartão Mastercard</masterLabel>
+        <translation><!-- 25-Cartão Mastercard --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3 - Débito Automático HSBC</masterLabel>
+        <translation><!-- 3 - Débito Automático HSBC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4 - Débito Automático Itaú</masterLabel>
+        <translation><!-- 4 - Débito Automático Itaú --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>81 - Débito Automático Santander</masterLabel>
+        <translation><!-- 81 - Débito Automático Santander --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>82-Cartão Hipercard</masterLabel>
+        <translation><!-- 82-Cartão Hipercard --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

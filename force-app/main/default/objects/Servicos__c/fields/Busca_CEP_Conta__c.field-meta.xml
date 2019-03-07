@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Busca_CEP_Conta__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Realizar busca de CEP para a Conta</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Realizar busca de CEP para a Conta</inlineHelpText>
+    <label>Busca CEP Conta</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Preencha este campo para dar início ao processo de aprovação manual de crédito, para oportunidades que tiveram sua análise automática negada ou indefinida. --></help>
+    <label><!-- Justificativa análise manual crédito --></label>
+    <name>Justificativa_an_lise_manual_cr_dito__c</name>
+</CustomFieldTranslation>

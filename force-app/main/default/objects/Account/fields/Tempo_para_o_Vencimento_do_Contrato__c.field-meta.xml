@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tempo_para_o_Vencimento_do_Contrato__c</fullName>
+    <externalId>false</externalId>
+    <label>Tempo para o Vencimento do Contrato</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Diversos Vencimentos</fullName>
+                <default>false</default>
+                <label>Diversos Vencimentos</label>
+            </value>
+            <value>
+                <fullName>Mais de um ano para vencer</fullName>
+                <default>false</default>
+                <label>Mais de um ano para vencer</label>
+            </value>
+            <value>
+                <fullName>Menos de um ano para vencer</fullName>
+                <default>false</default>
+                <label>Menos de um ano para vencer</label>
+            </value>
+            <value>
+                <fullName>Vencido</fullName>
+                <default>false</default>
+                <label>Vencido</label>
+            </value>
+            <value>
+                <fullName>Não Informado</fullName>
+                <default>false</default>
+                <label>Não Informado</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Profissão do Proprietário --></label>
+    <name>ProfissaoProprietario__c</name>
+    <picklistValues>
+        <masterLabel>1049-Militar</masterLabel>
+        <translation><!-- 1049-Militar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1060-Juiz de Direito</masterLabel>
+        <translation><!-- 1060-Juiz de Direito --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>125-Funcionário Público</masterLabel>
+        <translation><!-- 125-Funcionário Público --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1442-Engenheiro</masterLabel>
+        <translation><!-- 1442-Engenheiro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1549-Administrador / Consultor</masterLabel>
+        <translation><!-- 1549-Administrador / Consultor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1743-Empresário</masterLabel>
+        <translation><!-- 1743-Empresário --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>19-Corretor de Imóvel</masterLabel>
+        <translation><!-- 19-Corretor de Imóvel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1921-Outras Profissões</masterLabel>
+        <translation><!-- 1921-Outras Profissões --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2-Advogado</masterLabel>
+        <translation><!-- 2-Advogado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>27-Do Lar</masterLabel>
+        <translation><!-- 27-Do Lar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>42-Jornalista</masterLabel>
+        <translation><!-- 42-Jornalista --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>43-Médico / Dentista</masterLabel>
+        <translation><!-- 43-Médico / Dentista --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>51-Professor</masterLabel>
+        <translation><!-- 51-Professor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>52-Promotor Público / Justiça</masterLabel>
+        <translation><!-- 52-Promotor Público / Justiça --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>6-Arquiteto</masterLabel>
+        <translation><!-- 6-Arquiteto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>63-Vendedor</masterLabel>
+        <translation><!-- 63-Vendedor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>7-Autônomo</masterLabel>
+        <translation><!-- 7-Autônomo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>999-Aposentado</masterLabel>
+        <translation><!-- 999-Aposentado --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

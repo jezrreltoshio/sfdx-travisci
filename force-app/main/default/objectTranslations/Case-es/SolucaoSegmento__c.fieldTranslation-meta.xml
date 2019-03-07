@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Solução --></label>
+    <name>SolucaoSegmento__c</name>
+    <picklistValues>
+        <masterLabel>Bluetec</masterLabel>
+        <translation><!-- Bluetec --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cargo Tracck</masterLabel>
+        <translation><!-- Cargo Tracck --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sascar</masterLabel>
+        <translation><!-- Sascar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Siggo</masterLabel>
+        <translation><!-- Siggo --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

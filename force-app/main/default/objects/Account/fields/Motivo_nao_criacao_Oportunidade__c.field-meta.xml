@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo_nao_criacao_Oportunidade__c</fullName>
+    <externalId>false</externalId>
+    <label>Motivo não criação Oportunidade</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Estratégia: o deslocamento não compensa</fullName>
+                <default>false</default>
+                <label>Estratégia: o deslocamento não compensa</label>
+            </value>
+            <value>
+                <fullName>Estratégia: cliente pequeno e / ou pequeno influente</fullName>
+                <default>false</default>
+                <label>Estratégia: cliente pequeno e / ou pequeno influente</label>
+            </value>
+            <value>
+                <fullName>Financeiro: Cliente em condições financeiras precárias</fullName>
+                <default>false</default>
+                <label>Financeiro: Cliente em condições financeiras precárias</label>
+            </value>
+            <value>
+                <fullName>Produto: Sem homologação no doador de carga</fullName>
+                <default>false</default>
+                <label>Produto: Sem homologação no doador de carga</label>
+            </value>
+            <value>
+                <fullName>Produto: Sem homologação no GR</fullName>
+                <default>false</default>
+                <label>Produto: Sem homologação no GR</label>
+            </value>
+            <value>
+                <fullName>Produto: sem aprovação no segurador</fullName>
+                <default>false</default>
+                <label>Produto: sem aprovação no segurador</label>
+            </value>
+            <value>
+                <fullName>Produto: Nenhum serviço de monitoramento / alarme ativo</fullName>
+                <default>false</default>
+                <label>Produto: Nenhum serviço de monitoramento / alarme ativo</label>
+            </value>
+            <value>
+                <fullName>Produto: sem serviços de recuperação</fullName>
+                <default>false</default>
+                <label>Produto: sem serviços de recuperação</label>
+            </value>
+            <value>
+                <fullName>Produto: sem funções básicas para o cliente</fullName>
+                <default>false</default>
+                <label>Produto: sem funções básicas para o cliente</label>
+            </value>
+            <value>
+                <fullName>Rede Técnica: Sem assistência técnica na região</fullName>
+                <default>false</default>
+                <label>Rede Técnica: Sem assistência técnica na região</label>
+            </value>
+            <value>
+                <fullName>O cliente não existe</fullName>
+                <default>false</default>
+                <label>O cliente não existe</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

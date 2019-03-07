@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Leads_Portal_Parceiros_Siggo</fullName>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.MOBILE_PHONE</columns>
+    <columns>E_mail__c</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>Parceiro_Siggo__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Leads Portal Parceiros Siggo</label>
+    <language>pt_BR</language>
+    <sharedTo>
+        <role>CADASTRO</role>
+        <role>CEO</role>
+        <role>DATABASEMKT</role>
+        <role>DIRETOR</role>
+        <role>SUPERVISOR_CORE_2</role>
+        <role>SUPERVISOR_FRETEIRO</role>
+        <role>SUPERVISO_R_SIGGO</role>
+    </sharedTo>
+</ListView>

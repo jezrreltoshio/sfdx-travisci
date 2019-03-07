@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alterar_proprietario_CORP</fullName>
+    <active>true</active>
+    <description>Somente Administrador do sistema, Jessica Barcelos e Flavia Lopes podem alterar o proprietário da conta</description>
+    <errorConditionFormula>AND( 
+OR(
+RecordType.Name = &#39;CORP&#39;, 
+RecordType.Name = &#39;CORP - Executivo&#39;
+),
+ISCHANGED(Id_do_proprietario__c), 
+NOT(CONTAINS($User.Username, &#39;jessica.barcelos@sascar.com.br&#39;)), 
+NOT(CONTAINS($User.Username, &#39;valdemir.silva@sascar.com.br&#39;)), 
+NOT(CONTAINS($User.Username, &#39;flavia.lopes@sascar.com.br&#39;)), 
+NOT(CONTAINS($User.Username, &#39;rafaella.abreu@sascar.com.br&#39;)), 
+NOT(CONTAINS($Profile.Name, &#39;Administrador do sistema&#39;)) 
+)</errorConditionFormula>
+    <errorMessage>Você não possui permissão para alterar o proprietário da conta</errorMessage>
+</ValidationRule>

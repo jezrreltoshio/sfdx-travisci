@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPF_regra_que_valida_se_e_valido</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+LEN(CNPJ_CPF__c) = 11,  
+NOT( 
+OR( 
+LEN(CNPJ_CPF__c)=0, 
+NOT(ISNUMBER(CNPJ_CPF__c)), 
+AND( 
+MOD(MOD(11-MOD(VALUE(MID(CNPJ_CPF__c,1,1))*10+VALUE(MID(CNPJ_CPF__c,2,1))*9+VALUE(MID(CNPJ_CPF__c,3,1))*8+VALUE(MID(CNPJ_CPF__c,4,1))*7+VALUE(MID(CNPJ_CPF__c,5,1))*6+VALUE(MID(CNPJ_CPF__c,6,1))*5+VALUE(MID(CNPJ_CPF__c,7,1))*4+VALUE(MID(CNPJ_CPF__c,8,1))*3+VALUE(MID(CNPJ_CPF__c,9,1))*2,11),11),10) = 
+VALUE(MID(CNPJ_CPF__c,10,1)), 
+MOD(MOD(11-MOD(VALUE(MID(CNPJ_CPF__c,1,1))*11+VALUE(MID(CNPJ_CPF__c,2,1))*10+VALUE(MID(CNPJ_CPF__c,3,1))*9+VALUE(MID(CNPJ_CPF__c,4,1))*8+VALUE(MID(CNPJ_CPF__c,5,1))*7+VALUE(MID(CNPJ_CPF__c,6,1))*6+VALUE(MID(CNPJ_CPF__c,7,1))*5+VALUE(MID(CNPJ_CPF__c,8,1))*4+VALUE(MID(CNPJ_CPF__c,9,1))*3+VALUE(MID(CNPJ_CPF__c,10,1))*2,11),11),10) = 
+VALUE(MID(CNPJ_CPF__c,11,1)) 
+))) 
+)</errorConditionFormula>
+    <errorDisplayField>CNPJ_CPF__c</errorDisplayField>
+    <errorMessage>CPF inválido</errorMessage>
+</ValidationRule>

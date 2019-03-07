@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllAccounts</fullName>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <label>Todas Contas</label>
+    <language>pt_BR</language>
+    <sharedTo>
+        <role>CADASTRO</role>
+        <role>CEO</role>
+        <role>DATABASEMKT</role>
+        <role>DIRETOR</role>
+        <roleAndSubordinates>ADMINISTRADOR_COMERCIAL</roleAndSubordinates>
+        <roleAndSubordinates>GERENTE_CARGO_TRACCK</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_CO</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_KA</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_MG_RJ_ES</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_NONE</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_PR</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_RS</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_SPC</roleAndSubordinates>
+        <roleAndSubordinates>Gerente_SPI</roleAndSubordinates>
+    </sharedTo>
+</ListView>

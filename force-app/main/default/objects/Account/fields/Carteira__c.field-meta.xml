@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Carteira__c</fullName>
+    <externalId>false</externalId>
+    <label>Carteira</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Quantidade_de_ve_culos__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Varejo</fullName>
+                <default>false</default>
+                <label>Varejo</label>
+            </value>
+            <value>
+                <fullName>PME&#39;S</fullName>
+                <default>false</default>
+                <label>PME&#39;S</label>
+            </value>
+            <value>
+                <fullName>Freteiro</fullName>
+                <default>false</default>
+                <label>Freteiro</label>
+            </value>
+            <value>
+                <fullName>Top PME&#39;S</fullName>
+                <default>false</default>
+                <label>Top PME&#39;S</label>
+            </value>
+            <value>
+                <fullName>GC</fullName>
+                <default>false</default>
+                <label>GC</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>1 a 05</controllingFieldValue>
+            <valueName>Varejo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1 a 10</controllingFieldValue>
+            <valueName>PME&#39;S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1 a 50</controllingFieldValue>
+            <valueName>Freteiro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>11 A 50</controllingFieldValue>
+            <valueName>Top PME&#39;S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Acima de 50</controllingFieldValue>
+            <valueName>GC</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

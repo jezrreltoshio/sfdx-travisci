@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tempo_para_in_cio_do_trabalho2__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+
+ISBLANK(Enviado_Em__c), 
+
+Trabalhado_em__c - Criado_Em__c,
+Trabalhado_em__c - Enviado_Em__c
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Tempo para início do trabalho2</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

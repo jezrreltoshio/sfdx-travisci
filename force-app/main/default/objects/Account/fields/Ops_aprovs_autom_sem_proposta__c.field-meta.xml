@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ops_aprovs_autom_sem_proposta__c</fullName>
+    <description>Totaliza as oportunidades aprovadas que ainda não tiveram proposta gerada para efeito de bloqueio da conta.</description>
+    <externalId>false</externalId>
+    <label>Ops. aprovs. autom. sem proposta</label>
+    <summaryFilterItems>
+        <field>Opportunity.Siggo_AnalCred_ResultadoAnalise__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Opportunity.Siggo_PersProp_NumeroProposta__c</field>
+        <operation>equals</operation>
+        <value/>
+    </summaryFilterItems>
+    <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Faz_parte_de_Associacao__c</fullName>
+    <externalId>false</externalId>
+    <label>Faz parte de Associação ?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Anacc</fullName>
+                <default>false</default>
+                <label>Anacc</label>
+            </value>
+            <value>
+                <fullName>Apronorte</fullName>
+                <default>false</default>
+                <label>Apronorte</label>
+            </value>
+            <value>
+                <fullName>APVEC</fullName>
+                <default>false</default>
+                <label>APVEC</label>
+            </value>
+            <value>
+                <fullName>ASTRAN</fullName>
+                <default>false</default>
+                <label>ASTRAN</label>
+            </value>
+            <value>
+                <fullName>ATRAC</fullName>
+                <default>false</default>
+                <label>ATRAC</label>
+            </value>
+            <value>
+                <fullName>AUTO TRUCK</fullName>
+                <default>false</default>
+                <label>AUTO TRUCK</label>
+            </value>
+            <value>
+                <fullName>C.T.G.CARGAS SAO CAETANO DO SUL</fullName>
+                <default>false</default>
+                <label>C.T.G.CARGAS SAO CAETANO DO SUL</label>
+            </value>
+            <value>
+                <fullName>COOP.TRAN.ROD.DO ABC</fullName>
+                <default>false</default>
+                <label>COOP.TRAN.ROD.DO ABC</label>
+            </value>
+            <value>
+                <fullName>CTR Rondônia</fullName>
+                <default>false</default>
+                <label>CTR Rondônia</label>
+            </value>
+            <value>
+                <fullName>Nenhuma</fullName>
+                <default>false</default>
+                <label>Nenhuma</label>
+            </value>
+            <value>
+                <fullName>Outras</fullName>
+                <default>false</default>
+                <label>Outras</label>
+            </value>
+            <value>
+                <fullName>PROTEAUTO</fullName>
+                <default>false</default>
+                <label>PROTEAUTO</label>
+            </value>
+            <value>
+                <fullName>RODOSAT</fullName>
+                <default>false</default>
+                <label>RODOSAT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

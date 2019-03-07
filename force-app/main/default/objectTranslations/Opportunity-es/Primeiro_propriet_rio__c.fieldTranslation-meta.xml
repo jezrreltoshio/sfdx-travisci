@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Primeiro proprietário --></label>
+    <name>Primeiro_propriet_rio__c</name>
+    <relationshipLabel>Oportunidades (Primero propietario)</relationshipLabel>
+</CustomFieldTranslation>

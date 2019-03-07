@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outro_Motivo_Cargo_Tracck</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    RecordType.Name = &#39;Cargo Tracck&#39;,
+    ISCHANGED(Motivo_da_desqualifica_o_do_lead__c),
+    ISPICKVAL(Motivo_da_desqualifica_o_do_lead__c, &#39;Outros (obs.)&#39;),
+    ISBLANK(Outro_motivo__c)
+)</errorConditionFormula>
+    <errorDisplayField>Outro_motivo__c</errorDisplayField>
+    <errorMessage>Informe outro motivo da desqualificação do Lead.</errorMessage>
+</ValidationRule>

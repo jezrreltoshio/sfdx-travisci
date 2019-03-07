@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>email_ou_telefone_obrigatorios</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ RecordType.Name = &#39;Reclamação&#39;,
+ ISBLANK(EmailCliente__c),
+ ISBLANK( TelefoneCliente__c )
+)</errorConditionFormula>
+    <errorMessage>Pelo menos uma forma de contato é obrigatória, entre email e telefone</errorMessage>
+</ValidationRule>

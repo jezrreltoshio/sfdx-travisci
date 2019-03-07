@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nao_permite_voltar_status</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL( PRIORVALUE( Status ) , &#39;Em andamento&#39;),
+ISPICKVAL( Status, &#39;Não iniciado&#39; )
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Não é permitido voltar o status do caso após ter iniciado</errorMessage>
+</ValidationRule>

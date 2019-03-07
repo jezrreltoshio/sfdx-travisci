@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Campo oculto de controle que informa quando o Item já passou pela consulta efetuada pela Schedulable: OS_Atualizar_Informacoes_Agendada que roda de hora em hora. --></help>
+    <label><!-- SELECT Batch --></label>
+    <name>SELECT_Batch__c</name>
+</CustomFieldTranslation>

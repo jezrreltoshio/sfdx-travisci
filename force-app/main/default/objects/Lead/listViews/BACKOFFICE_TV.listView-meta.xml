@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BACKOFFICE_TV</fullName>
+    <columns>LEAD.STATUS</columns>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>Data_Hora_criacao__c</columns>
+    <columns>LEAD.LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Desqualificado,Contato Não Efetivo,Qualificado</value>
+    </filters>
+    <filters>
+        <field>LEAD.CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>12/1/2013 12:00 AM</value>
+    </filters>
+    <label>BACKOFFICE TV</label>
+    <language>pt_BR</language>
+    <queue>Backoffice_TV</queue>
+    <sharedTo>
+        <group>Backoffice_TV</group>
+        <role>DATABASEMKT</role>
+        <role>SUPERVISOR_CARGO_TRACCK</role>
+        <role>SUPERVISOR_CORE_2</role>
+        <role>SUPERVISOR_FRETEIRO</role>
+        <role>SUPERVISO_R_SIGGO</role>
+        <role>TELEVENDAS_SIGGO</role>
+    </sharedTo>
+</ListView>

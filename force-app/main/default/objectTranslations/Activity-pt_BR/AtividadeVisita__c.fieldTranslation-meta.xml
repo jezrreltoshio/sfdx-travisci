@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Atividade da visita --></label>
+    <name>AtividadeVisita__c</name>
+    <picklistValues>
+        <masterLabel>Acompanhamento Operacional</masterLabel>
+        <translation><!-- Acompanhamento Operacional --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acompanhamento de demonstração</masterLabel>
+        <translation><!-- Acompanhamento de demonstração --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acompanhamento de plano ações</masterLabel>
+        <translation><!-- Acompanhamento de plano ações --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Analises/Confecção de Relatórios.</masterLabel>
+        <translation><!-- Analises/Confecção de Relatórios. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Apresentação de Solução Sascar</masterLabel>
+        <translation><!-- Apresentação de Solução Sascar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assinatura de termo</masterLabel>
+        <translation><!-- Assinatura de termo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Atualização dos dados do cliente</masterLabel>
+        <translation><!-- Atualização dos dados do cliente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Auditoria</masterLabel>
+        <translation><!-- Auditoria --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cifragem</masterLabel>
+        <translation><!-- Cifragem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultoria</masterLabel>
+        <translation><!-- Consultoria --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Downgrade</masterLabel>
+        <translation><!-- Downgrade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entender o Cliente</masterLabel>
+        <translation><!-- Entender o Cliente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entrega de relatório auditoria - cliente</masterLabel>
+        <translation><!-- Entrega de relatório auditoria - cliente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entrega/ Retirada de Equipamentos</masterLabel>
+        <translation><!-- Entrega/ Retirada de Equipamentos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Informação da Concorrência</masterLabel>
+        <translation><!-- Informação da Concorrência --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instalação</masterLabel>
+        <translation><!-- Instalação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Levantamento de oportunidades</masterLabel>
+        <translation><!-- Levantamento de oportunidades --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Montagem do plano de ação</masterLabel>
+        <translation><!-- Montagem do plano de ação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Negociação</masterLabel>
+        <translation><!-- Negociação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proposta comercial</masterLabel>
+        <translation><!-- Proposta comercial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REUNIAO APRESENTACAO AUDITORIA</masterLabel>
+        <translation><!-- REUNIAO APRESENTACAO AUDITORIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Renegociação</masterLabel>
+        <translation><!-- Renegociação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolução de problema técnicos</masterLabel>
+        <translation><!-- Resolução de problema técnicos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolução de reclamação</masterLabel>
+        <translation><!-- Resolução de reclamação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retenção</masterLabel>
+        <translation><!-- Retenção --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reunião apresentação auditoria</masterLabel>
+        <translation><!-- Reunião apresentação auditoria --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reunião apresentação relatório pós sinistros</masterLabel>
+        <translation><!-- Reunião apresentação relatório pós sinistros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reunião com o Cliente</masterLabel>
+        <translation><!-- Reunião com o Cliente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reunião com parceiros</masterLabel>
+        <translation><!-- Reunião com parceiros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reunião/ Treinamento interno</masterLabel>
+        <translation><!-- Reunião/ Treinamento interno --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sessão comercial</masterLabel>
+        <translation><!-- Sessão comercial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supervisão PA</masterLabel>
+        <translation><!-- Supervisão PA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Suporte a Sistemas</masterLabel>
+        <translation><!-- Suporte a Sistemas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Suporte a equipamentos</masterLabel>
+        <translation><!-- Suporte a equipamentos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Suporte a equipamentos – manutenção</masterLabel>
+        <translation><!-- Suporte a equipamentos – manutenção --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teste CT</masterLabel>
+        <translation><!-- Teste CT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Treinamento Cliente  Base</masterLabel>
+        <translation><!-- Treinamento Cliente  Base --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Treinamento Cliente Novo</masterLabel>
+        <translation><!-- Treinamento Cliente Novo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Treinamento do cliente</masterLabel>
+        <translation><!-- Treinamento do cliente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upgrade</masterLabel>
+        <translation><!-- Upgrade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vista cancelada pelo cliente</masterLabel>
+        <translation><!-- Vista cancelada pelo cliente --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

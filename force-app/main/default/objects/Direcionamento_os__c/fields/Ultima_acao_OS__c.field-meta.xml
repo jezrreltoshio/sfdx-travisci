@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ultima_acao_OS__c</fullName>
+    <externalId>false</externalId>
+    <label>Última ação da OS</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Abertura de O.S</fullName>
+                <default>false</default>
+                <label>Abertura de O.S</label>
+            </value>
+            <value>
+                <fullName>Agendamento Comercial</fullName>
+                <default>false</default>
+                <label>Agendamento Comercial</label>
+            </value>
+            <value>
+                <fullName>Agendamento com serviço  não executado</fullName>
+                <default>false</default>
+                <label>Agendamento com serviço  não executado</label>
+            </value>
+            <value>
+                <fullName>Agendamento não realizado/Agenda indisponível</fullName>
+                <default>false</default>
+                <label>Agendamento não realizado/Agenda indisponível</label>
+            </value>
+            <value>
+                <fullName>Agendamento Próximo Contato</fullName>
+                <default>false</default>
+                <label>Agendamento Próximo Contato</label>
+            </value>
+            <value>
+                <fullName>Agendamento próximo contato URA</fullName>
+                <default>false</default>
+                <label>Agendamento próximo contato URA</label>
+            </value>
+            <value>
+                <fullName>Agendamento realizado com sucesso</fullName>
+                <default>false</default>
+                <label>Agendamento realizado com sucesso</label>
+            </value>
+            <value>
+                <fullName>Agendamento sem Equipamento (Data Futura)</fullName>
+                <default>false</default>
+                <label>Agendamento sem Equipamento (Data Futura)</label>
+            </value>
+            <value>
+                <fullName>Agendamento sem Reserva de Estoque</fullName>
+                <default>false</default>
+                <label>Agendamento sem Reserva de Estoque</label>
+            </value>
+            <value>
+                <fullName>Agendamento via Representação</fullName>
+                <default>false</default>
+                <label>Agendamento via Representação</label>
+            </value>
+            <value>
+                <fullName>Aguardando Análise de Deslocamento</fullName>
+                <default>false</default>
+                <label>Aguardando Análise de Deslocamento</label>
+            </value>
+            <value>
+                <fullName>Aguardando avaliação de deslocamento</fullName>
+                <default>false</default>
+                <label>Aguardando avaliação de deslocamento</label>
+            </value>
+            <value>
+                <fullName>Aguardando Carta de Migração</fullName>
+                <default>false</default>
+                <label>Aguardando Carta de Migração</label>
+            </value>
+            <value>
+                <fullName>Aguardando Carta de rescisão</fullName>
+                <default>false</default>
+                <label>Aguardando Carta de rescisão</label>
+            </value>
+            <value>
+                <fullName>Aguardando o 3º Dia</fullName>
+                <default>false</default>
+                <label>Aguardando o 3º Dia</label>
+            </value>
+            <value>
+                <fullName>Aguardando Retorno Cliente</fullName>
+                <default>false</default>
+                <label>Aguardando Retorno Cliente</label>
+            </value>
+            <value>
+                <fullName>Aguardando Retorno da Corretora</fullName>
+                <default>false</default>
+                <label>Aguardando Retorno da Corretora</label>
+            </value>
+            <value>
+                <fullName>Alterada Combinação</fullName>
+                <default>false</default>
+                <label>Alterada Combinação</label>
+            </value>
+            <value>
+                <fullName>Apoio Comercial</fullName>
+                <default>false</default>
+                <label>Apoio Comercial</label>
+            </value>
+            <value>
+                <fullName>Atraso técnico/Agendamento cancelado</fullName>
+                <default>false</default>
+                <label>Atraso técnico/Agendamento cancelado</label>
+            </value>
+            <value>
+                <fullName>Autorizado (O.S.)</fullName>
+                <default>false</default>
+                <label>Autorizado (O.S.)</label>
+            </value>
+            <value>
+                <fullName>Autorizado Instalação</fullName>
+                <default>false</default>
+                <label>Autorizado Instalação</label>
+            </value>
+            <value>
+                <fullName>Cadastro Concluído</fullName>
+                <default>false</default>
+                <label>Cadastro Concluído</label>
+            </value>
+            <value>
+                <fullName>Cancelado</fullName>
+                <default>false</default>
+                <label>Cancelado</label>
+            </value>
+            <value>
+                <fullName>Cancelado pela Seguradora</fullName>
+                <default>false</default>
+                <label>Cancelado pela Seguradora</label>
+            </value>
+            <value>
+                <fullName>Cidade Não Mapeada</fullName>
+                <default>false</default>
+                <label>Cidade Não Mapeada</label>
+            </value>
+            <value>
+                <fullName>Cliente Desistiu da Instalação</fullName>
+                <default>false</default>
+                <label>Cliente Desistiu da Instalação</label>
+            </value>
+            <value>
+                <fullName>Cliente Desmarcou</fullName>
+                <default>false</default>
+                <label>Cliente Desmarcou</label>
+            </value>
+            <value>
+                <fullName>Cliente já possui dispositivo anti-furto</fullName>
+                <default>false</default>
+                <label>Cliente já possui dispositivo anti-furto</label>
+            </value>
+            <value>
+                <fullName>Cliente não concorda c/ contrato locação</fullName>
+                <default>false</default>
+                <label>Cliente não concorda c/ contrato locação</label>
+            </value>
+            <value>
+                <fullName>Cliente não localizado</fullName>
+                <default>false</default>
+                <label>Cliente não localizado</label>
+            </value>
+            <value>
+                <fullName>Cliente não localizado/direcionado ao comercial</fullName>
+                <default>false</default>
+                <label>Cliente não localizado/direcionado ao comercial</label>
+            </value>
+            <value>
+                <fullName>Cliente não localizado (DISCADOR)</fullName>
+                <default>false</default>
+                <label>Cliente não localizado (DISCADOR)</label>
+            </value>
+            <value>
+                <fullName>Cliente notificado via e-mail pelo serviço automático</fullName>
+                <default>false</default>
+                <label>Cliente notificado via e-mail pelo serviço automático</label>
+            </value>
+            <value>
+                <fullName>Cliente recusou instalar</fullName>
+                <default>false</default>
+                <label>Cliente recusou instalar</label>
+            </value>
+            <value>
+                <fullName>Cliente Solicita Alteração Classe/Veículo</fullName>
+                <default>false</default>
+                <label>Cliente Solicita Alteração Classe/Veículo</label>
+            </value>
+            <value>
+                <fullName>Comunicação Nível 1 enviada</fullName>
+                <default>false</default>
+                <label>Comunicação Nível 1 enviada</label>
+            </value>
+            <value>
+                <fullName>Comunicação Nível 2 enviada</fullName>
+                <default>false</default>
+                <label>Comunicação Nível 2 enviada</label>
+            </value>
+            <value>
+                <fullName>Concluído (O.S.)</fullName>
+                <default>false</default>
+                <label>Concluído (O.S.)</label>
+            </value>
+            <value>
+                <fullName>Contato</fullName>
+                <default>false</default>
+                <label>Contato</label>
+            </value>
+            <value>
+                <fullName>Contato Cliente</fullName>
+                <default>false</default>
+                <label>Contato Cliente</label>
+            </value>
+            <value>
+                <fullName>Contato com área técnica</fullName>
+                <default>false</default>
+                <label>Contato com área técnica</label>
+            </value>
+            <value>
+                <fullName>Contato com o condutor</fullName>
+                <default>false</default>
+                <label>Contato com o condutor</label>
+            </value>
+            <value>
+                <fullName>Contato com o Corretor</fullName>
+                <default>false</default>
+                <label>Contato com o Corretor</label>
+            </value>
+            <value>
+                <fullName>Contato Corretora</fullName>
+                <default>false</default>
+                <label>Contato Corretora</label>
+            </value>
+            <value>
+                <fullName>Contato sem Sucesso</fullName>
+                <default>false</default>
+                <label>Contato sem Sucesso</label>
+            </value>
+            <value>
+                <fullName>Dados Cadastrais Incorretos</fullName>
+                <default>false</default>
+                <label>Dados Cadastrais Incorretos</label>
+            </value>
+            <value>
+                <fullName>Desconsiderado (O.S.)</fullName>
+                <default>false</default>
+                <label>Desconsiderado (O.S.)</label>
+            </value>
+            <value>
+                <fullName>Desconsiderado pela Seguradora</fullName>
+                <default>false</default>
+                <label>Desconsiderado pela Seguradora</label>
+            </value>
+            <value>
+                <fullName>Deslocamento Acima do Permitido</fullName>
+                <default>false</default>
+                <label>Deslocamento Acima do Permitido</label>
+            </value>
+            <value>
+                <fullName>Devolução</fullName>
+                <default>false</default>
+                <label>Devolução</label>
+            </value>
+            <value>
+                <fullName>Devolução/GN</fullName>
+                <default>false</default>
+                <label>Devolução/GN</label>
+            </value>
+            <value>
+                <fullName>Devolução de equipamento via correio</fullName>
+                <default>false</default>
+                <label>Devolução de equipamento via correio</label>
+            </value>
+            <value>
+                <fullName>Devolução Seguradora</fullName>
+                <default>false</default>
+                <label>Devolução Seguradora</label>
+            </value>
+            <value>
+                <fullName>Devolução Seguradora Planilha</fullName>
+                <default>false</default>
+                <label>Devolução Seguradora Planilha</label>
+            </value>
+            <value>
+                <fullName>Direcionado Representante</fullName>
+                <default>false</default>
+                <label>Direcionado Representante</label>
+            </value>
+            <value>
+                <fullName>Direcionado Técnico</fullName>
+                <default>false</default>
+                <label>Direcionado Técnico</label>
+            </value>
+            <value>
+                <fullName>Direcionamento de O.S</fullName>
+                <default>false</default>
+                <label>Direcionamento de O.S</label>
+            </value>
+            <value>
+                <fullName>Dispensa de Instalação pela Seguradora</fullName>
+                <default>false</default>
+                <label>Dispensa de Instalação pela Seguradora</label>
+            </value>
+            <value>
+                <fullName>E-Mail ao GN</fullName>
+                <default>false</default>
+                <label>E-Mail ao GN</label>
+            </value>
+            <value>
+                <fullName>Enviado e-mail de insucesso 1</fullName>
+                <default>false</default>
+                <label>Enviado e-mail de insucesso 1</label>
+            </value>
+            <value>
+                <fullName>Enviado e-mail de insucesso 2</fullName>
+                <default>false</default>
+                <label>Enviado e-mail de insucesso 2</label>
+            </value>
+            <value>
+                <fullName>Enviado e-mail de insucesso 3</fullName>
+                <default>false</default>
+                <label>Enviado e-mail de insucesso 3</label>
+            </value>
+            <value>
+                <fullName>Enviado para Técnica</fullName>
+                <default>false</default>
+                <label>Enviado para Técnica</label>
+            </value>
+            <value>
+                <fullName>Enviar v.a.</fullName>
+                <default>false</default>
+                <label>Enviar v.a.</label>
+            </value>
+            <value>
+                <fullName>Equipamento Extraviado</fullName>
+                <default>false</default>
+                <label>Equipamento Extraviado</label>
+            </value>
+            <value>
+                <fullName>Equipamento Instalado Pendente Conclusão</fullName>
+                <default>false</default>
+                <label>Equipamento Instalado Pendente Conclusão</label>
+            </value>
+            <value>
+                <fullName>Falta de Acessórios</fullName>
+                <default>false</default>
+                <label>Falta de Acessórios</label>
+            </value>
+            <value>
+                <fullName>Falta de Equipamento</fullName>
+                <default>false</default>
+                <label>Falta de Equipamento</label>
+            </value>
+            <value>
+                <fullName>Falta de equipamento para agendar em [30 dias]</fullName>
+                <default>false</default>
+                <label>Falta de equipamento para agendar em [30 dias]</label>
+            </value>
+            <value>
+                <fullName>Falta de equipamento para agendar em [7 dias]</fullName>
+                <default>false</default>
+                <label>Falta de equipamento para agendar em [7 dias]</label>
+            </value>
+            <value>
+                <fullName>Falta de equipamento para agendar na data solicitada pelo cliente</fullName>
+                <default>false</default>
+                <label>Falta de equipamento para agendar na data solicitada pelo cliente</label>
+            </value>
+            <value>
+                <fullName>Falta equipamento/acessório</fullName>
+                <default>false</default>
+                <label>Falta equipamento/acessório</label>
+            </value>
+            <value>
+                <fullName>Incluir serviço na O.S</fullName>
+                <default>false</default>
+                <label>Incluir serviço na O.S</label>
+            </value>
+            <value>
+                <fullName>Indisponibilização do veículo</fullName>
+                <default>false</default>
+                <label>Indisponibilização do veículo</label>
+            </value>
+            <value>
+                <fullName>Indisponibilização Técnica</fullName>
+                <default>false</default>
+                <label>Indisponibilização Técnica</label>
+            </value>
+            <value>
+                <fullName>Indisponibilização Veículo</fullName>
+                <default>false</default>
+                <label>Indisponibilização Veículo</label>
+            </value>
+            <value>
+                <fullName>Informações sobre Agendamento/O.S</fullName>
+                <default>false</default>
+                <label>Informações sobre Agendamento/O.S</label>
+            </value>
+            <value>
+                <fullName>Insdisponibilização técnica para atendimento [07 dias]</fullName>
+                <default>false</default>
+                <label>Insdisponibilização técnica para atendimento [07 dias]</label>
+            </value>
+            <value>
+                <fullName>Insdisponibilização técnica para atendimento [30 dias]</fullName>
+                <default>false</default>
+                <label>Insdisponibilização técnica para atendimento [30 dias]</label>
+            </value>
+            <value>
+                <fullName>Inst/Assist. Agendada</fullName>
+                <default>false</default>
+                <label>Inst/Assist. Agendada</label>
+            </value>
+            <value>
+                <fullName>Instalação Frustrada</fullName>
+                <default>false</default>
+                <label>Instalação Frustrada</label>
+            </value>
+            <value>
+                <fullName>Interveção Distribuição</fullName>
+                <default>false</default>
+                <label>Interveção Distribuição</label>
+            </value>
+            <value>
+                <fullName>Intervenção Corretor</fullName>
+                <default>false</default>
+                <label>Intervenção Corretor</label>
+            </value>
+            <value>
+                <fullName>Má conservação da parte elétrica</fullName>
+                <default>false</default>
+                <label>Má conservação da parte elétrica</label>
+            </value>
+            <value>
+                <fullName>Má instalação</fullName>
+                <default>false</default>
+                <label>Má instalação</label>
+            </value>
+            <value>
+                <fullName>Não possui mais veículo</fullName>
+                <default>false</default>
+                <label>Não possui mais veículo</label>
+            </value>
+            <value>
+                <fullName>No-Show cliente/Agendamento cancelado</fullName>
+                <default>false</default>
+                <label>No-Show cliente/Agendamento cancelado</label>
+            </value>
+            <value>
+                <fullName>No-Show Técnico/Agendamento cancelado</fullName>
+                <default>false</default>
+                <label>No-Show Técnico/Agendamento cancelado</label>
+            </value>
+            <value>
+                <fullName>O.S agendada fora do prazo [07 dias] - falta de equipamento</fullName>
+                <default>false</default>
+                <label>O.S agendada fora do prazo [07 dias] - falta de equipamento</label>
+            </value>
+            <value>
+                <fullName>O.S agendada fora do prazo [30 dias] - falta de agenda técnica</fullName>
+                <default>false</default>
+                <label>O.S agendada fora do prazo [30 dias] - falta de agenda técnica</label>
+            </value>
+            <value>
+                <fullName>O.S agendada fora do prazo [30 dias] - solicitação do cliente</fullName>
+                <default>false</default>
+                <label>O.S agendada fora do prazo [30 dias] - solicitação do cliente</label>
+            </value>
+            <value>
+                <fullName>O.S direcionada para outro colaborador/tratativa</fullName>
+                <default>false</default>
+                <label>O.S direcionada para outro colaborador/tratativa</label>
+            </value>
+            <value>
+                <fullName>O.S direcionada para RT</fullName>
+                <default>false</default>
+                <label>O.S direcionada para RT</label>
+            </value>
+            <value>
+                <fullName>O.S Pendente de envio de foto.</fullName>
+                <default>false</default>
+                <label>O.S Pendente de envio de foto.</label>
+            </value>
+            <value>
+                <fullName>Operação especial/tratativa frotas</fullName>
+                <default>false</default>
+                <label>Operação especial/tratativa frotas</label>
+            </value>
+            <value>
+                <fullName>Ordem cancelada de assistência/cliente solicitou TRC</fullName>
+                <default>false</default>
+                <label>Ordem cancelada de assistência/cliente solicitou TRC</label>
+            </value>
+            <value>
+                <fullName>Ordem cancelada de assistência/equipamento sem inconveniente</fullName>
+                <default>false</default>
+                <label>Ordem cancelada de assistência/equipamento sem inconveniente</label>
+            </value>
+            <value>
+                <fullName>Ordem de assistencia cancelada/veículo indisponível</fullName>
+                <default>false</default>
+                <label>Ordem de assistencia cancelada/veículo indisponível</label>
+            </value>
+            <value>
+                <fullName>OS Direcionada</fullName>
+                <default>false</default>
+                <label>OS Direcionada</label>
+            </value>
+            <value>
+                <fullName>Pagamento em Atraso</fullName>
+                <default>false</default>
+                <label>Pagamento em Atraso</label>
+            </value>
+            <value>
+                <fullName>Para devolução seguradora</fullName>
+                <default>false</default>
+                <label>Para devolução seguradora</label>
+            </value>
+            <value>
+                <fullName>Pendência Direcionamento</fullName>
+                <default>false</default>
+                <label>Pendência Direcionamento</label>
+            </value>
+            <value>
+                <fullName>Pré-Devolução Seguradora</fullName>
+                <default>false</default>
+                <label>Pré-Devolução Seguradora</label>
+            </value>
+            <value>
+                <fullName>Problemas com o Representante/Técnico</fullName>
+                <default>false</default>
+                <label>Problemas com o Representante/Técnico</label>
+            </value>
+            <value>
+                <fullName>Recebido Carta de Rescisão</fullName>
+                <default>false</default>
+                <label>Recebido Carta de Rescisão</label>
+            </value>
+            <value>
+                <fullName>Recebido Retorno</fullName>
+                <default>false</default>
+                <label>Recebido Retorno</label>
+            </value>
+            <value>
+                <fullName>Recebido Retorno CCO</fullName>
+                <default>false</default>
+                <label>Recebido Retorno CCO</label>
+            </value>
+            <value>
+                <fullName>Recebido Retorno Cliente</fullName>
+                <default>false</default>
+                <label>Recebido Retorno Cliente</label>
+            </value>
+            <value>
+                <fullName>Recebido Retorno da Corretora</fullName>
+                <default>false</default>
+                <label>Recebido Retorno da Corretora</label>
+            </value>
+            <value>
+                <fullName>Recebido Retorno Seguradora</fullName>
+                <default>false</default>
+                <label>Recebido Retorno Seguradora</label>
+            </value>
+            <value>
+                <fullName>Recebimento Comprovante</fullName>
+                <default>false</default>
+                <label>Recebimento Comprovante</label>
+            </value>
+            <value>
+                <fullName>Recusado após autorizado</fullName>
+                <default>false</default>
+                <label>Recusado após autorizado</label>
+            </value>
+            <value>
+                <fullName>Recusado pela Seguradora</fullName>
+                <default>false</default>
+                <label>Recusado pela Seguradora</label>
+            </value>
+            <value>
+                <fullName>Região sem cobertura de Telefonia Móvel</fullName>
+                <default>false</default>
+                <label>Região sem cobertura de Telefonia Móvel</label>
+            </value>
+            <value>
+                <fullName>Reserva de produtos cancelada</fullName>
+                <default>false</default>
+                <label>Reserva de produtos cancelada</label>
+            </value>
+            <value>
+                <fullName>Responsável não Localizado</fullName>
+                <default>false</default>
+                <label>Responsável não Localizado</label>
+            </value>
+            <value>
+                <fullName>Responsável não localizado/direcionado ao comercial</fullName>
+                <default>false</default>
+                <label>Responsável não localizado/direcionado ao comercial</label>
+            </value>
+            <value>
+                <fullName>Retorno Seguradora</fullName>
+                <default>false</default>
+                <label>Retorno Seguradora</label>
+            </value>
+            <value>
+                <fullName>Retorno Tecnico - Impossibilidade de atender</fullName>
+                <default>false</default>
+                <label>Retorno Tecnico - Impossibilidade de atender</label>
+            </value>
+            <value>
+                <fullName>Retorno Tecnico - Indisponibilidade cliente</fullName>
+                <default>false</default>
+                <label>Retorno Tecnico - Indisponibilidade cliente</label>
+            </value>
+            <value>
+                <fullName>Seguro Cancelado</fullName>
+                <default>false</default>
+                <label>Seguro Cancelado</label>
+            </value>
+            <value>
+                <fullName>Sem contato com o cliente I</fullName>
+                <default>false</default>
+                <label>Sem contato com o cliente I</label>
+            </value>
+            <value>
+                <fullName>Sem contato com o cliente II</fullName>
+                <default>false</default>
+                <label>Sem contato com o cliente II</label>
+            </value>
+            <value>
+                <fullName>Sem contato com o cliente III</fullName>
+                <default>false</default>
+                <label>Sem contato com o cliente III</label>
+            </value>
+            <value>
+                <fullName>Solicitação de Desinstalação</fullName>
+                <default>false</default>
+                <label>Solicitação de Desinstalação</label>
+            </value>
+            <value>
+                <fullName>TÉCNICO COMUNICADO</fullName>
+                <default>false</default>
+                <label>TÉCNICO COMUNICADO</label>
+            </value>
+            <value>
+                <fullName>Técnico Indisponível</fullName>
+                <default>false</default>
+                <label>Técnico Indisponível</label>
+            </value>
+            <value>
+                <fullName>Transferência de Titularidade</fullName>
+                <default>false</default>
+                <label>Transferência de Titularidade</label>
+            </value>
+            <value>
+                <fullName>Tratativa atendimento emergencial</fullName>
+                <default>false</default>
+                <label>Tratativa atendimento emergencial</label>
+            </value>
+            <value>
+                <fullName>Tratativa Frota</fullName>
+                <default>false</default>
+                <label>Tratativa Frota</label>
+            </value>
+            <value>
+                <fullName>Tratativa sendo feita pelo comercial</fullName>
+                <default>false</default>
+                <label>Tratativa sendo feita pelo comercial</label>
+            </value>
+            <value>
+                <fullName>Vazio</fullName>
+                <default>false</default>
+                <label>Vazio</label>
+            </value>
+            <value>
+                <fullName>Veículo Disponível</fullName>
+                <default>false</default>
+                <label>Veículo Disponível</label>
+            </value>
+            <value>
+                <fullName>Veículo Indisponível</fullName>
+                <default>false</default>
+                <label>Veículo Indisponível</label>
+            </value>
+            <value>
+                <fullName>Veículo indisponível/direcionado ao comercial</fullName>
+                <default>false</default>
+                <label>Veículo indisponível/direcionado ao comercial</label>
+            </value>
+            <value>
+                <fullName>Venda de Veículo</fullName>
+                <default>false</default>
+                <label>Venda de Veículo</label>
+            </value>
+            <value>
+                <fullName>Visita Improdutiva</fullName>
+                <default>false</default>
+                <label>Visita Improdutiva</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

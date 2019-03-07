@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Comportamiento de compra</label>
+    <name>Comportamento_de_compra__c</name>
+    <picklistValues>
+        <masterLabel>Confiabilidade</masterLabel>
+        <translation>Confiabilidad</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inovação</masterLabel>
+        <translation>Innovación</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Preço</masterLabel>
+        <translation>Precio</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produtividade</masterLabel>
+        <translation>Productividad</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Qualidade</masterLabel>
+        <translation>Calidad</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Segurança</masterLabel>
+        <translation><!-- Segurança --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

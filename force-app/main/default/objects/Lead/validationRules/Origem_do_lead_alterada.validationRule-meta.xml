@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Origem_do_lead_alterada</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+     PRIORVALUE(LeadSource) &lt;&gt; null, 
+     ISCHANGED (LeadSource), 
+
+NOT( 
+
+OR( 
+   $User.UserRoleId = &#39;00E400000017A2k&#39;,
+   $User.UserRoleId = &#39;00E400000016zHR&#39;, 
+   $User.UserRoleId = &#39;00E400000016zHQ&#39;, 
+   $User.UserRoleId = &#39;00E400000016zJa&#39;, 
+   $User.UserRoleId = &#39;00E400000016DDA&#39;, 
+   $User.UserRoleId = &#39;00E400000016mSH&#39;, 
+   $User.UserRoleId = &#39;00e400000017c5V&#39;, 
+   $User.UserRoleId = &#39;00E4000000177cL&#39;, 
+   $User.UserRoleId = &#39;00E400000016zHP&#39;,
+   $User.UserRoleId = &#39;00E400000016z5T&#39;,
+   $User.UserRoleId = &#39;00E40000000ukIF&#39;,
+   $User.UserRoleId = &#39;00E40000000ukIK&#39;,
+   $User.UserRoleId = &#39;00E40000000ukIU&#39;,
+   $User.UserRoleId = &#39;00E40000000ukIZ&#39;,
+   $User.UserRoleId = &#39;00E400000017A2k&#39;,
+   $User.UserRoleId = &#39;00e400000017c5a&#39;,
+   $User.UserRoleId = &#39;00E40000000ufSZ&#39;  
+
+) 
+) 
+)</errorConditionFormula>
+    <errorDisplayField>LeadSource</errorDisplayField>
+    <errorMessage>Você não pode alterar o valor da origem do lead.</errorMessage>
+</ValidationRule>

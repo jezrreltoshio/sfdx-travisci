@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Atualizacao_manual_de_motivo__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Permite que o registro com status marcado como &quot;Desqualificado&quot; seja salvo sem um motivo de desqualificação. (Criado para execução automática da padronização dos membros de campanha).</description>
+    <externalId>false</externalId>
+    <label>Atualização manual de motivo</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

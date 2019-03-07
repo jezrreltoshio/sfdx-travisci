@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Carta ou visita --></label>
+    <name>Carta_ou_visita__c</name>
+    <picklistValues>
+        <masterLabel>CARTA</masterLabel>
+        <translation><!-- CARTA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VISITA</masterLabel>
+        <translation><!-- VISITA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

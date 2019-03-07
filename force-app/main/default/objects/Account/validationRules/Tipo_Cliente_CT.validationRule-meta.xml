@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_Cliente_CT</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+RecordType.Name = &#39;Cargo Tracck&#39;, 
+ISCHANGED(Tipo_de_cliente__c), 
+AND( 
+($Profile.Name &lt;&gt; &#39;Cargo Tracck&#39;), 
+NOT(CONTAINS($UserRole.Name, &#39;Administrador&#39;)) 
+) 
+)</errorConditionFormula>
+    <errorDisplayField>Tipo_de_cliente__c</errorDisplayField>
+    <errorMessage>Somente usuários Cargo Tracck podem alterar o Tipo de cliente.</errorMessage>
+</ValidationRule>

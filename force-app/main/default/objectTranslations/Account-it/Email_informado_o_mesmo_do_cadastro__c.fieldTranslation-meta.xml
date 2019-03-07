@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Confirmar se o email do cliente é o mesmo que consta em seu cadastro --></help>
+    <label><!-- Email informado é o mesmo do cadastro? --></label>
+    <name>Email_informado_o_mesmo_do_cadastro__c</name>
+    <picklistValues>
+        <masterLabel>NÃO</masterLabel>
+        <translation><!-- NÃO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIM</masterLabel>
+        <translation><!-- SIM --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

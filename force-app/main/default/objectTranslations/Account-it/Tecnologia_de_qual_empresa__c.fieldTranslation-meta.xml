@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tecnologia de qual empresa --></label>
+    <name>Tecnologia_de_qual_empresa__c</name>
+    <picklistValues>
+        <masterLabel>AUTOTRACK</masterLabel>
+        <translation><!-- AUTOTRACK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRABER</masterLabel>
+        <translation><!-- GRABER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASCAR</masterLabel>
+        <translation><!-- SASCAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZATIX</masterLabel>
+        <translation><!-- ZATIX --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

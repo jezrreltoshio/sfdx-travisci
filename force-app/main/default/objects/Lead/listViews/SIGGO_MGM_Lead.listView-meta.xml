@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIGGO_MGM_Lead</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.LAST_UPDATE</columns>
+    <columns>Origem_Lead_Agrupado__c</columns>
+    <columns>Lead_Indicador__c</columns>
+    <filterScope>Queue</filterScope>
+    <label>_Fila Televendas Siggo 09 MGM</label>
+    <queue>SIGGO_MGM</queue>
+    <sharedTo>
+        <role>GERENTE_TELEVENDAS</role>
+        <role>SUPERVISOR_CORE_2</role>
+        <role>SUPERVISOR_FRETEIRO</role>
+        <role>SUPERVISO_R_SIGGO</role>
+    </sharedTo>
+</ListView>

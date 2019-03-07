@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Todas_taxas_de_servico</fullName>
+    <columns>NAME</columns>
+    <columns>Descricao__c</columns>
+    <columns>Tipo__c</columns>
+    <columns>Desinstalacao__c</columns>
+    <columns>Valor_Desinstalacao_e_Reinstalacao__c</columns>
+    <columns>Taxas__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Todas taxas de serviço</label>
+</ListView>

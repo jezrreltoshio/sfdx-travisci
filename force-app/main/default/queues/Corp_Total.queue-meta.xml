@@ -2,14 +2,6 @@
 <Queue xmlns="http://soap.sforce.com/2006/04/metadata">
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>Corp Total</name>
-    <queueMembers>
-        <roleAndSubordinates>
-            <roleAndSubordinate>SUPERVISOR_CORE_2</roleAndSubordinate>
-        </roleAndSubordinates>
-        <users>
-            <user>ricardo.alves@sascar.com.br</user>
-        </users>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Lead</sobjectType>
     </queueSobject>

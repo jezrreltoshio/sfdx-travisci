@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Data da última visita do cliente --></help>
+    <label><!-- Data da última visita --></label>
+    <name>Data_ultima_visita__c</name>
+</CustomFieldTranslation>

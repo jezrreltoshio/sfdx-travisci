@@ -2,13 +2,6 @@
 <Queue xmlns="http://soap.sforce.com/2006/04/metadata">
     <doesSendEmailToMembers>true</doesSendEmailToMembers>
     <name>Canal Exclusivo de Indicações</name>
-    <queueMembers>
-        <users>
-            <user>adriana.silva@sascar.com.br</user>
-            <user>andreia.toledo@sascar.com.br</user>
-            <user>lea.campos@sascar.com.br</user>
-        </users>
-    </queueMembers>
     <queueSobject>
         <sobjectType>Lead</sobjectType>
     </queueSobject>

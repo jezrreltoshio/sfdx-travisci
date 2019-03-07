@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Indicador_de_Negocio_CORP</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISNEW(),
+ISPICKVAL(LeadSource, &#39;Indicador de negócio&#39;),
+RecordType.Name = &#39;CORP&#39;,
+AND(
+ $Profile.Id &lt;&gt; &#39;00e400000013wpH&#39;, /* ADM Sistema       */
+ $User.Id &lt;&gt; &#39;005400000038RxN&#39;,    /* Lilian Cabral     */
+ $User.Id &lt;&gt; &#39;005400000030m5Y&#39;,    /* Jessica Gomes     */
+ $User.Id &lt;&gt; &#39;00540000002MiXr&#39;,	   /* Fabio Uccelli     */
+ $User.Id &lt;&gt; &#39;00540000003ke6I&#39;,    /* Joice Silva       */
+ $User.Id &lt;&gt; &#39;00540000003l3zD&#39;,    /* Juliana Domingues */
+ $User.Id &lt;&gt; &#39;00540000002M4eT&#39;,    /* Patricia Santos   */
+ $User.Id &lt;&gt; &#39;00540000003l1Rd&#39;,    /* Mayra Neves       */
+ $User.Id &lt;&gt; &#39;00540000002LzT0&#39;,    /* Marcio Fugisava   */
+ $User.Id &lt;&gt; &#39;00540000003l1Ri&#39;,    /* Jose Garcia       */
+ $User.Id &lt;&gt; &#39;00540000003l1RY&#39;,    /* Evandro Rodrigues */
+ $User.Id &lt;&gt; &#39;005400000030X7e&#39;,     /* Samuel Cristovão  */
+ $User.Id &lt;&gt; &#39;00540000003kyOb&#39;,     /* Portal Parceiro  */
+ $User.Id &lt;&gt; &#39;00540000003mI3B&#39;    /* Juliana Rodrigues de Araujo */
+))</errorConditionFormula>
+    <errorMessage>Você não possui permissão para criar esse tipo de Lead.</errorMessage>
+</ValidationRule>

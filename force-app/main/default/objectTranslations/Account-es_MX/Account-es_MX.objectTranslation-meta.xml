@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Click2Create --></label>
+        <name>Click2Create</name>
+    </fieldSets>
+    <layouts>
+        <layout>CORP</layout>
+        <sections>
+            <label><!-- Campos do sistema --></label>
+            <section>Campos do sistema</section>
+        </sections>
+        <sections>
+            <label><!-- Contatos Especiais --></label>
+            <section>Contatos Especiais</section>
+        </sections>
+        <sections>
+            <label><!-- INTRANET - Informação Adicionais da Conta --></label>
+            <section>INTRANET - Informação Adicionais da Conta</section>
+        </sections>
+        <sections>
+            <label><!-- INTRANET - Informações Financeiras --></label>
+            <section>INTRANET - Informações Financeiras</section>
+        </sections>
+        <sections>
+            <label><!-- INTRANET - Informações contratuais --></label>
+            <section>INTRANET - Informações contratuais</section>
+        </sections>
+        <sections>
+            <label><!-- INTRANET - Informações da Frota Sascar --></label>
+            <section>INTRANET - Informações da Frota Sascar</section>
+        </sections>
+        <sections>
+            <label><!-- INTRANET - Informações da operação --></label>
+            <section>INTRANET - Informações da operação</section>
+        </sections>
+        <sections>
+            <label><!-- INTRANET - Nível de Satisfação Cliente (Consolidado dos últimos 3 meses) --></label>
+            <section>INTRANET - Nível de Satisfação Cliente (Consolidado dos últimos 3 meses)</section>
+        </sections>
+        <sections>
+            <label><!-- Informações da cobrança - Cartão de crédito --></label>
+            <section>Informações da cobrança - Cartão de crédito</section>
+        </sections>
+        <sections>
+            <label><!-- Informações da cobrança - Débito automático --></label>
+            <section>Informações da cobrança - Débito automático</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de Cobrança --></label>
+            <section>Informações de Cobrança</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de Endereço Principal --></label>
+            <section>Informações de Endereço Principal</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de Endereço de Cobrança --></label>
+            <section>Informações de Endereço de Cobrança</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de Mercado --></label>
+            <section>Informações de Mercado</section>
+        </sections>
+        <sections>
+            <label><!-- Informações do parceiro --></label>
+            <section>Informações do parceiro</section>
+        </sections>
+        <sections>
+            <label><!-- Informações financeiras --></label>
+            <section>Informações financeiras</section>
+        </sections>
+        <sections>
+            <label><!-- Informações sobre a Conta --></label>
+            <section>Informações sobre a Conta</section>
+        </sections>
+        <sections>
+            <label><!-- Nível de Satisfação do Cliente - Classificação de 1 (PÉSSIMO) à 4 (ÓTIMO) --></label>
+            <section>Nível de Satisfação do Cliente - Classificação de 1 (PÉSSIMO) à 4 (ÓTIMO)</section>
+        </sections>
+        <sections>
+            <label><!-- Pesquisa MGM Pós Instalação --></label>
+            <section>Pesquisa MGM Pós Instalação</section>
+        </sections>
+        <sections>
+            <label><!-- Pesquisa Recebimento de Boleto de Instalação --></label>
+            <section>Pesquisa Recebimento de Boleto de Instalação</section>
+        </sections>
+        <sections>
+            <label><!-- Situação da frota --></label>
+            <section>Situação da frota</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CORP - Argentina</layout>
+        <sections>
+            <label>Información de la dirección principal</label>
+            <section>Informações de Endereço Principal</section>
+        </sections>
+        <sections>
+            <label>Información de dirección de cobro</label>
+            <section>Informações de Endereço de Cobrança</section>
+        </sections>
+        <sections>
+            <label>Información de cobro</label>
+            <section>Informações de cobrança</section>
+        </sections>
+        <sections>
+            <label>Información de descripción</label>
+            <section>Informações de descrição</section>
+        </sections>
+        <sections>
+            <label><!-- Situação da Frota --></label>
+            <section>Situação da Frota</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CORP - Executivo</layout>
+        <sections>
+            <label><!-- Informações de Cobrança --></label>
+            <section>Informações de Cobrança</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de Endereço Principal --></label>
+            <section>Informações de Endereço Principal</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de Endereço de Cobrança --></label>
+            <section>Informações de Endereço de Cobrança</section>
+        </sections>
+        <sections>
+            <label><!-- Informações financeiras --></label>
+            <section>Informações financeiras</section>
+        </sections>
+        <sections>
+            <label><!-- Pesquisa MGM Pós Instalação --></label>
+            <section>Pesquisa MGM Pós Instalação</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CORP - Mexico</layout>
+        <sections>
+            <label>Información de cobro</label>
+            <section>Informações de Cobrança</section>
+        </sections>
+        <sections>
+            <label>Información de la dirección principal</label>
+            <section>Informações de Endereço Principal</section>
+        </sections>
+        <sections>
+            <label>Información de dirección de cobro</label>
+            <section>Informações de Endereço de Cobrança</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CORP - Televendas</layout>
+        <sections>
+            <label><!-- Informações de Cobrança --></label>
+            <section>Informações de Cobrança</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de Endereço Principal --></label>
+            <section>Informações de Endereço Principal</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de Endereço de Cobrança --></label>
+            <section>Informações de Endereço de Cobrança</section>
+        </sections>
+        <sections>
+            <label><!-- Informações financeiras --></label>
+            <section>Informações financeiras</section>
+        </sections>
+        <sections>
+            <label><!-- Pesquisa MGM Pós Instalação --></label>
+            <section>Pesquisa MGM Pós Instalação</section>
+        </sections>
+        <sections>
+            <label><!-- Situação da frota --></label>
+            <section>Situação da frota</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Cargo Tracck</layout>
+        <sections>
+            <label><!-- Campos do sistema --></label>
+            <section>Campos do sistema</section>
+        </sections>
+        <sections>
+            <label><!-- Informações da cobrança - Cartão de crédito --></label>
+            <section>Informações da cobrança - Cartão de crédito</section>
+        </sections>
+        <sections>
+            <label><!-- Informações da cobrança - Débito automático --></label>
+            <section>Informações da cobrança - Débito automático</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de Cobrança --></label>
+            <section>Informações de Cobrança</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de Endereço Principal --></label>
+            <section>Informações de Endereço Principal</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de Endereço de Cobrança --></label>
+            <section>Informações de Endereço de Cobrança</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de Mercado --></label>
+            <section>Informações de Mercado</section>
+        </sections>
+        <sections>
+            <label><!-- Informações sobre a Conta --></label>
+            <section>Informações sobre a Conta</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Grupo Econômico</layout>
+        <sections>
+            <label><!-- Campos --></label>
+            <section>Campos</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout Blue tec</layout>
+        <sections>
+            <label><!-- Informação da Operação --></label>
+            <section>Informação da Operação</section>
+        </sections>
+        <sections>
+            <label><!-- Informações adicionais --></label>
+            <section>Informações adicionais</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de Endereço Principal --></label>
+            <section>Informações de Endereço Principal</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de Mercado --></label>
+            <section>Informações de Mercado</section>
+        </sections>
+        <sections>
+            <label><!-- Informações sobre a Conta --></label>
+            <section>Informações sobre a Conta</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout OTR</layout>
+        <sections>
+            <label><!-- Informação da Operação --></label>
+            <section>Informação da Operação</section>
+        </sections>
+        <sections>
+            <label><!-- Informações adicionais --></label>
+            <section>Informações adicionais</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de Endereço Principal --></label>
+            <section>Informações de Endereço Principal</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de Mercado --></label>
+            <section>Informações de Mercado</section>
+        </sections>
+        <sections>
+            <label><!-- Informações sobre a Conta --></label>
+            <section>Informações sobre a Conta</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout de conta</layout>
+        <sections>
+            <label><!-- Informações contratuais --></label>
+            <section>Informações contratuais</section>
+        </sections>
+        <sections>
+            <label><!-- Informações do parceiro --></label>
+            <section>Informações do parceiro</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Michelin Key Account</layout>
+        <sections>
+            <label><!-- Informações Michelin --></label>
+            <section>Informações Michelin</section>
+        </sections>
+        <sections>
+            <label><!-- Informações da Frota Rastreada --></label>
+            <section>Informações da Frota Rastreada</section>
+        </sections>
+        <sections>
+            <label><!-- Informações da operação --></label>
+            <section>Informações da operação</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de Negócio --></label>
+            <section>Informações de Negócio</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de endereço Principal --></label>
+            <section>Informações de endereço Principal</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de endereço de Cobrança --></label>
+            <section>Informações de endereço de Cobrança</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Novo Freteiro</layout>
+        <sections>
+            <label><!-- Canal Indicador --></label>
+            <section>Canal Indicador</section>
+        </sections>
+        <sections>
+            <label><!-- Descrição da conta --></label>
+            <section>Descrição da conta</section>
+        </sections>
+        <sections>
+            <label><!-- Informações da Operação --></label>
+            <section>Informações da Operação</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de Cobrança --></label>
+            <section>Informações de Cobrança</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de endereço Cobrança --></label>
+            <section>Informações de endereço Cobrança</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de endereço Principal --></label>
+            <section>Informações de endereço Principal</section>
+        </sections>
+        <sections>
+            <label><!-- Pesquisa MGM Pós Instalação --></label>
+            <section>Pesquisa MGM Pós Instalação</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Novo Siggo</layout>
+        <sections>
+            <label><!-- Contatos especiais --></label>
+            <section>Contatos especiais</section>
+        </sections>
+        <sections>
+            <label><!-- Informações da cobrança - Cartão de crédito (Serviço Mensal) --></label>
+            <section>Informações da cobrança - Cartão de crédito (Serviço Mensal)</section>
+        </sections>
+        <sections>
+            <label><!-- Informações da cobrança - Débito automático (Serviço Mensal) --></label>
+            <section>Informações da cobrança - Débito automático (Serviço Mensal)</section>
+        </sections>
+        <sections>
+            <label><!-- Informações da intranet --></label>
+            <section>Informações da intranet</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de cobrança do cliente (Serviço Mensal) --></label>
+            <section>Informações de cobrança do cliente (Serviço Mensal)</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de endereço de cobrança --></label>
+            <section>Informações de endereço de cobrança</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de endereço principal --></label>
+            <section>Informações de endereço principal</section>
+        </sections>
+        <sections>
+            <label><!-- Pesquisa MGM Pós Instalação --></label>
+            <section>Pesquisa MGM Pós Instalação</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Argentina --></label>
+        <name>Argentina</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- OTR --></label>
+        <name>Blue_tec</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CORP --></label>
+        <name>CORP</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CORP - Executivo --></label>
+        <name>CORP_Executivo</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CORP - Televendas --></label>
+        <name>CORP_Televendas</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Cargo Tracck --></label>
+        <name>Cargo_Tracck</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- FRETEIRO --></label>
+        <name>FRETEIRO</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Grupo econômico --></label>
+        <name>Grupo_economico</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Mercosul --></label>
+        <name>Mercosul</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Michelin --></label>
+        <name>Michelin</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SIGGO --></label>
+        <name>SIGGO</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Você não possui permissão para alterar o proprietário da conta --></errorMessage>
+        <name>Alterar_proprietario_CORP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Usted no puede editar esta cuenta, pues una o más oportunidades asociadas a ella están aprobadas y aún no han tenido sus propuestas generadas. Por favor, reinicie el análisis de crédito de las oportunidades en cuestión, o gestione sus propuestas antes de editar.</errorMessage>
+        <name>Bloqueio_conta_com_oportunidade_aprovada</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CEP Principal deve conter apenas 8 dígitos. --></errorMessage>
+        <name>CEP_Cobranca</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CEP Principal deve conter apenas 8 dígitos. --></errorMessage>
+        <name>CEP_Entrega</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CEP Principal deve conter apenas 8 dígitos. --></errorMessage>
+        <name>CEP_Principal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para pessoa jurídica, informe o CNPJ. --></errorMessage>
+        <name>CargoTracck_Validar_CNPJ</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para pessoa física, informe o CPF. --></errorMessage>
+        <name>CargoTracck_Validar_CPF</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Você não pode selecionar o Tipo Cliente Indicador, pois o mesmo é uma opção do Corp. --></errorMessage>
+        <name>Cliente_indicador_no_Corp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- O indicador de negócios / cliente indicador devem ser selecionados. --></errorMessage>
+        <name>Indicador_em_branco</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Quando a opção selecionada para a pergunta &quot;Qual a principal marca que você usa?&quot; é Outros, é obrigatório descrever o nome da marca. --></errorMessage>
+        <name>M_Obriga_informar_Outro_motivo_marca</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Quando a opção selecionada para a pergunta &quot;Por que você optou por essa marca?&quot; é Outro, é obrigatório descrever qual foi o outro motivo pela opção. --></errorMessage>
+        <name>M_Obriga_informar_Outro_motivo_opcao</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Quando a opção selecionada para a pergunta &quot;Por que a Michelin não foi a sua opção?&quot; é Outro, é obrigatório descrever qual foi o outro motivo para não ser Michelin. --></errorMessage>
+        <name>M_Obriga_informar_Outro_motivo_para_Mich</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Quando a opção selecionada para a pergunta &quot;Qual a principal marca que você usa?&quot; não é Michelin,é obrigatório o porquê a marca Michelin não foi a opção. --></errorMessage>
+        <name>M_Obriga_informar_porque_nao_Michelin</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Por favor seleccione la marca del competidor</errorMessage>
+        <name>Marca_concorrente</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Formato de CNPJ inválido. --></errorMessage>
+        <name>Mascara_CNPJ</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Fecha de nacimiento inválida</errorMessage>
+        <name>Menor_de_18_anos</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Formato: 00-00000000-0 --></errorMessage>
+        <name>Mercosul_formato_CUIT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Formato: 00.000.000 --></errorMessage>
+        <name>Mercosul_formato_DNI</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>RFC no válido</errorMessage>
+        <name>Mercosul_formato_RFC</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- DNI inválido --></errorMessage>
+        <name>Mercosul_invalido_DNI</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe o nome do portador conforme impresso no cartão. --></errorMessage>
+        <name>NomePortador</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe o Nome do embarcador. --></errorMessage>
+        <name>Nome_Embarcador</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Quando a opção selecionada para a pergunta &quot;Como soube da Siggo?&quot; é Outro, é obrigatório descrever qual foi o outro meio. --></errorMessage>
+        <name>Obriga_informar_Outro_meio</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Por favor, rellene cuál es la otra marca</errorMessage>
+        <name>Outra_marca</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Somente é possível incluir 1 plano de ação. 
+Apenas é possível editar o plano existente. --></errorMessage>
+        <name>Plano_de_acao</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Usted debe utilizar, primero, el botón Código Postal Cobranza para llenar la dirección</errorMessage>
+        <name>Preenche_endereco_cobranca</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Usted debe utilizar, primero, el botón Código Postal Entrega para llenar la dirección</errorMessage>
+        <name>Preenche_endereco_entrega</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Usted debe utilizar, primero, el botón Código Postal Inicio para llenar la dirección</errorMessage>
+        <name>Preenche_endereco_principal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe o Circuito e/ou a Cadência. --></errorMessage>
+        <name>PreencherCadenciaCircuito</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe o outro ramo de atividade. --></errorMessage>
+        <name>PreencherCampoOutroRamoAtividade</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El nombre de la empresa debe cumplimentarse</errorMessage>
+        <name>Preencher_Empresa_Agregando</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>No tiene permiso para cambiar el propietario de la cuenta</errorMessage>
+        <name>ProprietarioConta</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>No tiene permiso para cambiar el propietario de la cuenta</errorMessage>
+        <name>ProprietarioContaCT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Su perfil no permite cambiar el propietario de la cuenta</errorMessage>
+        <name>Proprietario_conta</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Se o campo Contato Padrão não estiver preenchido, os campos Contato Emergencia, Contato Instalação e Pessoa Autorizada devem estar preenchidos. --></errorMessage>
+        <name>Siggo_Contatos_Especiais</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Sólo el Administrador tiene permiso para cambiar este campo</errorMessage>
+        <name>Tipo_Cliente_CT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Você só deve preencher esse campo, quando o campo &quot;Ramo de Atividade&quot; estiver com a opção &quot;OUTRO&quot;. --></errorMessage>
+        <name>ValidaValorOutroRamoAtividade</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CPF Inválido! Insira um valor válido. --></errorMessage>
+        <name>Valida_CPF</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Verifique as informações do cartão de crédito (Número e Código de Segurança). Apenas números são aceitos. --></errorMessage>
+        <name>Valida_Dados_Cartao</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informações do cartão de crédito (Número e Código de Segurança) inválidas. --></errorMessage>
+        <name>Valida_Formato_Dados_Cartao</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para forma de cobrança Cartão de Crédito, informe os campos Número do Cartão, Código de Segurança e Vencimento do Cartão. --></errorMessage>
+        <name>Valida_campos_do_cartao_credito</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para forma de cobrança Débito Automático, informe os campos Agência, Conta e Nome do Titular. --></errorMessage>
+        <name>Valida_campos_do_debito_automatico</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CEP deve conter no máximo 10 dígitos. --></errorMessage>
+        <name>Validacao_CEP_tamanho_cobranca</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CEP deve conter no máximo 10 dígitos. --></errorMessage>
+        <name>Validacao_CEP_tamanho_entrega</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CEP deve conter no máximo 10 dígitos. --></errorMessage>
+        <name>Validacao_CEP_tamanho_principal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Verifique se o CNPJ/CPF está de acordo com o Tipo de Pessoa informada. --></errorMessage>
+        <name>VerificarCPFTipoPessoa</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Digito Verificador 1 do CNPJ inválido --></errorMessage>
+        <name>cnpj_confere_digito_verificador_1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CNPJ inválido. Dígito verificador 2 não consistente. --></errorMessage>
+        <name>cnpj_confere_digito_verificador_2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Dígito verificador inconsistente. --></errorMessage>
+        <name>validaDigitoVerificadorDoCPF</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CPF inconsistente. Informe um CPF válido. --></errorMessage>
+        <name>validarIgualdadeDoCPF</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Quantidade de dígitos inválida. O CPF deve conter somente 11 dígitos. --></errorMessage>
+        <name>validarQuantidadeDigitosCPF</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- BtnSincronizar --></label>
+        <name>BtnSincronizar</name>
+    </webLinks>
+    <webLinks>
+        <label>Código Postal Cobranza</label>
+        <name>CEP_Cobranca</name>
+    </webLinks>
+    <webLinks>
+        <label>Código Postal Entrega</label>
+        <name>CEP_Entrega</name>
+    </webLinks>
+    <webLinks>
+        <label>Código Postal Inicio</label>
+        <name>CEP_Principal</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Plano_de_acao --></label>
+        <name>Plano_de_acao</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RaioXOrdensDeServicos --></label>
+        <name>RaioXOrdensDeServicos</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Situacao_Financeira --></label>
+        <name>Situacao_Financeira</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ExactTarget_Resubscribe --></label>
+        <name>et4ae5__ExactTarget_Resubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ExactTarget_Unsubscribe --></label>
+        <name>et4ae5__ExactTarget_Unsubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_ExactTarget_Email --></label>
+        <name>et4ae5__Send_ExactTarget_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_ExactTarget_Analytics --></label>
+        <name>et4ae5__View_ExactTarget_Analytics</name>
+    </webLinks>
+</CustomObjectTranslation>

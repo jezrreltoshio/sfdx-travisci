@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RFC_Digito__c</fullName>
+    <externalId>false</externalId>
+    <formula>SUBSTITUTE(
+SUBSTITUTE(
+TEXT(
+(11 - MOD(
+((FIND(MID(RFC__c, 1, 1),&quot;0123456789ABCDEFGHIJKLMN&amp;OPQRSTUVWXYZ Ñ&quot;)-1) * (LEN(RFC__c) - 0))+
+((FIND(MID(RFC__c, 2, 1),&quot;0123456789ABCDEFGHIJKLMN&amp;OPQRSTUVWXYZ Ñ&quot;)-1) * (LEN(RFC__c) - 1))+
+((FIND(MID(RFC__c, 3, 1),&quot;0123456789ABCDEFGHIJKLMN&amp;OPQRSTUVWXYZ Ñ&quot;)-1) * (LEN(RFC__c) - 2))+
+((FIND(MID(RFC__c, 4, 1),&quot;0123456789ABCDEFGHIJKLMN&amp;OPQRSTUVWXYZ Ñ&quot;)-1) * (LEN(RFC__c) - 3))+
+((FIND(MID(RFC__c, 5, 1),&quot;0123456789ABCDEFGHIJKLMN&amp;OPQRSTUVWXYZ Ñ&quot;)-1) * (LEN(RFC__c) - 4))+
+((FIND(MID(RFC__c, 6, 1),&quot;0123456789ABCDEFGHIJKLMN&amp;OPQRSTUVWXYZ Ñ&quot;)-1) * (LEN(RFC__c) - 5))+
+((FIND(MID(RFC__c, 7, 1),&quot;0123456789ABCDEFGHIJKLMN&amp;OPQRSTUVWXYZ Ñ&quot;)-1) * (LEN(RFC__c) - 6))+
+((FIND(MID(RFC__c, 8, 1),&quot;0123456789ABCDEFGHIJKLMN&amp;OPQRSTUVWXYZ Ñ&quot;)-1) * (LEN(RFC__c) - 7))+
+((FIND(MID(RFC__c, 9, 1),&quot;0123456789ABCDEFGHIJKLMN&amp;OPQRSTUVWXYZ Ñ&quot;)-1) * (LEN(RFC__c) - 8))+
+((FIND(MID(RFC__c, 10, 1),&quot;0123456789ABCDEFGHIJKLMN&amp;OPQRSTUVWXYZ Ñ&quot;)-1) * (LEN(RFC__c) - 9))+
+((FIND(MID(RFC__c, 11, 1),&quot;0123456789ABCDEFGHIJKLMN&amp;OPQRSTUVWXYZ Ñ&quot;)-1) * (LEN(RFC__c) - 10))+
+IF(LEN(RFC__c)&gt;12,((FIND(MID(RFC__c, 12, 1),&quot;0123456789ABCDEFGHIJKLMN&amp;OPQRSTUVWXYZ Ñ&quot;)-1) * (LEN(RFC__c) - 11)),0)+
+IF(LEN(RFC__c)&lt;&gt;13,481,0)
+,11))
+),&#39;10&#39;, &#39;A&#39;),&#39;11&#39;, &#39;A&#39;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>RFC Digito</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

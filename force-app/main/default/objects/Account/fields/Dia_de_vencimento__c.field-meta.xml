@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dia_de_vencimento__c</fullName>
+    <description>Campo dependente da forma de pagamento.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Selecione o dia de vencimento para o monitoramento.</inlineHelpText>
+    <label>Dia de vencimento</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>FormaCobranca__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>7</fullName>
+                <default>false</default>
+                <label>7</label>
+            </value>
+            <value>
+                <fullName>16</fullName>
+                <default>false</default>
+                <label>16</label>
+            </value>
+            <value>
+                <fullName>22</fullName>
+                <default>false</default>
+                <label>22</label>
+            </value>
+            <value>
+                <fullName>28</fullName>
+                <default>false</default>
+                <label>28</label>
+            </value>
+            <value>
+                <fullName>30</fullName>
+                <default>false</default>
+                <label>30</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>1-Boleto Bancário</controllingFieldValue>
+            <controllingFieldValue>3-Débito Automático HSBC</controllingFieldValue>
+            <controllingFieldValue>4-Débito Automático Itaú</controllingFieldValue>
+            <controllingFieldValue>12-Débito Automático Bradesco</controllingFieldValue>
+            <controllingFieldValue>13-Débito Automático Banco do Brasil</controllingFieldValue>
+            <controllingFieldValue>81-Débito Automático Santander</controllingFieldValue>
+            <valueName>7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1-Boleto Bancário</controllingFieldValue>
+            <controllingFieldValue>24-Cartão Visa</controllingFieldValue>
+            <controllingFieldValue>25-Cartão Mastercard</controllingFieldValue>
+            <controllingFieldValue>3-Débito Automático HSBC</controllingFieldValue>
+            <controllingFieldValue>4-Débito Automático Itaú</controllingFieldValue>
+            <controllingFieldValue>12-Débito Automático Bradesco</controllingFieldValue>
+            <controllingFieldValue>82-Cartão Hipercard</controllingFieldValue>
+            <controllingFieldValue>13-Débito Automático Banco do Brasil</controllingFieldValue>
+            <controllingFieldValue>81-Débito Automático Santander</controllingFieldValue>
+            <valueName>16</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1-Boleto Bancário</controllingFieldValue>
+            <controllingFieldValue>3-Débito Automático HSBC</controllingFieldValue>
+            <controllingFieldValue>4-Débito Automático Itaú</controllingFieldValue>
+            <controllingFieldValue>12-Débito Automático Bradesco</controllingFieldValue>
+            <controllingFieldValue>13-Débito Automático Banco do Brasil</controllingFieldValue>
+            <controllingFieldValue>81-Débito Automático Santander</controllingFieldValue>
+            <valueName>22</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1-Boleto Bancário</controllingFieldValue>
+            <controllingFieldValue>3-Débito Automático HSBC</controllingFieldValue>
+            <controllingFieldValue>4-Débito Automático Itaú</controllingFieldValue>
+            <controllingFieldValue>12-Débito Automático Bradesco</controllingFieldValue>
+            <controllingFieldValue>13-Débito Automático Banco do Brasil</controllingFieldValue>
+            <controllingFieldValue>81-Débito Automático Santander</controllingFieldValue>
+            <valueName>28</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1-Boleto Bancário</controllingFieldValue>
+            <controllingFieldValue>3-Débito Automático HSBC</controllingFieldValue>
+            <controllingFieldValue>4-Débito Automático Itaú</controllingFieldValue>
+            <controllingFieldValue>12-Débito Automático Bradesco</controllingFieldValue>
+            <controllingFieldValue>13-Débito Automático Banco do Brasil</controllingFieldValue>
+            <controllingFieldValue>81-Débito Automático Santander</controllingFieldValue>
+            <valueName>30</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

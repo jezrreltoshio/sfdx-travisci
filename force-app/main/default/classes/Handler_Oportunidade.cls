@@ -6,6 +6,11 @@
 	@author Renan Rocha
 	@date 19/11/2018
 	@JIRA KCA-9
+    ---------------------------------
+    @author Renan Rocha
+    @date 14/01/2019
+    @description Inserido método atualizaPontuacao para correção do objeto Opportunity ao implantar com Metadata API
+    @JIRA KCA-418
 */
 
 public class Handler_Oportunidade{
@@ -667,4 +672,65 @@ public class Handler_Oportunidade{
             if(lstOpp.size() > 0) OpportunityTriggers.AbasteceHistoricoDetalhes(lstOpp);
         }
 	}
+
+    /*
+        @description Atualiza o campo de pontuação da oportunidade
+        @param List<Opportunity> pListaOppNew, Map<Id, Opportunity> pOldMap
+        @return void
+        
+        @author Renan Rocha
+        @date 14/01/2019
+        @JIRA KCA-418
+    */
+    public static void atualizaPontuacao(List<Opportunity> pListaOppNew){
+        String METHOD_NAME = 'atualizaPontuacao';
+        
+        if(pListaOppNew.size() > 0){
+            for(Opportunity forOpp : pListaOppNew){
+                if(forOpp.Produtos__c == 0 || forOpp.Criado_depois_de_03_02__c == '') forOpp.Pontuacao_oportunidade__c = 0;
+                else if(System.Label.Ativar_data_corte == 'true'
+                    && forOpp.CloseDate >= Date.valueOf(System.Label.Data_de_corte_Ano + '-' + System.Label.Data_de_corte_Mes + '-' + System.Label.Data_de_corte_Dia)){
+                    if(forOpp.Percentual_alcan_ado_n_mero__c < 0 || (forOpp.Percentual_alcan_ado_n_mero__c >= 0 && forOpp.Percentual_alcan_ado_n_mero__c <= 714)) forOpp.Pontuacao_oportunidade__c = 10;
+                    else if(forOpp.Percentual_alcan_ado_n_mero__c > 714 && forOpp.Percentual_alcan_ado_n_mero__c <= 1429) forOpp.Pontuacao_oportunidade__c = 8;
+                    else if(forOpp.Percentual_alcan_ado_n_mero__c > 1429 && forOpp.Percentual_alcan_ado_n_mero__c <= 2143) forOpp.Pontuacao_oportunidade__c = 6;
+                    else if(forOpp.Percentual_alcan_ado_n_mero__c > 2143 && forOpp.Percentual_alcan_ado_n_mero__c <= 2857) forOpp.Pontuacao_oportunidade__c = 4;
+                    else if(forOpp.Percentual_alcan_ado_n_mero__c > 2857) forOpp.Pontuacao_oportunidade__c = 2;
+                } else {
+                    if(forOpp.Percentual_alcan_ado_n_mero__c < 0) forOpp.Pontuacao_oportunidade__c = 10;
+                    else if(forOpp.Percentual_alcan_ado_n_mero__c > 0 && forOpp.Percentual_alcan_ado_n_mero__c <= 1200) forOpp.Pontuacao_oportunidade__c = 8;
+                    else if(forOpp.Percentual_alcan_ado_n_mero__c > 1200 && forOpp.Percentual_alcan_ado_n_mero__c <= 1900) forOpp.Pontuacao_oportunidade__c = 6;
+                    else if(forOpp.Percentual_alcan_ado_n_mero__c > 1900 && forOpp.Percentual_alcan_ado_n_mero__c <= 2500) forOpp.Pontuacao_oportunidade__c = 4;
+                    else if(forOpp.Percentual_alcan_ado_n_mero__c > 2500) forOpp.Pontuacao_oportunidade__c = 2;
+                    else forOpp.Pontuacao_oportunidade__c = 0;
+                }
+            }
+        }
+    }
+
+    /*
+        @description Trata o Id do tipo de contrato conforme o valor informado na API
+        @param List<Opportunity> pListaOppNew
+        @return void
+        
+        @author Renan Rocha
+        @date 15/01/2019
+        @JIRA KCA-418
+    */
+    public static void atualizaTipoContratoId(List<Opportunity> pListaOppNew){
+        String METHOD_NAME = 'atualizaTipoContratoId';
+        
+        if(pListaOppNew.size() > 0){
+            for(Opportunity forOpp : pListaOppNew){
+                if(String.IsNotEmpty(forOpp.Tipo_contrato__c)){
+                    List<String> valor = forOpp.Tipo_contrato__c.split('_#');
+                    System.debug(LoggingLevel.ERROR, '___ [cls '+ CLASS_NAME +' - '+ METHOD_NAME +'()] - valor: '+ valor);
+
+                    if(valor.size() > 1){
+                        System.debug(LoggingLevel.ERROR, '___ [cls '+ CLASS_NAME +' - '+ METHOD_NAME +'()] - valor[1]: '+ valor[1]);
+                        forOpp.Tipo_de_contrato_ID__c = Integer.valueOf(valor[1]);
+                    }else forOpp.Tipo_de_contrato_ID__c = 00;
+                }
+            }
+        }
+    }
 }

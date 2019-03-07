@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Indicador_Siggo__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Campos para apontar o indicador do lead no caso de SIGGO.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Campos para apontar o indicador do lead no caso de SIGGO.</inlineHelpText>
+    <label>Indicador SIGGO</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Você só pode relacionar contas que tenham o código do programa de indicação preenchido.</errorMessage>
+        <filterItems>
+            <field>Account.IdExternoClienteIndicador__c</field>
+            <operation>notEqual</operation>
+            <value/>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Leads (Indicador SIGGO)</relationshipLabel>
+    <relationshipName>Leads2</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_admin_comercial_1__c</fullName>
+    <description>Campo utilizado na classe Handler_Oportunidade no método verifyApprovalProcess. (KCA-9)</description>
+    <externalId>false</externalId>
+    <label>Email admin comercial 1</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

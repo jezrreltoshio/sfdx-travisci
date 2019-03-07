@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Ramo de Atividade --></label>
+    <name>Ramo_de_Atividade__c</name>
+    <picklistValues>
+        <masterLabel>Alimentos</masterLabel>
+        <translation><!-- Alimentos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Automotivo</masterLabel>
+        <translation><!-- Automotivo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bens de Consumo</masterLabel>
+        <translation><!-- Bens de Consumo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Calçados</masterLabel>
+        <translation><!-- Calçados --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cigarro</masterLabel>
+        <translation><!-- Cigarro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E-Commerce</masterLabel>
+        <translation><!-- E-Commerce --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eletrônico</masterLabel>
+        <translation><!-- Eletrônico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fracionado</masterLabel>
+        <translation><!-- Fracionado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fracionado eletrônico</masterLabel>
+        <translation><!-- Fracionado eletrônico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Frigorífico</masterLabel>
+        <translation><!-- Frigorífico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medicamento</masterLabel>
+        <translation><!-- Medicamento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metalúrgico</masterLabel>
+        <translation><!-- Metalúrgico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outros</masterLabel>
+        <translation><!-- Outros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pneu</masterLabel>
+        <translation><!-- Pneu --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proteção de Ativo</masterLabel>
+        <translation><!-- Proteção de Ativo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Químico</masterLabel>
+        <translation><!-- Químico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Têxtil</masterLabel>
+        <translation><!-- Têxtil --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

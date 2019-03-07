@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Onibus_situacao_da_frota__c</fullName>
+    <externalId>false</externalId>
+    <label>Ônibus - situação da frota</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aumentando</fullName>
+                <default>false</default>
+                <label>Aumentando</label>
+            </value>
+            <value>
+                <fullName>Diminuindo</fullName>
+                <default>false</default>
+                <label>Diminuindo</label>
+            </value>
+            <value>
+                <fullName>Mantendo</fullName>
+                <default>false</default>
+                <label>Mantendo</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Define se verificação de duplicidade de Lead será realizada --></help>
+    <label><!-- Duplicidade lead --></label>
+    <name>Duplicidade_lead__c</name>
+</CustomFieldTranslation>

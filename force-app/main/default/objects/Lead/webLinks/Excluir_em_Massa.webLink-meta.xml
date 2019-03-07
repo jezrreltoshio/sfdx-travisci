@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Excluir_em_Massa</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Excluir em Massa</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>{!REQUIRESCRIPT(&#39;/soap/ajax/29.0/connection.js&#39;)}
+try
+{
+  var selectedRecords = {!GETRECORDIDS( $ObjectType.Lead )};
+  if(selectedRecords.length&lt;1)
+    alert(&#39;Selecione no mínimo 1 lead!&#39;);
+  else
+  {
+    userConsent = confirm(
+        selectedRecords.length + 
+        &#39; Registro(s) será(ão) excluído(s). Continuar ? &#39;
+      );
+    if(userConsent == true)
+    {
+      delResult = sforce.connection.deleteIds(selectedRecords);
+      if (delResult[0].getBoolean(&quot;success&quot;))
+      {
+        alert(&#39;O(s) Registro(s) excluído(s) com sucesso!!!.&#39;); 
+        window.location.reload();
+      }
+      else
+        alert(
+          &#39;O(s) Registro(s) Não foram excluídos. Erro: &#39; + 
+          delResult[0].errors.message
+        );
+    }  
+  }
+}
+catch(e)
+{
+  alert(&#39;A Ação não pode ser completa. Erro: &#39; + e);
+}</url>
+</WebLink>

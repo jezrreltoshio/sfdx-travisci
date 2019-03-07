@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>CORP</layout>
+        <sections>
+            <label><!-- Alçada aprovação --></label>
+            <section>Alçada aprovação</section>
+        </sections>
+        <sections>
+            <label><!-- Alçada aprovação - Valores --></label>
+            <section>Alçada aprovação - Valores</section>
+        </sections>
+        <sections>
+            <label><!-- Campos de sistema --></label>
+            <section>Campos de sistema</section>
+        </sections>
+        <sections>
+            <label><!-- Informações administrativas --></label>
+            <section>Informações administrativas</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de valores --></label>
+            <section>Informações de valores</section>
+        </sections>
+        <sections>
+            <label><!-- Informações sobre o negócio --></label>
+            <section>Informações sobre o negócio</section>
+        </sections>
+        <sections>
+            <label><!-- Nova seção --></label>
+            <section>Nova seção</section>
+        </sections>
+        <sections>
+            <label><!-- Status da geração da proposta --></label>
+            <section>Status da geração da proposta</section>
+        </sections>
+        <sections>
+            <label><!-- Taxa de instalação --></label>
+            <section>Taxa de instalação</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CORP - Argentina</layout>
+        <sections>
+            <label>Nivel de aprobación</label>
+            <section>Alçada aprovação</section>
+        </sections>
+        <sections>
+            <label>Nivel de aprobación</label>
+            <section>Alçada aprovação - Valores</section>
+        </sections>
+        <sections>
+            <label>Detalles de la oportunidad</label>
+            <section>Detalhes da Oportunidade</section>
+        </sections>
+        <sections>
+            <label>Informaciones administrativas</label>
+            <section>Informações administrativas</section>
+        </sections>
+        <sections>
+            <label>Informaciones de valores</label>
+            <section>Informações de valores</section>
+        </sections>
+        <sections>
+            <label>Informaciones sobre el negocio</label>
+            <section>Informações sobre o negócio</section>
+        </sections>
+        <sections>
+            <label>Estado de generación de la propuesta</label>
+            <section>Status da geração da proposta</section>
+        </sections>
+        <sections>
+            <label><!-- Taxa de desinstalação --></label>
+            <section>Taxa de desinstalação</section>
+        </sections>
+        <sections>
+            <label>Tasa de adhesión</label>
+            <section>Taxa de instalação</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CORP - Argentina Demonstração</layout>
+        <sections>
+            <label><!-- Alçada aprovação --></label>
+            <section>Alçada aprovação</section>
+        </sections>
+        <sections>
+            <label><!-- Alçada aprovação - Valores --></label>
+            <section>Alçada aprovação - Valores</section>
+        </sections>
+        <sections>
+            <label><!-- Campos de sistema --></label>
+            <section>Campos de sistema</section>
+        </sections>
+        <sections>
+            <label><!-- Informações administrativas --></label>
+            <section>Informações administrativas</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de valores --></label>
+            <section>Informações de valores</section>
+        </sections>
+        <sections>
+            <label><!-- Informações sobre o negócio --></label>
+            <section>Informações sobre o negócio</section>
+        </sections>
+        <sections>
+            <label><!-- Nova seção --></label>
+            <section>Nova seção</section>
+        </sections>
+        <sections>
+            <label><!-- Status da geração da proposta --></label>
+            <section>Status da geração da proposta</section>
+        </sections>
+        <sections>
+            <label><!-- Taxa de instalação --></label>
+            <section>Taxa de instalação</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CORP - Executivo</layout>
+        <sections>
+            <label><!-- Alçada aprovação - Valores --></label>
+            <section>Alçada aprovação - Valores</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de valores --></label>
+            <section>Informações de valores</section>
+        </sections>
+        <sections>
+            <label><!-- Informações sobre o negócio --></label>
+            <section>Informações sobre o negócio</section>
+        </sections>
+        <sections>
+            <label><!-- Nova seção --></label>
+            <section>Nova seção</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CORP - Televendas</layout>
+        <sections>
+            <label><!-- Alçada aprovação - Valores --></label>
+            <section>Alçada aprovação - Valores</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de valores --></label>
+            <section>Informações de valores</section>
+        </sections>
+        <sections>
+            <label><!-- Informações sobre o negócio --></label>
+            <section>Informações sobre o negócio</section>
+        </sections>
+        <sections>
+            <label><!-- Nova seção --></label>
+            <section>Nova seção</section>
+        </sections>
+        <sections>
+            <label><!-- Status da Geração da Proposta --></label>
+            <section>Status da Geração da Proposta</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Cargo Tracck</layout>
+        <sections>
+            <label><!-- Alçada aprovação --></label>
+            <section>Alçada aprovação</section>
+        </sections>
+        <sections>
+            <label><!-- Alçada aprovação - Valores --></label>
+            <section>Alçada aprovação - Valores</section>
+        </sections>
+        <sections>
+            <label><!-- Campos de sistema --></label>
+            <section>Campos de sistema</section>
+        </sections>
+        <sections>
+            <label><!-- Informações administrativas --></label>
+            <section>Informações administrativas</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de valores --></label>
+            <section>Informações de valores</section>
+        </sections>
+        <sections>
+            <label><!-- Informações sobre o negócio --></label>
+            <section>Informações sobre o negócio</section>
+        </sections>
+        <sections>
+            <label><!-- Nova seção --></label>
+            <section>Nova seção</section>
+        </sections>
+        <sections>
+            <label><!-- Status da geração da proposta --></label>
+            <section>Status da geração da proposta</section>
+        </sections>
+        <sections>
+            <label><!-- Taxa de instalação --></label>
+            <section>Taxa de instalação</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout Blue tec</layout>
+        <sections>
+            <label><!-- Alçada aprovação --></label>
+            <section>Alçada aprovação</section>
+        </sections>
+        <sections>
+            <label><!-- Alçada aprovação - valores --></label>
+            <section>Alçada aprovação - valores</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de valores --></label>
+            <section>Informações de valores</section>
+        </sections>
+        <sections>
+            <label><!-- Informações sobre o negócio --></label>
+            <section>Informações sobre o negócio</section>
+        </sections>
+        <sections>
+            <label><!-- Nova seção --></label>
+            <section>Nova seção</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout OTR</layout>
+        <sections>
+            <label><!-- Alçada aprovação --></label>
+            <section>Alçada aprovação</section>
+        </sections>
+        <sections>
+            <label><!-- Alçada aprovação - valores --></label>
+            <section>Alçada aprovação - valores</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de valores --></label>
+            <section>Informações de valores</section>
+        </sections>
+        <sections>
+            <label><!-- Informações sobre o negócio --></label>
+            <section>Informações sobre o negócio</section>
+        </sections>
+        <sections>
+            <label><!-- Nova seção --></label>
+            <section>Nova seção</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Michelin</layout>
+        <sections>
+            <label><!-- Informações sobre o negócio --></label>
+            <section>Informações sobre o negócio</section>
+        </sections>
+        <sections>
+            <label><!-- Nova seção --></label>
+            <section>Nova seção</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Novo Freteiro</layout>
+        <sections>
+            <label><!-- Alçada aprovação - Valores --></label>
+            <section>Alçada aprovação - Valores</section>
+        </sections>
+        <sections>
+            <label><!-- Canal Indicador --></label>
+            <section>Canal Indicador</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de valores --></label>
+            <section>Informações de valores</section>
+        </sections>
+        <sections>
+            <label><!-- Informações sobre o negócio --></label>
+            <section>Informações sobre o negócio</section>
+        </sections>
+        <sections>
+            <label><!-- Nova seção --></label>
+            <section>Nova seção</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Novo Siggo</layout>
+        <sections>
+            <label><!-- Detalhes da oportunidade --></label>
+            <section>Detalhes da oportunidade</section>
+        </sections>
+        <sections>
+            <label><!-- Informações adicionais --></label>
+            <section>Informações adicionais</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de cobrança --></label>
+            <section>Informações de cobrança</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de cobrança da instalação --></label>
+            <section>Informações de cobrança da instalação</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de cobrança do monitoramento --></label>
+            <section>Informações de cobrança do monitoramento</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de valores --></label>
+            <section>Informações de valores</section>
+        </sections>
+        <sections>
+            <label><!-- Informações do sistema --></label>
+            <section>Informações do sistema</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+        <sections>
+            <label><!-- Pesquisa Recebimento de Boleto de Instalação --></label>
+            <section>Pesquisa Recebimento de Boleto de Instalação</section>
+        </sections>
+        <sections>
+            <label><!-- Status da análise de crédito --></label>
+            <section>Status da análise de crédito</section>
+        </sections>
+        <sections>
+            <label><!-- Status da cotação do seguro --></label>
+            <section>Status da cotação do seguro</section>
+        </sections>
+        <sections>
+            <label><!-- Status da geração da proposta --></label>
+            <section>Status da geração da proposta</section>
+        </sections>
+        <sections>
+            <label><!-- Status do contrato --></label>
+            <section>Status do contrato</section>
+        </sections>
+        <sections>
+            <label><!-- Status geral das análises de crédito --></label>
+            <section>Status geral das análises de crédito</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Oportunidade México.</layout>
+        <sections>
+            <label><!-- Detalhes da Oportunidade --></label>
+            <section>Detalhes da Oportunidade</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de valores --></label>
+            <section>Informações de valores</section>
+        </sections>
+        <sections>
+            <label><!-- Taxa de instalação --></label>
+            <section>Taxa de instalação</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage>No es posible cambiar la descripción del descuento después de que la Oportunidad esté aprobada, inicie Renegociar la Oportunidad de nuevo.</errorMessage>
+        <name>Alterar_descrica_desconto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Usted no tiene permiso para cambiar el origen de este lead.</errorMessage>
+        <name>Alterar_origem_lead_siggo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>No es posible cambiar los valores ya aprobados, inicie Renegociar la oportunidad de nuevo.</errorMessage>
+        <name>Alterar_valores</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>La oportunidad debe enviarse para su aprobación</errorMessage>
+        <name>Aprovacao_de_Payback</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Usted debe enviar esa oportunidad para su aprobación antes de cerrarla como gana.</errorMessage>
+        <name>Argentina_Oportunidade_nao_aprovada</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>No es posible dar descuento en la tasa de instalación / adhesión.</errorMessage>
+        <name>Argentina_oportunidade_televendas</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Obrigatório preencher o CNPJ na Conta. --></errorMessage>
+        <name>CNPJ_CORP_Fase</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Obrigatório preencher o CNPJ / CF na Conta. --></errorMessage>
+        <name>CNPJ_CPF_Freteiro_Fase</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Favor preencher o CNPJ na conta para poder criar uma Oportunidade do tipo CORP --></errorMessage>
+        <name>CORP_CNPJ</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Usuários de Televendas não podem alterar o status para &quot;Fechado&quot; sem antes preencher o campo &quot;Número dos contratos ERP&quot;. --></errorMessage>
+        <name>CORP_Opp_FECHADA_sem_Contrato</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Origem do Lead &quot;Indicador de negócio&quot; é necessário preencher o campo Indicador. --></errorMessage>
+        <name>CORP_Origem_Lead</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Error: Debe insertar un valor&quot;</errorMessage>
+        <name>CORP_Selecione_Executivo_ou_Televendas</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Obrigatório preencher o CPF na Conta. --></errorMessage>
+        <name>CPF_Siggo_Fase</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Catálogo Freteiro somente pode ser utilizado em Oportunidades do tipo Freteiro --></errorMessage>
+        <name>Catalog_Freteiro</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Este catálogo de preço somente pode ser utilizado por usuários do Backoffice --></errorMessage>
+        <name>Catalogo_Backoffice</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para oportunidades CORP não é permitido Catálogos de Preços TIPO. --></errorMessage>
+        <name>Catalogo_preco_Corp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para oportunidades Freteiro não é permitido Catálogos de Preços TIPO. --></errorMessage>
+        <name>Catalogo_preco_Freteiro</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Cantidad de parcelas máxima de 3 veces cuando el pago es 1-Boleto Bancario.</errorMessage>
+        <name>Cobranca_Instalacao</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El valor de la Tasa de Adhesión debe estar por encima del valor mínimo.</errorMessage>
+        <name>ComparaValorAdesao</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El valor de la Tasa de Adhesión debe estar por debajo del valor máximo.</errorMessage>
+        <name>ComparaValorAdesao1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>No es posible dar descuento en el monitoreo para los catálogos TIPO.</errorMessage>
+        <name>DescontoCatalogoTIPO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Usted no puede pasar la oportunidad para esa fase si la misma no está aprobada. Haga clic en enviar para su aprobación y espere la aprobación de la oportunidad.</errorMessage>
+        <name>DescontoMaiorQue7SemAprovacao</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Usted no puede pasar la oportunidad para esa fase antes de generar una propuesta para ella. Haga clic en Nueva en la sesión Propuesta y cree el PDF que se va a enviar al cliente.</errorMessage>
+        <name>DescontoMaiorQue7SemCotacao</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Valor de descuento excedido para este catálogo.</errorMessage>
+        <name>Desconto_Excedido_Bluetec_Avancado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Valor de descuento excedido para este catálogo.</errorMessage>
+        <name>Desconto_Excedido_Bluetec_Basico</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Catálogo Freteiro não pode existir desconto --></errorMessage>
+        <name>Desconto_freteiro</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Introduzca los detalles de la pérdida.</errorMessage>
+        <name>Detalhes_da_perda_da_opp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Da fase &quot;Negociação/Proposta&quot; só é possivel alterar para &quot;Aguardando documentação&quot; ou &quot;Venda Perdida&quot; --></errorMessage>
+        <name>Fase_Aguardando_Documentacao_CORP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Da fase &quot;Aguardando documentação&quot; só é possivel alterar para &quot;Venda Fechada&quot; ou &quot;Venda Perdida&quot; --></errorMessage>
+        <name>Fase_Fechada_CORP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A fase inicial da Oportunidade deve ser &quot;Abordagem inicial&quot; --></errorMessage>
+        <name>Fase_Inicial_CORP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Da fase inicial só é possivel alterar para &quot;Negociação/Proposta&quot; ou &quot;Venda Perdida&quot; --></errorMessage>
+        <name>Fase_Negociacao_Proposta_CORP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Só é possível utilizar a opção de boleto bancário nos tipo de propostas: 6 Downgrade ou 5 Upgrade --></errorMessage>
+        <name>Forma_pagamento_instalacao_boleto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Origem do Lead for igual a &quot;Indicador de negócio&quot; ou &quot;Indicação Parceiro remunerado&quot; é obrigado a preencher o campo &quot;Indicador&quot; --></errorMessage>
+        <name>Freteiro_Origem_Lead</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Origem do Lead for igual a &quot;Indicação Cliente - MGM&quot; é obrigado a preencher o campo &quot;Cliente Indicador&quot; --></errorMessage>
+        <name>Freteiro_Origem_Lead_MGM</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Para completar la venta y cambiar la fase para la Venta cerrada es necesario rellenar el número del término de la intranet.</errorMessage>
+        <name>Freteiro_Preenche_termo_quando_fechado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Usted no tiene permiso para crear este tipo de Oportunidad con Origen del lead Indicador de negocio.</errorMessage>
+        <name>Indicador_de_Negocio_CORP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Usted no tiene permiso para crear este tipo de Oportunidad con Origen del lead Indicador de negocio.</errorMessage>
+        <name>Indicador_de_Negocio_Freteiro</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Usted no tiene permiso para cambiar el campo Indicador en esta oportunidad.</errorMessage>
+        <name>Indicador_de_Negocio_alterar_CORP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Usted no tiene permiso para cambiar el campo Indicador en esta oportunidad.</errorMessage>
+        <name>Indicador_de_Negocio_alterar_Freteiro</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Se debe seleccionar el indicador de negocio.</errorMessage>
+        <name>Indicador_em_branco</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Informe el valor de la tasa de adhesión.</errorMessage>
+        <name>Informar_o_valor_da_taxa_de_adesao</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Para poner en esa fase, es necesario que todos los equipos hayan sido instalados.</errorMessage>
+        <name>InstaladoComMenosEquipamentos</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Para pagos con tarjeta, el número máximo de parcelas es 6. Para pagos con Boleto, número máximo de parcelas es 3.</errorMessage>
+        <name>Limite_Parcelamento_Instalacao</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Para pagos con tarjeta, el número máximo de parcelas es 10. Para pagos con Boleto, número máximo de parcelas es 3.</errorMessage>
+        <name>Limite_Parcelamento_Instalacao_10x</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Registre la tienda elegida para el cliente ser accionado.</errorMessage>
+        <name>Michelin_Preenche_loja</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Registre la tienda elegida y la fecha prevista de la visita del cliente.</errorMessage>
+        <name>Michelin_Preenche_loja_e_data_prevista</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Por favor llene los campos Pérdida para competidor y Motivo de la pérdida</errorMessage>
+        <name>Motivo_da_nao_venda_da_opp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Informe el motivo de la ganancia</errorMessage>
+        <name>Motivo_do_ganho_da_opp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>No se puede informar de un valor negativo.</errorMessage>
+        <name>Negativo_Valor_Taxa_Adesao</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Introduzca el nombre del portador como se indica en la tarjeta.</errorMessage>
+        <name>NomePortador</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Introduzca el nombre del portador como se indica en la tarjeta</errorMessage>
+        <name>NomePortador2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Rellene el campo &quot;Nombre del RC&quot; cuando se seleccione &quot;Prospectado con la ayuda de Michelin (RC)&quot;.</errorMessage>
+        <name>Nome_RC</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Por favor llene el campo justificando el descuento concedido en la Oportunidad</errorMessage>
+        <name>Observacao_desconto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Usted debe enviar esa oportunidad para su aprobación antes de cerrarla como gana.</errorMessage>
+        <name>Oportunidade_nao_aprovada</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Informe si se ha perdido para el competidor</errorMessage>
+        <name>Oportunidade_perdida_CORP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Informe al competidor.</errorMessage>
+        <name>Oportunidade_perdida_CORP_concorrente</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Informe al otro competidor</errorMessage>
+        <name>Oportunidade_perdida_CORP_concorrente_x</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Informe el motivo de la pérdida.</errorMessage>
+        <name>Oportunidade_perdida_CORP_motivo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Informe el motivo de la pérdida.</errorMessage>
+        <name>Oportunidade_perdida_Freteiro</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Informe el motivo de la pérdida.</errorMessage>
+        <name>Oportunidade_perdida_Michelin</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Para pasar la oportunidad a esa fase usted debe insertar los productos comprados por el cliente.</errorMessage>
+        <name>Opp_fechada_sem_produto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>No puede cambiar el valor del origen del lead.</errorMessage>
+        <name>Origem_do_lead_alterada</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Rellene el campo Otros GR</errorMessage>
+        <name>Outro_GR</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Rellene el detalle de Otro Segmento</errorMessage>
+        <name>Outro_Segmento</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Para el pago de la instalación con Boleto bancario el número máximo de parcelas es 3.</errorMessage>
+        <name>Pagamento_Instalacao_Boleto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Para el pago de la instalación con Tarjeta el número máximo de parcelas es 6.</errorMessage>
+        <name>Pagamento_Instalacao_Cartao</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Indique cuántos equipos se han instalado.</errorMessage>
+        <name>ParcialmenteOuInstaladoSemEquipamentos</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Este producto a pesar de pago de instalación con boleto bancario a la vista.</errorMessage>
+        <name>Plano_promocional_siggo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Se informa si habrá tasa de adhesión para esa Oportunidad. Recuerde que la tasa de adhesión equivale a un punto extra en la Oportunidad.</errorMessage>
+        <name>Preencha_a_taxa_de_adesao</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Por favor llene la cantidad de vehículos ligeros</errorMessage>
+        <name>Preencher_quantidade_de_veiculo_leve</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Por favor llene la cantidad de vehículos pesados</errorMessage>
+        <name>Preencher_quantidade_de_veiculo_pesado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Su perfil no permite cambiar el propietario de la oportunidad.</errorMessage>
+        <name>Proprietario_oportunidade</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Seleccione el ejecutivo / televenta que trabajó en esa oportunidad.</errorMessage>
+        <name>Seleciona_Executivo_na_oportunidade</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Catálogo de preço não condiz com a UF da Conta da oportunidade, altere o catálogo utilizado ou verifique se a UF do endereço principal na conta é SP, RJ ou RS. --></errorMessage>
+        <name>Siggo_Demais_estados</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Para cambiar la Oportunidad para esta fase, rellene los campos: Año, Modelo, Marca, Chasis y Renan en Información del vehículo.</errorMessage>
+        <name>Siggo_Informacoes_sobre_o_veiculo_fechad</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Para cambiar la Oportunidad para esta fase, rellene los campos: Año, Modelo, Marca, Chasis y Renan en Información del vehículo.</errorMessage>
+        <name>Siggo_Informacoes_sobre_o_veiculo_instal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Para cambiar la Oportunidad para esta fase, rellene los campos: Año, Modelo, Marca, Chasis y Renan en Información del vehículo.</errorMessage>
+        <name>Siggo_Informacoes_sobre_o_veiculo_pgto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Es necesario informar los datos de la tarjeta de crédito que se utilizará para el pago de la instalación</errorMessage>
+        <name>Siggo_Instalacoa_DadosCartao</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Catálogo de preço não condiz com a UF da Conta da oportunidade, altere o catálogo utilizado ou verifique se a UF do endereço principal na conta é diferente de RJ ou RS. --></errorMessage>
+        <name>Siggo_RJ_RS_estado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Catálogo de preço não condiz com a UF da Conta da oportunidade, altere o catálogo utilizado ou verifique se a UF do endereço principal na conta é diferente de SP. --></errorMessage>
+        <name>Siggo_SP_estado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Es necesario incluir el producto para continuar con la Oportunidad.</errorMessage>
+        <name>Siggo_impede_negociacao_sem_produto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Para cerrar esta oportunidad, rellene los campos Tasa de adhesión = SÍ y Valor de la tasa de adhesión.</errorMessage>
+        <name>Taxa_Adesao</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Oportunidades CORP devem ter taxa de adesão = SIM e valor da taxa de adesão informado. --></errorMessage>
+        <name>Taxa_adesao_CORP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Valor de la tasa de adhesión fuera del mínimo o máximo.</errorMessage>
+        <name>Taxa_maxima_minima</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Establezca el valor de la tasa de adhesión.</errorMessage>
+        <name>Televendas</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Usted no tiene autorización para utilizar este tipo de catálogo.</errorMessage>
+        <name>Televendas_Bluetec</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Compruebe la información de la tarjeta de crédito (número y código de seguridad). Sólo se aceptan números.</errorMessage>
+        <name>Valida_Dados_Cartao</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Información de la tarjeta de crédito (número y código de seguridad) no válida.</errorMessage>
+        <name>Valida_Formato_Dados_Cartao</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Oportunidade CORP deve ter o campo Executivo / TV Parceiro preenchido e o Proprietário não pode ser igual ao Executivo/TV parceiro --></errorMessage>
+        <name>Valida_se_proprietario_igual_ao_executiv</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El producto seleccionado tiene un valor menor o mayor que el valor del modelo seleccionado, por favor corregir el producto.</errorMessage>
+        <name>Valor100mil</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El producto seleccionado tiene un valor menor o mayor que el valor del modelo seleccionado, por favor corregir el producto.</errorMessage>
+        <name>Valor110mil</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El producto seleccionado tiene un valor menor o mayor que el valor del modelo seleccionado, por favor corregir el producto.</errorMessage>
+        <name>Valor120mil</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El producto seleccionado tiene un valor menor o mayor que el valor del modelo seleccionado, por favor corregir el producto.</errorMessage>
+        <name>Valor20mil</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El producto seleccionado tiene un valor menor o mayor que el valor del modelo seleccionado, por favor corregir el producto.</errorMessage>
+        <name>Valor30mil</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El producto seleccionado tiene un valor menor o mayor que el valor del modelo seleccionado, por favor corregir el producto.</errorMessage>
+        <name>Valor40mil</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El producto seleccionado tiene un valor menor o mayor que el valor del modelo seleccionado, por favor corregir el producto.</errorMessage>
+        <name>Valor50mil</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El producto seleccionado tiene un valor menor o mayor que el valor del modelo seleccionado, por favor corregir el producto.</errorMessage>
+        <name>Valor60mil</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El producto seleccionado tiene un valor menor o mayor que el valor del modelo seleccionado, por favor corregir el producto.</errorMessage>
+        <name>Valor70mil</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El producto seleccionado tiene un valor menor o mayor que el valor del modelo seleccionado, por favor corregir el producto.</errorMessage>
+        <name>Valor80mil</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El producto seleccionado tiene un valor menor o mayor que el valor del modelo seleccionado, por favor corregir el producto.</errorMessage>
+        <name>Valor90mil</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- O valor mínimo da taxa de adesão é R$ 50,00. --></errorMessage>
+        <name>Valor_da_taxa_menor_que_50</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Introduzca el (los) número (s) del (de los) Contrato (s).</errorMessage>
+        <name>Venda_Fechada_Informar_Contratos</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>No se puede cambiar el catálogo de precios en la renegociación.</errorMessage>
+        <name>VerificaAlteracaoCatalogoPreco</name>
+    </validationRules>
+    <workflowTasks>
+        <name>Vencimento_da_Demonstra_o</name>
+        <subject><!-- Vencimento da Demonstração --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Vencimento_da_Oportunidade</name>
+        <subject><!-- Vencimento da Oportunidade --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

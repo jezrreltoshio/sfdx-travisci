@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_de_carreta__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo de carreta</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Tipo_de_ve_culo__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>BASCULANTE</fullName>
+                <default>false</default>
+                <label>BASCULANTE</label>
+            </value>
+            <value>
+                <fullName>BAÚ</fullName>
+                <default>false</default>
+                <label>BAÚ</label>
+            </value>
+            <value>
+                <fullName>BULK</fullName>
+                <default>false</default>
+                <label>BULK</label>
+            </value>
+            <value>
+                <fullName>CANAVIEIRO</fullName>
+                <default>false</default>
+                <label>CANAVIEIRO</label>
+            </value>
+            <value>
+                <fullName>CARGA SECA</fullName>
+                <default>false</default>
+                <label>CARGA SECA</label>
+            </value>
+            <value>
+                <fullName>CARREGA TUDO</fullName>
+                <default>false</default>
+                <label>CARREGA TUDO</label>
+            </value>
+            <value>
+                <fullName>CEGONHA</fullName>
+                <default>false</default>
+                <label>CEGONHA</label>
+            </value>
+            <value>
+                <fullName>FLORESTAL</fullName>
+                <default>false</default>
+                <label>FLORESTAL</label>
+            </value>
+            <value>
+                <fullName>FRIGORÍFICO</fullName>
+                <default>false</default>
+                <label>FRIGORÍFICO</label>
+            </value>
+            <value>
+                <fullName>GELADEIRA</fullName>
+                <default>false</default>
+                <label>GELADEIRA</label>
+            </value>
+            <value>
+                <fullName>GRANEL</fullName>
+                <default>false</default>
+                <label>GRANEL</label>
+            </value>
+            <value>
+                <fullName>OUTRO</fullName>
+                <default>false</default>
+                <label>OUTRO</label>
+            </value>
+            <value>
+                <fullName>OUTROS</fullName>
+                <default>false</default>
+                <label>OUTROS</label>
+            </value>
+            <value>
+                <fullName>PORTA CONTEINER</fullName>
+                <default>false</default>
+                <label>PORTA CONTEINER</label>
+            </value>
+            <value>
+                <fullName>SIDER</fullName>
+                <default>false</default>
+                <label>SIDER</label>
+            </value>
+            <value>
+                <fullName>SILO</fullName>
+                <default>false</default>
+                <label>SILO</label>
+            </value>
+            <value>
+                <fullName>SILO CIMENTO</fullName>
+                <default>false</default>
+                <label>SILO CIMENTO</label>
+            </value>
+            <value>
+                <fullName>TANQUE ALIMENTAR</fullName>
+                <default>false</default>
+                <label>TANQUE ALIMENTAR</label>
+            </value>
+            <value>
+                <fullName>TANQUE COMBUSTÍVEL</fullName>
+                <default>false</default>
+                <label>TANQUE COMBUSTÍVEL</label>
+            </value>
+            <value>
+                <fullName>TANQUE GÁS</fullName>
+                <default>false</default>
+                <label>TANQUE GÁS</label>
+            </value>
+            <value>
+                <fullName>TANQUE QUÍMICO</fullName>
+                <default>false</default>
+                <label>TANQUE QUÍMICO</label>
+            </value>
+            <value>
+                <fullName>TRONCO</fullName>
+                <default>false</default>
+                <label>TRONCO</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>SEMI-REBOQUE</controllingFieldValue>
+            <valueName>BULK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SEMI-REBOQUE</controllingFieldValue>
+            <valueName>GELADEIRA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SEMI-REBOQUE</controllingFieldValue>
+            <controllingFieldValue>CARRETA</controllingFieldValue>
+            <valueName>OUTRO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SEMI-REBOQUE</controllingFieldValue>
+            <controllingFieldValue>CARRETA</controllingFieldValue>
+            <valueName>OUTROS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SEMI-REBOQUE</controllingFieldValue>
+            <controllingFieldValue>CARRETA</controllingFieldValue>
+            <valueName>SIDER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SEMI-REBOQUE</controllingFieldValue>
+            <controllingFieldValue>CARRETA</controllingFieldValue>
+            <valueName>TANQUE COMBUSTÍVEL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SEMI-REBOQUE</controllingFieldValue>
+            <controllingFieldValue>CARRETA</controllingFieldValue>
+            <valueName>TANQUE GÁS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SEMI-REBOQUE</controllingFieldValue>
+            <controllingFieldValue>CARRETA</controllingFieldValue>
+            <valueName>TANQUE QUÍMICO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SEMI-REBOQUE</controllingFieldValue>
+            <valueName>TRONCO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARRETA</controllingFieldValue>
+            <valueName>BASCULANTE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARRETA</controllingFieldValue>
+            <valueName>BAÚ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARRETA</controllingFieldValue>
+            <valueName>CANAVIEIRO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARRETA</controllingFieldValue>
+            <valueName>CARGA SECA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARRETA</controllingFieldValue>
+            <valueName>CARREGA TUDO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARRETA</controllingFieldValue>
+            <valueName>CEGONHA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARRETA</controllingFieldValue>
+            <valueName>FLORESTAL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARRETA</controllingFieldValue>
+            <valueName>FRIGORÍFICO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARRETA</controllingFieldValue>
+            <valueName>GRANEL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARRETA</controllingFieldValue>
+            <valueName>PORTA CONTEINER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARRETA</controllingFieldValue>
+            <valueName>SILO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARRETA</controllingFieldValue>
+            <valueName>SILO CIMENTO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARRETA</controllingFieldValue>
+            <valueName>TANQUE ALIMENTAR</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

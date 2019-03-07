@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Origen del Lead Agrupado</label>
+    <name>Origem_Lead_Agrupado__c</name>
+    <picklistValues>
+        <masterLabel>Ataque à base</masterLabel>
+        <translation>Ataque a la base</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ativo - Prospecção do TV</masterLabel>
+        <translation>Activo - Prospección del TV</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ações MKT</masterLabel>
+        <translation>Acciones MKT</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Busca Google</masterLabel>
+        <translation>Búsqueda Google</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canal Exclusivo de Indicações</masterLabel>
+        <translation>Canal Exclusivo de Indicaciones</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chat Siggo</masterLabel>
+        <translation>Chat Siggo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E-commerce</masterLabel>
+        <translation>E-commerce</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email MKT</masterLabel>
+        <translation>Correo electrónico MKT</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Evento Feira ou convenção</masterLabel>
+        <translation>Evento Feria o convención</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Facebook</masterLabel>
+        <translation>Facebook</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Formulário Home Siggo</masterLabel>
+        <translation>Formulario Home Siggo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fornecedor de Leads</masterLabel>
+        <translation>Proveedor de Leads</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Frota Circulante - Executivo</masterLabel>
+        <translation>Flota rodante - Ejecutivo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indicador</masterLabel>
+        <translation>Indicador</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indicador de Negócio</masterLabel>
+        <translation>Indicador de negocio</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indicação</masterLabel>
+        <translation>Indicación</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indicação de Cliente MGM</masterLabel>
+        <translation>Indicación de cliente MGM</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loja Michelin</masterLabel>
+        <translation>Tienda Michelin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mailing</masterLabel>
+        <translation>Mailing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Michelin</masterLabel>
+        <translation>Michelin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mídia TV</masterLabel>
+        <translation>Mídia TV</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outros</masterLabel>
+        <translation>Otros</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parcerias</masterLabel>
+        <translation>Asociaciones</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SMS</masterLabel>
+        <translation><!-- SMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Sascar</masterLabel>
+        <translation>Sitio web Sascar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Sascar Integrado</masterLabel>
+        <translation>Sitio web Sascar Integrado</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Siggo</masterLabel>
+        <translation><!-- Site Siggo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Siggo Receptivo</masterLabel>
+        <translation><!-- Site Siggo Receptivo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Totem Michelin</masterLabel>
+        <translation><!-- Totem Michelin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>You Tube</masterLabel>
+        <translation><!-- You Tube --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

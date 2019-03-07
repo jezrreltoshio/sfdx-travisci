@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contas_Indicador</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>IdExternoClienteIndicador__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>IdExternoClienteIndicador__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Contas Indicador</label>
+    <sharedTo>
+        <role>ADMINISTRADOR</role>
+        <role>ADMINISTRADOR_COMERCIAL</role>
+        <role>ANALISTA_CARGO_TRACCK</role>
+        <role>CADASTRO</role>
+        <role>CANAL_INDICADOR</role>
+        <role>CEO</role>
+        <role>CONSULTOR_CARGO_TRACCK</role>
+        <role>COORDENADOR_CARGO_TRACCK</role>
+        <role>DATABASEMKT</role>
+        <role>DIRETOR</role>
+        <role>GERENTE_CARGO_TRACCK</role>
+        <role>GERENTE_TELEVENDAS</role>
+        <role>SUPERVISOR_CARGO_TRACCK</role>
+        <role>SUPERVISOR_CORE_2</role>
+        <role>SUPERVISOR_FRETEIRO</role>
+        <role>SUPERVISO_R_SIGGO</role>
+        <role>TELEVENDAS_CARGO_TRACCK</role>
+        <role>TELEVENDAS_FRETEIRO</role>
+        <role>TELEVENDAS_SIGGO</role>
+        <role>Televendas_Externo_Siggo</role>
+    </sharedTo>
+</ListView>

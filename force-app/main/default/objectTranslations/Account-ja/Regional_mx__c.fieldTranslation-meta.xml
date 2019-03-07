@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Regional --></label>
+    <name>Regional_mx__c</name>
+    <picklistValues>
+        <masterLabel>Bajio - Mexico</masterLabel>
+        <translation><!-- Bajio - Mexico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Centro - Mexico</masterLabel>
+        <translation><!-- Centro - Mexico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Norte - Mexico</masterLabel>
+        <translation><!-- Norte - Mexico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sul - Mexico</masterLabel>
+        <translation><!-- Sul - Mexico --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

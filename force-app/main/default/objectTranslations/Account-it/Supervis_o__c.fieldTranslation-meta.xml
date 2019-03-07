@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Supervisão --></label>
+    <name>Supervis_o__c</name>
+    <picklistValues>
+        <masterLabel>CENTRO OESTE</masterLabel>
+        <translation><!-- CENTRO OESTE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KEY ACCOUNT MGRJES</masterLabel>
+        <translation><!-- KEY ACCOUNT MGRJES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KEY ACCOUNT NONECO</masterLabel>
+        <translation><!-- KEY ACCOUNT NONECO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KEY ACCOUNT SP</masterLabel>
+        <translation><!-- KEY ACCOUNT SP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KEY ACCOUNT SUL</masterLabel>
+        <translation><!-- KEY ACCOUNT SUL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MG</masterLabel>
+        <translation><!-- MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NORDESTE I</masterLabel>
+        <translation><!-- NORDESTE I --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NORDESTE II</masterLabel>
+        <translation><!-- NORDESTE II --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PARANÁ</masterLabel>
+        <translation><!-- PARANÁ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RIO GRANDE DO SUL</masterLabel>
+        <translation><!-- RIO GRANDE DO SUL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RJ-ES</masterLabel>
+        <translation><!-- RJ-ES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SANTA CATARINA</masterLabel>
+        <translation><!-- SANTA CATARINA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP-ABC-GRU-LITORAL</masterLabel>
+        <translation><!-- SP-ABC-GRU-LITORAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP-CAPITAL</masterLabel>
+        <translation><!-- SP-CAPITAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP-INTERIOR</masterLabel>
+        <translation><!-- SP-INTERIOR --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

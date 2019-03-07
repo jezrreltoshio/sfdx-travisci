@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cargo_Tracck</fullName>
+    <active>true</active>
+    <label>Cargo Tracck</label>
+    <picklistValues>
+        <picklist>AtividadeVisita__c</picklist>
+        <values>
+            <fullName>Acompanhamento Operacional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Acompanhamento de demonstração</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Acompanhamento de plano ações</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Analises%2FConfecção de Relatórios%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apresentação de Solução Sascar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assinatura de termo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atualização dos dados do cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auditoria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cifragem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consultoria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Downgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entender o Cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entrega de relatório auditoria - cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entrega%2F Retirada de Equipamentos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informação da Concorrência</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instalação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Levantamento de oportunidades</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Montagem do plano de ação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negociação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposta comercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REUNIAO APRESENTACAO AUDITORIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renegociação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolução de problema técnicos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolução de reclamação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retenção</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reunião apresentação auditoria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reunião apresentação relatório pós sinistros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reunião com o Cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reunião com parceiros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reunião%2F Treinamento interno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sessão comercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supervisão PA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suporte a Sistemas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suporte a equipamentos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suporte a equipamentos %E2%80%93 manutenção</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teste CT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treinamento Cliente  Base</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treinamento Cliente Novo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treinamento do cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vista cancelada pelo cliente</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cadencia__c</picklist>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>À planejar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Circuito__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Convidados__c</picklist>
+        <values>
+            <fullName>Alexandre Biscaro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Antenista</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aparecido Gardão</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>César Figueiredo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diego Gama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diogo Silva</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eduardo Dodo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evandro Rodrigues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Executivo Core</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fernando Nogueira</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>José Marcelo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kleber Marcelino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marcio Fugisava</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marlos Oliveira</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mayra Neves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Murilo Archilia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patrícia Santos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rafael Ribeiro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raphael Curt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Samuel Alcântara</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>J_cliente__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mix_de_Produto__c</picklist>
+        <values>
+            <fullName>CARGA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GSM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Motivo__c</picklist>
+        <values>
+            <fullName>Churn - Associação %2F Cooperativa %2F GR %2F Seguradora</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Churn - Concorrência</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Churn - Insatisfação com Atendimento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Churn - Insatisfação com Comercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Churn - Insatisfação com Produto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Churn - Insatisfação com Sistemas %28queda%2Flentidão%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Churn - Insatisfação com Área Financeira</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Churn - Insatisfação com Área técnica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Churn - Outros %28especificar%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Churn - Situação Financeira do cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Churn - Substituição da Frota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Churn - Venda do Veículo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Motivo_perda__c</picklist>
+        <values>
+            <fullName>Cliente não localizado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compra de pneu recente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Condição comercial não aprovada pela Sascar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Condição de pagamento das revendas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contratante não ganhou licitação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Desconto baixo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dual Chip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicidade de oportunidade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em trânsito%2C fora da região</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Está apenas cotando</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Falta de customização</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Falta de integração</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fechado em Pessoa Física</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fechado em pessoa jurídica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fidelidade com concorrente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Funcionalidades</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garantia de recuperação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instalação sem parcelamento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investimento na troca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Já possui o produto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mensalidade de locação infinita</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modelo de veículo não contemplado na oferta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optou concorrência</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optou pela concorrência - Condições%2Fvigência</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optou pela concorrência - Exigência Transportadora</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optou pela concorrência - Preço</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optou pela concorrência - Produto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optou por outro produto Sascar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optou por outro produto Sascar %28SASMDT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optou seguradora</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros %28informar detalhes%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Placa já consta na base</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Porque acho o pneu Michelin caro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prazo do Contrato</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Produto com Seguro - Moto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Produto sem bloqueio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Produto sem seguro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualidade do produto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relacionamento com a revenda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restrição Serasa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restrição de crédito</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seguro com rastreador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sem condições financeiras para aquisição</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sem necessidade de realizar a troca no período da promoção</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sem uso do veículo %28parado%2Fserá vendido%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taxa de retirada e reinstalação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tecnologia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Titular não pode se deslocar à loja %28Recebe visita do vendedor de pneu%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Titular não pode se deslocar à loja %28Titular não é o freteiro%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uso agressivo%2C não vale a pena</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valor da instalação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valor da mensalidade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valor da multa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Última experiencia ruim com Michelin</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Possui_indicador__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ramo_de_Atividade__c</picklist>
+        <values>
+            <fullName>Alimentos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotivo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bens de Consumo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calçados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cigarro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-Commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eletrônico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fracionado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fracionado eletrônico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frigorífico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medicamento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metalúrgico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pneu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proteção de Ativo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Químico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Têxtil</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject</picklist>
+        <values>
+            <fullName>Atendimento Comercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atendimento Pós vendas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atendimento Pós vendas CT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enviar carta%2Fcotação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Falta de Estoque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Levantamento de Oportunidade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Llamada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problema Financeiro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problemas Operacional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reunião</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Treinamento</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_de_cliente__c</picklist>
+        <values>
+            <fullName>A fidelizar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente Base</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tipo_de_visita__c</picklist>
+        <values>
+            <fullName>Não presencial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Presencial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Presencial %2F Não presencial</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Chamada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reunião</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

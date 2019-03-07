@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Nível de Satisfação - Ligações Ativas --></label>
+    <name>N_vel_de_Satisfa_o_Liga_es_Ativas__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Banco__c</fullName>
+    <externalId>false</externalId>
+    <label>Banco</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>001 - BANCO DO BRASIL</fullName>
+                <default>false</default>
+                <label>001 - BANCO DO BRASIL</label>
+            </value>
+            <value>
+                <fullName>033 - SANTANDER</fullName>
+                <default>false</default>
+                <label>033 - SANTANDER</label>
+            </value>
+            <value>
+                <fullName>104 - CAIXA ECONÔMICA FEDERAL</fullName>
+                <default>false</default>
+                <label>104 - CAIXA ECONÔMICA FEDERAL</label>
+            </value>
+            <value>
+                <fullName>237 - BRADESCO</fullName>
+                <default>false</default>
+                <label>237 - BRADESCO</label>
+            </value>
+            <value>
+                <fullName>341 - ITAÚ</fullName>
+                <default>false</default>
+                <label>341 - ITAÚ</label>
+            </value>
+            <value>
+                <fullName>0007 - BANCO DE GALICIA Y BUENOS AIRES S.A.</fullName>
+                <default>false</default>
+                <label>0007 - BANCO DE GALICIA Y BUENOS AIRES S.A.</label>
+            </value>
+            <value>
+                <fullName>0011 - BANCO DE LA NACION ARGENTINA</fullName>
+                <default>false</default>
+                <label>0011 - BANCO DE LA NACION ARGENTINA</label>
+            </value>
+            <value>
+                <fullName>0014 - BANCO DE LA PROVINCIA DE BUENOS AIRES</fullName>
+                <default>false</default>
+                <label>0014 - BANCO DE LA PROVINCIA DE BUENOS AIRES</label>
+            </value>
+            <value>
+                <fullName>0015 - INDUSTRIAL AND COMMERCIAL BANK OF CHINA</fullName>
+                <default>false</default>
+                <label>0015 - INDUSTRIAL AND COMMERCIAL BANK OF CHINA</label>
+            </value>
+            <value>
+                <fullName>0016 - CITIBANK N.A.</fullName>
+                <default>false</default>
+                <label>0016 - CITIBANK N.A.</label>
+            </value>
+            <value>
+                <fullName>0017 - BBVA BANCO FRANCES S.A.</fullName>
+                <default>false</default>
+                <label>0017 - BBVA BANCO FRANCES S.A.</label>
+            </value>
+            <value>
+                <fullName>0020 - BANCO DE LA PROVINCIA DE CORDOBA S.A.</fullName>
+                <default>false</default>
+                <label>0020 - BANCO DE LA PROVINCIA DE CORDOBA S.A.</label>
+            </value>
+            <value>
+                <fullName>0027 - BANCO SUPERVIELLE S.A.</fullName>
+                <default>false</default>
+                <label>0027 - BANCO SUPERVIELLE S.A.</label>
+            </value>
+            <value>
+                <fullName>0029 - BANCO DE LA CIUDAD DE BUENOS AIRES</fullName>
+                <default>false</default>
+                <label>0029 - BANCO DE LA CIUDAD DE BUENOS AIRES</label>
+            </value>
+            <value>
+                <fullName>0034 - BANCO PATAGONIA S.A.</fullName>
+                <default>false</default>
+                <label>0034 - BANCO PATAGONIA S.A.</label>
+            </value>
+            <value>
+                <fullName>0044 - BANCO HIPOTECARIO S.A.</fullName>
+                <default>false</default>
+                <label>0044 - BANCO HIPOTECARIO S.A.</label>
+            </value>
+            <value>
+                <fullName>0045 - BANCO DE SAN JUAN S.A.</fullName>
+                <default>false</default>
+                <label>0045 - BANCO DE SAN JUAN S.A.</label>
+            </value>
+            <value>
+                <fullName>0060 - BANCO DEL TUCUMAN S.A.</fullName>
+                <default>false</default>
+                <label>0060 - BANCO DEL TUCUMAN S.A.</label>
+            </value>
+            <value>
+                <fullName>0065 - BANCO MUNICIPAL DE ROSARIO</fullName>
+                <default>false</default>
+                <label>0065 - BANCO MUNICIPAL DE ROSARIO</label>
+            </value>
+            <value>
+                <fullName>0072 - BANCO SANTANDER RIO S.A.</fullName>
+                <default>false</default>
+                <label>0072 - BANCO SANTANDER RIO S.A.</label>
+            </value>
+            <value>
+                <fullName>0083 - BANCO DEL CHUBUT S.A.</fullName>
+                <default>false</default>
+                <label>0083 - BANCO DEL CHUBUT S.A.</label>
+            </value>
+            <value>
+                <fullName>0086 - BANCO DE SANTA CRUZ S.A.</fullName>
+                <default>false</default>
+                <label>0086 - BANCO DE SANTA CRUZ S.A.</label>
+            </value>
+            <value>
+                <fullName>0093 - BANCO DE LA PAMPA SOCIEDAD DE ECONOMÍA M</fullName>
+                <default>false</default>
+                <label>0093 - BANCO DE LA PAMPA SOCIEDAD DE ECONOMÍA M</label>
+            </value>
+            <value>
+                <fullName>0094 - BANCO DE CORRIENTES S.A.</fullName>
+                <default>false</default>
+                <label>0094 - BANCO DE CORRIENTES S.A.</label>
+            </value>
+            <value>
+                <fullName>0097 - BANCO PROVINCIA DEL NEUQUÉN SOCIEDAD ANÓ</fullName>
+                <default>false</default>
+                <label>0097 - BANCO PROVINCIA DEL NEUQUÉN SOCIEDAD ANÓ</label>
+            </value>
+            <value>
+                <fullName>0150 - HSBC BANK ARGENTINA S.A.</fullName>
+                <default>false</default>
+                <label>0150 - HSBC BANK ARGENTINA S.A.</label>
+            </value>
+            <value>
+                <fullName>0191 - BANCO CREDICOOP COOPERATIVO LIMITADO</fullName>
+                <default>false</default>
+                <label>0191 - BANCO CREDICOOP COOPERATIVO LIMITADO</label>
+            </value>
+            <value>
+                <fullName>0259 - BANCO ITAU ARGENTINA S.A.</fullName>
+                <default>false</default>
+                <label>0259 - BANCO ITAU ARGENTINA S.A.</label>
+            </value>
+            <value>
+                <fullName>0262 - BANK OF AMERICA, NATIONAL ASSOCIATION</fullName>
+                <default>false</default>
+                <label>0262 - BANK OF AMERICA, NATIONAL ASSOCIATION</label>
+            </value>
+            <value>
+                <fullName>0266 - BNP PARIBAS</fullName>
+                <default>false</default>
+                <label>0266 - BNP PARIBAS</label>
+            </value>
+            <value>
+                <fullName>0268 - BANCO PROVINCIA DE TIERRA DEL FUEGO</fullName>
+                <default>false</default>
+                <label>0268 - BANCO PROVINCIA DE TIERRA DEL FUEGO</label>
+            </value>
+            <value>
+                <fullName>0269 - BANCO DE LA REPUBLICA ORIENTAL DEL URUGU</fullName>
+                <default>false</default>
+                <label>0269 - BANCO DE LA REPUBLICA ORIENTAL DEL URUGU</label>
+            </value>
+            <value>
+                <fullName>0285 - BANCO MACRO S.A.</fullName>
+                <default>false</default>
+                <label>0285 - BANCO MACRO S.A.</label>
+            </value>
+            <value>
+                <fullName>0299 - BANCO COMAFI SOCIEDAD ANONIMA</fullName>
+                <default>false</default>
+                <label>0299 - BANCO COMAFI SOCIEDAD ANONIMA</label>
+            </value>
+            <value>
+                <fullName>0301 - BANCO PIANO S.A.</fullName>
+                <default>false</default>
+                <label>0301 - BANCO PIANO S.A.</label>
+            </value>
+            <value>
+                <fullName>0309 - BANCO RIOJA SOCIEDAD ANONIMA UNIPERSONAL</fullName>
+                <default>false</default>
+                <label>0309 - BANCO RIOJA SOCIEDAD ANONIMA UNIPERSONAL</label>
+            </value>
+            <value>
+                <fullName>0310 - BANCO DEL SOL S.A.</fullName>
+                <default>false</default>
+                <label>0310 - BANCO DEL SOL S.A.</label>
+            </value>
+            <value>
+                <fullName>0311 - NUEVO BANCO DEL CHACO S. A.</fullName>
+                <default>false</default>
+                <label>0311 - NUEVO BANCO DEL CHACO S. A.</label>
+            </value>
+            <value>
+                <fullName>0312 - BANCO VOII S.A.</fullName>
+                <default>false</default>
+                <label>0312 - BANCO VOII S.A.</label>
+            </value>
+            <value>
+                <fullName>0315 - BANCO DE FORMOSA S.A.</fullName>
+                <default>false</default>
+                <label>0315 - BANCO DE FORMOSA S.A.</label>
+            </value>
+            <value>
+                <fullName>0319 - BANCO CMF S.A.</fullName>
+                <default>false</default>
+                <label>0319 - BANCO CMF S.A.</label>
+            </value>
+            <value>
+                <fullName>0321 - BANCO DE SANTIAGO DEL ESTERO S.A.</fullName>
+                <default>false</default>
+                <label>0321 - BANCO DE SANTIAGO DEL ESTERO S.A.</label>
+            </value>
+            <value>
+                <fullName>0322 - BANCO INDUSTRIAL S.A.</fullName>
+                <default>false</default>
+                <label>0322 - BANCO INDUSTRIAL S.A.</label>
+            </value>
+            <value>
+                <fullName>0325 - DEUTSCHE BANK S.A.</fullName>
+                <default>false</default>
+                <label>0325 - DEUTSCHE BANK S.A.</label>
+            </value>
+            <value>
+                <fullName>0330 - NUEVO BANCO DE SANTA FE SOCIEDAD ANONIMA</fullName>
+                <default>false</default>
+                <label>0330 - NUEVO BANCO DE SANTA FE SOCIEDAD ANONIMA</label>
+            </value>
+            <value>
+                <fullName>0389 - BANCO COLUMBIA S.A.</fullName>
+                <default>false</default>
+                <label>0389 - BANCO COLUMBIA S.A.</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

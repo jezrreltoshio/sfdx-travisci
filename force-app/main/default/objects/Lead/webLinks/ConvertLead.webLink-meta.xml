@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ConvertLead</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Converter Lead</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/38.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/38.0/apex.js&quot;)} 
+
+leadConvert();
+
+function leadConvert(){
+	var cnpj = &#39;{!Lead.CNPJ__c}&#39;; 
+	var segmento = &#39;{!Lead.Segmento__c}&#39;; 
+	var tipoCliente = &#39;{!Lead.Tipo_de_cliente__c}&#39;; 
+	var perfil = &#39;{!$Profile.Name}&#39;;
+
+	if(cnpj == &#39;&#39;){
+		alert(&#39;Insira um &quot;CNPJ&quot; para converter o Lead&#39;); 
+	}
+	else if( perfil == &#39;CORP - Executivo&#39; &amp;&amp; segmento == &#39;&#39;){
+		alert(&#39;Insira um &quot;Segmento&quot; para converter o Lead&#39;); 
+	}
+	else if(tipoCliente == &#39;&#39;){
+		alert(&#39;Insira um &quot;tipo de Cliente&quot; para converter o Lead&#39;); 
+	}
+	else{
+		var button = document.querySelector(&quot;input[name=&#39;convertlead&#39;]&quot;);
+		button.setAttribute(&quot;disabled&quot;, &quot;disabled&quot;);
+		button.classList.add(&#39;btnDisabled&#39;);
+		button.parentElement.innerHTML += &#39;&lt;img style=&quot;position: relative;top: 4px;left: 5px;&quot; src=&quot;/img/loading.gif&quot;/&gt;&lt;span value=&quot;carregando&quot;/&gt;&#39;;
+
+                var endereco =  &quot;https://&quot;+window.location.hostname+&quot;/lead/leadconvert.jsp?retURL=%2F&quot;+&#39;{!Lead.Id}&#39;+&quot;&amp;id=&quot;+&#39;{!Lead.Id}&#39;;
+
+                window.location.href = endereco;
+
+	}
+}</url>
+</WebLink>

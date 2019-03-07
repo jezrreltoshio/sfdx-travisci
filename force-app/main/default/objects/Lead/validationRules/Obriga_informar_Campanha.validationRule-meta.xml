@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Obriga_informar_Campanha</fullName>
+    <active>true</active>
+    <description>Em Lead, quando a origem do Lead for igual a TV, obrigar o preenchimento do campo campanha.</description>
+    <errorConditionFormula>AND(
+RecordType.Name &lt;&gt; &#39;Blue tec&#39;,
+ISBLANK(Campanha__c), 
+ISBLANK(CampaignId),
+OR(ISPICKVAL(LeadSource, &#39;Frota Circulante - Executivo&#39;),
+ISPICKVAL(LeadSource, &#39;TV*&#39;),
+ISPICKVAL(LeadSource, &#39;Evento Feira ou convenção&#39;))
+)</errorConditionFormula>
+    <errorMessage>Para essa origem é obrigatório preencher o campo Campanha.</errorMessage>
+</ValidationRule>

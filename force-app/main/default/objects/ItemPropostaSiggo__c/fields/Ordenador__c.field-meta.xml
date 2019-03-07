@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ordenador__c</fullName>
+    <description>Campo utilizado para ordernar os itens da proposta porque o serviço da intranet não permite identificar cada um dos itens.</description>
+    <externalId>false</externalId>
+    <label>Ordenador</label>
+    <trackTrending>false</trackTrending>
+    <type>AutoNumber</type>
+</CustomField>

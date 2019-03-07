@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Por que a Michelin não foi a sua opção? --></label>
+    <name>Por_que_a_Michelin_n_o_foi_a_sua_op_o__c</name>
+    <picklistValues>
+        <masterLabel>Atendimento da Revenda</masterLabel>
+        <translation><!-- Atendimento da Revenda --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Crédito</masterLabel>
+        <translation><!-- Crédito --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Durabilidade</masterLabel>
+        <translation><!-- Durabilidade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não informado</masterLabel>
+        <translation><!-- Não informado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outros</masterLabel>
+        <translation><!-- Outros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prazo de pagamento</masterLabel>
+        <translation><!-- Prazo de pagamento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Preço</masterLabel>
+        <translation><!-- Preço --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

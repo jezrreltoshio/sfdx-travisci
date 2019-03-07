@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo de veículos --></label>
+    <name>Tipo_de_ve_culos__c</name>
+    <picklistValues>
+        <masterLabel>Leves</masterLabel>
+        <translation><!-- Leves --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leves + Pesados</masterLabel>
+        <translation><!-- Leves + Pesados --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pesados</masterLabel>
+        <translation><!-- Pesados --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

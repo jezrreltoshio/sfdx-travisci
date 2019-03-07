@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Regional --></label>
+    <name>Regional__c</name>
+    <picklistValues>
+        <masterLabel>AR</masterLabel>
+        <translation><!-- AR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MG-RJ-ES</masterLabel>
+        <translation><!-- MG-RJ-ES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO-NE-CO</masterLabel>
+        <translation><!-- NO-NE-CO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SUL</masterLabel>
+        <translation><!-- SUL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SÃO PAULO</masterLabel>
+        <translation><!-- SÃO PAULO --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

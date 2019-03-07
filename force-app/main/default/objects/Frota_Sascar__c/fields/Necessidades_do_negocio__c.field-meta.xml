@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Necessidades_do_negocio__c</fullName>
+    <externalId>false</externalId>
+    <label>Necessidades do negócio</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Conservação da Carga</fullName>
+                <default>false</default>
+                <label>Conservação da Carga</label>
+            </value>
+            <value>
+                <fullName>Controle de custo</fullName>
+                <default>false</default>
+                <label>Controle de custo</label>
+            </value>
+            <value>
+                <fullName>Pontualidade</fullName>
+                <default>false</default>
+                <label>Pontualidade</label>
+            </value>
+            <value>
+                <fullName>Prevenção de acidentes</fullName>
+                <default>false</default>
+                <label>Prevenção de acidentes</label>
+            </value>
+            <value>
+                <fullName>Produtividade</fullName>
+                <default>false</default>
+                <label>Produtividade</label>
+            </value>
+            <value>
+                <fullName>Segurança da carga</fullName>
+                <default>false</default>
+                <label>Segurança da carga</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

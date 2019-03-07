@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nivel_de_relacionamento__c</fullName>
+    <externalId>false</externalId>
+    <label>Relacionamento com concorrente</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Excelente</fullName>
+                <default>false</default>
+                <label>Excelente</label>
+            </value>
+            <value>
+                <fullName>Ótimo</fullName>
+                <default>false</default>
+                <label>Ótimo</label>
+            </value>
+            <value>
+                <fullName>Muito bom</fullName>
+                <default>false</default>
+                <label>Muito bom</label>
+            </value>
+            <value>
+                <fullName>Bom</fullName>
+                <default>false</default>
+                <label>Bom</label>
+            </value>
+            <value>
+                <fullName>Razoável</fullName>
+                <default>false</default>
+                <label>Razoável</label>
+            </value>
+            <value>
+                <fullName>Ruim</fullName>
+                <default>false</default>
+                <label>Ruim</label>
+            </value>
+            <value>
+                <fullName>Péssimo</fullName>
+                <default>false</default>
+                <label>Péssimo</label>
+            </value>
+            <value>
+                <fullName>Sem relacionamento</fullName>
+                <default>false</default>
+                <label>Sem relacionamento</label>
+            </value>
+            <value>
+                <fullName>Não tem relação</fullName>
+                <default>false</default>
+                <label>Não tem relação</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

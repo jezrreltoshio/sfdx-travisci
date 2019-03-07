@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_informado_o_mesmo_do_cadastro__c</fullName>
+    <description>Campo de pesquisa para confirmação do recebimento do boleto de instalação</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Confirmar se o email do cliente é o mesmo que consta em seu cadastro</inlineHelpText>
+    <label>Email informado é o mesmo do cadastro?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SIM</fullName>
+                <default>false</default>
+                <label>SIM</label>
+            </value>
+            <value>
+                <fullName>NÃO</fullName>
+                <default>false</default>
+                <label>NÃO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outro_GR</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (ISPICKVAL(Gerenciador_de_risco__c , &#39;Outro&#39;) ,
+
+  ISBLANK( Outro_GR__c ))</errorConditionFormula>
+    <errorMessage>Preencha o campo Outro Gerenciado de risco</errorMessage>
+</ValidationRule>

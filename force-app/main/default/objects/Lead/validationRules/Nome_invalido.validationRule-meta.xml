@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nome_invalido</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(NOT(ISNEW()),
+ISNEW()
+),
+AND(
+OR(
+CONTAINS(FirstName , &#39;%&#39;), 
+CONTAINS(FirstName , &#39;/&#39;), 
+CONTAINS(FirstName , &#39;*&#39;), 
+CONTAINS(FirstName , &#39;+&#39;),  
+CONTAINS(FirstName , &#39;,&#39;), 
+CONTAINS(FirstName , &#39;!&#39;), 
+CONTAINS(FirstName , &#39;@&#39;), 
+CONTAINS(FirstName , &#39;#&#39;), 
+CONTAINS(FirstName , &#39;$&#39;), 
+CONTAINS(FirstName , &#39;¨&#39;),  
+CONTAINS(FirstName , &#39;(&#39;), 
+CONTAINS(FirstName , &#39;)&#39;), 
+CONTAINS(FirstName , &#39;_&#39;), 
+CONTAINS(FirstName , &#39;=&#39;) 
+)))</errorConditionFormula>
+    <errorMessage>Favor preencher o campo Nome sem caracteres especiais e com valor válido.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Causa da reclamação --></label>
+    <name>CausaReclamacao__c</name>
+    <picklistValues>
+        <masterLabel>Acidente ocasionado pelo técnico</masterLabel>
+        <translation><!-- Acidente ocasionado pelo técnico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agenda da região não mapeada</masterLabel>
+        <translation><!-- Agenda da região não mapeada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agendou na data errada</masterLabel>
+        <translation><!-- Agendou na data errada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agendou no ponto incorreto</masterLabel>
+        <translation><!-- Agendou no ponto incorreto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alto backlog da área de transferência</masterLabel>
+        <translation><!-- Alto backlog da área de transferência --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aplicativo não funcionou</masterLabel>
+        <translation><!-- Aplicativo não funcionou --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Atendente não foi cordial</masterLabel>
+        <translation><!-- Atendente não foi cordial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Atendente não sabia as informações</masterLabel>
+        <translation><!-- Atendente não sabia as informações --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Atendente passou informações incorretas</masterLabel>
+        <translation><!-- Atendente passou informações incorretas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Atendente realizou cobrança indevida</masterLabel>
+        <translation><!-- Atendente realizou cobrança indevida --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Atraso da empresa de nota fiscal eletrônica</masterLabel>
+        <translation><!-- Atraso da empresa de nota fiscal eletrônica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Atraso da gráfica</masterLabel>
+        <translation><!-- Atraso da gráfica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Atraso dos correios</masterLabel>
+        <translation><!-- Atraso dos correios --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Atraso no deslocamento</masterLabel>
+        <translation><!-- Atraso no deslocamento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Atraso no serviço anterior</masterLabel>
+        <translation><!-- Atraso no serviço anterior --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelado indevidamente pela régua de cobrança</masterLabel>
+        <translation><!-- Cancelado indevidamente pela régua de cobrança --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente cadastrado incorretamente</masterLabel>
+        <translation><!-- Cliente cadastrado incorretamente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente não entende faturamento</masterLabel>
+        <translation><!-- Cliente não entende faturamento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente não enviou todos documentos necessários</masterLabel>
+        <translation><!-- Cliente não enviou todos documentos necessários --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cliente não solicitou transferência</masterLabel>
+        <translation><!-- Cliente não solicitou transferência --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cláusula contratual não é informada no fechamento da venda</masterLabel>
+        <translation><!-- Cláusula contratual não é informada no fechamento da venda --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contrato ou gravação não encontrada</masterLabel>
+        <translation><!-- Contrato ou gravação não encontrada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demanda maior que disponibilidade de agenda</masterLabel>
+        <translation><!-- Demanda maior que disponibilidade de agenda --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Endereço incorreto</masterLabel>
+        <translation><!-- Endereço incorreto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Endereço não encontrado</masterLabel>
+        <translation><!-- Endereço não encontrado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipamento ou acessório estragou</masterLabel>
+        <translation><!-- Equipamento ou acessório estragou --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Erro de faturamento de multas</masterLabel>
+        <translation><!-- Erro de faturamento de multas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Erro de faturamento de serviços</masterLabel>
+        <translation><!-- Erro de faturamento de serviços --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Erro de faturamento de taxas</masterLabel>
+        <translation><!-- Erro de faturamento de taxas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Erro operacional do atendimento</masterLabel>
+        <translation><!-- Erro operacional do atendimento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Erro operacional do financeiro</masterLabel>
+        <translation><!-- Erro operacional do financeiro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Falta de adesivos</masterLabel>
+        <translation><!-- Falta de adesivos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Falta de conhecimento para agendar</masterLabel>
+        <translation><!-- Falta de conhecimento para agendar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Falta equipamento</masterLabel>
+        <translation><!-- Falta equipamento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fechamento de agenda</masterLabel>
+        <translation><!-- Fechamento de agenda --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flag da gráfica para impressão do boleto não marcada</masterLabel>
+        <translation><!-- Flag da gráfica para impressão do boleto não marcada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Informações erradas no momento da venda</masterLabel>
+        <translation><!-- Informações erradas no momento da venda --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instalado incorretamente</masterLabel>
+        <translation><!-- Instalado incorretamente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não consegue contato na central ou televendas</masterLabel>
+        <translation><!-- Não consegue contato na central ou televendas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não inclusão do cliente na base para faturar</masterLabel>
+        <translation><!-- Não inclusão do cliente na base para faturar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não roteirizado</masterLabel>
+        <translation><!-- Não roteirizado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Não sabe usar a solução</masterLabel>
+        <translation><!-- Não sabe usar a solução --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outros</masterLabel>
+        <translation><!-- Outros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Problemas com pacote de assistência fornecedor da Siggo</masterLabel>
+        <translation><!-- Problemas com pacote de assistência fornecedor da Siggo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sem retorno da solicitação</masterLabel>
+        <translation><!-- Sem retorno da solicitação --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Técnico instalou incorretamente</masterLabel>
+        <translation><!-- Técnico instalou incorretamente --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Técnico não executou procedimento padrão</masterLabel>
+        <translation><!-- Técnico não executou procedimento padrão --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Técnico não foi cordial</masterLabel>
+        <translation><!-- Técnico não foi cordial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Veículo do técnico com problemas</masterLabel>
+        <translation><!-- Veículo do técnico com problemas --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

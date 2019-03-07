@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>ADMINISTRADOR</submitter>
+        <type>roleSubordinates</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Papel_do_propriet_rio__c</field>
+        <field>Owner</field>
+        <field>Name</field>
+        <field>Account</field>
+        <field>Prazo_do_contrato__c</field>
+        <field>Nome_catalogo__c</field>
+        <field>Taxa_de_ades_o__c</field>
+        <field>Taxa_Instalacao_Minima__c</field>
+        <field>Taxa_Instalacao_Maxima__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND(
+ Valor_da_taxa_de_ades_o__c &lt;= 99.99,
+ $UserRole.Name = &#39;Consultor Cargo Tracck&#39;,
+ Pricebook2.Name = &#39;Retornável para Novos Segmentos&#39;
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Etapa 1 Desconto Adesao Retornável para Novos Segmentos</label>
+        <name>Etapa_1_Desconto_Adesao_Retorn_vel_para_Novos_Segmentos</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>gardao.junior@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_da_taxa_de_ades_o__c &lt;= 49.99, 
+$UserRole.Name = &#39;Gerente Cargo Tracck&#39;, 
+Pricebook2.Name = &#39;Retornável para Novos Segmentos&#39; 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Etapa 2 Desconto Adesao Retornável para Novos Segmentos</label>
+        <name>Etapa_2_Desconto_Adesao_Retorn_vel_para_Novos_Segmentos</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_da_taxa_de_ades_o__c &lt;= 99.99, 
+$UserRole.Name = &#39;Consultor Cargo Tracck&#39;, 
+Pricebook2.Name = &#39;Retornável para Eletrônicos&#39; 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Etapa 1 Desconto Adesao Retornável para Eletrônicos</label>
+        <name>Etapa_1_Desconto_Adesao_Retorn_vel_para_Eletr_nicos</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>gardao.junior@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_da_taxa_de_ades_o__c &lt;= 49.99, 
+$UserRole.Name = &#39;Gerente Cargo Tracck&#39;, 
+Pricebook2.Name = &#39;Retornável para Eletrônicos&#39; 
+)</formula>
+        </entryCriteria>
+        <label>Etapa 2 Desconto Adesao Retornável para Eletrônicos</label>
+        <name>Etapa_2_Desconto_Adesao_Retorn_vel_para_Eletr_nicos</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>Processo de aprovação taxa de adesão Cargo Tracck Retornável</description>
+    <emailTemplate>unfiled$public/Aprova_o_taxa_de_ades_o</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <booleanFilter>1 AND 2 AND 5 AND 6 AND (3 OR 4)</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.Desconto_taxa_instalacao__c</field>
+            <operation>equals</operation>
+            <value>Verdadeiro</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Taxa_Instalacao_Minima__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pricebook2.Name</field>
+            <operation>equals</operation>
+            <value>Retornável para Eletrônicos</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pricebook2.Name</field>
+            <operation>equals</operation>
+            <value>Retornável para Novos Segmentos</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Aprovacao_taxa_instalacao__c</field>
+            <operation>notEqual</operation>
+            <value>Aprovado,Solicitação enviada</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordType</field>
+            <operation>equals</operation>
+            <value>Cargo Tracck</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Aprova_o_total_da_oportunidade</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Aprovada_taxa_instalacao</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Desmarca_desconto_taxa</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Desmarca_desconto_taxa</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Rejei_o_da_oportunidade</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Reprovada_taxa_instalacao</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Aprova_desc_taxa_instalacao</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Taxa Adesao CT Retornavel</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

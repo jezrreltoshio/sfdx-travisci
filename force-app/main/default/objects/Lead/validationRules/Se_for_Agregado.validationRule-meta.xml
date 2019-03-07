@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Se_for_Agregado</fullName>
+    <active>true</active>
+    <description>Ref. a KCA 144</description>
+    <errorConditionFormula>AND(ISPICKVAL(agregado__c, &quot;Sim&quot;),
+OR(
+ISBLANK(Qual_empresa_esta_agregando__c),
+ISBLANK(Nome_gestor_responsavel__c) ,
+ISBLANK(Telefone_gestor_responsavel__c)
+ ))</errorConditionFormula>
+    <errorMessage>Favor preencher os campos: Qual empresa está agregando?, Nome do Gestor Responsável e o Telefone do gestor responsável com um número válido.</errorMessage>
+</ValidationRule>

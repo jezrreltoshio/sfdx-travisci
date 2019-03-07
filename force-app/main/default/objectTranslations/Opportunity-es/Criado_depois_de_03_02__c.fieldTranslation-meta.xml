@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Creado después de 03/02</label>
+    <name>Criado_depois_de_03_02__c</name>
+    <picklistValues>
+        <masterLabel>Sim</masterLabel>
+        <translation><!-- Sim --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

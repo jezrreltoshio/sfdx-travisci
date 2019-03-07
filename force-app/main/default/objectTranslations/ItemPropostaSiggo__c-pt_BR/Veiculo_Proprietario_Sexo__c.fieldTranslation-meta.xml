@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sexo --></label>
+    <name>Veiculo_Proprietario_Sexo__c</name>
+    <picklistValues>
+        <masterLabel>F-Feminino</masterLabel>
+        <translation><!-- F-Feminino --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M-Masculino</masterLabel>
+        <translation><!-- M-Masculino --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

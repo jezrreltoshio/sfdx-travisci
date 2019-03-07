@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Faz parte de Associação ? --></label>
+    <name>Faz_parte_de_Associacao__c</name>
+    <picklistValues>
+        <masterLabel>APVEC</masterLabel>
+        <translation><!-- APVEC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ASTRAN</masterLabel>
+        <translation><!-- ASTRAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ATRAC</masterLabel>
+        <translation><!-- ATRAC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AUTO TRUCK</masterLabel>
+        <translation><!-- AUTO TRUCK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Anacc</masterLabel>
+        <translation><!-- Anacc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Apronorte</masterLabel>
+        <translation><!-- Apronorte --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C.T.G.CARGAS SAO CAETANO DO SUL</masterLabel>
+        <translation><!-- C.T.G.CARGAS SAO CAETANO DO SUL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COOP.TRAN.ROD.DO ABC</masterLabel>
+        <translation><!-- COOP.TRAN.ROD.DO ABC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CTR Rondônia</masterLabel>
+        <translation><!-- CTR Rondônia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nenhuma</masterLabel>
+        <translation><!-- Nenhuma --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outras</masterLabel>
+        <translation><!-- Outras --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PROTEAUTO</masterLabel>
+        <translation><!-- PROTEAUTO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RODOSAT</masterLabel>
+        <translation><!-- RODOSAT --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

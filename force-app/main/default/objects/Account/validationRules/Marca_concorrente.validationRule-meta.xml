@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marca_concorrente</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+NOT ISNEW(),
+Utiliza_Equipamento_do_Concorrente__c = true, 
+ISBLANK( TEXT(Marca_do_concorrente__c )) 
+)</errorConditionFormula>
+    <errorMessage>Favor selecionar a Marca do concorrente.</errorMessage>
+</ValidationRule>

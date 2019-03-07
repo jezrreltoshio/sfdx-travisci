@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Motivo --></label>
+    <name>Motivo__c</name>
+    <picklistValues>
+        <masterLabel>Churn - Associação / Cooperativa / GR / Seguradora</masterLabel>
+        <translation>Churn - Asociación / Cooperativa / GR / Aseguradora</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Churn - Concorrência</masterLabel>
+        <translation>Churn - Competencia</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Churn - Insatisfação com Atendimento</masterLabel>
+        <translation>Churn - Insatisfacción con la Atención</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Churn - Insatisfação com Comercial</masterLabel>
+        <translation>Churn - Insatisfacción con el Comercial</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Churn - Insatisfação com Produto</masterLabel>
+        <translation>Churn - Insatisfacción con el Producto</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Churn - Insatisfação com Sistemas (queda/lentidão)</masterLabel>
+        <translation>Churn - Insatisfacción con Sistemas (interrupción / lentitud)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Churn - Insatisfação com Área Financeira</masterLabel>
+        <translation>Churn - Insatisfacción con el Sector Financiero</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Churn - Insatisfação com Área técnica</masterLabel>
+        <translation>Churn - Insatisfacción con el Sector Técnico</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Churn - Outros (especificar)</masterLabel>
+        <translation>Churn - Otros (especificar)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Churn - Situação Financeira do cliente</masterLabel>
+        <translation>Churn - Situación financiera del cliente</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Churn - Substituição da Frota</masterLabel>
+        <translation>Churn - Sustitución de la flota</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Churn - Venda do Veículo</masterLabel>
+        <translation>Churn - Venta del vehículo</translation>
+    </picklistValues>
+</CustomFieldTranslation>

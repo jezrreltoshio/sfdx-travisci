@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Perdida</fullName>
+        <default>false</default>
+        <label>Perdida</label>
+    </customValue>
+    <customValue>
+        <fullName>Problemas Financieros</fullName>
+        <default>false</default>
+        <label>Problemas Financieros</label>
+    </customValue>
+    <customValue>
+        <fullName>Robos</fullName>
+        <default>false</default>
+        <label>Robos</label>
+    </customValue>
+    <customValue>
+        <fullName>Servicio Deficiente</fullName>
+        <default>false</default>
+        <label>Servicio Deficiente</label>
+    </customValue>
+    <customValue>
+        <fullName>Vehículos vendidos</fullName>
+        <default>false</default>
+        <label>Vehículos vendidos</label>
+    </customValue>
+    <masterLabel>Motivo de cancelamento MX</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

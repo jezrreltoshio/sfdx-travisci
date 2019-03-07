@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusSolucao__c</fullName>
+    <externalId>false</externalId>
+    <label>Status da solução</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Não iniciada</fullName>
+                <default>false</default>
+                <label>Não iniciada</label>
+            </value>
+            <value>
+                <fullName>Atrasada</fullName>
+                <default>false</default>
+                <label>Atrasada</label>
+            </value>
+            <value>
+                <fullName>Em andamento</fullName>
+                <default>false</default>
+                <label>Em andamento</label>
+            </value>
+            <value>
+                <fullName>Em andamento aguardando cliente</fullName>
+                <default>false</default>
+                <label>Em andamento aguardando cliente</label>
+            </value>
+            <value>
+                <fullName>Atrasado aguardando cliente</fullName>
+                <default>false</default>
+                <label>Atrasado aguardando cliente</label>
+            </value>
+            <value>
+                <fullName>Concluída</fullName>
+                <default>false</default>
+                <label>Concluída</label>
+            </value>
+            <value>
+                <fullName>Concluída com atraso</fullName>
+                <default>false</default>
+                <label>Concluída com atraso</label>
+            </value>
+            <value>
+                <fullName>Cancelada</fullName>
+                <default>false</default>
+                <label>Cancelada</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

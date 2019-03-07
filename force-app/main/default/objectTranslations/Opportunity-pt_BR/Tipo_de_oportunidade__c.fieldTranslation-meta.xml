@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tipo de oportunidade --></label>
+    <name>Tipo_de_oportunidade__c</name>
+    <picklistValues>
+        <masterLabel>Caminhão</masterLabel>
+        <translation><!-- Caminhão --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Empilhadeira</masterLabel>
+        <translation><!-- Empilhadeira --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fora de estrada</masterLabel>
+        <translation><!-- Fora de estrada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Isca descartável</masterLabel>
+        <translation><!-- Isca descartável --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Isca retornável</masterLabel>
+        <translation><!-- Isca retornável --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LEVE</masterLabel>
+        <translation><!-- LEVE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leves</masterLabel>
+        <translation><!-- Leves --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MISTO</masterLabel>
+        <translation><!-- MISTO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outros</masterLabel>
+        <translation><!-- Outros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PESADO</masterLabel>
+        <translation><!-- PESADO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pesados</masterLabel>
+        <translation><!-- Pesados --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

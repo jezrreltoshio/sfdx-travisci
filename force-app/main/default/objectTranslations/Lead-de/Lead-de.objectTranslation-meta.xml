@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Click2Create --></label>
+        <name>Click2Create</name>
+    </fieldSets>
+    <layouts>
+        <layout>CORP</layout>
+        <sections>
+            <label><!-- Contatos especiais --></label>
+            <section>Contatos especiais</section>
+        </sections>
+        <sections>
+            <label><!-- Informações adicionais --></label>
+            <section>Informações adicionais</section>
+        </sections>
+        <sections>
+            <label><!-- Informações da Frota --></label>
+            <section>Informações da Frota</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de campanha --></label>
+            <section>Informações de campanha</section>
+        </sections>
+        <sections>
+            <label><!-- Informações sobre a operação --></label>
+            <section>Informações sobre a operação</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CORP - Argentina</layout>
+        <sections>
+            <label><!-- Contatos especiais --></label>
+            <section>Contatos especiais</section>
+        </sections>
+        <sections>
+            <label><!-- Informações adicionais --></label>
+            <section>Informações adicionais</section>
+        </sections>
+        <sections>
+            <label><!-- Informações da Frota --></label>
+            <section>Informações da Frota</section>
+        </sections>
+        <sections>
+            <label><!-- Informações sobre a operação --></label>
+            <section>Informações sobre a operação</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CORP - Executivo</layout>
+        <sections>
+            <label><!-- Informações adicionais --></label>
+            <section>Informações adicionais</section>
+        </sections>
+        <sections>
+            <label><!-- Informações da Frota --></label>
+            <section>Informações da Frota</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de campanha --></label>
+            <section>Informações de campanha</section>
+        </sections>
+        <sections>
+            <label><!-- Informações sobre a operação --></label>
+            <section>Informações sobre a operação</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CORP - México</layout>
+        <sections>
+            <label><!-- Contatos especiais --></label>
+            <section>Contatos especiais</section>
+        </sections>
+        <sections>
+            <label><!-- Informações adicionais --></label>
+            <section>Informações adicionais</section>
+        </sections>
+        <sections>
+            <label><!-- Informações da Frota --></label>
+            <section>Informações da Frota</section>
+        </sections>
+        <sections>
+            <label><!-- Informações sobre a operação --></label>
+            <section>Informações sobre a operação</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CORP - Televendas</layout>
+        <sections>
+            <label><!-- Informações adicionais --></label>
+            <section>Informações adicionais</section>
+        </sections>
+        <sections>
+            <label><!-- Informações da Frota --></label>
+            <section>Informações da Frota</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de campanha --></label>
+            <section>Informações de campanha</section>
+        </sections>
+        <sections>
+            <label><!-- Informações sobre a operação --></label>
+            <section>Informações sobre a operação</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Cargo Tracck</layout>
+        <sections>
+            <label><!-- Informações adicionais --></label>
+            <section>Informações adicionais</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de campanha --></label>
+            <section>Informações de campanha</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout Blue tec</layout>
+        <sections>
+            <label><!-- Informações de campanha --></label>
+            <section>Informações de campanha</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout OTR</layout>
+        <sections>
+            <label><!-- Informações de campanha --></label>
+            <section>Informações de campanha</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Layout de lead</layout>
+        <sections>
+            <label><!-- Frota --></label>
+            <section>Frota</section>
+        </sections>
+        <sections>
+            <label><!-- Informações sobre a operação --></label>
+            <section>Informações sobre a operação</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Mercosul</layout>
+        <sections>
+            <label><!-- Contatos especiais --></label>
+            <section>Contatos especiais</section>
+        </sections>
+        <sections>
+            <label><!-- Informações adicionais --></label>
+            <section>Informações adicionais</section>
+        </sections>
+        <sections>
+            <label><!-- Informações da Frota --></label>
+            <section>Informações da Frota</section>
+        </sections>
+        <sections>
+            <label><!-- Informações sobre a operação --></label>
+            <section>Informações sobre a operação</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Michelin</layout>
+        <sections>
+            <label><!-- Informações do Lead --></label>
+            <section>Informações do Lead</section>
+        </sections>
+        <sections>
+            <label><!-- Informações do sistema --></label>
+            <section>Informações do sistema</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+        <sections>
+            <label><!-- Outras informações --></label>
+            <section>Outras informações</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Novo Freteiro</layout>
+        <sections>
+            <label><!-- Informação de campanhas --></label>
+            <section>Informação de campanhas</section>
+        </sections>
+        <sections>
+            <label><!-- Informações da Operação --></label>
+            <section>Informações da Operação</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de descrição --></label>
+            <section>Informações de descrição</section>
+        </sections>
+        <sections>
+            <label><!-- Informações do Lead --></label>
+            <section>Informações do Lead</section>
+        </sections>
+        <sections>
+            <label><!-- Informações do sistema --></label>
+            <section>Informações do sistema</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+        <sections>
+            <label><!-- Outras informações --></label>
+            <section>Outras informações</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Novo Siggo</layout>
+        <sections>
+            <label><!-- Contatos especiais --></label>
+            <section>Contatos especiais</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de campanha --></label>
+            <section>Informações de campanha</section>
+        </sections>
+        <sections>
+            <label><!-- Informações de origem --></label>
+            <section>Informações de origem</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Siggo Ecommerce</layout>
+        <sections>
+            <label><!-- Informações do carro --></label>
+            <section>Informações do carro</section>
+        </sections>
+        <sections>
+            <label><!-- Informações do cartão de crédito --></label>
+            <section>Informações do cartão de crédito</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>VERTICAIS</layout>
+        <sections>
+            <label><!-- Informações da Frota --></label>
+            <section>Informações da Frota</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Argentina --></label>
+        <name>Argentina</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Blue tec --></label>
+        <name>Blue_tec</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CORP --></label>
+        <name>CORP</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CORP - Executivo --></label>
+        <name>CORP_Executivo</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CORP - Televendas --></label>
+        <name>CORP_Televendas</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Cargo Tracck --></label>
+        <name>Cargo_Tracck</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Freteiro --></label>
+        <name>Freteiro</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Mercosul --></label>
+        <name>Mercosul</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Michelin --></label>
+        <name>Michelin</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Siggo --></label>
+        <name>Siggo</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- VERTICAIS --></label>
+        <name>VERTICAIS</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Você não tem permissão de alterar a origem deste lead. --></errorMessage>
+        <name>Alterar_origem_lead_siggo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CEP deve conter apenas 8 dígitos. --></errorMessage>
+        <name>CEP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Favor verificar o cadastro do Indicador, CPF ou CNPJ faltando ser preenchidos --></errorMessage>
+        <name>CPF_Cliente_Indicador</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Você não tem permissão para criar leads com origem Canal Exclusivo de Indicações. --></errorMessage>
+        <name>Canal_Exclusivo_de_Indicacoes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para pessoa jurídica, informe o CNPJ. --></errorMessage>
+        <name>CargoTracck_Validar_CNPJ</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para pessoa física, informe o CPF. --></errorMessage>
+        <name>CargoTracck_Validar_CPF</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Obrigatorio preencher o CUIT para converter o Lead --></errorMessage>
+        <name>Conversao_CUIT_obrigatorio_Argentina</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Obrigatorio preencher o RFC para converter o Lead --></errorMessage>
+        <name>Conversao_RFC_obrigatorio_Mexico</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Preencher o CPF para converter o Lead --></errorMessage>
+        <name>Conversao_freteiro</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe o pais corretamente --></errorMessage>
+        <name>Conversao_pais_incorreto_Mercosul</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para prosseguir com a conversão do lead é necessário informar um CNPJ válido. --></errorMessage>
+        <name>Converter_Blue_Tec</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para prosseguir com a conversão do lead é necessário informar um CPF ou CNPJ válido. --></errorMessage>
+        <name>Converter_Michelin</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para prosseguir com a conversão do lead é necessário informar um CPF válido. --></errorMessage>
+        <name>Converter_SIGGO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Não é possível alterar para esta fase, siga o fluxo de fases. --></errorMessage>
+        <name>Fases_Lead_0_EmAberto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Não é possível alterar para esta fase, siga o fluxo de fases. --></errorMessage>
+        <name>Fases_Lead_1_PrimeiraTentativa</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Não é possível alterar para esta fase, siga o fluxo de fases. --></errorMessage>
+        <name>Fases_Lead_2_SegundaTentativa</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Não é possível alterar para esta fase, siga o fluxo de fases. --></errorMessage>
+        <name>Fases_Lead_3_TerceiraTentativa</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Não é possível alterar para esta fase, siga o fluxo de fases. --></errorMessage>
+        <name>Fases_Lead_4_QuartaTentativa</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Você não possui permissão para criar esse tipo de Lead. --></errorMessage>
+        <name>Indicador_de_Negocio_CORP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Você não possui permissão para criar esse tipo de Lead. --></errorMessage>
+        <name>Indicador_de_Negocio_Freteiro</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Você não possui permissão para alterar o campo Indicador neste Lead. --></errorMessage>
+        <name>Indicador_de_Negocio_alterar_CORP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Você não possui permissão para alterar o campo Indicador neste Lead. --></errorMessage>
+        <name>Indicador_de_Negocio_alterar_Freteiro</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- O indicador de negócios deve ser selecionado. --></errorMessage>
+        <name>Indicador_em_branco</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- O indicador parceiro (remunerado ou não) deve ser selecionado. --></errorMessage>
+        <name>Indicador_parceiro_em_branco</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Você deve informar a marca do concorrente. --></errorMessage>
+        <name>Informar_concorrente</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Todos os leads CORP deverão obrigatoriamente passar pelo status &quot;Em andamento&quot;. --></errorMessage>
+        <name>Lead_CORP_Em_andamento</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para converter o Lead, favor preencher TODOS os campos de endereço e o CNPJ. --></errorMessage>
+        <name>Lead_CORP_Endereco_CNPJ</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- O primeiro status do lead deve ser Em aberto. --></errorMessage>
+        <name>Lead_criado_Status_em_aberto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Você não pode informar o motivo da desqualificação se o Status do Lead for diferente de Desqualificado e Contato Não Efetivo. --></errorMessage>
+        <name>Lead_nao_desqualificado_c_motivo_preench</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Formato: 00-00000000-0 --></errorMessage>
+        <name>Mercosul_formato_CUIT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Formato: 00.000.000 --></errorMessage>
+        <name>Mercosul_formato_DNI</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- RFC inválido. --></errorMessage>
+        <name>Mercosul_formato_RFC</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- DNI inválido --></errorMessage>
+        <name>Mercosul_invalido_DNI</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para pessoa jurídica, informe somente o CUIT. --></errorMessage>
+        <name>Mercosul_validar_CUIT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para pessoa fisica, informe somente o DNI. --></errorMessage>
+        <name>Mercosul_validar_DNI</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Favor preencher o campo Nome sem caracteres especiais e com valor válido. --></errorMessage>
+        <name>Nome_invalido</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para essa origem é obrigatório preencher o campo Campanha. --></errorMessage>
+        <name>Obriga_informar_Campanha</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Quando a opção selecionada para a pergunta &quot;Como soube da Siggo?&quot; é Outro, é obrigatório descrever qual foi o outro meio. --></errorMessage>
+        <name>Obriga_informar_Outro_meio</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para essa origem é obrigatório o preenchimento do campo &quot;Cliente indicador&quot; e &quot;Indicador&quot;(busca é realizada via CPF ou nome) --></errorMessage>
+        <name>Obrigar_preenchimento_cliente_indicador</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Para essa origem é obrigatório o preenchimento do campo &quot;Indicador Siggo&quot;  (Nome da Loja Michelin) --></errorMessage>
+        <name>Obrigar_preenchimento_loja_michelin</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A origem do lead “Canal Exclusivo - Indicação Executivo, só deve ser usada quando existir um relacionamento de contas para adicinar no  “conta relacionada”. --></errorMessage>
+        <name>Origem_Indicacao_Executivo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Origem do Lead &quot;Indicador de negócio&quot; é necessário preencher o campo Indicador. --></errorMessage>
+        <name>Origem_Indicador</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Você não pode criar um lead com essa origem. --></errorMessage>
+        <name>Origem_do_Lead_Truckpad</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Você não pode alterar o valor da origem do lead. --></errorMessage>
+        <name>Origem_do_lead_alterada</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Origem de lead igual Rádio, deve ser preenchido o campo Campanha Atual. --></errorMessage>
+        <name>Origem_lead_Radio</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Favor preencher qual é a outra marca. --></errorMessage>
+        <name>Outra_marca</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Preencha o campo Outro Gerenciado de risco --></errorMessage>
+        <name>Outro_GR</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe outro motivo da desqualificação do Lead. --></errorMessage>
+        <name>Outro_Motivo_Cargo_Tracck</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe outro segmento do Lead. --></errorMessage>
+        <name>Outro_Segmento</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Você deve utilizar, primeiramente, o botão Atualiza CEP para preencher o endereço. --></errorMessage>
+        <name>Preenche_endereco</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Se o campo &quot;Qual empresa está agregando&quot; estiver preenchido o campo &quot;É agregado&quot; tem que ser Sim --></errorMessage>
+        <name>Preencher_Empresa_Agregando</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Por favor preencher o campo &quot;É agregado?&quot; --></errorMessage>
+        <name>Preencher_campo_e_agregado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Por favor preencher o campo &quot;Qual empresa está agregando?&quot; --></errorMessage>
+        <name>Preencher_campo_empresa_esta_Agregando</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Seu perfil não permite trocar o proprietário do lead. --></errorMessage>
+        <name>Proprietario_lead</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Favor preencher os campos: Qual empresa está agregando?, Nome do Gestor Responsável e o Telefone do gestor responsável com um número válido. --></errorMessage>
+        <name>Se_for_Agregado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Informe o Segmento. --></errorMessage>
+        <name>Segmento_Status_Qualificado</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Quando o campo Segmento  estiver preenchido com &quot;Outro&quot; é necessário preencher o campo &quot;Detalhes do segmento&quot;. --></errorMessage>
+        <name>Segmento_do_lead</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Você não pode transferir o lead a esse usuário, transfira-o para uma fila. --></errorMessage>
+        <name>Siggo_transferencia_do_lead_para_a_fila</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Favor preencher o campo Sobrenome sem caracteres especiais --></errorMessage>
+        <name>Sobrenome_invalido</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A conta indicadora deve ser uma conta do tipo Transportadora, Embarcador, Transportadora e Embarcador, Industria ou Industria e Comercio --></errorMessage>
+        <name>Tipo_de_Conta_Indicadora</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Você não pode transferir o lead a esse usuário, transfira-o para uma fila. --></errorMessage>
+        <name>Transferencia_do_lead_para_a_fila</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CNPJ Inválido! Insira um valor válido. --></errorMessage>
+        <name>Valida_CNPJ</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CPF Inválido! Insira um valor válido. --></errorMessage>
+        <name>Valida_CPF</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- O estado inserido é inválido, favor inserir a sigla da unidade federativa. Por exemplo: Para Rio de Janeiro, preencher RJ. --></errorMessage>
+        <name>Valida_Estado_Preenchido</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Se possui Nome do gestor responsável ou o campo Possui agregados deve ser &apos;Sim ou o campo É agregado deve ser Sim. --></errorMessage>
+        <name>Valida_agregados_e_gestor_responsavel</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Você só deve preencher esse campo, quando o campo &quot;Motivo da desqualificação do lead&quot; estiver com a opção &quot;Outros (obs.)&quot;. --></errorMessage>
+        <name>ValidarValorOutroMotivo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Você deve informar o motivo da desqualificação do lead. --></errorMessage>
+        <name>lead_desqualificado_motivo</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Você deve informar o concorrente --></errorMessage>
+        <name>motivo_desqualificacao_possui_concorre</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Atualiza_CEP --></label>
+        <name>Atualiza_CEP</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ConvertLead --></label>
+        <name>ConvertLead</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Converter --></label>
+        <name>Converter</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Converter_lead_mexico --></label>
+        <name>Converter_lead_mexico</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Excluir_em_Massa --></label>
+        <name>Excluir_em_Massa</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ExactTarget_Resubscribe --></label>
+        <name>et4ae5__ExactTarget_Resubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ExactTarget_Unsubscribe --></label>
+        <name>et4ae5__ExactTarget_Unsubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_ExactTarget_Email --></label>
+        <name>et4ae5__Send_ExactTarget_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_ExactTarget_SMS --></label>
+        <name>et4ae5__Send_ExactTarget_SMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_ExactTarget_Analytics --></label>
+        <name>et4ae5__View_ExactTarget_Analytics</name>
+    </webLinks>
+</CustomObjectTranslation>

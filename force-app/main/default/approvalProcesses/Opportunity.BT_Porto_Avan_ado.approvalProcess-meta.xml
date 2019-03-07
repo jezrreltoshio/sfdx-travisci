@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <submitter>ADMINISTRADOR</submitter>
+        <type>roleSubordinates</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Papel_do_propriet_rio__c</field>
+        <field>Owner</field>
+        <field>Name</field>
+        <field>Account</field>
+        <field>Prazo_do_contrato__c</field>
+        <field>Nome_catalogo__c</field>
+        <field>Indicador__c</field>
+        <field>Valor_sem_desconto__c</field>
+        <field>Valor_final_com_desconto__c</field>
+        <field>Valor_unit_rio_mensal_new__c</field>
+        <field>Valor_unit_rio_mensal_new2__c</field>
+        <field>Valor_total_desconto__c</field>
+        <field>Percentual_descontado__c</field>
+        <field>Observa_es_do_desconto__c</field>
+        <field>Alcada_Fin_Max__c</field>
+        <field>Alcada_Fin_Min__c</field>
+        <field>Alcada_Dir_Max__c</field>
+        <field>Alcada_Dir_Min__c</field>
+        <field>Alcada_Ger_Max__c</field>
+        <field>Alcada_Ger_Min__c</field>
+        <field>Alcada_Sup_Max__c</field>
+        <field>Alcada_Sup_Min__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Owner</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Alçada de preço tabela - BT Porto Avançado 12 meses</description>
+        <entryCriteria>
+            <formula>AND(
+ Valor_total_desconto__c = 0.00,
+ Prazo_contrato_Id__c = 12
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BT Porto Avançado 12 meses</label>
+        <name>BT_Porto_Avan_ado_12_meses</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <description>Alçada de preço gerente - BT Porto Avançado 12 meses</description>
+        <entryCriteria>
+            <formula>AND(
+Valor_total_desconto__c &gt;= 0.01,
+Prazo_contrato_Id__c = 12
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BT Porto Avançado 12 meses -2</label>
+        <name>BT_Porto_Avan_ado_12_meses_2</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>leonardo.carreiro@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Alçada de preço diretor - BT Porto Avançado 12 meses</description>
+        <entryCriteria>
+            <formula>AND(
+Valor_total_desconto__c &gt;= 8.388
+
+
+,
+Prazo_contrato_Id__c = 12 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BT Porto Avançado 12 meses- 3</label>
+        <name>BT_Porto_Avan_ado_12_meses_3</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Owner</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Alçada de preço tabela - 	BT Porto Avançado 24 meses</description>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c = 0.00, 
+Prazo_contrato_Id__c = 14 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BT Porto Avançado 24 meses -1</label>
+        <name>BT_Porto_Avan_ado_24_meses_1</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <description>Alçada de preço gerente - BT Porto Avançado 24 meses</description>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c &gt;= 0.01, 
+Prazo_contrato_Id__c = 14 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BT Porto Avançado 24 meses -2</label>
+        <name>BT_Porto_Avan_ado_24_meses_2</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>leonardo.carreiro@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Alçada de preço diretor- BT Porto Avançado 24 meses</description>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c &gt;= 14.376
+
+
+
+
+, 
+Prazo_contrato_Id__c = 14 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BT Porto Avançado 24 meses-3</label>
+        <name>BT_Porto_Avan_ado_24_meses_3</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Owner</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Alçada de preço tabela - BT Porto Avançado 36 meses</description>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c = 0.00, 
+Prazo_contrato_Id__c = 15 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BT Porto Avançado 36 meses -1</label>
+        <name>BT_Porto_Avan_ado_36_meses_1</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <description>Alçada de preço gerente - BT Porto Avançado 36 meses</description>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c &gt;= 0.01, 
+Prazo_contrato_Id__c = 15 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BT Porto Avançado 36 meses -2</label>
+        <name>BT_Porto_Avan_ado_36_meses_2</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>leonardo.carreiro@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Alçada de preço diretor - BT Porto Avançado 36 meses</description>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c &gt;= 17.964
+
+
+
+
+, 
+Prazo_contrato_Id__c = 15 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>BT Porto Avançado 36 meses-3</label>
+        <name>BT_Porto_Avan_ado_36_meses_3</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Owner</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c = 0.00, 
+Prazo_contrato_Id__c = 32 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Etapa 1 G. Frotas Monit. Logist 48 meses</label>
+        <name>Etapa_1_G_Frotas_Monit_Logist_48_meses</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c &gt;= 0.01, 
+Prazo_contrato_Id__c = 32 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Etapa 2 G. Frotas Monit. Logist 48 meses</label>
+        <name>Etapa_2_G_Frotas_Monit_Logist_48_meses</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>fn.nogueira@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c &gt;= 480.01, 
+Prazo_contrato_Id__c = 32 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Etapa 3 G. Frotas Monit. Logist 48 meses</label>
+        <name>Etapa_3_G_Frotas_Monit_Logist_48_meses</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>adilson.filho@sascar.com.br</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( 
+Valor_total_desconto__c &gt;= 480.02, 
+Prazo_contrato_Id__c = 32
+)</formula>
+        </entryCriteria>
+        <label>Etapa 4 G. Frotas Monit. Logist 48 meses</label>
+        <name>Etapa_4_G_Frotas_Monit_Logist_48_meses</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>Processo de aprovação no visão a partir do Executivo -BT Porto Avançado</description>
+    <emailTemplate>unfiled$public/Aprova_o_de_oportunidade</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <booleanFilter>1 AND 2 AND 3 AND  (4 or 5 or 6)</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.Aprovacao_desconto__c</field>
+            <operation>equals</operation>
+            <value>Verdadeiro</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordType</field>
+            <operation>equals</operation>
+            <value>OTR</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Aprova_o__c</field>
+            <operation>notEqual</operation>
+            <value>Aprovado</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Nome_catalogo__c</field>
+            <operation>equals</operation>
+            <value>BT Porto Avançado  12 meses</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Nome_catalogo__c</field>
+            <operation>equals</operation>
+            <value>BT Porto Avançado   24 meses</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Nome_catalogo__c</field>
+            <operation>equals</operation>
+            <value>BT Porto Avançado 36 meses</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Aprova_o_total_da_oportunidade</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Atualiza_aprova_o_da_oportunidade</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Atualiza_reprova_o_da_oportunidade</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Rejei_o_da_oportunidade</name>
+            <type>Alert</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Aprova_o_pendente</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>BT Porto Avançado</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>true</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>
