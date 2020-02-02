@@ -1,0 +1,88 @@
+.THIS.container {
+    display:-webkit-box;
+}
+.THIS .layout-destacado{
+    background-color: #f6e3e3;
+}
+.THIS .selectedLineCustom .slds-table tbody tr.slds-is-selected>td{
+    background-color: #fff03f!important;
+    
+}
+.THIS .selectedLineCustom .slds-table tbody tr.slds-is-selected>th{
+    background-color: #fff03f!important;
+    
+}
+.THIS .small,
+.THIS .small_btn {
+    width:40px;
+    height:20px;
+    min-height:16px;
+    line-height:0;
+    padding:0;
+    margin-left: 8px;
+}
+.THIS .small_btn {
+    width:20px;
+}
+.THIS .right{
+    text-align:right;
+}
+.THIS .no-break{
+    height:16px;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.THIS .width100{
+    font-size:x-small;
+    width:100%;
+}
+.THIS .width65{
+    width:65%;
+}
+.THIS .width35{
+    width:35%;
+}
+.THIS .botao{
+    font-size: 13px;
+}
+.THIS .indicadorProgresso{
+    font-size: 14px;
+}
+.THIS .stackedForm{
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+.THIS .slds-tabs_path .slds-is-incomplete .slds-tabs_path__link,
+.THIS .slds-tabs_path .slds-is-incomplete .slds-tabs--path__link,
+.THIS .slds-tabs--path .slds-is-incomplete .slds-tabs_path__link,
+.THIS .slds-tabs--path .slds-is-incomplete .slds-tabs--path__link {
+    color: #3E3E3C !important; 
+}
+.THIS .slds-th__action .slds-th__action-button {
+    display: none; 
+}
+.THIS .slds-form-element__control{
+    padding-top:2px;
+    padding-bottom:2px;
+}
+.THIS .campoReadOnly{
+    margin-bottom: 0px; 
+    padding-bottom: 3px;
+    padding-top: 2px;
+    padding-left: 0px; 
+    padding-right:0px;
+}
+.THIS ::-webkit-scrollbar {
+  height: 0.75rem;
+}
+.THIS ::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+.THIS ::-webkit-scrollbar-thumb {
+  background: #C1C1C1; 
+}
+.THIS ::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8; 
+}

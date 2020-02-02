@@ -1,0 +1,1485 @@
+<aura:component controller="QuoteLineItemController" implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+    <!-- Attributes -->
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="activeResumo" type="Boolean" access="global" default="true"/>
+    <aura:attribute name="activeEdicao" type="Boolean" access="global" default="false"/>
+    <aura:attribute name="activeSugestao" type="Boolean" access="global" default="false"/>
+    <aura:attribute name="activeMemorial" type="Boolean" access="global" default="false"/>
+    <aura:attribute name="activeFinalizacao" type="Boolean" access="global" default="false"/>    
+    <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="quoteLineItemList" type="QuoteLineItem[]"/>  
+    <aura:attribute name="EmissorSelecionadoParentIdList" type="List"/>
+    <aura:attribute name="columnsSugest" type="List"/>
+    <aura:attribute name="columnsSugestQLI" type="List"/>
+    <aura:attribute name="dataSugest" type="List"/>
+    <aura:attribute name="dataSugestQLI" type="List"/>
+    <aura:attribute name="columnsSugestME" type="List"/>
+    <aura:attribute name="dataSugestConcorr" type="List"/>
+    <aura:attribute name="dataSugestME" type="List"/>
+    <aura:attribute name="dataSugestGeral" type="List"/>
+    <aura:attribute name="dataSugestEscolhida" type="List"/>
+    <aura:attribute name="columnsSugestEscolhida" type="List"/>
+    <aura:attribute name="dataQuoteLineItemAtual" type="List"/>
+    <aura:attribute name="columnsQuoteLineItemAtual" type="List"/>
+    <aura:attribute name="isEdicaoTabVisible" type="Boolean" default="false" />
+    <aura:attribute name="isSugestaoTabVisible" type="Boolean" default="false" />
+    <aura:attribute name="isAjustesTabVisible" type="Boolean" default="false" />
+    <aura:attribute name="isFinalizacaoTabVisible" type="Boolean" default="false" />
+    <aura:attribute name="isEditingExistingItem" type="Boolean" default="false" />
+    <aura:attribute name="isAdicionarItemDisabled" type="Boolean" access="global" default="false"/> 
+    <aura:attribute name="isBackToMemorialDisabled" type="Boolean" access="global" default="false"/>
+    <aura:attribute name="quoteRecord" type="Object"/>
+    <aura:attribute name="newQuoteLineItem" type="Object"/>
+    <aura:attribute name="recordLoadError" type="String"/>
+    <aura:attribute name="selectedRows" type="List" default="" />
+    <aura:attribute name="key" type="String" default="resumoTab"/>
+    <aura:attribute name="quoteLineItemEdit" type="QuoteLineItem"/>
+    <aura:attribute name="sugestaoEdit" type="Sugestao_de_Referencia_de_Preco__c"/>
+    <aura:attribute name="listaReferenciasMasterList" type="List"/>
+    <aura:attribute name="existeReferenciaCliente" type="Boolean" default="false"/>
+    <aura:attribute name="existeReferenciaClienteQLI" type="Boolean" default="false"/>
+    <aura:attribute name="existeReferenciaEmissoresSelecionados" type="Boolean" default="false"/>
+    <aura:attribute name="existeReferenciaGeral" type="Boolean" default="false"/>
+    <aura:attribute name="existeReferenciaInternacional" type="Boolean" default="false"/>
+    <aura:attribute name="existeReferenciaBarraChataRep" type="boolean" default="false"/>
+    <aura:attribute name="showCustoEngenharia" type="Boolean" default="false" />
+    <aura:attribute name="idSugestaoEscolhida" type="Id" />
+    <aura:attribute name="existeFatura12Meses" type="Boolean"/>
+    <aura:attribute name="qliAjuste" type="QuoteLineItem"/>
+    <aura:attribute name="filtroSugestao" type="Boolean"/>
+    <aura:attribute name="chkboxvalue" type="boolean"/>
+    <aura:attribute name="existemItensDeCotacao" type="boolean"/>
+    <aura:attribute name="isExpanded" type="boolean"/>
+    <aura:attribute name="campoJustificativaObrigatorio" type="boolean"/>
+    <aura:attribute name="referenciaInternacional" type="Referencia_Internacional__c"/>
+    <aura:attribute name ="cambioBRLUSD" type="decimal"/>
+    <aura:attribute name ="cambioBRLEUR" type="decimal"/>
+    <aura:attribute name ="precoInternadoComDrawback" type="decimal"/>
+    <aura:attribute name ="precoInternadoSemDrawback" type="decimal"/>
+    <aura:attribute name ="sistemaPontuacao" type="Map"/>
+    <aura:attribute name ="acoPoliticaPreco" type="String[]"/>
+    <aura:attribute name="isPoliticaPreco" type="Boolean" />
+    <aura:attribute name="anoPoliticaPreco" type="Integer" />
+    <aura:attribute name="mesPoliticaPreco" type="Integer" />
+    <aura:attribute name="isBarraChataRep" type="boolean" default="false"/>
+    <lightning:overlayLibrary aura:id="overlayLib"/>
+    <force:recordData aura:id="recordLoader"
+                      recordId="{!v.recordId}"
+                      fields="Id, OpportunityId, Opportunity.Name, Opportunity.Account.ParentId, Status, CurrencyIsoCode, Condicao_de_Pagamento_Lookup__c, RecordType.DeveloperName"
+                      targetFields="{!v.quoteRecord}"
+                      targetError="{!v.recordLoadError}"
+                      recordUpdated="{!c.handleRecordUpdated}"
+                      />
+    <!-- Handlers -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="quotePricingRefresh" event="c:quotePricingRefresh" action="{!c.atualizarPagina}"/>
+    <aura:handler name="change" value="{!v.key}" action="{!c.selectTab}"/>
+    <aura:handler name="setQuoteLineItem" event="c:setQuoteLineItem" action="{!c.setQuoteLineItem}"/> 
+    <aura:handler name="spinnerToggleOn" event="c:spinnerToggleOn" action="{!c.showSpinner}"/>
+    <aura:handler name="spinnerToggleOff" event="c:spinnerToggleOff" action="{!c.hideSpinner}"/>
+    <div id="tabset" class="slds-is-relative" >
+        <lightning:tabset aura:id="tabs" selectedTabId="resumoTab" variant="default" class="slds-tabs_card slds-text-heading_small">   
+            <lightning:spinner aura:id="Spinner" alternativeText="Loading" size="medium" variant="inverse" class="slds-hide slds-spinner_delayed"/>
+            <lightning:tab label="Itens da Cotação" onactive="{!c.selectResumo}" id="resumoTab"> 
+                <div class="slds-text-body_small">
+                    <div class="slds-grid slds-m-top_small slds-m-bottom_medium">
+                        <div class="slds-col slds-size_1-of-1">
+                            <lightning:button class="slds-float--right botao" label="Novo(a)" onclick="{!c.handleClickToEdicao}" disabled="{!v.isAdicionarItemDisabled}"/>
+                        </div>
+                    </div>
+                    <aura:if isTrue="{! v.existemItensDeCotacao }">
+                        <c:QuoteLineItemComponent quoteLineItemList="{!v.quoteLineItemList}" columns="{!v.columns}"/>
+                        <aura:set attribute="else">
+                            <div class="slds-text-color_weak slds-text-align_center">
+                                <lightning:icon iconName="utility:warning" size="x-small"/>
+                                <p>Não há Itens nesta Cotação. Clique em "Novo(a)" para começar.</p>
+                            </div>
+                        </aura:set>
+                    </aura:if>
+                </div>
+            </lightning:tab>
+            
+            
+            <aura:if isTrue="{! v.isEdicaoTabVisible }">
+                <lightning:tab label="Item Atual" onactive="{!c.selectEdicao}" id="edicaoTab">
+                    <lightning:progressIndicator class="indicadorProgresso" currentStep="1" type="base" variant="base">
+                        <lightning:progressStep label="Edição" value="1"/>
+                        <lightning:progressStep label="Sugestão" value="2"/>
+                        <lightning:progressStep label="Ajustes" value="3"/>
+                        <lightning:progressStep label="Visão Geral" value="4"/>
+                    </lightning:progressIndicator>
+                    <div class="slds-text-body_small">
+                        <lightning:recordEditForm aura:id="recordViewForm" objectApiName="QuoteLineItem">
+                            <div class="slds-grid slds-m-top_small slds-m-bottom_medium">
+                                <div class="slds-col slds-size_1-of-1">
+                                    <lightning:button class='slds-float--left botao' 
+                                                      variant="neutral" 
+                                                      label="Cancelar" 
+                                                      onclick="{!c.handleClickBackToResumo}"/>
+                                    <lightning:button class='slds-float--right botao'
+                                                      variant="brand" 
+                                                      label="Próximo" 
+                                                      onclick="{!c.handleClickToSugestao}"/>
+                                </div>
+                            </div>
+                            <form class="slds-form--stacked">
+                                <h3 class="slds-section__title  test-id__section-header-container">
+                                    <lightning:button variant="base" 
+                                                      label="Características" 
+                                                      class="slds-button test-id__section-header-button slds-section__title-action"/>
+                                </h3>
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <div class="slds-m-right_medium slds-p-horizontal_small">
+                                            <div class="slds-p-horizontal_xxx-small">
+                                                <lightning:inputField aura:id="recordViewForm" 
+                                                                      label="Aço"
+                                                                      fieldName="Aco__c"
+                                                                      value="{!v.quoteLineItemEdit.Aco__c}"/>
+                                            </div>
+                                        </div>
+                                        <div class="slds-m-right_medium slds-p-horizontal_small">
+                                            <div class="slds-p-horizontal_xxx-small">
+                                                <lightning:inputField aura:id="custoEngenharia" 
+                                                                      label="Custo Engenharia"
+                                                                      fieldName="Custo_Engenharia__c"
+                                                                      value="{!v.quoteLineItemEdit.Custo_Engenharia__c}"
+                                                                      class="slds-hide"/>
+                                            </div>
+                                        </div>
+                                        <div class="slds-m-right_medium slds-p-horizontal_small">
+                                            <div class="slds-p-horizontal_xxx-small">
+                                                <lightning:inputField aura:id="recordViewForm" 
+                                                                      label="Produto"
+                                                                      fieldName="Produto_Gerdau__c"
+                                                                      required="true"
+                                                                      value="{!v.quoteLineItemEdit.Produto_Gerdau__c}"/>
+                                            </div>
+                                        </div>
+                                        <div class="slds-m-right_medium slds-p-horizontal_small">
+                                            <div class="slds-p-horizontal_xxx-small">
+                                                <lightning:inputField aura:id="recordViewForm" 
+                                                                      label="Processo"
+                                                                      fieldName="Processo__c"
+                                                                      value="{!v.quoteLineItemEdit.Processo__c}"/>
+                                            </div>
+                                        </div>
+                                        <div class="slds-m-right_medium slds-p-horizontal_small">
+                                            <div class="slds-p-horizontal_xxx-small">
+                                                <lightning:inputField aura:id="recordViewForm" 
+                                                                      label="Forma"
+                                                                      fieldName="Forma__c"
+                                                                      value="{!v.quoteLineItemEdit.Forma__c}"/>
+                                            </div>
+                                        </div>
+                                        <aura:if isTrue="{! (v.quoteLineItemEdit.Produto_Gerdau__c == 'Barra' &amp;&amp; v.quoteLineItemEdit.Forma__c == 'Chato') || v.quoteLineItemEdit.Produto_Gerdau__c == 'Lingote' || v.quoteLineItemEdit.Produto_Gerdau__c == 'Tarugo' || (v.quoteLineItemEdit.Produto_Gerdau__c == 'Bloco' &amp;&amp; v.quoteLineItemEdit.Processo__c == 'Forjado')}">
+                                            <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                <div class="slds-p-horizontal_xxx-small">
+                                                    <lightning:inputField aura:id="recordViewForm"
+                                                                          label="Dimensão 1"
+                                                                          fieldName="Dimensao_1__c"
+                                                                          required = "true"
+                                                                          value="{!v.quoteLineItemEdit.Dimensao_1__c}"/>
+                                                </div>
+                                            </div>
+                                            <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                <div class="slds-p-horizontal_xxx-small">
+                                                    <lightning:inputField aura:id="recordViewForm"
+                                                                          label="Dimensão 2"
+                                                                          fieldName="Dimensao_2__c"
+                                                                          required = "true"
+                                                                          value="{!v.quoteLineItemEdit.Dimensao_2__c}"/>
+                                                </div>
+                                            </div>
+                                            <aura:set attribute="else">
+                                                <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                    <div class="slds-p-horizontal_xxx-small">
+                                                        <lightning:inputField aura:id="recordViewForm" 
+                                                                              label="Bitola"
+                                                                              required="true"
+                                                                              fieldName="Bitola_Numerico__c"
+                                                                              value="{!v.quoteLineItemEdit.Bitola_Numerico__c}"/>
+                                                    </div>
+                                                </div>
+                                            </aura:set>
+                                        </aura:if>
+                                        <div class="slds-m-right_medium slds-p-horizontal_small">
+                                            <div class="slds-p-horizontal_xxx-small">
+                                                <lightning:input class="stackedForm" 
+                                                                 aura:id="bitola" 
+                                                                 label="Bitola Cotação" 
+                                                                 value="{!v.quoteLineItemEdit.Bitola__c}"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                         <div class="slds-m-left_medium slds-p-horizontal_small">
+                                            <div class="slds-p-horizontal_xxx-small">
+                                                <lightning:input class="stackedForm" 
+                                                                 aura:id="acoReferencia" 
+                                                                 label="Aço Referência" 
+                                                                 required="true" 
+                                                                 value="{!v.quoteLineItemEdit.AcoReferencia__c}"/>
+                                            </div>
+                                        </div>
+                                        <div class="slds-m-left_medium slds-p-horizontal_small">
+                                            <div class="slds-p-horizontal_xxx-small">
+                                                <lightning:inputField aura:id="recordViewForm" 
+                                                                      label="Acab. Superficial"
+                                                                      fieldName="Acabamento_Superficial__c"
+                                                                      required="true"
+                                                                      value="{!v.quoteLineItemEdit.Acabamento_Superficial__c}"/>
+                                            </div>
+                                        </div>
+                                        <div class="slds-m-left_medium slds-p-horizontal_small">
+                                            <div class="slds-p-horizontal_xxx-small">
+                                                <lightning:inputField aura:id="recordViewForm" 
+                                                                      label="Trat Térmico"
+                                                                      fieldName="Tratamento_Termico__c"
+                                                                      required="true"
+                                                                      value="{!v.quoteLineItemEdit.Tratamento_Termico__c}"/>
+                                            </div>
+                                        </div>
+                                        <div class="slds-m-left_medium slds-p-horizontal_small">
+                                            <div class="slds-p-horizontal_xxx-small">
+                                                <lightning:inputField aura:id="recordViewForm" 
+                                                                      label="Comprimento"
+                                                                      fieldName="Comprimento__c"
+                                                                      value="{!v.quoteLineItemEdit.Comprimento__c}"/>
+                                            </div>
+                                        </div>
+                                        <div class="slds-m-left_medium slds-p-horizontal_small">
+                                            <div class="slds-p-horizontal_xxx-small">
+                                                <lightning:inputField aura:id="recordViewForm" 
+                                                                      label="Norma"
+                                                                      fieldName="Norma__c"
+                                                                      value="{!v.quoteLineItemEdit.Norma__c}"/>
+                                            </div>
+                                        </div>
+                                        <div class="slds-m-left_medium slds-p-horizontal_small">
+                                            <div class="slds-p-horizontal_xxx-small">
+                                                <lightning:input class="slds-p-vertical_small" 
+                                                                 aura:id="toggleButton" 
+                                                                 type="toggle" 
+                                                                 name="toggle" 
+                                                                 label="Apenas Sugestões Normalizadas" 
+                                                                 messageToggleActive="Ligado" 
+                                                                 messageToggleInactive="Desligado" 
+                                                                 checked="true"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="slds-section__title  test-id__section-header-container">
+                                    <lightning:button variant="base" label="Aplicação" class="slds-button test-id__section-header-button slds-section__title-action"/>
+                                </h3>
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <div class="slds-m-right_medium slds-p-horizontal_small">
+                                            <div class="slds-p-horizontal_xxx-small">
+                                                <lightning:inputField aura:id="recordViewForm" 
+                                                                      label="Sistemista"
+                                                                      fieldName="Sistemista__c"
+                                                                      value="{!v.quoteLineItemEdit.Sistemista__c}"/>
+                                            </div>
+                                        </div>
+                                        <div class="slds-m-right_medium slds-p-horizontal_small">
+                                            <div class="slds-p-horizontal_xxx-small">
+                                                <lightning:inputField aura:id="recordViewForm" 
+                                                                      label="Sistema"
+                                                                      fieldName="Sistema__c"
+                                                                      value="{!v.quoteLineItemEdit.Sistema__c}"/>
+                                            </div>
+                                        </div>
+                                        <div class="slds-m-right_medium slds-p-horizontal_small">
+                                            <div class="slds-p-horizontal_xxx-small">
+                                                <lightning:inputField aura:id="recordViewForm" 
+                                                                      label="Peça"
+                                                                      fieldName="Peca__c"
+                                                                      value="{!v.quoteLineItemEdit.Peca__c}"/>
+                                            </div>
+                                        </div>                                                    
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <div class="slds-m-left_medium slds-p-horizontal_small">
+                                            <div class="slds-p-horizontal_xxx-small">
+                                                <lightning:inputField aura:id="recordViewForm" 
+                                                                      label="Cliente Final"
+                                                                      fieldName="Cliente_Final__c"
+                                                                      value="{!v.quoteLineItemEdit.Cliente_Final__c}"/>
+                                            </div>
+                                        </div>
+                                        <div class="slds-m-left_medium slds-p-horizontal_small">
+                                            <div class="slds-p-horizontal_xxx-small">
+                                                <lightning:inputField aura:id="recordViewForm" 
+                                                                      label="Segmento de Mercado"
+                                                                      fieldName="Segmento_de_Mercado__c"
+                                                                      value="{!v.quoteLineItemEdit.Segmento_de_Mercado__c}"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="slds-section__title  test-id__section-header-container">
+                                    <lightning:button variant="base" label="Precificação" class="slds-button test-id__section-header-button slds-section__title-action"/>
+                                </h3>
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <div class="slds-m-right_medium slds-p-horizontal_small">
+                                            <div class="slds-p-horizontal_xxx-small">
+                                                <lightning:inputField aura:id="recordViewFormRequired" 
+                                                                      label="Quantidade"
+                                                                      fieldName="Quantity"
+                                                                      value="{!v.quoteLineItemEdit.Quantity}"/>
+                                            </div>
+                                        </div>
+                                        <div class="slds-m-right_medium slds-p-horizontal_small">
+                                            <div class="slds-p-horizontal_xxx-small">
+                                                <lightning:inputField aura:id="recordViewForm" 
+                                                                      label="Preço Target"
+                                                                      fieldName="Preco_Target__c"
+                                                                      value="{!v.quoteLineItemEdit.Preco_Target__c}"/>
+                                            </div>
+                                        </div>
+                                        <aura:if isTrue="{!v.quoteRecord.RecordType.DeveloperName != 'Exportacao'}">
+                                            <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                <div class="slds-p-horizontal_xxx-small">
+                                                    <lightning:inputField aura:id="recordViewForm" 
+                                                                          label="Adicional Financeiro (%)"
+                                                                          fieldName="Adicional_Financeiro__c"
+                                                                          required="true"
+                                                                          value="{!v.quoteLineItemEdit.Adicional_Financeiro__c}"/>
+                                                </div>
+                                            </div>
+                                        </aura:if>
+                                        <aura:if isTrue="{!v.quoteRecord.RecordType.DeveloperName == 'Exportacao'}">
+                                         <div class="slds-m-right_medium slds-p-horizontal_small">
+                                            <div class="slds-p-horizontal_xxx-small">
+                                                <lightning:inputField aura:id="recordViewForm" 
+                                                                      label="Câmbio USD/BRL"
+                                                                      fieldName="CambioUSDBRL__c"
+                                                                      required="true"
+                                                                      value="{!v.quoteLineItemEdit.CambioUSDBRL__c}"/>
+                                             </div>
+                                            </div>
+                                            <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                <div class="slds-p-horizontal_xxx-small">
+                                                    <lightning:inputField aura:id="recordViewForm" 
+                                                                          label="Câmbio USD/BRL"
+                                                                          fieldName="CambioEURBRL__c"
+                                                                          required="true"
+                                                                          value="{!v.quoteLineItemEdit.CambioEURBRL__c}"/>
+                                                </div>
+                                            </div>
+                                            <div class="slds-m-right_medium slds-p-horizontal_small" style="text-align: center;">
+                                                <lightning:button class="slds-m-top_small" variant="neutral" label="Usar cotações definidas no BAGG" onclick="{!c.getCambios}" />
+                                            </div>
+                                        </aura:if>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <div class="slds-m-left_medium slds-p-horizontal_small">
+                                            <div class="slds-p-horizontal_xxx-small">
+                                                <lightning:inputField aura:id="recordViewForm" 
+                                                                      label="Concorrente"
+                                                                      fieldName="Concorrente__c"
+                                                                      value="{!v.quoteLineItemEdit.Concorrente__c}"/>
+                                            </div>
+                                        </div>
+                                        <div class="slds-m-left_medium slds-p-horizontal_small">
+                                            <div class="slds-p-horizontal_xxx-small">
+                                                <lightning:inputField aura:id="recordViewForm" 
+                                                                      label="Preço Concorrente"
+                                                                      fieldName="Preco_Concorrente__c"
+                                                                      value="{!v.quoteLineItemEdit.Preco_Concorrente__c}"/>
+                                            </div>
+                                        </div>
+                                        <div class="slds-m-left_medium slds-p-horizontal_small">
+                                            <div class="slds-p-horizontal_xxx-small">
+                                                <lightning:inputField aura:id="recordViewForm" 
+                                                                      fieldName="Lote_Minimo__c"
+                                                                      required = "true"
+                                                                      value="{!v.quoteLineItemEdit.Lote_Minimo__c}"/>
+                                            </div>
+                                        </div>
+                                        <aura:if isTrue="{!v.quoteRecord.RecordType.DeveloperName == 'Exportacao'}">
+                                            <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                <div class="slds-p-horizontal_xxx-small">
+                                                    <lightning:inputField aura:id="recordViewForm" 
+                                                                          label="Trader"
+                                                                          fieldName="Trader__c"
+                                                                          value="{!v.quoteLineItemEdit.Trader__c}"/>
+                                                </div>
+                                            </div>
+                                            <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                <div class="slds-p-horizontal_xxx-small">
+                                                    <lightning:inputField aura:id="recordViewForm" 
+                                                                          label="Custo Trader"
+                                                                          fieldName="Custo_Trader__c"
+                                                                          required="{!v.quoteLineItemEdit.Trader__c != null}"
+                                                                          value="{!v.quoteLineItemEdit.Custo_Trader__c}"/>
+                                                </div>
+                                            </div>
+                                        </aura:if>
+                                    </div>
+                                </div>
+                                <aura:if isTrue="{!v.quoteRecord.RecordType.DeveloperName == 'Exportacao'}">
+                                    <h3 class="slds-section__title  test-id__section-header-container">
+                                        <lightning:button variant="base" label="Parâmetros Logísticos" class="slds-button test-id__section-header-button slds-section__title-action"/>
+                                    </h3>
+                                    <div class="slds-grid slds-wrap">
+                                        <div class="slds-col slds-size_1-of-2">
+                                            <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                <div class="slds-p-horizontal_xxx-small">
+                                                    <lightning:inputField aura:id="recordViewForm"
+                                                                          label="Dimensão 2"
+                                                                          fieldName="Local_de_Fabricacao__c"
+                                                                          required = "true"
+                                                                          value="{!v.quoteLineItemEdit.Local_de_Fabricacao__c}"/>
+                                                </div>
+                                            </div>
+                                            <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                <div class="slds-p-horizontal_xxx-small">
+                                                    <lightning:inputField aura:id="recordViewForm"
+                                                                          label="Dimensão 2"
+                                                                          fieldName="Porto_Origem__c"
+                                                                          required = "true"
+                                                                          value="{!v.quoteLineItemEdit.Porto_Origem__c}"/>
+                                                </div>
+                                            </div>
+                                            <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                <div class="slds-p-horizontal_xxx-small">
+                                                    <lightning:inputField aura:id="recordViewForm"
+                                                                          label="Dimensão 2"
+                                                                          fieldName="Porto_Destino__c"
+                                                                          required = "true"
+                                                                          value="{!v.quoteLineItemEdit.Porto_Destino__c}"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slds-col slds-size_1-of-2">
+                                            <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                <div class="slds-p-horizontal_xxx-small">
+                                                    <lightning:inputField aura:id="recordViewForm"
+                                                                          label="Dimensão 2"
+                                                                          fieldName="Incoterms__c"
+                                                                          required = "true"
+                                                                          value="{!v.quoteLineItemEdit.Incoterms__c}"/>
+                                                </div>
+                                            </div>
+                                            <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                <div class="slds-p-horizontal_xxx-small">
+                                                    <lightning:inputField aura:id="recordViewForm"
+                                                                          label="Dimensão 2"
+                                                                          fieldName="Destino_Final__c"
+                                                                          required = "true"
+                                                                          value="{!v.quoteLineItemEdit.Destino_Final__c}"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </aura:if>
+                            </form>
+                        </lightning:recordEditForm>
+                    </div>
+                    <div class="slds-p-top_medium slds-m-top_x-large slds-p-bottom_medium">
+                        <lightning:button class='slds-float--left botao' 
+                                          variant="neutral" 
+                                          label="Cancelar" 
+                                          onclick="{!c.handleClickBackToResumo}"/>
+                        <lightning:button class='slds-float--right botao'
+                                          variant="brand" 
+                                          label="Próximo" 
+                                          onclick="{!c.handleClickToSugestao}"/>
+                    </div>
+                </lightning:tab>
+            </aura:if>
+            
+            <!-- REFERENCIA DE PREÇO -->
+            <aura:if isTrue="{! v.isSugestaoTabVisible }">
+                <lightning:tab label="Item Atual" onactive="{!c.selectSugestao}" id="sugestaoTab">
+                     <lightning:progressIndicator class="indicadorProgresso" currentStep="2" type="base" variant="base">
+                            <lightning:progressStep label="Edição" value="1"/>
+                            <lightning:progressStep label="Sugestão" value="2"/>
+                            <lightning:progressStep label="Ajustes" value="3"/>
+                            <lightning:progressStep label="Visão Geral" value="4"/>
+                        </lightning:progressIndicator>
+                    <div class="slds-text-body_small">
+                        <div class="slds-grid slds-m-top_small slds-m-bottom_medium">
+                            <div class="slds-col slds-size_1-of-1">
+                                <lightning:button class='slds-float--left botao' variant="neutral" label="Voltar" onclick="{!c.handleClickBackToEdicao}" />
+                                <lightning:button class='slds-float--right botao' variant="brand" label="Próximo" onclick="{!c.handleClickToMemorial}"/>
+                            </div>
+                        </div>
+                        <aura:if isTrue="{!!v.isBarraChataRep}">
+                            <div aura:id="referenciasDePrecoClienteSection" class="test-id__section slds-section slds-is-open full forcePageBlockSection forcePageBlockSectionView">
+                                <h3 class="slds-section__title test-id__section-header-container">
+                                    <lightning:button iconName="utility:user" variant="base" label="Referências de Preço do Cliente" onclick="{!c.changeStateReferenciasDePrecoClienteSection}" class="slds-section__title-action"/>
+                                </h3>
+                                <div class="test-id__section-content slds-section__content section__content">
+                                    <aura:if isTrue="{! v.existeReferenciaCliente }">
+                                        <div class="slds-m-bottom_x-large slds-m-top_small slds-m-horizontal_x-small" style="box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1); border: 1px solid #dddbda;">
+                                            <lightning:datatable aura:id="testTable"
+                                                                 keyField="registro_Id"
+                                                                 data="{! v.dataSugest }"
+                                                                 columns="{! v.columnsSugest }"
+                                                                 hideCheckboxColumn="true"
+                                                                 minColumnWidth = "150"
+                                                                 selectedRows="{!v.selectedRows}"  
+                                                                 class="selectedLineCustom"
+                                                                 onrowaction="{! c.handleSugestaoRowAction }"/>
+                                        </div>
+                                        <aura:set attribute="else">
+                                            <div class="slds-text-color_weak slds-text-align_center slds-m-bottom_x-large slds-m-top_small slds-m-horizontal_x-small slds-p-vertical_large" style="box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1); border: 1px solid #dddbda;">
+                                                <lightning:icon iconName="utility:warning" size="x-small"/>
+                                                <p>Não há referências de preço para estas condições.</p>
+                                            </div>
+                                        </aura:set>
+                                    </aura:if>
+                                </div>
+                            </div>
+                            <div aura:id="referenciasDePrecoItemDaCotacaoSection" class="test-id__section slds-section slds-is-open full forcePageBlockSection forcePageBlockSectionView">
+                                <h3 class="slds-section__title test-id__section-header-container">
+                                    <lightning:button iconName="utility:quote" variant="base" label="Referências de Preço do Item de Cotação" onclick="{!c.changeStateReferenciasDePrecoItemDaCotacaoSection}" class="slds-section__title-action"/>
+                                </h3>
+                                <div class="test-id__section-content slds-section__content section__content">
+                                    <aura:if isTrue="{! v.existeReferenciaClienteQLI }">
+                                        <div class="slds-m-bottom_x-large slds-m-top_small slds-m-horizontal_x-small" style="box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1); border: 1px solid #dddbda;">
+                                            <lightning:datatable aura:id="testTable"
+                                                                 keyField="registro_Id"
+                                                                 data="{! v.dataSugestQLI }"
+                                                                 columns="{! v.columnsSugest }"
+                                                                 hideCheckboxColumn="true"
+                                                                 minColumnWidth = "150"
+                                                                 selectedRows="{!v.selectedRows}"  
+                                                                 class="selectedLineCustom"
+                                                                 onrowaction="{! c.handleSugestaoRowAction }"/>
+                                        </div>
+                                        <aura:set attribute="else">
+                                            <div class="slds-text-color_weak slds-text-align_center slds-m-bottom_x-large slds-m-top_small slds-m-horizontal_x-small slds-p-vertical_large" style="box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1); border: 1px solid #dddbda;">
+                                                <lightning:icon iconName="utility:warning" size="x-small"/>
+                                                <p>Não há referências de preço para estas condições.</p>
+                                            </div>
+                                        </aura:set>
+                                    </aura:if>
+                                </div>
+                            </div>
+                            <div aura:id="referenciasDePrecoEmissoresSelecionadosSection" class="test-id__section slds-section slds-is-open full forcePageBlockSection forcePageBlockSectionView">
+                                <h3 class="slds-section__title test-id__section-header-container">
+                                    <lightning:button iconName="utility:groups" variant="base" label="Referências de Preço dos Emissores Selecionados" onclick="{!c.changeReferenciasDePrecoEmissoresSelecionadosSection}" class="slds-section__title-action"/>
+                                </h3>
+                                <div class="test-id__section-content slds-section__content section__content">
+                                    <aura:if isTrue="{! v.existeReferenciaEmissoresSelecionados }">
+                                        <div class="slds-m-bottom_x-large slds-m-top_small slds-m-horizontal_x-small" style="box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1); border: 1px solid #dddbda;">
+                                            <lightning:datatable aura:id="testTable"
+                                                                 keyField="registro_Id"
+                                                                 data="{! v.dataSugestConcorr }"
+                                                                 columns="{! v.columnsSugest }"
+                                                                 hideCheckboxColumn="true"
+                                                                 minColumnWidth = "150"
+                                                                 selectedRows="{!v.selectedRows}"  
+                                                                 class="selectedLineCustom"
+                                                                 onrowaction="{! c.handleSugestaoRowAction }"/>
+                                        </div>
+                                        <aura:set attribute="else">
+                                            <div class="slds-text-color_weak slds-text-align_center slds-m-bottom_x-large slds-m-horizontal_x-small slds-m-top_small slds-p-vertical_large" style="box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1); border: 1px solid #dddbda;">
+                                                <lightning:icon iconName="utility:warning" size="x-small"/>
+                                                <p>Não há referências de preço para estas condições.</p>
+                                            </div>
+                                        </aura:set>
+                                    </aura:if>
+                                </div>
+                            </div>
+                            <div aura:id="referenciasDePrecoGeraisSection" class="test-id__section slds-section slds-is-open full forcePageBlockSection forcePageBlockSectionView">
+                                <h3 class="slds-section__title test-id__section-header-container">
+                                    <lightning:button iconName="utility:all" variant="base" label="Referências de Preço Gerais" onclick="{!c.changeStateReferenciasDePrecoGeraisSection}" class="slds-section__title-action"/>
+                                </h3>
+                                <div class="test-id__section-content slds-section__content section__content">
+                                    <aura:if isTrue="{! v.existeReferenciaGeral }">
+                                        <div class="slds-m-bottom_x-large slds-m-top_small slds-m-horizontal_x-small" style="box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1); border: 1px solid #dddbda;">
+                                            <lightning:datatable keyField="registro_Id"
+                                                                 data="{! v.dataSugestGeral }"
+                                                                 columns="{! v.columnsSugest }"
+                                                                 hideCheckboxColumn="true"
+                                                                 minColumnWidth = "150"
+                                                                 selectedRows="{!v.selectedRows}"  
+                                                                 class="selectedLineCustom"
+                                                                 onrowaction="{! c.handleSugestaoRowAction }"/>
+                                        </div>
+                                        <aura:set attribute="else">
+                                            <div class="slds-text-color_weak slds-text-align_center slds-m-bottom_x-large slds-m-horizontal_x-small slds-m-top_small slds-p-vertical_large" style="box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1); border: 1px solid #dddbda;">
+                                                <lightning:icon iconName="utility:warning" size="x-small"/>
+                                                <p>Não há referências de preço para estas condições.</p>
+                                            </div>
+                                        </aura:set>
+                                    </aura:if>
+                                </div>
+                            </div>
+                            <div aura:id="referenciasDePrecoInternacionaisSection" class="test-id__section slds-section slds-is-open full forcePageBlockSection forcePageBlockSectionView">
+                                <h3 class="slds-section__title test-id__section-header-container">
+                                    <lightning:button iconName="utility:world" variant="base" label="Referências de Preço Internacionais" onclick="{!c.changeStateReferenciasDePrecoInternacionaisSection}" class="slds-section__title-action"/>
+                                </h3>
+                                <div class="test-id__section-content slds-section__content section__content">
+                                    <aura:if isTrue="{! v.existeReferenciaInternacional }">
+                                        <div class="slds-m-bottom_x-large slds-m-top_small slds-m-horizontal_x-small slds-scrollable" style="box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1); border: 1px solid #dddbda;">
+                                            <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered">
+                                                <thead>
+                                                    <th class="" scope="col">
+                                                        <div class="slds-truncate">Subfamília do Aço</div>
+                                                    </th>
+                                                    <th class="" scope="col">
+                                                        <div class="slds-truncate">Produto Gerdau</div>
+                                                    </th>
+                                                    <th class="" scope="col">
+                                                        <div class="slds-truncate">Processo</div>
+                                                    </th>
+                                                    <th class="" scope="col">
+                                                        <div class="slds-truncate">Forma</div>
+                                                    </th>
+                                                    <th class="" scope="col">
+                                                        <div class="slds-truncate">Acab. Superficial</div>
+                                                    </th>
+                                                    <th class="" scope="col">
+                                                        <div class="slds-truncate">Trat. Térmico</div>
+                                                    </th>
+                                                    <th class="" scope="col">
+                                                        <div class="slds-truncate">FOB (Santos)</div>
+                                                    </th>
+                                                    <th class="" scope="col">
+                                                        <div class="slds-truncate">País de Referência</div>
+                                                    </th>
+                                                    <th class="" scope="col">
+                                                        <div class="slds-truncate">Câmbio</div>
+                                                    </th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="slds-hint-parent">
+                                                        <th data-label="Subfamília do Aço" scope="row">
+                                                            <div class="slds-truncate">{!v.referenciaInternacional.Subfamilia_do_Aco__c}</div>
+                                                        </th>
+                                                        <td data-label="Produto Gerdau">
+                                                            <div class="slds-truncate">{!v.referenciaInternacional.Produto__c}</div>
+                                                        </td>
+                                                        <td data-label="Processo">
+                                                            <div class="slds-truncate">{!v.referenciaInternacional.Processo__c}</div>
+                                                        </td>
+                                                        <td data-label="Forma">
+                                                            <div class="slds-truncate">{!v.referenciaInternacional.Forma__c}</div>
+                                                        </td>
+                                                        <td data-label="Acab. Superficial">
+                                                            <div class="slds-truncate">{#v.referenciaInternacional.Acabamento_Superficial__c}</div>
+                                                        </td>
+                                                        <td data-label="Trat. Térmico">
+                                                            <div class="slds-truncate">{#v.referenciaInternacional.Tratamento_Termico__c}</div>
+                                                        </td>
+                                                        <td data-label="FOB (Santos)">
+                                                            <div class="slds-truncate">
+                                                                <lightning:formattedNumber value="{#v.referenciaInternacional.Preco_FOB__c}" 
+                                                                                           style="currency"
+                                                                                           currencyCode="USD"
+                                                                                           />
+                                                            </div>
+                                                        </td>
+                                                        <td data-label="País de Referência">
+                                                            <div class="slds-truncate">{#v.referenciaInternacional.Pais_Origem_da_Referencia__c}</div>
+                                                        </td>
+                                                        <td data-label="Câmbio Atual">
+                                                            <div class="slds-truncate">
+                                                                <lightning:formattedNumber value="{#v.cambioBRLUSD}" 
+                                                                                           style="decimal"
+                                                                                           maximumFractionDigits="4"
+                                                                                           minimumFractionDigits="4"
+                                                                                           />
+                                                            </div>
+                                                            &nbsp;{!v.quoteLineItemEdit.CurrencyIsoCode}/USD
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div>
+                                            <div class="c-container slds-align_absolute-center">
+                                                <lightning:layout>
+                                                    <lightning:layoutItem padding="horizontal-medium">
+                                                        <div class="header-column">
+                                                            <h4 class="slds-text-title slds-m-vertical_xx-small">
+                                                                Preço Internado Sem Drawback
+                                                            </h4>
+                                                            <p class="slds-text-body_small">
+                                                                <lightning:formattedNumber value="{!v.precoInternadoSemDrawback}" style="currency" currencyCode="BRL"/>
+                                                            </p>
+                                                        </div>
+                                                    </lightning:layoutItem>
+                                                    <lightning:layoutItem padding="horizontal-medium">
+                                                        <div class="custom-box">
+                                                            <h4 class="slds-text-title slds-m-vertical_xx-small">
+                                                                Preço Internado Com Drawback
+                                                            </h4>
+                                                            <p class="slds-text-body_small">
+                                                                <lightning:formattedNumber value="{!v.precoInternadoComDrawback}" style="currency" currencyCode="BRL"/>
+                                                            </p>
+                                                        </div>
+                                                    </lightning:layoutItem>
+                                                </lightning:layout>
+                                            </div>
+                                        </div>
+                                        <aura:set attribute="else">
+                                            <div class="slds-text-color_weak slds-text-align_center slds-m-bottom_x-large slds-m-horizontal_x-small slds-m-top_small slds-p-vertical_large" style="box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1); border: 1px solid #dddbda;">
+                                                <lightning:icon iconName="utility:warning" size="x-small"/>
+                                                <p>Não há referências de preço para estas condições.</p>
+                                            </div>
+                                        </aura:set>
+                                    </aura:if>
+                                </div>
+                            </div>
+                            <aura:set attribute="else">
+                                 <div aura:id="referenciasDePrecoBarraChataRepSection" class="test-id__section slds-section slds-is-open full forcePageBlockSection forcePageBlockSectionView">
+                                <h3 class="slds-section__title test-id__section-header-container">
+                                    <lightning:button iconName="utility:user" variant="base" label="Política de Preço para Barras Chatas de Reposição" onclick="{!c.changeStateReferenciasDePrecoBarraChataRepSection}" class="slds-section__title-action"/>
+                                </h3>
+                                <div class="test-id__section-content slds-section__content section__content">
+                                    <aura:if isTrue="{! v.existeReferenciaBarraChataRep }">
+                                        <div class="slds-m-bottom_x-large slds-m-top_small slds-m-horizontal_x-small" style="box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1); border: 1px solid #dddbda;">
+                                            <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered">
+                                                <thead>
+                                                    <th class="" scope="col">
+                                                        <div class="slds-truncate">Aço Referência</div>
+                                                    </th>
+                                                    <th class="" scope="col">
+                                                        <div class="slds-truncate">Grupo Rentabilidade</div>
+                                                    </th>
+                                                    <th class="" scope="col">
+                                                        <div class="slds-truncate">Preço ZPLQ</div>
+                                                    </th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="slds-hint-parent">
+                                                        <th data-label="Aço Referência" scope="row">
+                                                            <div class="slds-truncate">{#v.sugestaoEdit.Aco__c}</div>
+                                                        </th>
+                                                        <td data-label="Grupo Rentabilidade">
+                                                            <div class="slds-truncate">{#v.quoteLineItemEdit.Quote.Opportunity.Account.Parent.Name}</div>
+                                                        </td>
+                                                        <td data-label="Preço ZPLQ">
+                                                            <div class="slds-truncate"><lightning:formattedNumber value="{#v.sugestaoEdit.Preco_ZPLQ__c}" 
+                                                                                           style="currency"
+                                                                                           currencyCode="BRL"
+                                                                                           /></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <aura:set attribute="else">
+                                            <div class="slds-text-color_weak slds-text-align_center slds-m-bottom_x-large slds-m-top_small slds-m-horizontal_x-small slds-p-vertical_large" style="box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1); border: 1px solid #dddbda;">
+                                                <lightning:icon iconName="utility:warning" size="x-small"/>
+                                                <p>Não há referências de preço para estas condições.</p>
+                                            </div>
+                                        </aura:set>
+                                    </aura:if>
+                                </div>
+                            </div>
+                            </aura:set>
+                        </aura:if>
+                    </div>
+                    <div class="slds-p-top_medium slds-m-top_x-large slds-p-bottom_medium">
+                        <lightning:button class='slds-float--left botao' variant="neutral" label="Voltar" onclick="{!c.handleClickBackToEdicao}" />
+                        <lightning:button class='slds-float--right botao' variant="brand" label="Próximo" onclick="{!c.handleClickToMemorial}"/>
+                    </div>
+                </lightning:tab>
+            </aura:if>
+            <!-- SEÇÃO DE AJUSTES -->
+            <aura:if isTrue="{! v.isAjustesTabVisible }">
+                <lightning:tab label="Item Atual" onactive="{!c.selectMemorial}" id="memorialTab">
+                    <lightning:progressIndicator class="indicadorProgresso" currentStep="3" type="base" variant="base">
+                        <lightning:progressStep label="Edição" value="1"/>
+                        <lightning:progressStep label="Sugestão" value="2"/>
+                        <lightning:progressStep label="Ajustes" value="3"/>
+                        <lightning:progressStep label="Visão Geral" value="4"/>
+                    </lightning:progressIndicator>
+                    <div class="slds-text-body_small">
+                        <div class="slds-grid slds-m-top_small slds-m-bottom_medium">
+                            <div class="slds-col slds-size_1-of-1">
+                                <lightning:button class='slds-float--left botao' variant="neutral" label="Voltar" onclick="{!c.handleClickBackToSugestao}" />
+                                <lightning:button class='slds-float--right botao' variant="brand" label="Próximo" onclick="{!c.handleClickToFinalizacao}" />
+                            </div>
+                        </div>
+                        <aura:if isTrue="{!! v.isBarraChataRep }">
+                            <div aura:id="sugestaoDePrecoSection" class="test-id__section slds-section slds-is-open full forcePageBlockSection forcePageBlockSectionView">
+                                <h3 class="slds-section__title test-id__section-header-container">
+                                    <lightning:button iconName="utility:chevrondown" variant="base" label="Sugestão de Preço" onclick="{!c.changeStateSugestaoDePrecoSection}" class="slds-button test-id__section-header-button slds-section__title-action"/>
+                                </h3>
+                                <div class="test-id__section-content slds-section__content section__content">
+                                    <div class="slds-m-bottom_x-large slds-m-top_small slds-m-horizontal_x-small" style="box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1); border: 1px solid #dddbda;">
+                                        <lightning:datatable
+                                                             keyField="id"
+                                                             data="{!v.dataSugestEscolhida}"
+                                                             columns="{!v.columnsSugest}"
+                                                             hideCheckboxColumn="true"
+                                                             minColumnWidth = "150"/>
+                                    </div>
+                                    <lightning:recordViewForm recordId="{!v.idSugestaoEscolhida}" objectApiName="Sugestao_de_Referencia_de_Preco__c">
+                                        <div class="slds-m-top_small slds-m-bottom_small">
+                                            <div class="slds-grid slds-wrap">
+                                                <div class="slds-col slds-size_1-of-2">
+                                                    <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                        <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                            <lightning:outputField fieldName="Aco__c"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                        <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                            <lightning:outputField fieldName="Acabamento_Superficial__c"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                        <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                            <lightning:outputField fieldName="Tratamento_Termico__c"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                        <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                            <lightning:outputField fieldName="Adicional_Financeiro__c" style="percent" maximumFractionDigits="3"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-col slds-size_1-of-2">
+                                                    <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                        <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                            <lightning:outputField fieldName="Preco_Base__c"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                        <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                            <lightning:outputField fieldName="Pre_o_Acabamento_Superficial__c"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                        <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                            <lightning:outputField fieldName="Preco_Tratamento_Termico__c"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                        <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                            <lightning:outputField fieldName="Preco_ADF__c"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                        <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                            <lightning:outputField fieldName="Preco_Total__c"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </lightning:recordViewForm>
+                                </div>
+                            </div>
+                            <div aura:id="itemAtualSection" class="test-id__section slds-section slds-is-open full forcePageBlockSection forcePageBlockSectionView">
+                                <h3 class="slds-section__title test-id__section-header-container">
+                                    <lightning:button iconName="utility:chevrondown" variant="base" label="Item Atual" onclick="{!c.changeStateItemAtualSection}" class="slds-button test-id__section-header-button slds-section__title-action"/>
+                                </h3>
+                                <div class="test-id__section-content slds-section__content section__content">
+                                    <div class="slds-m-bottom_x-large slds-m-top_small slds-m-horizontal_x-small" style="box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1); border: 1px solid #dddbda;">
+                                        <lightning:datatable
+                                                             keyField="id"
+                                                             data="{! v.dataQuoteLineItemAtual }"
+                                                             columns="{! v.columnsQuoteLineItemAtual }"
+                                                             hideCheckboxColumn="true"
+                                                             minColumnWidth = "150"/>
+                                    </div>
+                                    <lightning:recordViewForm recordId="{!v.quoteLineItemEdit.Id}" objectApiName="QuoteLineItem">
+                                        <div class="slds-grid slds-wrap">
+                                            <div class="slds-col slds-size_1-of-2">
+                                                <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                    <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                        <lightning:outputField fieldName="Aco__c"/>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                    <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                        <lightning:outputField fieldName="Acabamento_Superficial__c"/>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                    <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                        <lightning:outputField fieldName="Tratamento_Termico__c"/>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                    <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                        <lightning:outputField fieldName="Adicional_Financeiro__c"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slds-col slds-size_1-of-2">
+                                                <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                    <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                        <lightning:outputField fieldName="Preco_Base__c"/>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                    <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                        <lightning:outputField fieldName="Preco_Acabamento_Superficial__c"/>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                    <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                        <lightning:outputField fieldName="Preco_Tratamento_Termico__c"/>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                    <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                        <lightning:outputField fieldName="Preco_ADF__c"/>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                    <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                        <lightning:outputField fieldName="Sugestao_de_Preco__c"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </lightning:recordViewForm>
+                                </div>
+                            </div>
+                            <aura:set attribute="else">
+                                <div aura:id="sugestaoBarraChataReposicaoWarning" class="test-id__section slds-section slds-is-open full forcePageBlockSection forcePageBlockSectionView">
+                                    <div class="slds-text-align_center slds-m-bottom_xxx-small slds-m-top_small slds-m-horizontal_x-small slds-p-vertical_medium" >
+                                        <lightning:icon iconName="utility:warning" size="x-small"/>
+                                        <p>Preço sugerido de acordo com a política de preços para barras chatas de reposição, atualizada em: {!v.sugestaoEdit.Ultima_Modificacao_da_Politica_de_Preco__c} </p>
+                                    </div>
+                                </div>
+                                <div aura:id="sugestaoBarraChataReposicaoSection" class="test-id__section slds-section slds-is-open full forcePageBlockSection forcePageBlockSectionView">
+                                    <h3 class="slds-section__title test-id__section-header-container">
+                                        <lightning:button iconName="utility:chevrondown" variant="base" label="Política de Preço" onclick="{!c.changeStatePoliticaPreco}" class="slds-button test-id__section-header-button slds-section__title-action"/>
+                                    </h3>
+                                    <div class="test-id__section-content slds-section__content section__content">
+                                        <lightning:recordViewForm recordId="{!v.quoteLineItemEdit.Id}" objectApiName="QuoteLineItem">
+                                            <div class="slds-grid slds-wrap">
+                                                <div class="slds-col slds-size_1-of-2">
+                                                    <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                        <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                            <lightning:outputField fieldName="AcoReferencia__c"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                        <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                            <lightning:outputField fieldName="Adicional_Financeiro__c"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-col slds-size_1-of-2">
+                                                    <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                        <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                            <lightning:outputField fieldName="Preco_Base__c"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                        <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                            <lightning:outputField fieldName="Preco_ADF__c"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                        <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                            <lightning:outputField fieldName="Sugestao_de_Preco__c"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </lightning:recordViewForm>
+                                    </div>
+                                </div>
+                            </aura:set>
+                        </aura:if>
+                        <div aura:id="ajusteFinalSection" class="test-id__section slds-section slds-is-open full forcePageBlockSection forcePageBlockSectionView">
+                            <h3 class="slds-section__title test-id__section-header-container">
+                                <lightning:button iconName="utility:chevrondown" variant="base" label="Ajuste Final" onclick="{!c.changeStateAjusteFinalSection}" class="slds-button test-id__section-header-button slds-section__title-action"/>
+                            </h3>
+                            <div class="test-id__section-content slds-section__content section__content">
+                                <lightning:recordEditForm aura:id="recordViewForm" objectApiName="QuoteLineItem">
+                                    <div class="slds-grid slds-wrap">
+                                        <div class="slds-col slds-size_1-of-2">
+                                            <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                <div class="slds-p-horizontal_xxx-small">
+                                                    <lightning:inputField aura:id="recordViewForm" 
+                                                                          label="Preço Final" 
+                                                                          fieldName="Preco_apos_Ajuste__c" 
+                                                                          required="true"
+                                                                          value="{!v.quoteLineItemEdit.Preco_apos_Ajuste__c}"/>
+                                                </div>
+                                            </div>
+                                            <div class="slds-m-right_medium slds-p-horizontal_small" style="min-height: 6rem;">
+                                                <div class="slds-p-horizontal_xxx-small">
+                                                    <aura:if isTrue="{! v.campoJustificativaObrigatorio }">
+                                                        <lightning:inputField aura:id="recordViewForm" 
+                                                                              label="Justificativa do Ajuste" 
+                                                                              fieldName="Justificativa_Para_Ajuste__c" 
+                                                                              required="true"
+                                                                              value="{!v.quoteLineItemEdit.Justificativa_Para_Ajuste__c}"/>
+                                                        <aura:set attribute="else">
+                                                            <lightning:inputField aura:id="recordViewForm" 
+                                                                                  label="Justificativa do Ajuste" 
+                                                                                  fieldName="Justificativa_Para_Ajuste__c" 
+                                                                                  required="false"
+                                                                                  value="{!v.quoteLineItemEdit.Justificativa_Para_Ajuste__c}"/>
+                                                        </aura:set>
+                                                    </aura:if>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </lightning:recordEditForm>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-p-top_medium slds-m-top_x-large slds-p-bottom_medium">
+                        <lightning:button class='slds-float--left botao' variant="neutral" label="Voltar" onclick="{!c.handleClickBackToSugestao}" />
+                        <lightning:button class='slds-float--right botao' variant="brand" label="Próximo" onclick="{!c.handleClickToFinalizacao}" />
+                    </div>
+                </lightning:tab>
+            </aura:if>
+            <aura:if isTrue="{! v.isFinalizacaoTabVisible }">
+                <lightning:tab label="Item Atual" onactive="{!c.selectFinalizacao}" id="finalizacaoTab">
+                    <lightning:progressIndicator class="indicadorProgresso" currentStep="4" type="base" variant="base">
+                        <lightning:progressStep label="Edição" value="1"/>
+                        <lightning:progressStep label="Sugestão" value="2"/>
+                        <lightning:progressStep label="Ajustes" value="3"/>
+                        <lightning:progressStep label="Visão Geral" value="4"/>
+                    </lightning:progressIndicator>
+                    <div class="slds-text-body_small">
+                        <div class="slds-grid slds-m-top_small slds-m-bottom_medium">
+                            <div class="slds-col slds-size_1-of-1">
+                                <lightning:button class='slds-float--left botao' variant="neutral" label="Voltar" onclick="{!c.handleClickBackToMemorial}" disabled="{!v.isBackToMemorialDisabled}"/>
+                                <lightning:button class='slds-float--right botao' variant="brand" label="Fechar" onclick="{!c.handleClickToResumo}" />
+                            </div>
+                        </div>
+                        <div aura:id="detalhesSection" class="test-id__section slds-section slds-is-open full forcePageBlockSection forcePageBlockSectionView">
+                            <h3 class="slds-section__title test-id__section-header-container">
+                                <lightning:button iconName="utility:chevrondown" variant="base" label="Detalhes" onclick="{!c.changeStateDetalhesSection}" class="slds-button test-id__section-header-button slds-section__title-action"/>
+                            </h3>
+                            <div class="test-id__section-content slds-section__content section__content">
+                                <lightning:recordViewForm recordId="{!v.quoteLineItemEdit.Id}" objectApiName="QuoteLineItem">
+                                    <div class="slds-grid slds-wrap">
+                                        <div class="slds-col slds-size_1-of-2">
+                                            <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                    <lightning:outputField class="campoReadOnly" fieldName="Aco__c"/>
+                                                </div>
+                                            </div>
+                                            <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                    <lightning:outputField class="campoReadOnly" fieldName="Produto_Gerdau__c"/>
+                                                </div>
+                                            </div>
+                                            <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                    <lightning:outputField class="campoReadOnly" fieldName="Processo__c"/>
+                                                </div>
+                                            </div>
+                                            <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                    <lightning:outputField class="campoReadOnly" fieldName="Forma__c"/>
+                                                    
+                                                </div>
+                                            </div>
+                                            <aura:if isTrue="{! (v.quoteLineItemEdit.Produto_Gerdau__c == 'Barra' &amp;&amp; v.quoteLineItemEdit.Forma__c == 'Chato') || v.quoteLineItemEdit.Produto_Gerdau__c == 'Lingote' || v.quoteLineItemEdit.Produto_Gerdau__c == 'Tarugo' || (v.quoteLineItemEdit.Produto_Gerdau__c == 'Bloco' &amp;&amp; v.quoteLineItemEdit.Processo__c == 'Forjado')}">
+                                                <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                    <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                        <lightning:outputField class="campoReadOnly" fieldName="Dimensao_1__c"/>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                    <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                        <lightning:outputField class="campoReadOnly" fieldName="Dimensao_2__c"/>
+                                                    </div>
+                                                </div>
+                                                <aura:set attribute="else">
+                                                    <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                        <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                            <lightning:outputField class="campoReadOnly" fieldName="Bitola_Numerico__c"/>
+                                                        </div>
+                                                    </div>
+                                                </aura:set>
+                                            </aura:if>
+                                        </div>
+                                        <div class="slds-col slds-size_1-of-2">
+                                            <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                    <lightning:outputField class="campoReadOnly" fieldName="Acabamento_Superficial__c"/>
+                                                </div>
+                                            </div>
+                                            <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                    <lightning:outputField class="campoReadOnly" fieldName="Tratamento_Termico__c"/>  
+                                                </div>
+                                            </div>
+                                            <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                    <lightning:outputField class="campoReadOnly" fieldName="Comprimento__c"/>
+                                                </div>
+                                            </div>
+                                            <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                    <lightning:outputField class="campoReadOnly" fieldName="Norma__c"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </lightning:recordViewForm>
+                            </div>
+                        </div>
+                        
+                        <div aura:id="aplicacaoSection" class="test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionView">
+                            <h3 class="slds-section__title  test-id__section-header-container">
+                                <lightning:button iconName="utility:chevrondown" variant="base" label="Aplicação"  onclick="{!c.changeStateAplicacaoSection}" class="slds-button test-id__section-header-button slds-section__title-action"/>
+                            </h3>
+                            <div class="test-id__section-content slds-section__content section__content">
+                                <lightning:recordViewForm recordId="{!v.quoteLineItemEdit.Id}" objectApiName="QuoteLineItem">
+                                    <div class="slds-grid slds-wrap">
+                                        <div class="slds-col slds-size_1-of-2">
+                                            <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                    <lightning:outputField class="campoReadOnly"  fieldName="Sistemista__c"/>
+                                                </div>
+                                            </div>
+                                            <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                    <lightning:outputField class="campoReadOnly" fieldName="Sistema__c"/>
+                                                </div>
+                                            </div>
+                                            <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                    <lightning:outputField class="campoReadOnly" fieldName="Peca__c"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slds-col slds-size_1-of-2">
+                                            <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                    <lightning:outputField class="campoReadOnly" fieldName="Cliente_Final__c"/>
+                                                </div>
+                                            </div>
+                                            <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                    <lightning:outputField class="campoReadOnly" fieldName="Segmento_de_Mercado__c"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </lightning:recordViewForm>
+                            </div>
+                        </div>
+                        <aura:if isTrue="{!! v.isBarraChataRep }">
+                            <div aura:id="precificacaoSection" class="test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionView">
+                                <h3 class="slds-section__title  test-id__section-header-container">
+                                    <lightning:button iconName="utility:chevrondown" variant="base" label="Precificação" onclick="{!c.changeStatePrecificacaoSection}" class="slds-button test-id__section-header-button slds-section__title-action"/>
+                                </h3>
+                                <div class="test-id__section-content slds-section__content section__content">
+                                    <lightning:recordViewForm recordId="{!v.quoteLineItemEdit.Id}" objectApiName="QuoteLineItem">
+                                        <div class="slds-grid slds-wrap">
+                                            <div class="slds-col slds-size_1-of-2">
+                                                <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                    <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                        <lightning:outputField class="campoReadOnly" fieldName="Quantity"/>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                    <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                        <lightning:outputField class="campoReadOnly" fieldName="Lote_Minimo__c"/>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                    <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                        <lightning:outputField class="campoReadOnly" fieldName="Concorrente__c"/>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                    <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                        <lightning:outputField class="campoReadOnly" fieldName="Preco_Concorrente__c"/>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                    <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                        <lightning:outputField class="campoReadOnly" fieldName="Preco_Target__c"/>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                    <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                        <lightning:outputField class="campoReadOnly" fieldName="Sugestao_de_Preco__c"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slds-col slds-size_1-of-2">
+                                                <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                    <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                        <lightning:outputField class="campoReadOnly" fieldName="Preco_Base__c"/>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                    <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                        <lightning:outputField class="campoReadOnly" fieldName="Preco_Acabamento_Superficial__c"/>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                    <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                        <lightning:outputField class="campoReadOnly" fieldName="Preco_Tratamento_Termico__c"/>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                    <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                        <lightning:outputField class="campoReadOnly" fieldName="Preco_ADF__c"/>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                    <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                        <lightning:outputField class="campoReadOnly" fieldName="Preco_apos_Ajuste__c"/>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                    <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                        <lightning:outputField class="campoReadOnly" fieldName="Justificativa_Para_Ajuste__c"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </lightning:recordViewForm>
+                                </div>
+                            </div>
+                            
+                            <div aura:id="margem2Section" class="test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionView">
+                                <h3 class="slds-section__title  test-id__section-header-container">
+                                    <lightning:button iconName="utility:chevrondown" variant="base" label="Margem 2 Padrão" onclick="{!c.changeStateMargem2Section}" class="slds-button test-id__section-header-button slds-section__title-action"/>
+                                </h3>
+                                <div class="test-id__section-content slds-section__content section__content">
+                                    <!-- Margem 2 Padrão-->
+                                    <aura:if isTrue="{! v.quoteLineItemEdit.Margem_2__c != 0 }">
+                                        <lightning:recordViewForm recordId="{!v.quoteLineItemEdit.Id}" objectApiName="QuoteLineItem">
+                                            <div class="slds-grid slds-wrap">
+                                                <div class="slds-col slds-size_1-of-2">
+                                                    <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                        <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                            <lightning:outputField class="campoReadOnly" fieldName="Custo_Base__c"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                        <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                            <lightning:outputField class="campoReadOnly" fieldName="Custo_Acabamento_Superficial__c"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                        <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                            <lightning:outputField class="campoReadOnly" fieldName="Custo_Tratamento_Termico__c"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-col slds-size_1-of-2">
+                                                    <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                        <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                            <lightning:outputField class="campoReadOnly" fieldName="Custo_Total__c"/>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Campo Margem 2 Padrão-->
+                                                    <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                        <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element">
+                                                            <div class="slds-p-horizontal_xxx-small">
+                                                                <div class="test-id__field-label-container slds-form-element__label campoReadOnly">
+                                                                    <span class="test-id__field-label">
+                                                                        Margem 2 Padrão
+                                                                    </span>
+                                                                </div>
+                                                                <div class="slds-form-element__control itemBody">
+                                                                    <span class="test-id__field-value slds-form-element__static slds-grow slds-p-vertical_xx-small">
+                                                                        <span>
+                                                                            <lightning:formattedNumber value="{!v.quoteLineItemEdit.Margem_2__c}" style="currency" currencyCode="USD"/>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Campo Margem 2 -->
+                                                    <!-- Campo Cambio -->
+                                                    <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                        <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element">
+                                                            <div class="slds-p-horizontal_xxx-small">
+                                                                <div class="test-id__field-label-container slds-form-element__label campoReadOnly">
+                                                                    <span class="test-id__field-label">
+                                                                        Cambio
+                                                                    </span>
+                                                                </div>
+                                                                <div class="slds-form-element__control itemBody">
+                                                                    <span class="test-id__field-value slds-form-element__static slds-grow slds-p-vertical_xx-small">
+                                                                        <span>
+                                                                            <lightning:formattedNumber value="{#v.cambioBRLUSD}" style="decimal" maximumFractionDigits="5"/>&nbsp;{!v.quoteLineItemEdit.CurrencyIsoCode}/USD
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Campo Cambio -->
+                                                </div>
+                                            </div>
+                                        </lightning:recordViewForm>
+                                        <aura:set attribute="else">
+                                            <!-- Quando não há margem 2 padrão-->
+                                            <div class="slds-text-color_weak slds-text-align_center slds-m-bottom_x-large slds-m-top_small slds-m-horizontal_x-small slds-p-vertical_large" style="box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1); border: 1px solid #dddbda;">
+                                                <lightning:icon iconName="utility:warning" size="x-small"/>
+                                                <p>Cálculo da Margem 2 Padrão indisponível.</p>
+                                            </div>
+                                        </aura:set>
+                                    </aura:if>
+                                </div>
+                            </div>
+                            <!-- margem 2 real-->
+                            <div aura:id="margem2RealSection" class="test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionView">
+                                <h3 class="slds-section__title  test-id__section-header-container">
+                                    <lightning:button iconName="utility:chevrondown" variant="base" label="Margem 2 Real" onclick="{!c.changeStateMargem2RealSection}" class="slds-button test-id__section-header-button slds-section__title-action"/>
+                                </h3>
+                                <div class="test-id__section-content slds-section__content section__content">
+                                    <aura:if isTrue="{! v.quoteLineItemEdit.Margem_2_Real__c != 0 }">
+                                        <lightning:recordViewForm recordId="{!v.quoteLineItemEdit.Id}" objectApiName="QuoteLineItem">
+                                            <div class="slds-grid slds-wrap">
+                                                <div class="slds-col slds-size_1-of-2">
+                                                    <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                        <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                            <lightning:outputField class="campoReadOnly" fieldName="Custo_Base_Real__c"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                        <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                            <lightning:outputField class="campoReadOnly" fieldName="Custo_Acabamento_Superficial_Real__c"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                        <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                            <lightning:outputField class="campoReadOnly" fieldName="Custo_Tratamento_Termico_Real__c"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-col slds-size_1-of-2">
+                                                    <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                        <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                            <lightning:outputField class="campoReadOnly" fieldName="Custo_Total_Real__c"/>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Campo Margem 2 real -->
+                                                    <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                        <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element">
+                                                            <div class="slds-p-horizontal_xxx-small">
+                                                                <div class="test-id__field-label-container slds-form-element__label campoReadOnly">
+                                                                    <span class="test-id__field-label">
+                                                                        Margem 2 Real
+                                                                    </span>
+                                                                </div>
+                                                                <div class="slds-form-element__control itemBody">
+                                                                    <span class="test-id__field-value slds-form-element__static slds-grow slds-p-vertical_xx-small">
+                                                                        <span>
+                                                                            <lightning:formattedNumber value="{!v.quoteLineItemEdit.Margem_2_Real__c}" style="currency" currencyCode="USD"/>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Campo Margem 2 -->
+                                                    <!-- Campo Cambio -->
+                                                    <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                        <div class="slds-form-element slds-form-element_readonly slds-grow slds-hint-parent override--slds-form-element">
+                                                            <div class="slds-p-horizontal_xxx-small">
+                                                                <div class="test-id__field-label-container slds-form-element__label campoReadOnly">
+                                                                    <span class="test-id__field-label">
+                                                                        Cambio
+                                                                    </span>
+                                                                </div>
+                                                                <div class="slds-form-element__control itemBody">
+                                                                    <span class="test-id__field-value slds-form-element__static slds-grow slds-p-vertical_xx-small">
+                                                                        <span>
+                                                                            <lightning:formattedNumber value="{#v.cambioBRLUSD}" style="decimal" maximumFractionDigits="5"/>&nbsp;{!v.quoteLineItemEdit.CurrencyIsoCode}/USD
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Campo Cambio -->
+                                                </div>
+                                            </div>
+                                        </lightning:recordViewForm>
+                                        <aura:set attribute="else">
+                                            <div class="slds-text-color_weak slds-text-align_center slds-m-bottom_x-large slds-m-top_small slds-m-horizontal_x-small slds-p-vertical_large" style="box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1); border: 1px solid #dddbda;">
+                                                <lightning:icon iconName="utility:warning" size="x-small"/>
+                                                <p>Cálculo da Margem 2 Real indisponível.</p>
+                                            </div>
+                                        </aura:set>
+                                    </aura:if>
+                                </div>
+                            </div>
+                            <aura:set attribute="else">
+                                <div aura:id="precificacaoSection" class="test-id__section slds-section  slds-is-open full forcePageBlockSection forcePageBlockSectionView">
+                                    <h3 class="slds-section__title  test-id__section-header-container">
+                                        <lightning:button iconName="utility:chevrondown" variant="base" label="Precificação" onclick="{!c.changeStatePrecificacaoSection}" class="slds-button test-id__section-header-button slds-section__title-action"/>
+                                    </h3>
+                                    <div class="test-id__section-content slds-section__content section__content">
+                                        <lightning:recordViewForm recordId="{!v.quoteLineItemEdit.Id}" objectApiName="QuoteLineItem">
+                                            <div class="slds-grid slds-wrap">
+                                                <div class="slds-col slds-size_1-of-2">
+                                                    <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                        <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                            <lightning:outputField class="campoReadOnly" fieldName="Quantity"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                        <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                            <lightning:outputField class="campoReadOnly" fieldName="Lote_Minimo__c"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                        <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                            <lightning:outputField class="campoReadOnly" fieldName="Concorrente__c"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-m-right_medium slds-p-horizontal_small">
+                                                        <div class="slds-p-horizontal_xxx-small slds-border_bottom">
+                                                            <lightning:outputField class="campoReadOnly" fieldName="Preco_apos_Ajuste__c"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-col slds-size_1-of-2">
+                                                    <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                        <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                            <lightning:outputField class="campoReadOnly" fieldName="Sugestao_de_Preco__c"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                        <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                            <lightning:outputField class="campoReadOnly" fieldName="Preco_Target__c"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                        <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                            <lightning:outputField class="campoReadOnly" fieldName="Preco_Concorrente__c"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slds-m-left_medium slds-p-horizontal_small">
+                                                        <div class="slds-border_bottom slds-p-horizontal_xxx-small">
+                                                            <lightning:outputField class="campoReadOnly" fieldName="Justificativa_Para_Ajuste__c"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </lightning:recordViewForm>
+                                    </div>
+                                </div>
+                            </aura:set>
+                        </aura:if>
+                        
+                    </div>
+                    <div class="slds-p-top_medium slds-m-top_x-large slds-p-bottom_medium">
+                        <lightning:button class='slds-float--left botao' variant="neutral" label="Voltar" onclick="{!c.handleClickBackToMemorial}" disabled="{!v.isBackToMemorialDisabled}"/>
+                        <lightning:button class='slds-float--right botao' variant="brand" label="Fechar" onclick="{!c.handleClickToResumo}" />
+                    </div>
+                </lightning:tab>
+            </aura:if>  
+        </lightning:tabset>    
+    </div>
+</aura:component>
